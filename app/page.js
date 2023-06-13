@@ -21,57 +21,58 @@ export default function Home() {
         </header>
         <section className="flex flex-col items-center mt-4 text-center">
           <h3>Mientras tanto podés encontrame en:</h3>
-          <p className="mt-4 mb-1">
-            ↳ Github:
-            <a
-              target="_blank"
-              className="linktext"
-              href="https://github.com/fedeholc/"
-            >
-              <span> github.com/fedeholc</span>
-            </a>
-          </p>
-          <p className="mt-2 mb-1">
-            ↳ LinkedIn:
-            <a
-              target="_blank"
-              className="linktext"
-              href="https://www.linkedin.com/in/federicoholc/"
-            >
-              <span> linkedin.com/in/federicoholc</span>
-            </a>
-          </p>
-          <p className="mt-2 mb-1">
-            ↳ Mi blog de aprendizaje:
-            <a
-              target="_blank"
-              className="linktext"
-              href="https://nsp.fedeholc.ar/"
-            >
-              <span> nsp.fedeholc.ar</span>
-            </a>
-          </p>
-
-          <p className="mt-2 mb-1">
-            ↳ O mandarme un mail a:
-            <a
-              target="_blank"
-              className="linktext"
-              href="mailto:dev@fedeholc.ar"
-            >
-              <span> dev@fedeholc.ar</span>
-            </a>
-          </p>
-          <p className="mt-2 mb-1">
-            ↳ También hago fotos:
-            <a
-              target="_blank"
-              className="linktext"
-              href="https://www.instagram.com/fedeholc/"
-            >
-              <span> instagram.com/fedeholc</span>
-            </a>
-          </p>
+          <div className="flex flex-col items-start">
+            <p className="mt-4 mb-1">
+              ↳ Github:
+              <a
+                target="_blank"
+                className="linktext"
+                href="https://github.com/fedeholc/"
+              >
+                <span> github.com/fedeholc</span>
+              </a>
+            </p>
+            <p className="mt-2 mb-1">
+              ↳ LinkedIn:
+              <a
+                target="_blank"
+                className="linktext"
+                href="https://www.linkedin.com/in/federicoholc/"
+              >
+                <span> linkedin.com/in/federicoholc</span>
+              </a>
+            </p>
+            <p className="mt-2 mb-1">
+              ↳ Mi blog de aprendizaje:
+              <a
+                target="_blank"
+                className="linktext"
+                href="https://nsp.fedeholc.ar/"
+              >
+                <span> nsp.fedeholc.ar</span>
+              </a>
+            </p>
+            <p className="mt-2 mb-1">
+              ↳ O mandarme un mail a:
+              <a
+                target="_blank"
+                className="linktext"
+                href="mailto:dev@fedeholc.ar"
+              >
+                <span> dev@fedeholc.ar</span>
+              </a>
+            </p>
+            <p className="mt-2 mb-1">
+              ↳ También hago fotos:
+              <a
+                target="_blank"
+                className="linktext"
+                href="https://www.instagram.com/fedeholc/"
+              >
+                <span> instagram.com/fedeholc</span>
+              </a>
+            </p>
+          </div>
         </section>
       </div>
       <footer>Federico Holc ⚡️ 2023</footer>
