@@ -51,16 +51,7 @@ export default function Home() {
               <span> nsp.fedeholc.ar</span>
             </a>
           </p>
-          <p className="mt-2 mb-1">
-            ↳ Instagram (también hago fotos):
-            <a
-              target="_blank"
-              className="linktext"
-              href="https://www.instagram.com/fedeholc/"
-            >
-              <span> instagram.com/fedeholc</span>
-            </a>
-          </p>
+
           <p className="mt-2 mb-1">
             ↳ O mandarme un mail a:
             <a
@@ -69,6 +60,16 @@ export default function Home() {
               href="mailto:dev@fedeholc.ar"
             >
               <span> dev@fedeholc.ar</span>
+            </a>
+          </p>
+          <p className="mt-2 mb-1">
+            ↳ También hago fotos:
+            <a
+              target="_blank"
+              className="linktext"
+              href="https://www.instagram.com/fedeholc/"
+            >
+              <span> instagram.com/fedeholc</span>
             </a>
           </p>
         </section>
