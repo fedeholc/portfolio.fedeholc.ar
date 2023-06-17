@@ -10,10 +10,10 @@ export default function Fotos() {
       {foto1 && (
         <Image
           alt="Foto de la cara de federico holc"
-          className="fotosperfil rounded-full border-2 border-black"
-          src="/ff2.jpg"
-          width="200"
+          className="fotosperfil rounded-full border-2 border-black "
+          src="/ff4.jpg"
           height="200"
+          width="200"
           id="foto1"
           onMouseEnter={() => setFoto1(false)}
         />
@@ -23,8 +23,8 @@ export default function Fotos() {
           alt="Foto de la cara de federico holc"
           className="fotosperfil rounded-full border-2 border-black"
           src="/fp.jpg"
-          width="200"
           height="200"
+          width="200"
           id="foto2"
           onMouseLeave={() => setFoto1(true)}
         />
