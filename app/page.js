@@ -8,8 +8,11 @@ import paperclipIcon from "../public/paperclip.png";
 import starIcon from "../public/star.png";
 import notesIcon from "../public/notes.png";
 import mailIcon from "../public/mail.png";
+import rayIcon from "../public/ray.png";
+
 import instagramIcon from "../public/brand-instagram.png";
 import linkedinIcon from "../public/brand-linkedin.png";
+import Theme from "./theme";
 
 export default function Home() {
   return (
@@ -19,32 +22,32 @@ export default function Home() {
           <Image
             className="imagen-icon"
             alt="github icon"
-            width="20"
-            height="20"
+            width="40"
+            height="40"
             src={githubicon}
           ></Image>
           <div className="separador">|</div>
           <Image
             className="imagen-icon"
             alt="linkedin icon"
-            width="20"
-            height="20"
+            width="40"
+            height="40"
             src={linkedinIcon}
           ></Image>
           <div className="separador">|</div>
           <Image
             className="imagen-icon"
             alt="mail icon"
-            width="20"
-            height="20"
+            width="40"
+            height="40"
             src={mailIcon}
           ></Image>
           <div className="separador">|</div>
           <Image
             className="imagen-icon"
             alt="instagram icon"
-            width="20"
-            height="20"
+            width="40"
+            height="40"
             src={instagramIcon}
           ></Image>
           <div className="separador">|</div>
@@ -52,6 +55,8 @@ export default function Home() {
           <div className="separador">|</div>
           <div>Proyectos</div> <div className="separador">|</div>
           <div>Blog</div>
+          <div className="separador">|</div>
+          <Theme></Theme>
         </div>
       </div>
 
@@ -87,6 +92,7 @@ export default function Home() {
               <button className="boton-encontrar">
                 <div>
                   <Image
+                    className="boton-icon"
                     alt="projects icon"
                     width="13"
                     height="13"
@@ -102,6 +108,7 @@ export default function Home() {
               <button className="boton-encontrar">
                 <div>
                   <Image
+                    className="boton-icon"
                     alt="paper clip icon"
                     width="12"
                     height="12"
@@ -117,6 +124,7 @@ export default function Home() {
               <button className="boton-encontrar">
                 <div>
                   <Image
+                    className="boton-icon"
                     alt="blog icon"
                     width="10"
                     height="10"
@@ -132,6 +140,7 @@ export default function Home() {
               <button className="boton-encontrar">
                 <div>
                   <Image
+                    className="boton-icon"
                     alt="github icon"
                     width="12"
                     height="12"
@@ -146,6 +155,7 @@ export default function Home() {
               <button className="boton-encontrar">
                 <div>
                   <Image
+                    className="boton-icon"
                     alt="linkedin icon"
                     width="14"
                     height="14"
@@ -160,6 +170,7 @@ export default function Home() {
               <button className="boton-encontrar">
                 <div>
                   <Image
+                    className="boton-icon"
                     alt="instagram icon"
                     width="14"
                     height="14"
@@ -175,6 +186,7 @@ export default function Home() {
               <button className="boton-encontrar">
                 <div>
                   <Image
+                    className="boton-icon"
                     alt="mail icon"
                     width="14"
                     height="14"
@@ -189,7 +201,19 @@ export default function Home() {
         </div>
       </main>
 
-      <footer>Federico Holc ⚡️ 2023</footer>
+      <footer>
+        <div>
+          Federico Holc
+          <Image
+            className="footer-icon"
+            alt="instagram icon"
+            width="40"
+            height="40"
+            src={rayIcon}
+          ></Image>
+          2023
+        </div>
+      </footer>
     </div>
   );
 }

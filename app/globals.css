@@ -4,11 +4,40 @@
 
 :root {
   --casi-blanco: hsl(0, 0%, 99%);
+  --casi-blanco90: hsl(0, 0%, 90%);
+  --casi-blanco85: hsl(0, 0%, 85%);
+  --casi-blanco65: hsl(0, 0%, 65%);
+
   --casi-negro: hsl(0, 0%, 5%);
   --gris-oscuro: hsl(0, 0%, 40%);
-    --gris-claro: hsl(0, 0%, 80%);
-
+  --gris-claro: hsl(0, 0%, 80%);
+  --gris20: hsl(0, 0%, 20%);
 }
+
+body[data-theme="light"] {
+  --body-background: var(--casi-blanco);
+  --body-color: var(--casi-negro);
+
+  --main-area-border: var(--gris-claro);
+  --boton-encontrar-borde: var(--casi-negro);
+  --boton-hover: var(--casi-blanco90);
+  --footer-borde: var(--gris-oscuro);
+
+  --invert-icon: 0;
+}
+
+body[data-theme="dark"] {
+  --body-background: var(--casi-negro);
+  --body-color: var(--casi-blanco85);
+
+  --main-area-border: var(--gris20);
+  --boton-encontrar-borde: var(--casi-blanco65);
+  --boton-hover: var(--gris20);
+
+  --footer-borde: var(--gris-oscuro);
+  --invert-icon: 80%;
+}
+
 html,
 body {
   box-sizing: border-box;
@@ -22,8 +51,8 @@ body {
  */
   /*   min-width: 250px;
  */
-  background-color: var(--casi-blanco);
-  color: var(--casi-negro);
+  background-color: var(--body-background);
+  color: var(--body-color);
 }
 
 .main__grid {
@@ -39,7 +68,7 @@ body {
 
   /*   border: 1px solid red;
  */
-  margin: 1rem;
+  margin: 0.5rem 1rem;
 }
 
 .main-area {
@@ -48,11 +77,11 @@ body {
   font-weight: 500;
   line-height: 2rem;
 
-  border: 2px solid var(--gris-claro);
+  border: 2px solid var(--main-area-border);
   border-radius: 0px;
-  box-shadow: 2px 2px 0px 0 var(--gris-claro);
+  box-shadow: 2px 2px 0px 0 var(--main-area-border);
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.6rem;
   max-width: 1000px;
 
   padding: 3rem 6rem 3rem 4rem;
@@ -69,26 +98,32 @@ body {
   flex-direction: row-reverse;
   gap: 2rem;
 }
+
 .foto-container img {
   min-width: 200px;
 }
+
 .foto-container {
   /*   margin-right: 2rem;
   margin-top: 1rem; */
   margin-top: 0.5rem;
 }
+
 h2 {
   font-size: 3rem;
   font-weight: 600;
   margin: 0.5rem 0rem 1.5rem 0rem;
   display: block;
 }
+
 .smile {
   color: hsl(0, 0%, 40%);
 }
+
 .main-area p {
   margin-bottom: 0.8rem;
 }
+
 .navbar {
   grid-area: nav;
   justify-self: end;
@@ -97,7 +132,7 @@ h2 {
   font-size: 1rem;
   font-family: var(--font-montserrat);
 
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .navbar-icons {
@@ -112,7 +147,12 @@ h2 {
 .imagen-icon {
   width: 15px;
   height: 15px;
+  filter: invert(var(--invert-icon));
 }
+.boton-icon {
+  filter: invert(var(--invert-icon));
+}
+
 .separador {
   color: rgb(163, 163, 163);
   font-weight: 400;
@@ -120,47 +160,71 @@ h2 {
 }
 
 .boton-encontrar {
-  border: 2px solid var(--casi-negro);
+  border: 2px solid var(--boton-encontrar-borde);
   border-radius: 0px;
-  box-shadow: 2px 2px 0px 0 var(--casi-negro);
+  box-shadow: 2px 2px 0px 0 var(--boton-encontrar-borde);
   padding: 0.2rem 0.5rem;
   border-radius: 5px;
   font-size: 1.1rem;
   margin: 0.3rem 0.3rem 0.3rem 0rem;
   line-height: 1.5rem;
 }
+
 .boton-encontrar:hover {
-  background-color: hsl(0, 0%, 90%);
+  background-color: var(--boton-hover);
 }
+
 .boton-encontrar > div {
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
+
 ul {
   list-style-type: disc;
   list-style-position: inside;
 }
+
 footer {
   font-family: var(--font-roboto-mono);
 
   font-size: 0.7rem;
   padding: 0.2rem;
 
-  border: 1px dashed var(--gris-oscuro);
+  border: 1px dashed var(--footer-borde);
   display: grid;
   justify-content: center;
   place-self: center;
   width: 100%;
 }
 
+footer > div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon {
+  width: 9px;
+  height: 12px;
+  filter: invert(var(--invert-icon));
+}
+
+.theme-toggler {
+  height: 25px;
+}
+
 @media only screen and (max-width: 768px) {
   html {
     font-size: 15px;
   }
+
   body {
     margin: 0.5rem;
   }
+
   .main-container {
     display: flex;
     flex-direction: column-reverse;
@@ -173,6 +237,7 @@ footer {
   .main-area {
     padding: 2rem;
   }
+
   .foto-container {
     margin-left: 0px;
   }
