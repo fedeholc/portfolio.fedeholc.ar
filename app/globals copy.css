@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes move-bg {
+  to {
+    background-position: var(--bg-size) 0;
+  }
+}
+
+html,
+body {
+  box-sizing: border-box;
+}
+
+
+
+h1 {
+  font-family: var(--font-archivo-black);
+  --bg-size: 400%;
+  --color-one: hsl(319, 100%, 35%);
+  --color-two: hsl(299, 97%, 53%);
+  background: linear-gradient(90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one),
+      var(--color-one),
+      var(--color-one),
+      var(--color-one)) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+h2,
+h3 {
+  font-family: var(--font-archivo-black);
+  --bg-size: 400%;
+  --color-two: hsl(0, 0%, 65%);
+  --color-one: hsl(0, 0%, 0%);
+  background: linear-gradient(90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+h1 {
+  font-size: 4.5rem;
+  animation: move-bg 18s linear;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+a.linktext:visited,
+a.linktext {
+  font-size: 1em;
+  font-family: var(--roboto-mono), "Courier New", Courier, monospace;
+  font-weight: 600;
+  /*  font-family: var(--font-archivo-black); */
+  --bg-size: 400%;
+  --color-two: hsl(223, 100%, 31%);
+  --color-one: hsl(213, 93%, 27%);
+
+  background: linear-gradient(90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+p {
+  font-size: 1rem;
+  font-family: var(--roboto-mono), "Courier New", Courier, monospace;
+  font-weight: 600;
+  color: black;
+}
+
+a.linktext:hover {
+  --color-two: hsl(223, 89%, 52%);
+  --color-one: hsl(213, 100%, 50%);
+
+  background: linear-gradient(90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.borde_amarillo {
+  padding: 0.5rem 0.7rem;
+
+  border: 2px dashed hsl(45, 100%, 53%);
+  border-radius: 10px;
+}
+
+.subrayado {
+  border-bottom: 2px solid hsl(298, 84%, 34%);
+}
+
+footer {
+  font-family: var(--roboto-mono), "Courier New", Courier, monospace;
+  font-size: 0.7rem;
+  padding: 0.2rem;
+  margin: 1rem;
+  margin-top: 3rem;
+  border: 1px dashed rgb(219, 0, 172);
+  display: grid;
+  justify-content: center;
+  place-self: center;
+  width: 100%;
+}
