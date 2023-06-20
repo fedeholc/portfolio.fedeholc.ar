@@ -203,14 +203,14 @@ export default function Home() {
 
       <footer>
         <div>
-          Federico Holc
-          <Image
+          Federico Holc <span className="footer__emoji">⚡️</span>
+         {/*  <Image
             className="footer-icon"
             alt="instagram icon"
             width="40"
             height="40"
             src={rayIcon}
-          ></Image>
+          ></Image> */}
           2023
         </div>
       </footer>

@@ -24,6 +24,8 @@ body[data-theme="light"] {
   --footer-borde: var(--gris-oscuro);
 
   --invert-icon: 0;
+    --invert-emoji: 1;
+
 }
 
 body[data-theme="dark"] {
@@ -36,6 +38,8 @@ body[data-theme="dark"] {
 
   --footer-borde: var(--gris-oscuro);
   --invert-icon: 80%;
+    --invert-emoji: 0%;
+
 }
 
 html,
@@ -187,10 +191,8 @@ ul {
 
 footer {
   font-family: var(--font-roboto-mono);
-
   font-size: 0.7rem;
   padding: 0.2rem;
-
   border: 1px dashed var(--footer-borde);
   display: grid;
   justify-content: center;
@@ -206,6 +208,9 @@ footer > div {
   justify-content: center;
 }
 
+.footer__emoji {
+  filter: grayscale(1) invert(var(--invert-emoji));
+}
 .footer-icon {
   width: 9px;
   height: 12px;
