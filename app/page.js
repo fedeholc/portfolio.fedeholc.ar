@@ -204,7 +204,7 @@ export default function Home() {
       <footer>
         <div>
           Federico Holc <span className="footer__emoji">⚡️</span>
-         {/*  <Image
+          {/*  <Image
             className="footer-icon"
             alt="instagram icon"
             width="40"

@@ -8,20 +8,22 @@ export default function Fotos() {
   return (
     <div>
       {foto1 && (
-        <Image
-          alt="Foto de la cara de federico holc"
-          className="fotosperfil rounded-full border-2 border-black "
-          src="/ff4.jpg"
-          height="200"
-          width="200"
-          id="foto1"
-          onMouseEnter={() => setFoto1(false)}
-        />
+        <div className="image-wrap rounded-full border-2 border-black">
+          <Image
+            alt="Foto de la cara de federico holc"
+            className="fotosperfil"
+            src="/ff4.jpg"
+            height="200"
+            width="200"
+            id="foto1"
+            onMouseEnter={() => setFoto1(false)}
+          />
+        </div>
       )}
       {!foto1 && (
         <Image
           alt="Foto de la cara de federico holc"
-          className="fotosperfil rounded-full border-2 border-black"
+          className="fotosperfil rounded-full border-2 border-black foto2"
           src="/fp.jpg"
           height="200"
           width="200"
