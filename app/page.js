@@ -76,9 +76,9 @@ export default function Home() {
                 Argentina.
               </p>
               <p>
-                De chico amaba jugar <span className="emoji">👾</span>{" "}
+                De chico amaba jugar al <span className="emoji">👾</span>{" "}
                 space invaders <span className="emoji">👾</span> en la XT286 de
-                mi papá, y di mis primeros pasos en la programación usado Logo{" "}
+                mi papá, y di mis primeros pasos en programación con Logo{" "}
                 <span className="emoji">🐢</span>. Para el último año de la
                 escuela secundaria (técnica en computación) ya estaba trabajando
                 como desarrollador en Visual Basic. Luego comencé a estudiar
