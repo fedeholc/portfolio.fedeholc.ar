@@ -209,6 +209,11 @@ footer > div {
   justify-content: center;
 }
 
+.emoji {
+  font-family: var(--font-noto-emoji);
+  color: rgb(77, 77, 77);
+}
+
 .footer__emoji {
   filter: grayscale(1) invert(var(--invert-emoji));
 }

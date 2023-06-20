@@ -63,7 +63,9 @@ export default function Home() {
       <main>
         <div className="main-area">
           <div className="flex">
-            <h2>¡Hola!&nbsp;</h2>
+            <h2>
+              ¡Hola!🙂⚡️<span className="emoji">🙂</span>&nbsp;
+            </h2>
             <h2 className="smile">=)</h2>
           </div>
           <div className="main-container  ">
