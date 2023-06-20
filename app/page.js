@@ -64,25 +64,41 @@ export default function Home() {
         <div className="main-area">
           <div className="flex">
             <h2>
-              ¡Hola!🙂⚡️<span className="emoji">🙂⚡️</span>&nbsp;
+              ¡Hola! <span className="emoji">👋🏻</span> ¿Cómo estás?&nbsp;{" "}
             </h2>
-            <h2 className="smile">=)</h2>
+            <h2 className="smile"> =)</h2>
           </div>
           <div className="main-container  ">
             <div>
               <p>
-                Mi nombre es Federico Holc y soy un desarrollador web front-end,
-                viviendo en Buenos Aires, Argentina.
+                Mi nombre es Federico Holc, soy desarrollador web 🧑‍💻, y vivo en
+                Buenos Aires, Argentina.
               </p>
               <p>
-                Trabajo principalmente con HTML, CSS, JavaScript y React, así
-                como también con NextJS, Node, y bases de datos SQL o MongoDB
-                cuando los proyectos lo requieren.
+                De muy chico comencé a jugar 👾 space invaders 👾 en una XT286
+                que había en casa, y di mis primeros pasos en la programación
+                usado Logo 🐢. Para el último año de la escuela secundaria
+                (técnica en computación) ya estaba trabajando como desarrollador
+                en Visual Basic. Luego comencé a estudiar Ciencias de la
+                Computación en la UBA. Pero era el año 2001 y en la Argentina y
+                en mi vida hubo un "plot twist" 🙈, o por qué no, un ¡epic
+                fail!💩 Dejé la programación.🤦🏻😭☠️
               </p>
               <p>
-                Cuando no estoy programando o aprendiendo cosas nuevas, me
-                dedico a la fotografía.<span className="emoji">📸</span>
-                <span className="filter-bw-ct2">📸</span>
+                En los años que siguieron fuí sociólogo, y profesor en escuelas
+                secundarias y en la UBA. Allí aprendí y enseñé todo lo que
+                pude.👨‍🏫
+              </p>
+              <p>
+                Hace un tiempo, a partir de utilizar software fotográfico de
+                código abierto (¡también estudié fotografía!📸), me volvió a
+                interesar profundamente la programación. Me encontré con que el
+                desarrollo web era algo muy distinto al de hace 20 años 🤯, ¡me
+                atrapó! 🕸️, y desde entonces no paré de aprender y programar
+                (ahora también con una mirada puesta en la experiencia y las
+                necesidades de los usuarios y usuarias que antes no tenía). ¿Qué
+                mejor que hacerlo a tiempo completo ayudando a una organización
+                a alcanzar sus objetivos? 🤝
               </p>
             </div>
             <div className="foto-container">
