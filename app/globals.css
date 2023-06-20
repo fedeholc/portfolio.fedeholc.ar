@@ -212,6 +212,14 @@ footer > div {
 .footer__emoji {
   filter: grayscale(1) invert(var(--invert-emoji));
 }
+
+.filter-bw {
+  filter: grayscale(1);
+}
+.filter-bw-ct2 {
+  filter: grayscale(1) brightness(0.8) contrast(2);
+}
+
 .footer-icon {
   width: 9px;
   height: 12px;
@@ -223,7 +231,8 @@ footer > div {
 }
 
 .image-wrap {
-  margin: 0 auto;
+  /*   margin: 0 auto;
+ */
   overflow: hidden;
   position: relative;
   background-color: black;

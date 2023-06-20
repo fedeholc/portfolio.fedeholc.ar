@@ -64,7 +64,7 @@ export default function Home() {
         <div className="main-area">
           <div className="flex">
             <h2>¡Hola!&nbsp;</h2>
-            <h2 className="smile"> =)</h2>
+            <h2 className="smile">=)</h2>
           </div>
           <div className="main-container  ">
             <div>
