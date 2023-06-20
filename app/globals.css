@@ -12,7 +12,12 @@
   --gris-oscuro: hsl(0, 0%, 40%);
   --gris-claro: hsl(0, 0%, 80%);
   --gris20: hsl(0, 0%, 20%);
+
+  --fucsia1: hsl(323, 100%, 39%);
 }
+
+/* TODO: estas variables creo que también hay que ponerlas en el root
+por si no aparece el data theme light por defecto, o no? */
 
 body[data-theme="light"] {
   --body-background: var(--casi-blanco);
@@ -25,6 +30,9 @@ body[data-theme="light"] {
 
   --invert-icon: 0;
   --invert-emoji: 1;
+
+  --resaltado: var(--gris-claro);
+  --resaltado-background: var(--fucsia1);
 }
 
 body[data-theme="dark"] {
@@ -38,6 +46,9 @@ body[data-theme="dark"] {
   --footer-borde: var(--gris-oscuro);
   --invert-icon: 80%;
   --invert-emoji: 0%;
+
+  --resaltado: var(--gris20);
+  --resaltado-background: var(--fucsia1);
 }
 
 html,
@@ -68,8 +79,6 @@ body {
 
   min-height: calc(100vh - 4rem);
 
-  /*   border: 1px solid red;
- */
   margin: 0.5rem 1rem;
 }
 
@@ -106,14 +115,9 @@ body {
 }
 
 .foto-container {
-  /*   margin-right: 2rem;
-  margin-top: 1rem; */
   margin-top: 0.5rem;
 }
 
-/* .foto2 {
-    filter: grayscale(1);
-  } */
 h2 {
   font-size: 3rem;
   font-weight: 600;
@@ -122,7 +126,7 @@ h2 {
 }
 
 h2:hover .smile {
-  color: rgb(201, 0, 124);
+  color: var(--fucsia1);
 }
 .smile {
   color: hsl(0, 0%, 40%);
@@ -213,13 +217,6 @@ footer > div {
 
 .emoji {
   font-family: var(--font-montserrat);
-  /*   font-family: var(--font-noto-emoji);
- */
-
-  /*    filter: grayscale(1) contrast(3) brightness(0.8);
- */
-  /*   filter: saturate(0.7);
- */
   filter: drop-shadow(0px 1px 1px) grayscale(1) contrast(1.5) brightness(1);
   color: rgb(37, 37, 37);
   font-weight: 500;
@@ -234,6 +231,17 @@ p:focus-visible .emoji {
 
 .footer__emoji {
   filter: grayscale(1) invert(var(--invert-emoji));
+}
+
+.resaltado {
+  background-color: var(--resaltado);
+  border-radius: 5px;
+  padding: 0rem 0.3rem;
+  font-weight: 600;
+}
+p:hover .resaltado {
+  background-color: var(--resaltado-background);
+  color: white;
 }
 
 .filter-bw {
@@ -286,6 +294,54 @@ p:focus-visible .emoji {
   }
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (hover: none) {
+  .emoji {
+    animation: colores 30s forwards;
+  }
+
+  @keyframes colores {
+    0% {
+      filter: saturate(0);
+    }
+
+    100% {
+      filter: saturate(0.8);
+    }
+  }
+
+  .resaltado {
+    animation: resaltado 10s forwards;
+  }
+  @keyframes resaltado {
+    0% {
+      color: white;
+      background-color: black;
+    }
+
+    100% {
+      background-color: var(--resaltado-background);
+      color: white;
+    }
+  }
+
+  .smile {
+    animation: smile 10s forwards;
+  }
+  @keyframes smile {
+    0% {
+    }
+
+    100% {
+      color: var(--fucsia1);
+    }
+  }
+}
 @media only screen and (max-width: 768px) {
   html {
     font-size: 15px;
@@ -314,5 +370,20 @@ p:focus-visible .emoji {
 
   .foto-container {
     margin-left: 0px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .header > h2 {
+    margin-bottom: 0.2rem;
+        font-size: 2.2rem;
+
+  }
+  .header > .hola {
+    font-size: 3rem;
   }
 }
