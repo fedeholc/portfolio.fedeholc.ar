@@ -79,8 +79,6 @@ body {
 
   min-height: calc(100vh - 4rem);
 
-  /*   border: 1px solid red;
- */
   margin: 0.5rem 1rem;
 }
 
@@ -117,14 +115,9 @@ body {
 }
 
 .foto-container {
-  /*   margin-right: 2rem;
-  margin-top: 1rem; */
   margin-top: 0.5rem;
 }
 
-/* .foto2 {
-    filter: grayscale(1);
-  } */
 h2 {
   font-size: 3rem;
   font-weight: 600;
@@ -224,13 +217,6 @@ footer > div {
 
 .emoji {
   font-family: var(--font-montserrat);
-  /*   font-family: var(--font-noto-emoji);
- */
-
-  /*    filter: grayscale(1) contrast(3) brightness(0.8);
- */
-  /*   filter: saturate(0.7);
- */
   filter: drop-shadow(0px 1px 1px) grayscale(1) contrast(1.5) brightness(1);
   color: rgb(37, 37, 37);
   font-weight: 500;
@@ -308,6 +294,48 @@ p:hover .resaltado {
   }
 }
 
+@media (hover: none) {
+  .emoji {
+    animation: colores 30s forwards;
+  }
+
+  @keyframes colores {
+    0% {
+      filter: saturate(0);
+    }
+
+    100% {
+      filter: saturate(0.8);
+    }
+  }
+
+  .resaltado {
+    animation: resaltado 10s forwards;
+  }
+  @keyframes resaltado {
+    0% {
+      color: white;
+      background-color: black;
+    }
+
+    100% {
+      background-color: var(--resaltado-background);
+      color: white;
+    }
+  }
+
+  .smile {
+    animation: smile 10s forwards;
+  }
+  @keyframes smile {
+    0% {
+    }
+
+    100% {
+      color: var(--fucsia1);
+    }
+  }
+}
 @media only screen and (max-width: 768px) {
   html {
     font-size: 15px;
