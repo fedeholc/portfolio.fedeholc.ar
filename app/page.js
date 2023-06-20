@@ -64,7 +64,7 @@ export default function Home() {
         <div className="main-area">
           <div className="flex">
             <h2>
-              ¡Hola!🙂⚡️<span className="emoji">🙂</span>&nbsp;
+              ¡Hola!🙂⚡️<span className="emoji">🙂⚡️</span>&nbsp;
             </h2>
             <h2 className="smile">=)</h2>
           </div>
@@ -81,7 +81,8 @@ export default function Home() {
               </p>
               <p>
                 Cuando no estoy programando o aprendiendo cosas nuevas, me
-                dedico a la fotografía.
+                dedico a la fotografía.<span className="emoji">📸</span>
+                <span className="filter-bw-ct2">📸</span>
               </p>
             </div>
             <div className="foto-container">
