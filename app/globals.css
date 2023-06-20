@@ -12,7 +12,12 @@
   --gris-oscuro: hsl(0, 0%, 40%);
   --gris-claro: hsl(0, 0%, 80%);
   --gris20: hsl(0, 0%, 20%);
+
+  --fucsia1: hsl(323, 100%, 39%);
 }
+
+/* TODO: estas variables creo que también hay que ponerlas en el root
+por si no aparece el data theme light por defecto, o no? */
 
 body[data-theme="light"] {
   --body-background: var(--casi-blanco);
@@ -25,6 +30,9 @@ body[data-theme="light"] {
 
   --invert-icon: 0;
   --invert-emoji: 1;
+
+  --resaltado: var(--gris-claro);
+  --resaltado-background: var(--fucsia1);
 }
 
 body[data-theme="dark"] {
@@ -38,6 +46,9 @@ body[data-theme="dark"] {
   --footer-borde: var(--gris-oscuro);
   --invert-icon: 80%;
   --invert-emoji: 0%;
+
+  --resaltado: var(--gris20);
+  --resaltado-background: var(--fucsia1);
 }
 
 html,
@@ -122,7 +133,7 @@ h2 {
 }
 
 h2:hover .smile {
-  color: rgb(201, 0, 124);
+  color: var(--fucsia1);
 }
 .smile {
   color: hsl(0, 0%, 40%);
@@ -234,6 +245,17 @@ p:focus-visible .emoji {
 
 .footer__emoji {
   filter: grayscale(1) invert(var(--invert-emoji));
+}
+
+.resaltado {
+  background-color: var(--resaltado);
+  border-radius: 5px;
+  padding: 0rem 0.3rem;
+  font-weight: 600;
+}
+p:hover .resaltado {
+  background-color: var(--resaltado-background);
+  color: white;
 }
 
 .filter-bw {
