@@ -294,6 +294,12 @@ p:hover .resaltado {
   }
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 @media (hover: none) {
   .emoji {
     animation: colores 30s forwards;
@@ -364,5 +370,20 @@ p:hover .resaltado {
 
   .foto-container {
     margin-left: 0px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .header > h2 {
+    margin-bottom: 0.2rem;
+        font-size: 2.2rem;
+
+  }
+  .header > .hola {
+    font-size: 3rem;
   }
 }
