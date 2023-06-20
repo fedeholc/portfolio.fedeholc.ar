@@ -344,11 +344,11 @@ p:hover .resaltado {
 }
 @media only screen and (max-width: 768px) {
   html {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   body {
-    margin: 0.5rem;
+    margin: 0.2rem;
   }
 
   h2 {
