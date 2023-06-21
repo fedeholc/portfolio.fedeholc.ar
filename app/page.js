@@ -21,7 +21,6 @@ export default function Home() {
           <h2 className="hola">
             ¡Hola!&nbsp;<span className="smile">=)</span>&nbsp;
           </h2>
-          <h2></h2>
           <h2>¿Cómo andás?</h2>
         </div>
         <div className="main-container">

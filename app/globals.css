@@ -23,8 +23,6 @@ body {
     "nav"
     "main"
     "footer";
-
-  min-height: calc(100vh - 4rem);
   margin: 0.5rem 1rem;
 }
 
@@ -39,9 +37,8 @@ body {
   box-shadow: 2px 2px 0px 0 var(--main-area-border);
   margin-bottom: 1rem;
   margin-top: 0.3rem;
-  max-width: 1000px;
-
   padding: 3rem 6rem 3rem 4rem;
+  max-width: 1000px;
 }
 
 .main-container {
@@ -49,11 +46,6 @@ body {
   flex-direction: row;
   margin: 1rem 0rem 0rem 0rem;
   gap: 3rem;
-}
-
-.row-reverse {
-  flex-direction: row-reverse;
-  gap: 2rem;
 }
 
 .foto-container img {
