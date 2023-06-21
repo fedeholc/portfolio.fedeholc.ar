@@ -95,9 +95,9 @@ export default function Home() {
           <div>
             <p>
               Pero era el año 2001 y a la Argentina y a mi vida les esperaba un
-              plot twist&nbsp;<span className="emoji">🙈</span>, o por qué no,
+              plot twist&nbsp;<span className="emoji">🙈</span>, o mejor dicho,
               un ¡epic fail!&nbsp;
-              <span className="emoji">💩</span> Dejé la programación.&nbsp;
+              <span className="emoji">💩</span> Abandoné la programación.&nbsp;
               <span className="emoji">🤦🏻😭☠️</span>&nbsp;
             </p>
             <p>
