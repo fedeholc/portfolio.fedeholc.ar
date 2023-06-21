@@ -1,0 +1,45 @@
+:root {
+  --casi-blanco: hsl(0, 0%, 99%);
+  --casi-blanco90: hsl(0, 0%, 90%);
+  --casi-blanco85: hsl(0, 0%, 85%);
+  --casi-blanco65: hsl(0, 0%, 65%);
+
+  --casi-negro: hsl(0, 0%, 5%);
+  --gris-oscuro: hsl(0, 0%, 40%);
+  --gris-claro: hsl(0, 0%, 80%);
+  --gris20: hsl(0, 0%, 20%);
+
+  --fucsia1: hsl(323, 100%, 39%);
+}
+
+body[data-theme="light"] {
+  --body-background: var(--casi-blanco);
+  --body-color: var(--casi-negro);
+
+  --main-area-border: var(--gris-claro);
+  --boton-encontrar-borde: var(--casi-negro);
+  --boton-hover: var(--casi-blanco90);
+  --footer-borde: var(--gris-oscuro);
+
+  --invert-icon: 0;
+  --invert-emoji: 1;
+
+  --resaltado: var(--gris-claro);
+  --resaltado-background: var(--fucsia1);
+}
+
+body[data-theme="dark"] {
+  --body-background: var(--casi-negro);
+  --body-color: var(--casi-blanco85);
+
+  --main-area-border: var(--gris20);
+  --boton-encontrar-borde: var(--casi-blanco65);
+  --boton-hover: var(--gris20);
+
+  --footer-borde: var(--gris-oscuro);
+  --invert-icon: 80%;
+  --invert-emoji: 0%;
+
+  --resaltado: var(--gris20);
+  --resaltado-background: var(--fucsia1);
+}

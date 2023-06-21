@@ -1,20 +1,8 @@
 import "./globals.css";
-import { Archivo_Black, Roboto_Mono } from "next/font/google";
-import { Recursive, Montserrat, Noto_Emoji } from "next/font/google";
+import "./styles/themes.css"
+import { Roboto_Mono } from "next/font/google";
+import { Recursive, Montserrat } from "next/font/google";
 
-export const notoEmoji = Noto_Emoji({
-  weight: ["400"],
-  subsets: ["emoji"],
-
-  display: "swap",
-  variable: "--font-noto-emoji",
-});
-export const archivoBlack = Archivo_Black({
-  weight: ["400"],
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-archivo-black",
-});
 export const robotoMono = Roboto_Mono({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
@@ -47,7 +35,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${montserrat.variable} ${recursive.variable} ${archivoBlack.variable} ${robotoMono.variable} ${notoEmoji.variable}`}
+      className={`${montserrat.variable} ${recursive.variable}  ${robotoMono.variable}  `}
     >
       <body>{children}</body>
     </html>

@@ -2,55 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --casi-blanco: hsl(0, 0%, 99%);
-  --casi-blanco90: hsl(0, 0%, 90%);
-  --casi-blanco85: hsl(0, 0%, 85%);
-  --casi-blanco65: hsl(0, 0%, 65%);
-
-  --casi-negro: hsl(0, 0%, 5%);
-  --gris-oscuro: hsl(0, 0%, 40%);
-  --gris-claro: hsl(0, 0%, 80%);
-  --gris20: hsl(0, 0%, 20%);
-
-  --fucsia1: hsl(323, 100%, 39%);
-}
-
-/* TODO: estas variables creo que también hay que ponerlas en el root
-por si no aparece el data theme light por defecto, o no? */
-
-body[data-theme="light"] {
-  --body-background: var(--casi-blanco);
-  --body-color: var(--casi-negro);
-
-  --main-area-border: var(--gris-claro);
-  --boton-encontrar-borde: var(--casi-negro);
-  --boton-hover: var(--casi-blanco90);
-  --footer-borde: var(--gris-oscuro);
-
-  --invert-icon: 0;
-  --invert-emoji: 1;
-
-  --resaltado: var(--gris-claro);
-  --resaltado-background: var(--fucsia1);
-}
-
-body[data-theme="dark"] {
-  --body-background: var(--casi-negro);
-  --body-color: var(--casi-blanco85);
-
-  --main-area-border: var(--gris20);
-  --boton-encontrar-borde: var(--casi-blanco65);
-  --boton-hover: var(--gris20);
-
-  --footer-borde: var(--gris-oscuro);
-  --invert-icon: 80%;
-  --invert-emoji: 0%;
-
-  --resaltado: var(--gris20);
-  --resaltado-background: var(--fucsia1);
-}
-
 html,
 body {
   box-sizing: border-box;
@@ -60,10 +11,6 @@ body {
   display: grid;
   place-items: center;
   margin: 0.5rem;
-  /*   border: 1px solid blue;
- */
-  /*   min-width: 250px;
- */
   background-color: var(--body-background);
   color: var(--body-color);
 }
@@ -78,7 +25,6 @@ body {
     "footer";
 
   min-height: calc(100vh - 4rem);
-
   margin: 0.5rem 1rem;
 }
 
@@ -380,8 +326,7 @@ p:hover .resaltado {
   }
   .header > h2 {
     margin-bottom: 0.2rem;
-        font-size: 2.2rem;
-
+    font-size: 2.2rem;
   }
   .header > .hola {
     font-size: 3rem;
