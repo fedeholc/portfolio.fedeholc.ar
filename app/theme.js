@@ -1,13 +1,16 @@
+//Next.js
 "use client";
 import { useState, useEffect } from "react";
-import "./globals.css";
+//icons
 import Image from "next/image";
 import moonIcon from "../public/moon-filled.png";
 import brightIcon from "../public/brightness-up.png";
+//styles
+import navbar from "./components/navbar.module.css";
+import "./globals.css";
 
 export default function Theme() {
   const [theme, setTheme] = useState("light");
-
   const handleChangeTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
@@ -18,10 +21,10 @@ export default function Theme() {
 
   return (
     <div>
-      <button className="theme-toggler" onClick={handleChangeTheme}>
+      <button className={navbar.theme__toggler} onClick={handleChangeTheme}>
         {theme === "light" && (
           <Image
-            className="imagen-icon"
+            className={navbar.icon}
             alt="moon icon"
             width="40"
             height="40"
@@ -30,7 +33,7 @@ export default function Theme() {
         )}
         {theme === "dark" && (
           <Image
-            className="imagen-icon"
+            className={navbar.icon}
             alt="moon icon"
             width="40"
             height="40"

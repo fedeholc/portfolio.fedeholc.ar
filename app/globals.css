@@ -81,20 +81,9 @@ h2:hover .smile {
   margin-bottom: 0.6rem;
 }
 
- 
-
- 
-
-.imagen-icon {
-  width: 15px;
-  height: 15px;
-  filter: invert(var(--invert-icon));
-}
 .boton-icon {
   filter: invert(var(--invert-icon));
 }
-
-
 
 .boton-encontrar {
   border: 2px solid var(--boton-encontrar-borde);
@@ -117,25 +106,6 @@ h2:hover .smile {
   align-items: baseline;
 }
 
-footer {
-  font-family: var(--font-roboto-mono);
-  font-size: 0.7rem;
-  padding: 0.2rem;
-  border: 1px dashed var(--footer-borde);
-  display: grid;
-  justify-content: center;
-  place-self: center;
-  width: 100%;
-}
-
-footer > div {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-  align-items: center;
-  justify-content: center;
-}
-
 .emoji {
   font-family: var(--font-montserrat);
   filter: drop-shadow(0px 1px 1px) grayscale(1) contrast(1.5) brightness(1);
@@ -148,10 +118,6 @@ p:hover .emoji {
 
 p:focus-visible .emoji {
   filter: saturate(0.7) drop-shadow(0px 1px 1px);
-}
-
-.footer__emoji {
-  filter: grayscale(1) invert(var(--invert-emoji));
 }
 
 .resaltado {
@@ -170,16 +136,6 @@ p:hover .resaltado {
 }
 .filter-bw-ct2 {
   filter: grayscale(1) brightness(0.8) contrast(2);
-}
-
-.footer-icon {
-  width: 9px;
-  height: 12px;
-  filter: invert(var(--invert-icon));
-}
-
-.theme-toggler {
-  height: 25px;
 }
 
 .image-wrap {

@@ -5,7 +5,7 @@ import "./styles/themes-colors.css";
 import { Roboto_Mono, Recursive, Montserrat } from "next/font/google";
 //components
 import NavBar from "./components/navbar";
-import Footer from "./footer";
+import Footer from "./components/footer";
 
 export const robotoMono = Roboto_Mono({
   weight: ["400", "500", "600", "700"],
