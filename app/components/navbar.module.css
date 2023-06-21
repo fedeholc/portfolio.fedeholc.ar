@@ -1,0 +1,25 @@
+.container {
+  grid-area: nav;
+  justify-self: end;
+  margin-bottom: 0.7rem;
+
+  font-size: 1rem;
+  font-family: var(--font-montserrat);
+
+  font-weight: 500;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.separator {
+  color: rgb(163, 163, 163);
+  font-weight: 400;
+  font-size: 0.6rem;
+}

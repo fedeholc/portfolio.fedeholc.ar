@@ -15,7 +15,7 @@ body {
   color: var(--body-color);
 }
 
-.main__grid {
+.layout__grid {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
@@ -81,25 +81,9 @@ h2:hover .smile {
   margin-bottom: 0.6rem;
 }
 
-.navbar {
-  grid-area: nav;
-  justify-self: end;
-  margin-bottom: 0.7rem;
+ 
 
-  font-size: 1rem;
-  font-family: var(--font-montserrat);
-
-  font-weight: 500;
-}
-
-.navbar-icons {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0.5rem;
-}
+ 
 
 .imagen-icon {
   width: 15px;
@@ -110,11 +94,7 @@ h2:hover .smile {
   filter: invert(var(--invert-icon));
 }
 
-.separador {
-  color: rgb(163, 163, 163);
-  font-weight: 400;
-  font-size: 0.6rem;
-}
+
 
 .boton-encontrar {
   border: 2px solid var(--boton-encontrar-borde);
@@ -135,11 +115,6 @@ h2:hover .smile {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-}
-
-ul {
-  list-style-type: disc;
-  list-style-position: inside;
 }
 
 footer {

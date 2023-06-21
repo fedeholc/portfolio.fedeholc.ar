@@ -1,7 +1,11 @@
+//styles
 import "./globals.css";
-import "./styles/themes.css"
-import { Roboto_Mono } from "next/font/google";
-import { Recursive, Montserrat } from "next/font/google";
+import "./styles/themes-colors.css";
+//fonts
+import { Roboto_Mono, Recursive, Montserrat } from "next/font/google";
+//components
+import NavBar from "./components/navbar";
+import Footer from "./footer";
 
 export const robotoMono = Roboto_Mono({
   weight: ["400", "500", "600", "700"],
@@ -37,7 +41,11 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${montserrat.variable} ${recursive.variable}  ${robotoMono.variable}  `}
     >
-      <body>{children}</body>
+      <body className="layout__grid">
+        <NavBar></NavBar>
+        {children}
+        <Footer></Footer>
+      </body>
     </html>
   );
 }
