@@ -11,7 +11,7 @@ import mailIcon from "../public/mail.png";
 import instagramIcon from "../public/brand-instagram.png";
 import linkedinIcon from "../public/brand-linkedin.png";
 //components
-import Fotos from "./fotos";
+import Fotos from "./components/fotos";
 
 export default function Home() {
   return (

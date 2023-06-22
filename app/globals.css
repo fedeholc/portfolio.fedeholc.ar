@@ -50,7 +50,7 @@ body {
   font-size: 3rem;
   font-weight: 600;
   margin: 0rem 0rem 1.5rem 0rem;
-   line-height: 3.5rem;
+  line-height: 3.5rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -142,42 +142,7 @@ p:hover .resaltado {
   color: white;
 }
 
- 
-
-.image-wrap {
-  overflow: hidden;
-  position: relative;
-  background-color: black;
-}
-
-.image-wrap img {
-  animation: kenburns 50s ease-in-out infinite;
-}
-
-
-@keyframes kenburns {
-  0% {
-    opacity: 10%;
-    transform: scale(0.95);
-  }
-
-  10% {
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  50% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(0.95);
-    opacity: 0%;
-  }
-}
-
-
+/** solo para teléfonos **/
 @media (hover: none) {
   .emoji {
     animation: colores 30s forwards;
@@ -223,8 +188,7 @@ p:hover .resaltado {
   }
 }
 
-/*** media queries ***/
-
+/*** media queries pantallas/ventanas pequeñas ***/
 @media only screen and (max-width: 768px) {
   html {
     font-size: 14px;
@@ -237,7 +201,7 @@ p:hover .resaltado {
   .article__container {
     padding: 2rem;
   }
-  
+
   .main-container {
     display: flex;
     flex-direction: column-reverse;
