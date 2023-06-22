@@ -50,8 +50,10 @@ body {
   font-size: 3rem;
   font-weight: 600;
   margin: 0rem 0rem 1.5rem 0rem;
-  display: block;
-  line-height: 3.5rem;
+   line-height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .heading:hover .heading__smile {
   color: var(--fucsia1);
@@ -128,7 +130,7 @@ p:focus-visible .emoji {
   filter: saturate(0.7) drop-shadow(0px 1px 1px);
 }
 
-/*** resañtadp ***/
+/*** resaltado ***/
 .resaltado {
   background-color: var(--resaltado);
   border-radius: 5px;
@@ -143,7 +145,6 @@ p:hover .resaltado {
  
 
 .image-wrap {
- 
   overflow: hidden;
   position: relative;
   background-color: black;
@@ -152,6 +153,7 @@ p:hover .resaltado {
 .image-wrap img {
   animation: kenburns 50s ease-in-out infinite;
 }
+
 
 @keyframes kenburns {
   0% {
@@ -175,11 +177,6 @@ p:hover .resaltado {
   }
 }
 
-.heading {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
 
 @media (hover: none) {
   .emoji {
@@ -225,6 +222,8 @@ p:hover .resaltado {
     }
   }
 }
+
+/*** media queries ***/
 
 @media only screen and (max-width: 768px) {
   html {
