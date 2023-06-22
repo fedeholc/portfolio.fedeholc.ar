@@ -16,13 +16,13 @@ import Fotos from "./fotos";
 export default function Home() {
   return (
     <main>
-      <div className="main-area">
-        <div className="header">
-          <h2 className="hola">
-            ¡Hola!&nbsp;<span className="smile">=)</span>&nbsp;
+      <article className="main-area">
+        <hgroup className="heading">
+          <h2 className="heading__title1">
+            ¡Hola!&nbsp;<span className="heading__smile">=)</span>&nbsp;
           </h2>
-          <h2>¿Cómo andás?</h2>
-        </div>
+          <h2 className="heading__title2">¿Cómo andás?</h2>
+        </hgroup>
         <div className="main-container">
           <div>
             <p>
@@ -34,7 +34,7 @@ export default function Home() {
             </p>
             <p>
               De chico amaba jugar al <span className="emoji">👾</span> space
-              invaders <span className="emoji">👾</span> en la XT286 de mi papá,
+              invaders <span className="emoji">👾</span> en la IBM PC/XT de mi papá,
               y di mis primeros pasos en programación con Logo&nbsp;
               <span className="emoji">🐢</span>. Durante mi último año de
               escuela secundaria (técnica en computación) conseguí trabajo como
@@ -76,13 +76,13 @@ export default function Home() {
             <span className="emoji">🤝</span>
           </p>
         </div>
-        <div className="flex flex-wrap flex-row place-items-baseline mt-8">
+        <div className="content-links">
           <span>Podés ver mis&nbsp;</span>
           <span>
-            <button className="boton-encontrar">
+            <button className="link_button">
               <div>
                 <Image
-                  className="boton-icon"
+                  className="link_button__icon"
                   alt="projects icon"
                   width="13"
                   height="13"
@@ -95,10 +95,10 @@ export default function Home() {
           </span>
           <span>descargar mi&nbsp;</span>
           <span>
-            <button className="boton-encontrar">
+            <button className="link_button">
               <div>
                 <Image
-                  className="boton-icon"
+                  className="link_button__icon"
                   alt="paper clip icon"
                   width="12"
                   height="12"
@@ -111,10 +111,10 @@ export default function Home() {
           </span>
           <span>
             <span>leer&nbsp;</span>
-            <button className="boton-encontrar">
+            <button className="link_button">
               <div>
                 <Image
-                  className="boton-icon"
+                  className="link_button__icon"
                   alt="blog icon"
                   width="10"
                   height="10"
@@ -127,10 +127,10 @@ export default function Home() {
           </span>
           <span>
             <span>encontrarme en:&nbsp;</span>
-            <button className="boton-encontrar">
+            <button className="link_button">
               <div>
                 <Image
-                  className="boton-icon"
+                  className="link_button__icon"
                   alt="github icon"
                   width="12"
                   height="12"
@@ -142,10 +142,10 @@ export default function Home() {
             &nbsp;
           </span>
           <span>
-            <button className="boton-encontrar">
+            <button className="link_button">
               <div>
                 <Image
-                  className="boton-icon"
+                  className="link_button__icon"
                   alt="linkedin icon"
                   width="14"
                   height="14"
@@ -157,10 +157,10 @@ export default function Home() {
             &nbsp;
           </span>
           <span>
-            <button className="boton-encontrar">
+            <button className="link_button">
               <div>
                 <Image
-                  className="boton-icon"
+                  className="link_button__icon"
                   alt="instagram icon"
                   width="14"
                   height="14"
@@ -173,10 +173,10 @@ export default function Home() {
           </span>
           <span>
             <span>o escribirme a:&nbsp;</span>
-            <button className="boton-encontrar">
+            <button className="link_button">
               <div>
                 <Image
-                  className="boton-icon"
+                  className="link_button__icon"
                   alt="mail icon"
                   width="14"
                   height="14"
@@ -188,7 +188,7 @@ export default function Home() {
             .
           </span>
         </div>
-      </div>
+      </article>
     </main>
   );
 }

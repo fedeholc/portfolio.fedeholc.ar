@@ -17,7 +17,7 @@ body[data-theme="light"] {
   --body-color: var(--casi-negro);
 
   --main-area-border: var(--gris-claro);
-  --boton-encontrar-borde: var(--casi-negro);
+  --link_button-borde: var(--casi-negro);
   --boton-hover: var(--casi-blanco90);
   --footer-borde: var(--gris-oscuro);
 
@@ -33,7 +33,7 @@ body[data-theme="dark"] {
   --body-color: var(--casi-blanco85);
 
   --main-area-border: var(--gris20);
-  --boton-encontrar-borde: var(--casi-blanco65);
+  --link_button-borde: var(--casi-blanco65);
   --boton-hover: var(--gris20);
 
   --footer-borde: var(--gris-oscuro);
