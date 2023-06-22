@@ -15,8 +15,7 @@ import Fotos from "./fotos";
 
 export default function Home() {
   return (
-    <main>
-      <article className="main-area">
+       <article className="article__container">
         <hgroup className="heading">
           <h2 className="heading__title1">
             ¡Hola!&nbsp;<span className="heading__smile">=)</span>&nbsp;
@@ -189,6 +188,5 @@ export default function Home() {
           </span>
         </div>
       </article>
-    </main>
-  );
+   );
 }

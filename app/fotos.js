@@ -11,7 +11,7 @@ export default function Fotos() {
         <div className="image-wrap rounded-full ">
           <Image
             alt="Foto de la cara de federico holc"
-            className="fotosperfil border-2 border-black"
+            className="fotosperfil rounded-full border-2 border-black"
             src="/ff4.jpg"
             height="200"
             width="200"

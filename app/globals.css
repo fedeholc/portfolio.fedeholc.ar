@@ -13,27 +13,26 @@ body {
   margin: 0.5rem;
   background-color: var(--body-background);
   color: var(--body-color);
-
 }
 
+/** grid on layout.js, contains navbar, main, and footer **/
 .layout__grid {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   grid-template-areas:
     "nav"
-    "main"
+    "article"
     "footer";
   margin: 0.5rem 1rem;
-
 }
 
-.main-area {
+/** container on page.js contains heading, main **/
+.article__container {
   font-size: 1.2rem;
   font-family: var(--font-montserrat);
   font-weight: 500;
   line-height: 1.9rem;
-
   border: 2px solid var(--main-area-border);
   border-radius: 0px;
   box-shadow: 2px 2px 0px 0 var(--main-area-border);
@@ -42,7 +41,26 @@ body {
   padding: 3rem 6rem 3rem 4rem;
   max-width: 1000px;
 }
+.article__container p {
+  margin-bottom: 0.6rem;
+}
 
+/*** heading ***/
+.heading {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0rem 0rem 1.5rem 0rem;
+  display: block;
+  line-height: 3.5rem;
+}
+.heading:hover .heading__smile {
+  color: var(--fucsia1);
+}
+.heading__smile {
+  color: hsl(0, 0%, 40%);
+}
+
+/** main container inside article on page.js **/
 .main-container {
   display: flex;
   flex-direction: row;
@@ -50,34 +68,7 @@ body {
   gap: 3rem;
 }
 
-.foto-container img {
-  min-width: 200px;
-}
-
-.foto-container {
-  margin-top: 0.5rem;
-}
-
-h2 {
-  font-size: 3rem;
-  font-weight: 600;
-  margin: 0.5rem 0rem 1.5rem 0rem;
-  display: block;
-}
-
-h2:hover .heading__smile {
-  color: var(--fucsia1);
-}
-
-.heading__smile {
-  color: hsl(0, 0%, 40%);
-}
-
-.main-area p {
-  margin-bottom: 0.6rem;
-}
-
-/* * * content-links section * * * * * * * * * * * * * * */
+/*** content-links section ***/
 .content-links {
   display: flex;
   flex-direction: row;
@@ -86,9 +77,7 @@ h2:hover .heading__smile {
   margin-top: 2rem;
 }
 
-/* - - - */
-
-/* * * link buttons * * * * * * * * * * * * * * * * * * */
+/*** link buttons ***/
 .link_button {
   border: 2px solid var(--link_button-borde);
   border-radius: 0px;
@@ -99,61 +88,62 @@ h2:hover .heading__smile {
   margin: 0.3rem 0.3rem 0.3rem 0rem;
   line-height: 1.5rem;
 }
-
 .link_button:hover {
   background-color: var(--boton-hover);
 }
-
 .link_button__icon {
   filter: invert(var(--invert-icon));
 }
-
-.link_button>div {
+.link_button > div {
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
 
-/* - - - */
+/*** foto ***/
+.foto-container {
+  margin-top: 0.5rem;
+}
+.foto-container img {
+  min-width: 200px;
+}
 
+/*** emojis ***/
 .emoji {
   font-family: var(--font-montserrat);
   filter: drop-shadow(0px 1px 1px) grayscale(1) contrast(1.5) brightness(1);
   color: rgb(37, 37, 37);
   font-weight: 500;
 }
-
+/* cuando se pasa el mouse sobre el párrafo los emojis de
+ese párrafo se ponen de color */
 p:hover .emoji {
   filter: saturate(0.7) drop-shadow(0px 1px 1px);
 }
 
+/* todo:  este era para el telefono, revisar si es necesario 
+porque creo que quedo reemplazado con lo que puse en las
+mediqueries */
 p:focus-visible .emoji {
   filter: saturate(0.7) drop-shadow(0px 1px 1px);
 }
 
+/*** resañtadp ***/
 .resaltado {
   background-color: var(--resaltado);
   border-radius: 5px;
   padding: 0rem 0.3rem;
   font-weight: 600;
 }
-
 p:hover .resaltado {
   background-color: var(--resaltado-background);
   color: white;
 }
 
-.filter-bw {
-  filter: grayscale(1);
-}
-
-.filter-bw-ct2 {
-  filter: grayscale(1) brightness(0.8) contrast(2);
-}
+ 
 
 .image-wrap {
-  /*   margin: 0 auto;
- */
+ 
   overflow: hidden;
   position: relative;
   background-color: black;
@@ -227,7 +217,8 @@ p:hover .resaltado {
   }
 
   @keyframes heading__smile {
-    0% {}
+    0% {
+    }
 
     100% {
       color: var(--fucsia1);
@@ -244,8 +235,10 @@ p:hover .resaltado {
     margin: 0.2rem;
   }
 
-
-
+  .article__container {
+    padding: 2rem;
+  }
+  
   .main-container {
     display: flex;
     flex-direction: column-reverse;
@@ -255,14 +248,9 @@ p:hover .resaltado {
     gap: 1.5rem;
   }
 
-  .main-area {
-    padding: 2rem;
-  }
-
   .foto-container {
     margin-left: 0px;
   }
-
 
   /* * * heading * * * * * * * * * * * */
   .heading {
@@ -272,13 +260,12 @@ p:hover .resaltado {
     align-items: flex-start;
     line-height: 3rem;
     font-size: 3rem;
-  }
-
-  .heading>.heading__title1 {
     margin: 0px;
   }
-
-  .heading>.heading__title2 {
+  .heading > .heading__title1 {
+    margin: 0px;
+  }
+  .heading > .heading__title2 {
     margin-bottom: 0.2rem;
     font-size: 2.2rem;
   }
