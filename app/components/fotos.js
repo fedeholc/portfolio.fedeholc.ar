@@ -12,7 +12,7 @@ export default function Fotos() {
         <div className={fotos.fotoperfil__container}>
           <Image
             alt="Foto de la cara de federico holc"
-            className={fotos.fotoperfil__foto}
+            className={fotos.fotoperfil__foto_animada}
             src="/ff4.jpg"
             height="200"
             width="200"

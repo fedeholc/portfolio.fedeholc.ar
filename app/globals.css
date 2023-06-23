@@ -142,7 +142,8 @@ p:hover .resaltado {
   color: white;
 }
 
-/** solo para teléfonos **/
+/** solo para teléfonos: pone los colores como animación **/
+/** porque no es posible hacerlo con :hover **/
 @media (hover: none) {
   .emoji {
     animation: colores 30s forwards;
@@ -177,7 +178,6 @@ p:hover .resaltado {
   .heading__smile {
     animation: heading__smile 10s forwards;
   }
-
   @keyframes heading__smile {
     0% {
     }
@@ -215,7 +215,6 @@ p:hover .resaltado {
     margin-left: 0px;
   }
 
-  /* * * heading * * * * * * * * * * * */
   .heading {
     display: flex;
     flex-direction: column;

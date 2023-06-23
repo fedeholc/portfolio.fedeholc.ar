@@ -10,8 +10,10 @@
   border-radius: 50%;
 }
 
-.fotoperfil__container img {
-  animation: kenburns 50s ease-in-out infinite;
+.fotoperfil__foto_animada {
+  border: 2px solid black;
+  border-radius: 50%;
+  animation: kenburns 30s ease-in-out infinite;
 }
 
 @keyframes kenburns {
@@ -26,7 +28,7 @@
   }
 
   80% {
-    transform: scale(1.1);
+    transform: scale(1);
     opacity: 1;
   }
 
