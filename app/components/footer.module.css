@@ -1,0 +1,17 @@
+.container {
+  font-family: var(--font-roboto-mono);
+  font-size: 0.7rem;
+  padding: 0.2rem;
+  border: 1px dashed var(--footer-borde);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.emoji {
+  filter: grayscale(1) invert(var(--invert-emoji));
+}

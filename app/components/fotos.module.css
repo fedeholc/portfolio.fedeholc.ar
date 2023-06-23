@@ -1,0 +1,39 @@
+.fotoperfil__container {
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+
+.fotoperfil__foto {
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.fotoperfil__foto_animada {
+  border: 2px solid black;
+  border-radius: 50%;
+  animation: kenburns 30s ease-in-out infinite;
+}
+
+@keyframes kenburns {
+  0% {
+    opacity: 10%;
+    transform: scale(0.95);
+  }
+
+  10% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  80% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.95);
+    opacity: 0%;
+  }
+}

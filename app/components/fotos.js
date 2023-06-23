@@ -1,17 +1,18 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import "./globals.css";
+import "../globals.css";
+import fotos from "./fotos.module.css";
 
 export default function Fotos() {
   const [foto1, setFoto1] = useState(true);
   return (
     <div>
       {foto1 && (
-        <div className="image-wrap rounded-full ">
+        <div className={fotos.fotoperfil__container}>
           <Image
             alt="Foto de la cara de federico holc"
-            className="fotosperfil border-2 border-black"
+            className={fotos.fotoperfil__foto_animada}
             src="/ff4.jpg"
             height="200"
             width="200"
@@ -23,7 +24,7 @@ export default function Fotos() {
       {!foto1 && (
         <Image
           alt="Foto de la cara de federico holc"
-          className="fotosperfil rounded-full border-2 border-black foto2"
+          className={fotos.fotoperfil__foto}
           src="/fp.jpg"
           height="200"
           width="200"

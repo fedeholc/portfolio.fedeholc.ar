@@ -2,55 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --casi-blanco: hsl(0, 0%, 99%);
-  --casi-blanco90: hsl(0, 0%, 90%);
-  --casi-blanco85: hsl(0, 0%, 85%);
-  --casi-blanco65: hsl(0, 0%, 65%);
-
-  --casi-negro: hsl(0, 0%, 5%);
-  --gris-oscuro: hsl(0, 0%, 40%);
-  --gris-claro: hsl(0, 0%, 80%);
-  --gris20: hsl(0, 0%, 20%);
-
-  --fucsia1: hsl(323, 100%, 39%);
-}
-
-/* TODO: estas variables creo que también hay que ponerlas en el root
-por si no aparece el data theme light por defecto, o no? */
-
-body[data-theme="light"] {
-  --body-background: var(--casi-blanco);
-  --body-color: var(--casi-negro);
-
-  --main-area-border: var(--gris-claro);
-  --boton-encontrar-borde: var(--casi-negro);
-  --boton-hover: var(--casi-blanco90);
-  --footer-borde: var(--gris-oscuro);
-
-  --invert-icon: 0;
-  --invert-emoji: 1;
-
-  --resaltado: var(--gris-claro);
-  --resaltado-background: var(--fucsia1);
-}
-
-body[data-theme="dark"] {
-  --body-background: var(--casi-negro);
-  --body-color: var(--casi-blanco85);
-
-  --main-area-border: var(--gris20);
-  --boton-encontrar-borde: var(--casi-blanco65);
-  --boton-hover: var(--gris20);
-
-  --footer-borde: var(--gris-oscuro);
-  --invert-icon: 80%;
-  --invert-emoji: 0%;
-
-  --resaltado: var(--gris20);
-  --resaltado-background: var(--fucsia1);
-}
-
 html,
 body {
   box-sizing: border-box;
@@ -60,44 +11,58 @@ body {
   display: grid;
   place-items: center;
   margin: 0.5rem;
-  /*   border: 1px solid blue;
- */
-  /*   min-width: 250px;
- */
   background-color: var(--body-background);
   color: var(--body-color);
 }
 
-.main__grid {
+/** grid on layout.js, contains navbar, main, and footer **/
+.layout__grid {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   grid-template-areas:
     "nav"
-    "main"
+    "article"
     "footer";
-
-  min-height: calc(100vh - 4rem);
-
   margin: 0.5rem 1rem;
 }
 
-.main-area {
+/** container on page.js contains heading, main **/
+.article__container {
   font-size: 1.2rem;
   font-family: var(--font-montserrat);
   font-weight: 500;
   line-height: 1.9rem;
-
   border: 2px solid var(--main-area-border);
   border-radius: 0px;
   box-shadow: 2px 2px 0px 0 var(--main-area-border);
   margin-bottom: 1rem;
   margin-top: 0.3rem;
-  max-width: 1000px;
-
   padding: 3rem 6rem 3rem 4rem;
+  max-width: 1000px;
+}
+.article__container p {
+  margin-bottom: 0.6rem;
 }
 
+/*** heading ***/
+.heading {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0rem 0rem 1.5rem 0rem;
+  line-height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.heading:hover .heading__smile {
+  color: var(--fucsia1);
+}
+.heading__smile {
+  color: hsl(0, 0%, 40%);
+}
+
+/** main container inside article on page.js **/
 .main-container {
   display: flex;
   flex-direction: row;
@@ -105,134 +70,67 @@ body {
   gap: 3rem;
 }
 
-.row-reverse {
-  flex-direction: row-reverse;
-  gap: 2rem;
-}
-
-.foto-container img {
-  min-width: 200px;
-}
-
-.foto-container {
-  margin-top: 0.5rem;
-}
-
-h2 {
-  font-size: 3rem;
-  font-weight: 600;
-  margin: 0.5rem 0rem 1.5rem 0rem;
-  display: block;
-}
-
-h2:hover .smile {
-  color: var(--fucsia1);
-}
-.smile {
-  color: hsl(0, 0%, 40%);
-}
-.main-area p {
-  margin-bottom: 0.6rem;
-}
-
-.navbar {
-  grid-area: nav;
-  justify-self: end;
-  margin-bottom: 0.7rem;
-
-  font-size: 1rem;
-  font-family: var(--font-montserrat);
-
-  font-weight: 500;
-}
-
-.navbar-icons {
+/*** content-links section ***/
+.content-links {
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0.5rem;
+  flex-wrap: wrap;
+  place-items: baseline;
+  margin-top: 2rem;
 }
 
-.imagen-icon {
-  width: 15px;
-  height: 15px;
-  filter: invert(var(--invert-icon));
-}
-.boton-icon {
-  filter: invert(var(--invert-icon));
-}
-
-.separador {
-  color: rgb(163, 163, 163);
-  font-weight: 400;
-  font-size: 0.6rem;
-}
-
-.boton-encontrar {
-  border: 2px solid var(--boton-encontrar-borde);
+/*** link buttons ***/
+.link_button {
+  border: 2px solid var(--link_button-borde);
   border-radius: 0px;
-  box-shadow: 2px 2px 0px 0 var(--boton-encontrar-borde);
+  box-shadow: 2px 2px 0px 0 var(--link_button-borde);
   padding: 0.2rem 0.5rem;
   border-radius: 5px;
   font-size: 1.1rem;
   margin: 0.3rem 0.3rem 0.3rem 0rem;
   line-height: 1.5rem;
 }
-
-.boton-encontrar:hover {
+.link_button:hover {
   background-color: var(--boton-hover);
 }
-
-.boton-encontrar > div {
+.link_button__icon {
+  filter: invert(var(--invert-icon));
+}
+.link_button > div {
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
 
-ul {
-  list-style-type: disc;
-  list-style-position: inside;
+/*** foto ***/
+.foto-container {
+  margin-top: 0.5rem;
+}
+.foto-container img {
+  min-width: 200px;
 }
 
-footer {
-  font-family: var(--font-roboto-mono);
-  font-size: 0.7rem;
-  padding: 0.2rem;
-  border: 1px dashed var(--footer-borde);
-  display: grid;
-  justify-content: center;
-  place-self: center;
-  width: 100%;
-}
-
-footer > div {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-  align-items: center;
-  justify-content: center;
-}
-
+/*** emojis ***/
 .emoji {
   font-family: var(--font-montserrat);
   filter: drop-shadow(0px 1px 1px) grayscale(1) contrast(1.5) brightness(1);
   color: rgb(37, 37, 37);
   font-weight: 500;
 }
+/* cuando se pasa el mouse sobre el párrafo los emojis de
+ese párrafo se ponen de color */
 p:hover .emoji {
   filter: saturate(0.7) drop-shadow(0px 1px 1px);
 }
 
+/* todo:  este era para el telefono, revisar si es necesario 
+porque creo que quedo reemplazado con lo que puse en las
+mediqueries */
 p:focus-visible .emoji {
   filter: saturate(0.7) drop-shadow(0px 1px 1px);
 }
 
-.footer__emoji {
-  filter: grayscale(1) invert(var(--invert-emoji));
-}
-
+/*** resaltado ***/
 .resaltado {
   background-color: var(--resaltado);
   border-radius: 5px;
@@ -244,62 +142,8 @@ p:hover .resaltado {
   color: white;
 }
 
-.filter-bw {
-  filter: grayscale(1);
-}
-.filter-bw-ct2 {
-  filter: grayscale(1) brightness(0.8) contrast(2);
-}
-
-.footer-icon {
-  width: 9px;
-  height: 12px;
-  filter: invert(var(--invert-icon));
-}
-
-.theme-toggler {
-  height: 25px;
-}
-
-.image-wrap {
-  /*   margin: 0 auto;
- */
-  overflow: hidden;
-  position: relative;
-  background-color: black;
-}
-
-.image-wrap img {
-  animation: kenburns 50s ease-in-out infinite;
-}
-
-@keyframes kenburns {
-  0% {
-    opacity: 10%;
-    transform: scale(0.95);
-  }
-
-  10% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(0.95);
-    opacity: 0%;
-  }
-}
-
-.header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
+/** solo para teléfonos: pone los colores como animación **/
+/** porque no es posible hacerlo con :hover **/
 @media (hover: none) {
   .emoji {
     animation: colores 30s forwards;
@@ -318,6 +162,7 @@ p:hover .resaltado {
   .resaltado {
     animation: resaltado 10s forwards;
   }
+
   @keyframes resaltado {
     0% {
       color: white;
@@ -330,10 +175,10 @@ p:hover .resaltado {
     }
   }
 
-  .smile {
-    animation: smile 10s forwards;
+  .heading__smile {
+    animation: heading__smile 10s forwards;
   }
-  @keyframes smile {
+  @keyframes heading__smile {
     0% {
     }
 
@@ -342,6 +187,8 @@ p:hover .resaltado {
     }
   }
 }
+
+/*** media queries pantallas/ventanas pequeñas ***/
 @media only screen and (max-width: 768px) {
   html {
     font-size: 14px;
@@ -351,10 +198,10 @@ p:hover .resaltado {
     margin: 0.2rem;
   }
 
-  h2 {
-    line-height: 3rem;
-    font-size: 3rem;
+  .article__container {
+    padding: 2rem;
   }
+
   .main-container {
     display: flex;
     flex-direction: column-reverse;
@@ -364,26 +211,24 @@ p:hover .resaltado {
     gap: 1.5rem;
   }
 
-  .main-area {
-    padding: 2rem;
-  }
-
   .foto-container {
     margin-left: 0px;
   }
 
-  .header {
+  .heading {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
-  }
-  .header > h2 {
-    margin-bottom: 0.2rem;
-        font-size: 2.2rem;
-
-  }
-  .header > .hola {
+    line-height: 3rem;
     font-size: 3rem;
+    margin: 0px;
+  }
+  .heading > .heading__title1 {
+    margin: 0px;
+  }
+  .heading > .heading__title2 {
+    margin-bottom: 0.2rem;
+    font-size: 2.2rem;
   }
 }

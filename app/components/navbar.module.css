@@ -1,0 +1,29 @@
+ .container {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-end;
+   margin-top: 0.5rem;
+   margin-bottom: 0.7rem;
+   gap: 0.5rem;
+   font-size: 1rem;
+   font-family: var(--font-montserrat);
+   font-weight: 500;
+ }
+
+ .separator {
+   color: rgb(163, 163, 163);
+   font-weight: 400;
+   font-size: 0.6rem;
+ }
+
+ .icon {
+   width: 15px;
+   height: 15px;
+   filter: invert(var(--invert-icon));
+ }
+
+ .theme__toggler {
+   height: 25px;
+ }
