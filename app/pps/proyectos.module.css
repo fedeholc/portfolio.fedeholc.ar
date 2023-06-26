@@ -1,0 +1,44 @@
+.columns1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  max-width: 1000px;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+.columns2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  max-width: 1000px;
+  gap: 4rem;
+  font-size: 1.2rem;
+}
+
+.proyecto {
+  max-width: 1000px;
+}
+.proyecto p {
+  line-height: 1.8rem;
+}
+
+.proyecto h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.proyecto h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .columns2 {
+    grid-template-columns: 1fr;
+  }
+}
+

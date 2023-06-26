@@ -26,6 +26,10 @@ body[data-theme="light"] {
 
   --resaltado: var(--gris-claro);
   --resaltado-background: var(--fucsia1);
+
+  --inicio-background: var(--gris-claro);
+  --inicio-texto: var(--casi-negro);
+  --inicio-filter: 1;
 }
 
 body[data-theme="dark"] {
@@ -42,4 +46,8 @@ body[data-theme="dark"] {
 
   --resaltado: var(--gris20);
   --resaltado-background: var(--fucsia1);
+
+  --inicio-background: var(--gris20);
+  --inicio-texto: var(--casi-blanco85);
+  --inicio-filter: 0;
 }

@@ -1,5 +1,6 @@
 //NextJS
 import Image from "next/image";
+import Link from "next/link";
 //styles
 import "./globals.css";
 //icons
@@ -86,7 +87,7 @@ export default function Home() {
                 height="13"
                 src={starIcon}
               ></Image>
-              &nbsp;Proyectos
+              &nbsp;<Link href="/pps">Proyectos</Link>
             </div>
           </button>
           ,&nbsp;
