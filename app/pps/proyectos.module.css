@@ -50,7 +50,9 @@
   line-height: 2rem;
 }
 
-
+.screenshot {
+  border: 2px solid var(--casi-negro);
+}
 
 .link_icon {
   display: flex;

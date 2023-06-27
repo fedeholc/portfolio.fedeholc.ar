@@ -3,6 +3,8 @@ import "../globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import externalLinkIcon from "../../public/external-link.png";
+import screenshot1 from "../../public/proyecto-nsp/Screenshot from 2023-06-26 20-42-07.png";
+
 function Testp() {
   return (
     <div className={proyectos.proyecto}>
@@ -18,7 +20,7 @@ function Testp() {
       </p>
       <div className={proyectos.columns2}>
         <div>
-          <h3>stack tecnológico</h3>
+          <h3>stack</h3>
           <ul>
             <li>Next.js</li>
             <li>React</li>
@@ -27,6 +29,7 @@ function Testp() {
             <li>HTML</li>
             <li>MarkDown</li>
             <li>Git / GitHub</li>
+            <li>Vercel</li>
           </ul>
         </div>
         <div>
@@ -61,6 +64,16 @@ function Testp() {
           </p>
         </div>
         <div>
+          <Link
+            target="_blank"
+            href="../public/proyecto-nsp/Screenshot from 2023-06-26 20-42-07.png"
+          >
+            <Image
+              className={proyectos.screenshot}
+              src={screenshot1}
+              alt="screenshot"
+            />
+          </Link>
           <p>
             Doesn't heaven to. Every fly all hath after. Light be void face
             gathered place evening seasons land you one waters fourth our make
@@ -94,6 +107,11 @@ function Testp() {
             morning earth our, from.
           </p>
         </div>
+        <Image
+          className={proyectos.screenshot}
+          src={screenshot1}
+          alt="screenshot"
+        />
         <div>
           <p>
             Doesn't heaven to. Every fly all hath after. Light be void face
