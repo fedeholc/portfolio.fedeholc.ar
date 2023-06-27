@@ -67,9 +67,9 @@ export default function Home() {
           profundamente la programación. Me encontré con que el desarrollo web
           era algo muy distinto al de hace 20 años&nbsp;
           <span className="emoji">🤯</span>, ¡y me atrapó!&nbsp;
-          <span className="emoji">🕸️</span> Desde ese momento, no paré de
-          aprender ni de programar. ¿Qué mejor entonces que hacerlo cada día,
-          ayudando a una organización a alcanzar sus objetivos? Ese es mi
+          <span className="emoji">🕸️</span> Desde ese momento no paré de
+          aprender ni de programar. ¿Qué mejor entonces que poder hacerlo cada
+          día, ayudando a una organización a alcanzar sus objetivos? Ese es mi
           próximo paso.&nbsp;
           <span className="emoji">🤝</span>
         </p>
