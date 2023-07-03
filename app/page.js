@@ -86,7 +86,7 @@ export default function Home() {
                 height="13"
                 src={starIcon}
               ></Image>
-              &nbsp;<Link href="/pps">Proyectos</Link>
+              &nbsp;<Link href="/proyectos">Proyectos</Link>
             </div>
           </button>
           ,&nbsp;
