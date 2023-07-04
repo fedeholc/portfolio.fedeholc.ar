@@ -42,6 +42,7 @@ body {
   padding: 3rem 6rem 3rem 4rem;
   max-width: 1000px;
 }
+
 .article__container p {
   margin-bottom: 0.6rem;
 }
@@ -56,9 +57,11 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .heading:hover .heading__smile {
   color: var(--fucsia1);
 }
+
 .heading__smile {
   color: hsl(0, 0%, 40%);
 }
@@ -83,7 +86,6 @@ body {
 /*** link buttons ***/
 .link_button {
   border: 2px solid var(--link_button-borde);
-  border-radius: 0px;
   box-shadow: 2px 2px 0px 0 var(--link_button-borde);
   padding: 0.2rem 0.5rem;
   border-radius: 5px;
@@ -91,13 +93,16 @@ body {
   margin: 0.3rem 0.3rem 0.3rem 0rem;
   line-height: 1.5rem;
 }
+
 .link_button:hover {
   background-color: var(--boton-hover);
 }
+
 .link_button__icon {
   filter: invert(var(--invert-icon));
 }
-.link_button > div {
+
+.link_button>div {
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -107,6 +112,7 @@ body {
 .foto-container {
   margin-top: 0.5rem;
 }
+
 .foto-container img {
   min-width: 200px;
 }
@@ -118,6 +124,7 @@ body {
   color: rgb(37, 37, 37);
   font-weight: 500;
 }
+
 /* cuando se pasa el mouse sobre el párrafo los emojis de
 ese párrafo se ponen de color */
 p:hover .emoji {
@@ -138,6 +145,7 @@ p:focus-visible .emoji {
   padding: 0rem 0.3rem;
   font-weight: 600;
 }
+
 p:hover .resaltado {
   background-color: var(--resaltado-background);
   color: white;
@@ -179,9 +187,9 @@ p:hover .resaltado {
   .heading__smile {
     animation: heading__smile 10s forwards;
   }
+
   @keyframes heading__smile {
-    0% {
-    }
+    0% {}
 
     100% {
       color: var(--fucsia1);
@@ -225,10 +233,12 @@ p:hover .resaltado {
     font-size: 3rem;
     margin: 0px;
   }
-  .heading > .heading__title1 {
+
+  .heading>.heading__title1 {
     margin: 0px;
   }
-  .heading > .heading__title2 {
+
+  .heading>.heading__title2 {
     margin-bottom: 0.2rem;
     font-size: 2.2rem;
   }

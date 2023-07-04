@@ -30,6 +30,8 @@ body[data-theme="light"] {
   --inicio-background: var(--gris-claro);
   --inicio-texto: var(--casi-negro);
   --inicio-filter: 1;
+
+  --screenshot-shadow: var(--gris-claro);
 }
 
 body[data-theme="dark"] {
@@ -50,4 +52,6 @@ body[data-theme="dark"] {
   --inicio-background: var(--gris20);
   --inicio-texto: var(--casi-blanco85);
   --inicio-filter: 0;
+
+    --screenshot-shadow: var(--casi-negro);
 }
