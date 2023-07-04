@@ -1,10 +1,9 @@
 import proyectos from "../proyectos.module.css";
-import "../../globals.css";
+import "@app/globals.css";
 import Link from "next/link";
 import Image from "next/image";
-import externalLinkIcon from "../../../public/external-link.png";
-
-import screenshot1 from "../../../public/proyecto-nsp/Screenshot from 2023-06-26 20-42-07.png";
+import externalLinkIcon from "@public/external-link.png";
+import screenshot1 from "@public/proyecto-nsp/Screenshot from 2023-06-26 20-42-07.png";
 
 export default function NSP() {
   const TEXTO = {
@@ -23,7 +22,7 @@ export default function NSP() {
     linkWebText: `nsp.fedeholc.ar`,
     linkWebHref: `https://nsp.fedeholc.ar/`,
     subtitulo1: `Objetivo`,
-    texto1: `Si hay algo que aprendí como docente es que junto a la práctica, intentar enseñar o explicar algo (y si es de modo escrito aún mejor) es un excelente camino para aprenderlo. Tan importante como el intercambio y el diálogo entre pares que genera un aprendizaje colectivo. Con esas intenciones decidí crear un blog, que es una gran tecnología para la difusión de conocimiento: a diferencia de los contenidos que circulan por plataformas cerradas, sus contenidos puede ser indexados por los buscadores, compartidos en redes sociales, y estar a disposición de quienes lo necesiten.`,
+    texto1: `Si hay algo que aprendí como docente es que -junto con la práctica-, intentar enseñar o explicar algo (y si es por escrito mejor) es un excelente camino para aprenderlo. También es importante el intercambio, que genera un aprendizaje colectivo. Por ello decidí crear un blog, que es una gran tecnología para la difusión de conocimiento: a diferencia de los contenidos que circulan por plataformas cerradas, sus contenidos puede ser indexados por los buscadores, compartidos en redes sociales, y estar a disposición de quienes lo necesiten.`,
     subtitulo2: `Características y funcionalidades`,
     texto2: (
       <ul>
@@ -75,7 +74,7 @@ export default function NSP() {
         </li>
         <li>
           Publicar el blog en un dominio propio me llevó también a aprender como
-          registrarlo, como manejar los DNS, y las configuraciones necesarias
+          registrarlo, cómo manejar los DNS, y las configuraciones necesarias
           para que pueda ser indexado por los buscadores.
         </li>
       </ul>
