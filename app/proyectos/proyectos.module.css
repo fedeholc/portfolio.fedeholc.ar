@@ -50,8 +50,13 @@
   line-height: 2rem;
 }
 
+.screenshot__container {
+  display: flex;
+  place-content: center;
+}
 .screenshot {
   border: 2px solid var(--casi-negro);
+  max-width: 700px; /* cambiar, hay que hacer otro distinto para screenshot peque  */
 }
 
 .link_icon {
@@ -71,8 +76,6 @@
  
  
 } */
-
-
 
 @media only screen and (max-width: 768px) {
   .columns2 {

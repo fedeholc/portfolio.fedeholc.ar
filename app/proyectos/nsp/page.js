@@ -122,6 +122,7 @@ export default function NSP() {
               className={proyectos.screenshot}
               src={screenshot1}
               alt="screenshot"
+              quality={100}
             />
           </Link>
         </div>
@@ -131,11 +132,14 @@ export default function NSP() {
       <h3>{TEXTO.subtitulo2}</h3>
       <div className={proyectos.columns1}>
         <div>{TEXTO.texto2}</div>
-        <Image
-          className={proyectos.screenshot}
-          src={screenshot1}
-          alt="screenshot"
-        />
+        <div className={proyectos.screenshot__container}>
+          <Image
+            className={proyectos.screenshot}
+            src={screenshot1}
+            alt="screenshot"
+            quality={100}
+          />
+        </div>
       </div>
       {/* ***************************************** */}
       <h3>{TEXTO.subtitulo3}</h3>
