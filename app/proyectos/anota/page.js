@@ -3,7 +3,8 @@ import "@app/globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import externalLinkIcon from "@public/external-link.png";
-import screenshot1 from "@public/proyecto-nsp/Screenshot from 2023-06-26 20-42-07.png";
+import screenshot1 from "@public/proyecto-nsp/nsp2.png";
+import screenshot2 from "@public/proyecto-nsp/nsp4.png";
 
 export default function ProyectoANOTA() {
   const TEXTO = {
@@ -115,76 +116,81 @@ export default function ProyectoANOTA() {
     ),
   };
 
-  return (
-    <div className={proyectos.proyecto}>
-      <h1 className={proyectos.titulo}>{TEXTO.titulo}</h1>
-      <p>{TEXTO.bajada}</p>
-      <div className={proyectos.columns2}>
-        <div>
-          <h3>stack</h3>
-          {TEXTO.stack}
-        </div>
-        <div>
-          <h3>código</h3>
-          <div className={proyectos.link_icon}>
-            <Link target="_blank" href={TEXTO.linkCodeHref}>
-              {TEXTO.linkCodeText}&nbsp;
-            </Link>
-            <Image src={externalLinkIcon} alt="external link icon" />
-          </div>
-          <h3>web</h3>
-          <div className={proyectos.link_icon}>
-            <Link target="_blank" href={TEXTO.linkWebHref}>
-              {TEXTO.linkWebText}&nbsp;
-            </Link>
-            <Image src={externalLinkIcon} alt="external link icon" />
-          </div>
-        </div>
-      </div>
-      <br />
-      {/* ***************************************** */}
-      <h3>{TEXTO.subtitulo1}</h3>
-      <div className={proyectos.columns2}>
-        <div>{TEXTO.texto1}</div>
-
-        <div>
-          <Link
-            target="_blank"
-            href="../public/proyecto-nsp/Screenshot from 2023-06-26 20-42-07.png"
-          >
-            <Image
-              className={proyectos.screenshot}
-              src={screenshot1}
-              alt="screenshot"
-              quality={100}
-            />
-          </Link>
-        </div>
-      </div>
-      <br /> <br />
-      {/* ***************************************** */}
-      <h3>{TEXTO.subtitulo2}</h3>
-      <div className={proyectos.columns1}>
-        <div>{TEXTO.texto2}</div>
-        <div className={proyectos.screenshot__container}>
-          <Image
-            className={proyectos.screenshot}
-            src={screenshot1}
-            alt="screenshot"
-            quality={100}
-          />
-        </div>
-      </div>
-      {/* ***************************************** */}
-      <h3>{TEXTO.subtitulo3}</h3>
-      <div className={proyectos.columns1}>
-        <div>{TEXTO.texto3}</div>
-        <Image
-          className={proyectos.screenshot}
-          src={screenshot1}
-          alt="screenshot"
-        />
-      </div>
-    </div>
-  );
+ return (
+   <div className={`${proyectos.proyecto}`}>
+     <h1 className={proyectos.titulo}>{TEXTO.titulo}</h1>
+     <div className={`${proyectos.proyecto__container} `}>
+       <p>{TEXTO.bajada}</p>
+       <div className={proyectos.columns2}>
+         <div>
+           <h3>stack</h3>
+           {TEXTO.stack}
+         </div>
+         <div>
+           <h3>código</h3>
+           <div className={proyectos.link_icon}>
+             <Link target="_blank" href={TEXTO.linkCodeHref}>
+               {TEXTO.linkCodeText}&nbsp;
+             </Link>
+             <Image src={externalLinkIcon} alt="external link icon" />
+           </div>
+           <h3>web</h3>
+           <div className={proyectos.link_icon}>
+             <Link target="_blank" href={TEXTO.linkWebHref}>
+               {TEXTO.linkWebText}&nbsp;
+             </Link>
+             <Image src={externalLinkIcon} alt="external link icon" />
+           </div>
+         </div>
+       </div>
+       <br />
+       {/* ***************************************** */}
+       <h3>{TEXTO.subtitulo1}</h3>
+       <div className={proyectos.columns1}>
+         <p>{TEXTO.texto1}</p>
+         <div className={proyectos.screenshot__container}>
+           <figure>
+             <Image
+               className={`${proyectos.screenshot} ${proyectos.w700px}`}
+               src={screenshot1}
+               alt="screenshot"
+               quality={100}
+             />
+             <figcaption className={proyectos.screenshot__caption}>
+               Artículo del blog con bloques de código, visto en una pantalla
+               amplia.
+             </figcaption>
+           </figure>
+         </div>
+       </div>
+       <br /> <br />
+       {/* ***************************************** */}
+       <h3>{TEXTO.subtitulo2}</h3>
+       <div className={proyectos.columns2}>
+         <div>{TEXTO.texto2}</div>
+         <div className={proyectos.screenshot__container}>
+           <figure
+             className={`${proyectos.screenshot__figure} ${proyectos.w100px}`}
+           >
+             <Image
+               className={`${proyectos.screenshot} ${proyectos.w100px}`}
+               src={screenshot2}
+               alt="screenshot"
+               quality={100}
+             />
+             <figcaption className={proyectos.screenshot__caption}>
+               Portada del blog vista en un teléfono.
+             </figcaption>
+           </figure>
+         </div>
+       </div>
+       {/* ***************************************** */}
+       <br /> <br />
+       <h3>{TEXTO.subtitulo3}</h3>
+       <div className={proyectos.columns1}>
+         <div>{TEXTO.texto3}</div>
+       </div>
+     </div>
+   </div>
+ );
 }

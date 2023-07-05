@@ -67,6 +67,7 @@
   font-weight: 700;
   font-size: 1.3rem;
   margin-top: 1rem;
+  margin-bottom: 0.4rem;
 }
 
 .proyecto__container ul {
@@ -128,6 +129,15 @@
   filter: invert(var(--invert-icon));
 }
 
+.divider {
+  display: grid;
+  place-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  
+  filter: grayscale(1) brightness(0);
+
+}
 /* .proyecto a {
     text-decoration: dashed underline var(--footer-borde);
  
