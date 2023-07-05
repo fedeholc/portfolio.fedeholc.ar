@@ -9,7 +9,7 @@ import ProyectoNSP from "./nsp/page.js";
 
 export default function Proyectos() {
   return (
-    <div className={proyectos.proyecto}>
+    <div className={proyectos.w1000px}>
       <div className={proyectos.header}>PROYECTOS</div>
       <br />
    
