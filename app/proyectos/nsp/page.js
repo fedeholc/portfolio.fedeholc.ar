@@ -84,7 +84,7 @@ export default function ProyectoNSP() {
 
   return (
     <div className={`${proyectos.proyecto}`}>
-    <h1 className={proyectos.titulo}>{TEXTO.titulo}</h1>  
+      <h1 className={proyectos.titulo}>{TEXTO.titulo}</h1>
       <div className={`${proyectos.proyecto__container} `}>
         <p>{TEXTO.bajada}</p>
         <div className={proyectos.columns2}>
@@ -136,7 +136,7 @@ export default function ProyectoNSP() {
           <div>{TEXTO.texto2}</div>
           <div className={proyectos.screenshot__container}>
             <figure
-              className={`${proyectos.screenshot__figure} ${proyectos.w100px}`}
+              className={`${proyectos.screenshot__figure} ${proyectos.mt05}`}
             >
               <Image
                 className={`${proyectos.screenshot} ${proyectos.w100px}`}

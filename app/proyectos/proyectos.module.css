@@ -19,7 +19,6 @@
 
 
 
-
 .header {
   border-top: 2px solid var(--proyecto-header);
   border-bottom: 2px solid var(--proyecto-header);
@@ -135,6 +134,15 @@
 
   filter: grayscale(1) brightness(0) invert(var(--invert-icon));
 
+}
+
+
+/* todo: así? o mejor
+en el figcaption?
+porque si hay que modificar
+en media queries se complica */
+.mt05 {
+  margin-top: 0.5rem;
 }
 
 /* .proyecto a {
