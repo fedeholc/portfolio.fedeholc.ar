@@ -19,6 +19,7 @@ export default function Proyectos() {
       <div className={proyectos.header}>PROYECTOS</div>
       <br />
       <ProyectoNSP></ProyectoNSP>
+      {/* 
       <div className={proyectos.divider}>🌿</div>
       <br />
       <div className={proyectos.header}>PROYECTO</div>
@@ -38,7 +39,7 @@ export default function Proyectos() {
       <br />
       <div className={proyectos.header}>PROYECTO</div>
       <br />
-      <ProyectoAP></ProyectoAP>
+      <ProyectoAP></ProyectoAP> */}
     </div>
   );
 }

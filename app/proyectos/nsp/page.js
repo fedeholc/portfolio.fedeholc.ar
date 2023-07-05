@@ -8,7 +8,7 @@ import screenshot2 from "@public/proyecto-nsp/nsp4.png";
 
 export default function ProyectoNSP() {
   const TEXTO = {
-    titulo: `<NuncaSupeProgramar/> Blog de apuntes para aprender desarrollo web`,
+    titulo: `<NuncaSupe\u00ADProgramar/> Blog de apuntes para aprender desarrollo web`,
     bajada: `Blog de aprendizaje en público, para organizar mis apuntes y ayudar a otras personas compartiendo el conocimiento.`,
     stack: (
       <ul>
@@ -84,7 +84,7 @@ export default function ProyectoNSP() {
 
   return (
     <div className={`${proyectos.proyecto}`}>
-      <h1 className={proyectos.titulo}>{TEXTO.titulo}</h1>
+    <h1 className={proyectos.titulo}>{TEXTO.titulo}</h1>  
       <div className={`${proyectos.proyecto__container} `}>
         <p>{TEXTO.bajada}</p>
         <div className={proyectos.columns2}>
