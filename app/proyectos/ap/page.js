@@ -5,12 +5,11 @@ import Image from "next/image";
 import externalLinkIcon from "@public/external-link.png";
 import screenshot1 from "@public/proyecto-nsp/Screenshot from 2023-06-26 20-42-07.png";
 
-
 // El sitio web es una aplicación de una sola página (SPA) desarrollada con Angular, que consume una API REST desarrollada con Java, Spring Boot y Hibernate, y que se conecta a una base de datos MySQL. El sitio web está alojado en Firebase, y la API REST en Koyeb. El código fuente está en Github.
 
 // La elección de las tecnologías no fue propia sino que fueron las que aprendimos en el curso.
 
-  export default function ProyectoAP() {
+export default function ProyectoAP() {
   const TEXTO = {
     titulo: `AP3 portfolio`,
     bajada: `A simple vista es un sencillo sitio web del currículum 
@@ -39,22 +38,66 @@ import screenshot1 from "@public/proyecto-nsp/Screenshot from 2023-06-26 20-42-0
     texto2: (
       <ul>
         <li>
-        autorizacion en firebase tablas relacionadas ORM vs consultas sql
+          autorizacion en firebase tablas relacionadas ORM vs consultas sql
         </li>
-        </ul>
+      </ul>
     ),
     subtitulo3: "Problemas y aprendizajes",
     texto3: (
       <ul>
         <li>
-          Debo confesar que no fue sencillo componer el recompecabezas de tecnologías necesarías para que todo funcione, y en algunos aspectos las cosas quedaron "atadas con alambre" porque no tenía el tiempo necesario para profundizar en conocer los fundamentos de todo lo que estaba haciendo. ¡Pero funcionó! Y me paermitió tener una visión general de cómo se integra un desarrollo que incluye un front end, y un back end con API y base de datos. Con Angular comprendí cómo era trabajar con un framework para crear una SPA en particular cómo se estructura el código utilizando componentes y cómo se implementa el patron de diseño MVC.
+          Debo confesar que no fue sencillo componer el recompecabezas de
+          tecnologías necesarías para que todo funcione, y en algunos aspectos
+          las cosas quedaron "atadas con alambre" porque no tenía el tiempo
+          necesario para profundizar en conocer los fundamentos de todo lo que
+          estaba haciendo. ¡Pero funcionó! Y me paermitió tener una visión
+          general de cómo se integra un desarrollo que incluye un front end, y
+          un back end con API y base de datos. Con Angular comprendí cómo era
+          trabajar con un framework para crear una SPA en particular cómo se
+          estructura el código utilizando componentes y cómo se implementa el
+          patron de diseño MVC.
         </li>
-      <li>Teniendo en cuenta que es el primer proyecto que realicé, la cantidad de aprendizajes fue enorme y es imposible dar cuenta de todos ellos aquí (desde cada una de las tecnologías y su integración general hasta infinitos detalles para resolver problemas puntuales). Pero me gustaría destacar algunas cuestiones (aunuqe resulten obvias para quién ya tiene experiencia): El aprendizaje colaborativo entre pares es hermoso, contar con alguién que te guié u oriente, la gloria. Pero como no contaba con eso último la gloria estuvo en el conocimiento humano acumulado y disponible en StackOverflow, videos de youtube, blogs, y una tecnología que no debería morir nunca: los libros, ya que poseen el conocimiento estructurado de un modo que no se consigue en otros medios.</li>
-      <li>Como estructurar, documentar y comentar el código no es algo trivial, ya sea que vaya a ser leído por otras personas como por mi yo del futuro.</li>
-      <li>Más que una dificultad en el momento, significó una dificiultad a futuro el hecho de aprender directamente un framework como Angualar, con TypeScript sin antes haber aprendido JavaScript, lo cuaĺ me llevó a hacerlo a posteriori para poder tener un conocimiento de los fundamentos y poder diferenciar que características eran propias de cada tecnología.</li>
-      <li>A decir verdad los mayores dolores de cabeza fueron provocados por el hecho de que desde Argentina Programa nos exigían hacer el deploy en un derminado lugar, y ese lugar fue cambiando varias veces (Heroku, Fly, Koyeb, PlanetScale) cuando faltaba poco tiempo para la entrega final. Pero rescato que eso me permitió conocer distintas opciones de deploy y aprender a hacerlo en cada una de ellas.</li>
-      <li>De todas las tecnologías creo que la que menos me convenció fue bootstrap. Aunque reconozco que para un diseño rápido y estandarizado es útil, al introducir modificaciones en el diseño resultaba en un código desprolijo mezclando clases con archivos de CSS.</li>
-      
+        <li>
+          Teniendo en cuenta que es el primer proyecto que realicé, la cantidad
+          de aprendizajes fue enorme y es imposible dar cuenta de todos ellos
+          aquí (desde cada una de las tecnologías y su integración general hasta
+          infinitos detalles para resolver problemas puntuales). Pero me
+          gustaría destacar algunas cuestiones (aunuqe resulten obvias para
+          quién ya tiene experiencia): El aprendizaje colaborativo entre pares
+          es hermoso, contar con alguién que te guié u oriente, la gloria. Pero
+          como no contaba con eso último la gloria estuvo en el conocimiento
+          humano acumulado y disponible en StackOverflow, videos de youtube,
+          blogs, y una tecnología que no debería morir nunca: los libros, ya que
+          poseen el conocimiento estructurado de un modo que no se consigue en
+          otros medios.
+        </li>
+        <li>
+          Como estructurar, documentar y comentar el código no es algo trivial,
+          ya sea que vaya a ser leído por otras personas como por mi yo del
+          futuro.
+        </li>
+        <li>
+          Más que una dificultad en el momento, significó una dificiultad a
+          futuro el hecho de aprender directamente un framework como Angualar,
+          con TypeScript sin antes haber aprendido JavaScript, lo cuaĺ me llevó
+          a hacerlo a posteriori para poder tener un conocimiento de los
+          fundamentos y poder diferenciar que características eran propias de
+          cada tecnología.
+        </li>
+        <li>
+          A decir verdad los mayores dolores de cabeza fueron provocados por el
+          hecho de que desde Argentina Programa nos exigían hacer el deploy en
+          un derminado lugar, y ese lugar fue cambiando varias veces (Heroku,
+          Fly, Koyeb, PlanetScale) cuando faltaba poco tiempo para la entrega
+          final. Pero rescato que eso me permitió conocer distintas opciones de
+          deploy y aprender a hacerlo en cada una de ellas.
+        </li>
+        <li>
+          De todas las tecnologías creo que la que menos me convenció fue
+          bootstrap. Aunque reconozco que para un diseño rápido y estandarizado
+          es útil, al introducir modificaciones en el diseño resultaba en un
+          código desprolijo mezclando clases con archivos de CSS.
+        </li>
       </ul>
     ),
   };
