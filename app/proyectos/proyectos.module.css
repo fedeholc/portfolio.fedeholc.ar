@@ -19,11 +19,10 @@
 
 
 
-.header {
-  /* TODO: falta poner themes */
 
-  border-top: 2px solid var(--gris-claro);
-  border-bottom: 2px solid var(--gris-claro);
+.header {
+  border-top: 2px solid var(--proyecto-header);
+  border-bottom: 2px solid var(--proyecto-header);
   font-size: 6rem;
   font-weight: 700;
   text-align: center;
@@ -31,7 +30,7 @@
   letter-spacing: 1rem;
   line-height: 8rem;
   margin: 0.7rem 0rem 0.5rem 0rem;
-  color: var(--gris-claro);
+  color: var(--proyecto-header);
 }
 
 .titulo {
@@ -134,10 +133,11 @@
   place-content: center;
   font-size: 2rem;
   font-weight: 700;
-  
-  filter: grayscale(1) brightness(0);
+
+  filter: grayscale(1) brightness(0) invert(var(--invert-icon));
 
 }
+
 /* .proyecto a {
     text-decoration: dashed underline var(--footer-borde);
  
@@ -148,4 +148,6 @@
   .columns2 {
     grid-template-columns: 1fr;
   }
+
+ 
 }
