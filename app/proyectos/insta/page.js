@@ -12,16 +12,10 @@ export default function ProyectoInsta() {
     bajada: `Es una extensión muy sencilla para el navegador Chrome que permite ver las fotos de instagram a máxima resolución.`,
     stack: (
       <ul>
-        <li>- HTML, CSS, JavaScript, Chrome API</li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>JavaScript</li>
+        <li>HTML / CSS</li>
+        <li>Chrome API</li>
+        <li>Git / Github</li>
       </ul>
     ),
     linkCodeText: `github/fedeholc  xxx`,
