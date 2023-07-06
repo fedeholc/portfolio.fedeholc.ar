@@ -1,39 +1,22 @@
+/* cSpell:enable */
 import proyectos from "../proyectos.module.css";
 import "@app/globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import externalLinkIcon from "@public/external-link.png";
-import screenshot1 from "@public/proyecto-nsp/nsp2.png";
-import screenshot2 from "@public/proyecto-nsp/nsp4.png";
+import screenshot2 from "@public/proyecto-mytv/mytv1.png";
+import screenshot1 from "@public/proyecto-mytv/mytv2.png";
 
 export default function ProyectoTV() {
   const TEXTO = {
     titulo: `MyTvShows`,
-    bajada: `MyTvShows es una aplicación que permite llevar registro de tus series favoritas y ver facilmente cuáles tienen nuevos episodios.`,
+    bajada: `MyTvShows es una aplicación que permite llevar registro de tus series favoritas y ver fácilmente cuáles tienen nuevos episodios.`,
     stack: (
       <ul>
         <li>React / JavaScript</li>
         <li>HTML / Tailwind CSS</li>
         <li>Firebase</li>
         <li>Git / Github</li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li>
-          La verdad es que elegí React porque estaba comenzando a aprenderlo y
-          me pareció un buena oportunidad para poner en práctica cuestiones
-          básicas como el uso de componentes,renderizado condicional, manejo de
-          estados y props, etc. Debo confesar que no sé la causa particular pero
-          me sentí muy a gusto trabajando con React al punto de decidir que
-          quería profundizar más en su estudio y dejar de lado Angular que es
-          con lo que había trabajado antes. También aproveche para probar por
-          primera vez Tailwind como framework de CSS. Me pareció muy interesante
-          utility clases. Por último, utilicé una base de datos de Firebase ya
-          que era muy sencilla de implementar y no tenía grandes requerimientos
-          de almacenamiento.
-        </li>
       </ul>
     ),
     linkCodeText: `github/fedeholc  xxx`,
@@ -47,23 +30,26 @@ export default function ProyectoTV() {
       <ul>
         <li>
           La aplicación permite buscar series en la base de datos de IMDB
-          mediante el uso de una API, y agregarlas a la lista de favoritos. Se
-          puede ver un listado de esas series con la información de la cantidad
-          de temporadas y la fecha de emisión del último episodio. Es posible
-          ordenar la lista por la fecha de último episodio justamente para ver
-          cuáles son los que han salido más recientemente. 
-           Ideas para
-          implementar a futuro: - Sin dudas la aplicación es muy básica y podría
-          agregarse gran cantidad de funcionalidades. Pero en particular, ahora
-          que sé como desarrollar extensiones para el navegador, creo que sería
-          muy util hacer una que nos muestre una alerta cuando haya nuevos
-          episodios de nuestras series favoritas. - Para eso seria necesario
-          también que la aplicación le permita al usuario indicar cuál es el
-          último capitulo de la serie que ha visto.
+          mediante el uso de una API, y agregarlas a la lista de favoritos.
         </li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+          Se puede ver un listado de esas series con la información de la
+          cantidad de temporadas y la fecha de emisión del último episodio.
+        </li>
+        <li>
+          Es posible ordenar la lista por la fecha de último episodio justamente
+          para ver cuáles son los que han salido más recientemente.
+        </li>
+        <li>
+          {" "}
+          Ideas para implementar a futuro: - Sin dudas la aplicación es muy
+          básica y podría agregarse gran cantidad de funcionalidades. Pero en
+          particular, ahora que sé como desarrollar extensiones para el
+          navegador, creo que sería muy util hacer una que nos muestre una
+          alerta cuando haya nuevos episodios de nuestras series favoritas. -
+          Para eso seria necesario también que la aplicación le permita al
+          usuario indicar cuál es el último capitulo de la serie que ha visto.
+        </li>
       </ul>
     ),
     subtitulo3: "Problemas y aprendizajes",
@@ -78,16 +64,28 @@ export default function ProyectoTV() {
           de los episodios de cada serie. Afortunadamente pude resolverlo
           correctamente con la utilización de async/await. Aunque me queda
           pendiente profundizar en como abordar los errores cuando algo falla en
-          una de las funciones asincrónicas. También tuve algunos dolores de
-          cabeza con el UseEffect en relación a la carga de los datos, pero la
-          nueva documentación de React es muy clara en cuanto a cómo usarlo y
-          sobre todo cuando no usarlo, así que pude resolverlo.
+          una de las funciones asincrónicas.
         </li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+          También tuve algunos dolores de cabeza con el UseEffect en relación a
+          la carga de los datos, pero la nueva documentación de React es muy
+          clara en cuanto a cómo usarlo y sobre todo cuando no usarlo, así que
+          pude resolverlo.
+        </li>
+
+        <li>
+          La verdad es que elegí React porque estaba comenzando a aprenderlo y
+          me pareció un buena oportunidad para poner en práctica cuestiones
+          básicas como el uso de componentes, renderizado condicional, manejo de
+          estados y props, etc. Debo confesar que no sé la causa particular pero
+          me sentí muy a gusto trabajando con React al punto de decidir que
+          quería profundizar más en su estudio y dejar de lado Angular que es
+          con lo que había trabajado antes. También aproveche para probar por
+          primera vez Tailwind como framework de CSS. Me pareció muy interesante
+          utility clases. Por último, utilicé una base de datos de Firebase ya
+          que era muy sencilla de implementar y no tenía grandes requerimientos
+          de almacenamiento.
+        </li>
       </ul>
     ),
   };
@@ -133,8 +131,8 @@ export default function ProyectoTV() {
                 quality={100}
               />
               <figcaption className={proyectos.screenshot__caption}>
-                Artículo del blog con bloques de código, visto en una pantalla
-                amplia.
+                Vista de las series guardadas y su 
+                información correspondiente.
               </figcaption>
             </figure>
           </div>
@@ -142,20 +140,20 @@ export default function ProyectoTV() {
         <br /> <br />
         {/* ***************************************** */}
         <h3>{TEXTO.subtitulo2}</h3>
-        <div className={proyectos.columns2}>
+        <div className={proyectos.columns1}>
           <div>{TEXTO.texto2}</div>
           <div className={proyectos.screenshot__container}>
             <figure
-              className={`${proyectos.screenshot__figure} ${proyectos.w100px}`}
+              className={`${proyectos.screenshot__figure} ${proyectos.w700px}`}
             >
               <Image
-                className={`${proyectos.screenshot} ${proyectos.w100px}`}
+                className={`${proyectos.screenshot} ${proyectos.w700px}`}
                 src={screenshot2}
                 alt="screenshot"
                 quality={100}
               />
               <figcaption className={proyectos.screenshot__caption}>
-                Portada del blog vista en un teléfono.
+                Vista del buscador de series.
               </figcaption>
             </figure>
           </div>

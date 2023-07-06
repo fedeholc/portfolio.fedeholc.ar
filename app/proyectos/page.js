@@ -19,6 +19,13 @@ export default function Proyectos() {
       <div className={proyectos.header}>PROYECTOS</div>
       <br />
       <ProyectoNSP></ProyectoNSP>
+      <div className={proyectos.divider}>🌿</div>
+      <br />
+      <div className={proyectos.header}>PROYECTO</div>
+      <br />
+      <ProyectoTV></ProyectoTV>
+      <div className={proyectos.divider}>🌿</div>
+      <br />
       {/* 
       <div className={proyectos.divider}>🌿</div>
       <br />
@@ -30,13 +37,7 @@ export default function Proyectos() {
       <div className={proyectos.header}>PROYECTO</div>
       <br />
       <ProyectoANOTA></ProyectoANOTA>
-      <div className={proyectos.divider}>🌿</div>
-      <br />
-      <div className={proyectos.header}>PROYECTO</div>
-      <br />
-      <ProyectoTV></ProyectoTV>
-      <div className={proyectos.divider}>🌿</div>
-      <br />
+  
       <div className={proyectos.header}>PROYECTO</div>
       <br />
       <ProyectoAP></ProyectoAP> */}
