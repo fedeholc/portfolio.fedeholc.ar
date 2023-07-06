@@ -86,7 +86,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+ }
 
 .screenshot__caption {
   font-size: 0.8rem;
@@ -104,14 +104,14 @@ tampoco un porcentaje del with
 
 revisar componente imagen de next js
 */
-.w700px {
+/* .w700px {
   width: 700px;
 
 }
 
 .w100px {
   width: 350px;
-}
+} */
 
 
 .link_icon {

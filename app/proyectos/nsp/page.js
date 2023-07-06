@@ -120,6 +120,7 @@ export default function ProyectoNSP() {
                 className={`${proyectos.screenshot} ${proyectos.w700px}`}
                 src={screenshot1}
                 alt="screenshot"
+                width={700}
                 quality={100}
               />
               <figcaption className={proyectos.screenshot__caption}>
@@ -142,6 +143,7 @@ export default function ProyectoNSP() {
                 className={`${proyectos.screenshot} ${proyectos.w100px}`}
                 src={screenshot2}
                 alt="screenshot"
+                width={330}
                 quality={100}
               />
               <figcaption className={proyectos.screenshot__caption}>

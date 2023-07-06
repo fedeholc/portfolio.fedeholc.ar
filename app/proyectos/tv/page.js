@@ -128,11 +128,11 @@ export default function ProyectoTV() {
                 className={`${proyectos.screenshot} ${proyectos.w700px}`}
                 src={screenshot1}
                 alt="screenshot"
+                width={700}
                 quality={100}
               />
               <figcaption className={proyectos.screenshot__caption}>
-                Vista de las series guardadas y su 
-                información correspondiente.
+                Vista de las series guardadas y su información correspondiente.
               </figcaption>
             </figure>
           </div>
@@ -150,6 +150,7 @@ export default function ProyectoTV() {
                 className={`${proyectos.screenshot} ${proyectos.w700px}`}
                 src={screenshot2}
                 alt="screenshot"
+                width={600}
                 quality={100}
               />
               <figcaption className={proyectos.screenshot__caption}>
