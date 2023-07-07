@@ -115,7 +115,7 @@ export default function ProyectoNSP() {
         <div className={proyectos.columns1}>
           <p>{TEXTO.texto1}</p>
           <div className={proyectos.screenshot__container}>
-            <figure>
+            <figure className={`${proyectos.screenshot__figure} `}>
               <Image
                 className={`${proyectos.screenshot} ${proyectos.w700px}`}
                 src={screenshot1}

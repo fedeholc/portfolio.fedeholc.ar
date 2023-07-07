@@ -70,6 +70,7 @@
   margin-bottom: 0.5rem;
 }
 
+
 .screenshot__container {
   display: flex;
   flex-direction: row;
@@ -86,7 +87,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
- }
+}
 
 .screenshot__caption {
   font-size: 0.8rem;
@@ -118,7 +119,10 @@ revisar componente imagen de next js
   display: flex;
   flex-direction: row;
   align-items: center;
-}
+ 
+/*   line-height: 2rem;
+  font-size: 1.2rem; */
+ }
 
 .link_icon img {
   height: 1.2rem;
