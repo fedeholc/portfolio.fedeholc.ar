@@ -23,6 +23,11 @@ export default function Proyectos() {
       <br />
       <div className={proyectos.header}>PROYECTO</div>
       <br />
+      <ProyectoANOTA></ProyectoANOTA>
+      <div className={proyectos.divider}>🌿</div>
+      <br />
+      <div className={proyectos.header}>PROYECTO</div>
+      <br />
       <ProyectoInsta></ProyectoInsta>
       <div className={proyectos.divider}>🌿</div>
       <br />
@@ -36,17 +41,6 @@ export default function Proyectos() {
       <ProyectoAP></ProyectoAP>
       <div className={proyectos.divider}>🌿</div>
       <br />
-      {/* 
-     
-      <div className={proyectos.divider}>🌿</div>
-      <br />
-      <div className={proyectos.header}>PROYECTO</div>
-      <br />
-      <ProyectoANOTA></ProyectoANOTA>
-  
-      <div className={proyectos.header}>PROYECTO</div>
-      <br />
-       */}
     </div>
   );
 }

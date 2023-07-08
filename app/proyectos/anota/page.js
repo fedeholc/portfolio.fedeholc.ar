@@ -3,9 +3,10 @@ import "@app/globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import externalLinkIcon from "@public/external-link.png";
-import screenshot1 from "@public/proyecto-nsp/nsp2.png";
-import screenshot2 from "@public/proyecto-nsp/nsp4.png";
-
+import screenshot1 from "@public/proyecto-anota/anota-layout.webp";
+import screenshot2 from "@public/proyecto-anota/anota-extension.webp";
+import screenshot3 from "@public/proyecto-anota/anota-notas.webp";
+ 
 export default function ProyectoANOTA() {
   const TEXTO = {
     titulo: `anota`,
@@ -49,9 +50,9 @@ export default function ProyectoANOTA() {
         </li>
         <li>
           En cuanto a CSS quería aprovechar para probar el uso de módulos CSS
-          por componentes, junto con la metodología BEM, que es
-          la opción que encuentro más eficaz para poder tener un código CSS
-          claro y mantenible, separado de la lógica de la aplicación.
+          por componentes, junto con la metodología BEM, que es la opción que
+          encuentro más eficaz para poder tener un código CSS claro y
+          mantenible, separado de la lógica de la aplicación.
         </li>
         <li>
           He probado montones de aplicaciones para tomar notas, administrar
@@ -116,81 +117,94 @@ export default function ProyectoANOTA() {
     ),
   };
 
- return (
-   <div className={`${proyectos.proyecto}`}>
-     <h1 className={proyectos.titulo}>{TEXTO.titulo}</h1>
-     <div className={`${proyectos.proyecto__container} `}>
-       <p>{TEXTO.bajada}</p>
-       <div className={proyectos.columns2}>
-         <div>
-           <h3>stack</h3>
-           {TEXTO.stack}
-         </div>
-         <div>
-           <h3>código</h3>
-           <div className={proyectos.link_icon}>
-             <Link target="_blank" href={TEXTO.linkCodeHref}>
-               {TEXTO.linkCodeText}&nbsp;
-             </Link>
-             <Image src={externalLinkIcon} alt="external link icon" />
-           </div>
-           <h3>web</h3>
-           <div className={proyectos.link_icon}>
-             <Link target="_blank" href={TEXTO.linkWebHref}>
-               {TEXTO.linkWebText}&nbsp;
-             </Link>
-             <Image src={externalLinkIcon} alt="external link icon" />
-           </div>
-         </div>
-       </div>
-       <br />
-       {/* ***************************************** */}
-       <h3>{TEXTO.subtitulo1}</h3>
-       <div className={proyectos.columns1}>
-         <p>{TEXTO.texto1}</p>
-         <div className={proyectos.screenshot__container}>
-           <figure>
-             <Image
-               className={`${proyectos.screenshot} ${proyectos.w700px}`}
-               src={screenshot1}
-               alt="screenshot"
-               quality={100}
-             />
-             <figcaption className={proyectos.screenshot__caption}>
-               Artículo del blog con bloques de código, visto en una pantalla
-               amplia.
-             </figcaption>
-           </figure>
-         </div>
-       </div>
-       <br /> <br />
-       {/* ***************************************** */}
-       <h3>{TEXTO.subtitulo2}</h3>
-       <div className={proyectos.columns2}>
-         <div>{TEXTO.texto2}</div>
-         <div className={proyectos.screenshot__container}>
-           <figure
-             className={`${proyectos.screenshot__figure} ${proyectos.w100px}`}
-           >
-             <Image
-               className={`${proyectos.screenshot} ${proyectos.w100px}`}
-               src={screenshot2}
-               alt="screenshot"
-               quality={100}
-             />
-             <figcaption className={proyectos.screenshot__caption}>
-               Portada del blog vista en un teléfono.
-             </figcaption>
-           </figure>
-         </div>
-       </div>
-       {/* ***************************************** */}
-       <br /> <br />
-       <h3>{TEXTO.subtitulo3}</h3>
-       <div className={proyectos.columns1}>
-         <div>{TEXTO.texto3}</div>
-       </div>
-     </div>
-   </div>
- );
+  return (
+    <div className={`${proyectos.proyecto}`}>
+      <h1 className={proyectos.titulo}>{TEXTO.titulo}</h1>
+      <div className={`${proyectos.proyecto__container} `}>
+        <p>{TEXTO.bajada}</p>
+        <div className={proyectos.columns2}>
+          <div>
+            <h3>stack</h3>
+            {TEXTO.stack}
+          </div>
+          <div>
+            <h3>código</h3>
+            <div className={proyectos.link_icon}>
+              <Link target="_blank" href={TEXTO.linkCodeHref}>
+                {TEXTO.linkCodeText}&nbsp;
+              </Link>
+              <Image src={externalLinkIcon} alt="external link icon" />
+            </div>
+            <h3>web</h3>
+            <div className={proyectos.link_icon}>
+              <Link target="_blank" href={TEXTO.linkWebHref}>
+                {TEXTO.linkWebText}&nbsp;
+              </Link>
+              <Image src={externalLinkIcon} alt="external link icon" />
+            </div>
+          </div>
+        </div>
+        <br />
+        {/* ***************************************** */}
+        <h3>{TEXTO.subtitulo1}</h3>
+        <div className={proyectos.columns1}>
+          <p>{TEXTO.texto1}</p>
+          <div className={proyectos.screenshot__container}>
+            <figure className={`${proyectos.screenshot__figure}  `}>
+              <Image
+                className={`${proyectos.screenshot}  `}
+                src={screenshot1}
+                alt="screenshot"
+                quality={100}
+              />
+              <figcaption className={proyectos.screenshot__caption}>
+                Artículo del blog con bloques de código, visto en una pantalla
+                amplia.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <br /> <br />
+        {/* ***************************************** */}
+        <h3>{TEXTO.subtitulo2}</h3>
+        <div className={proyectos.columns2}>
+          <div>{TEXTO.texto2}</div>
+          <div className={proyectos.screenshot__container}>
+            <figure className={`${proyectos.screenshot__figure}  `}>
+              <Image
+                className={`${proyectos.screenshot} `}
+                src={screenshot2}
+                alt="screenshot"
+                quality={100}
+              />
+              <figcaption className={proyectos.screenshot__caption}>
+                Portada del blog vista en un teléfono.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        {/* ***************************************** */}
+        <br /> <br />
+        <h3>{TEXTO.subtitulo3}</h3>
+        <div className={proyectos.columns1}>
+          <div>{TEXTO.texto3}</div>
+          <div className={proyectos.screenshot__container}>
+            <figure className={`${proyectos.screenshot__figure}  `}>
+              <Image
+                className={`${proyectos.screenshot} `}
+                src={screenshot3}
+                alt="screenshot"
+                quality={100}
+                width={700}
+              />
+              <figcaption className={proyectos.screenshot__caption}>
+                Portada del blog vista en un teléfono.
+              </figcaption>
+            </figure>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  );
 }
