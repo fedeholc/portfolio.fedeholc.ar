@@ -6,11 +6,11 @@ import externalLinkIcon from "@public/external-link.png";
 import screenshot1 from "@public/proyecto-anota/anota-layout.webp";
 import screenshot2 from "@public/proyecto-anota/anota-extension.webp";
 import screenshot3 from "@public/proyecto-anota/anota-notas.webp";
- 
+
 export default function ProyectoANOTA() {
   const TEXTO = {
     titulo: `anota`,
-    bajada: `Sí, otra aplicación para tomar notas más. ¡Pero es que toda persona obsesionada con la productividad necesita tener una que se adapte a sus necesidades! Y esta es la mía.`,
+    bajada: `¿Otra aplicación más para tomar notas? ¡Sí!  Todas las personas preocupadas por la organización de la información y la productividad necesitan tener una que se adapte a sus necesidades. Esta es la mía.`,
     stack: (
       <ul>
         <li>React / JavaScript</li>
@@ -18,8 +18,6 @@ export default function ProyectoANOTA() {
         <li>Node / Express</li>
         <li>MySQL</li>
         <li>Chrome API</li>
-        <li></li>
-        <li></li>
       </ul>
     ),
     linkCodeText: `github/fedeholc  xxx`,
@@ -27,56 +25,31 @@ export default function ProyectoANOTA() {
     linkWebText: `xxxx`,
     linkWebHref: `xxxxxxx`,
     subtitulo1: `Objetivo`,
-    texto1: `xxxxx`,
+    texto1: `He probado montones de aplicaciones para tomar notas, administrar tareas pendientes, guardar enlaces, etc. He tratado de utilizar una para cada cosa, pero era demasiado, luego una para todo, pero extrañaba algunas características de las otras. Así que decidí crear mi propia aplicación que se adapte a mis necesidades. Con la intención de que sea un proyecto a largo plazo, que pueda ir incorporando todas las características que me gustaría que tenga a medida que voy avanzando en mi aprendizaje como desarrollado.`,
+
     subtitulo2: `Características y funcionalidades`,
     texto2: (
       <ul>
         <li>
-          Elegí React porque me pareció una buena oportunidad para dar un paso
-          más en el aprendizaje del mismo y poner en práctica el uso de algunos
-          hooks como useContext y useReducer para manejar los estados de la
-          aplicación, así como también el uso de useRef para acceder al DOM.
+          - Crear, guardar y editar las notas desde la aplicación. En particular
+          la edición se puede realizar desde el mismo lugar donde se muestra la
+          nota, sin necesidad de abrir una ventana aparte.
         </li>
         <li>
-          Para el backend utilicé Node y Express para crear una API REST que se
-          conecta a una base de datos MySQL alojada en PlanetScale. La elección
-          de Node y Express se debió a la facilidad con la que se puede crear
-          una API, junto con el interés por aprender más sobre las posibilidades
-          de desarrollo en el back end. Mismo la decisión de implementar la base
-          de datos en MySQL sin utilizar un ORM respondió a la intención de
-          conocer más sobre el funcionamiento de las bases de datos
-          relacionales. Por su parte el desarrollo de la API me permitió poder
-          crear una extensión para el navegador que se conecta a la misma.
+          - Las notas se pueden visualizar en modo lista o en modo mosaico, con
+          la posibilidad de cambiar mostrar solo el título de la nota o el
+          título y el contenido.
         </li>
         <li>
-          En cuanto a CSS quería aprovechar para probar el uso de módulos CSS
-          por componentes, junto con la metodología BEM, que es la opción que
-          encuentro más eficaz para poder tener un código CSS claro y
-          mantenible, separado de la lógica de la aplicación.
-        </li>
-        <li>
-          He probado montones de aplicaciones para tomar notas, administrar
-          tareas pendientes, guardar enlaces, etc. He tratado de utilizar una
-          para cada cosa, pero era demasiado, luego una para todo, pero
-          extrañaba algunas características de las otras. Así que decidí crear
-          mi propia aplicación que se adapte a mis necesidades. Con la intención
-          de que sea un proyecto a largo plazo, que pueda ir incorporando todas
-          las características que me gustaría que tenga a medida que voy
-          avanzando en mi aprendizaje como desarrollado.
-        </li>
-        <li>
-          Por el momento algunas de las funcionalidades que tiene son: - Crear,
-          guardar y editar las notas desde la aplicación. En particular la
-          edición se puede realizar desde el mismo lugar donde se muestra la
-          nota, sin necesidad de abrir una ventana aparte. - Las notas se pueden
-          visualizar en modo lista o en modo mosaico, con la posibilidad de
-          cambiar mostrar solo el título de la nota o el título y el contenido.
           - Cada nota puede tener múltiples etiquetas y se pueden filtrar las
-          notas por etiquetas, y/o haciendo una búsqueda de texto. - La
-          extensión del navegador permite guardar en una nota el enlace
+          notas por etiquetas, y/o haciendo una búsqueda de texto.
+        </li>
+        <li>
+          - La extensión del navegador permite guardar en una nota el enlace
           individual de la página que se está visitando, o guardar todas las
           pestañas abiertas en una sesión.
         </li>
+        <li>a futuro?:</li>
       </ul>
     ),
     subtitulo3: "Problemas y aprendizajes",
@@ -110,9 +83,38 @@ export default function ProyectoANOTA() {
           tener componentes reutilizables y organizados. Es algo en lo que tengo
           que seguir trabajando y mejorando.
         </li>
-        <li></li>
-        <li></li>
-        <li></li>
+      </ul>
+    ),
+    subtitulo4: "Sobre el stack",
+    texto4: (
+      <ul>
+        <li>
+          Elegí React porque me pareció una buena oportunidad para dar un paso
+          más en el aprendizaje del mismo y poner en práctica el uso de algunos
+          hooks como useContext y useReducer para manejar los estados de la
+          aplicación, así como también el uso de useRef para acceder al DOM. `,
+        </li>
+        <li>
+          {" "}
+          Para el backend utilicé Node y Express para crear una API REST que se
+          conecta a una base de datos MySQL alojada en PlanetScale. La elección
+          de Node y Express se debió a la facilidad con la que se puede crear
+          una API, junto con el interés por aprender más sobre las posibilidades
+          de desarrollo en el back end. Mismo la decisión de implementar la base
+          de datos en MySQL sin utilizar un ORM respondió a la intención de
+          conocer más sobre el funcionamiento de las bases de datos
+          relacionales.
+        </li>
+        <li>
+          Por su parte el desarrollo de la API me permitió poder crear una
+          extensión para el navegador que se conecta a la misma.
+        </li>
+        <li>
+          En cuanto a CSS quería aprovechar para probar el uso de módulos CSS
+          por componentes, junto con la metodología BEM, que es la opción que
+          encuentro más eficaz para poder tener un código CSS claro y
+          mantenible, separado de la lógica de la aplicación.
+        </li>
       </ul>
     ),
   };
@@ -156,10 +158,11 @@ export default function ProyectoANOTA() {
                 src={screenshot1}
                 alt="screenshot"
                 quality={100}
+                width={700}
               />
               <figcaption className={proyectos.screenshot__caption}>
-                Artículo del blog con bloques de código, visto en una pantalla
-                amplia.
+                Muestra de las distintas posibilidades de visualización de las
+                notas.
               </figcaption>
             </figure>
           </div>
@@ -167,7 +170,7 @@ export default function ProyectoANOTA() {
         <br /> <br />
         {/* ***************************************** */}
         <h3>{TEXTO.subtitulo2}</h3>
-        <div className={proyectos.columns2}>
+        <div className={proyectos.columns1}>
           <div>{TEXTO.texto2}</div>
           <div className={proyectos.screenshot__container}>
             <figure className={`${proyectos.screenshot__figure}  `}>
@@ -176,18 +179,19 @@ export default function ProyectoANOTA() {
                 src={screenshot2}
                 alt="screenshot"
                 quality={100}
+                width={700}
               />
               <figcaption className={proyectos.screenshot__caption}>
-                Portada del blog vista en un teléfono.
+                Funcionamiento de la extensión para ell navegador.
               </figcaption>
             </figure>
           </div>
         </div>
         {/* ***************************************** */}
         <br /> <br />
-        <h3>{TEXTO.subtitulo3}</h3>
+        <h3>{TEXTO.subtitulo4}</h3>
         <div className={proyectos.columns1}>
-          <div>{TEXTO.texto3}</div>
+          <div>{TEXTO.texto4}</div>
           <div className={proyectos.screenshot__container}>
             <figure className={`${proyectos.screenshot__figure}  `}>
               <Image
@@ -198,11 +202,16 @@ export default function ProyectoANOTA() {
                 width={700}
               />
               <figcaption className={proyectos.screenshot__caption}>
-                Portada del blog vista en un teléfono.
+                Muestra de la creación de notas y filtrado por etiquetas.
               </figcaption>
             </figure>
           </div>
-         
+        </div>
+        {/* ***************************************** */}
+        <br /> <br />
+        <h3>{TEXTO.subtitulo3}</h3>
+        <div className={proyectos.columns1}>
+          <div>{TEXTO.texto3}</div>
         </div>
       </div>
     </div>
