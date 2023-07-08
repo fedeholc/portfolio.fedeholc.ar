@@ -23,6 +23,11 @@ export default function Proyectos() {
       <br />
       <div className={proyectos.header}>PROYECTO</div>
       <br />
+      <ProyectoInsta></ProyectoInsta>
+      <div className={proyectos.divider}>🌿</div>
+      <br />
+      <div className={proyectos.header}>PROYECTO</div>
+      <br />
       <ProyectoTV></ProyectoTV>
       <div className={proyectos.divider}>🌿</div>
       <br />
@@ -32,11 +37,7 @@ export default function Proyectos() {
       <div className={proyectos.divider}>🌿</div>
       <br />
       {/* 
-      <div className={proyectos.divider}>🌿</div>
-      <br />
-      <div className={proyectos.header}>PROYECTO</div>
-      <br />
-      <ProyectoInsta></ProyectoInsta>
+     
       <div className={proyectos.divider}>🌿</div>
       <br />
       <div className={proyectos.header}>PROYECTO</div>
@@ -49,5 +50,3 @@ export default function Proyectos() {
     </div>
   );
 }
-
- 

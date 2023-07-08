@@ -3,8 +3,8 @@ import "@app/globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import externalLinkIcon from "@public/external-link.png";
-import screenshot1 from "@public/proyecto-nsp/nsp2.png";
-import screenshot2 from "@public/proyecto-nsp/nsp4.png";
+import screenshot1 from "@public/proyecto-ig/igvideo.webp";
+import screenshot2 from "@public/proyecto-ig/ig1.png";
 
 export default function ProyectoInsta() {
   const TEXTO = {
@@ -119,16 +119,15 @@ export default function ProyectoInsta() {
         <div className={proyectos.columns1}>
           <p>{TEXTO.texto1}</p>
           <div className={proyectos.screenshot__container}>
-            <figure>
+            <figure className={`${proyectos.screenshot__figure}  `}>
               <Image
-                className={`${proyectos.screenshot} ${proyectos.w700px}`}
+                className={`${proyectos.screenshot} `}
                 src={screenshot1}
                 alt="screenshot"
                 quality={100}
               />
               <figcaption className={proyectos.screenshot__caption}>
-                Artículo del blog con bloques de código, visto en una pantalla
-                amplia.
+                Vista de la extensión funcionando.
               </figcaption>
             </figure>
           </div>
@@ -136,20 +135,19 @@ export default function ProyectoInsta() {
         <br /> <br />
         {/* ***************************************** */}
         <h3>{TEXTO.subtitulo2}</h3>
-        <div className={proyectos.columns2}>
+        <div className={proyectos.columns1}>
           <div>{TEXTO.texto2}</div>
           <div className={proyectos.screenshot__container}>
-            <figure
-              className={`${proyectos.screenshot__figure} ${proyectos.w100px}`}
-            >
+            <figure className={`${proyectos.screenshot__figure}  `}>
               <Image
-                className={`${proyectos.screenshot} ${proyectos.w100px}`}
+                className={`${proyectos.screenshot}  `}
                 src={screenshot2}
+                width={700}
                 alt="screenshot"
                 quality={100}
               />
               <figcaption className={proyectos.screenshot__caption}>
-                Portada del blog vista en un teléfono.
+                Vista de la extensión en la Chrome web store.
               </figcaption>
             </figure>
           </div>
