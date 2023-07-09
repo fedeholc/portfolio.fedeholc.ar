@@ -126,7 +126,7 @@ export default function ProyectoAP() {
           <div className={proyectos.screenshot__container}>
             <figure className={`${proyectos.screenshot__figure} `}>
               <Image
-                className={`${proyectos.screenshot} ${proyectos.w700px}`}
+                className={`${proyectos.screenshot}`}
                 src={screenshot1}
                 alt="screenshot"
                 quality={100}
