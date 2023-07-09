@@ -9,7 +9,7 @@ import screenshot3 from "@public/proyecto-anota/anota-notas.webp";
 
 export default function ProyectoANOTA() {
   const TEXTO = {
-    titulo: `anota`,
+    titulo: `ANOTÁ! (Another Note Taking App)`,
     bajada: `¿Otra aplicación más para tomar notas? ¡Sí!  Todas las personas preocupadas por la organización de la información y la productividad necesitan tener una que se adapte a sus necesidades. Esta es la mía.`,
     stack: (
       <ul>
@@ -21,17 +21,17 @@ export default function ProyectoANOTA() {
       </ul>
     ),
     linkCodeText: {
-      front: `- Frontend`,
-      back: `- Backend`,
-      ext: `- Extensión`,
+      front: `frontend`,
+      back: `backend`,
+      ext: `extensión`,
     },
     linkCodeHref: {
-      front: `https://www.github.com/fedeholc/anota-frontend`,
-      back: `https://www.github.com/fedeholc/anota-backend`,
-      ext: `https://www.github.com/fedeholc/anota-extension`,
+      front: `https://github.com/fedeholc/anotes-front-react`,
+      back: `https://github.com/fedeholc/anotes-back-express`,
+      ext: `https://github.com/fedeholc/anota-chrome-extension`,
     },
-    linkWebText: `xxxx`,
-    linkWebHref: `xxxxxxx`,
+    linkWebText: ``,
+    linkWebHref: ``,
     subtitulo1: `Objetivo`,
     texto1: `He probado montones de aplicaciones para tomar notas, administrar tareas pendientes, guardar enlaces, etc. He tratado de utilizar una para cada cosa, pero era demasiado, luego una para todo, pero extrañaba algunas características de las otras. Así que decidí crear mi propia aplicación que se adapte a mis necesidades. Con la intención de que sea un proyecto a largo plazo, que pueda ir incorporando todas las características que me gustaría que tenga a medida que voy avanzando en mi aprendizaje como desarrollado.`,
 
@@ -132,7 +132,7 @@ export default function ProyectoANOTA() {
       <h1 className={proyectos.titulo}>{TEXTO.titulo}</h1>
       <div className={`${proyectos.proyecto__container} `}>
         <p>{TEXTO.bajada}</p>
-        <div className={proyectos.columns2}>
+        <div className={proyectos.columns2stack}>
           <div>
             <h3>stack</h3>
             {TEXTO.stack}
@@ -140,30 +140,40 @@ export default function ProyectoANOTA() {
           <div>
             <h3>código</h3>
             <div className={proyectos.link_icon}>
-              <Link target="_blank" href={TEXTO.linkCodeHref.front}>
-                {TEXTO.linkCodeText.front}&nbsp;
+              <Link
+                className={proyectos.underline}
+                target="_blank"
+                href={TEXTO.linkCodeHref.front}
+              >
+                {TEXTO.linkCodeText.front}
               </Link>
+              &nbsp;/&nbsp;
+              <Link
+                className={proyectos.underline}
+                target="_blank"
+                href={TEXTO.linkCodeHref.back}
+              >
+                {TEXTO.linkCodeText.back}
+              </Link>
+              &nbsp;/&nbsp;
+              <Link
+                className={proyectos.underline}
+                target="_blank"
+                href={TEXTO.linkCodeHref.ext}
+              >
+                {TEXTO.linkCodeText.ext}
+              </Link>
+              &nbsp;
               <Image src={externalLinkIcon} alt="external link icon" />
             </div>
-            <div className={proyectos.link_icon}>
-              <Link target="_blank" href={TEXTO.linkCodeHref.back}>
-                {TEXTO.linkCodeText.back}&nbsp;
-              </Link>
-              <Image src={externalLinkIcon} alt="external link icon" />
-            </div>
-            <div className={proyectos.link_icon}>
-              <Link target="_blank" href={TEXTO.linkCodeHref.ext}>
-                {TEXTO.linkCodeText.ext}&nbsp;
-              </Link>
-              <Image src={externalLinkIcon} alt="external link icon" />
-            </div>
-            <h3>web</h3>
+
+            {/* <h3>web</h3>
             <div className={proyectos.link_icon}>
               <Link target="_blank" href={TEXTO.linkWebHref}>
                 {TEXTO.linkWebText}&nbsp;
               </Link>
               <Image src={externalLinkIcon} alt="external link icon" />
-            </div>
+            </div> */}
           </div>
         </div>
         <br />

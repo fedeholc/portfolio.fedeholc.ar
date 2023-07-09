@@ -103,7 +103,7 @@ export default function ProyectoInsta() {
       <h1 className={proyectos.titulo}>{TEXTO.titulo}</h1>
       <div className={`${proyectos.proyecto__container} `}>
         <p>{TEXTO.bajada}</p>
-        <div className={proyectos.columns2}>
+        <div className={proyectos.columns2stack}>
           <div>
             <h3>stack</h3>
             {TEXTO.stack}
