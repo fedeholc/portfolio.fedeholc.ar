@@ -9,12 +9,12 @@ import screenshot2 from "@public/proyecto-nsp/nsp4.png";
 export default function ProyectoNSP() {
   const TEXTO = {
     titulo: `<NuncaSupe\u00ADProgramar/> Blog de apuntes para aprender desarrollo web`,
-    bajada: `Blog de aprendizaje en público, para organizar mis apuntes y ayudar a otras personas compartiendo el conocimiento.`,
+    bajada: `Blog de aprendizaje en público, para organizar mis apuntes y compartir el conocimiento.`,
     stack: (
       <ul>
         <li>Next.js / React / JavaScript</li>
         <li>HTML / CSS </li>
-        <li>MarkDown</li>
+        <li>Markdown</li>
         <li>Git / GitHub</li>
       </ul>
     ),

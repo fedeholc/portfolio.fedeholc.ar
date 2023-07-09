@@ -20,8 +20,16 @@ export default function ProyectoANOTA() {
         <li>Chrome API</li>
       </ul>
     ),
-    linkCodeText: `github/fedeholc  xxx`,
-    linkCodeHref: `https://www.github.com/fedeholc`,
+    linkCodeText: {
+      front: `- Frontend`,
+      back: `- Backend`,
+      ext: `- Extensión`,
+    },
+    linkCodeHref: {
+      front: `https://www.github.com/fedeholc/anota-frontend`,
+      back: `https://www.github.com/fedeholc/anota-backend`,
+      ext: `https://www.github.com/fedeholc/anota-extension`,
+    },
     linkWebText: `xxxx`,
     linkWebHref: `xxxxxxx`,
     subtitulo1: `Objetivo`,
@@ -132,8 +140,20 @@ export default function ProyectoANOTA() {
           <div>
             <h3>código</h3>
             <div className={proyectos.link_icon}>
-              <Link target="_blank" href={TEXTO.linkCodeHref}>
-                {TEXTO.linkCodeText}&nbsp;
+              <Link target="_blank" href={TEXTO.linkCodeHref.front}>
+                {TEXTO.linkCodeText.front}&nbsp;
+              </Link>
+              <Image src={externalLinkIcon} alt="external link icon" />
+            </div>
+            <div className={proyectos.link_icon}>
+              <Link target="_blank" href={TEXTO.linkCodeHref.back}>
+                {TEXTO.linkCodeText.back}&nbsp;
+              </Link>
+              <Image src={externalLinkIcon} alt="external link icon" />
+            </div>
+            <div className={proyectos.link_icon}>
+              <Link target="_blank" href={TEXTO.linkCodeHref.ext}>
+                {TEXTO.linkCodeText.ext}&nbsp;
               </Link>
               <Image src={externalLinkIcon} alt="external link icon" />
             </div>
