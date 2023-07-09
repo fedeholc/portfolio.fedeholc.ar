@@ -27,8 +27,14 @@ export default function ProyectoAP() {
         <li>Git / GitHub</li>
       </ul>
     ),
-    linkCodeText: `github/fedeholc  xxx`,
-    linkCodeHref: `https://www.github.com/fedeholc`,
+    linkCodeText: {
+      front: `frontend`,
+      back: `backend`,
+    },
+    linkCodeHref: {
+      front: `https://github.com/fedeholc/anotes-front-react`,
+      back: `https://github.com/fedeholc/anotes-back-express`,
+    },
     linkWebText: `https://portfolioap-cccf4.web.app/`,
     linkWebHref: `https://portfolioap-cccf4.web.app/`,
     subtitulo1: `Objetivo`,
@@ -91,16 +97,22 @@ export default function ProyectoAP() {
           <div>
             <h3>código</h3>
             <div className={proyectos.link_icon}>
-              <Link target="_blank" href={TEXTO.linkCodeHref}>
-                {TEXTO.linkCodeText}&nbsp;
+              <Link
+                className={proyectos.underline}
+                target="_blank"
+                href={TEXTO.linkCodeHref.front}
+              >
+                {TEXTO.linkCodeText.front}
               </Link>
-              <Image src={externalLinkIcon} alt="external link icon" />
-            </div>
-            <h3>web</h3>
-            <div className={proyectos.link_icon}>
-              <Link target="_blank" href={TEXTO.linkWebHref}>
-                {TEXTO.linkWebText}&nbsp;
+              &nbsp;/&nbsp;
+              <Link
+                className={proyectos.underline}
+                target="_blank"
+                href={TEXTO.linkCodeHref.back}
+              >
+                {TEXTO.linkCodeText.back}
               </Link>
+              &nbsp;
               <Image src={externalLinkIcon} alt="external link icon" />
             </div>
           </div>

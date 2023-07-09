@@ -19,10 +19,10 @@ export default function ProyectoTV() {
         <li>Git / Github</li>
       </ul>
     ),
-    linkCodeText: `github/fedeholc  xxx`,
-    linkCodeHref: `https://www.github.com/fedeholc`,
-    linkWebText: `xxxx`,
-    linkWebHref: `xxxxxxx`,
+    linkCodeText: `github/fedeholc`,
+    linkCodeHref: `https://github.com/fedeholc/MyTvShows`,
+    linkWebText: ``,
+    linkWebHref: ``,
     subtitulo1: `Objetivo`,
     texto1: `La aplicación fue pensada para resolver un problema aparentemente sencillo como el de tener un registro de las series que uno ve en un solo lugar y poder ver si hay nuevos episodios sin depender de tener acceso a las distintas plataformas que existen hoy en día.`,
     subtitulo2: `Características y funcionalidades`,
@@ -108,13 +108,13 @@ export default function ProyectoTV() {
               </Link>
               <Image src={externalLinkIcon} alt="external link icon" />
             </div>
-            <h3>web</h3>
+            {/* <h3>web</h3>
             <div className={proyectos.link_icon}>
               <Link target="_blank" href={TEXTO.linkWebHref}>
                 {TEXTO.linkWebText}&nbsp;
               </Link>
               <Image src={externalLinkIcon} alt="external link icon" />
-            </div>
+            </div> */}
           </div>
         </div>
         <br />
@@ -123,9 +123,12 @@ export default function ProyectoTV() {
         <div className={proyectos.columns1}>
           <p>{TEXTO.texto1}</p>
           <div className={proyectos.screenshot__container}>
-            <figure>
+            <figure
+              className={`${proyectos.screenshot__figure}`}
+            >
+              {" "}
               <Image
-                className={`${proyectos.screenshot} ${proyectos.w700px}`}
+                className={`${proyectos.screenshot}`}
                 src={screenshot1}
                 alt="screenshot"
                 width={700}
@@ -144,10 +147,10 @@ export default function ProyectoTV() {
           <div>{TEXTO.texto2}</div>
           <div className={proyectos.screenshot__container}>
             <figure
-              className={`${proyectos.screenshot__figure} ${proyectos.w700px}`}
+              className={`${proyectos.screenshot__figure}`}
             >
               <Image
-                className={`${proyectos.screenshot} ${proyectos.w700px}`}
+                className={`${proyectos.screenshot}`}
                 src={screenshot2}
                 alt="screenshot"
                 width={600}
