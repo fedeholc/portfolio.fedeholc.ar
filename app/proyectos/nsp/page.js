@@ -23,20 +23,20 @@ export default function ProyectoNSP() {
     linkWebText: `nsp.fedeholc.ar`,
     linkWebHref: `https://nsp.fedeholc.ar/`,
     subtitulo1: `¿Para qué?`,
-    texto1: `Algo que aprendí como docente es que junto con la práctica, intentar enseñar o explicar algo (y si es por escrito mejor) es un excelente camino para aprenderlo. También es importante el aprendizaje colectivo que se genera con el intercambio. Por ello un blog, que es una excelente tecnología para la difusión del conocimiento: a diferencia de lo que circula por plataformas cerradas, sus contenidos puede ser indexados por los buscadores, compartidos en redes sociales, y estar a disposición de quienes lo necesiten.`,
+    texto1: `Algo que aprendí como docente es que junto con la práctica, intentar enseñar o explicar algo (y si es por escrito mejor) es un excelente camino para aprenderlo. También es importante el aprendizaje colectivo que se genera con el intercambio. De allí la creación de un blog, que es una excelente tecnología para la difusión del conocimiento: a diferencia de lo que circula por plataformas cerradas, sus contenidos puede ser indexados por los buscadores, compartidos en redes sociales, y estar a disposición de quienes lo necesiten.`,
     subtitulo2: `¿Qué tiene de bueno?`,
     texto2: (
       <ul>
         <li>
-          Mediante Next.js elo blog se genera como sitio estático del lado del servidor lo cual hace que sea veloz, y fácil de indexar por los buscadores. También es sencillo de publicar, ya que al estar alojado en Vercel, el deploy se realiza automáticamente cada vez que se actualiza el repositorio en Github.
+          Mediante Next.js el blog se genera como sitio estático del lado del servidor, lo cual hace que sea veloz, y fácil de indexar por los buscadores. También es sencillo de publicar, ya que al estar alojado en Vercel, el deploy se realiza automáticamente cada vez que se actualiza el repositorio en Github.
         </li>
         <li>
-          Añadir nuevas entrada al blog es simple: se escribe el contenido del post en un archivo
-          con formato MarkDown, se lo sube a una carpeta dentro del repositorio
-          de proyecto, y automáticamente se realiza su publicación.
+          Añadir nuevas entradas al blog es simple: se escribe el contenido del post en un archivo
+          con formato Markdown, se lo sube a una carpeta dentro del repositorio
+          de proyecto, y automáticamente queda publicado.
         </li>
         <li>
-          Utilizando el formato MarkDown junto con la librería remark.js se le puede dar formato resaltado a los bloques de código de las publicaciones.
+          Utilizando el formato Markdown junto con la librería remark.js se le puede dar formato resaltado a los bloques de código de las publicaciones.
         </li>
         <li>
           Es responsive y se adapta para que pueda ser leído desde cualquier dispositivo.
@@ -54,8 +54,8 @@ export default function ProyectoNSP() {
           Hasta aquí solo había programando SPAs con renderizado del lado del cliente, por lo que me llevo un tiempo comprender las variantes que hay para hacerlo del lado del servidor (o de manera combinada), y cómo trabajar de ese modo con Next, integrando frontend y backend en una sola aplicación full stack.
         </li>
         <li>
-          Al poco tiempo de publicado el blog, Next lanzó una nueva versión incorporando React Server Components, y cometí el error de ir tras la novedad, ya que no logré hacer que funcionaran las librerías
-          para el estilizado del MarkDown en la nueva versión. Tuve que regresar a la  anterior, pero con la lección aprendida sobre la importancia de utilizar tecnologías establecidas y probadas.
+          Al poco tiempo de publicado el blog, Next lanzó una nueva versión incorporando React Server Components, y cometí el error de ir tras la novedad, ya que no funcionaban las librerías
+          para el estilizado del Markdown en la nueva versión. Tuve que regresar a la  anterior, pero con la lección aprendida sobre la importancia de utilizar tecnologías probadas y consolidadas.
         </li>
         <li>
           Publicar el blog en un dominio propio me llevó también a aprender como registrarlo, cómo manejar los DNS, y las configuraciones necesarias para que pueda ser indexado por los buscadores.
