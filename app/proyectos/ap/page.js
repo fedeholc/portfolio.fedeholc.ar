@@ -15,8 +15,7 @@ import screenshot4 from "@public/proyecto-ap/ap4.png";
 export default function ProyectoAP() {
   const TEXTO = {
     titulo: `Argentina Programa v3.0 - Curriculum Vitae`,
-    bajada: `El sitio web es curriculum vitae online que integra distintas tecnologías y funcionalidades. Fue solicitado como trabajo final del curso de desarrollo web full stack de Argentina Programa.
-    En su realización aprendí mucho, pero más importante aún, me permitió reencontrarme felizmente con la programación. =)`,
+    bajada: `El sitio web es una SPA de curriculum vitae online que integra distintas tecnologías y funcionalidades. Fue solicitado como trabajo final del curso de desarrollo web full stack de Argentina Programa.Aprendí mucho haciéndolo, pero más importante aún, me permitió reencontrarme felizmente con la programación. =)`,
     stack: (
       <ul>
         <li>Angular / TypeScript / JavaScript</li>
@@ -39,7 +38,7 @@ export default function ProyectoAP() {
     linkWebHref: `https://portfolioap-cccf4.web.app/`,
     subtitulo1: `Objetivo`,
     texto1: `-`,
-    subtitulo2: `Características y funcionalidades`,
+    subtitulo2: `¿Qué tiene de bueno?`,
     texto2: (
       <ul>
         <li>Diseño responsive, adaptable a distintos tamaños de pantalla.</li>
@@ -50,35 +49,20 @@ export default function ProyectoAP() {
         </li>
       </ul>
     ),
-    subtitulo3: "Problemas y aprendizajes",
+    subtitulo3: "Problemas en el camino y aprendizajes",
     texto3: (
       <ul>
         <li>
-          No fue sencillo componer el rompecabezas de tecnologías necesarias
-          para que todo funcione, y en algunos aspectos las cosas quedaron
-          "atadas con alambre", ya que no tenía el tiempo necesario para
-          profundizar en los fundamentos de cada herramienta. ¡Pero funcionó!
+          No fue sencillo armar el rompecabezas de tecnologías necesarias para que todo funcione, y en algunos aspectos las partes quedaron "atadas con alambre", ya que no tenía el tiempo necesario para profundizar en las bases de cada herramienta y encontrar la mejor solución posible. ¡Pero funcionó!
         </li>
         <li>
-          El trabajo me permitió tener una visión general de cómo se integra un
-          desarrollo que incluye un front end y un back end con API y base de
-          datos.
+          El trabajo me permitió tener una visión general de cómo se integra un desarrollo que incluye un front end y un back end con API y base de datos.
         </li>
         <li>
-          Con Angular comprendí cómo era trabajar con un framework para crear
-          una SPA en particular cómo se estructura el código utilizando
-          componentes y cómo se implementa un patrón de diseño MVC. El haber
-          aprendido directamente Angular con TypeScript me obligo a tener que
-          estudiar que a posteriori JavaScrip para poder tener un conocimiento
-          de los fundamentos y poder diferenciar que características eran
-          propias de cada tecnología.
+          Con Angular comprendí cómo era trabajar con un framework para crear una SPA, y en particular cómo se estructura el código utilizando componentes y cómo se implementa un patrón de diseño MVC. El haber aprendido directamente Angular con TypeScript me obligo a tener que estudiar JavaScrip a posteriori para poder tener un conocimiento de los fundamentos y poder diferenciar que características eran propias de cada tecnología.
         </li>
         <li>
-          La exigencia de Argentina Programa de hacer el deploy en un
-          determinado lugar, y que ese lugar fuera cambiando varias veces
-          (Heroku, Fly, Koyeb, PlanetScale) cuando faltaba poco tiempo para la
-          entrega fue un dolor de cabeza. Pero rescato que me permitió conocer
-          distintas opciones y formas de hacer deploys de las aplicaciones.
+          La exigencia de hacer el deploy en un sitio en particular, y que este fuera cambiando varias veces (Heroku, Fly.io, Koyeb) cuando faltaba poco tiempo para la entrega fue un dolor de cabeza. Pero rescato que me permitió conocer distintas opciones y formas de hacer deploys de las aplicaciones.
         </li>
       </ul>
     ),
