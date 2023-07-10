@@ -1,5 +1,6 @@
 //NextJS
 import Image from "next/image";
+import Link from "next/link";
 //styles
 import "./globals.css";
 //icons
@@ -25,7 +26,7 @@ export default function Home() {
       <div className="main-container">
         <div>
           <p>
-            Mi nombre es <span className="resaltado">Federico Holc</span>, 
+            Mi nombre es <span className="resaltado">Federico Holc</span>,
             <strong> soy desarrollador web</strong>&nbsp;
             <span className="emoji">🧑‍💻</span>, y vivo en Buenos Aires,
             Argentina.
@@ -33,7 +34,7 @@ export default function Home() {
           <p>
             De chico amaba jugar al <span className="emoji">👾</span> space
             invaders <span className="emoji">👾</span> en la IBM PC/XT de mi
-            papá, y di mis primeros pasos en programación con Logo&nbsp;
+            papá, y di los primeros pasos en programación con Logo&nbsp;
             <span className="emoji">🐢</span>. Durante mi último año de escuela
             secundaria (técnica en computación) conseguí trabajo como
             desarrollador en Visual Basic. Luego comencé a estudiar Ciencias de
@@ -66,11 +67,10 @@ export default function Home() {
           profundamente la programación. Me encontré con que el desarrollo web
           era algo muy distinto al de hace 20 años&nbsp;
           <span className="emoji">🤯</span>, ¡y me atrapó!&nbsp;
-          <span className="emoji">🕸️</span> Desde entonces no paré de aprender
-          ni de programar (ahora con una mirada puesta en las necesidades de
-          usuarios y usuarias que antes no tenía). ¿Qué mejor entonces que
-          hacerlo a tiempo completo ayudando a una organización a alcanzar sus
-          objetivos? Ese es mi próximo paso.&nbsp;
+          <span className="emoji">🕸️</span> Desde ese momento no paré de
+          aprender ni de programar. ¿Qué mejor entonces que poder hacerlo cada
+          día, ayudando a una organización a alcanzar sus objetivos? Ese es mi
+          próximo paso.&nbsp;
           <span className="emoji">🤝</span>
         </p>
       </div>
@@ -86,7 +86,7 @@ export default function Home() {
                 height="13"
                 src={starIcon}
               ></Image>
-              &nbsp;Proyectos
+              &nbsp;<Link href="/proyectos">Proyectos</Link>
             </div>
           </button>
           ,&nbsp;
