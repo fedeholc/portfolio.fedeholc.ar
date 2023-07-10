@@ -22,7 +22,7 @@ export default function ProyectoNSP() {
     linkCodeHref: `https://www.github.com/fedeholc/NuncaSupeProgramar`,
     linkWebText: `nsp.fedeholc.ar`,
     linkWebHref: `https://nsp.fedeholc.ar/`,
-    subtitulo1: `¿Para qué?`,
+    subtitulo1: `¿Para qué un blog?`,
     texto1: `Algo que aprendí como docente es que junto con la práctica, intentar enseñar o explicar algo (y si es por escrito mejor) es un excelente camino para aprenderlo. También es importante el aprendizaje colectivo que se genera con el intercambio. De allí la creación de un blog, que es una excelente tecnología para la difusión del conocimiento: a diferencia de lo que circula por plataformas cerradas, sus contenidos puede ser indexados por los buscadores, compartidos en redes sociales, y estar a disposición de quienes lo necesiten.`,
     subtitulo2: `¿Qué tiene de bueno?`,
     texto2: (

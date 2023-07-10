@@ -23,32 +23,30 @@ export default function ProyectoTV() {
     linkCodeHref: `https://github.com/fedeholc/MyTvShows`,
     linkWebText: ``,
     linkWebHref: ``,
-    subtitulo1: `Objetivo`,
-    texto1: `La aplicación fue pensada para resolver un problema aparentemente sencillo como el de tener un registro de las series que uno ve en un solo lugar y poder ver si hay nuevos episodios sin depender de tener acceso a las distintas plataformas que existen hoy en día.`,
-    subtitulo2: `Características y funcionalidades`,
+    subtitulo1: `¿Para qué sirve?`,
+    texto1: `La aplicación fue pensada para resolver un problema aparentemente sencillo como el de tener un registro de las series que ha visto o quiere ver, en un solo lugar, y poder saber si hay nuevos episodios sin depender del acceso a las distintas plataformas que existen hoy en día.`,
+    subtitulo2: `¿Qué tiene de bueno?`,
     texto2: (
       <ul>
         <li>
-          La aplicación permite buscar series en la base de datos de IMDB
-          mediante el uso de una API, y agregarlas a la lista de favoritos.
+          La aplicación permite buscar series en la base de datos de IMDb
+          (Internet Movie Database) mediante el uso de una API, y agregarlas a
+          la lista de favoritos.
         </li>
         <li>
-          Se puede ver un listado de esas series con la información de la
-          cantidad de temporadas y la fecha de emisión del último episodio.
+          Se puede ver un listado de las series con la correspondiente
+          información respecto a la cantidad de temporadas y a la fecha de
+          emisión del último episodio.
         </li>
         <li>
-          Es posible ordenar la lista por la fecha de último episodio justamente
-          para ver cuáles son los que han salido más recientemente.
+          Es posible ordenar el listado alfebéticamente o por la fecha del
+          último episodio para así poder ver cuáles son los que han sido
+          emitidos recientemente.
         </li>
         <li>
-          {" "}
-          Ideas para implementar a futuro: - Sin dudas la aplicación es muy
-          básica y podría agregarse gran cantidad de funcionalidades. Pero en
-          particular, ahora que sé como desarrollar extensiones para el
-          navegador, creo que sería muy util hacer una que nos muestre una
-          alerta cuando haya nuevos episodios de nuestras series favoritas. -
-          Para eso seria necesario también que la aplicación le permita al
-          usuario indicar cuál es el último capitulo de la serie que ha visto.
+          Funcionalidades para implementar a futuro: poder indicar en cuál es el
+          último episodio que se ha visto de cada serie, junto con una extensión
+          del navegador que nos alerte cuando haya nuevos episodios para ver.
         </li>
       </ul>
     ),
@@ -56,35 +54,29 @@ export default function ProyectoTV() {
     texto3: (
       <ul>
         <li>
-          El principal desafio fue combinar distintas funciones asincrónicas
-          para que funcionaran en conjunto, ya que primero debía leer los datos
-          de Firebase, luego obtener cierta información de las series desde la
-          API de OpenIMDB, y luego con esa información realizar una nueva
-          consulta a otro endpoint de la misma API para obtener la información
-          de los episodios de cada serie. Afortunadamente pude resolverlo
-          correctamente con la utilización de async/await. Aunque me queda
-          pendiente profundizar en como abordar los errores cuando algo falla en
-          una de las funciones asincrónicas.
+          Era la primera vez que utilizaba React y quería poner en práctica
+          cuestiones básicas como el uso de componentes, renderizado
+          condicional, manejo de estados y props, etc.
         </li>
         <li>
-          También tuve algunos dolores de cabeza con el UseEffect en relación a
-          la carga de los datos, pero la nueva documentación de React es muy
-          clara en cuanto a cómo usarlo y sobre todo cuando no usarlo, así que
-          pude resolverlo.
+          Un desafío nuevo fue el combinar distintas funciones asíncronas para
+          que trabajen en conjunto, ya que primero debía leer los datos de
+          Firebase, a continuación obtener cierta información de las series
+          desde la API de OpenIMDb, para a luego realizar una nueva solicitud a
+          otro endpoint, y así obtener los datos sobre los episodios de cada
+          serie. Pude resolverlo mediante la utilización de async/await. Pero me
+          queda pendiente profundizar en como abordar los errores cuando algo
+          falla en una de las funciones asíncronas.
         </li>
-
         <li>
-          La verdad es que elegí React porque estaba comenzando a aprenderlo y
-          me pareció un buena oportunidad para poner en práctica cuestiones
-          básicas como el uso de componentes, renderizado condicional, manejo de
-          estados y props, etc. Debo confesar que no sé la causa particular pero
-          me sentí muy a gusto trabajando con React al punto de decidir que
-          quería profundizar más en su estudio y dejar de lado Angular que es
-          con lo que había trabajado antes. También aproveche para probar por
-          primera vez Tailwind como framework de CSS. Me pareció muy interesante
-          utility clases. Por último, utilicé una base de datos de Firebase ya
-          que era muy sencilla de implementar y no tenía grandes requerimientos
-          de almacenamiento.
+          También tuve algunos dolores de cabeza con el uso de UseEffect en
+          relación a la carga de los datos, pero la nueva documentación de React
+          es muy clara en cuanto a cómo usarlo y sobre todo cuando no usarlo,
+          así que pude resolverlo.
+        </li>
+        <li>
+          Aproveché para probar por primera vez Tailwind CSS, del cual rescato
+          la idea de trabajar con utility clases.
         </li>
       </ul>
     ),
@@ -123,9 +115,7 @@ export default function ProyectoTV() {
         <div className={proyectos.columns1}>
           <p>{TEXTO.texto1}</p>
           <div className={proyectos.screenshot__container}>
-            <figure
-              className={`${proyectos.screenshot__figure}`}
-            >
+            <figure className={`${proyectos.screenshot__figure}`}>
               {" "}
               <Image
                 className={`${proyectos.screenshot}`}
@@ -146,9 +136,7 @@ export default function ProyectoTV() {
         <div className={proyectos.columns1}>
           <div>{TEXTO.texto2}</div>
           <div className={proyectos.screenshot__container}>
-            <figure
-              className={`${proyectos.screenshot__figure}`}
-            >
+            <figure className={`${proyectos.screenshot__figure}`}>
               <Image
                 className={`${proyectos.screenshot}`}
                 src={screenshot2}

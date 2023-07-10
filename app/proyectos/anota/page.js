@@ -32,7 +32,7 @@ export default function ProyectoANOTA() {
     },
     linkWebText: ``,
     linkWebHref: ``,
-    subtitulo1: `¿Para qué?`,
+    subtitulo1: `¿Para qué sirve?`,
     texto1: `Probé un montón de aplicaciones para tomar notas, administrar tareas pendientes, guardar enlaces, etc., traté de usar una para cada cosa, o una sola para todo, nada me convencía. Así que puse manos a la obra para con este proyecto de app de notas, con la intención de que ir incorporando las características que necesito a medida que voy avanzando en mi aprendizaje como desarrollador.`,
     subtitulo2: `¿Qué tiene de bueno?`,
     texto2: (

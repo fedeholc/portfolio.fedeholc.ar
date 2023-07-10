@@ -22,7 +22,7 @@ export default function ProyectoInsta() {
     linkCodeHref: `https://github.com/fedeholc/full-size-insta-extension`,
     linkWebText: `chrome web store`,
     linkWebHref: `https://chrome.google.com/webstore/detail/full-size-images-for-ig/pbablejaejbcdfcnmkiofkbloglbjncm`,
-    subtitulo1: `¿Para qué?`,
+    subtitulo1: `¿Para qué sirve?`,
     texto1: `Quienes disfrutamos de ver y hacer fotos, queremos poder apreciarlas a máxima resolución y en pantalla completa. La extensión busca hacer eso posible, de manera sencilla, y sin tener que recurrir a otra plataforma.`,
     subtitulo2: `¿Qué tiene de bueno?`,
     texto2: (
