@@ -11,12 +11,23 @@ import ProyectoAP from "./ap/page";
 import ProyectoTV from "./tv/page";
 import ProyectoANOTA from "./anota/page";
 
+import CardProyecto from "@app/components/cardProyecto";
+
 /*         👾🌿🍁🪐🌟🛠️💘🕸️🚲️🎼
  */
 export default function Proyectos() {
   return (
     <div className={proyectos.w1000px}>
       <div className={proyectos.header}>PROYECTOS</div>
+
+      <div className={proyectos.cards__container}>
+        <CardProyecto>Anota</CardProyecto>
+        <CardProyecto>NSP</CardProyecto>
+        <CardProyecto>Instagram</CardProyecto>
+        <CardProyecto>TV</CardProyecto>
+        <CardProyecto>Argentina Programa</CardProyecto>
+      </div>
+
       <br />
       <ProyectoANOTA></ProyectoANOTA>
 

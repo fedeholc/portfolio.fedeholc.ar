@@ -1,0 +1,6 @@
+.card__container {
+  display: flex;
+  border: 2px solid gray;
+  font-size: 2rem;
+  width: 300px;
+}
