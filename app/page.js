@@ -118,7 +118,10 @@ export default function Home() {
                 height="10"
                 src={notesIcon}
               ></Image>
-              &nbsp;NSP Blog
+              &nbsp;
+              <Link target="_blank" href="https://nsp.fedeholc.ar">
+                NSP Blog
+              </Link>
             </div>
           </button>
           ,&nbsp;
@@ -134,7 +137,10 @@ export default function Home() {
                 height="12"
                 src={githubicon}
               ></Image>
-              &nbsp;GitHub
+              &nbsp;
+              <Link href="https://github.com/fedeholc" target="_blank">
+                GitHub
+              </Link>
             </div>
           </button>
           &nbsp;
@@ -149,7 +155,13 @@ export default function Home() {
                 height="14"
                 src={linkedinIcon}
               ></Image>
-              &nbsp;LinkedIn
+              &nbsp;
+              <Link
+                href="https://www.linkedin.com/in/federicoholc/"
+                target="_blank"
+              >
+                LinkedIn
+              </Link>
             </div>
           </button>
           &nbsp;
@@ -164,7 +176,10 @@ export default function Home() {
                 height="14"
                 src={instagramIcon}
               ></Image>
-              &nbsp;Instagram
+              &nbsp;
+              <Link href="https://www.instagram.com/fedeholc/" target="_blank">
+                Instagram
+              </Link>
             </div>
           </button>
           ,&nbsp;
@@ -180,7 +195,10 @@ export default function Home() {
                 height="14"
                 src={mailIcon}
               ></Image>
-              &nbsp;dev@fedeholc.ar
+              &nbsp;
+              <Link href="mailto:federicoholc@gmail.com">
+                federicoholc@gmail.com
+              </Link>
             </div>
           </button>
           .

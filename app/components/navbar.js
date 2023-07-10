@@ -16,47 +16,56 @@ export default function NavBar() {
     <div className={navbar.container}>
       <div className={navbar.container__left}>
         <Link href="/">
-          <span className={navbar.emoji__left}>⚡️</span><span className="inicio-link">inicio</span>
+          <span className={navbar.emoji__left}>⚡️</span>
+          <span className="inicio-link">inicio</span>
         </Link>
       </div>
       <div className={navbar.container__right}>
-        <Image
-          className={navbar.icon}
-          alt="github icon"
-          width="40"
-          height="40"
-          src={githubicon}
-        ></Image>
+        <Link href="https://github.com/fedeholc" target="_blank">
+          <Image
+            className={navbar.icon}
+            alt="github icon"
+            width="40"
+            height="40"
+            src={githubicon}
+          ></Image>
+        </Link>
         <div className={navbar.separator}>|</div>
-        <Image
-          className={navbar.icon}
-          alt="linkedin icon"
-          width="40"
-          height="40"
-          src={linkedinIcon}
-        ></Image>
+        <Link href="https://www.linkedin.com/in/federicoholc/" target="_blank">
+          <Image
+            className={navbar.icon}
+            alt="linkedin icon"
+            width="40"
+            height="40"
+            src={linkedinIcon}
+          ></Image>
+        </Link>
         <div className={navbar.separator}>|</div>
-        <Image
-          className={navbar.icon}
-          alt="mail icon"
-          width="40"
-          height="40"
-          src={mailIcon}
-        ></Image>
+        <Link href="mailto:federicoholc@gmail.com" target="_blank">
+          <Image
+            className={navbar.icon}
+            alt="mail icon"
+            width="40"
+            height="40"
+            src={mailIcon}
+          ></Image>
+        </Link>
         <div className={navbar.separator}>|</div>
-        <Image
-          className={navbar.icon}
-          alt="instagram icon"
-          width="40"
-          height="40"
-          src={instagramIcon}
-        ></Image>
+        <Link href="https://www.instagram.com/fedeholc" target="_blank">
+          <Image
+            className={navbar.icon}
+            alt="instagram icon"
+            width="40"
+            height="40"
+            src={instagramIcon}
+          ></Image>
+        </Link>
         <div className={navbar.separator}>|</div>
         <div>CV</div>
         <div className={navbar.separator}>|</div>
-        <div>Proyectos</div>
+        <div><Link href="/proyectos">Proyectos</Link></div>
         <div className={navbar.separator}>|</div>
-        <div>Blog</div>
+        <div><Link target="_blank" href="https://nsp.fedeholc.ar">Blog</Link></div>
         <div className={navbar.separator}>|</div>
         <Theme></Theme>
       </div>
