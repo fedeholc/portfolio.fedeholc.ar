@@ -18,12 +18,13 @@ export default function Proyectos() {
     <div className={proyectos.w1000px}>
       <div className={proyectos.header}>PROYECTOS</div>
       <br />
-      <ProyectoNSP></ProyectoNSP>
+      <ProyectoANOTA></ProyectoANOTA>
+
       <div className={proyectos.divider}>🌿</div>
       <br />
       <div className={proyectos.header}>PROYECTO</div>
       <br />
-      <ProyectoANOTA></ProyectoANOTA>
+      <ProyectoNSP></ProyectoNSP>
       <div className={proyectos.divider}>🌿</div>
       <br />
       <div className={proyectos.header}>PROYECTO</div>
