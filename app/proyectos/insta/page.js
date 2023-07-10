@@ -8,7 +8,7 @@ import screenshot2 from "@public/proyecto-ig/ig1.png";
 
 export default function ProyectoInsta() {
   const TEXTO = {
-    titulo: `instagram full size chrome extension`,
+    titulo: `Full Size Images for IG`,
     bajada: `Es una extensión muy sencilla para el navegador Chrome que permite ver las fotos de instagram a máxima resolución.`,
     stack: (
       <ul>
@@ -22,16 +22,12 @@ export default function ProyectoInsta() {
     linkCodeHref: `https://github.com/fedeholc/full-size-insta-extension`,
     linkWebText: `chrome web store`,
     linkWebHref: `https://chrome.google.com/webstore/detail/full-size-images-for-ig/pbablejaejbcdfcnmkiofkbloglbjncm`,
-    subtitulo1: `Objetivo`,
-    texto1: `Quienes amamos ver y hacer fotos, disfrutamos de poder apreciarlas a máxima resolución y en pantalla completa. La extensión busca resolver el problema ese sin tener que recurrir a otra plataforma (¡tal vez nunca surja un nuevo flickr! ) y de una manera sencilla.
-
-   
-    `,
-    subtitulo2: `Características y funcionalidades`,
+    subtitulo1: `¿Para qué?`,
+    texto1: `Quienes disfrutamos ver y hacer fotos, queremos poder apreciarlas a máxima resolución y en pantalla completa. La extensión busca hacer posible, de manera sencilla, y sin tener que recurrir a otra plataforma.`,
+    subtitulo2: `¿Qué tiene de bueno?`,
     texto2: (
       <ul>
         <li>
-          {" "}
           Al tener la extensión activada, en el angulo superior derecho de cada
           foto aparece de manera sutil un icono de una lupa. Al hacer click
           sobre el icono se abre la imagen a tamaño completo y sin otras
@@ -39,54 +35,26 @@ export default function ProyectoInsta() {
           y posición original.
         </li>
         <li>
-          Ideas para implementar a futuro: - Que se pueda elegir si se abre la
+          Algunas ideas para implementar a futuro: que se pueda elegir si se abre la
           imagen en una nueva pestaña o en la misma, y si se utiliza o no el
-          modo de pantalla completa del navegador. - Que se pueda generar una
-          galería de imágenes para ir viendo una trás otra a pantalla completa
-          evitando tener que clickear una por una de las que queremos ver.
+          modo de pantalla completa del navegador; que se pueda generar una
+          galería de imágenes para ver una trás otra a pantalla completa.
         </li>
       </ul>
     ),
-    subtitulo3: "Problemas y aprendizajes",
+    subtitulo3: "Problemas en el camino, y aprendizajes",
     texto3: (
       <ul>
-        <li>
-          - La principal dificultad técnica con la que me encontré es que al
-          tratarse Instagram de una web dinámica, a medida que se van cargando
-          nuevos elementos en el feed, es necesario ir agregando los listeners e
-          iconos de lupas. Pero no encontré un evento que se dispare cuando
-          aparece nuevo contenido. La solución que implementé es hacerlo con el
-          evento mousemove, lo cuál es efectivo pero poco eficiente ya que
-          implica leer toda la estructura de la web muchas más veces de las
-          necesarias. Tengo anotado coomo tarea pendiente encontrar una solución
-          más eficiente. (Si usted que está que está leyendo esto tiene la
-          respuesta ¡por favor escribame!)
+        <li> La principal dificultad técnica con la que me encontré es que al ser Instagram de una web dinámica, a medida que aparecen nuevos elementos en el feed, es necesario ir agregando listeners e iconos. Pero no encontré un evento que se dispare cuando aparece nuevo contenido. La solución que implementé es hacerlo con el evento mousemove, lo cuál es efectivo pero poco eficiente ya que implica leer toda la estructura de la web muchas más veces de las necesarias. Tengo pendiente buscar una solución más eficiente para este problema. (Si sabés cómo hacerlo ¡por favor escribame!)
         </li>
-        <li>
-          - Otra cuestión que aún debo investigar es como portar la extensión a
-          Firefox, Safari y Edge, de modo tal de no excluir a quiénes utilizan
-          otros de los principales navegadores.
+        <li> Otra cuestión que aún debo investigar es como portar la extensión a Firefox, Safari y Edge, de modo tal de no excluir a quiénes utilizan algún otro de los principales navegadores.
         </li>
-        <li>
-          {" "}
-          - Finalmente mencionar otra dificultad no técnica que ingenuamente no
-          había tenido en cuenta: luego de varias semanas de publicada la
-          extensión me llegó un aviso de que la eliminaban de la chrome store
-          por utilizar la palabra "Instagram" en el nombre y porque el logo
-          incluía los colores de la marca.
+        <li> También surgió un problema no técnico que no había tenido en cuenta: luego de varias semanas de publicada la extensión, cuando ya tenía más de cien usuarios, me llegó un aviso de que la eliminaban de la chrome web store de Estados Unidos por utilizar la palabra "Instagram" en el nombre y porque el logo incluía los colores de la marca. Por lo que tuve que cambiarle el nombre y el logo y volver a publicarla.
         </li>
-        <li>
-          - Hacer extensiones del navegador es un buen ejercicio para practicar
-          HTML, CSS y JavaScript en estado puro, y en este caso también para
-          aprender sobre la manipulación del DOM y ver cómo es su estructura en
-          este tipo de webs. De hecho hay que estar atento a cualquier cambio
-          que pueda hacer que deje de funcionar la extensión (nota mental:
-          podría programar una alerta que me avise cuando ese ocurre).
+        <li>Hacer extensión para el navegador me resulto un buena forma de para practicar HTML, CSS y JavaScript sin frameworks de por medio, aprender sobre la manipulación del DOM y ver cómo lo estructuran este tipo de aplicaciones. Pienso ahora que sería interesante programar una alerta que me avise cuando se produzcan modificaciones en el DOM del sitio que hagan que la extensión deje de funcionar.
         </li>
-        <li>
-          - No hay tantos contenidos para aprender a desarrollar extensiones por
-          lo que valoro mucho la dedicación a elaborar una buena documentación
-          como la que tiene Chrome, con explicaciones y ejemplos.{" "}
+        <li>Lamentablemente no hay tantos contenidos en la web para aprender a desarrollar extensiones por
+          lo que valoro mucho la elaboración de una buena documentación con explicaciones claras y muchos ejemplos de código como la que tiene Chrome de su API, fue de gran ayuda.
         </li>
         <li>
           - Es muy motivador poder hacer con pocas líneas de código algo que
