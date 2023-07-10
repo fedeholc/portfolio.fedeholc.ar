@@ -15,7 +15,7 @@ import screenshot4 from "@public/proyecto-ap/ap4.png";
 export default function ProyectoAP() {
   const TEXTO = {
     titulo: `Argentina Programa v3.0 - Curriculum Vitae`,
-    bajada: `El sitio web es una SPA de curriculum vitae online que integra distintas tecnologías y funcionalidades. Fue solicitado como trabajo final del curso de desarrollo web full stack de Argentina Programa.Aprendí mucho haciéndolo, pero más importante aún, me permitió reencontrarme felizmente con la programación. =)`,
+    bajada: `Es un sitio web a modo de curriculum vitae online que integra distintas tecnologías y funcionalidades. Fue solicitado como trabajo final del curso de desarrollo web full stack de Argentina Programa. Aprendí mucho haciéndolo, pero más importante aún, me permitió reencontrarme felizmente con la programación. =)`,
     stack: (
       <ul>
         <li>Angular / TypeScript / JavaScript</li>
