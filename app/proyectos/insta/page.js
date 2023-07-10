@@ -57,10 +57,7 @@ export default function ProyectoInsta() {
           lo que valoro mucho la elaboración de una buena documentación con explicaciones claras y muchos ejemplos de código como la que tiene Chrome de su API, fue de gran ayuda.
         </li>
         <li>
-          - Es muy motivador poder hacer con pocas líneas de código algo que
-          funciona, que es útil y que se puede compartir con otras personas. Me
-          ha dado ganas e ideas para hacer montones de extensiones (¿alguién me
-          quiere donar tiempo?).
+          Es muy motivador poder crear algo últil, que funciona, que se puede compartir con otras personas. Este proyecto me ha dado ganas e ideas para hacer montones de extensiones.
         </li>
       </ul>
     ),
