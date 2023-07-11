@@ -28,22 +28,30 @@ export default function ProyectoNSP() {
     texto2: (
       <ul>
         <li>
-          Mediante Next.js el blog se genera como sitio estático del lado del servidor, lo cual hace que sea veloz, y fácil de indexar por los buscadores. También es sencillo de publicar, ya que al estar alojado en Vercel, el deploy se realiza automáticamente cada vez que se actualiza el repositorio en Github.
+          Mediante Next.js el blog se genera como sitio estático del lado del
+          servidor, lo cual hace que sea veloz, y fácil de indexar por los
+          buscadores. También es sencillo de publicar, ya que al estar alojado
+          en Vercel, el deploy se realiza automáticamente cada vez que se
+          actualiza el repositorio en Github.
         </li>
         <li>
-          Añadir nuevas entradas al blog es simple: se escribe el contenido del post en un archivo
-          con formato Markdown, se lo sube a una carpeta dentro del repositorio
-          de proyecto, y automáticamente queda publicado.
+          Añadir nuevas entradas al blog es simple: se escribe el contenido del
+          post en un archivo con formato Markdown, se lo sube a una carpeta
+          dentro del repositorio de proyecto, y automáticamente queda publicado.
         </li>
         <li>
-          Utilizando el formato Markdown junto con la librería remark.js se le puede dar formato resaltado a los bloques de código de las publicaciones.
+          Utilizando el formato Markdown junto con la librería remark.js se le
+          puede dar formato resaltado a los bloques de código de las
+          publicaciones.
         </li>
         <li>
-          Es responsive y se adapta para que pueda ser leído desde cualquier dispositivo.
+          Es responsive y se adapta para que pueda ser leído desde cualquier
+          dispositivo.
         </li>
         <li>
-          Funcionalidades para implementar a futuro: realización de búsquedas dentro del sitio,
-          filtrado de publicaciones por etiquetas, posibilidad de añadir comentarios, etc.
+          Funcionalidades para implementar a futuro: realización de búsquedas
+          dentro del sitio, filtrado de publicaciones por etiquetas, posibilidad
+          de añadir comentarios, etc.
         </li>
       </ul>
     ),
@@ -51,14 +59,24 @@ export default function ProyectoNSP() {
     texto3: (
       <ul>
         <li>
-          Hasta aquí solo había programando SPAs con renderizado del lado del cliente, por lo que me llevo un tiempo comprender las variantes que hay para hacerlo del lado del servidor (o de manera combinada), y cómo trabajar de ese modo con Next, integrando frontend y backend en una sola aplicación full stack.
+          Hasta aquí solo había programando SPAs con renderizado del lado del
+          cliente, por lo que me llevo un tiempo comprender las variantes que
+          hay para hacerlo del lado del servidor (o de manera combinada), y cómo
+          trabajar de ese modo con Next, integrando frontend y backend en una
+          sola aplicación full stack.
         </li>
         <li>
-          Al poco tiempo de publicado el blog, Next lanzó una nueva versión incorporando React Server Components, y cometí el error de ir tras la novedad, ya que no funcionaban las librerías
-          para el estilizado del Markdown en la nueva versión. Tuve que regresar a la  anterior, pero con la lección aprendida sobre la importancia de utilizar tecnologías probadas y consolidadas.
+          Al poco tiempo de publicado el blog, Next lanzó una nueva versión
+          incorporando React Server Components, y cometí el error de ir tras la
+          novedad, ya que no funcionaban las librerías para el estilizado del
+          Markdown en la nueva versión. Tuve que regresar a la anterior, pero
+          con la lección aprendida sobre la importancia de utilizar tecnologías
+          probadas y consolidadas.
         </li>
         <li>
-          Publicar el blog en un dominio propio me llevó también a aprender como registrarlo, cómo manejar los DNS, y las configuraciones necesarias para que pueda ser indexado por los buscadores.
+          Publicar el blog en un dominio propio me llevó también a aprender como
+          registrarlo, cómo manejar los DNS, y las configuraciones necesarias
+          para que pueda ser indexado por los buscadores.
         </li>
       </ul>
     ),
@@ -99,7 +117,7 @@ export default function ProyectoNSP() {
           <div className={proyectos.screenshot__container}>
             <figure className={`${proyectos.screenshot__figure} `}>
               <Image
-                className={`${proyectos.screenshot} ${proyectos.w700px}`}
+                className={`${proyectos.screenshot}`}
                 src={screenshot1}
                 alt="screenshot"
                 width={700}

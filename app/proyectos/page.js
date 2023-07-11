@@ -13,24 +13,55 @@ import ProyectoANOTA from "./anota/page";
 
 import CardProyecto from "@app/components/cardProyecto";
 
-/*         👾🌿🍁🪐🌟🛠️💘🕸️🚲️🎼
+import imagen1 from "@public/proyecto-nsp/nsp2.png";
+
+/*         👾🌿🍁🪐🌟🛠️💘🕸️🚲️🎼⭐
  */
 export default function Proyectos() {
   return (
     <div className={proyectos.w1000px}>
       <div className={proyectos.header}>PROYECTOS</div>
-
+      <br/>
       <div className={proyectos.cards__container}>
-        <CardProyecto>Anota</CardProyecto>
-        <CardProyecto>NSP</CardProyecto>
-        <CardProyecto>Instagram</CardProyecto>
-        <CardProyecto>TV</CardProyecto>
-        <CardProyecto>Argentina Programa</CardProyecto>
-      </div>
+        <CardProyecto
+          Reverse={false}
+          imagen={imagen1}
+          titulo="ANOTÁ! (Another Note Taking App)"
+          descripcion="¿Otra aplicación más para tomar notas? ¡Sí! Toda persona preocupada por la organización de la información y la productividad necesita tener una app que se adapte a sus necesidades. Como no encontré una así para mí, intenté hacerla."
+        />
+        <CardProyecto
+          Reverse={false}
+          imagen={imagen1}
+          titulo="<NuncaSupeProgramar/>"
+          descripcion="¿Otra aplicación más para tomar notas? ¡Sí! Toda persona preocupada por la organización de la información y la productividad necesita tener una app que se adapte a sus necesidades. Como no encontré una así para mí, intenté hacerla."
+        />
+        <CardProyecto
+          Reverse={true}
+          imagen={imagen1}
+          titulo="Full Size Images for IG"
+          descripcion="¿Otra aplicación más para tomar notas? ¡Sí! Toda persona preocupada por la organización de la información y la productividad necesita tener una app que se adapte a sus necesidades. Como no encontré una así para mí, intenté hacerla."
+        />
 
+        <CardProyecto
+          Reverse={true}
+          imagen={imagen1}
+          titulo="MyTvShows"
+          descripcion="¿Otra aplicación más para tomar notas? ¡Sí! Toda persona preocupada por la organización de la información y la productividad necesita tener una app que se adapte a sus necesidades. Como no encontré una así para mí, intenté hacerla."
+        />
+
+        <CardProyecto
+          Reverse={false}
+          imagen={imagen1}
+          titulo="Argentina Programa"
+          descripcion="¿Otra aplicación más para tomar notas? ¡Sí! Toda persona preocupada por la organización de la información y la productividad necesita tener una app que se adapte a sus necesidades. Como no encontré una así para mí, intenté hacerla."
+        />
+      </div>
+      <br /> <br />
+      <div className={proyectos.divider}>🌿</div>
+      <br />
+      <div className={proyectos.header}>PROYECTO</div>
       <br />
       <ProyectoANOTA></ProyectoANOTA>
-
       <div className={proyectos.divider}>🌿</div>
       <br />
       <div className={proyectos.header}>PROYECTO</div>

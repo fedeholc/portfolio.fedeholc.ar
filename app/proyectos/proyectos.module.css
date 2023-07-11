@@ -3,7 +3,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
+  place-content: center;
 }
+
+/*   align-items: center;
+ */
+ 
 
 .columns1 {
   display: grid;
@@ -153,6 +158,16 @@ revisar componente imagen de next js
   display: grid;
   place-content: center;
   font-size: 2rem;
+  font-weight: 700;
+
+  filter: grayscale(1) brightness(0) invert(var(--invert-icon));
+
+}
+
+.divider_small {
+  display: grid;
+  place-content: center;
+  font-size: 1.5rem;
   font-weight: 700;
 
   filter: grayscale(1) brightness(0) invert(var(--invert-icon));
