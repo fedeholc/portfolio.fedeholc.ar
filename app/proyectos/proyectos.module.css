@@ -164,6 +164,15 @@ revisar componente imagen de next js
 
 }
 
+.divider2 {
+  display: grid;
+  place-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  filter: grayscale(1) brightness(0) invert(var(--invert-icon));
+ }
+
 .divider_small {
   display: grid;
   place-content: center;

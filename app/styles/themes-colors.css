@@ -38,6 +38,8 @@ body[data-theme="light"] {
 
   --card-borde: var(--gris30);
   --card-boton-borde: var(--gris20);
+
+  --invert-divider: 0.15;
 }
 
 body[data-theme="dark"] {
@@ -64,4 +66,8 @@ body[data-theme="dark"] {
 
   --card-borde: var(--casi-blanco65);
   --card-boton-borde: var(--casi-blanco65);
+
+  --invert-divider: 50%;
+  /* esto no funciona, el invert icon tampoco
+  es decir no invierte menos porcentaje, invierte por completo */
 }

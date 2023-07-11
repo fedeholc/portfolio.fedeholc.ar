@@ -2,30 +2,29 @@ import cardP from "./cardProyecto.module.css";
 import proyectos from "../proyectos/proyectos.module.css";
 import "@app/globals.css";
 import Image from "next/image";
+import Link from "next/link";
 export default function CardProyecto({
   children,
-  Reverse,
-  imagen,
+  buttonLink,
   titulo,
+  subtitulo,
   descripcion,
 }) {
-  let card_position = `${cardP.card__forward}`;
 
-/*   if (Reverse===true) {
-    card_position = `${cardP.card__reverse}`;
-  }
- */
   return (
     <>
-      <div className={`${cardP.card__container} ${card_position}`}>
-        {/*  <div className={`${cardP.card__image} ${card_position}`}>
-          <Image src={imagen} alt="screenshot" width={300} quality={100} />
-        </div> */}
-
-        <h2>{titulo}</h2>
+      <div className={`${cardP.card__container}`}>
+        <div>
+          <Link href={buttonLink}  >
+            <h2>{titulo}</h2>
+            <h3>{subtitulo}</h3>
+          </Link>
+        </div>
         <p>{descripcion}</p>
-        <div className={`${cardP.button__container} ${card_position}`}>
-          <button className={cardP.button_ver}>Ver &raquo;</button>
+        <div className={`${cardP.button__container}`}>
+          <Link href={buttonLink} className={cardP.button_ver}>
+            Ver &raquo;
+          </Link>
         </div>
 
         {children}

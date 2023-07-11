@@ -10,7 +10,7 @@ import screenshot3 from "@public/proyecto-anota/anota-notas.webp";
 export default function ProyectoANOTA() {
   const TEXTO = {
     titulo: `ANOTÁ! (Another Note Taking App)`,
-    bajada: `¿Otra aplicación más para tomar notas? ¡Sí!  Toda persona preocupada por la organización de la información y la productividad necesita tener una app que se adapte a sus necesidades. Como no encontré una así para mí, intenté hacerla.`,
+    bajada: `¿Otra aplicación más para tomar notas? ¡Sí!  Toda persona preocupada por la organización de la información y la productividad tiene que tener una app que se adapte a sus necesidades. Como no encontré una así para mí, intenté hacerla.`,
     stack: (
       <ul>
         <li>React / JavaScript</li>
@@ -69,27 +69,33 @@ export default function ProyectoANOTA() {
     texto3: (
       <ul>
         <li>
-          Mostrar un indicador en las notas
-          que tenían más texto del que se veía en pantalla (sin mostrar las
-          scroll bars), resulto ser un problema, dado que hasta entonces no había
-          utilizado React para acceder directamente al DOM mediante useRef. Aquí tuve que hacerlo, ya que la solución que
-          se me ocurrió fue comparar si había diferencia entre el `scrollHeight` y el `clientHeight` del contenedor de la nota y así detectar si había
-          un overflow del texto, y poder mostrar el indicador cuando
-          correspondiera.
+          Mostrar un indicador en las notas que tenían más texto del que se veía
+          en pantalla (sin mostrar las scroll bars), resulto ser un problema,
+          dado que hasta entonces no había utilizado React para acceder
+          directamente al DOM mediante useRef. Aquí tuve que hacerlo, ya que la
+          solución que se me ocurrió fue comparar si había diferencia entre el
+          `scrollHeight` y el `clientHeight` del contenedor de la nota y así
+          detectar si había un overflow del texto, y poder mostrar el indicador
+          cuando correspondiera.
         </li>
         <li>
           Otras dificultades fueron la creación de un layout para mostrar las
-          notas en modo mosaico, lo cual aún no se puede realizar de forma nativa en
-          CSS. Así como también la implementación de un editor de texto para
-          crear y modificar las notas, dado que el elemento HTML `contenteditable` no es muy versátil. En ambos casos, con la intención de poner
-          rápidamente en funcionamiento la aplicación, opté por usar librerías, pero me quisiera poder estudiar en profundidad esos problemas para poder implementar mis propias soluciones ya que
-          son aspectos importantes del proyecto.
+          notas en modo mosaico, lo cual aún no se puede realizar de forma
+          nativa en CSS. Así como también la implementación de un editor de
+          texto para crear y modificar las notas, dado que el elemento HTML
+          `contenteditable` no es muy versátil. En ambos casos, con la intención
+          de poner rápidamente en funcionamiento la aplicación, opté por usar
+          librerías, pero me quisiera poder estudiar en profundidad esos
+          problemas para poder implementar mis propias soluciones ya que son
+          aspectos importantes del proyecto.
         </li>
         <li>
-          Siendo esta la aplicación más grande que he realizado hasta ahora, me resultó aún más evidente la importancia de dedicarle tiempo a tener un
+          Siendo esta la aplicación más grande que he realizado hasta ahora, me
+          resultó aún más evidente la importancia de dedicarle tiempo a tener un
           código legible, estructurado, documentado, etc., así como también a
           tener componentes reutilizables y organizados. Es algo en lo que tengo
-          que seguir trabajando y mejorando ya que es fundamental para poder mantener la aplicación e incorporarle nuevas funcionalidades.
+          que seguir trabajando y mejorando ya que es fundamental para poder
+          mantener la aplicación e incorporarle nuevas funcionalidades.
         </li>
       </ul>
     ),
@@ -109,8 +115,9 @@ export default function ProyectoANOTA() {
           funcionamiento de las bases de datos relacionales.
         </li>
         <li>
-          Utilicé CSS modules por componentes, junto con la metodología BEM, con la intención de tener un código
-          CSS claro y mantenible, separado de la lógica de la aplicación.
+          Utilicé CSS modules por componentes, junto con la metodología BEM, con
+          la intención de tener un código CSS claro y mantenible, separado de la
+          lógica de la aplicación.
         </li>
       </ul>
     ),

@@ -21,45 +21,48 @@ export default function Proyectos() {
   return (
     <div className={proyectos.w1000px}>
       <div className={proyectos.header}>PROYECTOS</div>
-      <br/>
+      <br />
+      <div className={proyectos.divider2}>🌿</div>
+      <br />
       <div className={proyectos.cards__container}>
         <CardProyecto
-          Reverse={false}
-          imagen={imagen1}
-          titulo="ANOTÁ! (Another Note Taking App)"
-          descripcion="¿Otra aplicación más para tomar notas? ¡Sí! Toda persona preocupada por la organización de la información y la productividad necesita tener una app que se adapte a sus necesidades. Como no encontré una así para mí, intenté hacerla."
+          buttonLink="/proyectos/anota"
+          titulo="📝 ¡ANOTÁ! "
+          subtitulo="¿Another note taking app?"
+          descripcion="Si te preocupa la organización de la información y la productividad tenés que tener una app que se adapte a sus necesidades. Como no encontré la mía, intenté hacerla."
         />
+
         <CardProyecto
-          Reverse={false}
-          imagen={imagen1}
           titulo="<NuncaSupeProgramar/>"
-          descripcion="¿Otra aplicación más para tomar notas? ¡Sí! Toda persona preocupada por la organización de la información y la productividad necesita tener una app que se adapte a sus necesidades. Como no encontré una así para mí, intenté hacerla."
+          buttonLink="/proyectos/nsp"
+          subtitulo="Blog de apuntes para aprender desarrollo web 👾"
+          descripcion="El blog sigue siendo una de las mejores herramientas para aprender, organizar apuntes, y compartir el conocimiento. Sencillo, rápido, y accesible."
         />
         <CardProyecto
-          Reverse={true}
-          imagen={imagen1}
-          titulo="Full Size Images for IG"
-          descripcion="¿Otra aplicación más para tomar notas? ¡Sí! Toda persona preocupada por la organización de la información y la productividad necesita tener una app que se adapte a sus necesidades. Como no encontré una así para mí, intenté hacerla."
+          titulo="Full size images for IG 📷"
+          buttonLink="/proyectos/insta"
+          subtitulo=""
+          descripcion="Extensión para el navegador Chrome que permite ver imágenes de Instagram a máxima resolución y en pantalla completa, sin distracciones."
         />
-
         <CardProyecto
-          Reverse={true}
-          imagen={imagen1}
-          titulo="MyTvShows"
-          descripcion="¿Otra aplicación más para tomar notas? ¡Sí! Toda persona preocupada por la organización de la información y la productividad necesita tener una app que se adapte a sus necesidades. Como no encontré una así para mí, intenté hacerla."
+          titulo="MyTvShows 📺"
+          buttonLink="/proyectos/tv"
+          subtitulo=""
+          descripcion="Una aplicación que te permite llevar registro de tus series favoritas y ver fácilmente cuáles tienen nuevos episodios."
         />
-
         <CardProyecto
-          Reverse={false}
-          imagen={imagen1}
-          titulo="Argentina Programa"
-          descripcion="¿Otra aplicación más para tomar notas? ¡Sí! Toda persona preocupada por la organización de la información y la productividad necesita tener una app que se adapte a sus necesidades. Como no encontré una así para mí, intenté hacerla."
+          titulo="🧑‍💻 Argentina Programa "
+          buttonLink="/proyectos/ap"
+          subtitulo="Trabajo final del curso de desarrollo web full stack"
+          descripcion="Es un sitio web a modo de C.V. online que integra distintas tecnologías y funcionalidades. Además de aprender mucho haciéndolo, me permitió reencontrarme felizmente con la programación. =)"
         />
       </div>
       <br /> <br />
-      <div className={proyectos.divider}>🌿</div>
+      <div className={proyectos.divider2}>🌿</div>
       <br />
-      <div className={proyectos.header}>PROYECTO</div>
+      <div id="a1" className={proyectos.header}>
+        PROYECTO
+      </div>
       <br />
       <ProyectoANOTA></ProyectoANOTA>
       <div className={proyectos.divider}>🌿</div>
