@@ -76,3 +76,10 @@
   background-color: var(--boton-hover);
   border: 2px solid var(--card-boton-borde);
 }
+
+
+@media only screen and (max-width: 670px) {
+  .card__container {
+    max-width: 500px;
+  }
+}

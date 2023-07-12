@@ -161,7 +161,7 @@ revisar componente imagen de next js
   font-weight: 700;
 
   filter: grayscale(1) brightness(0) invert(var(--invert-icon));
-
+  margin: 1rem;
 }
 
 .divider2 {

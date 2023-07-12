@@ -84,6 +84,9 @@ export default function ProyectoNSP() {
 
   return (
     <div className={`${proyectos.proyecto}`}>
+      <div className={proyectos.header}>PROYECTO</div>
+      <div className={proyectos.divider}>🌿</div>
+
       <h1 className={proyectos.titulo}>{TEXTO.titulo}</h1>
       <div className={`${proyectos.proyecto__container} `}>
         <p>{TEXTO.bajada}</p>
@@ -159,6 +162,7 @@ export default function ProyectoNSP() {
           <div>{TEXTO.texto3}</div>
         </div>
       </div>
+      <div className={proyectos.divider}>🌿</div>
     </div>
   );
 }
