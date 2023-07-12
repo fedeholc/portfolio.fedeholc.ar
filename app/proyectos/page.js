@@ -61,11 +61,11 @@ export default function Proyectos() {
           descripcion="Es un sitio web a modo de C.V. online que integra distintas tecnologías y funcionalidades. Además de aprender mucho haciéndolo, me permitió reencontrarme felizmente con la programación. =)"
         />
       </div>
-      <br /> <br />
-      <div className={proyectos.divider2}>
+       
+      <div className={proyectos.divider}>
         <Image src={herb} alt="herb emoji" width={26} quality={100} />
       </div>
-      <br />
+     
     </div>
   );
 }
