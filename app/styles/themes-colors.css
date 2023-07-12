@@ -5,7 +5,8 @@
   --casi-blanco65: hsl(0, 0%, 65%);
 
   --casi-negro: hsl(0, 0%, 5%);
-  --gris40: hsl(0, 0%, 40%); /*antes gris-oscuro*/
+  --gris40: hsl(0, 0%, 40%);
+  /*antes gris-oscuro*/
   --gris-claro: hsl(0, 0%, 80%);
   --gris20: hsl(0, 0%, 20%);
   --gris30: hsl(0, 0%, 30%);
@@ -34,6 +35,11 @@ body[data-theme="light"] {
   --screenshot-shadow: var(--gris-claro);
 
   --proyecto-header: var(--gris-claro);
+
+  --card-borde: var(--gris30);
+  --card-boton-borde: var(--gris20);
+
+  --invert-divider: 0.15;
 }
 
 body[data-theme="dark"] {
@@ -55,6 +61,13 @@ body[data-theme="dark"] {
   --inicio-texto: var(--casi-blanco85);
   --inicio-filter: 0;
 
-    --screenshot-shadow: var(--casi-negro);
-      --proyecto-header: var(--gris30);
+  --screenshot-shadow: var(--casi-negro);
+  --proyecto-header: var(--gris30);
+
+  --card-borde: var(--casi-blanco65);
+  --card-boton-borde: var(--casi-blanco65);
+
+  --invert-divider: 50%;
+  /* esto no funciona, el invert icon tampoco
+  es decir no invierte menos porcentaje, invierte por completo */
 }

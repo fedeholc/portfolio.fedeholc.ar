@@ -11,37 +11,56 @@ import ProyectoAP from "./ap/page";
 import ProyectoTV from "./tv/page";
 import ProyectoANOTA from "./anota/page";
 
-/*         👾🌿🍁🪐🌟🛠️💘🕸️🚲️🎼
+import CardProyecto from "@app/components/cardProyecto";
+
+import imagen1 from "@public/proyecto-nsp/nsp2.png";
+
+/*         👾🌿🍁🪐🌟🛠️💘🕸️🚲️🎼⭐
  */
 export default function Proyectos() {
   return (
     <div className={proyectos.w1000px}>
       <div className={proyectos.header}>PROYECTOS</div>
       <br />
-      <ProyectoANOTA></ProyectoANOTA>
+      <div className={proyectos.divider2}>🌿</div>
+      <br />
+      <div className={proyectos.cards__container}>
+        <CardProyecto
+          buttonLink="/proyectos/anota"
+          titulo="📝 ¡ANOTÁ! "
+          subtitulo="¿Another note taking app?"
+          descripcion="Si te preocupa la organización de la información y la productividad tenés que tener una app que se adapte a sus necesidades. Como no encontré la mía, intenté hacerla."
+        />
 
-      <div className={proyectos.divider}>🌿</div>
+        <CardProyecto
+          titulo="<NuncaSupeProgramar/>"
+          buttonLink="/proyectos/nsp"
+          subtitulo="Blog de apuntes para aprender desarrollo web 👾"
+          descripcion="El blog sigue siendo una de las mejores herramientas para aprender, organizar apuntes, y compartir el conocimiento. Sencillo, rápido, y accesible."
+        />
+        <CardProyecto
+          titulo="Full size images for IG 📷"
+          buttonLink="/proyectos/insta"
+          subtitulo=""
+          descripcion="Extensión para el navegador Chrome que permite ver imágenes de Instagram a máxima resolución y en pantalla completa, sin distracciones."
+        />
+        <CardProyecto
+          titulo="MyTvShows 📺"
+          buttonLink="/proyectos/tv"
+          subtitulo=""
+          descripcion="Una aplicación que te permite llevar registro de tus series favoritas y ver fácilmente cuáles tienen nuevos episodios."
+        />
+        <CardProyecto
+          titulo="🧑‍💻 Argentina Programa "
+          buttonLink="/proyectos/ap"
+          subtitulo="Trabajo final del curso de desarrollo web full stack"
+          descripcion="Es un sitio web a modo de C.V. online que integra distintas tecnologías y funcionalidades. Además de aprender mucho haciéndolo, me permitió reencontrarme felizmente con la programación. =)"
+        />
+      </div>
+      <br /> <br />
+      <div className={proyectos.divider2}>🌿</div>
       <br />
-      <div className={proyectos.header}>PROYECTO</div>
-      <br />
-      <ProyectoNSP></ProyectoNSP>
-      <div className={proyectos.divider}>🌿</div>
-      <br />
-      <div className={proyectos.header}>PROYECTO</div>
-      <br />
-      <ProyectoInsta></ProyectoInsta>
-      <div className={proyectos.divider}>🌿</div>
-      <br />
-      <div className={proyectos.header}>PROYECTO</div>
-      <br />
-      <ProyectoTV></ProyectoTV>
-      <div className={proyectos.divider}>🌿</div>
-      <br />
-      <div className={proyectos.header}>PROYECTO</div>
-      <br />
-      <ProyectoAP></ProyectoAP>
-      <div className={proyectos.divider}>🌿</div>
-      <br />
+       
     </div>
   );
 }
