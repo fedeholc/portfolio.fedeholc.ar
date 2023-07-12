@@ -7,6 +7,7 @@ import screenshot1 from "@public/proyecto-ap/ap1.png";
 import screenshot2 from "@public/proyecto-ap/ap2.png";
 import screenshot3 from "@public/proyecto-ap/ap5.png";
 import screenshot4 from "@public/proyecto-ap/ap4.png";
+import herb from "@public/herb.png";
 
 // El sitio web es una aplicación de una sola página (SPA) desarrollada con Angular, que consume una API REST desarrollada con Java, Spring Boot y Hibernate, y que se conecta a una base de datos MySQL. El sitio web está alojado en Firebase, y la API REST en Koyeb. El código fuente está en Github.
 
@@ -71,8 +72,10 @@ export default function ProyectoAP() {
   return (
     <div className={`${proyectos.proyecto}`}>
       <div className={proyectos.header}>PROYECTO</div>
-      <div className={proyectos.divider}>🌿</div>
-      
+      <div className={proyectos.divider}>
+        <Image src={herb} alt="herb emoji" width={26} quality={100} />
+      </div>
+
       <h1 className={proyectos.titulo}>{TEXTO.titulo}</h1>
       <div className={`${proyectos.proyecto__container} `}>
         <p>{TEXTO.bajada}</p>
@@ -178,7 +181,9 @@ export default function ProyectoAP() {
           </div>
         </div>
       </div>
-      <div className={proyectos.divider}>🌿</div>
+      <div className={proyectos.divider}>
+        <Image src={herb} alt="herb emoji" width={26} quality={100} />
+      </div>
     </div>
   );
 }

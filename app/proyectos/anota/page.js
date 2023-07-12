@@ -6,6 +6,7 @@ import externalLinkIcon from "@public/external-link.png";
 import screenshot1 from "@public/proyecto-anota/anota-layout.webp";
 import screenshot2 from "@public/proyecto-anota/anota-extension.webp";
 import screenshot3 from "@public/proyecto-anota/anota-notas.webp";
+import herb from "@public/herb.png";
 
 export default function ProyectoANOTA() {
   const TEXTO = {
@@ -126,7 +127,9 @@ export default function ProyectoANOTA() {
   return (
     <div className={`${proyectos.proyecto}`}>
       <div className={proyectos.header}>PROYECTO</div>
-      <div className={proyectos.divider}>🌿</div>
+      <div className={proyectos.divider}>
+        <Image src={herb} alt="herb emoji" width={26} quality={100} />
+      </div>
 
       <h1 className={proyectos.titulo}>{TEXTO.titulo}</h1>
       <div className={`${proyectos.proyecto__container} `}>
@@ -243,7 +246,9 @@ export default function ProyectoANOTA() {
           <div>{TEXTO.texto3}</div>
         </div>
       </div>
-      <div className={proyectos.divider}>🌿</div>
+      <div className={proyectos.divider}>
+        <Image src={herb} alt="herb emoji" width={26} quality={100} />
+      </div>
     </div>
   );
 }

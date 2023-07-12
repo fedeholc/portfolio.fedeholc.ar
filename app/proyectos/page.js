@@ -15,6 +15,8 @@ import CardProyecto from "@app/components/cardProyecto";
 
 import imagen1 from "@public/proyecto-nsp/nsp2.png";
 
+import herb from "@public/herb.png";
+
 /*         👾🌿🍁🪐🌟🛠️💘🕸️🚲️🎼⭐
  */
 export default function Proyectos() {
@@ -22,7 +24,9 @@ export default function Proyectos() {
     <div className={proyectos.w1000px}>
       <div className={proyectos.header}>PROYECTOS</div>
       <br />
-      <div className={proyectos.divider2}>🌿</div>
+      <div className={proyectos.divider2}>
+        <Image src={herb} alt="herb emoji" width={26} quality={100} />
+      </div>
       <br />
       <div className={proyectos.cards__container}>
         <CardProyecto
@@ -51,16 +55,17 @@ export default function Proyectos() {
           descripcion="Una aplicación que te permite llevar registro de tus series favoritas y ver fácilmente cuáles tienen nuevos episodios."
         />
         <CardProyecto
-          titulo="🧑‍💻 Argentina Programa "
+          titulo="👨‍💻 Argentina Programa "
           buttonLink="/proyectos/ap"
           subtitulo="Trabajo final del curso de desarrollo web full stack"
           descripcion="Es un sitio web a modo de C.V. online que integra distintas tecnologías y funcionalidades. Además de aprender mucho haciéndolo, me permitió reencontrarme felizmente con la programación. =)"
         />
       </div>
       <br /> <br />
-      <div className={proyectos.divider2}>🌿</div>
+      <div className={proyectos.divider2}>
+        <Image src={herb} alt="herb emoji" width={26} quality={100} />
+      </div>
       <br />
-       
     </div>
   );
 }

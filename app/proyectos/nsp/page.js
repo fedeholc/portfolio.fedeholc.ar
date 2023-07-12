@@ -5,6 +5,7 @@ import Image from "next/image";
 import externalLinkIcon from "@public/external-link.png";
 import screenshot1 from "@public/proyecto-nsp/nsp2.png";
 import screenshot2 from "@public/proyecto-nsp/nsp4.png";
+import herb from "@public/herb.png";
 
 export default function ProyectoNSP() {
   const TEXTO = {
@@ -85,7 +86,9 @@ export default function ProyectoNSP() {
   return (
     <div className={`${proyectos.proyecto}`}>
       <div className={proyectos.header}>PROYECTO</div>
-      <div className={proyectos.divider}>🌿</div>
+      <div className={proyectos.divider}>
+        <Image src={herb} alt="herb emoji" width={26} quality={100} />
+      </div>
 
       <h1 className={proyectos.titulo}>{TEXTO.titulo}</h1>
       <div className={`${proyectos.proyecto__container} `}>
@@ -162,7 +165,9 @@ export default function ProyectoNSP() {
           <div>{TEXTO.texto3}</div>
         </div>
       </div>
-      <div className={proyectos.divider}>🌿</div>
+      <div className={proyectos.divider}>
+        <Image src={herb} alt="herb emoji" width={26} quality={100} />
+      </div>
     </div>
   );
 }

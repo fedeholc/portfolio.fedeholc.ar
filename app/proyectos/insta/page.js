@@ -5,6 +5,7 @@ import Image from "next/image";
 import externalLinkIcon from "@public/external-link.png";
 import screenshot1 from "@public/proyecto-ig/igvideo.webp";
 import screenshot2 from "@public/proyecto-ig/ig1.png";
+import herb from "@public/herb.png";
 
 export default function ProyectoInsta() {
   const TEXTO = {
@@ -98,8 +99,10 @@ export default function ProyectoInsta() {
   return (
     <div className={`${proyectos.proyecto}`}>
       <div className={proyectos.header}>PROYECTO</div>
-      <div className={proyectos.divider}>🌿</div>
-      
+      <div className={proyectos.divider}>
+        <Image src={herb} alt="herb emoji" width={26} quality={100} />
+      </div>
+
       <h1 className={proyectos.titulo}>{TEXTO.titulo}</h1>
       <div className={`${proyectos.proyecto__container} `}>
         <p>{TEXTO.bajada}</p>
@@ -171,7 +174,9 @@ export default function ProyectoInsta() {
           <div>{TEXTO.texto3}</div>
         </div>
       </div>
-      <div className={proyectos.divider}>🌿</div>
+      <div className={proyectos.divider}>
+        <Image src={herb} alt="herb emoji" width={26} quality={100} />
+      </div>
     </div>
   );
 }
