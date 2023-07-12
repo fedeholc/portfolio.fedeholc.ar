@@ -34,7 +34,7 @@ export default function Home() {
           <p>
             De chico amaba jugar al <span className="emoji">👾</span> space
             invaders <span className="emoji">👾</span> en la IBM PC/XT de mi
-            papá, y di los primeros pasos en programación con Logo&nbsp;
+            papá, y di mis primeros pasos en programación con Logo&nbsp;
             <span className="emoji">🐢</span>. Durante mi último año de escuela
             secundaria (técnica en computación) conseguí trabajo como
             desarrollador en Visual Basic. Luego comencé a estudiar Ciencias de

@@ -65,8 +65,11 @@
   }
 
   .toolbar_item {
-    background-color: hsl(0, 0%, 99%);
-    border: 1px solid rgb(206, 206, 206);
+    background-color: var(--body-background);
+
+    /*     border: 1px solid rgb(206, 206, 206);
+ */
+    border: 1px solid var(--toolbar-item);
 
     border-radius: 5px;
     padding: 0.1rem 0.3rem;
@@ -78,8 +81,8 @@
   }
 
   .toolbar_item_text {
-    background-color: hsl(0, 0%, 99%);
-    border: 1px solid rgb(206, 206, 206);
+    background-color: var(--body-background);
+    border: 1px solid var(--toolbar-item);
 
     border-radius: 5px;
     padding: 0rem 0.3rem;
@@ -90,13 +93,11 @@
   }
 
   .toolbar_item_inicio {
-    background-color: hsl(0, 0%, 99%);
+    background-color: var(--body-background);
     border: 1px solid transparent;
-    /*     border: 1px solid rgb(206, 206, 206);
- */
+
     border-radius: 5px;
-    /*     padding: 0rem 0.3rem;
- */
+
     display: flex;
     place-items: center;
     height: 30px;
@@ -106,14 +107,13 @@
   .toolbar_item:hover,
   .toolbar_item_text:hover,
   .toolbar_item_inicio:hover {
-    background-color: rgb(145, 145, 145);
-    border: 1px solid rgb(145, 145, 145);
+    background-color: var(--toolbar-hover);
+    border: 1px solid var(--toolbar-hover);
     box-shadow: 0px 0px 5px 0px var(--screenshot-shadow);
 
     border-radius: 5px;
     padding: 0.1rem 0.3rem;
-    color: black;
-  }
+   }
 
   .toolbar_item_inicio:hover {
     padding: 0rem;
@@ -122,14 +122,14 @@
 
 
   .theme__toggler {
-/*     height: 25px;
+    /*     height: 25px;
     width: 25px; */
 
 
     display: flex;
-      place-items: center;
-height: 30px;
-      justify-content: center;
+    place-items: center;
+    height: 30px;
+    justify-content: center;
   }
 
   /* * media query * /

@@ -11,9 +11,14 @@
   --gris20: hsl(0, 0%, 20%);
   --gris30: hsl(0, 0%, 30%);
   --fucsia1: hsl(323, 100%, 39%);
+
+ 
+
 }
 
 body[data-theme="light"] {
+  --toolbar-hover: var(--casi-blanco65);
+  --toolbar-item: var(--gris-claro);
   --body-background: var(--casi-blanco);
   --body-color: var(--casi-negro);
 
@@ -43,6 +48,9 @@ body[data-theme="light"] {
 }
 
 body[data-theme="dark"] {
+--toolbar-hover: var(--gris20);
+  --toolbar-item: var(--gris20);
+
   --body-background: var(--casi-negro);
   --body-color: var(--casi-blanco85);
 
