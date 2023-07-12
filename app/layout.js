@@ -41,10 +41,10 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${montserrat.variable} ${recursive.variable}  ${robotoMono.variable}  `}
     >
-      <body  >
+      <body className="background" >
         <main className="layout__grid">
           <NavBar></NavBar>
-          {children}
+          <article className="main_article">{children}</article>
           <Footer></Footer>
         </main>
       </body>

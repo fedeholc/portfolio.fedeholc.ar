@@ -23,11 +23,11 @@ export default function Proyectos() {
   return (
     <div className={proyectos.proyecto}>
       <div className={proyectos.header}>PROYECTOS</div>
-      <br />
-      <div className={proyectos.divider2}>
+   
+      <div className={proyectos.divider}>
         <Image src={herb} alt="herb emoji" width={26} quality={100} />
       </div>
-      <br />
+ 
       <div className={proyectos.cards__container}>
         <CardProyecto
           buttonLink="/proyectos/anota"
