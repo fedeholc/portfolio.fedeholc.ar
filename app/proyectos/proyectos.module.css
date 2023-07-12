@@ -6,9 +6,7 @@
   place-content: center;
 }
 
-/*   align-items: center;
- */
- 
+
 
 .columns1 {
   display: grid;
@@ -62,6 +60,10 @@
   max-width: 1000px;
 }
 
+.proyecto {
+  max-width: 1000px;
+}
+
 .proyecto__container {
   margin: 1rem 2rem 2rem 2rem;
 }
@@ -82,12 +84,15 @@
   list-style: disc;
 }
 
+
+
 .proyecto__container ul li {
   margin-left: 2rem;
   line-height: 2rem;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
+
 
 
 .screenshot__container {
@@ -171,7 +176,7 @@ revisar componente imagen de next js
   font-weight: 700;
 
   filter: grayscale(1) brightness(0) invert(var(--invert-icon));
- }
+}
 
 .divider_small {
   display: grid;

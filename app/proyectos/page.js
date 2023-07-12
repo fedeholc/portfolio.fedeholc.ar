@@ -21,7 +21,7 @@ import herb from "@public/herb.png";
  */
 export default function Proyectos() {
   return (
-    <div className={proyectos.w1000px}>
+    <div className={proyectos.proyecto}>
       <div className={proyectos.header}>PROYECTOS</div>
       <br />
       <div className={proyectos.divider2}>

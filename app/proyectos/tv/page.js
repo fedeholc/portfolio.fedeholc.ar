@@ -84,7 +84,7 @@ export default function ProyectoTV() {
   };
 
   return (
-    <div className={`${proyectos.proyecto}`}>
+    <div className={proyectos.proyecto}>
       <div className={proyectos.header}>PROYECTO</div>
       <div className={proyectos.divider}>
         <Image src={herb} alt="herb emoji" width={26} quality={100} />
