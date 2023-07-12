@@ -83,7 +83,7 @@ export default function NavBar() {
             Blog
           </Link>
         </div>
-        <div className={navbar.toolbar_item_text}>
+        <div className={navbar.toolbar_item}>
           <Theme></Theme>
         </div>
 

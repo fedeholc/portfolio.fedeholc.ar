@@ -122,8 +122,14 @@
 
 
   .theme__toggler {
-    height: 25px;
-    width: 25px;
+/*     height: 25px;
+    width: 25px; */
+
+
+    display: flex;
+      place-items: center;
+height: 30px;
+      justify-content: center;
   }
 
   /* * media query * /
