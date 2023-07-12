@@ -5,15 +5,16 @@
 
 
   box-shadow: 1px 1px 0px 0 var(--gris40);
-  /** VER */
+  /** TODO: VER colores si hay que poner en theme */
 
   border: 2px solid var(--gris40);
 
 
   border-radius: 5px;
 
-  max-width: 300px;
-}
+
+  max-width: 290px;
+ }
 
 .card__container:hover {
   border: 2px solid var(--card-borde);
@@ -23,7 +24,7 @@
 }
 
 .card__image {
-  min-width: 300px;
+  min-width: 290px;
   border-radius: 5px;
 }
 

@@ -15,59 +15,85 @@ export default function NavBar() {
   return (
     <div className={navbar.container}>
       <div className={navbar.container__left}>
-        <Link href="/">
-          <span className={navbar.emoji__left}>⚡️</span>
-          <span className="inicio-link">inicio</span>
-        </Link>
+        <div className={navbar.toolbar_item_inicio}>
+          <Link href="/">
+            <span className={navbar.emoji__left}>⚡️</span>
+            <span className="inicio-link">inicio</span>
+          </Link>
+        </div>
       </div>
       <div className={navbar.container__right}>
-        <Link href="https://github.com/fedeholc" target="_blank">
-          <Image
-            className={navbar.icon}
-            alt="github icon"
-            width="40"
-            height="40"
-            src={githubicon}
-          ></Image>
-        </Link>
-        <div className={navbar.separator}>|</div>
-        <Link href="https://www.linkedin.com/in/federicoholc/" target="_blank">
-          <Image
-            className={navbar.icon}
-            alt="linkedin icon"
-            width="40"
-            height="40"
-            src={linkedinIcon}
-          ></Image>
-        </Link>
-        <div className={navbar.separator}>|</div>
-        <Link href="mailto:federicoholc@gmail.com" target="_blank">
-          <Image
-            className={navbar.icon}
-            alt="mail icon"
-            width="40"
-            height="40"
-            src={mailIcon}
-          ></Image>
-        </Link>
-        <div className={navbar.separator}>|</div>
-        <Link href="https://www.instagram.com/fedeholc" target="_blank">
-          <Image
-            className={navbar.icon}
-            alt="instagram icon"
-            width="40"
-            height="40"
-            src={instagramIcon}
-          ></Image>
-        </Link>
-        <div className={navbar.separator}>|</div>
-        <div>CV</div>
-        <div className={navbar.separator}>|</div>
-        <div><Link href="/proyectos">Proyectos</Link></div>
-        <div className={navbar.separator}>|</div>
-        <div><Link target="_blank" href="https://nsp.fedeholc.ar">Blog</Link></div>
-        <div className={navbar.separator}>|</div>
-        <Theme></Theme>
+        <div className={navbar.toolbar_item}>
+          <Link href="https://github.com/fedeholc" target="_blank">
+            <Image
+              className={navbar.icon}
+              alt="github icon"
+              width="40"
+              height="40"
+              src={githubicon}
+            ></Image>
+          </Link>
+        </div>
+        <div className={navbar.toolbar_item}>
+          <Link
+            href="https://www.linkedin.com/in/federicoholc/"
+            target="_blank"
+          >
+            <Image
+              className={navbar.icon}
+              alt="linkedin icon"
+              width="40"
+              height="40"
+              src={linkedinIcon}
+            ></Image>
+          </Link>
+        </div>
+
+        <div className={navbar.toolbar_item}>
+          <Link href="mailto:federicoholc@gmail.com" target="_blank">
+            <Image
+              className={navbar.icon}
+              alt="mail icon"
+              width="40"
+              height="40"
+              src={mailIcon}
+            ></Image>
+          </Link>
+        </div>
+
+        <div className={navbar.toolbar_item}>
+          <Link href="https://www.instagram.com/fedeholc" target="_blank">
+            <Image
+              className={navbar.icon}
+              alt="instagram icon"
+              width="40"
+              height="40"
+              src={instagramIcon}
+            ></Image>
+          </Link>
+        </div>
+        <div className={navbar.toolbar_item_text}>
+          <div>CV</div>
+        </div>
+        <div className={navbar.toolbar_item_text}>
+          <Link href="/proyectos">Proyectos</Link>
+        </div>
+        <div className={navbar.toolbar_item_text}>
+          <Link target="_blank" href="https://nsp.fedeholc.ar">
+            Blog
+          </Link>
+        </div>
+        <div className={navbar.toolbar_item}>
+          <Theme></Theme>
+        </div>
+
+        {/* 
+      
+
+      
+
+     
+        */}
       </div>
     </div>
   );
