@@ -60,33 +60,7 @@ export default function Proyectos() {
       <br /> <br />
       <div className={proyectos.divider2}>🌿</div>
       <br />
-      <div id="a1" className={proyectos.header}>
-        PROYECTO
-      </div>
-      <br />
-      <ProyectoANOTA></ProyectoANOTA>
-      <div className={proyectos.divider}>🌿</div>
-      <br />
-      <div className={proyectos.header}>PROYECTO</div>
-      <br />
-      <ProyectoNSP></ProyectoNSP>
-      <div className={proyectos.divider}>🌿</div>
-      <br />
-      <div className={proyectos.header}>PROYECTO</div>
-      <br />
-      <ProyectoInsta></ProyectoInsta>
-      <div className={proyectos.divider}>🌿</div>
-      <br />
-      <div className={proyectos.header}>PROYECTO</div>
-      <br />
-      <ProyectoTV></ProyectoTV>
-      <div className={proyectos.divider}>🌿</div>
-      <br />
-      <div className={proyectos.header}>PROYECTO</div>
-      <br />
-      <ProyectoAP></ProyectoAP>
-      <div className={proyectos.divider}>🌿</div>
-      <br />
+       
     </div>
   );
 }
