@@ -54,7 +54,7 @@ export default function Home() {
           <span className="emoji">🤦🏻😭☠️</span>&nbsp;
         </p>
         <p>
-          En los años que siguieron fuí sociólogo&nbsp;
+          En los años que siguieron fui sociólogo&nbsp;
           <span className="emoji">🤔</span>, y profesor en escuelas secundarias
           y en la Universidad de Buenos Aires. Allí aprendí y enseñé todo lo que
           pude.&nbsp;

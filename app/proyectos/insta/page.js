@@ -16,7 +16,7 @@ export default function ProyectoInsta() {
         <li>JavaScript</li>
         <li>HTML / CSS</li>
         <li>Chrome API</li>
-        <li>Git / Github</li>
+        <li>Git / GitHub</li>
       </ul>
     ),
     linkCodeText: `github/fedeholc`,

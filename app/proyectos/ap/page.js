@@ -9,7 +9,7 @@ import screenshot3 from "@public/proyecto-ap/ap5.png";
 import screenshot4 from "@public/proyecto-ap/ap4.png";
 import herb from "@public/herb.png";
 
-// El sitio web es una aplicación de una sola página (SPA) desarrollada con Angular, que consume una API REST desarrollada con Java, Spring Boot y Hibernate, y que se conecta a una base de datos MySQL. El sitio web está alojado en Firebase, y la API REST en Koyeb. El código fuente está en Github.
+// El sitio web es una aplicación de una sola página (SPA) desarrollada con Angular, que consume una API REST desarrollada con Java, Spring Boot y Hibernate, y que se conecta a una base de datos MySQL. El sitio web está alojado en Firebase, y la API REST en Koyeb. El código fuente está en GitHub.
 
 // La elección de las tecnologías no fue propia sino que fueron las que aprendimos en el curso.
 
@@ -23,7 +23,6 @@ export default function ProyectoAP() {
         <li>HTML / CSS / Bootstrap </li>
         <li>Java / Spring Boot / Hibernate</li>
         <li>MySQL</li>
-        <li>Firebase</li>
         <li>Git / GitHub</li>
       </ul>
     ),
@@ -54,16 +53,32 @@ export default function ProyectoAP() {
     texto3: (
       <ul>
         <li>
-          No fue sencillo armar el rompecabezas de tecnologías necesarias para que todo funcione, y en algunos aspectos las partes quedaron "atadas con alambre", ya que no tenía el tiempo necesario para profundizar en las bases de cada herramienta y encontrar la mejor solución posible. ¡Pero funcionó!
+          No fue sencillo armar el rompecabezas de tecnologías necesarias para
+          que todo funcione, y en algunos aspectos las partes quedaron "atadas
+          con alambre", ya que no tenía el tiempo necesario para profundizar en
+          las bases de cada herramienta y encontrar la mejor solución posible.
+          ¡Pero funcionó!
         </li>
         <li>
-          El trabajo me permitió tener una visión general de cómo se integra un desarrollo que incluye un front end y un back end con API y base de datos.
+          El trabajo me permitió tener una visión general de cómo se integra un
+          desarrollo que incluye un front end y un back end con API y base de
+          datos.
         </li>
         <li>
-          Con Angular comprendí cómo era trabajar con un framework para crear una SPA, y en particular cómo se estructura el código utilizando componentes y cómo se implementa un patrón de diseño MVC. El haber aprendido directamente Angular con TypeScript me obligo a tener que estudiar JavaScrip a posteriori para poder tener un conocimiento de los fundamentos y poder diferenciar que características eran propias de cada tecnología.
+          Con Angular comprendí cómo era trabajar con un framework para crear
+          una SPA, y en particular cómo se estructura el código utilizando
+          componentes y cómo se implementa un patrón de diseño MVC. El haber
+          aprendido directamente Angular con TypeScript me obligo a tener que
+          estudiar JavaScrip a posteriori para poder tener un conocimiento de
+          los fundamentos y poder diferenciar que características eran propias
+          de cada tecnología.
         </li>
         <li>
-          La exigencia de hacer el deploy en un sitio en particular, y que este fuera cambiando varias veces (Heroku, Fly.io, Koyeb) cuando faltaba poco tiempo para la entrega fue un dolor de cabeza. Pero rescato que me permitió conocer distintas opciones y formas de hacer deploys de las aplicaciones.
+          La exigencia de hacer el deploy en un sitio en particular, y que este
+          fuera cambiando varias veces (Heroku, Fly.io, Koyeb) cuando faltaba
+          poco tiempo para la entrega fue un dolor de cabeza. Pero rescato que
+          me permitió conocer distintas opciones y formas de hacer deploys de
+          las aplicaciones.
         </li>
       </ul>
     ),
