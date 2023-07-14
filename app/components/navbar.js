@@ -73,7 +73,9 @@ export default function NavBar() {
           </Link>
         </div>
         <div className={navbar.toolbar_item_text}>
-          <div>CV</div>
+          <div>
+            <Link href="/cv">CV</Link>
+          </div>
         </div>
         <div className={navbar.toolbar_item_text}>
           <Link href="/proyectos">Proyectos</Link>

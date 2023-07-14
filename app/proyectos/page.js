@@ -2,18 +2,10 @@ import proyectos from "./proyectos.module.css";
 import "../globals.css";
 import Link from "next/link";
 import Image from "next/image";
-import externalLinkIcon from "../../public/external-link.png";
-import screenshot1 from "../../public/proyecto-nsp/Screenshot from 2023-06-26 20-42-07.png";
-
-import ProyectoNSP from "./nsp/page.js";
-import ProyectoInsta from "./insta/page";
-import ProyectoAP from "./ap/page";
-import ProyectoTV from "./tv/page";
-import ProyectoANOTA from "./anota/page";
+ 
 
 import CardProyecto from "@app/components/cardProyecto";
-
-import imagen1 from "@public/proyecto-nsp/nsp2.png";
+ 
 
 import herb from "@public/herb.png";
 

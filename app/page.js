@@ -102,7 +102,7 @@ export default function Home() {
                 height="12"
                 src={paperclipIcon}
               ></Image>
-              &nbsp;CV en PDF
+              &nbsp;<Link href="/cv">CV en PDF</Link>
             </div>
           </button>
           ,&nbsp;
