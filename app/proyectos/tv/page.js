@@ -17,7 +17,7 @@ export default function ProyectoTV() {
         <li>React / JavaScript</li>
         <li>HTML / Tailwind CSS</li>
         <li>Firebase</li>
-        <li>Git / Github</li>
+        <li>Git / GitHub</li>
       </ul>
     ),
     linkCodeText: `github/fedeholc`,

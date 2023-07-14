@@ -16,12 +16,20 @@ body {
   color: var(--body-color);
 }
 
- .background {
-   background-color: var(--body-background);
-   background-image: var(--image-back);
+.background {
+  background-color: var(--body-background);
+  background-image: var(--image-back);
 
- }
+}
 
+strong {
+  font-weight: 600;
+}
+
+.centrar {
+  display: grid;
+  place-items: center;
+}
 
 /** grid on layout.js, contains navbar, main, and footer **/
 .layout__grid {
@@ -35,7 +43,7 @@ body {
   margin: 0.5rem 1rem;
 
 
-/*     background-color: hsl(0, 0%, 99%);
+  /*     background-color: hsl(0, 0%, 99%);
       padding: 1rem;
       border: 1px solid rgb(204, 204, 204);
       border: 1px solid rgb(204, 204, 204); */
@@ -59,7 +67,7 @@ body {
 .article__container p {
   margin-bottom: 0.6rem;
 
- 
+
 }
 
 .main_article {

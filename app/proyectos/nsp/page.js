@@ -33,7 +33,7 @@ export default function ProyectoNSP() {
           servidor, lo cual hace que sea veloz, y fácil de indexar por los
           buscadores. También es sencillo de publicar, ya que al estar alojado
           en Vercel, el deploy se realiza automáticamente cada vez que se
-          actualiza el repositorio en Github.
+          actualiza el repositorio en GitHub.
         </li>
         <li>
           Añadir nuevas entradas al blog es simple: se escribe el contenido del
