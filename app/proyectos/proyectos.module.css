@@ -286,7 +286,10 @@ revisar componente imagen de next js
 
   }
 
-
+  .proyecto {
+        border: none;
+          box-shadow: none;
+  }
   .proyecto__container {
     margin: 1rem 1rem 1rem 1rem;
   }
@@ -302,6 +305,7 @@ revisar componente imagen de next js
     grid-template-columns: 1fr;
     gap: 0rem;
   }
+
 }
 
 @media only screen and (max-width: 415px) {
@@ -319,6 +323,10 @@ revisar componente imagen de next js
 
   .proyecto__container {
     margin: 1rem 0.5rem 0.5rem 0.5rem;
+
+  
+    
+     
   }
 
   .titulo {

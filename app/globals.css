@@ -270,3 +270,15 @@ p:hover .resaltado {
     font-size: 2.2rem;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .layout__grid {
+    margin: 0.2rem;
+
+  }
+.article__container {
+  border: none;
+  box-shadow: none;
+}
+
+}
