@@ -15,3 +15,13 @@
 .emoji {
   filter: grayscale(1) invert(var(--invert-emoji));
 }
+
+/*** media queries para imprimir ***/
+@media print {
+
+
+  footer.container {
+
+    display: none;
+  }
+}

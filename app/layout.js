@@ -43,8 +43,8 @@ export default function RootLayout({ children }) {
     >
       <body className="background" >
         <main className="layout__grid">
-          <NavBar></NavBar>
-          <article className="main_article">{children}</article>
+             <NavBar></NavBar>
+           <article className="main_article">{children}</article>
           <Footer></Footer>
         </main>
       </body>

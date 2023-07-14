@@ -29,7 +29,13 @@ export default function CV() {
                 height="12"
                 src={paperclipIcon}
               ></Image>
-              &nbsp;<Link href="/cv">descargar en PDF</Link>
+              &nbsp;
+              <Link
+                href="https://drive.google.com/file/d/1BNw1v4-W_l0jPlDHhmw8mTPNYylQf2Gn/view?usp=sharing"
+                target="_blank"
+              >
+                descargar en PDF
+              </Link>
             </div>
           </button>
           <br />

@@ -17,7 +17,6 @@
 }
 
 
-
 .columns1 {
   display: grid;
   grid-template-columns: 1fr;
@@ -287,9 +286,10 @@ revisar componente imagen de next js
   }
 
   .proyecto {
-        border: none;
-          box-shadow: none;
+    border: none;
+    box-shadow: none;
   }
+
   .proyecto__container {
     margin: 1rem 1rem 1rem 1rem;
   }
@@ -323,10 +323,6 @@ revisar componente imagen de next js
 
   .proyecto__container {
     margin: 1rem 0.5rem 0.5rem 0.5rem;
-
-  
-    
-     
   }
 
   .titulo {
@@ -334,6 +330,43 @@ revisar componente imagen de next js
     word-wrap: break-word;
     padding: 0.2rem 1rem;
     text-align: center;
+  }
+
+}
+
+/*** media queries para imprimir ***/
+@media print {
+  .proyecto {
+    border: none;
+    box-shadow: none;
+    margin: none;
+    padding: none;
+    font-size: 15px;
+  }
+
+  .proyecto__container {
+
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+  .columns1,
+  .columns2,
+  .columns2stack {
+    margin: none;
+    padding: none;
+  }
+
+  .header {
+    font-size: 6rem;
+    line-height: 7rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .header_cv {
+    font-size: 3rem;
+    line-height: 3rem;
+
   }
 
 }

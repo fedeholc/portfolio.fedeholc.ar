@@ -276,9 +276,41 @@ p:hover .resaltado {
     margin: 0.2rem;
 
   }
-.article__container {
-  border: none;
-  box-shadow: none;
+
+  .article__container {
+    border: none;
+    box-shadow: none;
+  }
+
 }
+
+
+/*** media queries para imprimir ***/
+@media print {
+  .article__container {
+    border: none;
+    box-shadow: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .background {
+    background-image: none;
+  }
+
+  .heading__title1,
+  .heading__title2 {
+    font-size: 2rem;
+    line-height: 2rem;
+
+  }
+
+  .heading {
+    margin-bottom: 0rem;
+  }
+
+  html {
+    font-size: 15px;
+  }
 
 }

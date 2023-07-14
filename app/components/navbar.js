@@ -13,7 +13,7 @@ import navbar from "./navbar.module.css";
 
 export default function NavBar() {
   return (
-    <div className={navbar.container}>
+    <navbar className={navbar.container}>
       <div className={navbar.container__left}>
         <div className={navbar.toolbar_item_inicio}>
           <Link href="/">
@@ -97,6 +97,6 @@ export default function NavBar() {
      
         */}
       </div>
-    </div>
+    </navbar>
   );
 }

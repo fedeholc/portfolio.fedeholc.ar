@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 //styles
 import "./globals.css";
+import proyectos from "./proyectos/proyectos.module.css";
 //icons
 import githubicon from "../public/brand-github.png";
 import paperclipIcon from "../public/paperclip.png";
@@ -11,6 +12,8 @@ import notesIcon from "../public/notes.png";
 import mailIcon from "../public/mail.png";
 import instagramIcon from "../public/brand-instagram.png";
 import linkedinIcon from "../public/brand-linkedin.png";
+import herb from "@public/herb.png";
+
 //components
 import Fotos from "./components/fotos";
 
@@ -203,6 +206,11 @@ export default function Home() {
           </button>
           .
         </span>
+      </div>
+      <br />
+
+      <div className="centrar">
+        <Image src={herb} alt="herb emoji" width={26} quality={100} />
       </div>
     </article>
   );
