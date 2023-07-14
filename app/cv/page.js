@@ -2,6 +2,7 @@ import proyectos from "../proyectos/proyectos.module.css";
 import "../globals.css";
 import Link from "next/link";
 import Image from "next/image";
+import paperclipIcon from "../../public/paperclip.png";
 
 import CardProyecto from "@app/components/cardProyecto";
 
@@ -18,6 +19,21 @@ export default function CV() {
       </div>
 
       <div className={`${proyectos.proyecto__container} `}>
+        <div className="centrar">
+          <button className="link_button">
+            <div>
+              <Image
+                className="link_button__icon"
+                alt="paper clip icon"
+                width="12"
+                height="12"
+                src={paperclipIcon}
+              ></Image>
+              &nbsp;<Link href="/cv">descargar en PDF</Link>
+            </div>
+          </button>
+          <br />
+        </div>
         <div className={proyectos.columns1}>
           <section>
             <h3>Resumen de calificaciones </h3>

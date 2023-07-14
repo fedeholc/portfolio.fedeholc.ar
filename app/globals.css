@@ -26,6 +26,11 @@ strong {
   font-weight: 600;
 }
 
+.centrar {
+  display: grid;
+  place-items: center;
+}
+
 /** grid on layout.js, contains navbar, main, and footer **/
 .layout__grid {
   display: grid;
