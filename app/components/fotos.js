@@ -13,7 +13,7 @@ export default function Fotos() {
           <Image
             alt="Foto de la cara de federico holc"
             className={fotos.fotoperfil__foto_animada}
-            src="/ff4.jpg"
+            src="/ff4.jpg" /* TODO: cambiar la forma de cargar */
             height="200"
             width="200"
             id="foto1"
