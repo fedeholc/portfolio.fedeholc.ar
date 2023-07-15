@@ -27,8 +27,8 @@ export default function ProyectoANOTA() {
       ext: `extensión`,
     },
     linkCodeHref: {
-      front: `https://github.com/fedeholc/anotes-front-react`,
-      back: `https://github.com/fedeholc/anotes-back-express`,
+      front: `https://github.com/fedeholc/anota-front-react`,
+      back: `https://github.com/fedeholc/anota-back-express`,
       ext: `https://github.com/fedeholc/anota-chrome-extension`,
     },
     linkWebText: ``,
