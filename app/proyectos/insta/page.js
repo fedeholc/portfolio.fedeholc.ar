@@ -20,7 +20,7 @@ export default function ProyectoInsta() {
       </ul>
     ),
     linkCodeText: `github/fedeholc`,
-    linkCodeHref: `https://github.com/fedeholc/full-size-insta-extension`,
+    linkCodeHref: `https://github.com/fedeholc/full-size-images-for-ig`,
     linkWebText: `chrome web store`,
     linkWebHref: `https://chrome.google.com/webstore/detail/full-size-images-for-ig/eanpijghoobafibemccmoleollpjhcgg`,
     subtitulo1: `¿Para qué sirve?`,
