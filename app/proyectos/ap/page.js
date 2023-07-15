@@ -31,8 +31,8 @@ export default function ProyectoAP() {
       back: `backend`,
     },
     linkCodeHref: {
-      front: `https://github.com/fedeholc/anotes-front-react`,
-      back: `https://github.com/fedeholc/anotes-back-express`,
+      front: `https://github.com/fedeholc/anota-front-react`,
+      back: `https://github.com/fedeholc/anota-back-express`,
     },
     linkWebText: `https://portfolioap-cccf4.web.app/`,
     linkWebHref: `https://portfolioap-cccf4.web.app/`,
