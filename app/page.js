@@ -86,7 +86,7 @@ export default function Home() {
                 className="link_button__icon"
                 alt="projects icon"
                 width="13"
-                height="13"
+                height="auto"
                 src={starIcon}
               ></Image>
               &nbsp;<Link href="/proyectos">Proyectos</Link>
@@ -102,7 +102,7 @@ export default function Home() {
                 className="link_button__icon"
                 alt="paper clip icon"
                 width="12"
-                height="12"
+                height="auto"
                 src={paperclipIcon}
               ></Image>
               &nbsp;<Link href="/cv">CV en PDF</Link>
@@ -118,7 +118,7 @@ export default function Home() {
                 className="link_button__icon"
                 alt="blog icon"
                 width="10"
-                height="10"
+                height="auto"
                 src={notesIcon}
               ></Image>
               &nbsp;
@@ -137,7 +137,7 @@ export default function Home() {
                 className="link_button__icon"
                 alt="github icon"
                 width="12"
-                height="12"
+                height="auto"
                 src={githubicon}
               ></Image>
               &nbsp;
@@ -195,7 +195,7 @@ export default function Home() {
                 className="link_button__icon"
                 alt="mail icon"
                 width="14"
-                height="14"
+                height="auto"
                 src={mailIcon}
               ></Image>
               &nbsp;
