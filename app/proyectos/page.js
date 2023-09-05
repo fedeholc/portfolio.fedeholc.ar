@@ -25,7 +25,7 @@ export default function Proyectos() {
           buttonLink="/proyectos/anota"
           titulo="📝 ¡ANOTÁ! "
           subtitulo="¿Another note taking app?"
-          descripcion="Si te preocupa la organización de la información y la productividad tenés que tener una app que se adapte a sus necesidades. Como no encontré la mía, intenté hacerla."
+          descripcion="Si te preocupa la organización de la información y la productividad tenés que tener una app que se adapte a sus necesidades. Como no encontré una así, intenté crearla."
         />
 
         <CardProyecto
