@@ -11,7 +11,7 @@ import herb from "@public/herb.png";
 export default function ProyectoANOTA() {
   const TEXTO = {
     titulo: `ANOTÁ! (Another Note Taking App)`,
-    bajada: `¿Otra aplicación más para tomar notas? ¡Sí!  Toda persona preocupada por la organización de la información y la productividad tiene que tener una app que se adapte a sus necesidades. Como no encontré una así para mí, intenté hacerla.`,
+    bajada: `¿Otra aplicación más para tomar notas? ¡Sí!  Toda persona preocupada por la organización de la información y la productividad tiene que tener una app que se adapte a sus necesidades. Como no encontré una así, intenté crearla.`,
     stack: (
       <ul>
         <li>React / JavaScript</li>
