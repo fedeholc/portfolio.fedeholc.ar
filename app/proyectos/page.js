@@ -12,6 +12,7 @@ import ProyectoInsta from "./insta/page";
 import ProyectoNSP from "./nsp/page";
 import ProyectoTV from "./tv/page";
 import ff from "@app/ff";
+import GoToTop from "@app/components/goToTop";
 
 /*         👾🌿🍁🪐🌟🛠️💘🕸️🚲️🎼⭐
  */
@@ -65,9 +66,13 @@ function ProyectosConLinks() {
   );
 }
 
+
+
 function ProyectosTodos() {
   return (
     <>
+      <a id="inicio"></a>
+      <GoToTop />
       <div className={proyectos.proyecto}>
         <div className={proyectos.header}>PROYECTOS</div>
 
