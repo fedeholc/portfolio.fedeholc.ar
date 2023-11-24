@@ -26,14 +26,11 @@ export default function CV() {
                 className="link_button__icon"
                 alt="paper clip icon"
                 width="12"
-                height="12"
+                /* height="12" */
                 src={paperclipIcon}
               ></Image>
               &nbsp;
-              <Link
-                href="https://drive.google.com/file/d/1BNw1v4-W_l0jPlDHhmw8mTPNYylQf2Gn/view?usp=sharing"
-                target="_blank"
-              >
+              <Link href="/cv/Federico_Holc_CV.pdf" target="_blank">
                 descargar en PDF
               </Link>
             </div>
