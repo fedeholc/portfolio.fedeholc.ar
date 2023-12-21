@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react";
+
 //styles
 import "./globals.css";
 import "./styles/themes-colors.css";
@@ -41,12 +43,13 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${montserrat.variable} ${recursive.variable}  ${robotoMono.variable}  `}
     >
-      <body className="background" >
+      <body className="background">
         <main className="layout__grid">
-             <NavBar></NavBar>
-           <article className="main_article">{children}</article>
+          <NavBar></NavBar>
+          <article className="main_article">{children}</article>
           <Footer></Footer>
         </main>
+        <Analytics />
       </body>
     </html>
   );
