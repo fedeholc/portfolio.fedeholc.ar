@@ -38,7 +38,12 @@ export default function ProyectoNSP() {
         <li>
           Añadir nuevas entradas al blog es simple: se escribe el contenido del
           post en un archivo con formato Markdown, se lo sube a una carpeta
-          dentro del repositorio de proyecto, y automáticamente queda publicado.
+          dentro del repositorio del proyecto, y automáticamente queda publicado
+          (salvo que se lo marque como borrador).
+        </li>
+        <li>
+          Se pueden marcar posteos como destacados para que aparezcan en una
+          sección destacada de la página principal.
         </li>
         <li>
           Utilizando el formato Markdown junto con la librería remark.js se le
@@ -46,17 +51,34 @@ export default function ProyectoNSP() {
           publicaciones.
         </li>
         <li>
+          Se pueden filtrar los posts por etiquetas utilizando el buscador o el
+          listado de las mismas.
+        </li>
+        <li>
           Es responsive y se adapta para que pueda ser leído desde cualquier
           dispositivo.
         </li>
         <li>
-          Funcionalidades para implementar a futuro: realización de búsquedas
-          dentro del sitio, filtrado de publicaciones por etiquetas, posibilidad
-          de añadir comentarios, etc.
+          Algunas ideas de nuevas funcionalidades las pruebo en{" "}
+          <Link href="btcd.fedeholc.ar" target="_blank">
+            {" "}
+            este otro blog
+          </Link>{" "}
+          (ver repo{" "}
+          <Link
+            href="https://github.com/fedeholc/btcd.fedeholc.ar"
+            target="_blank"
+          >
+            aquí
+          </Link>
+          ), de estructura similar pero en TypeScript. Allí, por ejemplo,
+          implementé un sistema de comentarios para los posts, utilizando
+          Supabase tanto para la autenticación/autorización de usuarios, como
+          para la base de datos.
         </li>
       </ul>
     ),
-    subtitulo3: "Problemas en el camino, y aprendizajes",
+    subtitulo3: "Aprendizajes y problemas en el camino",
     texto3: (
       <ul>
         <li>
@@ -72,7 +94,9 @@ export default function ProyectoNSP() {
           novedad, ya que no funcionaban las librerías para el estilizado del
           Markdown en la nueva versión. Tuve que regresar a la anterior, pero
           con la lección aprendida sobre la importancia de utilizar tecnologías
-          probadas y consolidadas.
+          probadas y consolidadas. <em>Actualización diciembre de 2023:</em>{" "}
+          finalmente pude resolver el problema de las dependencias y actualizar
+          a la última versión de Next.
         </li>
         <li>
           Publicar el blog en un dominio propio me llevó también a aprender como

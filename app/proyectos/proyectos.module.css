@@ -122,6 +122,9 @@
   margin-bottom: 0.5rem;
 }
 
+.proyecto a {
+  text-decoration: solid underline; 
+}
 
 
 .screenshot__container {
