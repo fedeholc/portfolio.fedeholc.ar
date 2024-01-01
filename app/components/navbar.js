@@ -18,13 +18,19 @@ export default function NavBar() {
         <div className={navbar.toolbar_item_inicio}>
           <Link href="/">
             <span className={navbar.emoji__left}>⚡️</span>
-            <span className="inicio-link">inicio</span>
+            <span title="Vuelve a la página de inicio" className="inicio-link">
+              inicio
+            </span>
           </Link>
         </div>
       </div>
       <div className={navbar.container__right}>
         <div className={navbar.toolbar_item}>
-          <Link href="https://github.com/fedeholc" target="_blank">
+          <Link
+            title="Enlace al perfil de Github"
+            href="https://github.com/fedeholc"
+            target="_blank"
+          >
             <Image
               className={navbar.icon}
               alt="github icon"
@@ -36,6 +42,7 @@ export default function NavBar() {
         </div>
         <div className={navbar.toolbar_item}>
           <Link
+            title="Enlace al perfil de LinkedIn"
             href="https://www.linkedin.com/in/federicoholc/"
             target="_blank"
           >
@@ -50,7 +57,11 @@ export default function NavBar() {
         </div>
 
         <div className={navbar.toolbar_item}>
-          <Link href="mailto:federicoholc@gmail.com" target="_blank">
+          <Link
+            title="Enlace para enviar un mail a federicoholc@gmail.com"
+            href="mailto:federicoholc@gmail.com"
+            target="_blank"
+          >
             <Image
               className={navbar.icon}
               alt="mail icon"
@@ -62,7 +73,11 @@ export default function NavBar() {
         </div>
 
         <div className={navbar.toolbar_item}>
-          <Link href="https://www.instagram.com/fedeholc" target="_blank">
+          <Link
+            title="Enlace al perfil de Instagram"
+            href="https://www.instagram.com/fedeholc"
+            target="_blank"
+          >
             <Image
               className={navbar.icon}
               alt="instagram icon"
@@ -74,14 +89,22 @@ export default function NavBar() {
         </div>
         <div className={navbar.toolbar_item_text}>
           <div>
-            <Link href="/cv">CV</Link>
+            <Link title="Enlace al Currículum Vitae" href="/cv">
+              CV
+            </Link>
           </div>
         </div>
         <div className={navbar.toolbar_item_text}>
-          <Link href="/proyectos">Proyectos</Link>
+          <Link title="Enlace a la página de proyectos" href="/proyectos">
+            Proyectos
+          </Link>
         </div>
         <div className={navbar.toolbar_item_text}>
-          <Link target="_blank" href="https://nsp.fedeholc.ar">
+          <Link
+            title="Enlace al blog NuncaSupeProgramar"
+            target="_blank"
+            href="https://nsp.fedeholc.ar"
+          >
             Blog
           </Link>
         </div>

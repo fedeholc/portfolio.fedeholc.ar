@@ -21,7 +21,11 @@ export default function Theme() {
 
   return (
     <div>
-      <button className={navbar.theme__toggler} onClick={handleChangeTheme}>
+      <button
+        title="Cambiar entre Modo Claro / Modo Oscuro"
+        className={navbar.theme__toggler}
+        onClick={handleChangeTheme}
+      >
         {theme === "light" && (
           <Image
             className={navbar.icon}
