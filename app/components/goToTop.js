@@ -1,6 +1,6 @@
 import Link from "next/link";
-import goTop from "@public/gotop.png";
-import Image from "next/image";
+/* import goTop from "@public/gotop.png";
+import Image from "next/image"; */
 import goToTop from "./goToTop.module.css";
 
 export default function GoToTop() {
