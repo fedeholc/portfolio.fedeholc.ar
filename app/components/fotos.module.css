@@ -13,7 +13,10 @@
 .fotoperfil__foto_animada {
   border: 2px solid black;
   border-radius: 50%;
-  animation: kenburns 30s ease-in-out infinite;
+
+  /*TODO: hacer una mejor animación/transición. Pero para eso creo que va a ser necesario trabajar con opacidades, activando/desactivando clases (en lugar de trabajar con display none), y con imagenes que esten en la misma posición absoluta superponiéndose*/
+  /*   animation: kenburns 30s ease-in-out infinite;
+ */
 }
 
 @keyframes kenburns {
