@@ -1,6 +1,5 @@
 import proyectos from "./proyectos.module.css";
 import "../globals.css";
-import Link from "next/link";
 import Image from "next/image";
 
 import CardProyecto from "@app/components/cardProyecto";
@@ -65,8 +64,6 @@ function ProyectosConLinks() {
     </div>
   );
 }
-
-
 
 function ProyectosTodos() {
   return (

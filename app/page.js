@@ -3,8 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 //styles
 import "./globals.css";
-import proyectos from "./proyectos/proyectos.module.css";
-//icons
+ //icons
 import githubicon from "../public/brand-github.png";
 import paperclipIcon from "../public/paperclip.png";
 import starIcon from "../public/star.png";
