@@ -17,6 +17,7 @@ export default function ProyectoTV() {
         <li>React / JavaScript</li>
         <li>HTML / Tailwind CSS</li>
         <li>Firebase</li>
+        <li>Supabase Auth</li>
         <li>Git / GitHub</li>
       </ul>
     ),
@@ -30,18 +31,21 @@ export default function ProyectoTV() {
     texto2: (
       <ul>
         <li>
-          La aplicación permite buscar series en la base de datos de IMDb
-          (Internet Movie Database) mediante el uso de una API, y agregarlas a
-          la lista de favoritos.
+          Registro de multiples cuentas de usuario utilizando Supabase Auth.
         </li>
         <li>
-          Se puede ver un listado de las series con la correspondiente
-          información respecto a la cantidad de temporadas y a la fecha de
-          emisión del último episodio.
+          Búsqueda de series en la base de datos de IMDb (Internet Movie
+          Database) mediante el uso de una API, y agregarlas a la lista de
+          favoritos.
         </li>
         <li>
-          Es posible ordenar el listado alfebéticamente o por la fecha del
-          último episodio para así poder ver cuáles son los que han sido
+          Listado de series favoritas con la correspondiente información
+          respecto a la cantidad de temporadas y a la fecha de emisión del
+          último episodio.
+        </li>
+        <li>
+          Opción de ordenar el listado de series alfebéticamente o por la fecha
+          del último episodio para así poder ver cuáles son los que han sido
           emitidos recientemente.
         </li>
         <li>
@@ -74,6 +78,11 @@ export default function ProyectoTV() {
           relación a la carga de los datos, pero la nueva documentación de React
           es muy clara en cuanto a cómo usarlo y sobre todo cuando no usarlo,
           así que pude resolverlo.
+        </li>
+        <li>
+          Programar desde cero un sistema de autenticación de usuarios era algo
+          que excedía este proyecto, por lo que decidí utilizar Supabase Auth,
+          lo cual me permitió implementarlo de manera sencilla.
         </li>
         <li>
           Aproveché para probar por primera vez Tailwind CSS, del cual rescato
