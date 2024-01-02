@@ -119,6 +119,7 @@ strong {
   font-size: 1.1rem;
   margin: 0.3rem 0.3rem 0.3rem 0rem;
   line-height: 1.5rem;
+  transition: all 0.2s ease-out;
 }
 
 .link_button:hover {
@@ -171,6 +172,7 @@ p:focus-visible .emoji {
   border-radius: 5px;
   padding: 0rem 0.3rem;
   font-weight: 600;
+  transition: all 0.1s ease-out;
 }
 
 p:hover .resaltado {

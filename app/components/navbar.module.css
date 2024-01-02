@@ -78,6 +78,7 @@
     width: 30px;
     height: 30px;
     justify-content: center;
+    transition: all 0.2s ease-out;
   }
 
   .toolbar_item_text {
@@ -90,6 +91,7 @@
     place-items: center;
     height: 30px;
     justify-content: center;
+    transition: all 0.2s ease-out;
   }
 
   .toolbar_item_inicio {
@@ -102,6 +104,7 @@
     place-items: center;
     height: 30px;
     justify-content: center;
+    transition: all 0.2s ease-out;
   }
 
   .toolbar_item:hover,
