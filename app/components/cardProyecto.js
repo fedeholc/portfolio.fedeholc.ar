@@ -7,6 +7,7 @@ export default function CardProyecto({
   titulo,
   subtitulo,
   descripcion,
+  stack,
 }) {
   return (
     <>
@@ -18,12 +19,20 @@ export default function CardProyecto({
           </Link>
         </div>
         <p>{descripcion}</p>
+        {/*         <div className={`${cardP.tags__stack}`}>Stack</div>
+         */}{" "}
+        <div className={`${cardP.tags__container}`}>
+          {stack?.map((item, index) => (
+            <div key={index} className={`${cardP.tag}`}>
+              {item}
+            </div>
+          ))}
+        </div>
         <div className={`${cardP.button__container}`}>
           <Link href={buttonLink} className={cardP.button_ver}>
-            Ver &raquo;
+            Ver proyecto &raquo;
           </Link>
         </div>
-
         {children}
       </div>
     </>
