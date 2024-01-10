@@ -11,7 +11,7 @@ import herb from "@public/herb.png";
 export default function ProyectoANOTA() {
   const TEXTO = {
     titulo: `ANOTÁ! (Another Note Taking App)`,
-    bajada: `¿Otra aplicación más para tomar notas? ¡Sí!  Toda persona preocupada por la organización de la información y la productividad tiene que tener una app que se adapte a sus necesidades. Como no encontré una así, intenté crearla.`,
+    bajada: `¿Otra aplicación más para tomar notas? ¡Así es, otra más! Creada para aprender a hacer una SPA en React, integrando frontend, backend, BBDD, y una extensión para el navegador.`,
     stack: (
       <ul>
         <li>React / JavaScript</li>
@@ -34,7 +34,7 @@ export default function ProyectoANOTA() {
     linkWebText: ``,
     linkWebHref: ``,
     subtitulo1: `¿Para qué sirve?`,
-    texto1: `Probé un montón de aplicaciones para tomar notas, administrar tareas pendientes, guardar enlaces, etc., traté de usar una para cada cosa, o una sola para todo, nada me convencía. Así que puse manos a la obra para con este proyecto de app de notas, con la intención de que ir incorporando las características que necesito a medida que voy avanzando en mi aprendizaje como desarrollador.`,
+    texto1: `¡Evidentemente que para escribir y organizar notas de texto! =)`,
     subtitulo2: `¿Qué tiene de bueno?`,
     texto2: (
       <ul>

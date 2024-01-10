@@ -29,39 +29,66 @@ function ProyectosConLinks() {
       </div>
 
       <div className={proyectos.cards__container}>
-        <CardProyecto
-          buttonLink="/proyectos/anota"
-          titulo="📝 ¡ANOTÁ! "
-          subtitulo="¿Another note taking app?"
-          descripcion="Si te preocupa la organización de la información y la productividad tenés que tener una app que se adapte a sus necesidades. Como no encontré una así, intenté crearla."
-        />
-
-        <CardProyecto
-          titulo="<NuncaSupeProgramar/>"
-          buttonLink="/proyectos/nsp"
-          subtitulo="Blog de apuntes para aprender desarrollo web 👾"
-          descripcion="El blog sigue siendo una de las mejores herramientas para aprender, organizar apuntes, y compartir el conocimiento. Sencillo, rápido, y accesible."
-        />
-        <CardProyecto
-          titulo="Full size images for IG 📷"
-          buttonLink="/proyectos/insta"
-          subtitulo=""
-          descripcion="Extensión para el navegador Chrome que permite ver imágenes de Instagram a máxima resolución y en pantalla completa, sin distracciones."
-        />
-        <CardProyecto
-          titulo="MyTvShows 📺"
-          buttonLink="/proyectos/tv"
-          subtitulo=""
-          descripcion="Una aplicación que te permite llevar registro de tus series favoritas y ver fácilmente cuáles tienen nuevos episodios."
-        />
-        <CardProyecto
-          titulo="👨‍💻 Argentina Programa "
-          buttonLink="/proyectos/ap"
-          subtitulo="Trabajo final del curso de desarrollo web full stack"
-          descripcion="Es un sitio web a modo de C.V. online que integra distintas tecnologías y funcionalidades. Además de aprender mucho haciéndolo, me permitió reencontrarme felizmente con la programación. =)"
-        />
+        <CardsProyectos />
       </div>
     </div>
+  );
+}
+
+function CardsProyectos() {
+  return (
+    <>
+      <CardProyecto
+        titulo="<NuncaSupeProgramar/>"
+        buttonLink="/proyectos/#proyectoNSP"
+        subtitulo="Blog de apuntes para aprender desarrollo web 👾"
+        descripcion="El blog sigue siendo una de las mejores herramientas para aprender, organizar apuntes, y compartir el conocimiento. Sencillo, rápido, y accesible."
+        stack={[
+          "HTML",
+          "CSS",
+          "NextJs / React",
+          "Markdown",
+          "Github",
+          "Vercel",
+        ]}
+      />
+      <CardProyecto
+        buttonLink="/proyectos/#proyectoANOTA"
+        titulo="📝 ¡ANOTÁ! "
+        subtitulo="¿Another note taking app?"
+        descripcion="¡Así es, otra más! =) Creada para aprender a hacer una SPA en React, integrando frontend, backend, BBDD, y una extensión para el navegador."
+        stack={[
+          "HTML",
+          "CSS",
+          "React",
+          "MySQL",
+          "Node / Express",
+          "Chrome API",
+        ]}
+      />
+
+      <CardProyecto
+        titulo="Full size images for IG 📷"
+        buttonLink="/proyectos/#proyectoInsta"
+        subtitulo=""
+        descripcion="Extensión para el navegador Chrome que permite ver imágenes de Instagram a máxima resolución y en pantalla completa, sin distracciones."
+        stack={["HTML", "CSS", "JavaScript", "Chrome API"]}
+      />
+      <CardProyecto
+        titulo="MyTvShows 📺"
+        buttonLink="/proyectos/#proyectoTV"
+        subtitulo=""
+        descripcion="Una aplicación que te permite llevar registro de tus series favoritas y ver fácilmente cuáles tienen nuevos episodios."
+        stack={["HTML", "Tailwind CSS", "React", "Firebase", "Supabase Auth"]}
+      />
+      <CardProyecto
+        titulo="👨‍💻 Argentina Programa "
+        buttonLink="/proyectos/#proyectoAP"
+        subtitulo="Trabajo final del curso de desarrollo web full stack"
+        descripcion="Es un sitio web a modo de C.V. online que integra distintas tecnologías y funcionalidades. Además de aprender mucho haciéndolo, me permitió reencontrarme felizmente con la programación. =)"
+        stack={["HTML", "Bootstrap", "Angular", "MySQL", "Java / Spring Boot"]}
+      />
+    </>
   );
 }
 
@@ -78,81 +105,20 @@ function ProyectosTodos() {
         </div>
 
         <div className={proyectos.cards__container}>
-          <CardProyecto
-            buttonLink="/proyectos/#proyectoANOTA"
-            titulo="📝 ¡ANOTÁ! "
-            subtitulo="¿Another note taking app?"
-            descripcion="Si te preocupa la organización de la información y la productividad tenés que tener una app que se adapte a sus necesidades. Como no encontré una así, intenté crearla."
-            stack={[
-              "HTML",
-              "CSS",
-              "React",
-              "MySQL",
-              "Node / Express",
-              "Chrome API",
-            ]}
-          />
-
-          <CardProyecto
-            titulo="<NuncaSupeProgramar/>"
-            buttonLink="/proyectos/#proyectoNSP"
-            subtitulo="Blog de apuntes para aprender desarrollo web 👾"
-            descripcion="El blog sigue siendo una de las mejores herramientas para aprender, organizar apuntes, y compartir el conocimiento. Sencillo, rápido, y accesible."
-            stack={[
-              "HTML",
-              "CSS",
-              "NextJs / React",
-              "Markdown",
-              "Github",
-              "Vercel",
-            ]}
-          />
-          <CardProyecto
-            titulo="Full size images for IG 📷"
-            buttonLink="/proyectos/#proyectoInsta"
-            subtitulo=""
-            descripcion="Extensión para el navegador Chrome que permite ver imágenes de Instagram a máxima resolución y en pantalla completa, sin distracciones."
-            stack={["HTML", "CSS", "JavaScript", "Chrome API"]}
-          />
-          <CardProyecto
-            titulo="MyTvShows 📺"
-            buttonLink="/proyectos/#proyectoTV"
-            subtitulo=""
-            descripcion="Una aplicación que te permite llevar registro de tus series favoritas y ver fácilmente cuáles tienen nuevos episodios."
-            stack={[
-              "HTML",
-              "Tailwind CSS",
-              "React",
-              "Firebase",
-              "Supabase Auth",
-            ]}
-          />
-          <CardProyecto
-            titulo="👨‍💻 Argentina Programa "
-            buttonLink="/proyectos/#proyectoAP"
-            subtitulo="Trabajo final del curso de desarrollo web full stack"
-            descripcion="Es un sitio web a modo de C.V. online que integra distintas tecnologías y funcionalidades. Además de aprender mucho haciéndolo, me permitió reencontrarme felizmente con la programación. =)"
-            stack={[
-              "HTML",
-              "Bootstrap",
-              "Angular",
-              "MySQL",
-              "Java / Spring Boot",
-            ]}
-          />
+          <CardsProyectos />
         </div>
 
         <div className={proyectos.divider}>
           <Image src={herb} alt="herb emoji" width={26} quality={100} />
         </div>
       </div>
-
-      <div id="proyectoANOTA">
-        <ProyectoANOTA />
-      </div>
       <div id="proyectoNSP">
         <ProyectoNSP />
       </div>
+      <div id="proyectoANOTA">
+        <ProyectoANOTA />
+      </div>
+
       <div id="proyectoInsta">
         <ProyectoInsta />
       </div>
