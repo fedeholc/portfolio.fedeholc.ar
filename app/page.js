@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 //styles
 import "./globals.css";
- //icons
+//icons
 import githubicon from "../public/brand-github.png";
 import paperclipIcon from "../public/paperclip.png";
 import starIcon from "../public/star.png";
@@ -70,10 +70,7 @@ export default function Home() {
           era algo muy distinto al de hace 20 años&nbsp;
           <span className="emoji">🤯</span>, ¡y me atrapó!&nbsp;
           <span className="emoji">🕸️</span> Desde ese momento no paré de
-          aprender ni de programar. ¿Qué mejor entonces que poder hacerlo cada
-          día, ayudando a una organización a alcanzar sus objetivos? Ese es mi
-          próximo paso.&nbsp;
-          <span className="emoji">🤝</span>
+          aprender ni de programar.<span className="emoji">🚀</span>
         </p>
       </div>
       <div className="content-links">
