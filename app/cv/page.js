@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import paperclipIcon from "../../public/paperclip.png";
 
-import CardProyecto from "@app/components/cardProyecto";
+import { CardsProyectos } from "@app/components/cardProyecto";
 
 import herb from "@public/herb.png";
 
@@ -58,37 +58,7 @@ export default function CV() {
           <section>
             <h3>Proyectos</h3>
             <div className={proyectos.cv__cards__container}>
-              <CardProyecto
-                buttonLink="/proyectos/anota"
-                titulo="📝 ¡ANOTÁ! "
-                subtitulo="¿Another note taking app?"
-                descripcion="Si te preocupa la organización de la información y la productividad tenés que tener una app que se adapte a sus necesidades. Como no encontré la mía, intenté hacerla."
-              />
-
-              <CardProyecto
-                titulo="<NuncaSupeProgramar/>"
-                buttonLink="/proyectos/nsp"
-                subtitulo="Blog de apuntes para aprender desarrollo web 👾"
-                descripcion="El blog sigue siendo una de las mejores herramientas para aprender, organizar apuntes, y compartir el conocimiento. Sencillo, rápido, y accesible."
-              />
-              <CardProyecto
-                titulo="Full size images for IG 📷"
-                buttonLink="/proyectos/insta"
-                subtitulo=""
-                descripcion="Extensión para el navegador Chrome que permite ver imágenes de Instagram a máxima resolución y en pantalla completa, sin distracciones."
-              />
-              <CardProyecto
-                titulo="MyTvShows 📺"
-                buttonLink="/proyectos/tv"
-                subtitulo=""
-                descripcion="Una aplicación que te permite llevar registro de tus series favoritas y ver fácilmente cuáles tienen nuevos episodios."
-              />
-              <CardProyecto
-                titulo="👨‍💻 Argentina Programa "
-                buttonLink="/proyectos/ap"
-                subtitulo="Trabajo final del curso de desarrollo web full stack"
-                descripcion="Es un sitio web a modo de C.V. online que integra distintas tecnologías y funcionalidades. Además de aprender mucho haciéndolo, me permitió reencontrarme felizmente con la programación. =)"
-              />
+              <CardsProyectos />
             </div>
           </section>
           <section>
@@ -215,7 +185,7 @@ export default function CV() {
               </li>
             </ul>
             <p>
-              <strong>Profesor de enseñanza media. </strong> 2010 – 2022.
+              <strong>Profesor de enseñanza media. </strong> 2010 – 2023.
             </p>
             <ul>
               <li>
