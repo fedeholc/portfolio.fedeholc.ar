@@ -37,10 +37,11 @@
 }
 
 .columns2stack {
+  margin-top: 0.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  gap: 4rem;
+  gap: 0rem;
 }
 
 .header {
@@ -123,7 +124,7 @@
 }
 
 .proyecto a {
-  text-decoration: solid underline; 
+  text-decoration: solid underline;
 }
 
 

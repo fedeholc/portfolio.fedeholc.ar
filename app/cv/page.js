@@ -44,13 +44,13 @@ export default function CV() {
               Desarrollador web especializado en front-end. Mis habilidades y
               experiencia incluyen:
             </p>
-            <ul>
+            <ul className={proyectos.columns2stack}>
               <li>HTML / CSS </li>
               <li>JavaScript</li>
               <li>React / Next.js</li>
               <li>Responsive web design / Mobile-First</li>
               <li>Node.js / Express</li>
-              <li>MySQL </li>
+              <li>MySQL / PostgreSQL </li>
               <li>JSDoc / TypeScript</li>
               <li>WebExtension API</li>
               <li>Git / GitHub</li>
