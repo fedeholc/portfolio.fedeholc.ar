@@ -61,16 +61,17 @@ export function CardsProyectos() {
       />
       <CardProyecto
         buttonLink="/proyectos/#proyectoANOTA"
-        titulo="📝 ¡ANOTÁ! "
+        titulo="📝 ¡ANOTÁ! & Highlighter"
         subtitulo="¿Another note taking app?"
-        descripcion="¡Así es, otra más! =) Creada para aprender a hacer una SPA en React, integrando frontend, backend, BBDD, y una extensión para el navegador."
+        descripcion="Otra aplicación más para tomar notas. Pero con algunas características particulares. Y lo mejor: una extensión para el navegador que permite resaltar y guardar textos y enlaces desde cualquier web."
         stack={[
           "HTML",
           "CSS",
           "React",
           "MySQL",
           "Node / Express",
-          "Chrome API",
+          "JSDoc",
+          "WebExtension API",
         ]}
       />
 
@@ -79,7 +80,7 @@ export function CardsProyectos() {
         buttonLink="/proyectos/#proyectoInsta"
         subtitulo=""
         descripcion="Extensión para el navegador Chrome que permite ver imágenes de Instagram a máxima resolución y en pantalla completa, sin distracciones."
-        stack={["HTML", "CSS", "JavaScript", "Chrome API"]}
+        stack={["HTML", "CSS", "JavaScript", "WebExtension API"]}
       />
       <CardProyecto
         titulo="MyTvShows 📺"
