@@ -51,6 +51,8 @@ export default function CV() {
               <li>Responsive web design / Mobile-First</li>
               <li>Node.js / Express</li>
               <li>MySQL </li>
+              <li>JSDoc / TypeScript</li>
+              <li>WebExtension API</li>
               <li>Git / GitHub</li>
             </ul>
           </section>
@@ -79,7 +81,8 @@ export default function CV() {
               <li>
                 <strong>Tecnicatura Superior en Desarrollo de Software.</strong>{" "}
                 Instituto de Formación Técnica Superior N.º 29 de la Ciudad
-                Autónoma de Buenos Aires. 2023 – presente (en curso).
+                Autónoma de Buenos Aires. En curso desde 2023 (9 materias
+                aprobadas).
               </li>
               <li>
                 <strong>Técnico en Computación.</strong> Escuela Técnica Nº 3
