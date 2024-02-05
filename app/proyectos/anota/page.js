@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import externalLinkIcon from "@public/external-link.png";
 import screenshot1 from "@public/proyecto-anota/anota_inicio.webp";
-import screenshot2 from "@public/proyecto-anota/anota-highlighter.webp";
+import screenshot2 from "@public/proyecto-anota/anotahighlighter.webp";
 import screenshot3 from "@public/proyecto-anota/anota_etiquetas.webp";
 import herb from "@public/herb.png";
 
