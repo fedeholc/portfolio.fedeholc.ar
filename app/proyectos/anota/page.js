@@ -226,8 +226,8 @@ export default function ProyectoANOTA() {
                 className={`${proyectos.screenshot} `}
                 src={screenshot2}
                 alt="screenshot"
-                quality={100}
-                width={1024}
+                quality={90}
+                width={800}
               />
               <figcaption className={proyectos.screenshot__caption}>
                 Funcionamiento de la extensión para el navegador.
@@ -246,8 +246,8 @@ export default function ProyectoANOTA() {
                 className={`${proyectos.screenshot} `}
                 src={screenshot3}
                 alt="screenshot"
-                quality={100}
-                width={1024}
+                quality={90}
+                width={800}
               />
               <figcaption className={proyectos.screenshot__caption}>
                 Muestra de la creación de notas y filtrado por etiquetas.
