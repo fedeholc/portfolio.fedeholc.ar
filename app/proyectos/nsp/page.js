@@ -60,7 +60,7 @@ export default function ProyectoNSP() {
         </li>
         <li>
           Algunas ideas de nuevas funcionalidades las pruebo en{" "}
-          <Link href="btcd.fedeholc.ar" target="_blank">
+          <Link href="https://btcd.fedeholc.ar" target="_blank">
             {" "}
             este otro blog
           </Link>{" "}
