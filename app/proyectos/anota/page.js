@@ -222,13 +222,19 @@ export default function ProyectoANOTA() {
           <div>{TEXTO.texto2}</div>
           <div className={proyectos.screenshot__container}>
             <figure className={`${proyectos.screenshot__figure}  `}>
-              <Image
+              {/*   <Image
                 className={`${proyectos.screenshot} `}
                 src={screenshot2}
                 alt="screenshot"
                 quality={95}
                 width={1024}
+              /> */}
+              <img
+                className={proyectos.screenshot}
+                alt="screenshot"
+                src="/proyecto-anota/anota_highlighter.webp"
               />
+
               <figcaption className={proyectos.screenshot__caption}>
                 Funcionamiento de la extensión para el navegador.
               </figcaption>
