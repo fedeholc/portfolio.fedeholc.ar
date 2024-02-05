@@ -4,7 +4,7 @@
 
 Mi portfolio de desarrollador web.
 
-Online: [portfolio.fedeholc.ar](https://portfolio.fedeholc.ar)]
+Online: [portfolio.fedeholc.ar](https://portfolio.fedeholc.ar)
 
 ## Librerías y recursos
 

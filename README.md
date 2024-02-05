@@ -4,7 +4,7 @@
 
 My developer portfolio website.
 
-Online: [portfolio.fedeholc.ar](https://portfolio.fedeholc.ar)]
+Online: [portfolio.fedeholc.ar](https://portfolio.fedeholc.ar)
 
 ## Resources / Libraries
 
