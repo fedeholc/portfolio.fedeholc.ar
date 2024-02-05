@@ -15,7 +15,7 @@ export default function ProyectoInsta() {
       <ul>
         <li>JavaScript</li>
         <li>HTML / CSS</li>
-        <li>Chrome API</li>
+        <li>WebExtension API</li>
         <li>Git / GitHub</li>
       </ul>
     ),
