@@ -226,7 +226,7 @@ export default function ProyectoANOTA() {
                 className={`${proyectos.screenshot} `}
                 src={screenshot2}
                 alt="screenshot"
-                quality={100}
+                quality={95}
                 width={1024}
               />
               <figcaption className={proyectos.screenshot__caption}>
