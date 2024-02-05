@@ -135,11 +135,10 @@ export default function ProyectoInsta() {
           <p>{TEXTO.texto1}</p>
           <div className={proyectos.screenshot__container}>
             <figure className={`${proyectos.screenshot__figure}  `}>
-              <Image
-                className={`${proyectos.screenshot} `}
-                src={screenshot1}
+              <img
+                className={proyectos.screenshot}
                 alt="screenshot"
-                quality={100}
+                src="/proyecto-ig/igvideo.webp"
               />
               <figcaption className={proyectos.screenshot__caption}>
                 Vista de la extensión funcionando.

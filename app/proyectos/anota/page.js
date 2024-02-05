@@ -3,9 +3,7 @@ import "@app/globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import externalLinkIcon from "@public/external-link.png";
-import screenshot1 from "@public/proyecto-anota/anota_inicio.webp";
-import screenshot2 from "@public/proyecto-anota/anota_highlighter.webp";
-import screenshot3 from "@public/proyecto-anota/anota_etiquetas.webp";
+
 import herb from "@public/herb.png";
 
 export default function ProyectoANOTA() {
@@ -201,12 +199,10 @@ export default function ProyectoANOTA() {
           {/* <p>{TEXTO.texto1}</p> */}
           <div className={proyectos.screenshot__container}>
             <figure className={`${proyectos.screenshot__figure}  `}>
-              <Image
-                className={`${proyectos.screenshot}  `}
-                src={screenshot1}
+              <img
+                className={proyectos.screenshot}
                 alt="screenshot"
-                quality={100}
-                width={1024}
+                src="/proyecto-anota/anota_inicio.webp"
               />
               <figcaption className={proyectos.screenshot__caption}>
                 Muestra de las distintas posibilidades de visualización de las
@@ -248,12 +244,10 @@ export default function ProyectoANOTA() {
           <div>{TEXTO.texto4}</div>
           <div className={proyectos.screenshot__container}>
             <figure className={`${proyectos.screenshot__figure}  `}>
-              <Image
-                className={`${proyectos.screenshot} `}
-                src={screenshot3}
+              <img
+                className={proyectos.screenshot}
                 alt="screenshot"
-                quality={100}
-                width={1024}
+                src="/proyecto-anota/anota_etiquetas.webp"
               />
               <figcaption className={proyectos.screenshot__caption}>
                 Muestra de la creación de notas y filtrado por etiquetas.
