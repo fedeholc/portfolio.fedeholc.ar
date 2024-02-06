@@ -63,7 +63,7 @@ export function CardsProyectos() {
         buttonLink="/proyectos/#proyectoANOTA"
         titulo="📝 ¡ANOTÁ! & Highlighter"
         subtitulo="¿Another note taking app?"
-        descripcion="Otra aplicación más para tomar notas. Pero con algunas características particulares. Y lo mejor: una extensión para el navegador que permite resaltar y guardar textos y enlaces desde cualquier web."
+        descripcion="Así es, otra aplicación más para tomar notas. Pero con algunas características particulares. Y lo mejor: una extensión para el navegador que permite resaltar y guardar textos y enlaces desde cualquier web."
         stack={[
           "HTML",
           "CSS",
