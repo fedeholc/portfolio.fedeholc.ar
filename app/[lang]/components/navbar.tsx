@@ -1,21 +1,46 @@
+/* "use client"; */
 //NextJS
 import Image from "next/image";
 import Link from "next/link";
 //icons
-import githubicon from "../../public/brand-github.png";
-import mailIcon from "../../public/mail.png";
-import instagramIcon from "../../public/brand-instagram.png";
-import linkedinIcon from "../../public/brand-linkedin.png";
+import githubicon from "../../../public/brand-github.png";
+import mailIcon from "../../../public/mail.png";
+import instagramIcon from "../../../public/brand-instagram.png";
+import linkedinIcon from "../../../public/brand-linkedin.png";
 //components
 import Theme from "../theme";
 //styles
 import navbar from "./navbar.module.css";
+import LangSwitcher from "./langSwitcher";
+import { i18n, type Locale } from "../../i18n-config";
 
-export default function NavBar() {
-  return (
-    <navbar className={navbar.container}>
+import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { getDictionaryClient } from "@app/get-dictionary-client";
+import { getDictionary } from "@app/get-dictionary";
+
+export default async function NavBar({ lang }: { lang: Locale }) {
+  /*   const pathName = usePathname();
+  const redirectedPathName = (locale: Locale) => {
+    if (!pathName) return "/";
+    const segments = pathName.split("/");
+    segments[1] = locale;
+    return segments.join("/");
+  }; */
+
+  const dictionary = await getDictionary();
+
+  /*   const router = useRouter();
+   */ return (
+    <div className={navbar.container}>
       <div className={navbar.container__left}>
         <div className={navbar.toolbar_item_inicio}>
+          {/*  <span className={navbar.emoji__left}>⚡️</span>
+         <span title="Vuelve a la página de inicio" className="inicio-link">
+          <button onClick={() => router.push("/" + lang + "/")}>
+              inicio
+            </button>  
+         </span> */}
           <Link href="/">
             <span className={navbar.emoji__left}>⚡️</span>
             <span title="Vuelve a la página de inicio" className="inicio-link">
@@ -55,7 +80,6 @@ export default function NavBar() {
             ></Image>
           </Link>
         </div>
-
         <div className={navbar.toolbar_item}>
           <Link
             title="Enlace para enviar un mail a federicoholc@gmail.com"
@@ -71,7 +95,6 @@ export default function NavBar() {
             ></Image>
           </Link>
         </div>
-
         <div className={navbar.toolbar_item}>
           <Link
             title="Enlace al perfil de Instagram"
@@ -88,16 +111,20 @@ export default function NavBar() {
           </Link>
         </div>
         <div className={navbar.toolbar_item_text}>
-          <div>
-            <Link title="Enlace al Currículum Vitae" href="/cv">
-              CV
-            </Link>
-          </div>
+          {/*        <div>
+            <button onClick={() => router.push("/" + lang + "/cv")}>CV</button>
+          </div> */}
+          <Link title="Enlace a la página de CV" href="/cv">
+            {dictionary.navbar.cv[lang]}
+          </Link>
         </div>
         <div className={navbar.toolbar_item_text}>
           <Link title="Enlace a la página de proyectos" href="/proyectos">
-            Proyectos
+            {dictionary.navbar.proyectos[lang]}
           </Link>
+          {/*    <button onClick={() => router.push("/" + lang + "/proyectos")}>
+            {dictionary["navbar"].proyectos}
+          </button> */}
         </div>
         <div className={navbar.toolbar_item_text}>
           <Link
@@ -111,15 +138,16 @@ export default function NavBar() {
         <div className={navbar.toolbar_item}>
           <Theme></Theme>
         </div>
-
-        {/* 
-      
-
-      
-
-     
-        */}
+        <div className={navbar.toolbar_item_text}>
+          <Link
+            title="Enlace al blog NuncaSupeProgramar"
+            target="_blank"
+            href="https://nsp.fedeholc.ar"
+          ></Link>
+          <LangSwitcher lang={lang}></LangSwitcher>
+          {/*    <Link href={`/proyectos`}>Proyectos</Link> */}
+        </div>
       </div>
-    </navbar>
+    </div>
   );
 }

@@ -1,29 +1,30 @@
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+//import { Analytics } from "@vercel/analytics/react";
+//import { SpeedInsights } from "@vercel/speed-insights/next";
 
 //styles
-import "./globals.css";
+import "@app/globals.css";
 import "./styles/themes-colors.css";
 //fonts
 import { Roboto_Mono, Recursive, Montserrat } from "next/font/google";
 //components
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
+import { i18n, type Locale } from "../i18n-config";
 
-export const robotoMono = Roboto_Mono({
+const robotoMono = Roboto_Mono({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
   variable: "--font-roboto-mono",
 });
 
-export const recursive = Recursive({
+const recursive = Recursive({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
   variable: "--font-recursive",
 });
-export const montserrat = Montserrat({
+const montserrat = Montserrat({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
@@ -38,20 +39,30 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export async function generateStaticParams() {
+  return i18n.locales.map((locale) => ({ lang: locale }));
+}
+
+export default function Root({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: { lang: Locale };
+}) {
   return (
     <html
-      lang="en"
+      lang={params.lang}
       className={`${montserrat.variable} ${recursive.variable}  ${robotoMono.variable}  `}
     >
       <body className="background">
         <main className="layout__grid">
-          <NavBar></NavBar>
+          <NavBar lang={params.lang}></NavBar>
           <article className="main_article">{children}</article>
           <Footer></Footer>
         </main>
-        <Analytics />
-        <SpeedInsights />
+        {/*  <Analytics />
+        <SpeedInsights /> */}
       </body>
     </html>
   );

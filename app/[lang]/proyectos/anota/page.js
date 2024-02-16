@@ -1,10 +1,14 @@
 import proyectos from "../proyectos.module.css";
+
 import "@app/globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import externalLinkIcon from "@public/external-link.png";
 
 import herb from "@public/herb.png";
+import screenshot1 from "@public/proyecto-anota/anota_inicio.webp";
+import screenshot2 from "@public/proyecto-anota/anota_highlighter.webp";
+import screenshot3 from "@public/proyecto-anota/anota_etiquetas.webp";
 
 export default function ProyectoANOTA() {
   const TEXTO = {
@@ -199,10 +203,11 @@ export default function ProyectoANOTA() {
           {/* <p>{TEXTO.texto1}</p> */}
           <div className={proyectos.screenshot__container}>
             <figure className={`${proyectos.screenshot__figure}  `}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 className={proyectos.screenshot}
                 alt="screenshot"
-                src="/proyecto-anota/anota_inicio.webp"
+                src={screenshot1.src}
               />
               <figcaption className={proyectos.screenshot__caption}>
                 Muestra de las distintas posibilidades de visualización de las
@@ -225,10 +230,11 @@ export default function ProyectoANOTA() {
                 quality={95}
                 width={1024}
               /> */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 className={proyectos.screenshot}
                 alt="screenshot"
-                src="/proyecto-anota/anota_highlighter.webp"
+                src={screenshot2.src}
               />
 
               <figcaption className={proyectos.screenshot__caption}>
@@ -244,10 +250,11 @@ export default function ProyectoANOTA() {
           <div>{TEXTO.texto4}</div>
           <div className={proyectos.screenshot__container}>
             <figure className={`${proyectos.screenshot__figure}  `}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 className={proyectos.screenshot}
                 alt="screenshot"
-                src="/proyecto-anota/anota_etiquetas.webp"
+                src={screenshot3.src}
               />
               <figcaption className={proyectos.screenshot__caption}>
                 Muestra de la creación de notas y filtrado por etiquetas.

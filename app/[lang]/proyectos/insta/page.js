@@ -1,5 +1,6 @@
 import proyectos from "../proyectos.module.css";
 import "@app/globals.css";
+
 import Link from "next/link";
 import Image from "next/image";
 import externalLinkIcon from "@public/external-link.png";
@@ -69,7 +70,7 @@ export default function ProyectoInsta() {
           También surgió un problema no técnico que no había tenido en cuenta:
           luego de varias semanas de publicada la extensión, cuando ya tenía más
           de cien usuarios, me llegó un aviso de que la eliminaban de la chrome
-          web store de Estados Unidos por utilizar la palabra "Instagram" en el
+          web store de Estados Unidos por utilizar la palabra Instagram en el
           nombre y porque el icono incluía los colores de la marca. Por lo que
           tuve que cambiar nombre y logo, y volver a publicarla.
         </li>
@@ -135,10 +136,11 @@ export default function ProyectoInsta() {
           <p>{TEXTO.texto1}</p>
           <div className={proyectos.screenshot__container}>
             <figure className={`${proyectos.screenshot__figure}  `}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 className={proyectos.screenshot}
                 alt="screenshot"
-                src="/proyecto-ig/igvideo.webp"
+                src={screenshot1.src}
               />
               <figcaption className={proyectos.screenshot__caption}>
                 Vista de la extensión funcionando.

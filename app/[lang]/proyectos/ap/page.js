@@ -54,10 +54,10 @@ export default function ProyectoAP() {
       <ul>
         <li>
           No fue sencillo armar el rompecabezas de tecnologías necesarias para
-          que todo funcione, y en algunos aspectos las partes quedaron "atadas
-          con alambre", ya que no tenía el tiempo necesario para profundizar en
-          las bases de cada herramienta y encontrar la mejor solución posible.
-          ¡Pero funcionó!
+          que todo funcione, y en algunos aspectos las partes quedaron
+          &quot;atadas con alambre&quot;, ya que no tenía el tiempo necesario
+          para profundizar en las bases de cada herramienta y encontrar la mejor
+          solución posible. ¡Pero funcionó!
         </li>
         <li>
           El trabajo me permitió tener una visión general de cómo se integra un

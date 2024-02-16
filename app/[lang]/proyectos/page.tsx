@@ -1,8 +1,8 @@
 import proyectos from "./proyectos.module.css";
-import "../globals.css";
+import "@app/globals.css";
 import Image from "next/image";
 
-import {CardsProyectos} from "@app/components/cardProyecto";
+import { CardsProyectos } from "@app/[lang]/components/cardProyecto";
 import herb from "@public/herb.png";
 
 import ProyectoANOTA from "./anota/page";
@@ -10,16 +10,26 @@ import ProyectoAP from "./ap/page";
 import ProyectoInsta from "./insta/page";
 import ProyectoNSP from "./nsp/page";
 import ProyectoTV from "./tv/page";
-import ff from "@app/ff";
-import GoToTop from "@app/components/goToTop";
+import ff from "@app/[lang]/ff";
+import GoToTop from "@app/[lang]/components/goToTop";
+import { i18n, type Locale } from "../../i18n-config";
 
 /*         👾🌿🍁🪐🌟🛠️💘🕸️🚲️🎼⭐
  */
-export default function Proyectos() {
-  return ff.proyectosTodosJuntos ? <ProyectosTodos /> : <ProyectosConLinks />;
+export default function Proyectos({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}) {
+  console.log("proyectos:", lang);
+  return ff.proyectosTodosJuntos ? (
+    <ProyectosTodos lang={lang} />
+  ) : (
+    <ProyectosConLinks lang={lang} />
+  );
 }
 
-function ProyectosConLinks() {
+function ProyectosConLinks({ lang }: { lang: Locale }) {
   return (
     <div className={proyectos.proyecto}>
       <div className={proyectos.header}>PROYECTOS</div>
@@ -29,14 +39,13 @@ function ProyectosConLinks() {
       </div>
 
       <div className={proyectos.cards__container}>
-        <CardsProyectos />
+        <CardsProyectos lang={lang} />
       </div>
     </div>
   );
 }
 
-
-function ProyectosTodos() {
+function ProyectosTodos({ lang }: { lang: Locale }) {
   return (
     <>
       <a id="inicio"></a>
@@ -49,7 +58,7 @@ function ProyectosTodos() {
         </div>
 
         <div className={proyectos.cards__container}>
-          <CardsProyectos />
+          <CardsProyectos lang={lang} />
         </div>
 
         <div className={proyectos.divider}>

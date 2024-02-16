@@ -1,0 +1,220 @@
+{
+  "navbar": {
+    "cv": { "es": "CV", "en": "Resume" },
+    "proyectos": { "es": "Proyectos", "en": "Projects" }
+  },
+  "cardproyecto": { "es": "Ver proyecto", "en": "View project" },
+  "cv": {
+    "heading": { "es": "CURRICULUM VITAE", "en": "RESUME" },
+    "downloadPDF": {
+      "es": "descargar en PDF",
+      "en": "download as PDF"
+    },
+    "calificaciones1": {
+      "es": "Resumen de calificaciones",
+      "en": "Summary of qualifications"
+    },
+    "calificaciones2": {
+      "es": "Desarrollador web especializado en front-end. ",
+      "en": "Web developer specialized in frontend. "
+    },
+    "calificaciones3": {
+      "es": "Mis habilidades y experiencia incluyen:",
+      "en": "My skills and experience include:"
+    },
+    "proyectos1": { "es": "Proyectos", "en": "Projects" },
+    "proyectos2": {
+      "es": "Podés encontrar una explicación detallada de cada proyecto en mi portfolio online: ",
+      "en": "You can find a detailed explanation of each project in my online portfolio: "
+    },
+    "proyectos3": {
+      "es": "👾 &lt;NuncaSupeProgramar /&gt; Blog de apuntes para aprender desarrollo web",
+      "en": "👾 &lt;NuncaSupeProgramar /&gt; Blog of notes for learning web development"
+    },
+    "proyectos3a": {
+      "es": "<NuncaSupeProgramar />",
+      "en": "<NuncaSupeProgramar />"
+    },
+    "proyectos3b": {
+      "es": "Blog de apuntes para aprender desarrollo web 👾",
+      "en": "Blog of notes for learning web development 👾"
+    },
+    "proyectos4": {
+      "es": "Mi blog para organizar apuntes, aprender, y compartir el conocimiento. Sencillo, rápido, y accesible.",
+      "en": "My blog to organize notes, learn, and share knowledge. Simple, fast, and accessible."
+    },
+    "proyectos5": {
+      "es": "Así es, otra aplicación más para tomar notas. =) Pero con algunas características particulares. Y lo mejor: una extensión para el navegador que permite resaltar y guardar textos y enlaces desde cualquier web.",
+      "en": "That's right, yet another note-taking application =) But with some particular special features. And the best: a browser extension that allows you to highlight and save texts and links from anyweb."
+    },
+    "proyectos6": {
+      "es": "Extensión para el navegador Chrome que permite ver imágenes de Instagram a máxima resolución y en pantalla completa, sin distracciones.",
+      "en": "Extension for Chrome browser that allows you to view Instagram images at full resolution and in full screen, without distractions."
+    },
+    "proyectos7": {
+      "es": "Disponible en la chrome web store: ",
+      "en": "Available at the chrome web store:"
+    },
+    "proyectos8": {
+      "es": "Aplicación que permite llevar registro de tus series favoritas y ver fácilmente cuáles tienen nuevos episodios",
+      "en": "Application that allows you to keep track of your favorite series and easily see which ones have new episodes."
+    },
+    "proyectos9": {
+      "es": "👨‍💻 Argentina Programa v3.0 - Trabajo final del curso de desarrollo web full stack",
+      "en": "👨‍💻 Argentina Programa v3.0 - Full stack web development course final work"
+    },
+    "proyectos9a": {
+      "es": "Trabajo final del curso de desarrollo web full stack",
+      "en": "Full stack web development course final work"
+    },
+    "proyectos10": {
+      "es": "Sitio web a modo de C.V. online que integra distintas funcionalidades. Además, me permitió reencontrarme felizmente con la programación. =)",
+      "en": "Website as an online resume that integrates different functionalities. In addition, it allowed me to to meet again happily with programming =)"
+    },
+    "idiomas1": { "es": "Idiomas", "en": "Languages" },
+    "idiomas2a": {
+      "es": "Español: ",
+      "en": "Spanish: "
+    },
+    "idiomas2b": {
+      "es": "nativo.",
+      "en": "native."
+    },
+    "idiomas2c": {
+      "es": "Inglés: ",
+      "en": "English: "
+    },
+    "idiomas2d": {
+      "es": "professional working proficiency. First Certificate Exam (B2 First), Cambridge University.",
+      "en": "professional working proficiency. First Certificate Exam (B2 First), Cambridge University."
+    },
+    "academia1": { "es": "Formación Académica", "en": "Education" },
+
+    "academia2a": {
+      "es": "Tecnicatura Superior en Desarrollo de Software.",
+      "en": "Higher Technician Degree in Software Development."
+    },
+    "academia2b": {
+      "es": "Instituto de Formación Técnica Superior N.º 29 de la Ciudad Autónoma de Buenos Aires. En curso desde 2023 (9 materias aprobadas).",
+      "en": "Technical Training Institute No. 29 of the Autonomous City of Buenos Aires. In progress since 2023 (9 subjects approved)."
+    },
+    "academia3a": {
+      "es": "Técnico en Computación.",
+      "en": "Computer Technician."
+    },
+    "academia3b": {
+      "es": "Escuela Técnica Nº 3 Maria Sánchez de Thompson, Ciudad Autónoma de Buenos Aires. 1992 – 1998.",
+      "en": "Technical School Nº 3 Maria Sánchez de Thompson, Autonomous City of Buenos Aires. 1992 - 1998."
+    },
+    "academia4a": {
+      "es": "Licenciado en Sociología.",
+      "en": "Bachelor's Degree in Sociology."
+    },
+    "academia4b": {
+      "es": "Facultad de Ciencias Sociales, Universidad de Buenos Aires. 2002 – 2007.",
+      "en": "Faculty of Social Sciences, University of Buenos Aires. Buenos Aires. 2002 - 2007."
+    },
+    "academia5a": {
+      "es": "Profesor de Enseñanza Secundaria, Normal y Especial en Sociología.",
+      "en": "Professor of Secondary, Normal and Special Education in Sociology."
+    },
+    "academia5b": {
+      "es": "Facultad de Ciencias Sociales, Universidad de Buenos Aires. 2007 – 2009.",
+      "en": "Faculty of Social Sciences, University of Buenos Aires. 2007 – 2009."
+    },
+    "academia6a": {
+      "es": "Especialista Docente de Nivel Superior en Educación Sexual Integral.",
+      "en": "Higher Education Specialist in Comprehensive Sexual Education."
+    },
+    "academia6b": {
+      "es": "Instituto Superior del Profesorado Dr. Joaquín V. González. 2017 – 2019.",
+      "en": "Dr. Joaquín V. González Higher Institute of Teaching. 2017 –2019."
+    },
+    "cursos1": { "es": "Cursos", "en": "Courses" },
+    "cursos2a": {
+      "es": "Desarrollador Web Full Stack. Argentina Programa v3.0,",
+      "en": "Full Stack Web Developer. Argentina Program v3.0,"
+    },
+    "cursos2b": {
+      "es": "Instituto Nacional de Tecnología Industrial (INTI), Ministerio de Economía de la Nación, 2022-2023.",
+      "en": "National Institute of Industrial Technology (INTI), Ministry of Economy of the Nation, 2022-2023."
+    },
+    "cursos3a": {
+      "es": "Codo a Codo 4.0 Full Stack JAVA,",
+      "en": "Codo a Codo 4.0 Full Stack JAVA,"
+    },
+    "cursos3b": {
+      "es": "Ministerio de Educación de la CABA, 2022.",
+      "en": "Ministry of Education of the Autonomous City of Buenos Aires, 2022."
+    },
+    "cursos4a": {
+      "es": "Responsive Web Design,",
+      "en": "Responsive Web Design,"
+    },
+    "cursos4b": {
+      "es": "freeCodeCamp.org, 2022.",
+      "en": "freeCodeCamp.org, 2022."
+    },
+    "cursos5a": {
+      "es": "JavaScript Algorithms and Data Structures,",
+      "en": "JavaScript Algorithms and Data Structures,"
+    },
+    "cursos5b": {
+      "es": "freeCodeCamp.org, 2022.",
+      "en": "freeCodeCamp.org, 2022."
+    },
+    "cursos6a": {
+      "es": "Back End Development and APIs,",
+      "en": "Back End Development and APIs,"
+    },
+    "cursos6b": {
+      "es": "freeCodeCamp.org, 2022.",
+      "en": "freeCodeCamp.org, 2022."
+    },
+    "experiencias1": { "es": "Experiencia Laboral", "en": "Work Experience" },
+    "experiencias2a": {
+      "es": "Programador. CompuHotel S.A. 1998 – 2002",
+      "en": "Programmer. CompuHotel S.A. 1998 - 2002"
+    },
+    "experiencias2b": {
+      "es": "Desarrollo de software de administración hotelera utilizando Visual Basic, Visual Fox Pro, y bases de datos SQL.",
+      "en": "Hotel management software development using Visual Basic, Visual Fox Pro, and SQL databases."
+    },
+    "experiencias2c": {
+      "es": "Diseño y desarrollo de páginas web utilizando HTML, CSS y JavaScript.",
+      "en": "Design and development of web pages using HTML, CSS and Javascript."
+    },
+    "experiencias3a": {
+      "es": "Sociólogo, Departamento de Salud Ambiental, Ministerio de Salud del GCABA. 2008 – 2012",
+      "en": "Sociologist, Environmental Health Department, Ministry of Health of the Government of the Autonomous City of Buenos Aires. 2008 - 2012"
+    },
+    "experiencias3b": {
+      "es": "Desarrollo e implementación de instrumentos para el relevamiento de problemáticas ambientales en los Centros de Salud y Acción Comunitaria de la CABA. Capacitación del personal para su utilización.",
+      "en": "Development and implementation of instruments for the survey of environmental problems in the Health and Community Action Centers of the CABA. Training of personnel in their use."
+    },
+    "experiencias3c": {
+      "es": "Análisis de datos socio-ambientales con Epi Info, bases de datos y SPSS.",
+      "en": "Analysis of socio-environmental data using Epi Info, MS Access databases, and SPSS."
+    },
+    "experiencias4a": {
+      "es": "Profesor y tutor universitario. Universidad de Buenos Aires. 2007 – 2015",
+      "en": "Professor and university tutor. University of Buenos Aires"
+    },
+    "experiencias4b": {
+      "es": "Profesor de Introducción al Pensamiento Científico, Ciclo Básico Común, cátedra Marqués. 2007-2011",
+      "en": "Professor of Introduction to Scientific Thinking, Common Basic Cycle, Marqués Chair. 2007-2011"
+    },
+    "experiencias4c": {
+      "es": "Profesor y tutor de Prácticas de la enseñanza. Facultad de Ciencias Sociales, cátedra Pipkin. 2009-2015",
+      "en": "Professor and tutor of Teaching Practices. Faculty of Social Sciences, Pipkin Chair. 2009-2015"
+    },
+    "experiencias5a": {
+      "es": "Profesor de enseñanza media. 2010 – 2023",
+      "en": "High school teacher. 2010 - 2023"
+    },
+    "experiencias5b": {
+      "es": "Profesor de Sociología, Introducción a las Ciencias Sociales y a las Humanidades, Formación Ética y Ciudadana, e Historia, en escuelas públicas de enseñanza media de la Ciudad Autónoma de Buenos Aires.",
+      "en": "Teacher of Sociology, History, Introduction to Social Sciences and Humanities, and Ethics and Citizenship Education in public high schools in the Autonomous City of Buenos Aires."
+    }
+  }
+}

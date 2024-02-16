@@ -1,6 +1,7 @@
 import proyectos from "../proyectos.module.css";
 import "@app/globals.css";
 import Link from "next/link";
+
 import Image from "next/image";
 import externalLinkIcon from "@public/external-link.png";
 import screenshot1 from "@public/proyecto-nsp/nsp2.png";

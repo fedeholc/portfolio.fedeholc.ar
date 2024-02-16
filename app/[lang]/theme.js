@@ -3,11 +3,11 @@
 import { useState, useEffect } from "react";
 //icons
 import Image from "next/image";
-import moonIcon from "../public/moon-filled.png";
-import brightIcon from "../public/brightness-up.png";
+import moonIcon from "@public/moon-filled.png";
+import brightIcon from "@public/brightness-up.png";
 //styles
 import navbar from "./components/navbar.module.css";
-import "./globals.css";
+import "@app/globals.css";
 
 export default function Theme() {
   const [theme, setTheme] = useState("light");
