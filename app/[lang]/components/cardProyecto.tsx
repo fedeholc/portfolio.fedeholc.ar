@@ -91,9 +91,9 @@ export default async function CardProyecto({
       <div className={`${cardP.card__container}`}>
         <div>
           <Link href={buttonLink}>
-            <h2>{titulo}</h2>
-            <h3>{subtitulo}</h3>
+            <h2 className={cardP.titulo}>{titulo}</h2>
           </Link>
+          <h3>{subtitulo}</h3>
         </div>
         <p>{descripcion}</p>
         {/*         <div className={`${cardP.tags__stack}`}>Stack</div>

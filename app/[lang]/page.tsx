@@ -97,7 +97,8 @@ export default async function IndexPage({
         But it was the year 2001 and Argentina and my life were waiting for a
         plot twist&nbsp;<span className="emoji">🙈</span>, or better said, an
         epic fail!&nbsp;
-        <span className="emoji">💩</span> I quit programming.&nbsp;
+        <span className="emoji">💩</span>Argentina had five presidents in one
+        week, and I quit programming.&nbsp;
         <span className="emoji">🤦🏻😭☠️</span>&nbsp;
       </p>
     );

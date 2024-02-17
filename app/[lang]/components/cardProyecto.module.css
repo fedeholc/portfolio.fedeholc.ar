@@ -13,7 +13,7 @@
   border-radius: 5px;
 
 
-  max-width: 300px;
+  max-width: 320px;
 }
 
 .card__container:hover {
@@ -21,6 +21,10 @@
   box-shadow: 2px 2px 0px 0 var(--card-borde);
   position: relative;
   cursor: default;
+}
+
+.card__subtitulo a {
+  text-decoration-line: none;
 }
 
 .card__image {
@@ -69,9 +73,20 @@
   padding: 0.1rem 0.5rem;
   background-color: var(--boton-hover);
   border: 2px solid transparent;
+  text-decoration: solid underline;
 }
 
+.titulo {
+  border-radius: 5px;
+  padding: 0.1rem 0.5rem;
+  background-color: var(--boton-hover);
+  border: 2px solid transparent;
+}
 
+.titulo:hover {
+  background-color: var(--boton-hover);
+  border: 2px solid var(--card-boton-borde);
+}
 
 .button_ver:hover {
   background-color: var(--boton-hover);
@@ -107,6 +122,8 @@
   border: 1px dashed var(--card-tag-borde);
   padding: 0.2rem 0.5rem;
 }
+
+
 
 @media only screen and (max-width: 670px) {
   .card__container {
