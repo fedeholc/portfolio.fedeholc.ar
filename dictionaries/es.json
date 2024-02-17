@@ -36,6 +36,10 @@
     }
   },
   "cv": {
+    "nombreArchivo": {
+      "es": "Federico_Holc_CV.pdf",
+      "en": "Federico_Holc_Resume.pdf"
+    },
     "heading": { "es": "CURRICULUM VITAE", "en": "RESUME" },
     "downloadPDF": {
       "es": "descargar en PDF",

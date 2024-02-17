@@ -36,7 +36,11 @@ export default async function CV({
                 src={paperclipIcon}
               ></Image>
               &nbsp;
-              <Link href="/cv/Federico_Holc_CV.pdf" target="_blank">
+              <Link
+                locale={false}
+                href={`/cv/${dictionary.cv.nombreArchivo[lang]}`}
+                target="_blank"
+              >
                 {dictionary.cv.downloadPDF[lang]}
               </Link>
             </div>
@@ -51,15 +55,14 @@ export default async function CV({
               {dictionary.cv.calificaciones1[lang]}
             </p>
             <ul className={proyectos.columns2stack}>
-              <li>HTML / CSS </li>
-              <li>JavaScript</li>
-              <li>React / Next.js</li>
-              <li>Responsive web design / Mobile-First</li>
-              <li>Node.js / Express</li>
-              <li>MySQL / PostgreSQL </li>
-              <li>JSDoc / TypeScript</li>
+              <li>HTML / CSS</li>
+              <li>JavaScript / React / Next.js</li>
+              <li>MySQL / PostgreSQL</li>
+              <li>JSDocs / TypeScript</li>
               <li>WebExtension API</li>
+              <li>Node.js / Express</li>
               <li>Git / GitHub</li>
+              <li>Responsive web design / Mobile-First</li>
             </ul>
           </section>
 

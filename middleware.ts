@@ -23,6 +23,8 @@ function getLocale(request: NextRequest): string | undefined {
 }
 
 export function middleware(request: NextRequest) {
+
+
   const pathname = request.nextUrl.pathname;
 
   // Check if there is any supported locale in the pathname
@@ -30,12 +32,20 @@ export function middleware(request: NextRequest) {
     (locale) =>
       !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
   );
-
+  console.log("path:", pathname, pathnameIsMissingLocale, request.url);
   // Redirect if there is no locale
   if (pathnameIsMissingLocale) {
 
-    let locale = getLocale(request);
+    // esto es porque por algun motivo cuando va a un link de un archivo en public con el redirect que está debajo no funciona
+    //de esta forma si es un pdf va directo y anda
+    if (pathname.slice(-3) === "pdf") {
+      return NextResponse.next();
 
+    }
+
+
+    let locale = ""; //getLocale(request);
+    //esto es porque el getLocale tomaba el idioma del navegador y no el idioma del sitio, es decir, si se cambió a ingles y el navegador está en español, al redireccionar mandaba a español, de esta forma se fija que idioma tiene y lo mantiene.
     if (request.headers.get("next-url")?.slice(0, 3) === "/es") {
       locale = "es";
     } else if (request.headers.get("next-url")?.slice(0, 3) === "/en") {
@@ -49,6 +59,7 @@ export function middleware(request: NextRequest) {
       ),
     );
   }
+
 }
 
 export const config = {
