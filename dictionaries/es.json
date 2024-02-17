@@ -1,9 +1,40 @@
 {
   "navbar": {
     "cv": { "es": "CV", "en": "Resume" },
-    "proyectos": { "es": "Proyectos", "en": "Projects" }
+    "proyectos": { "es": "Proyectos", "en": "Projects" },
+    "inicio": { "es": "inicio", "en": "home" }
   },
   "cardproyecto": { "es": "Ver proyecto", "en": "View project" },
+  "intro": {
+    "podesver": {
+      "es": "Podés ver mis",
+      "en": "You can see my"
+    },
+    "proyectos": {
+      "es": "proyectos",
+      "en": "projects"
+    },
+    "download": {
+      "es": "descargar mi",
+      "en": "download my"
+    },
+    "cvpdf": {
+      "es": "CV en PDF",
+      "en": "resume as PDF"
+    },
+    "leer": {
+      "es": "leer",
+      "en": "read"
+    },
+    "encontrarme": {
+      "es": "encontrarme en",
+      "en": "find me on"
+    },
+    "escribirme": {
+      "es": "escribirme a:",
+      "en": "write me to:"
+    }
+  },
   "cv": {
     "heading": { "es": "CURRICULUM VITAE", "en": "RESUME" },
     "downloadPDF": {

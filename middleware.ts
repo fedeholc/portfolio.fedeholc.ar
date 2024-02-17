@@ -1,11 +1,8 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-
 import { i18n } from "./app/i18n-config";
-
 import { match as matchLocale } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
-import { url } from "inspector";
 
 function getLocale(request: NextRequest): string | undefined {
   // Negotiator expects plain object so we need to transform headers
@@ -28,19 +25,7 @@ function getLocale(request: NextRequest): string | undefined {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // // `/_next/` and `/api/` are ignored by the watcher, but we need to ignore files in `public` manually.
-  // // If you have one
-  // if (
-  //   [
-  //     '/manifest.json',
-  //     '/favicon.ico',
-  //     // Your other files in `public`
-  //   ].includes(pathname)
-  // )
-  //   return
-
   // Check if there is any supported locale in the pathname
-  console.log("pathname", pathname);
   const pathnameIsMissingLocale = i18n.locales.every(
     (locale) =>
       !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
@@ -50,16 +35,13 @@ export function middleware(request: NextRequest) {
   if (pathnameIsMissingLocale) {
 
     let locale = getLocale(request);
-    console.log("missing locale", request.headers.get("next-url"));
-    console.log("nxxx", request.headers.get("next-url")?.slice(0, 3));
+
     if (request.headers.get("next-url")?.slice(0, 3) === "/es") {
       locale = "es";
     } else if (request.headers.get("next-url")?.slice(0, 3) === "/en") {
       locale = "en";
     }
-    console.log("missing locale", locale);
-    // e.g. incoming request is /products
-    // The new URL is now /en-US/products
+
     return NextResponse.redirect(
       new URL(
         `/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`,

@@ -21,7 +21,6 @@ export default function Proyectos({
 }: {
   params: { lang: Locale };
 }) {
-  console.log("proyectos:", lang);
   return ff.proyectosTodosJuntos ? (
     <ProyectosTodos lang={lang} />
   ) : (

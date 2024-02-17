@@ -20,31 +20,16 @@ import { getDictionaryClient } from "@app/get-dictionary-client";
 import { getDictionary } from "@app/get-dictionary";
 
 export default async function NavBar({ lang }: { lang: Locale }) {
-  /*   const pathName = usePathname();
-  const redirectedPathName = (locale: Locale) => {
-    if (!pathName) return "/";
-    const segments = pathName.split("/");
-    segments[1] = locale;
-    return segments.join("/");
-  }; */
-
   const dictionary = await getDictionary();
 
-  /*   const router = useRouter();
-   */ return (
+  return (
     <div className={navbar.container}>
       <div className={navbar.container__left}>
         <div className={navbar.toolbar_item_inicio}>
-          {/*  <span className={navbar.emoji__left}>⚡️</span>
-         <span title="Vuelve a la página de inicio" className="inicio-link">
-          <button onClick={() => router.push("/" + lang + "/")}>
-              inicio
-            </button>  
-         </span> */}
           <Link href="/">
             <span className={navbar.emoji__left}>⚡️</span>
             <span title="Vuelve a la página de inicio" className="inicio-link">
-              inicio
+              {dictionary.navbar.inicio[lang]}
             </span>
           </Link>
         </div>
