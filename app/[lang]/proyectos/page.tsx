@@ -5,7 +5,7 @@ import Image from "next/image";
 import { CardsProyectos } from "@app/[lang]/components/cardProyecto";
 import herb from "@public/herb.png";
 
-import ProyectoANOTA from "./anota/page2";
+import ProyectoANOTA from "./anota/page";
 import ProyectoAP from "./ap/page";
 import ProyectoInsta from "./insta/page";
 import ProyectoNSP from "./nsp/page";
@@ -65,20 +65,20 @@ function ProyectosTodos({ lang }: { lang: Locale }) {
         </div>
       </div>
       <div id="proyectoNSP">
-        <ProyectoNSP />
+        <ProyectoNSP params={{ lang: lang }} />
       </div>
       <div id="proyectoANOTA">
         <ProyectoANOTA params={{ lang: lang }} />
       </div>
 
       <div id="proyectoInsta">
-        <ProyectoInsta />
+        <ProyectoInsta params={{ lang: lang }} />
       </div>
       <div id="proyectoTV">
-        <ProyectoTV />
+        <ProyectoTV params={{ lang: lang }} />
       </div>
       <div id="proyectoAP">
-        <ProyectoAP />
+        <ProyectoAP params={{ lang: lang }} />
       </div>
     </>
   );

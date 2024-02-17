@@ -7,8 +7,11 @@ import externalLinkIcon from "@public/external-link.png";
 import screenshot2 from "@public/proyecto-mytv/mytv1.png";
 import screenshot1 from "@public/proyecto-mytv/mytv2.png";
 import herb from "@public/herb.png";
+import { getDictionary } from "@app/get-dictionary";
+import { Locale } from "@app/i18n-config";
 
-export default function ProyectoTV() {
+export default async function ProyectoTV({ params: { lang } }: { params: { lang: Locale } }) {
+  const dictionary = await getDictionary();
   const TEXTO = {
     titulo: `MyTvShows`,
     bajada: `MyTvShows es una aplicación que permite llevar registro de tus series favoritas y ver fácilmente cuáles tienen nuevos episodios.`,
@@ -94,7 +97,9 @@ export default function ProyectoTV() {
 
   return (
     <div className={proyectos.proyecto}>
-      <div className={proyectos.header}>PROYECTO</div>
+      <div className={proyectos.header}>
+        {dictionary.proyectos.proyecto[lang]}
+      </div>
       <div className={proyectos.divider}>
         <Image src={herb} alt="herb emoji" width={26} quality={100} />
       </div>
@@ -108,7 +113,7 @@ export default function ProyectoTV() {
             {TEXTO.stack}
           </div>
           <div>
-            <h3>código</h3>
+            <h3>{dictionary.proyectos.codigo[lang]}</h3>
             <div className={proyectos.link_icon}>
               <Link target="_blank" href={TEXTO.linkCodeHref}>
                 {TEXTO.linkCodeText}&nbsp;

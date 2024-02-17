@@ -8,12 +8,15 @@ import screenshot2 from "@public/proyecto-ap/ap2.png";
 import screenshot3 from "@public/proyecto-ap/ap5.png";
 import screenshot4 from "@public/proyecto-ap/ap4.png";
 import herb from "@public/herb.png";
+import { getDictionary } from "@app/get-dictionary";
+import { Locale } from "@app/i18n-config";
 
 // El sitio web es una aplicación de una sola página (SPA) desarrollada con Angular, que consume una API REST desarrollada con Java, Spring Boot y Hibernate, y que se conecta a una base de datos MySQL. El sitio web está alojado en Firebase, y la API REST en Koyeb. El código fuente está en GitHub.
 
 // La elección de las tecnologías no fue propia sino que fueron las que aprendimos en el curso.
 
-export default function ProyectoAP() {
+export default async function ProyectoAP({ params: { lang } }: { params: { lang: Locale } }) {
+  const dictionary = await getDictionary();
   const TEXTO = {
     titulo: `Argentina Programa v3.0 - Curriculum Vitae`,
     bajada: `Es un sitio web a modo de curriculum vitae online que integra distintas tecnologías y funcionalidades. Fue solicitado como trabajo final del curso de desarrollo web full stack de Argentina Programa. Aprendí mucho haciéndolo, pero más importante aún, me permitió reencontrarme felizmente con la programación. =)`,
@@ -86,7 +89,9 @@ export default function ProyectoAP() {
 
   return (
     <div className={`${proyectos.proyecto}`}>
-      <div className={proyectos.header}>PROYECTO</div>
+      <div className={proyectos.header}>
+        {dictionary.proyectos.proyecto[lang]}
+      </div>
       <div className={proyectos.divider}>
         <Image src={herb} alt="herb emoji" width={26} quality={100} />
       </div>
@@ -100,7 +105,7 @@ export default function ProyectoAP() {
             {TEXTO.stack}
           </div>
           <div>
-            <h3>código</h3>
+            <h3>{dictionary.proyectos.codigo[lang]}</h3>
             <div className={proyectos.link_icon}>
               <Link
                 className={proyectos.underline}

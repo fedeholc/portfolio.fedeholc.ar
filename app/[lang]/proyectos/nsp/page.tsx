@@ -7,8 +7,11 @@ import externalLinkIcon from "@public/external-link.png";
 import screenshot1 from "@public/proyecto-nsp/nsp2.png";
 import screenshot2 from "@public/proyecto-nsp/nsp4.png";
 import herb from "@public/herb.png";
+import { getDictionary } from "@app/get-dictionary";
+import { Locale } from "@app/i18n-config";
 
-export default function ProyectoNSP() {
+export default async function ProyectoNSP({ params: { lang } }: { params: { lang: Locale } }) {
+  const dictionary = await getDictionary();
   const TEXTO = {
     titulo: `<NuncaSupe\u00ADProgramar/> Blog de apuntes para aprender desarrollo web`,
     bajada: `Blog de aprendizaje en público, para organizar mis apuntes y compartir el conocimiento.`,
@@ -110,7 +113,9 @@ export default function ProyectoNSP() {
 
   return (
     <div className={`${proyectos.proyecto}`}>
-      <div className={proyectos.header}>PROYECTO</div>
+      <div className={proyectos.header}>
+        {dictionary.proyectos.proyecto[lang]}
+      </div>
       <div className={proyectos.divider}>
         <Image src={herb} alt="herb emoji" width={26} quality={100} />
       </div>
@@ -124,7 +129,7 @@ export default function ProyectoNSP() {
             {TEXTO.stack}
           </div>
           <div>
-            <h3>código</h3>
+            <h3>{dictionary.proyectos.codigo[lang]}</h3>
             <div className={proyectos.link_icon}>
               <Link target="_blank" href={TEXTO.linkCodeHref}>
                 {TEXTO.linkCodeText}&nbsp;

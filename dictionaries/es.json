@@ -253,6 +253,14 @@
     }
   },
   "proyectos": {
+    "codigo": {
+      "es": "código",
+      "en": "code"
+    },
+    "proyecto": {
+      "es": "PROYECTO",
+      "en": "PROJECT"
+    },
     "anota01": {
       "es": "ANOTÁ! (Another Note Taking App) & Highlighter",
       "en": "ANOTÁ! (Another Note Taking App) & Highlighter"
@@ -284,6 +292,54 @@
     "anota08": {
       "es": "Mostrar un indicador en las notas que tenían más texto del que se veía en pantalla (sin mostrar las scroll bars), resulto ser un problema dado que hasta entonces no había utilizado React para acceder directamente al DOM mediante useRef. Aquí tuve que hacerlo, ya que la solución que se me ocurrió fue comparar si había diferencia entre el `scrollHeight` y el `clientHeight` del contenedor de la nota y así detectar si había un overflow del texto, y poder mostrar el indicador cuando correspondiera.",
       "en": "Displaying an indicator in the notes that had more text than was visible on the screen (without showing the scroll bars), turned out to be a problem since until then I had not used React to directly access the DOM using useRef. Here I had to do it, since the solution that occurred to me was to compare if there was a difference between the `scrollHeight` and the `clientHeight` of the note container and thus detect if there was an overflow of the text, and be able to show the indicator when appropriate."
+    },
+    "anota09": {
+      "es": "Otras dificultades fueron la creación de un layout para mostrar las notas en modo mosaico, lo cual aún no se puede realizar de forma nativa en CSS. Así como también la implementación de un editor de texto para crear y modificar las notas, dado que el elemento HTML `contenteditable` no es muy versátil. En ambos casos, con la intención de poner rápidamente en funcionamiento la aplicación, opté por usar librerías, pero me quisiera poder estudiar en profundidad esos problemas para poder implementar mis propias soluciones ya que son aspectos importantes del proyecto.",
+      "en": "Other difficulties were the creation of a layout to display the notes in mosaic mode, which cannot yet be done natively in CSS. As well as the implementation of a text editor to create and modify the notes, since the HTML element `contenteditable` is not very versatile. In both cases, with the intention of quickly putting the application into operation, I chose to use libraries, but I would like to be able to study those problems in depth in order to implement my own solutions since they are important aspects of the project."
+    },
+    "anota10": {
+      "es": "En cuanto a la extensión del navegador, no fue nada fácil, dado que recientemente se cambió al manifest V3 (lo cual conlleva numerosas modificaciones en las APIs), y no abundan los materiales y ejemplos de código actualizados. Pero valió la pena el esfuerzo porque trabajar en una aplicación que tiene que manejar directamente el DOM me obligó a reforzar los fundamentos de JavaScript. Incluso me llevo a estudiar sobre estructuras de datos para poder resolver un problema que era recorrer el arbol del DOM desde el nodo de inicio de la selección de texto hasta el nodo final, para poder obtener el texto, resaltarlo, etc.",
+      "en": "As for the browser extension, it was not easy at all, since it was recently changed to manifest V3 (which entails numerous modifications in the APIs), and there are not many updated materials and code examples. But it was worth the effort because working on an application that has to directly handle the DOM forced me to reinforce the fundamentals of JavaScript. It even led me to study about data structures to be able to solve a problem that was to traverse the DOM tree from the starting node of the text selection to the final node, in order to obtain the text, highlight it, etc."
+    },
+    "anota11": {
+      "es": "Siendo esta la aplicación más grande que he realizado hasta ahora, me resultó aún más evidente la importancia de dedicarle tiempo a tener un código legible, estructurado, documentado, etc., así como también a tener componentes reutilizables y organizados. Es algo en lo que tengo que seguir trabajando y mejorando ya que es fundamental para poder mantener la aplicación e incorporarle nuevas funcionalidades.",
+      "en": "Being this the largest application I have made so far, it became even more evident to me the importance of dedicating time to have readable, structured, documented code, etc., as well as having reusable and organized components. It is something I have to continue working on and improving since it is essential to be able to maintain the application and incorporate new functionalities."
+    },
+    "anota12": {
+      "es": "Aprendizajes y problemas en el camino",
+      "en": "Learnings and problems along the way"
+    },
+    "anota13": {
+      "es": "Sobre el stack",
+      "en": "About the stack"
+    },
+    "anota14": {
+      "es": "Dado que estaba estudiando React, resultaba un oportunidad para poner en práctica el uso de hooks como useContext y useReducer para manejar el estado de la aplicación, así como también de useRef para manipular directamente el DOM.",
+      "en": "Since I was studying React, it was an opportunity to put into practice the use of hooks such as useContext and useReducer to manage the state of the application, as well as useRef to manipulate the DOM directly."
+    },
+    "anota15": {
+      "es": "Para el backend utilicé Node y Express por lo sencillo que resulta crear una API REST con endpoints, y que se conecta una base de datos. Implementé una en MySQL sin utilizar un ORM para aprender más sobre el funcionamiento de las bases de datos relacionales.",
+      "en": "For the backend I used Node and Express because of how easy it is to create a REST API with endpoints, and that connects to a database. I implemented one in MySQL without using an ORM to learn more about the operation of relational databases."
+    },
+    "anota16": {
+      "es": "Utilicé CSS modules por componentes, junto con la metodología BEM, con la intención de tener un código CSS claro y mantenible, separado de la lógica de la aplicación.",
+      "en": "I used CSS modules by components, together with the BEM methodology, with the intention of having clear and maintainable CSS code, separated from the application logic."
+    },
+    "anota17": {
+      "es": "La extensión está en puro HTML, CSS, y JavaScript. Pero decidí incorporar JSDoc para aprender a utilizarlo, tener un código mejor documentado, y también poder tener type check a través del language server de typescript.",
+      "en": "The extension is in pure HTML, CSS, and JavaScript. But I decided to incorporate JSDoc to learn how to use it, have better documented code, and also be able to have type check through the typescript language server."
+    },
+    "anota18": {
+      "es": "Muestra de las distintas posibilidades de visualización de las notas.",
+      "en": "Shows the different possibilities of viewing the notes."
+    },
+    "anota19": {
+      "es": "Funcionamiento de la extensión para el navegador.",
+      "en": "The browser extension funcionality."
+    },
+    "anota20": {
+      "es": "Muestra de la creación de notas y filtrado por etiquetas.",
+      "en": "Shows the creation of notes and filtering by tags."
     }
   }
 }

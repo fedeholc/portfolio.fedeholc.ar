@@ -55,76 +55,31 @@ export default async function ProyectoANOTA({
         <li>{dictionary.proyectos.anota07[lang]}</li>
       </ul>
     ),
-    subtitulo3: "Aprendizajes y problemas en el camino",
+    subtitulo3: dictionary.proyectos.anota12[lang],
     texto3: (
       <ul>
         <li>{dictionary.proyectos.anota08[lang]}</li>
-        <li>
-          Otras dificultades fueron la creación de un layout para mostrar las
-          notas en modo mosaico, lo cual aún no se puede realizar de forma
-          nativa en CSS. Así como también la implementación de un editor de
-          texto para crear y modificar las notas, dado que el elemento HTML
-          `contenteditable` no es muy versátil. En ambos casos, con la intención
-          de poner rápidamente en funcionamiento la aplicación, opté por usar
-          librerías, pero me quisiera poder estudiar en profundidad esos
-          problemas para poder implementar mis propias soluciones ya que son
-          aspectos importantes del proyecto.
-        </li>
-        <li>
-          En cuanto a la extensión del navegador, no fue nada fácil, dado que
-          recientemente se cambió al manifest V3 (lo cual conlleva numerosas
-          modificaciones en las APIs), y no abundan los materiales y ejemplos de
-          código actualizados. Pero valió la pena el esfuerzo porque trabajar en
-          una aplicación que tiene que manejar directamente el DOM me obligó a
-          reforzar los fundamentos de JavaScript. Incluso me llevo a estudiar
-          sobre estructuras de datos para poder resolver un problema que era
-          recorrer el arbol del DOM desde el nodo de inicio de la selección de
-          texto hasta el nodo final, para poder obtener el texto, resaltarlo,
-          etc.
-        </li>
-        <li>
-          Siendo esta la aplicación más grande que he realizado hasta ahora, me
-          resultó aún más evidente la importancia de dedicarle tiempo a tener un
-          código legible, estructurado, documentado, etc., así como también a
-          tener componentes reutilizables y organizados. Es algo en lo que tengo
-          que seguir trabajando y mejorando ya que es fundamental para poder
-          mantener la aplicación e incorporarle nuevas funcionalidades.
-        </li>
+        <li>{dictionary.proyectos.anota09[lang]}</li>
+        <li>{dictionary.proyectos.anota10[lang]}</li>
+        <li>{dictionary.proyectos.anota11[lang]}</li>
       </ul>
     ),
-    subtitulo4: "Sobre el stack",
+    subtitulo4: dictionary.proyectos.anota13[lang],
     texto4: (
       <ul>
-        <li>
-          Dado que estaba estudiando React, resultaba un oportunidad para poner
-          en práctica el uso de hooks como useContext y useReducer para manejar
-          el estado de la aplicación, así como también de useRef para manipular
-          directamente el DOM.`,
-        </li>
-        <li>
-          Para el backend utilicé Node y Express por lo sencillo que resulta
-          crear una API REST con endpoints, y que se conecta una base de datos.
-          Implementé una en MySQL sin utilizar un ORM para aprender más sobre el
-          funcionamiento de las bases de datos relacionales.
-        </li>
-        <li>
-          Utilicé CSS modules por componentes, junto con la metodología BEM, con
-          la intención de tener un código CSS claro y mantenible, separado de la
-          lógica de la aplicación.
-        </li>
-        <li>
-          La extensión está en puro HTML, CSS, y JavaScript. Pero decidí
-          incorporar JSDoc para aprender a utilizarlo, tener un código mejor
-          documentado, y también poder tener type check a través del language
-          server de typescript.
-        </li>
+        <li>{dictionary.proyectos.anota14[lang]}</li>
+        <li>{dictionary.proyectos.anota15[lang]}</li>
+        <li>{dictionary.proyectos.anota16[lang]}</li>
+        <li>{dictionary.proyectos.anota17[lang]}</li>
       </ul>
     ),
   };
 
   return (
     <div className={`${proyectos.proyecto}`}>
-      <div className={proyectos.header}>PROYECTO</div>
+      <div className={proyectos.header}>
+        {dictionary.proyectos.proyecto[lang]}
+      </div>
       <div className={proyectos.divider}>
         <Image src={herb} alt="herb emoji" width={26} quality={100} />
       </div>
@@ -138,7 +93,7 @@ export default async function ProyectoANOTA({
             {TEXTO.stack}
           </div>
           <div>
-            <h3>código</h3>
+            <h3>{dictionary.proyectos.codigo[lang]}</h3>
             <div className={proyectos.link_icon}>
               <Link
                 className={proyectos.underline}
@@ -166,21 +121,11 @@ export default async function ProyectoANOTA({
               &nbsp;
               <Image src={externalLinkIcon} alt="external link icon" />
             </div>
-
-            {/* <h3>web</h3>
-            <div className={proyectos.link_icon}>
-              <Link target="_blank" href={TEXTO.linkWebHref}>
-                {TEXTO.linkWebText}&nbsp;
-              </Link>
-              <Image src={externalLinkIcon} alt="external link icon" />
-            </div> */}
           </div>
         </div>
         <br />
         {/* ***************************************** */}
-        {/*   <h3>{TEXTO.subtitulo1}</h3> */}
         <div className={proyectos.columns1}>
-          {/* <p>{TEXTO.texto1}</p> */}
           <div className={proyectos.screenshot__container}>
             <figure className={`${proyectos.screenshot__figure}  `}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -190,8 +135,7 @@ export default async function ProyectoANOTA({
                 src={screenshot1.src}
               />
               <figcaption className={proyectos.screenshot__caption}>
-                Muestra de las distintas posibilidades de visualización de las
-                notas.
+                {dictionary.proyectos.anota18[lang]}
               </figcaption>
             </figure>
           </div>
@@ -203,14 +147,6 @@ export default async function ProyectoANOTA({
           <div>{TEXTO.texto2}</div>
           <div className={proyectos.screenshot__container}>
             <figure className={`${proyectos.screenshot__figure}  `}>
-              {/*   <Image
-                className={`${proyectos.screenshot} `}
-                src={screenshot2}
-                alt="screenshot"
-                quality={95}
-                width={1024}
-              /> */}
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 className={proyectos.screenshot}
                 alt="screenshot"
@@ -218,7 +154,7 @@ export default async function ProyectoANOTA({
               />
 
               <figcaption className={proyectos.screenshot__caption}>
-                Funcionamiento de la extensión para el navegador.
+                {dictionary.proyectos.anota19[lang]}
               </figcaption>
             </figure>
           </div>
@@ -237,7 +173,7 @@ export default async function ProyectoANOTA({
                 src={screenshot3.src}
               />
               <figcaption className={proyectos.screenshot__caption}>
-                Muestra de la creación de notas y filtrado por etiquetas.
+                {dictionary.proyectos.anota20[lang]}
               </figcaption>
             </figure>
           </div>

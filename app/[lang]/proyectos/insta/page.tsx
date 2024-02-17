@@ -7,8 +7,11 @@ import externalLinkIcon from "@public/external-link.png";
 import screenshot1 from "@public/proyecto-ig/igvideo.webp";
 import screenshot2 from "@public/proyecto-ig/ig1.png";
 import herb from "@public/herb.png";
+import { getDictionary } from "@app/get-dictionary";
+import { Locale } from "@app/i18n-config";
 
-export default function ProyectoInsta() {
+export default async function ProyectoInsta({ params: { lang } }: { params: { lang: Locale } }) {
+  const dictionary = await getDictionary();
   const TEXTO = {
     titulo: `Full Size Images for IG`,
     bajada: `Es una extensión muy sencilla para el navegador Chrome que permite ver las fotos de Instagram a máxima resolución.`,
@@ -99,7 +102,9 @@ export default function ProyectoInsta() {
 
   return (
     <div className={`${proyectos.proyecto}`}>
-      <div className={proyectos.header}>PROYECTO</div>
+      <div className={proyectos.header}>
+        {dictionary.proyectos.proyecto[lang]}
+      </div>
       <div className={proyectos.divider}>
         <Image src={herb} alt="herb emoji" width={26} quality={100} />
       </div>
@@ -113,7 +118,7 @@ export default function ProyectoInsta() {
             {TEXTO.stack}
           </div>
           <div>
-            <h3>código</h3>
+            <h3>{dictionary.proyectos.codigo[lang]}</h3>
             <div className={proyectos.link_icon}>
               <Link target="_blank" href={TEXTO.linkCodeHref}>
                 {TEXTO.linkCodeText}&nbsp;
