@@ -59,8 +59,8 @@
       "en": "You can find a detailed explanation of each project in my online portfolio: "
     },
     "proyectos3": {
-      "es": "👾 &lt;NuncaSupeProgramar /&gt; Blog de apuntes para aprender desarrollo web",
-      "en": "👾 &lt;NuncaSupeProgramar /&gt; Blog of notes for learning web development"
+      "es": "👾 <NuncaSupeProgramar/> Blog de apuntes para aprender desarrollo web",
+      "en": "👾 <NuncaSupeProgramar/> Blog of notes for learning web development"
     },
     "proyectos3a": {
       "es": "<NuncaSupeProgramar />",
@@ -229,7 +229,7 @@
     },
     "experiencias4a": {
       "es": "Profesor y tutor universitario. Universidad de Buenos Aires. 2007 – 2015",
-      "en": "Professor and university tutor. University of Buenos Aires"
+      "en": "Professor and university tutor. University of Buenos Aires. 2007 - 2015"
     },
     "experiencias4b": {
       "es": "Profesor de Introducción al Pensamiento Científico, Ciclo Básico Común, cátedra Marqués. 2007-2011",
