@@ -1,22 +1,17 @@
-/* "use client"; */
 //NextJS
 import Image from "next/image";
 import Link from "next/link";
 //icons
-import githubicon from "../../../public/brand-github.png";
-import mailIcon from "../../../public/mail.png";
-import instagramIcon from "../../../public/brand-instagram.png";
-import linkedinIcon from "../../../public/brand-linkedin.png";
+import githubicon from "@public/brand-github.png";
+import mailIcon from "@public/mail.png";
+import instagramIcon from "@public/brand-instagram.png";
+import linkedinIcon from "@public/brand-linkedin.png";
 //components
 import Theme from "../theme";
 //styles
 import navbar from "./navbar.module.css";
 import LangSwitcher from "./langSwitcher";
-import { i18n, type Locale } from "../../i18n-config";
-
-import { usePathname } from "next/navigation";
-import { useRouter } from "next/navigation";
-import { getDictionaryClient } from "@app/get-dictionary-client";
+import { type Locale } from "@app/i18n-config";
 import { getDictionary } from "@app/get-dictionary";
 
 export default async function NavBar({ lang }: { lang: Locale }) {

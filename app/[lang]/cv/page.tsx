@@ -2,13 +2,11 @@ import proyectos from "../proyectos/proyectos.module.css";
 import "@app/globals.css";
 import Link from "next/link";
 import Image from "next/image";
-import paperclipIcon from "../../../public/paperclip.png";
-
+import paperclipIcon from "@public/paperclip.png";
 import { CardsProyectos } from "@app/[lang]/components/cardProyecto";
-
 import herb from "@public/herb.png";
-import { getDictionary } from "../../get-dictionary";
-import { Locale } from "../../i18n-config";
+import { getDictionary } from "@app/get-dictionary";
+import { Locale } from "@app/i18n-config";
 
 /*         👾🌿🍁🪐🌟🛠️💘🕸️🚲️🎼⭐
  */

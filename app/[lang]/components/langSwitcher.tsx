@@ -1,8 +1,7 @@
 "use client";
-
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { i18n, type Locale } from "../../i18n-config";
+import { i18n, type Locale } from "@app/i18n-config";
 import langIcon from "@public/language.png";
 import Image from "next/image";
 import navbar from "./navbar.module.css";

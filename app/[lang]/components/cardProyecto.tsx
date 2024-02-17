@@ -1,8 +1,8 @@
 import cardP from "./cardProyecto.module.css";
 import "@app/globals.css";
 import Link from "next/link";
-import { getDictionary } from "../../get-dictionary";
-import { Locale } from "../../i18n-config";
+import { getDictionary } from "@app/get-dictionary";
+import { Locale } from "@app/i18n-config";
 
 /* todas las cards de los proyectos */
 export async function CardsProyectos({ lang }: { lang: Locale }) {

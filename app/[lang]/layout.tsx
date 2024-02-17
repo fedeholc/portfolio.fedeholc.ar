@@ -9,7 +9,7 @@ import { Roboto_Mono, Recursive, Montserrat } from "next/font/google";
 //components
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
-import { i18n, type Locale } from "../i18n-config";
+import { i18n, type Locale } from "@app/i18n-config";
 
 const robotoMono = Roboto_Mono({
   weight: ["400", "500", "600", "700"],

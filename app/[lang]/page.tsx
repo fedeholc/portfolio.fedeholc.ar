@@ -4,23 +4,20 @@ import Link from "next/link";
 //styles
 import "@app/globals.css";
 //icons
-import githubicon from "../../public/brand-github.png";
-import paperclipIcon from "../../public/paperclip.png";
-import starIcon from "../../public/star.png";
-import notesIcon from "../../public/notes.png";
-import mailIcon from "../../public/mail.png";
-import instagramIcon from "../../public/brand-instagram.png";
-import linkedinIcon from "../../public/brand-linkedin.png";
-import herb from "../../public/herb.png";
-
+import githubicon from "@public/brand-github.png";
+import paperclipIcon from "@public/paperclip.png";
+import starIcon from "@public/star.png";
+import notesIcon from "@public/notes.png";
+import mailIcon from "@public/mail.png";
+import instagramIcon from "@public/brand-instagram.png";
+import linkedinIcon from "@public/brand-linkedin.png";
+import herb from "@public/herb.png";
 //components
 import Fotos from "./components/fotos";
-
+//lang
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
-import LocaleSwitcher from "./components/locale-switcher";
-import LangSwitcher from "./components/langSwitcher";
-import { ReactElement } from "react";
+
 export default async function IndexPage({
   params: { lang },
 }: {
