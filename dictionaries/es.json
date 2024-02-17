@@ -251,5 +251,39 @@
       "es": "Profesor de Sociología, Introducción a las Ciencias Sociales y a las Humanidades, Formación Ética y Ciudadana, e Historia, en escuelas públicas de enseñanza media de la Ciudad Autónoma de Buenos Aires.",
       "en": "Teacher of Sociology, History, Introduction to Social Sciences and Humanities, and Ethics and Citizenship Education in public high schools in the Autonomous City of Buenos Aires."
     }
+  },
+  "proyectos": {
+    "anota01": {
+      "es": "ANOTÁ! (Another Note Taking App) & Highlighter",
+      "en": "ANOTÁ! (Another Note Taking App) & Highlighter"
+    },
+    "anota02": {
+      "es": "Otra aplicación más para tomar notas. Pero con algunas características que ya quisiera tenerlas en Google Keep. Y lo mejor:  incorpora una extensión para el navegador (highlighter) que permite resaltar y guardar textos y enlaces desde cualquier web.",
+      "en": "Yet another note-taking application. But with some features that I would like to have in Google Keep. And the best: it incorporates a browser extension (highlighter) that allows you to highlight and save texts and links from any web."
+    },
+    "anota03": {
+      "es": "¿Qué tiene de bueno?",
+      "en": "What's good about it?"
+    },
+    "anota04": {
+      "es": "Permite crear, guardar y editar las notas desde la aplicación. La edición se puede realizar desde donde se ve la nota, sin tener que abrir otra una ventana.",
+      "en": "It allows you to create, save and edit notes from the application. The edition can be done from where the note is seen, without having to open another window."
+    },
+    "anota05": {
+      "es": "Las notas se pueden visualizar en modo lista o en modo mosaico, con la posibilidad de mostrar el título y el contenido, o solo el título,para así tener más en notas pantalla.",
+      "en": "The notes can be viewed in list mode or in mosaic mode, with the possibility of showing the title and content, or only the title, to have more notes on the screen."
+    },
+    "anota06": {
+      "es": "Cada nota puede tener múltiples etiquetas, que pueden utilizarse como filtros para ver solo algunas de ellas. También se pueden buscar las notas por texto en su título o contenido.",
+      "en": "Each note can have multiple tags, which can be used as filters to see only some of them. Notes can also be searched by text in their title or content."
+    },
+    "anota07": {
+      "es": "La extensión para el navegador (Highlighter) permite que simplemente al realizar una selección de texto en cualquier web, el texto se resalte y se guarde. Luego todos los fragmentos de texto seleccionados de una misma URL se pueden enviar a ANOTA y/o ser descargados en un archivo de texto. También se pueden generar notas guardando el enlace de la web, o toda la sesion de enlaces abiertos en el navegador.",
+      "en": "The browser extension (Highlighter) allows you to simply make a text selection on any web, the text is highlighted and saved. Then all the selected text fragments from the same URL can be sent to ANOTA and/or downloaded in a text file. You can also generate notes by saving the web link, or the entire session of open links in the browser."
+    },
+    "anota08": {
+      "es": "Mostrar un indicador en las notas que tenían más texto del que se veía en pantalla (sin mostrar las scroll bars), resulto ser un problema dado que hasta entonces no había utilizado React para acceder directamente al DOM mediante useRef. Aquí tuve que hacerlo, ya que la solución que se me ocurrió fue comparar si había diferencia entre el `scrollHeight` y el `clientHeight` del contenedor de la nota y así detectar si había un overflow del texto, y poder mostrar el indicador cuando correspondiera.",
+      "en": "Displaying an indicator in the notes that had more text than was visible on the screen (without showing the scroll bars), turned out to be a problem since until then I had not used React to directly access the DOM using useRef. Here I had to do it, since the solution that occurred to me was to compare if there was a difference between the `scrollHeight` and the `clientHeight` of the note container and thus detect if there was an overflow of the text, and be able to show the indicator when appropriate."
+    }
   }
 }

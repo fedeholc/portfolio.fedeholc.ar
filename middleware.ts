@@ -44,8 +44,8 @@ export function middleware(request: NextRequest) {
     }
 
 
-    let locale = ""; //getLocale(request);
-    //esto es porque el getLocale tomaba el idioma del navegador y no el idioma del sitio, es decir, si se cambió a ingles y el navegador está en español, al redireccionar mandaba a español, de esta forma se fija que idioma tiene y lo mantiene.
+    let locale = getLocale(request); // no borrar porque si viene vacio tiene que poner uno por default
+    //lo siguiente es porque el getLocale tomaba el idioma del navegador y no el idioma del sitio, es decir, si se cambió a ingles y el navegador está en español, al redireccionar mandaba a español, de esta forma se fija que idioma tiene y lo mantiene.
     if (request.headers.get("next-url")?.slice(0, 3) === "/es") {
       locale = "es";
     } else if (request.headers.get("next-url")?.slice(0, 3) === "/en") {
