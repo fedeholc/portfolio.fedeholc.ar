@@ -340,6 +340,62 @@
     "anota20": {
       "es": "Muestra de la creación de notas y filtrado por etiquetas.",
       "en": "Shows the creation of notes and filtering by tags."
+    },
+    "ap01": {
+      "es": "Argentina Programa v3.0 - Curriculum Vitae",
+      "en": "Argentina Programa v3.0 - Resume"
+    },
+    "ap02": {
+      "es": "Es un sitio web a modo de curriculum vitae online que integra distintas tecnologías y funcionalidades. Fue solicitado como trabajo final del curso de desarrollo web full stack de Argentina Programa. Aprendí mucho haciéndolo, pero más importante aún, me permitió reencontrarme felizmente con la programación. =)",
+      "en": "It is a website as an online resume that integrates different technologies and functionalities. It was requested as the final work of the full stack web development course of Argentina Program. I learned a lot doing it, but more importantly, it allowed me to happily meet again with programming. =)"
+    },
+    "ap03": {
+      "es": "¿Qué tiene de bueno?",
+      "en": "What's good about it?"
+    },
+    "ap04": {
+      "es": "Diseño responsive, adaptable a distintos tamaños de pantalla",
+      "en": "Responsive design, adaptable to different screen sizes"
+    },
+    "ap05": {
+      "es": "Autorización de usuario para acceder a la modalidad de edición.",
+      "en": "User authorization to access the editing mode."
+    },
+    "ap06": {
+      "es": "Posibilidad de editar los elementos a mostrar en cada una de las secciones, tanto en lo que hace al texto como a las imágenes.",
+      "en": "Possibility of editing the elements to be displayed in each of the sections, both in terms of text and images."
+    },
+    "ap07": {
+      "es": "Problemas en el camino y aprendizajes",
+      "en": "Problems along the way and learnings"
+    },
+    "ap08": {
+      "es": "No fue sencillo armar el rompecabezas de tecnologías necesarias para que todo funcione, y en algunos aspectos las partes quedaron 'atadas con alambre', ya que no tenía el tiempo necesario para profundizar en las bases de cada herramienta y encontrar la mejor solución posible. ¡Pero funcionó!",
+      "en": "It was not easy to put together the puzzle of technologies necessary for everything to work, and in some aspects the parts were 'tied with wire', since I did not have the necessary time to delve into the bases of each tool and find the best possible solution. But it worked!"
+    },
+    "ap09": {
+      "es": "El trabajo me permitió tener una visión general de cómo se integra un desarrollo que incluye un front end y un back end con API y base de datos.",
+      "en": "The work allowed me to have an overview of how a development that includes a front end and a back end with API and database is integrated."
+    },
+    "ap10": {
+      "es": "Con Angular comprendí cómo era trabajar con un framework para crear una SPA, y en particular cómo se estructura el código utilizando componentes y cómo se implementa un patrón de diseño MVC. El haber aprendido directamente Angular con TypeScript me obligo a tener que estudiar JavaScrip a posteriori para poder tener un conocimiento de los fundamentos y poder diferenciar que características eran propias de cada tecnología.",
+      "en": "With Angular I understood what it was like to work with a framework to create a SPA, and in particular how the code is structured using components and how an MVC design pattern is implemented. Having learned Angular directly with TypeScript forced me to have to study JavaScrip later to be able to have a knowledge of the fundamentals and to be able to differentiate which features were specific to each technology."
+    },
+    "ap11": {
+      "es": "La exigencia de hacer el deploy en un sitio en particular, y que este fuera cambiando varias veces (Heroku, Fly.io, Koyeb) cuando faltaba poco tiempo para la entrega fue un dolor de cabeza. Pero rescato que me permitió conocer distintas opciones y formas de hacer deploys de las aplicaciones.",
+      "en": "The requirement to deploy on a particular site, and that it changed several times (Heroku, Fly.io, Koyeb) when there was little time left for delivery was a headache. But I appreciate that it allowed me to know different options and ways to deploy applications"
+    },
+    "ap12": {
+      "es": "Vista de una de las secciones con los botones de edición activados.",
+      "en": "View of one of the sections with the edit buttons activated."
+    },
+    "ap13": {
+      "es": "Vista de la ventana de edición de la portada.",
+      "en": "View of the cover editing window."
+    },
+    "ap14": {
+      "es": "Portada del sitio web visto en un teléfono.",
+      "en": "Cover of the website seen on a phone."
     }
   }
 }
