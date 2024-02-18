@@ -10,11 +10,15 @@ import herb from "@public/herb.png";
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
 
-export default async function ProyectoInsta({ params: { lang } }: { params: { lang: Locale } }) {
+export default async function ProyectoInsta({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}) {
   const dictionary = await getDictionary();
   const TEXTO = {
     titulo: `Full Size Images for IG`,
-    bajada: `Es una extensión muy sencilla para el navegador Chrome que permite ver las fotos de Instagram a máxima resolución.`,
+    bajada: dictionary.proyectos.insta01[lang],
     stack: (
       <ul>
         <li>JavaScript</li>
@@ -27,75 +31,24 @@ export default async function ProyectoInsta({ params: { lang } }: { params: { la
     linkCodeHref: `https://github.com/fedeholc/full-size-images-for-ig`,
     linkWebText: `chrome web store`,
     linkWebHref: `https://chrome.google.com/webstore/detail/full-size-images-for-ig/eanpijghoobafibemccmoleollpjhcgg`,
-    subtitulo1: `¿Para qué sirve?`,
-    texto1: `Quienes disfrutamos de ver y hacer fotos, queremos poder apreciarlas a máxima resolución y en pantalla completa. La extensión busca hacer eso posible, de manera sencilla, y sin tener que recurrir a otra plataforma.`,
-    subtitulo2: `¿Qué tiene de bueno?`,
+    subtitulo1: dictionary.proyectos.insta02[lang],
+    texto1: dictionary.proyectos.insta03[lang],
+    subtitulo2: dictionary.proyectos.insta04[lang],
     texto2: (
       <ul>
-        <li>
-          Al tener la extensión activada, en el angulo superior derecho de cada
-          foto aparece un icono de una lupa. Al hacer click sobre el mismo, se
-          abre la imagen a tamaño completo y sin otras distracciones. Luego
-          haciendo click en cualquier lugar de la pantalla se regresa a la
-          página y posición original.
-        </li>
-        <li>
-          Algunas ideas para implementar a futuro: que se pueda elegir si se
-          abre la imagen en una nueva pestaña o en la misma, y si se utiliza o
-          no el modo de pantalla completa del navegador; que se pueda generar
-          una galería de imágenes para ver una tras otra a pantalla completa.
-        </li>
+        <li>{dictionary.proyectos.insta05[lang]}</li>
+        <li>{dictionary.proyectos.insta06[lang]}</li>
       </ul>
     ),
-    subtitulo3: "Problemas en el camino, y aprendizajes",
+    subtitulo3: dictionary.proyectos.insta07[lang],
     texto3: (
       <ul>
-        <li>
-          {" "}
-          La principal dificultad técnica con la que me encontré es que al ser
-          Instagram de una web dinámica, a medida que aparecen nuevos elementos,
-          es necesario ir agregando listeners e iconos. Pero no encontré un
-          evento que se dispare cuando eso ocurre. La solución que implementé es
-          hacerlo con el evento mouseMove, lo cuál es efectivo pero poco
-          eficiente ya que implica leer toda la estructura de la web muchas más
-          veces de las necesarias. Tengo pendiente buscar una solución más
-          eficiente para este problema. (Si sabés cómo hacerlo ¡por favor
-          escribime!)
-        </li>
-        <li>
-          {" "}
-          Otra cuestión que aún debo investigar es como portar la extensión a
-          Firefox, Safari y Edge, de modo tal de no excluir a quiénes utilizan
-          algún otro de los principales navegadores.
-        </li>
-        <li>
-          {" "}
-          También surgió un problema no técnico que no había tenido en cuenta:
-          luego de varias semanas de publicada la extensión, cuando ya tenía más
-          de cien usuarios, me llegó un aviso de que la eliminaban de la chrome
-          web store de Estados Unidos por utilizar la palabra Instagram en el
-          nombre y porque el icono incluía los colores de la marca. Por lo que
-          tuve que cambiar nombre y logo, y volver a publicarla.
-        </li>
-        <li>
-          Hacer extensión para el navegador me resulto un buena forma de para
-          practicar HTML, CSS y JavaScript sin frameworks de por medio, aprender
-          sobre la manipulación del DOM y ver cómo lo estructuran este tipo de
-          aplicaciones. Pienso ahora que sería interesante programar una alerta
-          que me avise cuando se produzcan modificaciones en el DOM del sitio
-          que hagan que la extensión deje de funcionar.
-        </li>
-        <li>
-          Lamentablemente no hay tantos contenidos en la web para aprender a
-          desarrollar extensiones por lo que valoro mucho la elaboración de una
-          buena documentación con explicaciones claras y ejemplos de código como
-          la que tiene Chrome de su API.
-        </li>
-        <li>
-          Es muy motivador poder crear algo útil, que funciona, y que se puede
-          compartir con otras personas. Este proyecto me ha dado ganas e ideas
-          para hacer montones de extensiones.
-        </li>
+        <li>{dictionary.proyectos.insta08[lang]}</li>
+        <li>{dictionary.proyectos.insta09[lang]}</li>
+        <li>{dictionary.proyectos.insta10[lang]}</li>
+        <li>{dictionary.proyectos.insta11[lang]}</li>
+        <li>{dictionary.proyectos.insta12[lang]}</li>
+        <li>{dictionary.proyectos.insta13[lang]}</li>
       </ul>
     ),
   };
@@ -148,7 +101,7 @@ export default async function ProyectoInsta({ params: { lang } }: { params: { la
                 src={screenshot1.src}
               />
               <figcaption className={proyectos.screenshot__caption}>
-                Vista de la extensión funcionando.
+                {dictionary.proyectos.insta14[lang]}
               </figcaption>
             </figure>
           </div>
@@ -168,7 +121,7 @@ export default async function ProyectoInsta({ params: { lang } }: { params: { la
                 quality={100}
               />
               <figcaption className={proyectos.screenshot__caption}>
-                Vista de la extensión en la Chrome web store.
+                {dictionary.proyectos.insta15[lang]}
               </figcaption>
             </figure>
           </div>

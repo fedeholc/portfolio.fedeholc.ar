@@ -396,6 +396,210 @@
     "ap14": {
       "es": "Portada del sitio web visto en un teléfono.",
       "en": "Cover of the website seen on a phone."
+    },
+    "insta01": {
+      "es": "Es una extensión muy sencilla para el navegador Chrome que permite ver las fotos de Instagram a máxima resolución.",
+      "en": "It is a very simple extension for the Chrome browser that allows you to view Instagram photos at full resolution."
+    },
+    "insta02": {
+      "es": "¿Para qué sirve?",
+      "en": "What is it for?"
+    },
+    "insta03": {
+      "es": "Quienes disfrutamos de ver y hacer fotos, queremos poder apreciarlas a máxima resolución y en pantalla completa. La extensión busca hacer eso posible, de manera sencilla, y sin tener que recurrir a otra plataforma.",
+      "en": "Those of us who enjoy seeing and taking photos, want to be able to appreciate them at full resolution and in full screen. The extension seeks to make that possible, in a simple way, and without having to resort to another platform."
+    },
+    "insta04": {
+      "es": "¿Qué tiene de bueno?",
+      "en": "What's good about it?"
+    },
+    "insta05": {
+      "es": "Al tener la extensión activada, en el angulo superior derecho de cada foto aparece un icono de una lupa. Al hacer click sobre el mismo, se abre la imagen a tamaño completo y sin otras distracciones. Luego haciendo click en cualquier lugar de la pantalla se regresa a la página y posición original.",
+      "en": "By having the extension activated, in the upper right corner of each photo appears an icon of a magnifying glass. By clicking on it, the image opens to full size and without other distractions. Then by clicking anywhere on the screen you return to the original page and position."
+    },
+    "insta06": {
+      "es": "Algunas ideas para implementar a futuro: que se pueda elegir si se abre la imagen en una nueva pestaña o en la misma, y si se utiliza o no el modo de pantalla completa del navegador; que se pueda generar una galería de imágenes para ver una tras otra a pantalla completa.",
+      "en": "Some ideas to implement in the future: that you can choose whether to open the image in a new tab or in the same one, and whether or not to use the browser's full screen mode; that you can generate a gallery of images to see one after another in full screen."
+    },
+    "insta07": {
+      "es": "Problemas en el camino y aprendizajes",
+      "en": "Problems along the way and learnings"
+    },
+    "insta08": {
+      "es": "La principal dificultad técnica con la que me encontré es que al ser Instagram de una web dinámica, a medida que aparecen nuevos elementos, es necesario ir agregando listeners e iconos. Pero no encontré un evento que se dispare cuando eso ocurre. La solución que implementé es hacerlo con el evento mouseMove, lo cuál es efectivo pero poco eficiente ya que implica leer toda la estructura de la web muchas más veces de las necesarias. Tengo pendiente buscar una solución más eficiente para este problema. (Si sabés cómo hacerlo ¡por favor escribime!)",
+      "en": "The main technical difficulty I encountered is that since Instagram is a dynamic website, as new elements appear, it is necessary to add listeners and icons. But I didn't find an event that fires when that happens. The solution I implemented is to do it with the mouseMove event, which is effective but not very efficient because it involves reading the entire structure of the web many more times than necessary. I have to look for a more efficient solution for this problem (if you know how to do it, please write me!)"
+    },
+    "insta09": {
+      "es": "Otra cuestión que aún debo investigar es como portar la extensión a Firefox, Safari y Edge, de modo tal de no excluir a quiénes utilizan algún otro de los principales navegadores.",
+      "en": "Another issue that I still have to investigate is how to port the extension to Firefox, Safari and Edge, so as not to exclude those who use any other of the main browsers."
+    },
+    "insta10": {
+      "es": "También surgió un problema no técnico que no había tenido en cuenta: luego de varias semanas de publicada la extensión, cuando ya tenía más de cien usuarios, me llegó un aviso de que la eliminaban de la chrome web store de Estados Unidos por utilizar la palabra Instagram en el nombre y porque el icono incluía los colores de la marca. Por lo que tuve que cambiar nombre y logo, y volver a publicarla.",
+      "en": "There was also a non-technical problem that I had not taken into account: after several weeks of the extension being published, when it already had more than a hundred users, I received a notice that it was being removed from the chrome web store of the United States for using the word Instagram in the name and because the icon included the brand's colors. So I had to change the name and logo, and republish it."
+    },
+    "insta11": {
+      "es": "Hacer un extensión para el navegador me resulto un buena forma de para practicar HTML, CSS y JavaScript sin frameworks de por medio, aprender sobre la manipulación del DOM y ver cómo lo estructuran este tipo de aplicaciones. Pienso ahora que sería interesante programar una alerta que me avise cuando se produzcan modificaciones en el DOM del sitio que hagan que la extensión deje de funcionar.",
+      "en": "Making a browser extension was a good way for me to practice HTML, CSS and JavaScript without frameworks in between, learn about DOM manipulation and see how they structure this type of applications. I now think it would be interesting to program an alert that warns me when changes are made to the site's DOM that cause the extension to stop working."
+    },
+    "insta12": {
+      "es": "Lamentablemente no hay tantos contenidos en la web para aprender a desarrollar extensiones por lo que valoro mucho la elaboración de una buena documentación con explicaciones claras y ejemplos de código como la que tiene Chrome de su API.",
+      "en": "Unfortunately there is not so much content on the web to learn how to develop extensions, so I greatly value the preparation of good documentation with clear explanations and code examples like the one Chrome has of its API."
+    },
+    "insta13": {
+      "es": "Es muy motivador poder crear algo útil, que funciona, y que se puede compartir con otras personas. Este proyecto me ha dado ganas e ideas para hacer montones de extensiones.",
+      "en": "It is very motivating to be able to create something useful, that works, and that can be shared with other people. This project has given me the desire and ideas to make lots of extensions."
+    },
+    "insta14": {
+      "es": "Vista de la extensión funcionando.",
+      "en": "View of the extension working."
+    },
+    "insta15": {
+      "es": "Vista de la extensión en la Chrome web store.",
+      "en": "View of the extension in the Chrome web store."
+    },
+    "nsp01": {
+      "es": "<NuncaSupe­Programar/> Blog de apuntes para aprender desarrollo web",
+      "en": "<NuncaSupe­Programar/> Blog of notes to learn web development"
+    },
+    "nsp02": {
+      "es": "Blog de aprendizaje en público, para organizar mis apuntes y compartir el conocimiento.",
+      "en": "Public learning blog, to organize my notes and share knowledge."
+    },
+    "nsp03": {
+      "es": "¿Para qué un blog?",
+      "en": "Why a blog?"
+    },
+    "nsp04": {
+      "es": "Algo que aprendí como docente es que junto con la práctica, intentar enseñar o explicar algo (y si es por escrito mejor) es un excelente camino para aprenderlo. También es importante el aprendizaje colectivo que se genera con el intercambio. De allí la creación de un blog, que es una excelente tecnología para la difusión del conocimiento: a diferencia de lo que circula por plataformas cerradas, sus contenidos puede ser indexados por los buscadores, compartidos en redes sociales, y estar a disposición de quienes lo necesiten.",
+      "en": "Something I learned as a teacher is that along with practice, trying to teach or explain something (and if it is in writing better) is an excellent way to learn it. Also important is the collective learning that is generated with the exchange. Hence the creation of a blog, which is an excellent technology for the dissemination of knowledge: unlike what circulates on closed platforms, its contents can be indexed by search engines, shared on social networks, and be available to those who need it."
+    },
+    "nsp05": {
+      "es": "¿Qué tiene de bueno?",
+      "en": "What's good about it?"
+    },
+    "nsp06": {
+      "es": "Mediante Next.js el blog se genera como sitio estático del lado del servidor, lo cual hace que sea veloz, y fácil de indexar por los buscadores. También es sencillo de publicar, ya que al estar alojado en Vercel, el deploy se realiza automáticamente cada vez que se actualiza el repositorio en GitHub.",
+      "en": "Through Next.js the blog is generated as a server-side static site, which makes it fast, and easy to index by search engines. It is also easy to publish, since being hosted on Vercel, the deploy is done automatically every time the repository is updated on GitHub."
+    },
+    "nsp07": {
+      "es": "Añadir nuevas entradas al blog es simple: se escribe el contenido del post en un archivo con formato Markdown, se lo sube a una carpeta dentro del repositorio del proyecto, y automáticamente queda publicado (salvo que se lo marque como borrador).",
+      "en": "Adding new entries to the blog is simple: the content of the post is written in a file in Markdown format, it is uploaded to a folder within the project repository, and it is automatically published (unless it is marked as a draft)."
+    },
+    "nsp08": {
+      "es": "Se pueden marcar posteos como destacados para que aparezcan en una sección destacada de la página principal.",
+      "en": "Posts can be marked as featured to appear in a featured section of the home page."
+    },
+    "nsp09": {
+      "es": "Utilizando el formato Markdown junto con la librería remark.js se le puede dar formato resaltado a los bloques de código de las publicaciones.",
+      "en": "Using the Markdown format together with the remark.js library, highlighted format can be given to the code blocks of the posts."
+    },
+    "nsp10": {
+      "es": "Se pueden filtrar los posts por etiquetas utilizando el buscador o el listado de las mismas.",
+      "en": "Posts can be filtered by tags using the search engine or the list of them."
+    },
+    "nsp11": {
+      "es": "Es responsive y se adapta para que pueda ser leído desde cualquier dispositivo.",
+      "en": "It is responsive and adapts so that it can be read from any device."
+    },
+    "nsp12a": {
+      "es": "Algunas ideas de nuevas funcionalidades las pruebo en este otro blog:",
+      "en": "I test some ideas for new features in this other blog:"
+    },
+    "nsp12b": {
+      "es": "de estructura similar pero en TypeScript. Allí, por ejemplo, implementé un sistema de comentarios para los posts, utilizando Supabase tanto para la autenticación/autorización de usuarios, como para la base de datos",
+      "en": "with a similar structure but in TypeScript. There, for example, I implemented a comment system for the posts, using Supabase for both user authentication/authorization and the database."
+    },
+    "nsp13": {
+      "es": "Aprendizajes y problemas en el camino",
+      "en": "Learnings and problems along the way"
+    },
+    "nsp14": {
+      "es": "Hasta aquí solo había programando SPAs con renderizado del lado del cliente, por lo que me llevo un tiempo comprender las variantes que hay para hacerlo del lado del servidor (o de manera combinada), y cómo trabajar de ese modo con Next, integrando frontend y backend en una sola aplicación full stack.",
+      "en": "Until now I had only programmed SPAs with client-side rendering, so it took me a while to understand the variants that exist to do it on the server side (or in a combined way), and how to work in that way with Next, integrating frontend and backend in a single full stack application."
+    },
+    "nsp15": {
+      "es": "Al poco tiempo de publicado el blog, Next lanzó una nueva versión incorporando React Server Components, y cometí el error de ir tras la novedad, ya que no funcionaban las librerías para el estilizado del Markdown en la nueva versión. Tuve que regresar a la anterior, pero con la lección aprendida sobre la importancia de utilizar tecnologías probadas y consolidadas. Actualización diciembre de 2023: finalmente pude resolver el problema de las dependencias y actualizar a la última versión de Next.",
+      "en": "Shortly after the blog was published, Next released a new version incorporating React Server Components, and I made the mistake of going after the novelty, since the libraries for styling the Markdown did not work in the new version. I had to go back to the previous one, but with the lesson learned about the importance of using proven and consolidated technologies. Update December 2023: I was finally able to solve the problem of dependencies and update to the latest version of Next."
+    },
+    "nsp16": {
+      "es": "Publicar el blog en un dominio propio me llevó también a aprender como registrarlo, cómo manejar los DNS, y las configuraciones necesarias para que pueda ser indexado por los buscadores.",
+      "en": "Publishing the blog on my own domain also led me to learn how to register it, how to manage the DNS, and the necessary configurations so that it can be indexed by search engines."
+    },
+    "nsp17": {
+      "es": "Artículo del blog con bloques de código, visto en una pantalla amplia.",
+      "en": "Blog article with code blocks, seen on a wide screen."
+    },
+    "nsp18": {
+      "es": "Portada del blog vista en un teléfono.",
+      "en": "Cover of the blog seen on a phone."
+    },
+    "tv01": {
+      "es": "MyTvShows es una aplicación que permite llevar registro de tus series favoritas y ver fácilmente cuáles tienen nuevos episodios.",
+      "en": "MyTvShows is an application that allows you to keep track of your favorite series and easily see which ones have new episodes."
+    },
+    "tv02": {
+      "es": "¿Para qué sirve?",
+      "en": "What is it for?"
+    },
+    "tv03": {
+      "es": "La aplicación fue pensada para resolver un problema aparentemente sencillo como el de tener un registro de las series que ha visto o quiere ver, en un solo lugar, y poder saber si hay nuevos episodios sin depender del acceso a las distintas plataformas que existen hoy en día.",
+      "en": "The application was designed to solve an apparently simple problem such as having a record of the series that you have seen or want to see, in one place, and being able to know if there are new episodes without depending on access to the different platforms that exist today."
+    },
+    "tv04": {
+      "es": "¿Qué tiene de bueno?",
+      "en": "What's good about it?"
+    },
+    "tv05": {
+      "es": "Registro de multiples cuentas de usuario utilizando Supabase Auth.",
+      "en": "Register multiple user accounts using Supabase Auth."
+    },
+    "tv06": {
+      "es": "Búsqueda de series en la base de datos de IMDb (Internet Movie Database) mediante el uso de una API, y agregarlas a la lista de favoritos.",
+      "en": "Search for series in the IMDb (Internet Movie Database) database using an API, and add them to the favorites list."
+    },
+    "tv07": {
+      "es": "Listado de series favoritas con la correspondiente información respecto a la cantidad de temporadas y a la fecha de emisión del último episodio.",
+      "en": "List of favorite series with the corresponding information regarding the number of seasons and the date of airing of the last episode."
+    },
+    "tv08": {
+      "es": "Opción de ordenar el listado de series alfebéticamente o por la fecha del último episodio para así poder ver cuáles son los que han sido emitidos recientemente.",
+      "en": "Option to sort the list of series alphabetically or by the date of the last episode to see which ones have been aired recently."
+    },
+    "tv09": {
+      "es": "Funcionalidades para implementar a futuro: poder indicar en cuál es el último episodio que se ha visto de cada serie, junto con una extensión del navegador que nos alerte cuando haya nuevos episodios para ver.",
+      "en": "Functionalities to implement in the future: being able to indicate which is the last episode that has been seen of each series, together with a browser extension that alerts us when there are new episodes to watch."
+    },
+    "tv10": {
+      "es": "Problemas y aprendizajes",
+      "en": "Problems and learnings"
+    },
+    "tv11": {
+      "es": "Era la primera vez que utilizaba React y quería poner en práctica cuestiones básicas como el uso de componentes, renderizado condicional, manejo de estados y props, etc.",
+      "en": "It was the first time I used React and I wanted to put into practice basic issues such as the use of components, conditional rendering, state and props management, etc."
+    },
+    "tv12": {
+      "es": "Un desafío nuevo fue el combinar distintas funciones asíncronas para que trabajen en conjunto, ya que primero debía leer los datos de Firebase, a continuación obtener cierta información de las series desde la API de OpenIMDb, para a luego realizar una nueva solicitud a otro endpoint, y así obtener los datos sobre los episodios de cada serie. Pude resolverlo mediante la utilización de async/await. Pero me queda pendiente profundizar en como abordar los errores cuando algo falla en una de las funciones asíncronas.",
+      "en": "A new challenge was to combine different asynchronous functions to work together, since I first had to read the data from Firebase, then obtain certain information about the series from the OpenIMDb API, to then make a new request to another endpoint, and thus obtain the data about the episodes of each series. I was able to solve it by using async/await. But I still have to delve into how to address errors when something fails in one of the asynchronous functions."
+    },
+    "tv13": {
+      "es": "También tuve algunos dolores de cabeza con el uso de UseEffect en relación a la carga de los datos, pero la nueva documentación de React es muy clara en cuanto a cómo usarlo y sobre todo cuando no usarlo, así que pude resolverlo.",
+      "en": "I also had some headaches with the use of UseEffect in relation to the loading of the data, but the new React documentation is very clear about how to use it and especially when not to use it, so I was able to solve it."
+    },
+    "tv14": {
+      "es": "Programar desde cero un sistema de autenticación de usuarios era algo que excedía este proyecto, por lo que decidí utilizar Supabase Auth, lo cual me permitió implementarlo de manera sencilla.",
+      "en": "Programming from scratch a user authentication system was something that exceeded this project, so I decided to use Supabase Auth, which allowed me to implement it easily."
+    },
+    "tv15": {
+      "es": "Aproveché para probar por primera vez Tailwind CSS, del cual rescato la idea de trabajar con utility clases.",
+      "en": "I took the opportunity to try Tailwind CSS for the first time, from which I rescue the idea of working with utility classes."
+    },
+    "tv16": {
+      "es": "Vista de las series guardadas y su información correspondiente.",
+      "en": "View of the saved series and their corresponding information."
+    },
+    "tv17": {
+      "es": "Vista del buscador de series.",
+      "en": "View of the series search."
     }
   }
 }

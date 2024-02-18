@@ -10,11 +10,15 @@ import herb from "@public/herb.png";
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
 
-export default async function ProyectoTV({ params: { lang } }: { params: { lang: Locale } }) {
+export default async function ProyectoTV({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}) {
   const dictionary = await getDictionary();
   const TEXTO = {
     titulo: `MyTvShows`,
-    bajada: `MyTvShows es una aplicación que permite llevar registro de tus series favoritas y ver fácilmente cuáles tienen nuevos episodios.`,
+    bajada: dictionary.proyectos.tv01[lang],
     stack: (
       <ul>
         <li>React / JavaScript</li>
@@ -28,69 +32,26 @@ export default async function ProyectoTV({ params: { lang } }: { params: { lang:
     linkCodeHref: `https://github.com/fedeholc/MyTvShows`,
     linkWebText: ``,
     linkWebHref: ``,
-    subtitulo1: `¿Para qué sirve?`,
-    texto1: `La aplicación fue pensada para resolver un problema aparentemente sencillo como el de tener un registro de las series que ha visto o quiere ver, en un solo lugar, y poder saber si hay nuevos episodios sin depender del acceso a las distintas plataformas que existen hoy en día.`,
-    subtitulo2: `¿Qué tiene de bueno?`,
+    subtitulo1: dictionary.proyectos.tv02[lang],
+    texto1: dictionary.proyectos.tv03[lang],
+    subtitulo2: dictionary.proyectos.tv04[lang],
     texto2: (
       <ul>
-        <li>
-          Registro de multiples cuentas de usuario utilizando Supabase Auth.
-        </li>
-        <li>
-          Búsqueda de series en la base de datos de IMDb (Internet Movie
-          Database) mediante el uso de una API, y agregarlas a la lista de
-          favoritos.
-        </li>
-        <li>
-          Listado de series favoritas con la correspondiente información
-          respecto a la cantidad de temporadas y a la fecha de emisión del
-          último episodio.
-        </li>
-        <li>
-          Opción de ordenar el listado de series alfebéticamente o por la fecha
-          del último episodio para así poder ver cuáles son los que han sido
-          emitidos recientemente.
-        </li>
-        <li>
-          Funcionalidades para implementar a futuro: poder indicar en cuál es el
-          último episodio que se ha visto de cada serie, junto con una extensión
-          del navegador que nos alerte cuando haya nuevos episodios para ver.
-        </li>
+        <li>{dictionary.proyectos.tv05[lang]}</li>
+        <li>{dictionary.proyectos.tv06[lang]}</li>
+        <li>{dictionary.proyectos.tv07[lang]}</li>
+        <li>{dictionary.proyectos.tv08[lang]}</li>
+        <li>{dictionary.proyectos.tv09[lang]}</li>
       </ul>
     ),
-    subtitulo3: "Problemas y aprendizajes",
+    subtitulo3: dictionary.proyectos.tv10[lang],
     texto3: (
       <ul>
-        <li>
-          Era la primera vez que utilizaba React y quería poner en práctica
-          cuestiones básicas como el uso de componentes, renderizado
-          condicional, manejo de estados y props, etc.
-        </li>
-        <li>
-          Un desafío nuevo fue el combinar distintas funciones asíncronas para
-          que trabajen en conjunto, ya que primero debía leer los datos de
-          Firebase, a continuación obtener cierta información de las series
-          desde la API de OpenIMDb, para a luego realizar una nueva solicitud a
-          otro endpoint, y así obtener los datos sobre los episodios de cada
-          serie. Pude resolverlo mediante la utilización de async/await. Pero me
-          queda pendiente profundizar en como abordar los errores cuando algo
-          falla en una de las funciones asíncronas.
-        </li>
-        <li>
-          También tuve algunos dolores de cabeza con el uso de UseEffect en
-          relación a la carga de los datos, pero la nueva documentación de React
-          es muy clara en cuanto a cómo usarlo y sobre todo cuando no usarlo,
-          así que pude resolverlo.
-        </li>
-        <li>
-          Programar desde cero un sistema de autenticación de usuarios era algo
-          que excedía este proyecto, por lo que decidí utilizar Supabase Auth,
-          lo cual me permitió implementarlo de manera sencilla.
-        </li>
-        <li>
-          Aproveché para probar por primera vez Tailwind CSS, del cual rescato
-          la idea de trabajar con utility clases.
-        </li>
+        <li>{dictionary.proyectos.tv11[lang]}</li>
+        <li>{dictionary.proyectos.tv12[lang]}</li>
+        <li>{dictionary.proyectos.tv13[lang]}</li>
+        <li>{dictionary.proyectos.tv14[lang]}</li>
+        <li>{dictionary.proyectos.tv15[lang]}</li>
       </ul>
     ),
   };
@@ -145,7 +106,7 @@ export default async function ProyectoTV({ params: { lang } }: { params: { lang:
                 quality={100}
               />
               <figcaption className={proyectos.screenshot__caption}>
-                Vista de las series guardadas y su información correspondiente.
+                {dictionary.proyectos.tv16[lang]}
               </figcaption>
             </figure>
           </div>
@@ -165,7 +126,7 @@ export default async function ProyectoTV({ params: { lang } }: { params: { lang:
                 quality={100}
               />
               <figcaption className={proyectos.screenshot__caption}>
-                Vista del buscador de series.
+                {dictionary.proyectos.tv17[lang]}
               </figcaption>
             </figure>
           </div>
