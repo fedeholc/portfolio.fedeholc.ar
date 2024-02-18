@@ -94,9 +94,6 @@ export default async function NavBar({ lang }: { lang: Locale }) {
           </Link>
         </div>
         <div className={navbar.toolbar_item_text}>
-          {/*        <div>
-            <button onClick={() => router.push("/" + lang + "/cv")}>CV</button>
-          </div> */}
           <Link title={dictionary.navbar.cvTitle[lang]} href="/cv">
             {dictionary.navbar.cv[lang]}
           </Link>
@@ -108,9 +105,6 @@ export default async function NavBar({ lang }: { lang: Locale }) {
           >
             {dictionary.navbar.proyectos[lang]}
           </Link>
-          {/*    <button onClick={() => router.push("/" + lang + "/proyectos")}>
-            {dictionary["navbar"].proyectos}
-          </button> */}
         </div>
         <div className={navbar.toolbar_item_text}>
           <Link
