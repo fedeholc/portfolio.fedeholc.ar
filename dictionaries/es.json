@@ -1,0 +1,636 @@
+{
+  "navbar": {
+    "cv": { "es": "CV", "en": "Resume" },
+    "proyectos": { "es": "Proyectos", "en": "Projects" },
+    "inicio": { "es": "inicio", "en": "home" },
+    "inicioTitle": { "es": "Volver al inicio", "en": "Back to home" },
+    "githubTitle": {
+      "es": "Enlace a mi perfil de GitHub",
+      "en": "Link to my GitHub profile"
+    },
+    "linkedinTitle": {
+      "es": "Enlace a mi perfil de LinkedIn",
+      "en": "Link to my LinkedIn profile"
+    },
+    "emailTitle": { "es": "Escribirme un email", "en": "Write me an email" },
+    "instagramTitle": {
+      "es": "Enlace a mi perfil de Instagram",
+      "en": "Link to my Instagram profile"
+    },
+    "cvTitle": {
+      "es": "Enlace a la página de mi CV",
+      "en": "Link to my resume page"
+    },
+    "proyectosTitle": {
+      "es": "Enlace a la página de mis proyectos",
+      "en": "Link to my projects page"
+    },
+    "blogTitle": { "es": "Enlace a mi blog", "en": "Link to my blog" },
+    "themeTitle": {
+      "es": "Cambiar entre modo claro y oscuro",
+      "en": "Switch between light and dark mode"
+    }
+  },
+  "cardproyecto": { "es": "Ver proyecto", "en": "View project" },
+  "intro": {
+    "podesver": {
+      "es": "Podés ver mis",
+      "en": "You can see my"
+    },
+    "proyectos": {
+      "es": "proyectos",
+      "en": "projects"
+    },
+    "download": {
+      "es": "descargar mi",
+      "en": "download my"
+    },
+    "cvpdf": {
+      "es": "CV en PDF",
+      "en": "resume as PDF"
+    },
+    "leer": {
+      "es": "leer",
+      "en": "read"
+    },
+    "encontrarme": {
+      "es": "encontrarme en",
+      "en": "find me on"
+    },
+    "escribirme": {
+      "es": "o escribirme a:",
+      "en": "or write me to:"
+    }
+  },
+  "cv": {
+    "nombreArchivo": {
+      "es": "Federico_Holc_CV.pdf",
+      "en": "Federico_Holc_Resume.pdf"
+    },
+    "heading": { "es": "CURRICULUM VITAE", "en": "RESUME" },
+    "downloadPDF": {
+      "es": "descargar en PDF",
+      "en": "download as PDF"
+    },
+    "calificaciones1": {
+      "es": "Resumen de calificaciones",
+      "en": "Summary of qualifications"
+    },
+    "calificaciones2": {
+      "es": "Desarrollador web especializado en front-end. ",
+      "en": "Web developer specialized in frontend. "
+    },
+    "calificaciones3": {
+      "es": "Mis habilidades y experiencia incluyen:",
+      "en": "My skills and experience include:"
+    },
+    "proyectos1": { "es": "Proyectos", "en": "Projects" },
+    "proyectos2": {
+      "es": "Podés encontrar una explicación detallada de cada proyecto en mi portfolio online: ",
+      "en": "You can find a detailed explanation of each project in my online portfolio: "
+    },
+    "proyectos3": {
+      "es": "👾 <NuncaSupeProgramar/> Blog de apuntes para aprender desarrollo web",
+      "en": "👾 <NuncaSupeProgramar/> Blog of notes for learning web development"
+    },
+    "proyectos3a": {
+      "es": "<NuncaSupeProgramar />",
+      "en": "<NuncaSupeProgramar />"
+    },
+    "proyectos3b": {
+      "es": "Blog de apuntes para aprender desarrollo web 👾",
+      "en": "Blog of notes for learning web development 👾"
+    },
+    "proyectos4": {
+      "es": "Mi blog para organizar apuntes, aprender, y compartir el conocimiento. Sencillo, rápido, y accesible.",
+      "en": "My blog to organize notes, learn, and share knowledge. Simple, fast, and accessible."
+    },
+    "proyectos5": {
+      "es": "Así es, otra aplicación más para tomar notas. =) Pero con algunas características particulares. Y lo mejor: una extensión para el navegador que permite resaltar y guardar textos y enlaces desde cualquier web.",
+      "en": "That's right, yet another note-taking application =) But with some particular special features. And the best: a browser extension that allows you to highlight and save texts and links from anyweb."
+    },
+    "proyectos6": {
+      "es": "Extensión para el navegador Chrome que permite ver imágenes de Instagram a máxima resolución y en pantalla completa, sin distracciones.",
+      "en": "Extension for Chrome browser that allows you to view Instagram images at full resolution and in full screen, without distractions."
+    },
+    "proyectos7": {
+      "es": "Disponible en la chrome web store: ",
+      "en": "Available at the chrome web store:"
+    },
+    "proyectos8": {
+      "es": "Aplicación que permite llevar registro de tus series favoritas y ver fácilmente cuáles tienen nuevos episodios",
+      "en": "Application that allows you to keep track of your favorite series and easily see which ones have new episodes."
+    },
+    "proyectos9": {
+      "es": "👨‍💻 Argentina Programa v3.0 - Trabajo final del curso de desarrollo web full stack",
+      "en": "👨‍💻 Argentina Programa v3.0 - Full stack web development course final work"
+    },
+    "proyectos9a": {
+      "es": "Trabajo final del curso de desarrollo web full stack",
+      "en": "Full stack web development course final work"
+    },
+    "proyectos10": {
+      "es": "Sitio web a modo de C.V. online que integra distintas funcionalidades. Además, me permitió reencontrarme felizmente con la programación. =)",
+      "en": "Website as an online resume that integrates different functionalities. In addition, it allowed me to to meet again happily with programming =)"
+    },
+    "idiomas1": { "es": "Idiomas", "en": "Languages" },
+    "idiomas2a": {
+      "es": "Español: ",
+      "en": "Spanish: "
+    },
+    "idiomas2b": {
+      "es": "nativo.",
+      "en": "native."
+    },
+    "idiomas2c": {
+      "es": "Inglés: ",
+      "en": "English: "
+    },
+    "idiomas2d": {
+      "es": "professional working proficiency. First Certificate Exam (B2 First), Cambridge University.",
+      "en": "professional working proficiency. First Certificate Exam (B2 First), Cambridge University."
+    },
+    "academia1": { "es": "Formación Académica", "en": "Education" },
+
+    "academia2a": {
+      "es": "Tecnicatura Superior en Desarrollo de Software.",
+      "en": "Higher Technician Degree in Software Development."
+    },
+    "academia2b": {
+      "es": "Instituto de Formación Técnica Superior N.º 29 de la Ciudad Autónoma de Buenos Aires. En curso desde 2023 (9 materias aprobadas).",
+      "en": "Technical Training Institute No. 29 of the Autonomous City of Buenos Aires. In progress since 2023 (9 subjects approved)."
+    },
+    "academia3a": {
+      "es": "Técnico en Computación.",
+      "en": "Computer Technician."
+    },
+    "academia3b": {
+      "es": "Escuela Técnica Nº 3 Maria Sánchez de Thompson, Ciudad Autónoma de Buenos Aires. 1992 – 1998.",
+      "en": "Technical School Nº 3 Maria Sánchez de Thompson, Autonomous City of Buenos Aires. 1992 - 1998."
+    },
+    "academia4a": {
+      "es": "Licenciado en Sociología.",
+      "en": "Bachelor's Degree in Sociology."
+    },
+    "academia4b": {
+      "es": "Facultad de Ciencias Sociales, Universidad de Buenos Aires. 2002 – 2007.",
+      "en": "Faculty of Social Sciences, University of Buenos Aires. Buenos Aires. 2002 - 2007."
+    },
+    "academia5a": {
+      "es": "Profesor de Enseñanza Secundaria, Normal y Especial en Sociología.",
+      "en": "Professor of Secondary, Normal and Special Education in Sociology."
+    },
+    "academia5b": {
+      "es": "Facultad de Ciencias Sociales, Universidad de Buenos Aires. 2007 – 2009.",
+      "en": "Faculty of Social Sciences, University of Buenos Aires. 2007 – 2009."
+    },
+    "academia6a": {
+      "es": "Especialista Docente de Nivel Superior en Educación Sexual Integral.",
+      "en": "Higher Education Specialist in Comprehensive Sexual Education."
+    },
+    "academia6b": {
+      "es": "Instituto Superior del Profesorado Dr. Joaquín V. González. 2017 – 2019.",
+      "en": "Dr. Joaquín V. González Higher Institute of Teaching. 2017 –2019."
+    },
+    "cursos1": { "es": "Cursos", "en": "Courses" },
+    "cursos2a": {
+      "es": "Desarrollador Web Full Stack. Argentina Programa v3.0,",
+      "en": "Full Stack Web Developer. Argentina Program v3.0,"
+    },
+    "cursos2b": {
+      "es": "Instituto Nacional de Tecnología Industrial (INTI), Ministerio de Economía de la Nación, 2022-2023.",
+      "en": "National Institute of Industrial Technology (INTI), Ministry of Economy of the Nation, 2022-2023."
+    },
+    "cursos3a": {
+      "es": "Codo a Codo 4.0 Full Stack JAVA,",
+      "en": "Codo a Codo 4.0 Full Stack JAVA,"
+    },
+    "cursos3b": {
+      "es": "Ministerio de Educación de la CABA, 2022.",
+      "en": "Ministry of Education of the Autonomous City of Buenos Aires, 2022."
+    },
+    "cursos4a": {
+      "es": "Responsive Web Design,",
+      "en": "Responsive Web Design,"
+    },
+    "cursos4b": {
+      "es": "freeCodeCamp.org, 2022.",
+      "en": "freeCodeCamp.org, 2022."
+    },
+    "cursos5a": {
+      "es": "JavaScript Algorithms and Data Structures,",
+      "en": "JavaScript Algorithms and Data Structures,"
+    },
+    "cursos5b": {
+      "es": "freeCodeCamp.org, 2022.",
+      "en": "freeCodeCamp.org, 2022."
+    },
+    "cursos6a": {
+      "es": "Back End Development and APIs,",
+      "en": "Back End Development and APIs,"
+    },
+    "cursos6b": {
+      "es": "freeCodeCamp.org, 2022.",
+      "en": "freeCodeCamp.org, 2022."
+    },
+    "experiencias1": { "es": "Experiencia Laboral", "en": "Work Experience" },
+    "experiencias2a": {
+      "es": "Programador. CompuHotel S.A. 1998 – 2002",
+      "en": "Programmer. CompuHotel S.A. 1998 - 2002"
+    },
+    "experiencias2b": {
+      "es": "Desarrollo de software de administración hotelera utilizando Visual Basic, Visual Fox Pro, y bases de datos SQL.",
+      "en": "Hotel management software development using Visual Basic, Visual Fox Pro, and SQL databases."
+    },
+    "experiencias2c": {
+      "es": "Diseño y desarrollo de páginas web utilizando HTML, CSS y JavaScript.",
+      "en": "Design and development of web pages using HTML, CSS and Javascript."
+    },
+    "experiencias3a": {
+      "es": "Sociólogo, Departamento de Salud Ambiental, Ministerio de Salud del GCABA. 2008 – 2012",
+      "en": "Sociologist, Environmental Health Department, Ministry of Health of the Government of the Autonomous City of Buenos Aires. 2008 - 2012"
+    },
+    "experiencias3b": {
+      "es": "Desarrollo e implementación de instrumentos para el relevamiento de problemáticas ambientales en los Centros de Salud y Acción Comunitaria de la CABA. Capacitación del personal para su utilización.",
+      "en": "Development and implementation of instruments for the survey of environmental problems in the Health and Community Action Centers of the CABA. Training of personnel in their use."
+    },
+    "experiencias3c": {
+      "es": "Análisis de datos socio-ambientales con Epi Info, bases de datos y SPSS.",
+      "en": "Analysis of socio-environmental data using Epi Info, MS Access databases, and SPSS."
+    },
+    "experiencias4a": {
+      "es": "Profesor y tutor universitario. Universidad de Buenos Aires. 2007 – 2015",
+      "en": "Professor and university tutor. University of Buenos Aires. 2007 - 2015"
+    },
+    "experiencias4b": {
+      "es": "Profesor de Introducción al Pensamiento Científico, Ciclo Básico Común, cátedra Marqués. 2007-2011",
+      "en": "Professor of Introduction to Scientific Thinking, Common Basic Cycle, Marqués Chair. 2007-2011"
+    },
+    "experiencias4c": {
+      "es": "Profesor y tutor de Prácticas de la enseñanza. Facultad de Ciencias Sociales, cátedra Pipkin. 2009-2015",
+      "en": "Professor and tutor of Teaching Practices. Faculty of Social Sciences, Pipkin Chair. 2009-2015"
+    },
+    "experiencias5a": {
+      "es": "Profesor de enseñanza media. 2010 – 2023",
+      "en": "High school teacher. 2010 - 2023"
+    },
+    "experiencias5b": {
+      "es": "Profesor de Sociología, Introducción a las Ciencias Sociales y a las Humanidades, Formación Ética y Ciudadana, e Historia, en escuelas públicas de enseñanza media de la Ciudad Autónoma de Buenos Aires.",
+      "en": "Teacher of Sociology, History, Introduction to Social Sciences and Humanities, and Ethics and Citizenship Education in public high schools in the Autonomous City of Buenos Aires."
+    }
+  },
+  "proyectos": {
+    "codigo": {
+      "es": "código",
+      "en": "code"
+    },
+    "proyecto": {
+      "es": "PROYECTO",
+      "en": "PROJECT"
+    },
+    "proyectos": {
+      "es": "PROYECTOS",
+      "en": "PROJECTS"
+    },
+    "anota01": {
+      "es": "ANOTÁ! (Another Note Taking App) & Highlighter",
+      "en": "ANOTÁ! (Another Note Taking App) & Highlighter"
+    },
+    "anota02": {
+      "es": "Otra aplicación más para tomar notas. Pero con algunas características que ya quisiera tenerlas en Google Keep. Y lo mejor:  incorpora una extensión para el navegador (highlighter) que permite resaltar y guardar textos y enlaces desde cualquier web.",
+      "en": "Yet another note-taking application. But with some features that I would like to have in Google Keep. And the best: it incorporates a browser extension (highlighter) that allows you to highlight and save texts and links from any web."
+    },
+    "anota03": {
+      "es": "¿Qué tiene de bueno?",
+      "en": "What's good about it?"
+    },
+    "anota04": {
+      "es": "Permite crear, guardar y editar las notas desde la aplicación. La edición se puede realizar desde donde se ve la nota, sin tener que abrir otra una ventana.",
+      "en": "It allows you to create, save and edit notes from the application. The edition can be done from where the note is seen, without having to open another window."
+    },
+    "anota05": {
+      "es": "Las notas se pueden visualizar en modo lista o en modo mosaico, con la posibilidad de mostrar el título y el contenido, o solo el título,para así tener más en notas pantalla.",
+      "en": "The notes can be viewed in list mode or in mosaic mode, with the possibility of showing the title and content, or only the title, to have more notes on the screen."
+    },
+    "anota06": {
+      "es": "Cada nota puede tener múltiples etiquetas, que pueden utilizarse como filtros para ver solo algunas de ellas. También se pueden buscar las notas por texto en su título o contenido.",
+      "en": "Each note can have multiple tags, which can be used as filters to see only some of them. Notes can also be searched by text in their title or content."
+    },
+    "anota07": {
+      "es": "La extensión para el navegador (Highlighter) permite que simplemente al realizar una selección de texto en cualquier web, el texto se resalte y se guarde. Luego todos los fragmentos de texto seleccionados de una misma URL se pueden enviar a ANOTA y/o ser descargados en un archivo de texto. También se pueden generar notas guardando el enlace de la web, o toda la sesion de enlaces abiertos en el navegador.",
+      "en": "The browser extension (Highlighter) allows you to simply make a text selection on any web, the text is highlighted and saved. Then all the selected text fragments from the same URL can be sent to ANOTA and/or downloaded in a text file. You can also generate notes by saving the web link, or the entire session of open links in the browser."
+    },
+    "anota08": {
+      "es": "Mostrar un indicador en las notas que tenían más texto del que se veía en pantalla (sin mostrar las scroll bars), resulto ser un problema dado que hasta entonces no había utilizado React para acceder directamente al DOM mediante useRef. Aquí tuve que hacerlo, ya que la solución que se me ocurrió fue comparar si había diferencia entre el `scrollHeight` y el `clientHeight` del contenedor de la nota y así detectar si había un overflow del texto, y poder mostrar el indicador cuando correspondiera.",
+      "en": "Displaying an indicator in the notes that had more text than was visible on the screen (without showing the scroll bars), turned out to be a problem since until then I had not used React to directly access the DOM using useRef. Here I had to do it, since the solution that occurred to me was to compare if there was a difference between the `scrollHeight` and the `clientHeight` of the note container and thus detect if there was an overflow of the text, and be able to show the indicator when appropriate."
+    },
+    "anota09": {
+      "es": "Otras dificultades fueron la creación de un layout para mostrar las notas en modo mosaico, lo cual aún no se puede realizar de forma nativa en CSS. Así como también la implementación de un editor de texto para crear y modificar las notas, dado que el elemento HTML `contenteditable` no es muy versátil. En ambos casos, con la intención de poner rápidamente en funcionamiento la aplicación, opté por usar librerías, pero me quisiera poder estudiar en profundidad esos problemas para poder implementar mis propias soluciones ya que son aspectos importantes del proyecto.",
+      "en": "Other difficulties were the creation of a layout to display the notes in mosaic mode, which cannot yet be done natively in CSS. As well as the implementation of a text editor to create and modify the notes, since the HTML element `contenteditable` is not very versatile. In both cases, with the intention of quickly putting the application into operation, I chose to use libraries, but I would like to be able to study those problems in depth in order to implement my own solutions since they are important aspects of the project."
+    },
+    "anota10": {
+      "es": "En cuanto a la extensión del navegador, no fue nada fácil, dado que recientemente se cambió al manifest V3 (lo cual conlleva numerosas modificaciones en las APIs), y no abundan los materiales y ejemplos de código actualizados. Pero valió la pena el esfuerzo porque trabajar en una aplicación que tiene que manejar directamente el DOM me obligó a reforzar los fundamentos de JavaScript. Incluso me llevo a estudiar sobre estructuras de datos para poder resolver un problema que era recorrer el arbol del DOM desde el nodo de inicio de la selección de texto hasta el nodo final, para poder obtener el texto, resaltarlo, etc.",
+      "en": "As for the browser extension, it was not easy at all, since it was recently changed to manifest V3 (which entails numerous modifications in the APIs), and there are not many updated materials and code examples. But it was worth the effort because working on an application that has to directly handle the DOM forced me to reinforce the fundamentals of JavaScript. It even led me to study about data structures to be able to solve a problem that was to traverse the DOM tree from the starting node of the text selection to the final node, in order to obtain the text, highlight it, etc."
+    },
+    "anota11": {
+      "es": "Siendo esta la aplicación más grande que he realizado hasta ahora, me resultó aún más evidente la importancia de dedicarle tiempo a tener un código legible, estructurado, documentado, etc., así como también a tener componentes reutilizables y organizados. Es algo en lo que tengo que seguir trabajando y mejorando ya que es fundamental para poder mantener la aplicación e incorporarle nuevas funcionalidades.",
+      "en": "Being this the largest application I have made so far, it became even more evident to me the importance of dedicating time to have readable, structured, documented code, etc., as well as having reusable and organized components. It is something I have to continue working on and improving since it is essential to be able to maintain the application and incorporate new functionalities."
+    },
+    "anota12": {
+      "es": "Aprendizajes y problemas en el camino",
+      "en": "Learnings and problems along the way"
+    },
+    "anota13": {
+      "es": "Sobre el stack",
+      "en": "About the stack"
+    },
+    "anota14": {
+      "es": "Dado que estaba estudiando React, resultaba un oportunidad para poner en práctica el uso de hooks como useContext y useReducer para manejar el estado de la aplicación, así como también de useRef para manipular directamente el DOM.",
+      "en": "Since I was studying React, it was an opportunity to put into practice the use of hooks such as useContext and useReducer to manage the state of the application, as well as useRef to manipulate the DOM directly."
+    },
+    "anota15": {
+      "es": "Para el backend utilicé Node y Express por lo sencillo que resulta crear una API REST con endpoints, y que se conecta una base de datos. Implementé una en MySQL sin utilizar un ORM para aprender más sobre el funcionamiento de las bases de datos relacionales.",
+      "en": "For the backend I used Node and Express because of how easy it is to create a REST API with endpoints, and that connects to a database. I implemented one in MySQL without using an ORM to learn more about the operation of relational databases."
+    },
+    "anota16": {
+      "es": "Utilicé CSS modules por componentes, junto con la metodología BEM, con la intención de tener un código CSS claro y mantenible, separado de la lógica de la aplicación.",
+      "en": "I used CSS modules by components, together with the BEM methodology, with the intention of having clear and maintainable CSS code, separated from the application logic."
+    },
+    "anota17": {
+      "es": "La extensión está en puro HTML, CSS, y JavaScript. Pero decidí incorporar JSDoc para aprender a utilizarlo, tener un código mejor documentado, y también poder tener type check a través del language server de typescript.",
+      "en": "The extension is in pure HTML, CSS, and JavaScript. But I decided to incorporate JSDoc to learn how to use it, have better documented code, and also be able to have type check through the typescript language server."
+    },
+    "anota18": {
+      "es": "Muestra de las distintas posibilidades de visualización de las notas.",
+      "en": "Shows the different possibilities of viewing the notes."
+    },
+    "anota19": {
+      "es": "Funcionamiento de la extensión para el navegador.",
+      "en": "The browser extension funcionality."
+    },
+    "anota20": {
+      "es": "Muestra de la creación de notas y filtrado por etiquetas.",
+      "en": "Shows the creation of notes and filtering by tags."
+    },
+    "ap01": {
+      "es": "Argentina Programa v3.0 - Curriculum Vitae",
+      "en": "Argentina Programa v3.0 - Resume"
+    },
+    "ap02": {
+      "es": "Es un sitio web a modo de curriculum vitae online que integra distintas tecnologías y funcionalidades. Fue solicitado como trabajo final del curso de desarrollo web full stack de Argentina Programa. Aprendí mucho haciéndolo, pero más importante aún, me permitió reencontrarme felizmente con la programación. =)",
+      "en": "It is a website as an online resume that integrates different technologies and functionalities. It was requested as the final work of the full stack web development course of Argentina Program. I learned a lot doing it, but more importantly, it allowed me to happily meet again with programming. =)"
+    },
+    "ap03": {
+      "es": "¿Qué tiene de bueno?",
+      "en": "What's good about it?"
+    },
+    "ap04": {
+      "es": "Diseño responsive, adaptable a distintos tamaños de pantalla",
+      "en": "Responsive design, adaptable to different screen sizes"
+    },
+    "ap05": {
+      "es": "Autorización de usuario para acceder a la modalidad de edición.",
+      "en": "User authorization to access the editing mode."
+    },
+    "ap06": {
+      "es": "Posibilidad de editar los elementos a mostrar en cada una de las secciones, tanto en lo que hace al texto como a las imágenes.",
+      "en": "Possibility of editing the elements to be displayed in each of the sections, both in terms of text and images."
+    },
+    "ap07": {
+      "es": "Problemas en el camino y aprendizajes",
+      "en": "Problems along the way and learnings"
+    },
+    "ap08": {
+      "es": "No fue sencillo armar el rompecabezas de tecnologías necesarias para que todo funcione, y en algunos aspectos las partes quedaron 'atadas con alambre', ya que no tenía el tiempo necesario para profundizar en las bases de cada herramienta y encontrar la mejor solución posible. ¡Pero funcionó!",
+      "en": "It was not easy to put together the puzzle of technologies necessary for everything to work, and in some aspects the parts were 'tied with wire', since I did not have the necessary time to delve into the bases of each tool and find the best possible solution. But it worked!"
+    },
+    "ap09": {
+      "es": "El trabajo me permitió tener una visión general de cómo se integra un desarrollo que incluye un front end y un back end con API y base de datos.",
+      "en": "The work allowed me to have an overview of how a development that includes a front end and a back end with API and database is integrated."
+    },
+    "ap10": {
+      "es": "Con Angular comprendí cómo era trabajar con un framework para crear una SPA, y en particular cómo se estructura el código utilizando componentes y cómo se implementa un patrón de diseño MVC. El haber aprendido directamente Angular con TypeScript me obligo a tener que estudiar JavaScrip a posteriori para poder tener un conocimiento de los fundamentos y poder diferenciar que características eran propias de cada tecnología.",
+      "en": "With Angular I understood what it was like to work with a framework to create a SPA, and in particular how the code is structured using components and how an MVC design pattern is implemented. Having learned Angular directly with TypeScript forced me to have to study JavaScrip later to be able to have a knowledge of the fundamentals and to be able to differentiate which features were specific to each technology."
+    },
+    "ap11": {
+      "es": "La exigencia de hacer el deploy en un sitio en particular, y que este fuera cambiando varias veces (Heroku, Fly.io, Koyeb) cuando faltaba poco tiempo para la entrega fue un dolor de cabeza. Pero rescato que me permitió conocer distintas opciones y formas de hacer deploys de las aplicaciones.",
+      "en": "The requirement to deploy on a particular site, and that it changed several times (Heroku, Fly.io, Koyeb) when there was little time left for delivery was a headache. But I appreciate that it allowed me to know different options and ways to deploy applications"
+    },
+    "ap12": {
+      "es": "Vista de una de las secciones con los botones de edición activados.",
+      "en": "View of one of the sections with the edit buttons activated."
+    },
+    "ap13": {
+      "es": "Vista de la ventana de edición de la portada.",
+      "en": "View of the cover editing window."
+    },
+    "ap14": {
+      "es": "Portada del sitio web visto en un teléfono.",
+      "en": "Cover of the website seen on a phone."
+    },
+    "insta01": {
+      "es": "Es una extensión muy sencilla para el navegador Chrome que permite ver las fotos de Instagram a máxima resolución.",
+      "en": "It is a very simple extension for the Chrome browser that allows you to view Instagram photos at full resolution."
+    },
+    "insta02": {
+      "es": "¿Para qué sirve?",
+      "en": "What is it for?"
+    },
+    "insta03": {
+      "es": "Quienes disfrutamos de ver y hacer fotos, queremos poder apreciarlas a máxima resolución y en pantalla completa. La extensión busca hacer eso posible, de manera sencilla, y sin tener que recurrir a otra plataforma.",
+      "en": "Those of us who enjoy seeing and taking photos, want to be able to appreciate them at full resolution and in full screen. The extension seeks to make that possible, in a simple way, and without having to resort to another platform."
+    },
+    "insta04": {
+      "es": "¿Qué tiene de bueno?",
+      "en": "What's good about it?"
+    },
+    "insta05": {
+      "es": "Al tener la extensión activada, en el angulo superior derecho de cada foto aparece un icono de una lupa. Al hacer click sobre el mismo, se abre la imagen a tamaño completo y sin otras distracciones. Luego haciendo click en cualquier lugar de la pantalla se regresa a la página y posición original.",
+      "en": "By having the extension activated, in the upper right corner of each photo appears an icon of a magnifying glass. By clicking on it, the image opens to full size and without other distractions. Then by clicking anywhere on the screen you return to the original page and position."
+    },
+    "insta06": {
+      "es": "Algunas ideas para implementar a futuro: que se pueda elegir si se abre la imagen en una nueva pestaña o en la misma, y si se utiliza o no el modo de pantalla completa del navegador; que se pueda generar una galería de imágenes para ver una tras otra a pantalla completa.",
+      "en": "Some ideas to implement in the future: that you can choose whether to open the image in a new tab or in the same one, and whether or not to use the browser's full screen mode; that you can generate a gallery of images to see one after another in full screen."
+    },
+    "insta07": {
+      "es": "Problemas en el camino y aprendizajes",
+      "en": "Problems along the way and learnings"
+    },
+    "insta08": {
+      "es": "La principal dificultad técnica con la que me encontré es que al ser Instagram de una web dinámica, a medida que aparecen nuevos elementos, es necesario ir agregando listeners e iconos. Pero no encontré un evento que se dispare cuando eso ocurre. La solución que implementé es hacerlo con el evento mouseMove, lo cuál es efectivo pero poco eficiente ya que implica leer toda la estructura de la web muchas más veces de las necesarias. Tengo pendiente buscar una solución más eficiente para este problema. (Si sabés cómo hacerlo ¡por favor escribime!)",
+      "en": "The main technical difficulty I encountered is that since Instagram is a dynamic website, as new elements appear, it is necessary to add listeners and icons. But I didn't find an event that fires when that happens. The solution I implemented is to do it with the mouseMove event, which is effective but not very efficient because it involves reading the entire structure of the web many more times than necessary. I have to look for a more efficient solution for this problem (if you know how to do it, please write me!)"
+    },
+    "insta09": {
+      "es": "Otra cuestión que aún debo investigar es como portar la extensión a Firefox, Safari y Edge, de modo tal de no excluir a quiénes utilizan algún otro de los principales navegadores.",
+      "en": "Another issue that I still have to investigate is how to port the extension to Firefox, Safari and Edge, so as not to exclude those who use any other of the main browsers."
+    },
+    "insta10": {
+      "es": "También surgió un problema no técnico que no había tenido en cuenta: luego de varias semanas de publicada la extensión, cuando ya tenía más de cien usuarios, me llegó un aviso de que la eliminaban de la chrome web store de Estados Unidos por utilizar la palabra Instagram en el nombre y porque el icono incluía los colores de la marca. Por lo que tuve que cambiar nombre y logo, y volver a publicarla.",
+      "en": "There was also a non-technical problem that I had not taken into account: after several weeks of the extension being published, when it already had more than a hundred users, I received a notice that it was being removed from the chrome web store of the United States for using the word Instagram in the name and because the icon included the brand's colors. So I had to change the name and logo, and republish it."
+    },
+    "insta11": {
+      "es": "Hacer un extensión para el navegador me resulto un buena forma de para practicar HTML, CSS y JavaScript sin frameworks de por medio, aprender sobre la manipulación del DOM y ver cómo lo estructuran este tipo de aplicaciones. Pienso ahora que sería interesante programar una alerta que me avise cuando se produzcan modificaciones en el DOM del sitio que hagan que la extensión deje de funcionar.",
+      "en": "Making a browser extension was a good way for me to practice HTML, CSS and JavaScript without frameworks in between, learn about DOM manipulation and see how they structure this type of applications. I now think it would be interesting to program an alert that warns me when changes are made to the site's DOM that cause the extension to stop working."
+    },
+    "insta12": {
+      "es": "Lamentablemente no hay tantos contenidos en la web para aprender a desarrollar extensiones por lo que valoro mucho la elaboración de una buena documentación con explicaciones claras y ejemplos de código como la que tiene Chrome de su API.",
+      "en": "Unfortunately there is not so much content on the web to learn how to develop extensions, so I greatly value the preparation of good documentation with clear explanations and code examples like the one Chrome has of its API."
+    },
+    "insta13": {
+      "es": "Es muy motivador poder crear algo útil, que funciona, y que se puede compartir con otras personas. Este proyecto me ha dado ganas e ideas para hacer montones de extensiones.",
+      "en": "It is very motivating to be able to create something useful, that works, and that can be shared with other people. This project has given me the desire and ideas to make lots of extensions."
+    },
+    "insta14": {
+      "es": "Vista de la extensión funcionando.",
+      "en": "View of the extension working."
+    },
+    "insta15": {
+      "es": "Vista de la extensión en la Chrome web store.",
+      "en": "View of the extension in the Chrome web store."
+    },
+    "nsp01": {
+      "es": "<NuncaSupe­Programar/> Blog de apuntes para aprender desarrollo web",
+      "en": "<NuncaSupe­Programar/> Blog of notes to learn web development"
+    },
+    "nsp02": {
+      "es": "Blog de aprendizaje en público, para organizar mis apuntes y compartir el conocimiento.",
+      "en": "Public learning blog, to organize my notes and share knowledge."
+    },
+    "nsp03": {
+      "es": "¿Para qué un blog?",
+      "en": "Why a blog?"
+    },
+    "nsp04": {
+      "es": "Algo que aprendí como docente es que junto con la práctica, intentar enseñar o explicar algo (y si es por escrito mejor) es un excelente camino para aprenderlo. También es importante el aprendizaje colectivo que se genera con el intercambio. De allí la creación de un blog, que es una excelente tecnología para la difusión del conocimiento: a diferencia de lo que circula por plataformas cerradas, sus contenidos puede ser indexados por los buscadores, compartidos en redes sociales, y estar a disposición de quienes lo necesiten.",
+      "en": "Something I learned as a teacher is that along with practice, trying to teach or explain something (and if it is in writing better) is an excellent way to learn it. Also important is the collective learning that is generated with the exchange. Hence the creation of a blog, which is an excellent technology for the dissemination of knowledge: unlike what circulates on closed platforms, its contents can be indexed by search engines, shared on social networks, and be available to those who need it."
+    },
+    "nsp05": {
+      "es": "¿Qué tiene de bueno?",
+      "en": "What's good about it?"
+    },
+    "nsp06": {
+      "es": "Mediante Next.js el blog se genera como sitio estático del lado del servidor, lo cual hace que sea veloz, y fácil de indexar por los buscadores. También es sencillo de publicar, ya que al estar alojado en Vercel, el deploy se realiza automáticamente cada vez que se actualiza el repositorio en GitHub.",
+      "en": "Through Next.js the blog is generated as a server-side static site, which makes it fast, and easy to index by search engines. It is also easy to publish, since being hosted on Vercel, the deploy is done automatically every time the repository is updated on GitHub."
+    },
+    "nsp07": {
+      "es": "Añadir nuevas entradas al blog es simple: se escribe el contenido del post en un archivo con formato Markdown, se lo sube a una carpeta dentro del repositorio del proyecto, y automáticamente queda publicado (salvo que se lo marque como borrador).",
+      "en": "Adding new entries to the blog is simple: the content of the post is written in a file in Markdown format, it is uploaded to a folder within the project repository, and it is automatically published (unless it is marked as a draft)."
+    },
+    "nsp08": {
+      "es": "Se pueden marcar posteos como destacados para que aparezcan en una sección destacada de la página principal.",
+      "en": "Posts can be marked as featured to appear in a featured section of the home page."
+    },
+    "nsp09": {
+      "es": "Utilizando el formato Markdown junto con la librería remark.js se le puede dar formato resaltado a los bloques de código de las publicaciones.",
+      "en": "Using the Markdown format together with the remark.js library, highlighted format can be given to the code blocks of the posts."
+    },
+    "nsp10": {
+      "es": "Se pueden filtrar los posts por etiquetas utilizando el buscador o el listado de las mismas.",
+      "en": "Posts can be filtered by tags using the search engine or the list of them."
+    },
+    "nsp11": {
+      "es": "Es responsive y se adapta para que pueda ser leído desde cualquier dispositivo.",
+      "en": "It is responsive and adapts so that it can be read from any device."
+    },
+    "nsp12a": {
+      "es": "Algunas ideas de nuevas funcionalidades las pruebo en este otro blog:",
+      "en": "I test some ideas for new features in this other blog:"
+    },
+    "nsp12b": {
+      "es": "de estructura similar pero en TypeScript. Allí, por ejemplo, implementé un sistema de comentarios para los posts, utilizando Supabase tanto para la autenticación/autorización de usuarios, como para la base de datos",
+      "en": "with a similar structure but in TypeScript. There, for example, I implemented a comment system for the posts, using Supabase for both user authentication/authorization and the database."
+    },
+    "nsp13": {
+      "es": "Aprendizajes y problemas en el camino",
+      "en": "Learnings and problems along the way"
+    },
+    "nsp14": {
+      "es": "Hasta aquí solo había programando SPAs con renderizado del lado del cliente, por lo que me llevo un tiempo comprender las variantes que hay para hacerlo del lado del servidor (o de manera combinada), y cómo trabajar de ese modo con Next, integrando frontend y backend en una sola aplicación full stack.",
+      "en": "Until now I had only programmed SPAs with client-side rendering, so it took me a while to understand the variants that exist to do it on the server side (or in a combined way), and how to work in that way with Next, integrating frontend and backend in a single full stack application."
+    },
+    "nsp15": {
+      "es": "Al poco tiempo de publicado el blog, Next lanzó una nueva versión incorporando React Server Components, y cometí el error de ir tras la novedad, ya que no funcionaban las librerías para el estilizado del Markdown en la nueva versión. Tuve que regresar a la anterior, pero con la lección aprendida sobre la importancia de utilizar tecnologías probadas y consolidadas. Actualización diciembre de 2023: finalmente pude resolver el problema de las dependencias y actualizar a la última versión de Next.",
+      "en": "Shortly after the blog was published, Next released a new version incorporating React Server Components, and I made the mistake of going after the novelty, since the libraries for styling the Markdown did not work in the new version. I had to go back to the previous one, but with the lesson learned about the importance of using proven and consolidated technologies. Update December 2023: I was finally able to solve the problem of dependencies and update to the latest version of Next."
+    },
+    "nsp16": {
+      "es": "Publicar el blog en un dominio propio me llevó también a aprender como registrarlo, cómo manejar los DNS, y las configuraciones necesarias para que pueda ser indexado por los buscadores.",
+      "en": "Publishing the blog on my own domain also led me to learn how to register it, how to manage the DNS, and the necessary configurations so that it can be indexed by search engines."
+    },
+    "nsp17": {
+      "es": "Artículo del blog con bloques de código, visto en una pantalla amplia.",
+      "en": "Blog article with code blocks, seen on a wide screen."
+    },
+    "nsp18": {
+      "es": "Portada del blog vista en un teléfono.",
+      "en": "Cover of the blog seen on a phone."
+    },
+    "tv01": {
+      "es": "MyTvShows es una aplicación que permite llevar registro de tus series favoritas y ver fácilmente cuáles tienen nuevos episodios.",
+      "en": "MyTvShows is an application that allows you to keep track of your favorite series and easily see which ones have new episodes."
+    },
+    "tv02": {
+      "es": "¿Para qué sirve?",
+      "en": "What is it for?"
+    },
+    "tv03": {
+      "es": "La aplicación fue pensada para resolver un problema aparentemente sencillo como el de tener un registro de las series que ha visto o quiere ver, en un solo lugar, y poder saber si hay nuevos episodios sin depender del acceso a las distintas plataformas que existen hoy en día.",
+      "en": "The application was designed to solve an apparently simple problem such as having a record of the series that you have seen or want to see, in one place, and being able to know if there are new episodes without depending on access to the different platforms that exist today."
+    },
+    "tv04": {
+      "es": "¿Qué tiene de bueno?",
+      "en": "What's good about it?"
+    },
+    "tv05": {
+      "es": "Registro de multiples cuentas de usuario utilizando Supabase Auth.",
+      "en": "Register multiple user accounts using Supabase Auth."
+    },
+    "tv06": {
+      "es": "Búsqueda de series en la base de datos de IMDb (Internet Movie Database) mediante el uso de una API, y agregarlas a la lista de favoritos.",
+      "en": "Search for series in the IMDb (Internet Movie Database) database using an API, and add them to the favorites list."
+    },
+    "tv07": {
+      "es": "Listado de series favoritas con la correspondiente información respecto a la cantidad de temporadas y a la fecha de emisión del último episodio.",
+      "en": "List of favorite series with the corresponding information regarding the number of seasons and the date of airing of the last episode."
+    },
+    "tv08": {
+      "es": "Opción de ordenar el listado de series alfebéticamente o por la fecha del último episodio para así poder ver cuáles son los que han sido emitidos recientemente.",
+      "en": "Option to sort the list of series alphabetically or by the date of the last episode to see which ones have been aired recently."
+    },
+    "tv09": {
+      "es": "Funcionalidades para implementar a futuro: poder indicar en cuál es el último episodio que se ha visto de cada serie, junto con una extensión del navegador que nos alerte cuando haya nuevos episodios para ver.",
+      "en": "Functionalities to implement in the future: being able to indicate which is the last episode that has been seen of each series, together with a browser extension that alerts us when there are new episodes to watch."
+    },
+    "tv10": {
+      "es": "Problemas y aprendizajes",
+      "en": "Problems and learnings"
+    },
+    "tv11": {
+      "es": "Era la primera vez que utilizaba React y quería poner en práctica cuestiones básicas como el uso de componentes, renderizado condicional, manejo de estados y props, etc.",
+      "en": "It was the first time I used React and I wanted to put into practice basic issues such as the use of components, conditional rendering, state and props management, etc."
+    },
+    "tv12": {
+      "es": "Un desafío nuevo fue el combinar distintas funciones asíncronas para que trabajen en conjunto, ya que primero debía leer los datos de Firebase, a continuación obtener cierta información de las series desde la API de OpenIMDb, para a luego realizar una nueva solicitud a otro endpoint, y así obtener los datos sobre los episodios de cada serie. Pude resolverlo mediante la utilización de async/await. Pero me queda pendiente profundizar en como abordar los errores cuando algo falla en una de las funciones asíncronas.",
+      "en": "A new challenge was to combine different asynchronous functions to work together, since I first had to read the data from Firebase, then obtain certain information about the series from the OpenIMDb API, to then make a new request to another endpoint, and thus obtain the data about the episodes of each series. I was able to solve it by using async/await. But I still have to delve into how to address errors when something fails in one of the asynchronous functions."
+    },
+    "tv13": {
+      "es": "También tuve algunos dolores de cabeza con el uso de UseEffect en relación a la carga de los datos, pero la nueva documentación de React es muy clara en cuanto a cómo usarlo y sobre todo cuando no usarlo, así que pude resolverlo.",
+      "en": "I also had some headaches with the use of UseEffect in relation to the loading of the data, but the new React documentation is very clear about how to use it and especially when not to use it, so I was able to solve it."
+    },
+    "tv14": {
+      "es": "Programar desde cero un sistema de autenticación de usuarios era algo que excedía este proyecto, por lo que decidí utilizar Supabase Auth, lo cual me permitió implementarlo de manera sencilla.",
+      "en": "Programming from scratch a user authentication system was something that exceeded this project, so I decided to use Supabase Auth, which allowed me to implement it easily."
+    },
+    "tv15": {
+      "es": "Aproveché para probar por primera vez Tailwind CSS, del cual rescato la idea de trabajar con utility clases.",
+      "en": "I took the opportunity to try Tailwind CSS for the first time, from which I rescue the idea of working with utility classes."
+    },
+    "tv16": {
+      "es": "Vista de las series guardadas y su información correspondiente.",
+      "en": "View of the saved series and their corresponding information."
+    },
+    "tv17": {
+      "es": "Vista del buscador de series.",
+      "en": "View of the series search."
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.card__container {
+  display: grid;
+
+  grid-template-rows: auto 1fr auto;
+
+
+  box-shadow: 1px 1px 0px 0 var(--gris40);
+  /** TODO: VER colores si hay que poner en theme */
+
+  border: 2px solid var(--gris40);
+
+
+  border-radius: 5px;
+
+
+  max-width: 320px;
+}
+
+.card__container:hover {
+  border: 2px solid var(--card-borde);
+  box-shadow: 2px 2px 0px 0 var(--card-borde);
+  position: relative;
+  cursor: default;
+}
+
+.card__subtitulo a {
+  text-decoration-line: none;
+}
+
+.card__image {
+  min-width: 290px;
+  border-radius: 5px;
+}
+
+
+.card__container h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 1rem 1rem 0.5rem 1rem;
+}
+
+.card__container h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0rem 1rem 0.5rem 1rem;
+}
+
+.card__container p {
+  font-size: 1rem;
+  font-weight: 500;
+
+  line-height: 1.5rem;
+  margin: 0rem 1rem;
+  padding: 0;
+}
+
+.button__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
+
+.button_ver {
+
+  border-radius: 5px;
+
+
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 1rem;
+  padding: 0.1rem 0.5rem;
+  background-color: var(--boton-hover);
+  border: 2px solid transparent;
+  text-decoration: solid underline;
+}
+
+.titulo {
+  border-radius: 5px;
+  padding: 0.1rem 0.5rem;
+  background-color: var(--boton-hover);
+  border: 2px solid transparent;
+}
+
+.titulo:hover {
+  background-color: var(--boton-hover);
+  border: 2px solid var(--card-boton-borde);
+}
+
+.button_ver:hover {
+  background-color: var(--boton-hover);
+  border: 2px solid var(--card-boton-borde);
+}
+
+
+.tags__container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1.3rem 1rem 0.5rem 1rem;
+  gap: 0.3rem;
+}
+
+.tags__stack {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-right: 1rem;
+  font-family: var(--font-roboto-mono);
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+.tag {
+  font-family: var(--font-roboto-mono);
+  font-weight: 200;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  border: 1px dashed var(--card-tag-borde);
+  padding: 0.2rem 0.5rem;
+}
+
+
+
+@media only screen and (max-width: 670px) {
+  .card__container {
+    max-width: 500px;
+  }
+}
