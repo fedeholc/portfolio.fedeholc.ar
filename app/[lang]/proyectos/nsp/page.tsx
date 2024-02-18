@@ -44,11 +44,16 @@ export default async function ProyectoNSP({
         <li>{dictionary.proyectos.nsp11[lang]}</li>
         <li>
           {dictionary.proyectos.nsp12a[lang]}{" "}
-          <Link href="https://btcd.fedeholc.ar" target="_blank">
+          <Link
+            className={proyectos.decorarLink}
+            href="https://btcd.fedeholc.ar"
+            target="_blank"
+          >
             btcd.fedeholc.ar
           </Link>
           {" ("}
           <Link
+            className={proyectos.decorarLink}
             href="https://github.com/fedeholc/btcd.fedeholc.ar"
             target="_blank"
           >

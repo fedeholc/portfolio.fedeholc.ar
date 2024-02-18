@@ -29,10 +29,14 @@ export default function Proyectos({
   );
 }
 
-function ProyectosConLinks({ lang }: { lang: Locale }) {
+async function ProyectosConLinks({ lang }: { lang: Locale }) {
+  const dictionary = await getDictionary();
+
   return (
     <div className={proyectos.proyecto}>
-      <div className={proyectos.header}>PROYECTOS</div>
+      <div className={proyectos.header}>
+        {dictionary.proyectos.proyectos[lang]}
+      </div>
 
       <div className={proyectos.divider}>
         <Image src={herb} alt="herb emoji" width={26} quality={100} />
@@ -45,13 +49,17 @@ function ProyectosConLinks({ lang }: { lang: Locale }) {
   );
 }
 
-function ProyectosTodos({ lang }: { lang: Locale }) {
+async function ProyectosTodos({ lang }: { lang: Locale }) {
+  const dictionary = await getDictionary();
+
   return (
     <>
       <a id="inicio"></a>
       <GoToTop />
       <div className={proyectos.proyecto}>
-        <div className={proyectos.header}>PROYECTOS</div>
+        <div className={proyectos.header}>
+          {dictionary.proyectos.proyectos[lang]}
+        </div>
 
         <div className={proyectos.divider}>
           <Image src={herb} alt="herb emoji" width={26} quality={100} />

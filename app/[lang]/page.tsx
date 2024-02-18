@@ -61,7 +61,7 @@ export default async function IndexPage({
 
   let p2 = (
     <p>
-      De chico amaba jugar al <span className="emoji">👾</span> space invaders
+      De chico amaba jugar al <span className="emoji">👾</span> space invaders{" "}
       <span className="emoji">👾</span> en la IBM PC/XT de mi papá, y di mis
       primeros pasos en programación con Logo&nbsp;
       <span className="emoji">🐢</span>. Durante mi último año de escuela
