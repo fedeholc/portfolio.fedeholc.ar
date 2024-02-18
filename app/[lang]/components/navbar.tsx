@@ -23,7 +23,10 @@ export default async function NavBar({ lang }: { lang: Locale }) {
         <div className={navbar.toolbar_item_inicio}>
           <Link href="/">
             <span className={navbar.emoji__left}>⚡️</span>
-            <span title="Vuelve a la página de inicio" className="inicio-link">
+            <span
+              title={dictionary.navbar.inicioTitle[lang]}
+              className="inicio-link"
+            >
               {dictionary.navbar.inicio[lang]}
             </span>
           </Link>
@@ -32,7 +35,7 @@ export default async function NavBar({ lang }: { lang: Locale }) {
       <div className={navbar.container__right}>
         <div className={navbar.toolbar_item}>
           <Link
-            title="Enlace al perfil de Github"
+            title={dictionary.navbar.githubTitle[lang]}
             href="https://github.com/fedeholc"
             target="_blank"
           >
@@ -47,7 +50,7 @@ export default async function NavBar({ lang }: { lang: Locale }) {
         </div>
         <div className={navbar.toolbar_item}>
           <Link
-            title="Enlace al perfil de LinkedIn"
+            title={dictionary.navbar.linkedinTitle[lang]}
             href="https://www.linkedin.com/in/federicoholc/"
             target="_blank"
           >
@@ -62,7 +65,7 @@ export default async function NavBar({ lang }: { lang: Locale }) {
         </div>
         <div className={navbar.toolbar_item}>
           <Link
-            title="Enlace para enviar un mail a federicoholc@gmail.com"
+            title={dictionary.navbar.emailTitle[lang]}
             href="mailto:federicoholc@gmail.com"
             target="_blank"
           >
@@ -77,7 +80,7 @@ export default async function NavBar({ lang }: { lang: Locale }) {
         </div>
         <div className={navbar.toolbar_item}>
           <Link
-            title="Enlace al perfil de Instagram"
+            title={dictionary.navbar.instagramTitle[lang]}
             href="https://www.instagram.com/fedeholc"
             target="_blank"
           >
@@ -94,12 +97,15 @@ export default async function NavBar({ lang }: { lang: Locale }) {
           {/*        <div>
             <button onClick={() => router.push("/" + lang + "/cv")}>CV</button>
           </div> */}
-          <Link title="Enlace a la página de CV" href="/cv">
+          <Link title={dictionary.navbar.cvTitle[lang]} href="/cv">
             {dictionary.navbar.cv[lang]}
           </Link>
         </div>
         <div className={navbar.toolbar_item_text}>
-          <Link title="Enlace a la página de proyectos" href="/proyectos">
+          <Link
+            title={dictionary.navbar.proyectosTitle[lang]}
+            href="/proyectos"
+          >
             {dictionary.navbar.proyectos[lang]}
           </Link>
           {/*    <button onClick={() => router.push("/" + lang + "/proyectos")}>
@@ -108,7 +114,7 @@ export default async function NavBar({ lang }: { lang: Locale }) {
         </div>
         <div className={navbar.toolbar_item_text}>
           <Link
-            title="Enlace al blog NuncaSupeProgramar"
+            title={dictionary.navbar.blogTitle[lang]}
             target="_blank"
             href="https://nsp.fedeholc.ar"
           >
@@ -116,16 +122,10 @@ export default async function NavBar({ lang }: { lang: Locale }) {
           </Link>
         </div>
         <div className={navbar.toolbar_item}>
-          <Theme></Theme>
+          <Theme buttonTitle={dictionary.navbar.themeTitle[lang]}></Theme>
         </div>
         <div className={navbar.toolbar_item_text}>
-          <Link
-            title="Enlace al blog NuncaSupeProgramar"
-            target="_blank"
-            href="https://nsp.fedeholc.ar"
-          ></Link>
           <LangSwitcher lang={lang}></LangSwitcher>
-          {/*    <Link href={`/proyectos`}>Proyectos</Link> */}
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ import brightIcon from "@public/brightness-up.png";
 import navbar from "./components/navbar.module.css";
 import "@app/globals.css";
 
-export default function Theme() {
+export default function Theme({ buttonTitle }: { buttonTitle: string }) {
   const [theme, setTheme] = useState("light");
   const handleChangeTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
@@ -22,7 +22,7 @@ export default function Theme() {
   return (
     <div>
       <button
-        title="Cambiar entre Modo Claro / Modo Oscuro"
+        title={buttonTitle}
         className={navbar.theme__toggler}
         onClick={handleChangeTheme}
       >

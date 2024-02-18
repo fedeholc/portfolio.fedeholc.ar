@@ -2,7 +2,34 @@
   "navbar": {
     "cv": { "es": "CV", "en": "Resume" },
     "proyectos": { "es": "Proyectos", "en": "Projects" },
-    "inicio": { "es": "inicio", "en": "home" }
+    "inicio": { "es": "inicio", "en": "home" },
+    "inicioTitle": { "es": "Volver al inicio", "en": "Back to home" },
+    "githubTitle": {
+      "es": "Enlace a mi perfil de GitHub",
+      "en": "Link to my GitHub profile"
+    },
+    "linkedinTitle": {
+      "es": "Enlace a mi perfil de LinkedIn",
+      "en": "Link to my LinkedIn profile"
+    },
+    "emailTitle": { "es": "Escribirme un email", "en": "Write me an email" },
+    "instagramTitle": {
+      "es": "Enlace a mi perfil de Instagram",
+      "en": "Link to my Instagram profile"
+    },
+    "cvTitle": {
+      "es": "Enlace a la página de mi CV",
+      "en": "Link to my resume page"
+    },
+    "proyectosTitle": {
+      "es": "Enlace a la página de mis proyectos",
+      "en": "Link to my projects page"
+    },
+    "blogTitle": { "es": "Enlace a mi blog", "en": "Link to my blog" },
+    "themeTitle": {
+      "es": "Cambiar entre modo claro y oscuro",
+      "en": "Switch between light and dark mode"
+    }
   },
   "cardproyecto": { "es": "Ver proyecto", "en": "View project" },
   "intro": {
