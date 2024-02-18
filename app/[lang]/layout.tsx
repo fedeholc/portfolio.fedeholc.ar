@@ -35,7 +35,7 @@ export const metadata = {
   title: "Federico Holc",
   description: "Sitio web de Federico Holc",
   icons: {
-    icon: "/fedeico.jpg",
+    icon: "/favicon.ico",
   },
 };
 
@@ -55,6 +55,7 @@ export default function Root({
       lang={params.lang}
       className={`${montserrat.variable} ${recursive.variable}  ${robotoMono.variable}  `}
     >
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className="background">
         <main className="layout__grid">
           <NavBar lang={params.lang}></NavBar>

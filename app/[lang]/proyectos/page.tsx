@@ -13,6 +13,7 @@ import ProyectoTV from "./tv/page";
 import ff from "@app/[lang]/ff";
 import GoToTop from "@app/[lang]/components/goToTop";
 import { type Locale } from "@app/i18n-config";
+import { getDictionary } from "@app/get-dictionary";
 
 /*         👾🌿🍁🪐🌟🛠️💘🕸️🚲️🎼⭐
  */
