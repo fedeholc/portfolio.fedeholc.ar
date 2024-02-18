@@ -212,7 +212,7 @@ export default async function IndexPage({
             ,&nbsp;
           </span>
           <span>
-            <span>leer&nbsp;</span>
+            <span>{dictionary.intro.leer[lang]}&nbsp;</span>
             <button className="link_button">
               <div>
                 <Image
