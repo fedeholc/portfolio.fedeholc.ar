@@ -33,6 +33,29 @@ export default async function NavBar({ lang }: { lang: Locale }) {
         </div>
       </div>
       <div className={navbar.container__right}>
+        <div className={navbar.toolbar_item_text}>
+          <Link title={dictionary.navbar.cvTitle[lang]} href="/cv">
+            {dictionary.navbar.cv[lang]}
+          </Link>
+        </div>
+        <div className={navbar.toolbar_item_text}>
+          <Link
+            title={dictionary.navbar.proyectosTitle[lang]}
+            href="/proyectos"
+          >
+            {dictionary.navbar.proyectos[lang]}
+          </Link>
+        </div>
+        <div className={navbar.toolbar_item_text}>
+          <Link
+            title={dictionary.navbar.blogTitle[lang]}
+            target="_blank"
+            href="https://nsp.fedeholc.ar"
+          >
+            Blog
+          </Link>
+        </div>
+        <div className={navbar.divider}>|</div>
         <div className={navbar.toolbar_item}>
           <Link
             title={dictionary.navbar.githubTitle[lang]}
@@ -93,28 +116,7 @@ export default async function NavBar({ lang }: { lang: Locale }) {
             ></Image>
           </Link>
         </div>
-        <div className={navbar.toolbar_item_text}>
-          <Link title={dictionary.navbar.cvTitle[lang]} href="/cv">
-            {dictionary.navbar.cv[lang]}
-          </Link>
-        </div>
-        <div className={navbar.toolbar_item_text}>
-          <Link
-            title={dictionary.navbar.proyectosTitle[lang]}
-            href="/proyectos"
-          >
-            {dictionary.navbar.proyectos[lang]}
-          </Link>
-        </div>
-        <div className={navbar.toolbar_item_text}>
-          <Link
-            title={dictionary.navbar.blogTitle[lang]}
-            target="_blank"
-            href="https://nsp.fedeholc.ar"
-          >
-            Blog
-          </Link>
-        </div>
+        <div className={navbar.divider}>|</div>
         <div className={navbar.toolbar_item}>
           <Theme buttonTitle={dictionary.navbar.themeTitle[lang]}></Theme>
         </div>
