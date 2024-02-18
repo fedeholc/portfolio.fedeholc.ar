@@ -55,7 +55,8 @@ export default function Root({
       lang={params.lang}
       className={`${montserrat.variable} ${recursive.variable}  ${robotoMono.variable}  `}
     >
-      <link rel="icon" href="/favicon.ico" sizes="any" />
+      {/*       <link rel="icon" href="/favicon.ico" sizes="any" />
+       */}{" "}
       <body className="background">
         <main className="layout__grid">
           <NavBar lang={params.lang}></NavBar>
