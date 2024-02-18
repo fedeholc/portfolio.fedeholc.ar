@@ -1,5 +1,5 @@
-//import { Analytics } from "@vercel/analytics/react";
-//import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 //styles
 import "@app/globals.css";
@@ -63,8 +63,8 @@ export default function Root({
           <article className="main_article">{children}</article>
           <Footer></Footer>
         </main>
-        {/*  <Analytics />
-        <SpeedInsights /> */}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
