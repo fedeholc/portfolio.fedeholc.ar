@@ -44,16 +44,22 @@ export const metadata = {
     siteName: "Federico Holc",
     images: [
       {
-        url: "/public/opengraph-image.jpeg",
-        width: 800,
-        height: 600,
-        alt: "My custom alt1",
+        url: "/opengraph-image.jpeg",
+        alt: "Federico Holc - Portfolio website",
+      },
+      {
+        url: "/public/opengraph-image.jpg",
+        alt: "Federico Holc - Portfolio website",
       },
       {
         url: "/opengraph-image.jpg",
-        width: 1800,
-        height: 1600,
-        alt: "My custom alt2",
+
+        alt: "Federico Holc - Portfolio web",
+      },
+      {
+        url: "/es/opengraph-image.jpg",
+
+        alt: "Federico Holc - Portfolio web",
       },
     ],
     locale: "en_US",
