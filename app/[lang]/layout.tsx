@@ -11,6 +11,7 @@ import NavBar from "./components/navbar";
 import Footer from "./components/footer";
 import { i18n, type Locale } from "@app/i18n-config";
 
+import icon from "@public/favicon.ico";
 import og from "@public/opengraph-image.jpeg";
 
 const robotoMono = Roboto_Mono({
@@ -37,7 +38,7 @@ export const metadata = {
   title: "Federico Holc - Portfolio web",
   description: "Federico Holc - Portfolio web",
   icons: {
-    icon: "/favicon.ico",
+    icon: icon.src,
   },
   openGraph: {
     title: "Federico Holc",
