@@ -33,13 +33,13 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: "Federico Holc",
-  description: "Sitio web de Federico Holc",
+  description: "Portfolio web de Federico Holc",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
     title: "Federico Holc",
-    description: "Sitio web de Federico Holc",
+    description: "Portfolio web de Federico Holc",
     url: "portfolio.fedeholc.ar",
     siteName: "Federico Holc",
     images: [
