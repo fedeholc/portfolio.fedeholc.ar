@@ -50,7 +50,7 @@ export const metadata = {
         alt: "My custom alt1",
       },
       {
-        url: "/public/opengraph-image.jpeg",
+        url: "/opengraph-image.jpg",
         width: 1800,
         height: 1600,
         alt: "My custom alt2",
