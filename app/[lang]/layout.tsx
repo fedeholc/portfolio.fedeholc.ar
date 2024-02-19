@@ -34,7 +34,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Federico Holc",
+  title: "Federico Holc - Portfolio web",
   description: "Portfolio web de Federico Holc",
   icons: {
     icon: "/favicon.ico",
@@ -46,26 +46,7 @@ export const metadata = {
     siteName: "Federico Holc",
     images: [
       {
-        url: "/opengraph-image.jpeg",
-        alt: "Federico Holc - Portfolio website",
-      },
-      {
-        url: "/public/opengraph-image.jpg",
-        alt: "Federico Holc - Portfolio website",
-      },
-      {
-        url: "/opengraph-image.jpg",
-
-        alt: "Federico Holc - Portfolio web",
-      },
-      {
-        url: "/es/opengraph-image.jpg",
-
-        alt: "Federico Holc - Portfolio web",
-      },
-      {
         url: og.src,
-
         alt: "Federico Holc - Portfolio web",
       },
     ],

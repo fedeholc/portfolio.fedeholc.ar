@@ -16,14 +16,6 @@ import { type Locale } from "@app/i18n-config";
 import { getDictionary } from "@app/get-dictionary";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Federico Holc - CV",
-  description: "Sitio web de Federico Holc - CV",
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
-
 /*         👾🌿🍁🪐🌟🛠️💘🕸️🚲️🎼⭐
  */
 export default function Proyectos({
