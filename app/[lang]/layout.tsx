@@ -51,6 +51,12 @@ export const metadata = {
         height: 630,
         alt: "Federico Holc - Portfolio web",
       },
+      {
+        url: og.src,
+        width: 630,
+        height: 630,
+        alt: "Federico Holc - Portfolio web",
+      },
     ],
 
     type: "website",
