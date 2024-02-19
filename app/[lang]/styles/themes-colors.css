@@ -9,6 +9,7 @@
   /*antes gris-oscuro*/
   --gris-claro: hsl(0, 0%, 80%);
   --gris20: hsl(0, 0%, 20%);
+  --gris15: hsl(0, 0%, 15%);
   --gris30: hsl(0, 0%, 30%);
   --fucsia1: hsl(323, 100%, 39%);
 
@@ -29,6 +30,7 @@ body[data-theme="light"] {
   --main-area-border: var(--gris-claro);
   --link_button-borde: var(--casi-negro);
   --boton-hover: var(--casi-blanco90);
+  --boton-text-hover: var(--casi-negro);
   --footer-borde: var(--gris40);
 
   --invert-icon: 0;
@@ -66,7 +68,8 @@ body[data-theme="dark"] {
 
   --main-area-border: var(--gris20);
   --link_button-borde: var(--casi-blanco65);
-  --boton-hover: var(--gris20);
+  --boton-text-hover: var(--casi-blanco);
+  --boton-hover: var(--gris15);
 
   --footer-borde: var(--gris40);
   --invert-icon: 80%;
