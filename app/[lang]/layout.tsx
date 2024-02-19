@@ -11,7 +11,7 @@ import NavBar from "./components/navbar";
 import Footer from "./components/footer";
 import { i18n, type Locale } from "@app/i18n-config";
 
-import og from "@public/opengraph-image.jpg";
+import og from "@public/opengraph-image.jpeg";
 
 const robotoMono = Roboto_Mono({
   weight: ["400", "500", "600", "700"],
@@ -47,6 +47,8 @@ export const metadata = {
     images: [
       {
         url: og.src,
+        width: 630,
+        height: 630,
         alt: "Federico Holc - Portfolio web",
       },
     ],
