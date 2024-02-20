@@ -62,7 +62,7 @@ export default async function CV({
               <li>WebExtension API</li>
               <li>Node.js / Express</li>
               <li>Git / GitHub</li>
-              <li>Responsive web design / Mobile-First</li>
+              <li>Responsive web design</li>
             </ul>
           </section>
 
