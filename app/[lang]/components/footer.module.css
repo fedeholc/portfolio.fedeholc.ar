@@ -16,6 +16,13 @@
   filter: grayscale(1) invert(var(--invert-emoji));
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+    margin-bottom: 0.5rem;
+
+  }
+}
+
 /*** media queries para imprimir ***/
 @media print {
 
