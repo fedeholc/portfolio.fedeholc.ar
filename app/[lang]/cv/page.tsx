@@ -138,18 +138,10 @@ export default async function CV({
           <section>
             <h3>{dictionary.cv.experiencias1[lang]}</h3>
             <p>
-              <strong>{dictionary.cv.experiencias2a[lang]}</strong>
+              <strong>{dictionary.cv.experiencias5a[lang]}</strong>
             </p>
             <ul>
-              <li>{dictionary.cv.experiencias2b[lang]}</li>
-              <li>{dictionary.cv.experiencias2c[lang]}</li>
-            </ul>
-            <p>
-              <strong>{dictionary.cv.experiencias3a[lang]}</strong>
-            </p>
-            <ul>
-              <li>{dictionary.cv.experiencias3b[lang]}</li>
-              <li>{dictionary.cv.experiencias3c[lang]}</li>
+              <li>{dictionary.cv.experiencias5b[lang]}</li>
             </ul>
             <p>
               <strong>{dictionary.cv.experiencias4a[lang]}</strong>
@@ -159,10 +151,18 @@ export default async function CV({
               <li>{dictionary.cv.experiencias4c[lang]}</li>
             </ul>
             <p>
-              <strong>{dictionary.cv.experiencias5a[lang]}</strong>
+              <strong>{dictionary.cv.experiencias3a[lang]}</strong>
             </p>
             <ul>
-              <li>{dictionary.cv.experiencias5b[lang]}</li>
+              <li>{dictionary.cv.experiencias3b[lang]}</li>
+              <li>{dictionary.cv.experiencias3c[lang]}</li>
+            </ul>
+            <p>
+              <strong>{dictionary.cv.experiencias2a[lang]}</strong>
+            </p>
+            <ul>
+              <li>{dictionary.cv.experiencias2b[lang]}</li>
+              <li>{dictionary.cv.experiencias2c[lang]}</li>
             </ul>
           </section>
         </div>
