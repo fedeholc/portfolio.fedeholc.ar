@@ -26,8 +26,13 @@ export default async function ProyectoANOTA({
       <ul>
         <li>React / JavaScript</li>
         <li>HTML / CSS</li>
-        <li>Node.js / Express</li>
-        <li>MySQL</li>
+        <li>
+          <del>Node.js / Express</del> &#x2794; Next.js
+        </li>
+        <li>
+          <del>MySQL</del> &#x2794; SQLite (Turso)
+        </li>
+        <li>Supabase Auth</li>
         <li>WebExtension API</li>
         <li>JSDoc</li>
       </ul>
@@ -39,7 +44,7 @@ export default async function ProyectoANOTA({
     },
     linkCodeHref: {
       front: `https://github.com/fedeholc/anota-front-react`,
-      back: `https://github.com/fedeholc/anota-back-express`,
+      back: `https://github.com/fedeholc/anota-back-next`,
       ext: `https://github.com/fedeholc/anota-highlighter`,
     },
     linkWebText: ``,
@@ -117,6 +122,18 @@ export default async function ProyectoANOTA({
                 href={TEXTO.linkCodeHref.ext}
               >
                 {TEXTO.linkCodeText.ext}
+              </Link>
+              &nbsp;
+              <Image src={externalLinkIcon} alt="external link icon" />
+            </div>
+            <h3>live demo</h3>
+            <div className={proyectos.link_icon}>
+              <Link
+                className={proyectos.underline}
+                target="_blank"
+                href="https://anota-demo.vercel.app/"
+              >
+                anota-demo.vercel.app
               </Link>
               &nbsp;
               <Image src={externalLinkIcon} alt="external link icon" />

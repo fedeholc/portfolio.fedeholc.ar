@@ -35,10 +35,11 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
           "HTML",
           "CSS",
           "React",
-          "MySQL",
-          "Node / Express",
-          "JSDoc",
+          "NextJs",
+          "SQLite (Turso)",
           "WebExtension API",
+          "Supabase Auth",
+          "JSDoc",
         ]}
       />
 
