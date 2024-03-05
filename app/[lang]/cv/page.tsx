@@ -57,7 +57,7 @@ export default async function CV({
             <ul className={proyectos.columns2stack}>
               <li>HTML / CSS</li>
               <li>JavaScript / React / Next.js</li>
-              <li>MySQL / PostgreSQL</li>
+              <li>MySQL / SQLite</li>
               <li>JSDocs / TypeScript</li>
               <li>WebExtension API</li>
               <li>Node.js / Express</li>
