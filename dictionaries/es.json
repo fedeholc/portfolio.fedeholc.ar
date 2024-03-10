@@ -292,6 +292,79 @@
       "es": "PROYECTOS",
       "en": "PROJECTS"
     },
+    "fotoyop01": {
+      "es": "fotoYOP (Work In Progress)",
+      "en": "fotoYOP (Work In Progress)"
+    },
+    "fotoyop02": {
+      "es": "FotoYOP es una aplicación (en la que me encuentro trabajando actualmente) que permite transformar imágenes de manera sencilla y rápida. Surge de la necesidad de resolver dos problemas. Por un lado, realizar cierto tipo de operaciones específicas sobre imágenes (por ejemplo, para publicarlas en redes sociales), y por otro, hacerlo de manera rápida y sencilla, sin necesidad de registrarse, ni subir archivos a un servidor, simplemente arrastrar y soltar, editar y descargar. Y mejor aún si es en una PWA que se puede instalar también en el teléfono y usar offline.",
+      "en": "FotoYOP is an application (that I am currently working on) that allows you to transform images in a simple and fast way. It arises from the need to solve two problems. On the one hand, perform certain specific operations on images (for example, to publish them on social networks), and on the other, do it quickly and easily, without the need to register, or upload files to a server, simply drag and drop, edit and download. And even better if it is in a PWA that can also be installed on the phone and used offline."
+    },
+    "fotoyop03": {
+      "es": "¿Qué tiene de bueno?",
+      "en": "What's good about it?"
+    },
+    "fotoyop04": {
+      "es": "No requiere registrarse. A futuro pienso en una opción de registro simplemente para poder guardar presets de las operaciones a realizar.",
+      "en": "No registration required. In the future I think of an option to register simply to be able to save presets of the operations to be performed."
+    },
+    "fotoyop05": {
+      "es": "No sube archivos a un servidor. Todo se hace en el navegador.",
+      "en": "It does not upload files to a server. Everything is done in the browser."
+    },
+    "fotoyop06": {
+      "es": "Es una PWA, por lo que se puede instalar tanto en una pc como en el teléfono y usar offline.",
+      "en": "It is a PWA, so it can be installed on both a PC and a phone and used offline."
+    },
+    "fotoyop07": {
+      "es": "Se pueden definir con precisión algunas de las transformaciones. Por ejemplo, al agregarse un borde a la imagen se puede definir el color utilizando el código hexadecimal, y el tamaño del borde establecerlo en píxeles.",
+      "en": "Some of the transformations can be defined with precision. For example, when adding a border to the image, the color can be defined using the hexadecimal code, and the size of the border can be set in pixels."
+    },
+    "fotoyop08": {
+      "es": "Se mantiene la calidad de las imagenes a la hora de transformarlas y guardarlas.",
+      "en": "The quality of the images is maintained when transforming and saving them."
+    },
+    "fotoyop09": {
+      "es": "Sobre el stack",
+      "en": "About the stack"
+    },
+    "fotoyop10": {
+      "es": "Comencé a realizar las primeras pruebas y a aprender sobre la Canvas API en vanilla JavaScript, pero a medida que fue creciendo el código y la idea de realizar una SPA decidí continuarlo en Next, ya que también me interesaba la idea de que fuera una PWA y eso podía hacerse de forma relativamente sencilla utilizando la librería Serwist disponible para Next.",
+      "en": "I started to carry out the first tests and to learn about the Canvas API in vanilla JavaScript, but as the code and the idea of making a SPA grew, I decided to continue it in Next, since I was also interested in the idea of making it a PWA and that could be done relatively easily using the Serwist library available for Next."
+    },
+    "fotoyop11": {
+      "es": "Aprendizajes y problemas en el camino",
+      "en": "Learnings and problems along the way"
+    },
+    "fotoyop12": {
+      "es": "Algo que me motiva de estar llevando adelante este proyecto es que he ido aprendiendo distintas cosas en el camino. Algunas sencillas como realizar un drag and drop para cargar archivos en el navegador, y otras más complejas y que abren un montón de posibilidades para seguir explorando como son el uso de la Canvas API, y la creación de PWAs.",
+      "en": "Something that motivates me to be carrying out this project is that I have been learning different things along the way. Some simple ones like making a drag and drop to load files in the browser, and others more complex and that open up a lot of possibilities to continue exploring such as the use of the Canvas API, and the creation of PWAs."
+    },
+    "fotoyop13": {
+      "es": "El uso de una librería como serwist me permitió convertir la aplicación en una PWA de manera sencilla, pero para poder aprovechar realmente todo su potencial de cara a la experiencia del usuario me queda por aprender mucho más sobre el uso de Service Workers, el manejo de cache, etc.",
+      "en": "The use of a library like serwist allowed me to easily convert the application into a PWA, but in order to really take advantage of all its potential in terms of the user experience, I have a lot to learn about the use of Service Workers, cache management, etc."
+    },
+    "fotoyop14": {
+      "es": "Trabajar con la Canvas API también requiere de un tiempo de aprendizaje para ir resolviendo los problemas que se presentan, por ejemplo a la hora de trabajar con imágenes de distintos tamaños y formatos, realizar transformaciones, conversiones, etc., y también para poder optimizar el rendimiento de la aplicación. He podido solucionar algunos problemas de rendimiento, pero hay otros que aún no, sobre todo al trabajar con imágenes de gran tamaño. La estrategia que he utilizado ahora es la de trabajar con imágenes de un tamaño acotado a la vista del usuario pero registrar todas las transformaciones necesarias para repetirlas sobre la imagen original cuando se la va a descargar, de modo de resguardar la calidad original. Me gustaría seguir profundizando en esto al menos hasta poder encontrar el límite de lo que puede ofrecer la Canvas API, qué tal vez no sea la herramienta más adecuada para ciertas operaciones, y haya que recurrir a otras herramientas o librerías.",
+      "en": "Working with the Canvas API also requires a learning time to solve the problems that arise, for example when working with images of different sizes and formats, making transformations, conversions, etc., and also to be able to optimize the performance of the application. I have been able to solve some performance problems, but there are others that I have not yet, especially when working with large images. The strategy I have used now is to work with images of a size limited to the user's view but record all the necessary transformations to repeat them on the original image when it is going to be downloaded, in order to safeguard the original quality. I would like to continue delving into this at least until I can find the limit of what the Canvas API can offer, which may not be the most appropriate tool for certain operations, and other tools or libraries may have to be used."
+    },
+    "fotoyop15": {
+      "es": "Lograr un diseño responsive para que la aplicación se pueda utilizar tanto en un teléfono cómo en una pc también tuvo sus complicaciones, principalmente a la hora de lograr tener siempre la imagen a la vista del usuario, y adaptar el tamaño del canvas a la pantalla, dependiendo de si la imagen era horizontal o vertical y del tamaño de la pantalla, sobre todo si se modificaba el tamaño de la ventana del navegador. Para ello tuve que utilizar JavaScript para ir calculando los tamaños según cómo se modificaba la pantalla, o según cómo se modificaba el tamaño de la imagén, por ejemlplo al agregarle un borde.",
+      "en": "Achieving a responsive design so that the application can be used on both a phone and a PC also had its complications, mainly when it came to always having the image in view of the user, and adapting the size of the canvas to the screen, depending on whether the image was horizontal or vertical and the size of the screen, especially if the size of the browser window was modified. For this I had to use JavaScript to calculate the sizes according to how the screen was modified, or according to how the size of the image was modified, for example when adding a border."
+    },
+    "fotoyop16": {
+      "es": "A pesar de que la aplicación recién está en una etapa inicial, tiene mucho código, y he tratado de ir refactorizándolo a medida que avanzaba, tratando de aplica lo que he ido aprendiendo en el último tiempo, con el objetivo de lograr que sea una aplicación que pueda ir creciendo y a la cual se le puedan ir agregando nuevas funcionalidades.",
+      "en": "Although the application is only in an initial stage, it has a lot of code, and I have tried to refactor it as I progressed, trying to apply what I have been learning lately, with the aim of making it an application that can grow and to which new functionalities can be added."
+    },
+    "fotoyop17": {
+      "es": "Muestra general de las funcionalidades de la aplicación.",
+      "en": "General display of the application's features."
+    },
+    "fotoyop18": {
+      "es": "Muestra de la aplicación en una ventana reducida como podría ser la de un teléfono.",
+      "en": "Display of the application in a reduced window as it could be on a phone."
+    },
+
     "anota01": {
       "es": "ANOTÁ! (Another Note Taking App) & Highlighter",
       "en": "ANOTÁ! (Another Note Taking App) & Highlighter"
