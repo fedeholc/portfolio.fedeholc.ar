@@ -121,17 +121,21 @@ export default async function CV({
                 <strong>{dictionary.cv.cursos3a[lang]}</strong>{" "}
                 {dictionary.cv.cursos3b[lang]}
               </li>
-              <li>
+              {/*        <li>
                 <strong>{dictionary.cv.cursos4a[lang]}</strong>{" "}
                 {dictionary.cv.cursos4b[lang]}
               </li>
               <li>
                 <strong>{dictionary.cv.cursos5a[lang]}</strong>{" "}
                 {dictionary.cv.cursos5b[lang]}
-              </li>
-              <li>
+              </li> */}
+              {/*  <li>
                 <strong>{dictionary.cv.cursos6a[lang]}</strong>{" "}
                 {dictionary.cv.cursos6b[lang]}
+              </li> */}
+              <li>
+                <strong>{dictionary.cv.cursos7a[lang]}</strong>
+                {dictionary.cv.cursos7b[lang]}
               </li>
             </ul>
           </section>

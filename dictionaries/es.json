@@ -241,6 +241,15 @@
       "es": "freeCodeCamp.org, 2022.",
       "en": "freeCodeCamp.org, 2022."
     },
+    "cursos7a": {
+      "es": "Responsive Web Design / JavaScript Algorithms and Data Structures / Back End Development and APIs,",
+      "en": "Responsive Web Design / JavaScript Algorithms and Data Structures / Back End Development and APIs,"
+    },
+    "cursos7b": {
+      "es": "freeCodeCamp.org, 2022.",
+      "en": "freeCodeCamp.org, 2022."
+    },
+
     "experiencias1": { "es": "Experiencia Laboral", "en": "Work Experience" },
     "experiencias2a": {
       "es": "Programador. CompuHotel S.A. 1998 – 2002",
