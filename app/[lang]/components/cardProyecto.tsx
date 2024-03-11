@@ -12,18 +12,11 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
     <>
       <CardProyecto
         lang={lang}
-        titulo={dictionary.cv.proyectos3a[lang]}
-        buttonLink="/proyectos/#proyectoNSP"
-        subtitulo={dictionary.cv.proyectos3b[lang]}
-        descripcion={dictionary.cv.proyectos4[lang]}
-        stack={[
-          "HTML",
-          "CSS",
-          "NextJs / React",
-          "Markdown",
-          "Github",
-          "Vercel",
-        ]}
+        titulo="fotoYOP 🎨"
+        buttonLink="/proyectos/#proyectoFotoyop"
+        subtitulo={dictionary.cv.proyectos12[lang]}
+        descripcion={dictionary.cv.proyectos11[lang]}
+        stack={["HTML", "CSS", "React/Next", "TypeScript", "PWA", "Canvas API"]}
       />
       <CardProyecto
         lang={lang}
@@ -42,6 +35,21 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
           "JSDoc",
         ]}
       />
+      <CardProyecto
+        lang={lang}
+        titulo={dictionary.cv.proyectos3a[lang]}
+        buttonLink="/proyectos/#proyectoNSP"
+        subtitulo={dictionary.cv.proyectos3b[lang]}
+        descripcion={dictionary.cv.proyectos4[lang]}
+        stack={[
+          "HTML",
+          "CSS",
+          "NextJs / React",
+          "Markdown",
+          "Github",
+          "Vercel",
+        ]}
+      />
 
       <CardProyecto
         lang={lang}
@@ -51,22 +59,22 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
         descripcion={dictionary.cv.proyectos6[lang]}
         stack={["HTML", "CSS", "JavaScript", "WebExtension API"]}
       />
-      <CardProyecto
+      {/*   <CardProyecto
         lang={lang}
         titulo="MyTvShows 📺"
         buttonLink="/proyectos/#proyectoTV"
         subtitulo=""
         descripcion={dictionary.cv.proyectos8[lang]}
         stack={["HTML", "Tailwind CSS", "React", "Firebase", "Supabase Auth"]}
-      />
-      <CardProyecto
+      /> */}
+      {/*   <CardProyecto
         lang={lang}
         titulo="👨‍💻 Argentina Programa "
         buttonLink="/proyectos/#proyectoAP"
         subtitulo={dictionary.cv.proyectos9a[lang]}
         descripcion={dictionary.cv.proyectos10[lang]}
         stack={["HTML", "Bootstrap", "Angular", "MySQL", "Java / Spring Boot"]}
-      />
+      /> */}
     </>
   );
 }

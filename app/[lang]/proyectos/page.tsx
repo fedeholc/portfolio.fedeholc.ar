@@ -8,6 +8,7 @@ import herb from "@public/herb.png";
 import ProyectoANOTA from "./anota/page";
 import ProyectoAP from "./ap/page";
 import ProyectoInsta from "./insta/page";
+import ProyectoFotoyop from "./fotoyop/page";
 import ProyectoNSP from "./nsp/page";
 import ProyectoTV from "./tv/page";
 import ff from "@app/[lang]/ff";
@@ -74,22 +75,25 @@ async function ProyectosTodos({ lang }: { lang: Locale }) {
           <Image src={herb} alt="herb emoji" width={26} quality={100} />
         </div>
       </div>
-      <div id="proyectoNSP">
-        <ProyectoNSP params={{ lang: lang }} />
+      <div id="proyectoFotoyop">
+        <ProyectoFotoyop params={{ lang: lang }} />
       </div>
       <div id="proyectoANOTA">
         <ProyectoANOTA params={{ lang: lang }} />
+      </div>
+      <div id="proyectoNSP">
+        <ProyectoNSP params={{ lang: lang }} />
       </div>
 
       <div id="proyectoInsta">
         <ProyectoInsta params={{ lang: lang }} />
       </div>
-      <div id="proyectoTV">
+      {/*      <div id="proyectoTV">
         <ProyectoTV params={{ lang: lang }} />
       </div>
       <div id="proyectoAP">
         <ProyectoAP params={{ lang: lang }} />
-      </div>
+      </div> */}
     </>
   );
 }

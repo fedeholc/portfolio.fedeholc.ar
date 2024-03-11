@@ -133,6 +133,14 @@
       "es": "Sitio web a modo de C.V. online que integra distintas funcionalidades. Además, me permitió reencontrarme felizmente con la programación. =)",
       "en": "Website as an online resume that integrates different functionalities. In addition, it allowed me to to meet again happily with programming =)"
     },
+    "proyectos11": {
+      "es": "Es una aplicación que permite transformar imágenes de manera sencilla y rápida, sin necesidad de registrarse ni de subir archivos a un servidor. Es también una PWA que se puede instalar en el teléfono y usar offline.",
+      "en": "It is an application that allows you to transform images in a simple and fast way, without the need to register or upload files to a server. It is also a PWA that can be installed on the phone and used offline."
+    },
+    "proyectos12": {
+      "es": "👩‍🏭 (Work In Progress) 🛠️",
+      "en": "👩‍🏭 (Work In Progress) 🛠️"
+    },
     "idiomas1": { "es": "Idiomas", "en": "Languages" },
     "idiomas2a": {
       "es": "Español: ",

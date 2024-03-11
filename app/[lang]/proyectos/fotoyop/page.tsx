@@ -25,8 +25,10 @@ export default async function ProyectoFotoyop({
     stack: (
       <ul>
         <li>HTML / CSS</li>
-        <li>Next / React / JavaScript</li>
+        <li>Next / React</li>
         <li>TypeScript</li>
+        <li>PWA</li>
+        <li>Canvas API</li>
       </ul>
     ),
     linkCodeText: `github/fedeholc`,
