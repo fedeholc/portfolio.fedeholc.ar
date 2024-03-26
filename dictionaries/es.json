@@ -342,8 +342,8 @@
       "en": "It is a PWA, so it can be installed on both a PC and a phone and used offline."
     },
     "fotoyop07": {
-      "es": "Se pueden definir con precisión algunas de las transformaciones. Por ejemplo, al agregarse un borde a la imagen se puede definir el color utilizando el código hexadecimal, y el tamaño del borde establecerlo en píxeles.",
-      "en": "Some of the transformations can be defined with precision. For example, when adding a border to the image, the color can be defined using the hexadecimal code, and the size of the border can be set in pixels."
+      "es": "Se pueden realizar transformaciones como agregarle un borde,cambiar las proporciones del lienzo, o convertir a blanco y negro. Algunas de ellas se pueden definir con precision: por ejemplo, al agregarse un borde a la imagen se puede establecer el color utilizando el código hexadecimal, y el tamaño del borde setearlo en píxeles.",
+      "en": "Transformations such as adding a border, changing the canvas proportions, or converting to black and white can be performed. Some of them can be defined precisely: for example, when adding a border to the image, the color can be set using the hexadecimal code, and the size of the border can be set in pixels."
     },
     "fotoyop08": {
       "es": "Se mantiene la calidad de las imagenes a la hora de transformarlas y guardarlas.",
@@ -378,8 +378,8 @@
       "en": "Achieving a responsive design so that the application can be used on both a phone and a PC also had its complications, mainly when it came to always having the image in view of the user, and adapting the size of the canvas to the screen, depending on whether the image was horizontal or vertical and the size of the screen, especially if the size of the browser window was modified. For this I had to use JavaScript to calculate the sizes according to how the screen was modified, or according to how the size of the image was modified, for example when adding a border."
     },
     "fotoyop16": {
-      "es": "A pesar de que la aplicación recién está en una etapa inicial, tiene mucho código, y he tratado de ir refactorizándolo a medida que avanzaba, tratando de aplicar lo que he ido aprendiendo en el último tiempo, con el objetivo de lograr que sea una aplicación que pueda ir creciendo y a la cual se le puedan ir agregando nuevas funcionalidades.",
-      "en": "Although the application is only in an initial stage, it has a lot of code, and I have tried to refactor it as I progressed, trying to apply what I have been learning lately, with the aim of making it an application that can grow and to which new functionalities can be added."
+      "es": "A pesar de que la aplicación está en una etapa inicial, tiene una buena cantidad de código, que he tratado de ir refactorizándolo a medida que avanzaba, tratando de aplicar lo que he ido aprendiendo en el último tiempo, con el objetivo de lograr que sea una aplicación que pueda ir creciendo y a la cual se le puedan ir agregando nuevas funcionalidades.",
+      "en": "Although the application is in an initial stage, it has a good amount of code, that I have tried to refactor it as I progressed, trying to apply what I have been learning lately, with the aim of making it an application that can grow and to which new functionalities can be added."
     },
     "fotoyop17": {
       "es": "Muestra general de las funcionalidades de la aplicación.",
