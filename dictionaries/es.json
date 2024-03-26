@@ -378,7 +378,7 @@
       "en": "Achieving a responsive design so that the application can be used on both a phone and a PC also had its complications, mainly when it came to always having the image in view of the user, and adapting the size of the canvas to the screen, depending on whether the image was horizontal or vertical and the size of the screen, especially if the size of the browser window was modified. For this I had to use JavaScript to calculate the sizes according to how the screen was modified, or according to how the size of the image was modified, for example when adding a border."
     },
     "fotoyop16": {
-      "es": "A pesar de que la aplicación recién está en una etapa inicial, tiene mucho código, y he tratado de ir refactorizándolo a medida que avanzaba, tratando de aplica lo que he ido aprendiendo en el último tiempo, con el objetivo de lograr que sea una aplicación que pueda ir creciendo y a la cual se le puedan ir agregando nuevas funcionalidades.",
+      "es": "A pesar de que la aplicación recién está en una etapa inicial, tiene mucho código, y he tratado de ir refactorizándolo a medida que avanzaba, tratando de aplicar lo que he ido aprendiendo en el último tiempo, con el objetivo de lograr que sea una aplicación que pueda ir creciendo y a la cual se le puedan ir agregando nuevas funcionalidades.",
       "en": "Although the application is only in an initial stage, it has a lot of code, and I have tried to refactor it as I progressed, trying to apply what I have been learning lately, with the aim of making it an application that can grow and to which new functionalities can be added."
     },
     "fotoyop17": {
