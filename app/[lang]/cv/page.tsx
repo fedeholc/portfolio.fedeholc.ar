@@ -56,13 +56,15 @@ export default async function CV({
             </p>
             <ul className={proyectos.columns2stack}>
               <li>HTML / CSS</li>
-              <li>JavaScript / React / Next.js</li>
               <li>MySQL / SQLite</li>
+              <li>JavaScript / React / Next.js</li>
               <li>JSDocs / TypeScript</li>
-              <li>WebExtension API</li>
+              {/*               <li>WebExtension API</li>
+               */}{" "}
+              <li>Testing (Vitest/Jest, Playwright)</li>
               <li>Node.js / Express</li>
-              <li>Git / GitHub</li>
               <li>Responsive web design</li>
+              <li>Git / GitHub</li>
             </ul>
           </section>
 
