@@ -30,7 +30,7 @@ export default async function ProyectoANOTA({
           <del>Node.js / Express</del> &#x2794; Next.js
         </li>
         <li>
-          <del>MySQL</del> &#x2794; SQLite (Turso)
+          <del>MySQL</del> &#x2794; SQLite
         </li>
         <li>Supabase Auth</li>
         <li>WebExtension API</li>

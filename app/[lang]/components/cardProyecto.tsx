@@ -29,7 +29,7 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
           "CSS",
           "React",
           "NextJs",
-          "SQLite (Turso)",
+          "SQLite",
           "WebExtension API",
           "Supabase Auth",
           "JSDoc",
