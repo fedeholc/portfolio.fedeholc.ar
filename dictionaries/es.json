@@ -447,8 +447,8 @@
       "en": "Since I was studying React, it was an opportunity to put into practice the use of hooks such as useContext and useReducer to manage the state of the application, as well as useRef to manipulate the DOM directly."
     },
     "anota15": {
-      "es": "Para el backend utilicé Node y Express por lo sencillo que resulta crear una API REST con endpoints, y que se conecta una base de datos. Implementé una en MySQL sin utilizar un ORM para aprender más sobre el funcionamiento de las bases de datos relacionales.",
-      "en": "For the backend I used Node and Express because of how easy it is to create a REST API with endpoints, and that connects to a database. I implemented one in MySQL without using an ORM to learn more about the operation of relational databases."
+      "es": "Para el backend utilicé Node y Express por lo sencillo que resulta crear una API REST con endpoints, y que se conecta una base de datos. Implementé una en MySQL sin utilizar un ORM para aprender más sobre el funcionamiento de las bases de datos relacionales. Actualización: debido a la imposibilidad de seguir alojando la base de datos en PlanetScale, aproveche para rehacer el backend utilizando Next.js y una base de datos SQLite.",
+      "en": "For the backend I used Node and Express because of how easy it is to create a REST API with endpoints, and that connects to a database. I implemented one in MySQL without using an ORM to learn more about the operation of relational databases. Update: due to the impossibility to continue hosting the database in PlanetScale, I took the opportunity to redo the backend using Next.js and a SQLite database."
     },
     "anota16": {
       "es": "Utilicé CSS modules por componentes, junto con la metodología BEM, con la intención de tener un código CSS claro y mantenible, separado de la lógica de la aplicación.",
