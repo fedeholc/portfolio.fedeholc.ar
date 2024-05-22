@@ -389,6 +389,14 @@
       "es": "Muestra de la aplicación en una ventana reducida como podría ser la de un teléfono.",
       "en": "Display of the application in a reduced window as it could be on a phone."
     },
+    "fotoyop19": {
+      "es": "Actualización en la versión v0.2: ahora es posible crear collages de dos o más imagenes.",
+      "en": "Update in version v0.2: now it is possible to create collages of two or more images."
+    },
+    "fotoyop20": {
+      "es": "Actualización v0.2: el incorporar la posibilidad de crear collages representó un gran desafío, no por la complejidad de las operaciones necesarias para crear el canvas con las imagenes, sino por el hecho de tener que refactorizar el código para poder incorporar una nueva característica que requiere de un proceso distinto por tratarse de múltiples imágenes. Esta nueva característica también llevó a tener que modificar la interfaz del usuario. Más allá del resultado que está a la vista me permitió aprender mucho sobre cómo organizar el código para que sea más fácil de mantener y de incorporar nuevas funcionalidades.",
+      "en": "Update v0.2: incorporating the possibility of creating collages represented a great challenge, not because of the complexity of the operations necessary to create the canvas with the images, but because of the fact of having to refactor the code to be able to incorporate a new feature that requires a different process because it involves multiple images. This new feature also led to having to modify the user interface. Beyond the result that is in sight, it allowed me to learn a lot about how to organize the code so that it is easier to maintain and incorporate new functionalities."
+    },
 
     "anota01": {
       "es": "ANOTÁ! (Another Note Taking App) & Highlighter",

@@ -41,6 +41,7 @@ export default async function ProyectoFotoyop({
         <li>{dictionary.proyectos.fotoyop06[lang]}</li>
         <li>{dictionary.proyectos.fotoyop07[lang]}</li>
         <li>{dictionary.proyectos.fotoyop08[lang]}</li>
+        <li>{dictionary.proyectos.fotoyop19[lang]}</li>
       </ul>
     ),
     subtitulo3: dictionary.proyectos.fotoyop09[lang],
@@ -56,7 +57,9 @@ export default async function ProyectoFotoyop({
         <li>{dictionary.proyectos.fotoyop13[lang]}</li>
         <li>{dictionary.proyectos.fotoyop14[lang]}</li>
         <li>{dictionary.proyectos.fotoyop15[lang]}</li>
-        <li>{dictionary.proyectos.fotoyop16[lang]}</li>
+        {/*         <li>{dictionary.proyectos.fotoyop16[lang]}</li>
+         */}{" "}
+        <li>{dictionary.proyectos.fotoyop20[lang]}</li>
       </ul>
     ),
   };
