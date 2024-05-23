@@ -6,7 +6,7 @@ import Image from "next/image";
 import externalLinkIcon from "@public/external-link.png";
 
 import herb from "@public/herb.png";
-import screenshot1 from "@public/proyecto-fotoyop/fotoyop1.webp";
+import screenshot1 from "@public/proyecto-fotoyop/fotoyop3.webp";
 import screenshot2 from "@public/proyecto-fotoyop/fotoyop2.webp";
 
 import { getDictionary } from "@app/get-dictionary";
