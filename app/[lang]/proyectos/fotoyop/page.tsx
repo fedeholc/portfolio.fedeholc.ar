@@ -141,7 +141,7 @@ export default async function ProyectoFotoyop({
               />
 
               <figcaption className={proyectos.screenshot__caption}>
-                {dictionary.proyectos.fotoyop17[lang]}
+                {dictionary.proyectos.fotoyop18[lang]}
               </figcaption>
             </figure>
           </div>
