@@ -95,20 +95,21 @@ export default async function CV({
                 {dictionary.cv.academia2b[lang]}
               </li>
               <li>
-                <strong>{dictionary.cv.academia3a[lang]}</strong>{" "}
-                {dictionary.cv.academia3b[lang]}
-              </li>
-              <li>
-                <strong>{dictionary.cv.academia4a[lang]}</strong>{" "}
-                {dictionary.cv.academia4b[lang]}
+                <strong>{dictionary.cv.academia6a[lang]}</strong>{" "}
+                {dictionary.cv.academia6b[lang]}
               </li>
               <li>
                 <strong>{dictionary.cv.academia5a[lang]}</strong>{" "}
                 {dictionary.cv.academia5b[lang]}
               </li>
+
               <li>
-                <strong>{dictionary.cv.academia6a[lang]}</strong>{" "}
-                {dictionary.cv.academia6b[lang]}
+                <strong>{dictionary.cv.academia4a[lang]}</strong>{" "}
+                {dictionary.cv.academia4b[lang]}
+              </li>
+              <li>
+                <strong>{dictionary.cv.academia3a[lang]}</strong>{" "}
+                {dictionary.cv.academia3b[lang]}
               </li>
             </ul>
           </section>
