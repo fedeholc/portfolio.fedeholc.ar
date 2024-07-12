@@ -31,7 +31,7 @@ export default async function ProyectoFotoyop2({
         <li>TypeScript / JSDoc</li>
         <li>Vitest / Playwright</li>
         <li>PWA</li>
-        <li>Canvas API / ffmpeg-js</li>
+        <li>Canvas API</li>
       </ul>
     ),
     linkCodeText1: `github/fedeholc/fotoyop`,
@@ -63,6 +63,13 @@ export default async function ProyectoFotoyop2({
         {/*         <li>{dictionary.proyectos.fotoyop16[lang]}</li>
          */}{" "}
         <li>{dictionary.proyectos.fotoyopv20[lang]}</li>
+      </ul>
+    ),
+    subtitulo5: dictionary.proyectos.fotoyopv21[lang],
+    texto5: (
+      <ul>
+        <li>{dictionary.proyectos.fotoyopv22[lang]}</li>
+        <li>{dictionary.proyectos.fotoyopv23[lang]}</li>
       </ul>
     ),
   };
@@ -191,6 +198,11 @@ export default async function ProyectoFotoyop2({
         <h3>{TEXTO.subtitulo4}</h3>
         <div className={proyectos.columns1}>
           <div>{TEXTO.texto4}</div>
+        </div>{" "}
+        <br />
+        <h3>{TEXTO.subtitulo5}</h3>
+        <div className={proyectos.columns1}>
+          <div>{TEXTO.texto5}</div>
         </div>
         {/* ***************************************** */}
       </div>

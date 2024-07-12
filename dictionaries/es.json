@@ -463,22 +463,33 @@
       "en": "Achieving a responsive design so that the application can be used on both a phone and a PC also had its complications, mainly when it came to always having the image in view of the user, and adapting the size of the canvas to the screen, depending on whether the image was horizontal or vertical and the size of the screen, especially if the size of the browser window was modified. For this I had to use JavaScript to calculate the sizes according to how the screen was modified, or according to how the size of the image was modified, for example when adding a border."
     },
     "fotoyopv16": {
-      "es": "A pesar de que la aplicación está en una etapa inicial, tiene una buena cantidad de código, que he tratado de ir refactorizándolo a medida que avanzaba, tratando de aplicar lo que he ido aprendiendo en el último tiempo, con el objetivo de lograr que sea una aplicación que pueda ir creciendo y a la cual se le puedan ir agregando nuevas funcionalidades.",
-      "en": "Although the application is in an initial stage, it has a good amount of code, that I have tried to refactor it as I progressed, trying to apply what I have been learning lately, with the aim of making it an application that can grow and to which new functionalities can be added."
+      "es": "La aplicación tiene una buena cantidad de código, que he tratado de ir refactorizando a medida que avanzaba, buscando aplicar lo que he ido aprendiendo en el último tiempo, con el objetivo de lograr que pueda ir creciendo y que se le puedan ir agregando nuevas funcionalidades.",
+      "en": "The application has a good amount of code, which I have tried to refactor as I progressed, seeking to apply what I have been learning in recent times, with the aim of ensuring that it can grow and that new ones can be added. functionalities."
     },
     "fotoyopv17": {
-      "es": "Muestra general de las funcionalidades de la aplicación.",
-      "en": "General display of the application's features."
+      "es": "FotoYOP: muestra general de las funcionalidades de la aplicación.",
+      "en": "FotoYOP: general display of the application's features."
     },
     "fotoyopv18": {
-      "es": "Muestra de la aplicación en una ventana reducida como podría ser la de un teléfono.",
-      "en": "Display of the application in a reduced window as it could be on a phone."
+      "es": "FotoYOP: muestra de la aplicación en una ventana reducida como podría ser la de un teléfono.",
+      "en": "FotoYOP: display of the application in a reduced window as it could be on a phone."
     },
     "fotoyopv20": {
       "es": "Actualización v0.2: el incorporar la posibilidad de crear collages representó un gran desafío, no por la complejidad de las operaciones necesarias para crear el canvas con las imagenes, sino por el hecho de tener que refactorizar el código para poder incorporar una nueva característica que requiere de un proceso distinto por tratarse de múltiples imágenes. Esta nueva característica también llevó a tener que modificar la interfaz del usuario. Más allá del resultado que está a la vista me permitió aprender mucho sobre cómo organizar el código para que sea más fácil de mantener y de incorporar nuevas funcionalidades.",
       "en": "Update v0.2: incorporating the possibility of creating collages represented a great challenge, not because of the complexity of the operations necessary to create the canvas with the images, but because of the fact of having to refactor the code to be able to incorporate a new feature that requires a different process because it involves multiple images. This new feature also led to having to modify the user interface. Beyond the result that is in sight, it allowed me to learn a lot about how to organize the code so that it is easier to maintain and incorporate new functionalities."
     },
-
+    "fotoyopv21": {
+      "es": "Foto-V: aprendizajes y problemas en el camino",
+      "en": "Foto-V: learnings and problems along the way"
+    },
+    "fotoyopv22": {
+      "es": "Uno de los principales problemas que tuve fue que la generación de los videos es un proceso que consume muchos recursos, lo cual me llevó a tener que hacer algo a lo que no estaba habituado en javacript, que es programar pensando en como gestionar la memoria. Por ejemplo, en un momento me encontré con que si no liberaba la memoria que consumía la generación de cada frame/imagen, la aplicación consumia toda la memoria del navegador y crasheaba. Por lo que tuve que implementar un sistema para ir generando los videos por partes, liberando la memoria de los datos que ya no se necesitaban, y juntando luego todo al final.",
+      "en": "One of the main problems I had was that generating the videos is a process that consumes a lot of resources, which led me to have to do something that I was not used to doing in javascript, which is programming thinking about how to manage memory. For example, at one point I found that if I didn't free the memory consumed by the generation of each frame/image, the application consumed all the browser's memory and crashed. So I had to implement a system to generate the videos in parts, freeing the memory of the data that was no longer needed, and then putting everything together at the end."
+    },
+    "fotoyopv23": {
+      "es": "La otra gran dificultad tiene que ver con cómo resolver la organización del código y la gestión del estado y de la interfaz del usuario en una aplicación hecha en vanilla JavaScript. Pero fue un problema buscado intencionalmente pues quería ver hasta que punto es viable hacer crecer una aplicación de ese modo y estudiar qué patrones de diseño se pueden utilizar e intentar comprender de ese modo también como funcionan y qué soluciones nos aportan los frameworks de JavaScript. Por he estado leyendo sobre como componentizar y modularizar, estrategias para el renderizado de la interfaz del usuario, patrones de diseño como MVC, flux, pub/sub, observer, proxies, etc. He comenzado de a poco, implementando módulos y funciones que puedan ser testeables, una clase/objeto global con un patrón singleton para manejar una parte del estado, y un event bus para la comunicación entre algunos. Y si bien patrones como el flux me resultan muy interesantes, por ahora no he querido implementar más de lo necesario para no caer en hacer una 'sobreingenieria' que complique más de lo que soluciona. Pero me he quedado con ideas y conocimientos para poner en práctica a medida que la aplicación crezca o en otros proyectos.",
+      "en": "The other big difficulty has to do with how to solve the organization of the code and the management of the state and the user interface in an application made in vanilla JavaScript. But it was an intentionally sought-after problem because I wanted to see to what extent it is viable to grow an application in this way and study what design patterns can be used and also try to understand how they work and what solutions JavaScript frameworks provide us. For I have been reading about how to componentize and modularize, strategies for rendering the user interface, design patterns like MVC, flux, pub/sub, observer, proxies, etc. I have started small, implementing modules and functions that can be testable, a global class/object with a singleton pattern to handle a part of the state, and an event bus for communication between some. And although patterns like flux are very interesting to me, for now I have not wanted to implement more than necessary so as not to fall into 'over-engineering' that complicates more than it solves. But I have been left with ideas and knowledge to put into practice as the application grows or in other projects."
+    },
     "anota01": {
       "es": "ANOTÁ! (Another Note Taking App) & Highlighter",
       "en": "ANOTÁ! (Another Note Taking App) & Highlighter"

@@ -28,11 +28,11 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
           "HTML",
           "CSS",
           "JavaScript",
+          "PWA",
           "React/Next",
           "TypeScript/JSDoc",
-          "PWA",
           "Canvas API",
-          "ffmpeg-js",
+          "Vitest/Playwright",
         ]}
       />
       <CardProyecto
