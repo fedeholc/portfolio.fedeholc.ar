@@ -149,6 +149,11 @@
       "es": "",
       "en": ""
     },
+    "proyectos13": {
+      "es": "FotoYOP te permite transformar imágenes y crear collages de manera sencilla y rápida. Es también una PWA que se puede instalar en el teléfono y usar offline. Foto-V es su complemento ideal: convierte imágenes en videos aplicándoles effectos como panning o zoom in/out.",
+      "en": "FotoYOP allows you to transform images and create collages simply and quickly. It is also a PWA that can be installed on the phone and used offline. Foto-V is your ideal complement: it converts images into videos by applying effects such as panning or zoom in/out."
+    },
+
     "idiomas1": { "es": "Idiomas", "en": "Languages" },
     "idiomas2a": {
       "es": "Español: ",
@@ -394,6 +399,82 @@
       "en": "Update in version v0.2: now it is possible to create collages of two or more images."
     },
     "fotoyop20": {
+      "es": "Actualización v0.2: el incorporar la posibilidad de crear collages representó un gran desafío, no por la complejidad de las operaciones necesarias para crear el canvas con las imagenes, sino por el hecho de tener que refactorizar el código para poder incorporar una nueva característica que requiere de un proceso distinto por tratarse de múltiples imágenes. Esta nueva característica también llevó a tener que modificar la interfaz del usuario. Más allá del resultado que está a la vista me permitió aprender mucho sobre cómo organizar el código para que sea más fácil de mantener y de incorporar nuevas funcionalidades.",
+      "en": "Update v0.2: incorporating the possibility of creating collages represented a great challenge, not because of the complexity of the operations necessary to create the canvas with the images, but because of the fact of having to refactor the code to be able to incorporate a new feature that requires a different process because it involves multiple images. This new feature also led to having to modify the user interface. Beyond the result that is in sight, it allowed me to learn a lot about how to organize the code so that it is easier to maintain and incorporate new functionalities."
+    },
+    "fotoyopv01": {
+      "es": "fotoYOP & foto-V",
+      "en": "fotoYOP & foto-V"
+    },
+    "fotoyopv02": {
+      "es": "FotoYOP es una aplicación que permite transformar imágenes de manera sencilla y rápida. Surge de la necesidad de resolver dos problemas. Por un lado, realizar cierto tipo de operaciones específicas sobre imágenes (por ejemplo, para publicarlas en redes sociales), y por otro, hacerlo de manera rápida y sencilla, sin necesidad de registrarse, ni subir archivos a un servidor, simplemente arrastrar y soltar, editar y descargar. Y mejor aún si es en una PWA que se puede instalar también en el teléfono y usar offline.",
+      "en": "FotoYOP is an application that allows you to transform images in a simple and fast way. It arises from the need to solve two problems. On the one hand, perform certain specific operations on images (for example, to publish them on social networks), and on the other, do it quickly and easily, without the need to register, or upload files to a server, simply drag and drop, edit and download. And even better if it is in a PWA that can also be installed on the phone and used offline."
+    },
+    "fotoyopv02b": {
+      "es": "Foto-V es su complemento ideal. Nos permite convertir imágenes en videos aplicándoles effectos como un panning o un zoom in/out (al estilo Ken Burns), y adaptar la imagen al tamaño que querramos, para poder por ejemplo publicarlas fácilemente en redes sociales. Corre también totalmente del lado del cliente.",
+      "en": "Foto-V is its ideal complement. It allows us to convert images into videos by applying effects such as panning or zoom in/out (Ken Burns style), and adapt the image to the size we want, so that we can easily publish them on social networks. It also runs completely on the client side."
+    },
+    "fotoyopv03": {
+      "es": "¿Qué tienen de bueno?",
+      "en": "What's good about them?"
+    },
+    "fotoyopv04": {
+      "es": "No requieren registrarse. No suben archivos a un servidor. Todo se hace en el navegador. FotoYOP además es una PWA, por lo que se puede instalar tanto en una pc como en el teléfono y usar offline.",
+      "en": "No registration required. They do not upload files to a server. Everything is done in the browser. FotoYOP is also a PWA, so it can be installed on both a PC and a phone and used offline."
+    },
+    "fotoyopv05": {
+      "es": "Con fotoYOP se pueden realizar transformaciones como agregarle un borde,cambiar las proporciones del lienzo, o convertir a blanco y negro. Algunas de ellas se pueden definir con precision: por ejemplo, al agregarse un borde a la imagen se puede establecer el color utilizando el código hexadecimal, y el tamaño del borde setearlo en píxeles. Ahora (v0.2) también es posible crear collages de dos o más imagenes.",
+      "en": "With fotoYOP you can make transformations such as adding a border, changing the proportions of the canvas, or converting to black and white. Some of them can be defined precisely: for example, when adding a border to the image you can set the color using the hexadecimal code, and the size of the border can be set in pixels. Now (v0.2) it is also possible to create collages of two or more images."
+    },
+    "fotoyopv06": {
+      "es": "Foto-V permite convertir imágenes en videos y configurar al detalle los efectos (como el panning o el zoom in/out), estableciendo su duración, dirección, velocidad, etc. Además, se puede elegir el tamaño del video final y la cantidad de frames por segundo a la que se va a reproducir.",
+      "en": "Photo-V allows you to convert images into videos and configure the effects in detail (such as panning or zoom in/out), establishing their duration, direction, speed, etc. Additionally, you can choose the size of the final video and the number of frames per second at which it will be played."
+    },
+    "fotoyopv07": {
+      "es": "Tanto fotoYOP como foto-V pueden trabajar con las imágenes a su máxima resolución a la hora de transformarlas y/o de generar los videos, para así poder lograr un resultado sin perdida calidad.",
+      "en": "Both fotoYOP and foto-V can work with images at their maximum resolution when transforming them and/or generating videos, in order to achieve a result without loss of quality."
+    },
+    "fotoyopv09": {
+      "es": "Sobre los stacks",
+      "en": "About the stacks"
+    },
+    "fotoyopv10": {
+      "es": "En el caso de fotoYOP, comencé a realizar las primeras pruebas y a aprender sobre la Canvas API en vanilla JavaScript, pero a medida que fue creciendo el código y la idea de realizar una SPA decidí continuarlo en Next, ya que también me interesaba la idea de que fuera una PWA y eso podía hacerse de forma relativamente sencilla utilizando la librería Serwist disponible para Next. Para foto-V, tras haber trabajado con react y next, volví a profundizar en el estudio de algunas JavaScript y de patrones de diseño, por lo que quise utilizar solo vanilla JavaScript para probar hasta que punto podía hacer una SPA sin un framework. Para el diseño también utilicé CSS puro. El renderizado de los videos se realiza con ffmpeg-js, una librería que mediante WebAssembly permite utilizar ffmpeg en el navegador.",
+      "en": "In the case of fotoYOP, I began to carry out the first tests and learn about the Canvas API in vanilla JavaScript, but as the code and the idea of ​​​​making a SPA grew, I decided to continue it in Next, since I was also interested in the idea of that it was a PWA and that could be done relatively easily using the Serwist library available for Next. For foto-V, after having worked with react and next, I went back to deepen the study of some JavaScript and design patterns, so I wanted to use only vanilla JavaScript to test to what extent I could make a SPA without a framework. For the design I also used pure CSS. The rendering of the videos is done with ffmpeg-js, a library that, through WebAssembly, allows you to use ffmpeg in the browser."
+    },
+    "fotoyopv11": {
+      "es": "FotoYOP: aprendizajes y problemas en el camino",
+      "en": "FotoYOP: learnings and problems along the way"
+    },
+    "fotoyopv12": {
+      "es": "Algo que me motiva de estar llevando adelante este proyecto es que he ido aprendiendo distintas cosas en el camino. Algunas sencillas como realizar un drag and drop para cargar archivos en el navegador, y otras más complejas y que abren un montón de posibilidades para seguir explorando como son el uso de la Canvas API, y la creación de PWAs.",
+      "en": "Something that motivates me to be carrying out this project is that I have been learning different things along the way. Some simple ones like making a drag and drop to load files in the browser, and others more complex and that open up a lot of possibilities to continue exploring such as the use of the Canvas API, and the creation of PWAs."
+    },
+    "fotoyopv13": {
+      "es": "El uso de una librería como serwist me permitió convertir la aplicación en una PWA de manera sencilla, pero para poder aprovechar realmente todo su potencial de cara a la experiencia del usuario me queda por aprender mucho más sobre el uso de Service Workers, el manejo de cache, etc.",
+      "en": "The use of a library like serwist allowed me to easily convert the application into a PWA, but in order to really take advantage of all its potential in terms of the user experience, I have a lot to learn about the use of Service Workers, cache management, etc."
+    },
+    "fotoyopv14": {
+      "es": "Trabajar con la Canvas API también requiere de un tiempo de aprendizaje para ir resolviendo los problemas que se presentan, por ejemplo a la hora de trabajar con imágenes de distintos tamaños y formatos, realizar transformaciones, conversiones, etc., y también para poder optimizar el rendimiento de la aplicación. He podido solucionar algunos problemas de rendimiento, pero hay otros que aún no, sobre todo al trabajar con imágenes de gran tamaño. La estrategia que he utilizado ahora es la de trabajar con imágenes de un tamaño acotado a la vista del usuario pero registrar todas las transformaciones necesarias para repetirlas sobre la imagen original cuando se la va a descargar, de modo de resguardar la calidad original. Me gustaría seguir profundizando en esto al menos hasta poder encontrar el límite de lo que puede ofrecer la Canvas API, qué tal vez no sea la herramienta más adecuada para ciertas operaciones, y haya que recurrir a otras herramientas o librerías.",
+      "en": "Working with the Canvas API also requires a learning time to solve the problems that arise, for example when working with images of different sizes and formats, making transformations, conversions, etc., and also to be able to optimize the performance of the application. I have been able to solve some performance problems, but there are others that I have not yet, especially when working with large images. The strategy I have used now is to work with images of a size limited to the user's view but record all the necessary transformations to repeat them on the original image when it is going to be downloaded, in order to safeguard the original quality. I would like to continue delving into this at least until I can find the limit of what the Canvas API can offer, which may not be the most appropriate tool for certain operations, and other tools or libraries may have to be used."
+    },
+    "fotoyopv15": {
+      "es": "Lograr un diseño responsive para que la aplicación se pueda utilizar tanto en un teléfono cómo en una pc también tuvo sus complicaciones, principalmente a la hora de lograr tener siempre la imagen a la vista del usuario, y adaptar el tamaño del canvas a la pantalla, dependiendo de si la imagen era horizontal o vertical y del tamaño de la pantalla, sobre todo si se modificaba el tamaño de la ventana del navegador. Para ello tuve que utilizar JavaScript para ir calculando los tamaños según cómo se modificaba la pantalla, o según cómo se modificaba el tamaño de la imagén, por ejemlplo al agregarle un borde.",
+      "en": "Achieving a responsive design so that the application can be used on both a phone and a PC also had its complications, mainly when it came to always having the image in view of the user, and adapting the size of the canvas to the screen, depending on whether the image was horizontal or vertical and the size of the screen, especially if the size of the browser window was modified. For this I had to use JavaScript to calculate the sizes according to how the screen was modified, or according to how the size of the image was modified, for example when adding a border."
+    },
+    "fotoyopv16": {
+      "es": "A pesar de que la aplicación está en una etapa inicial, tiene una buena cantidad de código, que he tratado de ir refactorizándolo a medida que avanzaba, tratando de aplicar lo que he ido aprendiendo en el último tiempo, con el objetivo de lograr que sea una aplicación que pueda ir creciendo y a la cual se le puedan ir agregando nuevas funcionalidades.",
+      "en": "Although the application is in an initial stage, it has a good amount of code, that I have tried to refactor it as I progressed, trying to apply what I have been learning lately, with the aim of making it an application that can grow and to which new functionalities can be added."
+    },
+    "fotoyopv17": {
+      "es": "Muestra general de las funcionalidades de la aplicación.",
+      "en": "General display of the application's features."
+    },
+    "fotoyopv18": {
+      "es": "Muestra de la aplicación en una ventana reducida como podría ser la de un teléfono.",
+      "en": "Display of the application in a reduced window as it could be on a phone."
+    },
+    "fotoyopv20": {
       "es": "Actualización v0.2: el incorporar la posibilidad de crear collages representó un gran desafío, no por la complejidad de las operaciones necesarias para crear el canvas con las imagenes, sino por el hecho de tener que refactorizar el código para poder incorporar una nueva característica que requiere de un proceso distinto por tratarse de múltiples imágenes. Esta nueva característica también llevó a tener que modificar la interfaz del usuario. Más allá del resultado que está a la vista me permitió aprender mucho sobre cómo organizar el código para que sea más fácil de mantener y de incorporar nuevas funcionalidades.",
       "en": "Update v0.2: incorporating the possibility of creating collages represented a great challenge, not because of the complexity of the operations necessary to create the canvas with the images, but because of the fact of having to refactor the code to be able to incorporate a new feature that requires a different process because it involves multiple images. This new feature also led to having to modify the user interface. Beyond the result that is in sight, it allowed me to learn a lot about how to organize the code so that it is easier to maintain and incorporate new functionalities."
     },

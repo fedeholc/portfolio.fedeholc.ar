@@ -12,7 +12,7 @@ import screenshot2 from "@public/proyecto-fotoyop/fotoyop4.webp";
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
 
-export default async function ProyectoFotoyop({
+export default async function ProyectoFotoyop1({
   params: { lang },
 }: {
   params: { lang: Locale };
@@ -97,9 +97,9 @@ export default async function ProyectoFotoyop({
               <Link
                 className={proyectos.underline}
                 target="_blank"
-                href="https://fotoyopdemo.fedeholc.ar/"
+                href="https://fotoyop.fedeholc.ar/"
               >
-                fotoyopdemo.fedeholc.ar
+                fotoyop.fedeholc.ar
               </Link>
               &nbsp;
               <Image src={externalLinkIcon} alt="external link icon" />

@@ -8,7 +8,7 @@ import herb from "@public/herb.png";
 import ProyectoANOTA from "./anota/page";
 import ProyectoAP from "./ap/page";
 import ProyectoInsta from "./insta/page";
-import ProyectoFotoyop from "./fotoyop/page";
+import ProyectoFotoyop2 from "./fotoyop-v/page";
 import ProyectoNSP from "./nsp/page";
 import ProyectoTV from "./tv/page";
 import ff from "@app/[lang]/ff";
@@ -76,7 +76,7 @@ async function ProyectosTodos({ lang }: { lang: Locale }) {
         </div>
       </div>
       <div id="proyectoFotoyop">
-        <ProyectoFotoyop params={{ lang: lang }} />
+        <ProyectoFotoyop2 params={{ lang: lang }} />
       </div>
       <div id="proyectoANOTA">
         <ProyectoANOTA params={{ lang: lang }} />

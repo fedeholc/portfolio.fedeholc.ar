@@ -12,7 +12,7 @@ import screenshot2 from "@public/proyecto-fotoyop/fotoyop4.webp";
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
 
-export default async function ProyectoFotoV({
+export default async function ProyectoFotoyop2({
   params: { lang },
 }: {
   params: { lang: Locale };
@@ -20,46 +20,49 @@ export default async function ProyectoFotoV({
   const dictionary = await getDictionary();
 
   const TEXTO = {
-    titulo: dictionary.proyectos.fotoyop01[lang],
-    bajada: dictionary.proyectos.fotoyop02[lang],
+    titulo: dictionary.proyectos.fotoyopv01[lang],
+    bajada: dictionary.proyectos.fotoyopv02[lang],
+    bajada2: dictionary.proyectos.fotoyopv02b[lang],
     stack: (
       <ul>
         <li>HTML / CSS</li>
         <li>Vanilla JavaScript</li>
-        <li>JSDoc</li>
+        <li>Next / React</li>
+        <li>TypeScript / JSDoc</li>
         <li>Vitest / Playwright</li>
-        <li>ffmpeg-js</li>
+        <li>PWA</li>
+        <li>Canvas API / ffmpeg-js</li>
       </ul>
     ),
-    linkCodeText: `github/fedeholc`,
-    linkCodeHref: `https://www.github.com/fedeholc/foto-v`,
-    subtitulo2: dictionary.proyectos.fotoyop03[lang],
+    linkCodeText1: `github/fedeholc/fotoyop`,
+    linkCodeHref1: `https://www.github.com/fedeholc/fotoyop`,
+    linkCodeText2: `github/fedeholc/foto-v`,
+    linkCodeHref2: `https://www.github.com/fedeholc/foto-v`,
+    subtitulo2: dictionary.proyectos.fotoyopv03[lang],
     texto2: (
       <ul>
-        <li>{dictionary.proyectos.fotoyop04[lang]}</li>
-        <li>{dictionary.proyectos.fotoyop05[lang]}</li>
-        <li>{dictionary.proyectos.fotoyop06[lang]}</li>
-        <li>{dictionary.proyectos.fotoyop07[lang]}</li>
-        <li>{dictionary.proyectos.fotoyop08[lang]}</li>
-        <li>{dictionary.proyectos.fotoyop19[lang]}</li>
+        <li>{dictionary.proyectos.fotoyopv04[lang]}</li>
+        <li>{dictionary.proyectos.fotoyopv05[lang]}</li>
+        <li>{dictionary.proyectos.fotoyopv06[lang]}</li>
+        <li>{dictionary.proyectos.fotoyopv07[lang]}</li>
       </ul>
     ),
-    subtitulo3: dictionary.proyectos.fotoyop09[lang],
+    subtitulo3: dictionary.proyectos.fotoyopv09[lang],
     texto3: (
       <ul>
-        <li>{dictionary.proyectos.fotoyop10[lang]}</li>
+        <li>{dictionary.proyectos.fotoyopv10[lang]}</li>
       </ul>
     ),
-    subtitulo4: dictionary.proyectos.fotoyop11[lang],
+    subtitulo4: dictionary.proyectos.fotoyopv11[lang],
     texto4: (
       <ul>
-        <li>{dictionary.proyectos.fotoyop12[lang]}</li>
-        <li>{dictionary.proyectos.fotoyop13[lang]}</li>
-        <li>{dictionary.proyectos.fotoyop14[lang]}</li>
-        <li>{dictionary.proyectos.fotoyop15[lang]}</li>
+        <li>{dictionary.proyectos.fotoyopv12[lang]}</li>
+        <li>{dictionary.proyectos.fotoyopv13[lang]}</li>
+        <li>{dictionary.proyectos.fotoyopv14[lang]}</li>
+        <li>{dictionary.proyectos.fotoyopv15[lang]}</li>
         {/*         <li>{dictionary.proyectos.fotoyop16[lang]}</li>
          */}{" "}
-        <li>{dictionary.proyectos.fotoyop20[lang]}</li>
+        <li>{dictionary.proyectos.fotoyopv20[lang]}</li>
       </ul>
     ),
   };
@@ -76,6 +79,7 @@ export default async function ProyectoFotoV({
       <h1 className={proyectos.titulo}>{TEXTO.titulo}</h1>
       <div className={`${proyectos.proyecto__container} `}>
         <p>{TEXTO.bajada}</p>
+        <p>{TEXTO.bajada2}</p>
         <div className={proyectos.columns2stack}>
           <div>
             <h3>stack</h3>
@@ -83,21 +87,57 @@ export default async function ProyectoFotoV({
           </div>
           <div>
             <h3>{dictionary.proyectos.codigo[lang]}</h3>
-            <div className={proyectos.link_icon}>
+            <div
+              style={{ marginBlock: "1rem" }}
+              className={proyectos.link_icon}
+            >
               <Link
                 className={proyectos.underline}
                 target="_blank"
-                href={TEXTO.linkCodeHref}
+                href={TEXTO.linkCodeHref1}
               >
-                {TEXTO.linkCodeText}
+                {TEXTO.linkCodeText1}
               </Link>
+              &nbsp;
+              <Image src={externalLinkIcon} alt="external link icon" />
             </div>
-            <h3>live demo</h3>
-            <div className={proyectos.link_icon}>
+            <div
+              style={{ marginBlock: "1rem" }}
+              className={proyectos.link_icon}
+            >
               <Link
                 className={proyectos.underline}
                 target="_blank"
-                href="https://fotoyopdemo.fedeholc.ar/"
+                href={TEXTO.linkCodeHref2}
+              >
+                {TEXTO.linkCodeText2}
+              </Link>
+              &nbsp;
+              <Image src={externalLinkIcon} alt="external link icon" />
+            </div>
+            <h3 style={{ marginTop: "2rem" }}>live demos</h3>
+            <div
+              style={{ marginBlock: "1rem" }}
+              className={proyectos.link_icon}
+            >
+              <Link
+                className={proyectos.underline}
+                target="_blank"
+                href="https://fotoyop.fedeholc.ar/"
+              >
+                fotoyop.fedeholc.ar
+              </Link>
+              &nbsp;
+              <Image src={externalLinkIcon} alt="external link icon" />
+            </div>
+            <div
+              style={{ marginBlock: "1rem" }}
+              className={proyectos.link_icon}
+            >
+              <Link
+                className={proyectos.underline}
+                target="_blank"
+                href="https://foto-v.fedeholc.ar/"
               >
                 foto-v.fedeholc.ar
               </Link>
@@ -122,7 +162,7 @@ export default async function ProyectoFotoV({
                 src={screenshot1.src}
               />
               <figcaption className={proyectos.screenshot__caption}>
-                {dictionary.proyectos.fotoyop17[lang]}
+                {dictionary.proyectos.fotoyopv17[lang]}
               </figcaption>
             </figure>
           </div>
@@ -141,7 +181,7 @@ export default async function ProyectoFotoV({
               />
 
               <figcaption className={proyectos.screenshot__caption}>
-                {dictionary.proyectos.fotoyop18[lang]}
+                {dictionary.proyectos.fotoyopv18[lang]}
               </figcaption>
             </figure>
           </div>

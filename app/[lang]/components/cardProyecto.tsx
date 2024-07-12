@@ -10,13 +10,30 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
 
   return (
     <>
-      <CardProyecto
+      {/*   <CardProyecto
         lang={lang}
         titulo="fotoYOP 🎨"
         buttonLink="/proyectos/#proyectoFotoyop"
         subtitulo={dictionary.cv.proyectos12[lang]}
         descripcion={dictionary.cv.proyectos11[lang]}
         stack={["HTML", "CSS", "React/Next", "TypeScript", "PWA", "Canvas API"]}
+      /> */}
+      <CardProyecto
+        lang={lang}
+        titulo="🧿 fotoYOP & foto-V 🎬"
+        buttonLink="/proyectos/#proyectoFotoyop"
+        subtitulo={dictionary.cv.proyectos12[lang]}
+        descripcion={dictionary.cv.proyectos13[lang]}
+        stack={[
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React/Next",
+          "TypeScript/JSDoc",
+          "PWA",
+          "Canvas API",
+          "ffmpeg-js",
+        ]}
       />
       <CardProyecto
         lang={lang}
