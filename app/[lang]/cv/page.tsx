@@ -73,6 +73,7 @@ export default async function CV({
             <div className={proyectos.cv__cards__container}>
               <CardsProyectos lang={lang} />
             </div>
+            
           </section>
           <section>
             <h3>{dictionary.cv.idiomas1[lang]}</h3>

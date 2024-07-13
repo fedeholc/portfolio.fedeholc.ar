@@ -3,7 +3,9 @@ import "@app/globals.css";
 import Link from "next/link";
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
-
+import externalLinkIcon from "@public/external-link.png";
+import proyectos from "../proyectos/proyectos.module.css";
+import Image from "next/image";
 /* todas las cards de los proyectos */
 export async function CardsProyectos({ lang }: { lang: Locale }) {
   const dictionary = await getDictionary();
@@ -92,6 +94,63 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
         descripcion={dictionary.cv.proyectos10[lang]}
         stack={["HTML", "Bootstrap", "Angular", "MySQL", "Java / Spring Boot"]}
       /> */}
+      <div >
+        <h3>{dictionary.proyectos.otros[lang]}</h3>
+        <div className={proyectos.columns1}>
+        
+            <ul>
+              <li className={proyectos.smaller_font}>
+                <div className={proyectos.link_icon}>
+                  <span>
+                    {dictionary.proyectos.otros1[lang]}&nbsp;
+                    <Link
+                      className={proyectos.underline}
+                      target="_blank"
+                      href="https://github.com/fedeholc/tecnicatura-tp-clinica"
+                    >
+                      {dictionary.proyectos.otrosVerCodigo[lang]}
+                    </Link>
+                    &nbsp;
+                    <Image src={externalLinkIcon} alt="external link icon" />
+                  </span>
+                </div>
+              </li>
+              <li className={proyectos.smaller_font}>
+                <div className={proyectos.link_icon}>
+                  <span>
+                    {dictionary.proyectos.otros2[lang]}&nbsp;
+                    <Link
+                      className={proyectos.underline}
+                      target="_blank"
+                      href="https://github.com/fedeholc/tecnicatura-tp-club-deportivo-mobile"
+                    >
+                      {dictionary.proyectos.otrosVerCodigo[lang]}
+                    </Link>
+                    &nbsp;
+                    <Image src={externalLinkIcon} alt="external link icon" />
+                  </span>
+                </div>
+              </li>
+              <li className={proyectos.smaller_font}>
+                <div className={proyectos.link_icon}>
+                  <span>
+                    {dictionary.proyectos.otros3[lang]}&nbsp;
+                    <Link
+                      className={proyectos.underline}
+                      target="_blank"
+                      href="https://github.com/fedeholc/argentinaprograma-Portfolio-Backend"
+                    >
+                      {dictionary.proyectos.otrosVerCodigo[lang]}
+                    </Link>
+                    &nbsp;
+                    <Image src={externalLinkIcon} alt="external link icon" />
+                  </span>
+                </div>
+              </li>
+            </ul>
+     
+        </div>
+      </div>
     </>
   );
 }

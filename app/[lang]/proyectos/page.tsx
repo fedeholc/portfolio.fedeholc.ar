@@ -67,13 +67,16 @@ async function ProyectosTodos({ lang }: { lang: Locale }) {
         <div className={proyectos.divider}>
           <Image src={herb} alt="herb emoji" width={26} quality={100} />
         </div>
-        <div className={proyectos.cards__container}>
+        <div
+          className={`${proyectos.proyecto__container} ${proyectos.cards__container} `}
+        >
+          {/* <div className={proyectos.cv__cards__container}></div> */}
           <CardsProyectos lang={lang} />
         </div>{" "}
         <div className={proyectos.divider}>
           <Image src={herb} alt="herb emoji" width={26} quality={100} />
         </div>
-        <div className={proyectos.proyecto__container}>
+        {/*   <div className={proyectos.proyecto__container}>
           <h3>{dictionary.proyectos.otros[lang]}</h3>
           <div className={proyectos.columns1}>
             <div>
@@ -132,7 +135,7 @@ async function ProyectosTodos({ lang }: { lang: Locale }) {
         </div>
         <div className={proyectos.divider}>
           <Image src={herb} alt="herb emoji" width={26} quality={100} />
-        </div>
+        </div> */}
       </div>
       <div id="proyectoFotoyop">
         <ProyectoFotoyop2 params={{ lang: lang }} />
