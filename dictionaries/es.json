@@ -94,8 +94,8 @@
     },
     "proyectos1": { "es": "Proyectos", "en": "Projects" },
     "proyectos2": {
-      "es": "Podés encontrar una explicación detallada de cada proyecto en mi portfolio online: ",
-      "en": "You can find a detailed explanation of each project in my online portfolio: "
+      "es": "Podés encontrar una explicación detallada de cada proyecto y enlaces al código, en mi portfolio online: ",
+      "en": "You can find a detailed explanation of each project and links to the source code, on my online portfolio: "
     },
     "proyectos3": {
       "es": "<NuncaSupeProgramar/> Blog de apuntes para aprender desarrollo web",
@@ -331,7 +331,7 @@
       "en": "View code"
     },
     "otros1": {
-      "es": "Aplicación de escritorio para administrar una clínica de salud (proyecto de curso). Stack: C#, Visual Studio, MySQL. Código: ",
+      "es": "Aplicación de escritorio para administrar una clínica de salud (proyecto de curso). Stack: C#, Visual Studio, MySQL.",
       "en": "Desktop application to manage a health clinic (course project). Stack: C#, Visual Studio, MySQL."
     },
     "otros2": {
