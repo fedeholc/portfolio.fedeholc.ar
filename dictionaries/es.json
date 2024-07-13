@@ -322,6 +322,26 @@
       "es": "PROYECTOS",
       "en": "PROJECTS"
     },
+    "otros": {
+      "es": "Otros proyectos:",
+      "en": "Other projects:"
+    },
+    "otrosVerCodigo": {
+      "es": "Ver código",
+      "en": "View code"
+    },
+    "otros1": {
+      "es": "Aplicación de escritorio para administrar una clínica de salud (proyecto de curso). Stack: C#, Visual Studio, MySQL. Código: ",
+      "en": "Desktop application to manage a health clinic (course project). Stack: C#, Visual Studio, MySQL."
+    },
+    "otros2": {
+      "es": "Aplicación móbil para administrar un club deportivo (proyectode fin de cursada). Stack: Kotlin, Android Studio, SQLite.",
+      "en": "Mobile application to manage a sports club (course project). Stack: Kotlin, Android Studio, SQLite."
+    },
+    "otros3": {
+      "es": "Argentina Programa v3.0 - CV Editable (proyecto de curso). Stack: Java, Springboot, Hibernate, MySQL, Angular, HTML, CSS, Bootstrap.",
+      "en": "Argentina Programa v3.0 - Editable resume (course project). Stack: Java, Springboot, Hibernate, MySQL, Angular, HTML, CSS, Bootstrap."
+    },
     "fotoyop01": {
       "es": "fotoYOP",
       "en": "fotoYOP"

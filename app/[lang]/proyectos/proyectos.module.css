@@ -153,6 +153,11 @@
   margin-top: 0.5rem;
 }
 
+ul>li.smaller_font {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-wrap: pretty;
+}
 
 /* TODO: OJOOOOOOOOOO */
 /* revisar  porque sin esto las imágenes se agrandan a todo el ancho
