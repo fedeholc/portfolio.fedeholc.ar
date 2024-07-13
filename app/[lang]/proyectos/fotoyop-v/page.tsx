@@ -8,6 +8,7 @@ import externalLinkIcon from "@public/external-link.png";
 import herb from "@public/herb.png";
 import screenshot1 from "@public/proyecto-fotoyop/fotoyop3.webp";
 import screenshot2 from "@public/proyecto-fotoyop/fotoyop4.webp";
+import screenshot3 from "@public/proyecto-fotoyop/fotov1.webp";
 
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
@@ -200,6 +201,19 @@ export default async function ProyectoFotoyop2({
           <div>{TEXTO.texto4}</div>
         </div>{" "}
         <br />
+        <div className={proyectos.screenshot__container}>
+          <figure className={`${proyectos.screenshot__figure}  `}>
+            <img
+              className={proyectos.screenshot}
+              alt="screenshot"
+              src={screenshot3.src}
+            />
+
+            <figcaption className={proyectos.screenshot__caption}>
+              {dictionary.proyectos.fotoyopv24[lang]}
+            </figcaption>
+          </figure>
+        </div>
         <h3>{TEXTO.subtitulo5}</h3>
         <div className={proyectos.columns1}>
           <div>{TEXTO.texto5}</div>
