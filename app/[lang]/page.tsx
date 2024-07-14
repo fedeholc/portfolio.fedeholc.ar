@@ -42,113 +42,75 @@ export default async function IndexPage({
   }
 
   let p1 = (
-    <p>
-      Mi nombre es <span className="resaltado">Federico Holc</span>,
-      <strong> soy desarrollador web</strong>&nbsp;
-      <span className="emoji">🧑‍💻</span>, y vivo en Buenos Aires, Argentina.
-    </p>
+    <>
+      <p>
+        Mi nombre es <span className="resaltado">Federico Holc</span>&nbsp;
+        <span className="emoji">🧑‍💻</span>, y vivo en Buenos Aires, Argentina.
+        <br />
+      </p>
+      <p>
+        Soy&nbsp;
+        <strong>desarrollador web</strong> enfocado en frontend&nbsp;
+        <span className="emoji">🌈</span>&nbsp;pero con conocimientos y
+        curiosidad por el backend, los web standards, y el software de código
+        abierto.&nbsp;
+        <span className="emoji">👾</span>
+      </p>
+    </>
   );
   if (lang === "en") {
     p1 = (
-      <p>
+      /*      <p>
         My name is <span className="resaltado">Federico Holc</span>,
         <strong> I am a web developer</strong>&nbsp;
         <span className="emoji">🧑‍💻</span>, and I live in Buenos Aires,
         Argentina.
-      </p>
+      </p> */
+      <>
+        <p>
+          My name is <span className="resaltado">Federico Holc</span>&nbsp;
+          <span className="emoji">🧑‍💻</span>, and I live in Buenos Aires,
+          Argentina.
+          <br />
+        </p>
+        <p>
+          I am a&nbsp;
+          <strong>web developer</strong> focused on frontend&nbsp;
+          <span className="emoji">🌈</span>&nbsp;but also with knowledge and
+          curiosity about backend, web standards, and open source
+          software.&nbsp;
+          <span className="emoji">👾</span>
+        </p>
+      </>
     );
   }
 
   let p2 = (
-    <p>
-      De chico amaba jugar al <span className="emoji">👾</span> space invaders{" "}
-      <span className="emoji">👾</span> en la IBM PC/XT de mi papá, y di mis
-      primeros pasos en programación con Logo&nbsp;
-      <span className="emoji">🐢</span>. Durante mi último año de escuela
-      secundaria (técnica en computación) conseguí trabajo como desarrollador en
-      Visual Basic. Luego comencé a estudiar Ciencias de la Computación en la
-      universidad.
-    </p>
+    <>
+      <p>
+        Me inicié como autodidácta y ahora estoy próximo a recibirme en una
+        tecnicatura terciaria. &nbsp;<span className="emoji">🚀</span>
+      </p>
+      <p>
+        En el pasado fui sociólogo, y profesor &nbsp;
+        <span className="emoji">👨‍🏫</span>&nbsp; en escuelas y en la universidad
+        de buenos aires.
+      </p>
+    </>
   );
   if (lang === "en") {
     p2 = (
-      <p>
-        As a kid I loved to play space invaders&nbsp;
-        <span className="emoji">👾</span> on my dad's IBM PC/XT, and I took my
-        first steps in programming with Logo&nbsp;
-        <span className="emoji">🐢</span>. During my last year of high school I
-        got a job as a developer in Visual Basic. Then I started studying
-        Computer Science at the university.
-      </p>
-    );
-  }
-  let p3 = (
-    <p>
-      Pero era el año 2001 y a la Argentina y a mi vida les esperaba un plot
-      twist&nbsp;<span className="emoji">🙈</span>, o mejor dicho, un ¡epic
-      fail!&nbsp;
-      <span className="emoji">💩</span> Abandoné la programación.&nbsp;
-      <span className="emoji">🤦🏻😭☠️</span>&nbsp;
-    </p>
-  );
-  if (lang === "en") {
-    p3 = (
-      <p>
-        But it was the year 2001 and Argentina and my life were waiting for a
-        plot twist&nbsp;<span className="emoji">🙈</span>, or better said, an
-        epic fail!&nbsp;
-        <span className="emoji">💩</span>Argentina had five presidents in one
-        week, and I quit programming.&nbsp;
-        <span className="emoji">🤦🏻😭☠️</span>&nbsp;
-      </p>
-    );
-  }
-
-  let p4 = (
-    <p>
-      En los años que siguieron fui sociólogo&nbsp;
-      <span className="emoji">🤔</span>, y profesor en escuelas secundarias y en
-      la Universidad de Buenos Aires. Allí aprendí y enseñé todo lo que
-      pude.&nbsp;
-      <span className="emoji">👨‍🏫</span>
-    </p>
-  );
-  if (lang === "en") {
-    p4 = (
-      <p>
-        In the years that followed I was a sociologist&nbsp;
-        <span className="emoji">🤔</span>, and a teacher in high schools and at
-        the University of Buenos Aires. There I learned and taught everything I
-        could.&nbsp;
-        <span className="emoji">👨‍🏫</span>
-      </p>
-    );
-  }
-  let p5 = (
-    <p>
-      Hace un tiempo, a partir de utilizar software fotográfico de código
-      abierto (¡también estudié fotografía!&nbsp;
-      <span className="emoji">📸</span>), me volvió a interesar profundamente la
-      programación. Me encontré con que el desarrollo web era algo muy distinto
-      al de hace 20 años&nbsp;
-      <span className="emoji">🤯</span>, ¡y me atrapó!&nbsp;
-      <span className="emoji">🕸️</span> Desde ese momento no paré de aprender ni
-      de programar.<span className="emoji">🚀</span>
-    </p>
-  );
-  if (lang === "en") {
-    p5 = (
-      <p>
-        Some time ago, since using open source photo software (I also studied
-        photography!&nbsp;
-        <span className="emoji">📸</span>), I became deeply interested in
-        programming again. I found that web development was very different from
-        20 years ago&nbsp;
-        <span className="emoji">🤯</span>, and it caught me!&nbsp;
-        <span className="emoji">🕸️</span> From that moment I neve stopped
-        learning and programming.&nbsp;
-        <span className="emoji">🚀</span>
-      </p>
+      <>
+        <p>
+          I started as a self-taught and now I am about to graduate in a
+          tertiary degree. &nbsp;<span className="emoji">🚀</span>
+        </p>
+        <p>
+          Also, in the past I was a sociologist, and a teacher &nbsp;
+          <span className="emoji">👨‍🏫</span>&nbsp;in schools and at the
+          University of Buenos Aires.
+        </p>
+      </>
     );
   }
 
@@ -168,14 +130,16 @@ export default async function IndexPage({
             <Fotos></Fotos>
           </div>
         </div>
-        <div>
+
+        {/*  <div>
           {p3}
           {p4}
           {p5}
-        </div>
-        <div className="content-links">
-          <span>{dictionary.intro.podesver[lang]}&nbsp;</span>
-          <span>
+        </div> */}
+
+        <div>{dictionary.intro.mas[lang]}</div>
+        <div className="buttons-grid">
+          <div>
             <button className="link_button">
               <div>
                 <Image
@@ -192,47 +156,10 @@ export default async function IndexPage({
                 </Link>
               </div>
             </button>
-            ,&nbsp;
-          </span>
-          <span>{dictionary.intro.download[lang]}&nbsp;</span>
-          <span>
-            <button className="link_button">
-              <div>
-                <Image
-                  className="link_button__icon"
-                  alt="paper clip icon"
-                  width="12"
-                  /* @ts-ignore */
-                  height="auto"
-                  src={paperclipIcon}
-                ></Image>
-                &nbsp;<Link href="/cv">{dictionary.intro.cvpdf[lang]}</Link>
-              </div>
-            </button>
-            ,&nbsp;
-          </span>
-          <span>
-            <span>{dictionary.intro.leer[lang]}&nbsp;</span>
-            <button className="link_button">
-              <div>
-                <Image
-                  className="link_button__icon"
-                  alt="blog icon"
-                  width="10"
-                  /* @ts-ignore */
-                  height="auto"
-                  src={notesIcon}
-                ></Image>
-                &nbsp;
-                <Link target="_blank" href="https://nsp.fedeholc.ar">
-                  NSP Blog
-                </Link>
-              </div>
-            </button>
-            ,&nbsp;
-          </span>
-          <span>
-            <span>{dictionary.intro.encontrarme[lang]}&nbsp;</span>
+          </div>
+          <div>{dictionary.intro.mas2[lang]}</div>
+          <div>
+            {" "}
             <button className="link_button">
               <div>
                 <Image
@@ -249,9 +176,46 @@ export default async function IndexPage({
                 </Link>
               </div>
             </button>
-            &nbsp;
-          </span>
-          <span>
+          </div>
+          <div>{dictionary.intro.mas3[lang]}</div>
+          <div>
+            {" "}
+            <button className="link_button">
+              <div>
+                <Image
+                  className="link_button__icon"
+                  alt="blog icon"
+                  width="10"
+                  /* @ts-ignore */
+                  height="auto"
+                  src={notesIcon}
+                ></Image>
+                &nbsp;
+                <Link target="_blank" href="https://nsp.fedeholc.ar">
+                  NSP Blog
+                </Link>
+              </div>
+            </button>
+          </div>
+          <div>{dictionary.intro.mas4[lang]}</div>
+          <div>
+            <button className="link_button">
+              <div>
+                <Image
+                  className="link_button__icon"
+                  alt="paper clip icon"
+                  width="12"
+                  /* @ts-ignore */
+                  height="auto"
+                  src={paperclipIcon}
+                ></Image>
+                &nbsp;<Link href="/cv">{dictionary.intro.cvpdf[lang]}</Link>
+              </div>
+            </button>
+          </div>
+          <div>{dictionary.intro.mas5[lang]}</div>
+          <div>
+            {" "}
             <button className="link_button">
               <div>
                 <Image
@@ -270,9 +234,10 @@ export default async function IndexPage({
                 </Link>
               </div>
             </button>
-            &nbsp;
-          </span>
-          <span>
+          </div>
+          <div>{dictionary.intro.mas6[lang]}</div>
+          <div>
+            {" "}
             <button className="link_button">
               <div>
                 <Image
@@ -291,10 +256,17 @@ export default async function IndexPage({
                 </Link>
               </div>
             </button>
-            ,&nbsp;
-          </span>
-          <span>
-            <span>{dictionary.intro.escribirme[lang]}&nbsp;</span>
+          </div>
+          <div>
+            {dictionary.intro.mas7[lang]}&nbsp;
+            <span className="emoji">📸</span>
+          </div>
+        </div>
+
+        <div className="mail-container">
+          {" "}
+          <div>{dictionary.intro.mas8[lang]}</div>
+          <div>
             <button className="link_button">
               <div>
                 <Image
@@ -311,9 +283,9 @@ export default async function IndexPage({
                 </Link>
               </div>
             </button>
-            .
-          </span>
+          </div>
         </div>
+
         <br />
 
         <div className="centrar">

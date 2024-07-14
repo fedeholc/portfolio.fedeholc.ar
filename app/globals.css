@@ -149,6 +149,8 @@
    flex-wrap: wrap;
    place-items: baseline;
    margin-top: 2rem;
+   /*    line-height: 3rem;
+ */
  }
 
  /*** link buttons ***/
@@ -187,6 +189,35 @@
  .foto-container img {
    min-width: 200px;
  }
+
+
+ .buttons-grid {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   grid-template-rows: auto;
+   gap: 1rem;
+   margin-top: 1rem;
+   align-items: baseline;
+   padding-bottom: 2rem;
+   padding-top: 0.5rem;
+ }
+
+ .buttons-grid>div:nth-child(odd) {
+   justify-self: end;
+ }
+
+ .buttons-grid>div:nth-child(even) {
+   border-left: 2px solid rgb(225, 225, 225);
+   padding-left: 0.5rem;
+ }
+
+ .mail-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.5rem;
+ }
+
 
  /*** emojis ***/
  .emoji {
@@ -325,6 +356,17 @@ mediqueries */
    .article__container {
      border: none;
      box-shadow: none;
+   }
+
+   .buttons-grid {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: auto;
+
+   }
+
+   .buttons-grid>div:nth-child(odd) {
+     justify-self: left;
    }
 
  }

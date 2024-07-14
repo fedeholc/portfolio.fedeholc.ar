@@ -33,6 +33,39 @@
   },
   "cardproyecto": { "es": "Ver proyecto", "en": "View project" },
   "intro": {
+    "mas": {
+      "es": "¿Queŕes saber más sobre mi cómo programador?",
+      "en": "Do you want to know more about me as a programmer?"
+    },
+    "mas2": {
+      "es": "Podés ver los trabajos que he realizado junto con una explicación detallada de los mismos, los problemas que tuve que superar y los aprendizajes que me dejaron.",
+      "en": "You can see the work I have done along with a detailed explanation of it, the problems I had to overcome and what I have learned."
+    },
+    "mas3": {
+      "es": "En mi GitHub encontrarás los repositorios con el código fuente de cada uno de los proyectos que hecho.",
+      "en": "In my GitHub you will find the repositories with the source code of each of the projects I have done."
+    },
+    "mas4": {
+      "es": "Mientras aprendo tomo apuntes y los comparto en mi blog.",
+      "en": "While I learn I take notes and share them on my blog."
+    },
+    "mas5": {
+      "es": "También podés bajar mi CV en PDF.",
+      "en": "You can also download my resume in PDF."
+    },
+    "mas6": {
+      "es": "O ver mi perfil de Linkedin.",
+      "en": "Or see my Linkedin profile."
+    },
+    "mas7": {
+      "es": "Cuando no estoy programando, hago fotos.",
+      "en": "When I'm not programming, I take photos."
+    },
+    "mas8": {
+      "es": "Si me querés contactar, lo mejor es escribirme un mail:",
+      "en": "If you want to contact me, write me an email:"
+    },
+
     "podesver": {
       "es": "Podés ver mis",
       "en": "You can see my"
@@ -46,8 +79,8 @@
       "en": "download my"
     },
     "cvpdf": {
-      "es": "CV en PDF",
-      "en": "resume as PDF"
+      "es": "CV",
+      "en": "Resume"
     },
     "leer": {
       "es": "leer",
@@ -70,6 +103,14 @@
     "about2": {
       "es": "¡Hola, soy Fede! 👾 Hace muchos muchos años me recibí de técnico en computación, conseguí mi primer trabajo como programador y comencé la carrera de Ciencias de la Computación. Pero pasaron cosas y cometí el error de dejarlo todo. 🤦🏻😭☠️ En los años que siguieron fui sociólogo y profesor en escuelas secundarias y en la Universidad de Buenos Aires. Pero desde hace un tiempo el desarrollo web volvió despertar mi curiosidad 🤯, y ¡me atrapó! 🕸️ Tanto qué nuevamente decidí que era hora de cambiar, para poder dedicarme cada día a estudiar y a programar, y desde entonces no he parado. 🧑‍💻🚀",
       "en": "Hi, I'm Fede! 👾 Many many years ago I graduated as a computer technician, got my first job as a programmer and started the Computer Science career. But some unexpected tragedies led me to make the mistake of quitting it all. 🤦🏻😭☠️ In the following years I was a sociologist and a teacher in high schools and at the University of Buenos Aires. But for some time now web development has reawakened my curiosity 🤯, and it caught me! 🕸️ So much so that I decided that it was time to change again, to be able to dedicate myself every day to study and to program, and since then I have not stopped. 🧑‍💻🚀"
+    },
+    "about3a": {
+      "es": "¡Hola! ¿Cómo andás? Soy Fede 🧑‍💻, desarrollador web enfocado en frontend 🌈 pero con conocimientos y curiosidad por el backend, los web standards, y el software de código abierto. Me inicié como autodidacta y ahora estoy próximo a recibirme en una tecnicatura terciaria. 🚀 Además, en el pasado fui sociólogo, y profesor 👨‍🏫 en escuelas y en la Universidad de Buenos Aires. En mi portfolio web (",
+      "en": "Hi! How you doing? I'm Fede, a web developer focused on frontend 🌈 but also with knowledge and curiosity about backend, web standards, and open source software. I started as a self-taught and now I am about to graduate in a tertiary degree. 🚀 Also, in the past I was a sociologist, and a teacher 👨‍🏫 in schools and at the University of Buenos Aires. In my web portfolio ("
+    },
+    "about3b": {
+      "es": ") podés ver los proyectos en los que he trabajado, junto con una explicación detallada de los mismos, los problemas que tuve que superar y los aprendizajes que me dejaron (además están los enlaces al código fuente).👾",
+      "en": ") you can see the projects I have worked on, along with a detailed explanation of them, the problems I had to overcome and the learnings they left me (also the links to the source code).👾"
     },
     "nombreArchivo": {
       "es": "Federico_Holc_CV.pdf",
