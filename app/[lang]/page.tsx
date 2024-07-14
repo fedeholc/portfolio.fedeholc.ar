@@ -89,10 +89,11 @@ export default async function IndexPage({
     <>
       <p>
         Me inicié como autodidácta y ahora estoy próximo a recibirme en una
-        tecnicatura terciaria. &nbsp;<span className="emoji">🚀</span>
+        tecnicatura superior en desarrollo de software. &nbsp;
+        <span className="emoji">🚀</span>
       </p>
       <p>
-        En el pasado fui sociólogo, y profesor &nbsp;
+        En el pasado fui sociólogo y profesor &nbsp;
         <span className="emoji">👨‍🏫</span>&nbsp; en escuelas y en la universidad
         de buenos aires.
       </p>
@@ -102,11 +103,12 @@ export default async function IndexPage({
     p2 = (
       <>
         <p>
-          I started as a self-taught and now I am about to graduate in a
-          tertiary degree. &nbsp;<span className="emoji">🚀</span>
+          I started as a self-taught and now I am about to get a technical
+          degree on software development. &nbsp;
+          <span className="emoji">🚀</span>
         </p>
         <p>
-          Also, in the past I was a sociologist, and a teacher &nbsp;
+          Also, in the past I was a sociologist and a teacher &nbsp;
           <span className="emoji">👨‍🏫</span>&nbsp;in schools and at the
           University of Buenos Aires.
         </p>
