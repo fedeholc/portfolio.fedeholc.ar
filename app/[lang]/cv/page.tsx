@@ -50,10 +50,7 @@ export default async function CV({
         <div className={proyectos.columns1}>
           <section>
             <h3>{dictionary.cv.calificaciones1[lang]}</h3>
-            <p>
-              {dictionary.cv.calificaciones2[lang]}
-              {dictionary.cv.calificaciones1[lang]}
-            </p>
+            <p>{dictionary.cv.calificaciones2[lang]}</p>
             <ul className={proyectos.columns2stack}>
               <li>HTML / CSS</li>
               <li>MySQL / SQLite</li>
@@ -73,7 +70,6 @@ export default async function CV({
             <div className={proyectos.cv__cards__container}>
               <CardsProyectos lang={lang} />
             </div>
-            
           </section>
           <section>
             <h3>{dictionary.cv.idiomas1[lang]}</h3>
