@@ -113,13 +113,17 @@
       "en": ") you can see the projects I have worked on, along with a detailed explanation of them, the problems I had to overcome and  and what I have learned (also the links to the source code).👾"
     },
     "nombreArchivo": {
-      "es": "Federico_Holc_CV.pdf",
-      "en": "Federico_Holc_Resume.pdf"
+      "es": "Federico_Holc_CV",
+      "en": "Federico_Holc_Resume"
     },
     "heading": { "es": "CURRICULUM VITAE", "en": "RESUME" },
     "downloadPDF": {
-      "es": "descargar en PDF",
-      "en": "download as PDF"
+      "es": "descargar .pdf",
+      "en": "download .pdf"
+    },
+    "downloadDOC": {
+      "es": "descargar .docx",
+      "en": "download .docx"
     },
     "calificaciones1": {
       "es": "Resumen de calificaciones",

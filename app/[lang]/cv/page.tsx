@@ -25,7 +25,7 @@ export default async function CV({
       </div>
 
       <div className={`${proyectos.proyecto__container} `}>
-        <div className="centrar">
+        <div className="cv-centrar">
           <button className="link_button">
             <div>
               <Image
@@ -38,10 +38,29 @@ export default async function CV({
               &nbsp;
               <Link
                 locale={false}
-                href={`/cv/${dictionary.cv.nombreArchivo[lang]}`}
+                href={`/cv/${dictionary.cv.nombreArchivo[lang]}.pdf`}
                 target="_blank"
               >
                 {dictionary.cv.downloadPDF[lang]}
+              </Link>
+            </div>
+          </button>
+          <button className="link_button">
+            <div>
+              <Image
+                className="link_button__icon"
+                alt="paper clip icon"
+                width="12"
+                /* height="12" */
+                src={paperclipIcon}
+              ></Image>
+              &nbsp;
+              <Link
+                locale={false}
+                href={`/cv/${dictionary.cv.nombreArchivo[lang]}.docx`}
+                target="_blank"
+              >
+                {dictionary.cv.downloadDOC[lang]}
               </Link>
             </div>
           </button>
@@ -60,7 +79,7 @@ export default async function CV({
               <li>Testing (Vitest/Jest, Playwright)</li>
               {/*               <li>WebExtension API</li>
                */}{" "}
-               <li>TypeScript / JSDoc</li>
+              <li>TypeScript / JSDoc</li>
               <li>Git / GitHub</li>
             </ul>
           </section>
@@ -151,15 +170,21 @@ export default async function CV({
               <strong>{dictionary.cv.experiencias4a[lang]}</strong>
             </p>
             <ul>
-              <li>{dictionary.cv.experiencias4b[lang]} {dictionary.cv.experiencias4c[lang]}</li>
+              <li>
+                {dictionary.cv.experiencias4b[lang]}{" "}
+                {dictionary.cv.experiencias4c[lang]}
+              </li>
             </ul>
             <p>
               <strong>{dictionary.cv.experiencias3a[lang]}</strong>
             </p>
             <ul>
-              <li>{dictionary.cv.experiencias3b[lang]} {dictionary.cv.experiencias3c[lang]}</li>
+              <li>
+                {dictionary.cv.experiencias3b[lang]}{" "}
+                {dictionary.cv.experiencias3c[lang]}
+              </li>
             </ul>
-  {/*           <p>
+            {/*           <p>
               <strong>{dictionary.cv.experiencias2a[lang]}</strong>
             </p>
             <ul>
