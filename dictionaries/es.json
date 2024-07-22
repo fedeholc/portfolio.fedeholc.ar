@@ -215,7 +215,7 @@
     "academia1": { "es": "Formación Académica", "en": "Education" },
 
     "academia2a": {
-      "es": "Tecnicatura Superior en Desarrollo de Software.",
+      "es": "Técnico Superior en Desarrollo de Software.",
       "en": "Higher Technician Degree in Software Development."
     },
     "academia2b": {
@@ -318,8 +318,8 @@
       "en": "Design and development of web pages using HTML, CSS and Javascript."
     },
     "experiencias3a": {
-      "es": "Sociólogo, Departamento de Salud Ambiental, Ministerio de Salud del GCABA. 2008 – 2012",
-      "en": "Sociologist, Environmental Health Department, Ministry of Health of the Government of the Autonomous City of Buenos Aires. 2008 - 2012"
+      "es": "Sociólogo. Departamento de Salud Ambiental, Ministerio de Salud, GCABA. 2008 – 2012",
+      "en": "Sociologist. Environmental Health Department, Ministry of Health of the Government of the Autonomous City of Buenos Aires. 2008 - 2012"
     },
     "experiencias3b": {
       "es": "Desarrollo e implementación de instrumentos para el relevamiento de problemáticas ambientales en los Centros de Salud y Acción Comunitaria de la CABA. Capacitación del personal para su utilización.",
@@ -334,8 +334,8 @@
       "en": "Professor and university tutor. University of Buenos Aires. 2007 - 2015"
     },
     "experiencias4b": {
-      "es": "Profesor de Introducción al Pensamiento Científico, Ciclo Básico Común, cátedra Marqués. 2007-2011",
-      "en": "Professor of Introduction to Scientific Thinking, Common Basic Cycle, Marqués Chair. 2007-2011"
+      "es": "Profesor de Introducción al Pensamiento Científico, Ciclo Básico Común, cátedra Marqués (2007-2011).",
+      "en": "Professor of Introduction to Scientific Thinking, Common Basic Cycle, Marqués Chair (2007-2011)."
     },
     "experiencias4c": {
       "es": "Profesor y tutor de Prácticas de la enseñanza. Facultad de Ciencias Sociales, cátedra Pipkin. 2009-2015",

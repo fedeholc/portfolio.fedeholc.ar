@@ -50,17 +50,17 @@ export default async function CV({
         <div className={proyectos.columns1}>
           <section>
             <h3>{dictionary.cv.calificaciones1[lang]}</h3>
-            <p>{dictionary.cv.calificaciones2[lang]}</p>
+            <p>{dictionary.cv.calificaciones3[lang]}</p>
             <ul className={proyectos.columns2stack}>
               <li>HTML / CSS</li>
-              <li>MySQL / SQLite</li>
-              <li>JavaScript / React / Next.js</li>
-              <li>JSDocs / TypeScript</li>
-              {/*               <li>WebExtension API</li>
-               */}{" "}
-              <li>Testing (Vitest/Jest, Playwright)</li>
               <li>Node.js / Express</li>
               <li>Responsive web design</li>
+              <li>MySQL / SQLite</li>
+              <li>Vanilla JavaScript / React / Next.js</li>
+              <li>Testing (Vitest/Jest, Playwright)</li>
+              {/*               <li>WebExtension API</li>
+               */}{" "}
+               <li>TypeScript / JSDoc</li>
               <li>Git / GitHub</li>
             </ul>
           </section>
@@ -151,23 +151,21 @@ export default async function CV({
               <strong>{dictionary.cv.experiencias4a[lang]}</strong>
             </p>
             <ul>
-              <li>{dictionary.cv.experiencias4b[lang]}</li>
-              <li>{dictionary.cv.experiencias4c[lang]}</li>
+              <li>{dictionary.cv.experiencias4b[lang]} {dictionary.cv.experiencias4c[lang]}</li>
             </ul>
             <p>
               <strong>{dictionary.cv.experiencias3a[lang]}</strong>
             </p>
             <ul>
-              <li>{dictionary.cv.experiencias3b[lang]}</li>
-              <li>{dictionary.cv.experiencias3c[lang]}</li>
+              <li>{dictionary.cv.experiencias3b[lang]} {dictionary.cv.experiencias3c[lang]}</li>
             </ul>
-            <p>
+  {/*           <p>
               <strong>{dictionary.cv.experiencias2a[lang]}</strong>
             </p>
             <ul>
               <li>{dictionary.cv.experiencias2b[lang]}</li>
               <li>{dictionary.cv.experiencias2c[lang]}</li>
-            </ul>
+            </ul> */}
           </section>
         </div>
       </div>
