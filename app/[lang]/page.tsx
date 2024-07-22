@@ -93,9 +93,9 @@ export default async function IndexPage({
         <span className="emoji">🚀</span>
       </p>
       <p>
-        En el pasado fui sociólogo y profesor &nbsp;
-        <span className="emoji">👨‍🏫</span>&nbsp; en escuelas y en la universidad
-        de buenos aires.
+        En el pasado fui sociólogo y profesor en escuelas y en la universidad de
+        buenos aires.&nbsp;
+        <span className="emoji">👨‍🏫</span>&nbsp;
       </p>
     </>
   );
@@ -108,9 +108,9 @@ export default async function IndexPage({
           <span className="emoji">🚀</span>
         </p>
         <p>
-          Also, in the past I was a sociologist and a teacher &nbsp;
-          <span className="emoji">👨‍🏫</span>&nbsp;in schools and at the
-          University of Buenos Aires.
+          Also, in the past I was a sociologist and a teacherin schools and at
+          the University of Buenos Aires. &nbsp;
+          <span className="emoji">👨‍🏫</span>&nbsp;
         </p>
       </>
     );
