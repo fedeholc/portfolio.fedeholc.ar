@@ -108,8 +108,8 @@ export default async function IndexPage({
           <span className="emoji">🚀</span>
         </p>
         <p>
-          Also, in the past I was a sociologist and a teacher in schools and at
-          the University of Buenos Aires. &nbsp;
+          Also, in the past I was a sociologist and a teacher at middle schools
+          and at the University of Buenos Aires. &nbsp;
           <span className="emoji">👨‍🏫</span>&nbsp;
         </p>
       </>
