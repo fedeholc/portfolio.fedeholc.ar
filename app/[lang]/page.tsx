@@ -50,9 +50,10 @@ export default async function IndexPage({
       </p>
       <p>
         Soy&nbsp;
-        <strong>desarrollador web</strong> enfocado en frontend&nbsp;
-        <span className="emoji">🌈</span>&nbsp;pero con conocimientos y
-        curiosidad por el backend, los web standards, y el software de código
+        <strong>desarrollador web full stack</strong> especializado en
+        frontend&nbsp;
+        <span className="emoji">🌈</span>,&nbsp; con conocimientos y curiosidad
+        por el backend, los web standards, y el software de código
         abierto.&nbsp;
         <span className="emoji">👾</span>
       </p>
@@ -75,10 +76,11 @@ export default async function IndexPage({
         </p>
         <p>
           I am a&nbsp;
-          <strong>web developer</strong> focused on frontend&nbsp;
-          <span className="emoji">🌈</span>&nbsp;but also with knowledge and
-          curiosity about backend, web standards, and open source
-          software.&nbsp;
+          <strong>full stack web developer</strong> specialized in
+          frontend&nbsp;
+          <span className="emoji">🌈</span>,&nbsp;with a strong foundation in
+          backend technologies and a keen interest in web standards and
+          open-source software.&nbsp;
           <span className="emoji">👾</span>
         </p>
       </>
@@ -103,13 +105,13 @@ export default async function IndexPage({
     p2 = (
       <>
         <p>
-          I started as a self-taught and now I am about to get a technical
-          degree on software development. &nbsp;
+          I began my journey as a self-taught developer and am now on the verge
+          of graduating as a software development technician. &nbsp;
           <span className="emoji">🚀</span>
         </p>
         <p>
-          Also, in the past I was a sociologist and a teacher at middle schools
-          and at the University of Buenos Aires. &nbsp;
+          Previously, I worked as a sociologist and taught at high schools and
+          the University of Buenos Aires. &nbsp;
           <span className="emoji">👨‍🏫</span>&nbsp;
         </p>
       </>

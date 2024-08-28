@@ -68,6 +68,10 @@
 
  }
 
+/*  article p, article div {
+   cursor: default;
+ } */
+
  strong {
    font-weight: 600;
  }
