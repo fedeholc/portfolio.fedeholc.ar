@@ -66,21 +66,35 @@ export default async function CV({
           </button>
           <br />
         </div>
+        <br></br>
         <div className={proyectos.columns1}>
           <section>
             <h3>{dictionary.cv.calificaciones1[lang]}</h3>
             <p>{dictionary.cv.calificaciones3[lang]}</p>
             <ul className={proyectos.columns2stack}>
-              <li>HTML / CSS</li>
-              <li>Node.js / Express</li>
-              <li>Responsive web design</li>
-              <li>MySQL / SQLite</li>
-              <li>Vanilla JavaScript / React / Next.js</li>
+              <li>HTML / CSS / Responsive design</li>
               <li>Testing (Vitest/Jest, Playwright)</li>
+              <li>Vanilla JavaScript / React / Next.js</li>
+              <li>SQL / SQLite</li>
+              <li>TypeScript / JSDoc</li>
               {/*               <li>WebExtension API</li>
                */}{" "}
-              <li>TypeScript / JSDoc</li>
               <li>Git / GitHub</li>
+              <li>Node.js / Express</li>
+              <li>Linux</li>
+            </ul>
+            <br></br>
+
+            <p>{dictionary.cv.calificaciones3b[lang]}</p>
+            <ul className={proyectos.columns2stack}>
+              <li>{dictionary.cv.calificaciones4.sk2[lang]}</li>
+              <li>{dictionary.cv.calificaciones4.sk3[lang]}</li>
+              <li>{dictionary.cv.calificaciones4.sk4[lang]}</li>
+              <li>{dictionary.cv.calificaciones4.sk5[lang]}</li>
+              <li>{dictionary.cv.calificaciones4.sk6[lang]}</li>
+              <li>{dictionary.cv.calificaciones4.sk7[lang]}</li>
+              <li>{dictionary.cv.calificaciones4.sk1[lang]}</li>
+              <li>{dictionary.cv.calificaciones4.sk8[lang]}</li>
             </ul>
           </section>
 
@@ -132,6 +146,10 @@ export default async function CV({
           <section>
             <h3>{dictionary.cv.cursos1[lang]}</h3>
             <ul>
+              <li>
+                <strong>{dictionary.cv.cursos8a[lang]}</strong>&nbsp;
+                {dictionary.cv.cursos8b[lang]}
+              </li>
               <li>
                 <strong>{dictionary.cv.cursos2a[lang]}</strong>{" "}
                 {dictionary.cv.cursos2b[lang]}

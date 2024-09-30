@@ -113,8 +113,8 @@
       "en": ") you can see the projects I have worked on, along with a detailed explanation of them, the problems I had to overcome and  and what I have learned (also the links to the source code).👾"
     },
     "nombreArchivo": {
-      "es": "Federico_Holc_CV",
-      "en": "Federico_Holc_Resume"
+      "es": "CV_-_Federico_Holc_-_Desarrollador_Web_-_2024",
+      "en": "Resume_-_Federico_Holc_-_Web_Developer_-_2024"
     },
     "heading": { "es": "CURRICULUM VITAE", "en": "RESUME" },
     "downloadPDF": {
@@ -134,8 +134,46 @@
       "en": "Web developer focused on frontend. "
     },
     "calificaciones3": {
-      "es": "Mis habilidades y experiencia incluyen:",
+      "es": "Mis capacidades y conocimientos técnicos incluyen:",
+      "en": "My skills and technical knowledge include:"
+    },
+    "calificaciones3b": {
+      "es": "Además, mi experiencia me ha permitido desarrollar las siguientes habilidades:",
       "en": "My skills and experience include:"
+    },
+    "calificaciones4": {
+      "sk1": {
+        "es": "Trabajo con metodologías ágiles (Scrum / Kanban)",
+        "en": "Working with agile methodologies (Scrum / Kanban)"
+      },
+      "sk2": {
+        "es": "Trabajo en equipo",
+        "en": "Teamwork"
+      },
+      "sk3": {
+        "es": "Comunicación efectiva",
+        "en": "Effective communication"
+      },
+      "sk4": {
+        "es": "Iniciativa / autonomía",
+        "en": "Iniciative / autonomy"
+      },
+      "sk5": {
+        "es": "Gestión del tiempo / responsabilidad",
+        "en": "Time managment / responsibility"
+      },
+      "sk6": {
+        "es": "Resolución de problemas",
+        "en": "Problem solving"
+      },
+      "sk7": {
+        "es": "Escucha activa / empatía",
+        "en": "Active listening / empathy"
+      },
+      "sk8": {
+        "es": "Atención al detalle",
+        "en": "Attention to detail"
+      }
     },
     "proyectos1": { "es": "Proyectos", "en": "Projects" },
     "proyectos2": {
@@ -219,44 +257,44 @@
     "academia1": { "es": "Formación Académica", "en": "Education" },
 
     "academia2a": {
-      "es": "Técnico Superior en Desarrollo de Software.",
+      "es": "Tecnicatura Superior en Desarrollo de Software.",
       "en": "Higher Technician Degree in Software Development."
     },
     "academia2b": {
-      "es": "Instituto de Formación Técnica Superior N.º 29 de la Ciudad Autónoma de Buenos Aires. En curso desde 2023 (14 materias aprobadas).",
-      "en": "Technical Training Institute No. 29 of the Autonomous City of Buenos Aires. In progress since 2023 (14 subjects approved)."
+      "es": "Instituto de Formación Técnica Superior N.º 29 de la Ciudad Autónoma de Buenos Aires.  2023 - a la actualidad (14 materias de 23 aprobadas).",
+      "en": "Technical Training Institute No. 29 of the Autonomous City of Buenos Aires.  2023 - to present (14 subjects of 23 approved)."
     },
     "academia3a": {
-      "es": "Técnico en Computación.",
+      "es": "Escuela Técnica en Computación.",
       "en": "Computer Technician."
     },
     "academia3b": {
-      "es": "Escuela Técnica Nº 3 Maria Sánchez de Thompson, Ciudad Autónoma de Buenos Aires. 1992 – 1998.",
-      "en": "Technical School Nº 3 Maria Sánchez de Thompson, Autonomous City of Buenos Aires. 1992 - 1998."
+      "es": "Escuela Técnica Nº 3 Maria Sánchez de Thompson, Ciudad Autónoma de Buenos Aires. 1992 – 1998. Graduated.",
+      "en": "Technical School Nº 3 Maria Sánchez de Thompson, Autonomous City of Buenos Aires. 1992 - 1998. Graduated."
     },
     "academia4a": {
-      "es": "Licenciado en Sociología.",
+      "es": "Licenciatura en Sociología.",
       "en": "Bachelor's Degree in Sociology."
     },
     "academia4b": {
-      "es": "Facultad de Ciencias Sociales, Universidad de Buenos Aires. 2002 – 2007.",
-      "en": "Faculty of Social Sciences, University of Buenos Aires. Buenos Aires. 2002 - 2007."
+      "es": "Facultad de Ciencias Sociales, Universidad de Buenos Aires. 2002 – 2007. Graduado.",
+      "en": "Faculty of Social Sciences, University of Buenos Aires. Buenos Aires. 2002 - 2007. Graduated."
     },
     "academia5a": {
-      "es": "Profesor de Enseñanza Secundaria, Normal y Especial en Sociología.",
+      "es": "Profesorado de Enseñanza Secundaria, Normal y Especial en Sociología.",
       "en": "Professor of Secondary, Normal and Special Education in Sociology."
     },
     "academia5b": {
-      "es": "Facultad de Ciencias Sociales, Universidad de Buenos Aires. 2007 – 2009.",
-      "en": "Faculty of Social Sciences, University of Buenos Aires. 2007 – 2009."
+      "es": "Facultad de Ciencias Sociales, Universidad de Buenos Aires. 2007 – 2009. Graduado.",
+      "en": "Faculty of Social Sciences, University of Buenos Aires. 2007 – 2009. Graduated."
     },
     "academia6a": {
-      "es": "Especialista Docente de Nivel Superior en Educación Sexual Integral.",
+      "es": "Especialización Docente de Nivel Superior en Educación Sexual Integral.",
       "en": "Higher Education Specialist in Comprehensive Sexual Education."
     },
     "academia6b": {
-      "es": "Instituto Superior del Profesorado Dr. Joaquín V. González. 2017 – 2019.",
-      "en": "Dr. Joaquín V. González Higher Institute of Teaching. 2017 –2019."
+      "es": "Instituto Superior del Profesorado Dr. Joaquín V. González. 2017 – 2019. Graduado.",
+      "en": "Dr. Joaquín V. González Higher Institute of Teaching. 2017 –2019. Graduated."
     },
     "cursos1": { "es": "Cursos", "en": "Courses" },
     "cursos2a": {
@@ -307,11 +345,19 @@
       "es": "freeCodeCamp.org, 2022.",
       "en": "freeCodeCamp.org, 2022."
     },
+    "cursos8a": {
+      "es": "AWS Academy Cloud Foundations,",
+      "en": "AWS Academy Cloud Foundations,"
+    },
+    "cursos8b": {
+      "es": "AWS Academy, 2024.",
+      "en": "AWS Academy, 2024."
+    },
 
     "experiencias1": { "es": "Experiencia Laboral", "en": "Work Experience" },
     "experiencias2a": {
-      "es": "Programador. CompuHotel S.A. 1998 – 2002",
-      "en": "Programmer. CompuHotel S.A. 1998 - 2002"
+      "es": "Programador. CompuHotel S.A. 1998 – 2002.",
+      "en": "Programmer. CompuHotel S.A. 1998 - 2002."
     },
     "experiencias2b": {
       "es": "Desarrollo de software de administración hotelera utilizando Visual Basic, Visual Fox Pro, y bases de datos SQL.",
@@ -322,8 +368,8 @@
       "en": "Design and development of web pages using HTML, CSS and Javascript."
     },
     "experiencias3a": {
-      "es": "Sociólogo. Departamento de Salud Ambiental, Ministerio de Salud, GCABA. 2008 – 2012",
-      "en": "Sociologist. Environmental Health Department, Ministry of Health of the Government of the Autonomous City of Buenos Aires. 2008 - 2012"
+      "es": "Sociólogo. Departamento de Salud Ambiental, Ministerio de Salud, GCABA. 2008 – 2012.",
+      "en": "Sociologist. Environmental Health Department, Ministry of Health of the Government of the Autonomous City of Buenos Aires. 2008 - 2012."
     },
     "experiencias3b": {
       "es": "Desarrollo e implementación de instrumentos para el relevamiento de problemáticas ambientales en los Centros de Salud y Acción Comunitaria de la CABA. Capacitación del personal para su utilización.",
@@ -334,8 +380,8 @@
       "en": "Analysis of socio-environmental data using Epi Info, MS Access databases, and SPSS."
     },
     "experiencias4a": {
-      "es": "Profesor y tutor universitario. Universidad de Buenos Aires. 2007 – 2015",
-      "en": "Professor and university tutor. University of Buenos Aires. 2007 - 2015"
+      "es": "Profesor y tutor universitario. Universidad de Buenos Aires. 2007 – 2015.",
+      "en": "Professor and university tutor. University of Buenos Aires. 2007 - 2015."
     },
     "experiencias4b": {
       "es": "Profesor de Introducción al Pensamiento Científico, Ciclo Básico Común, cátedra Marqués (2007-2011).",
@@ -346,8 +392,8 @@
       "en": "Professor and tutor of Teaching Practices. Faculty of Social Sciences, Pipkin Chair (2009-2015)."
     },
     "experiencias5a": {
-      "es": "Profesor de enseñanza media. 2010 – 2024",
-      "en": "High school teacher. 2010 - 2024"
+      "es": "Profesor de enseñanza media. 2010 – a la actualidad.",
+      "en": "High school teacher. 2010 - to present."
     },
     "experiencias5b": {
       "es": "Profesor de Sociología, Introducción a las Ciencias Sociales y a las Humanidades, Formación Ética y Ciudadana, e Historia, en escuelas públicas de enseñanza media de la Ciudad Autónoma de Buenos Aires.",

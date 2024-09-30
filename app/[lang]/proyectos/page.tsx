@@ -18,6 +18,7 @@ import { type Locale } from "@app/i18n-config";
 import { getDictionary } from "@app/get-dictionary";
 import { Metadata } from "next";
 import Link from "next/link";
+import React from "react";
 
 /*         👾🌿🍁🪐🌟🛠️💘🕸️🚲️🎼⭐
  */
