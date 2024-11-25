@@ -659,23 +659,23 @@
       "en": "Learnings and problems along the way"
     },
     "jwtlk12": {
-      "es": " ",
+      "es": "auth implica aprender muchas otras cosas si se quiere saber lo que se está haciendo (sobre tokens, hashing, cookies, ataques xss, csrf, etc.).",
       "en": " "
     },
     "jwtlk13": {
-      "es": " ",
+      "es": "diseño de implementación de bd usando patron adapter ",
       "en": "T "
     },
     "jwtlk14": {
-      "es": " ",
+      "es": "modularizar vanilla js ",
       "en": " "
     },
     "jwtlk15": {
-      "es": " ",
+      "es": "testing con mocks? supertest? ",
       "en": " "
     },
     "jwtlk16": {
-      "es": " ",
+      "es": "la parte de documentacion dificil, no por escribir, porque habia tomado notas, sino porque para explicar algo hay que entenderlo bien, y si la guia la iban a leer y usar otras personas era una responsabilidad, en ese mismo sentido fue que al documentar fui encontrando pequeños fallos o detalles a corregir, y que no podía dejarlos pasar (seguro sigue habiendo errores pero ninguno que conscientemente haya dejado pasar).",
       "en": " "
     },
     "jwtlk17": {
