@@ -631,20 +631,20 @@
       "en": "What's good about it?"
     },
     "jwtlk04": {
-      "es": "Ya sea por motivos de seguridad o interés económico, se suele recomendar el uso de librerías y servicios de autenticación de terceros. Pero implementar tu propio sistema de autenticación es muy valioso en términos de aprendizaje: permite comprender cómo funciona de conjunto y cuál es la complejidad inherente al problema que se quiere resolver. Además, en el proceso se aprende sobre cookies, sesiones, tokens, cifrado, hashing, etc.",
-      "en": " "
+      "es": "Ya sea por motivos de seguridad o interés económico, se suele recomendar el uso de librerías y servicios de autenticación de terceros. Pero implementar un sistema de autenticación propio es muy valioso en cuanto a aprendizaje: nos obliga a entender cómo funciona de conjunto y cuál es la complejidad inherente al problema que se quiere resolver. Además, en el proceso se aprende sobre cookies, sesiones, tokens, cifrado, hashing, etc.",
+      "en": "Whether for security reasons or economic interest, it is usually recommended to use third-party authentication libraries and services. But implementing your own authentication system is very valuable in terms of learning: it forces us to understand how it works together and what is the inherent complexity of the problem we want to solve. In addition, in the process you learn about cookies, sessions, tokens, encryption, hashing, etc."
     },
     "jwtlk05": {
       "es": "El código que acompaña a la guía es totalmente funcional e incluye los distintos procesos de autenticación, como el registro, el login con usuario y contraseña, el login con Google o Github, el reseteo de la contraseña, etc. Está pensado para que quien quiera lo pueda tomar, modificar (si es necesario) y utilizar en sus propios proyectos.",
-      "en": ""
+      "en": "The code that accompanies the guide is fully functional and includes the different authentication processes, such as registration, login with username and password, login with Google or Github, password reset, etc. It is designed so that anyone who wants to can take it, modify (if necessary) and use it in their own projects."
     },
     "jwtlk06": {
       "es": "Además del código, la guía incluye explicaciones sobre los distintos procesos y conceptos necesarios para entender cómo funciona el sistema de autenticación, y cómo se implementan las distintas funcionalidades. En términos de aprendizaje, no alcanza con copiar y pegar código, es necesario entenderlo, y también comprender cuál es el problema que se está queriendo resolver, cuales son las soluciones posibles, qué ventajas y desventajas tiene cada una, etc.",
-      "en": " "
+      "en": "In addition to the code, the guide includes explanations of the different processes and concepts necessary to understand how the authentication system works, and how the different functionalities are implemented. In terms of learning, it is not enough to copy and paste code, it is necessary to understand it, and also understand what is the problem that is being tried to solve, what are the possible solutions, what are the advantages and disadvantages of each one, etc."
     },
     "jwtlk07": {
       "es": "También decidí dejar el código de los tests unitarios (con Vitest)y de los tests end-to-end (con Playwright), para que quien quiera pueda probar el sistema y también aprender a realizar tests para este tipo de aplicaciones.",
-      "en": " "
+      "en": "I also decided to leave the code of the unit tests (with Vitest) and the end-to-end tests (with Playwright), so that anyone who wants to can test the system and also learn to perform tests for this type of applications."
     },
     "jwtlk09": {
       "es": "Sobre el stack",
@@ -652,7 +652,7 @@
     },
     "jwtlk10": {
       "es": "El frontend está realizado en vanilla JavaScript (además de HTML y CSS), y el backend en Node y Express. Me pareció que no utilizar un framework era mejor en cuanto a aprendizaje, y también para que el código pueda ser adaptado a cualquier otro framework o librería. También pensando en simplicidad y accesibilidad es que decidí no utilizar TypeScript, pero usé JSDoc, para poder comprobar el tipado de los datos y documentar el código. Respecto a la base de datos utilicé SQLite por su simplicidad y por la posibilidad de utilizar también de modo muy sencillo una base de datos SQLite online con Turso.",
-      "en": " "
+      "en": "The frontend is done in vanilla JavaScript (in addition to HTML and CSS), and the backend in Node and Express. I thought that not using a framework was better in terms of learning, and also so that the code can be adapted to any other framework or library. Also thinking about simplicity and accessibility is that I decided not to use TypeScript, but I used JSDoc, to be able to check the typing of the data and document the code. Regarding the database, I used SQLite for its simplicity and for the possibility of also using a SQLite online database with Turso in a very simple way."
     },
     "jwtlk11": {
       "es": "Aprendizajes y problemas en el camino",
@@ -660,27 +660,27 @@
     },
     "jwtlk12": {
       "es": "La realización de este proyecto me llevo más tiempo del que me imaginaba, pero también aprendí más de lo que estaba en los planes originales. Pues implementar un sistema de autenticación propio, y querer conocer los fundamentos de por qué se deben hacer las cosas de cierta forma (para garantizar seguridad, o rendimiento), es mucho más que aprender cómo funcionan los JWT. En el camino tuve que aprender sobre encriptación, hashing, cookies, ataques XSS/CSRF y cómo prevenirlos, etc. ¡Y aún me quedan algunas cuestiones pendientes!`",
-      "en": " "
+      "en": "The realization of this project took me more time than I imagined, but I also learned more than what was in the original plans. Because implementing your own authentication system, and wanting to know the fundamentals of why things should be done in a certain way (to guarantee security, or performance), is much more than learning how JWTs work. Along the way I had to learn about encryption, hashing, cookies, XSS/CSRF attacks and how to prevent them, etc. And I still have some pending issues!"
     },
     "jwtlk13": {
       "es": "El desarrollo de la app en vanilla JavaScript, me llevó a tener que pensar bien en su diseño y como estructurar el código para hacerlo lo mas modular posible, tanto para que pueda ser reutilizado en otros proyectos como para poder testearlo adecuadamente. A modo de ejemplo, para la base de datos utilicé el patrón de diseño adapter, mediante el cual pude generar un sistema en el que con solo modificar una variable de entorno se puede cambiar de tipo de base de datos.",
-      "en": "T "
+      "en": "The development of the app in vanilla JavaScript, led me to have to think well about its design and how to structure the code to make it as modular as possible, both so that it can be reused in other projects and to be able to test it properly. By way of example, for the database I used the adapter design pattern, through which I was able to generate a system in which by simply modifying an environment variable you can change the type of database."
     },
     "jwtlk14": {
       "es": "En materia de testing el proyecto me llevó a tener que aprender a trabajar con mocks de módulos, y de requests (usando supertest), como no lo había hecho antes. Pero tanto o más importante fue el haber comprobado la importancia de los tests  en particular cuando se quieren realizar modificaciones en el código sin temer que se rompa algo y no saber qué fue lo que sucedio.",
-      "en": " "
+      "en": "In terms of testing, the project led me to have to learn to work with module and request mocks (using supertest), as I had not done before. But as important or more was having verified the importance of tests, especially when you want to make modifications to the code without fearing that something will break and not knowing what happened."
     },
     "jwtlk15": {
       "es": "También comprobé en la práctica que el último tramo del proyecto, su puesta a punto para ser publicado, puede resultar el más tortuso. Teniendo casi listo el código y la aplicación de ejemplo funcionando, comence a escribir la guía en base a algunas notas que había ido tomando.Pero resulta que para poder explicar algo hay que entenderlo bien, y si la guia va a ser leída y utilizada por otras personas hay que ser responsable con lo que se escribe. El proceso de escritura me llevo a revisar y probar más pormenorizadamente el código, y es así que fuí encontrando pequeños fallos o detalles a corregir, lo que prolongo aún más la primera publicación del proyecto, pero no podía ignorarlos. Seguramente siga habiendo errores pero ningo que conscientemente haya dejado pasar.",
-      "en": " "
+      "en": "I also found in practice that the last stretch of the project, its fine-tuning to be published, can be the most tortuous. Having almost ready the code and the example application working, I started writing the guide based on some notes I had taken. But it turns out that in order to explain something you have to understand it well, and if the guide is going to be read and used by other people you have to be responsible for what you write. The writing process led me to review and test the code more thoroughly, and that is how I found small faults or details to correct, which further prolonged the first publication of the project, but I could not ignore them. There are probably still errors but none that I have consciously let pass."
     },
     "jwtlk17": {
-      "es": "FotoYOP: muestra general de las funcionalidades de la aplicación.",
-      "en": "FotoYOP: general display of the application's features."
+      "es": "----descripcion imagen2",
+      "en": "idem"
     },
     "jwtlk18": {
-      "es": "FotoYOP: muestra de la aplicación en una ventana reducida como podría ser la de un teléfono.",
-      "en": "FotoYOP: display of the application in a reduced window as it could be on a phone."
+      "es": "----descripcion imagen2",
+      "en": "idem"
     },
     "anota01": {
       "es": "ANOTÁ! (Another Note Taking App) & Highlighter",
