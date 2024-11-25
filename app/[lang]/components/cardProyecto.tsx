@@ -24,8 +24,8 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
         lang={lang}
         titulo="🔐️ JWT Learning Kit"
         buttonLink="/proyectos/#proyectoJWTLK"
-        subtitulo={dictionary.cv.proyectos14[lang]}
-        descripcion={dictionary.cv.proyectos15[lang]}
+        subtitulo={dictionary.cv.proyectos16[lang]}
+        descripcion={dictionary.cv.proyectos17[lang]}
         stack={[
           "HTML",
           "CSS",
@@ -34,6 +34,23 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
           "SQLite",
           "Vitest / Playwright",
           "JSDoc",
+        ]}
+      />
+
+      <CardProyecto
+        lang={lang}
+        titulo="🩺️ Health Pro"
+        buttonLink="/proyectos/#proyectoHealthPro"
+        subtitulo={dictionary.cv.proyectos14[lang]}
+        descripcion={dictionary.cv.proyectos15[lang]}
+        stack={[
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Node",
+          "WebSockets",
+          "WebRTC",
         ]}
       />
 

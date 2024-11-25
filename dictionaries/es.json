@@ -236,12 +236,22 @@
       "es": "FotoYOP te permite transformar imágenes y crear collages de manera sencilla y rápida. Es también una PWA que se puede instalar en el teléfono y usar offline. Foto-V es su complemento ideal: convierte imágenes en videos aplicándoles efectos como panning o zoom in/out.",
       "en": "FotoYOP allows you to transform images and create collages simply and quickly. It is also a PWA that can be installed on the phone and used offline. Foto-V is your ideal complement: it converts images into videos by applying effects such as panning or zoom in/out."
     },
+
     "proyectos14": {
+      "es": "Aplicación de telemedicina",
+      "en": "Telemedicine application"
+    },
+
+    "proyectos15": {
+      "es": "Health Pro es una aplicación de telemedicina desarrollada en equipo como parte de una simulación laboral de No Country. Me encargué de desarrollar los módulos de videollamadas y salas de espera de la aplicación.",
+      "en": "Health Pro is a telemedicine application developed as a team as part of a work simulation by No Country. I was in charge of developing the video call and waiting room modules of the application."
+    },
+    "proyectos16": {
       "es": "Roll your own auth, al menos una vez en la vida",
       "en": "Roll your own auth, at least once in your life"
     },
 
-    "proyectos15": {
+    "proyectos17": {
       "es": "JWT Learning Kit es una guía para aprender a desarrollar desde cero un sistema de autenticación en JavaScript usando JSON Web Token. Incluye el código y la explicación de los procesos y conceptos necesarios para su implementación.",
       "en": " JWT Learning Kit is a guide to learn how to develop from scratch an authentication system in JavaScript using JSON Web Token. It includes the code and the explanation of the processes and concepts necessary for its implementation."
     },
@@ -679,6 +689,75 @@
       "en": "idem"
     },
     "jwtlk18": {
+      "es": "----descripcion imagen2",
+      "en": "idem"
+    },
+
+    "health01": {
+      "es": "Health Pro - Aplicación de telemedicina",
+      "en": "Health Pro - Telemedicine application"
+    },
+    "health02": {
+      "es": "desc",
+      "en": ""
+    },
+    "health02b": {
+      "es": "desc",
+      "en": ""
+    },
+    "health03": {
+      "es": "¿Qué tiene de bueno?",
+      "en": "What's good about it?"
+    },
+    "health04": {
+      "es": "",
+      "en": ""
+    },
+    "health05": {
+      "es": "",
+      "en": ""
+    },
+    "health06": {
+      "es": "",
+      "en": ""
+    },
+    "health07": {
+      "es": "",
+      "en": ""
+    },
+    "health09": {
+      "es": "Sobre el stack",
+      "en": "About the stack"
+    },
+    "health10": {
+      "es": "stack",
+      "en": ""
+    },
+    "health11": {
+      "es": "Aprendizajes y problemas en el camino",
+      "en": "Learnings and problems along the way"
+    },
+    "health12": {
+      "es": "aprendizaje",
+      "en": ""
+    },
+    "health13": {
+      "es": "aprendizaje",
+      "en": ""
+    },
+    "health14": {
+      "es": "aprendizaje",
+      "en": ""
+    },
+    "health15": {
+      "es": "aprendizaje",
+      "en": ""
+    },
+    "health17": {
+      "es": "----descripcion imagen2",
+      "en": "idem"
+    },
+    "health18": {
       "es": "----descripcion imagen2",
       "en": "idem"
     },

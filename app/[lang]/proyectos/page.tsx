@@ -20,6 +20,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
 import ProyectoJWTLK from "./jwtlk/page";
+import ProyectoHealthPro from "./healthpro/page";
 
 /*         👾🌿🍁🪐🌟🛠️💘🕸️🚲️🎼⭐
  */
@@ -141,6 +142,9 @@ async function ProyectosTodos({ lang }: { lang: Locale }) {
       </div>
       <div id="proyectoJWTLK">
         <ProyectoJWTLK params={{ lang: lang }} />
+      </div>
+      <div id="proyectoHealthPro">
+        <ProyectoHealthPro params={{ lang: lang }} />
       </div>
       <div id="proyectoFotoyop">
         <ProyectoFotoyop2 params={{ lang: lang }} />
