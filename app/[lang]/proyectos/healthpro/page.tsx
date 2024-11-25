@@ -33,10 +33,8 @@ export default async function ProyectoHealthPro({
         <li>WebRTC</li>
       </ul>
     ),
-    linkCodeText2: `(docs) github/fedeholc/health-doc`,
-    linkCodeHref2: `https://www.github.com/fedeholc/health-doc`,
-    linkCodeText1: `(app) github/fedeholc/health`,
-    linkCodeHref1: `https://www.github.com/fedeholc/health`,
+    linkCodeText1: `github.com/No-Country-simulation/c21-m-15-java-react`,
+    linkCodeHref1: `https://github.com/No-Country-simulation/c21-m-15-java-react`,
     subtitulo2: dictionary.proyectos.health03[lang],
     texto2: (
       <ul>
@@ -76,18 +74,7 @@ export default async function ProyectoHealthPro({
       <h1 className={proyectos.titulo}>{TEXTO.titulo}</h1>
       <div className={`${proyectos.proyecto__container} `}>
         <p>{TEXTO.bajada}</p>
-        <p>
-          {TEXTO.bajada2}{" "}
-          <strong>
-            <Link
-              target="_blank"
-              className={proyectos.underline}
-              href="https://health.fedeholc.ar"
-            >
-              health.fedeholc.ar
-            </Link>
-          </strong>
-        </p>
+        <p>{TEXTO.bajada2}</p>
         <div className={proyectos.columns2stack}>
           <div>
             <h3>stack</h3>
@@ -96,7 +83,7 @@ export default async function ProyectoHealthPro({
           <div>
             <h3>{dictionary.proyectos.codigo[lang]}</h3>
             <div
-              style={{ marginBlock: "1rem" }}
+              style={{ marginBlock: "1rem", maxWidth: "270px" }}
               className={proyectos.link_icon}
             >
               <Link
@@ -105,35 +92,6 @@ export default async function ProyectoHealthPro({
                 href={TEXTO.linkCodeHref1}
               >
                 {TEXTO.linkCodeText1}
-              </Link>
-              &nbsp;
-              <Image src={externalLinkIcon} alt="external link icon" />
-            </div>
-            <div
-              style={{ marginBlock: "1rem" }}
-              className={proyectos.link_icon}
-            >
-              <Link
-                className={proyectos.underline}
-                target="_blank"
-                href={TEXTO.linkCodeHref2}
-              >
-                {TEXTO.linkCodeText2}
-              </Link>
-              &nbsp;
-              <Image src={externalLinkIcon} alt="external link icon" />
-            </div>
-            <h3 style={{ marginTop: "2rem" }}>website</h3>
-            <div
-              style={{ marginBlock: "1rem" }}
-              className={proyectos.link_icon}
-            >
-              <Link
-                className={proyectos.underline}
-                target="_blank"
-                href="https://health.fedeholc.ar/"
-              >
-                health.fedeholc.ar
               </Link>
               &nbsp;
               <Image src={externalLinkIcon} alt="external link icon" />
