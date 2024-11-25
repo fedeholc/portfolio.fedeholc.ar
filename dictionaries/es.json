@@ -664,15 +664,14 @@
     },
     "jwtlk13": {
       "es": "El desarrollo de la app en vanilla JavaScript, me llevó a tener que pensar bien en su diseño y como estructurar el código para hacerlo lo mas modular posible, tanto para que pueda ser reutilizado en otros proyectos como para poder testearlo adecuadamente. A modo de ejemplo, para la base de datos utilicé el patrón de diseño adapter, mediante el cual pude generar un sistema en el que con solo modificar una variable de entorno se puede cambiar de tipo de base de datos.",
-
       "en": "T "
     },
     "jwtlk14": {
-      "es": "testing con mocks? supertest? ",
+      "es": "En materia de testing el proyecto me llevó a tener que aprender a trabajar con mocks de módulos, y de requests (usando supertest), como no lo había hecho antes. Pero tanto o más importante fue el haber comprobado la importancia de los tests  en particular cuando se quieren realizar modificaciones en el código sin temer que se rompa algo y no saber qué fue lo que sucedio.",
       "en": " "
     },
     "jwtlk15": {
-      "es": "la parte de documentacion dificil, no por escribir, porque habia tomado notas, sino porque para explicar algo hay que entenderlo bien, y si la guia la iban a leer y usar otras personas era una responsabilidad, en ese mismo sentido fue que al documentar fui encontrando pequeños fallos o detalles a corregir, y que no podía dejarlos pasar (seguro sigue habiendo errores pero ninguno que conscientemente haya dejado pasar).",
+      "es": "También comprobé en la práctica que el último tramo del proyecto, su puesta a punto para ser publicado, puede resultar el más tortuso. Teniendo casi listo el código y la aplicación de ejemplo funcionando, comence a escribir la guía en base a algunas notas que había ido tomando.Pero resulta que para poder explicar algo hay que entenderlo bien, y si la guia va a ser leída y utilizada por otras personas hay que ser responsable con lo que se escribe. El proceso de escritura me llevo a revisar y probar más pormenorizadamente el código, y es así que fuí encontrando pequeños fallos o detalles a corregir, lo que prolongo aún más la primera publicación del proyecto, pero no podía ignorarlos. Seguramente siga habiendo errores pero ningo que conscientemente haya dejado pasar.",
       "en": " "
     },
     "jwtlk17": {
