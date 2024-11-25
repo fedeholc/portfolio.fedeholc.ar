@@ -61,16 +61,9 @@ export default async function ProyectoJWTLK({
         <li>{dictionary.proyectos.jwtlk15[lang]}</li>
         {/*         <li>{dictionary.proyectos.fotoyop16[lang]}</li>
          */}{" "}
-        <li>{dictionary.proyectos.jwtlk20[lang]}</li>
       </ul>
     ),
-    subtitulo5: dictionary.proyectos.jwtlk21[lang],
-    texto5: (
-      <ul>
-        <li>{dictionary.proyectos.jwtlk22[lang]}</li>
-        <li>{dictionary.proyectos.jwtlk23[lang]}</li>
-      </ul>
-    ),
+
   };
 
   return (
@@ -196,23 +189,7 @@ export default async function ProyectoJWTLK({
           <div>{TEXTO.texto4}</div>
         </div>{" "}
         <br />
-        <div className={proyectos.screenshot__container}>
-          <figure className={`${proyectos.screenshot__figure}  `}>
-            <img
-              className={proyectos.screenshot}
-              alt="screenshot"
-              src={screenshot3.src}
-            />
-
-            <figcaption className={proyectos.screenshot__caption}>
-              {dictionary.proyectos.jwtlk24[lang]}
-            </figcaption>
-          </figure>
-        </div>
-        <h3>{TEXTO.subtitulo5}</h3>
-        <div className={proyectos.columns1}>
-          <div>{TEXTO.texto5}</div>
-        </div>
+        
         {/* ***************************************** */}
       </div>
       <div className={proyectos.divider}>
