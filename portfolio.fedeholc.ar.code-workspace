@@ -6,6 +6,16 @@
   ],
   "settings": {
     "cSpell.language": "en,es",
-    "cSpell.words": ["boton"]
+    "cSpell.words": [
+      "boton",
+      "cardproyecto",
+      "codigo",
+      "cvpdf",
+      "descripcion",
+      "fotov",
+      "fotoyop",
+      "fotoyopv",
+      "podesver"
+    ]
   }
 }

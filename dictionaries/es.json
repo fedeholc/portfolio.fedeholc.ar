@@ -34,7 +34,7 @@
   "cardproyecto": { "es": "Ver proyecto", "en": "View project" },
   "intro": {
     "mas": {
-      "es": "¿Queŕes saber más sobre mi cómo programador?",
+      "es": "¿Querés saber más sobre mi cómo programador?",
       "en": "Do you want to know more about me as a programmer?"
     },
     "mas2": {
@@ -156,11 +156,11 @@
       },
       "sk4": {
         "es": "Iniciativa / autonomía",
-        "en": "Iniciative / autonomy"
+        "en": "Initiative / autonomy"
       },
       "sk5": {
         "es": "Gestión del tiempo / responsabilidad",
-        "en": "Time managment / responsibility"
+        "en": "Time management / responsibility"
       },
       "sk6": {
         "es": "Resolución de problemas",
@@ -235,6 +235,15 @@
     "proyectos13": {
       "es": "FotoYOP te permite transformar imágenes y crear collages de manera sencilla y rápida. Es también una PWA que se puede instalar en el teléfono y usar offline. Foto-V es su complemento ideal: convierte imágenes en videos aplicándoles efectos como panning o zoom in/out.",
       "en": "FotoYOP allows you to transform images and create collages simply and quickly. It is also a PWA that can be installed on the phone and used offline. Foto-V is your ideal complement: it converts images into videos by applying effects such as panning or zoom in/out."
+    },
+    "proyectos14": {
+      "es": "Roll your own auth, al menos una vez en la vida",
+      "en": "Roll your own auth, at least once in your life"
+    },
+
+    "proyectos15": {
+      "es": "JWT Learning Kit es una guía para aprender a desarrollar desde cero un sistema de autenticación en JavaScript usando JSON Web Token. Incluye el código y la explicación de los procesos y conceptos necesarios para su implementación.",
+      "en": " JWT Learning Kit is a guide to learn how to develop from scratch an authentication system in JavaScript using JSON Web Token. It includes the code and the explanation of the processes and concepts necessary for its implementation."
     },
 
     "idiomas1": { "es": "Idiomas", "en": "Languages" },
@@ -426,7 +435,7 @@
       "en": "Desktop application to manage a health clinic (course project). Stack: C#, Visual Studio, MySQL."
     },
     "otros2": {
-      "es": "Aplicación móvil para administrar un club deportivo (proyectode fin de cursada). Stack: Kotlin, Android Studio, SQLite.",
+      "es": "Aplicación móvil para administrar un club deportivo (proyecto de fin de cursada). Stack: Kotlin, Android Studio, SQLite.",
       "en": "Mobile application to manage a sports club (course project). Stack: Kotlin, Android Studio, SQLite."
     },
     "otros3": {
@@ -462,7 +471,7 @@
       "en": "Transformations such as adding a border, changing the canvas proportions, or converting to black and white can be performed. Some of them can be defined precisely: for example, when adding a border to the image, the color can be set using the hexadecimal code, and the size of the border can be set in pixels."
     },
     "fotoyop08": {
-      "es": "Se mantiene la calidad de las imagenes a la hora de transformarlas y guardarlas.",
+      "es": "Se mantiene la calidad de las imágenes a la hora de transformarlas y guardarlas.",
       "en": "The quality of the images is maintained when transforming and saving them."
     },
     "fotoyop09": {
@@ -490,7 +499,7 @@
       "en": "Working with the Canvas API also requires a learning time to solve the problems that arise, for example when working with images of different sizes and formats, making transformations, conversions, etc., and also to be able to optimize the performance of the application. I have been able to solve some performance problems, but there are others that I have not yet, especially when working with large images. The strategy I have used now is to work with images of a size limited to the user's view but record all the necessary transformations to repeat them on the original image when it is going to be downloaded, in order to safeguard the original quality. I would like to continue delving into this at least until I can find the limit of what the Canvas API can offer, which may not be the most appropriate tool for certain operations, and other tools or libraries may have to be used."
     },
     "fotoyop15": {
-      "es": "Lograr un diseño responsive para que la aplicación se pueda utilizar tanto en un teléfono cómo en una pc también tuvo sus complicaciones, principalmente a la hora de lograr tener siempre la imagen a la vista del usuario, y adaptar el tamaño del canvas a la pantalla, dependiendo de si la imagen era horizontal o vertical y del tamaño de la pantalla, sobre todo si se modificaba el tamaño de la ventana del navegador. Para ello tuve que utilizar JavaScript para ir calculando los tamaños según cómo se modificaba la pantalla, o según cómo se modificaba el tamaño de la imagén, por ejemlplo al agregarle un borde.",
+      "es": "Lograr un diseño responsive para que la aplicación se pueda utilizar tanto en un teléfono cómo en una pc también tuvo sus complicaciones, principalmente a la hora de lograr tener siempre la imagen a la vista del usuario, y adaptar el tamaño del canvas a la pantalla, dependiendo de si la imagen era horizontal o vertical y del tamaño de la pantalla, sobre todo si se modificaba el tamaño de la ventana del navegador. Para ello tuve que utilizar JavaScript para ir calculando los tamaños según cómo se modificaba la pantalla, o según cómo se modificaba el tamaño de la imagen, por ejemplo al agregarle un borde.",
       "en": "Achieving a responsive design so that the application can be used on both a phone and a PC also had its complications, mainly when it came to always having the image in view of the user, and adapting the size of the canvas to the screen, depending on whether the image was horizontal or vertical and the size of the screen, especially if the size of the browser window was modified. For this I had to use JavaScript to calculate the sizes according to how the screen was modified, or according to how the size of the image was modified, for example when adding a border."
     },
     "fotoyop16": {
@@ -506,11 +515,11 @@
       "en": "Display of the application in a reduced window as it could be on a phone."
     },
     "fotoyop19": {
-      "es": "Actualización en la versión v0.2: ahora es posible crear collages de dos o más imagenes.",
+      "es": "Actualización en la versión v0.2: ahora es posible crear collages de dos o más imágenes.",
       "en": "Update in version v0.2: now it is possible to create collages of two or more images."
     },
     "fotoyop20": {
-      "es": "Actualización v0.2: el incorporar la posibilidad de crear collages representó un gran desafío, no por la complejidad de las operaciones necesarias para crear el canvas con las imagenes, sino por el hecho de tener que refactorizar el código para poder incorporar una nueva característica que requiere de un proceso distinto por tratarse de múltiples imágenes. Esta nueva característica también llevó a tener que modificar la interfaz del usuario. Más allá del resultado que está a la vista me permitió aprender mucho sobre cómo organizar el código para que sea más fácil de mantener y de incorporar nuevas funcionalidades.",
+      "es": "Actualización v0.2: el incorporar la posibilidad de crear collages representó un gran desafío, no por la complejidad de las operaciones necesarias para crear el canvas con las imágenes, sino por el hecho de tener que refactorizar el código para poder incorporar una nueva característica que requiere de un proceso distinto por tratarse de múltiples imágenes. Esta nueva característica también llevó a tener que modificar la interfaz del usuario. Más allá del resultado que está a la vista me permitió aprender mucho sobre cómo organizar el código para que sea más fácil de mantener y de incorporar nuevas funcionalidades.",
       "en": "Update v0.2: incorporating the possibility of creating collages represented a great challenge, not because of the complexity of the operations necessary to create the canvas with the images, but because of the fact of having to refactor the code to be able to incorporate a new feature that requires a different process because it involves multiple images. This new feature also led to having to modify the user interface. Beyond the result that is in sight, it allowed me to learn a lot about how to organize the code so that it is easier to maintain and incorporate new functionalities."
     },
     "fotoyopv01": {
@@ -522,7 +531,7 @@
       "en": "FotoYOP is an application that allows you to transform images in a simple and fast way. It arises from the need to solve two problems. On the one hand, perform certain specific operations on images (for example, to publish them on social networks), and on the other, do it quickly and easily, without the need to register, or upload files to a server, simply drag and drop, edit and download. And even better if it is in a PWA that can also be installed on the phone and used offline."
     },
     "fotoyopv02b": {
-      "es": "Foto-V es su complemento ideal. Nos permite convertir imágenes en videos aplicando efectos como un panning o un zoom in/out (al estilo Ken Burns), y adaptar la imagen al tamaño que querramos, para poder por ejemplo publicarlas fácilmente en redes sociales. Corre también totalmente del lado del cliente.",
+      "es": "Foto-V es su complemento ideal. Nos permite convertir imágenes en videos aplicando efectos como un panning o un zoom in/out (al estilo Ken Burns), y adaptar la imagen al tamaño que queramos, para poder por ejemplo publicarlas fácilmente en redes sociales. Corre también totalmente del lado del cliente.",
       "en": "Foto-V is its ideal complement. It allows us to convert images into videos by applying effects such as panning or zoom in/out (Ken Burns style), and adapt the image to the size we want, so that we can easily publish them on social networks. It also runs completely on the client side."
     },
     "fotoyopv03": {
@@ -534,7 +543,7 @@
       "en": "No registration required. They do not upload files to a server. Everything is done in the browser. FotoYOP is also a PWA, so it can be installed on both a PC and a phone and used offline."
     },
     "fotoyopv05": {
-      "es": "Con fotoYOP se pueden realizar transformaciones como agregarle un borde,cambiar las proporciones del lienzo, o convertir a blanco y negro. Algunas de ellas se pueden definir con precision: por ejemplo, al agregarse un borde a la imagen se puede establecer el color utilizando el código hexadecimal, y el tamaño del borde setearlo en píxeles. Ahora (v0.2) también es posible crear collages de dos o más imagenes.",
+      "es": "Con fotoYOP se pueden realizar transformaciones como agregarle un borde,cambiar las proporciones del lienzo, o convertir a blanco y negro. Algunas de ellas se pueden definir con precision: por ejemplo, al agregarse un borde a la imagen se puede establecer el color utilizando el código hexadecimal, y el tamaño del borde setearlo en píxeles. Ahora (v0.2) también es posible crear collages de dos o más imágenes.",
       "en": "With fotoYOP you can make transformations such as adding a border, changing the proportions of the canvas, or converting to black and white. Some of them can be defined precisely: for example, when adding a border to the image you can set the color using the hexadecimal code, and the size of the border can be set in pixels. Now (v0.2) it is also possible to create collages of two or more images."
     },
     "fotoyopv06": {
@@ -570,7 +579,7 @@
       "en": "Working with the Canvas API also requires a learning time to solve the problems that arise, for example when working with images of different sizes and formats, making transformations, conversions, etc., and also to be able to optimize the performance of the application. I have been able to solve some performance problems, but there are others that I have not yet, especially when working with large images. The strategy I have used now is to work with images of a size limited to the user's view but record all the necessary transformations to repeat them on the original image when it is going to be downloaded, in order to safeguard the original quality. I would like to continue delving into this at least until I can find the limit of what the Canvas API can offer, which may not be the most appropriate tool for certain operations, and other tools or libraries may have to be used."
     },
     "fotoyopv15": {
-      "es": "Lograr un diseño responsive para que la aplicación se pueda utilizar tanto en un teléfono cómo en una pc también tuvo sus complicaciones, principalmente a la hora de lograr tener siempre la imagen a la vista del usuario, y adaptar el tamaño del canvas a la pantalla, dependiendo de si la imagen era horizontal o vertical y del tamaño de la pantalla, sobre todo si se modificaba el tamaño de la ventana del navegador. Para ello tuve que utilizar JavaScript para ir calculando los tamaños según cómo se modificaba la pantalla, o según cómo se modificaba el tamaño de la imagén, por ejemlplo al agregarle un borde.",
+      "es": "Lograr un diseño responsive para que la aplicación se pueda utilizar tanto en un teléfono cómo en una pc también tuvo sus complicaciones, principalmente a la hora de lograr tener siempre la imagen a la vista del usuario, y adaptar el tamaño del canvas a la pantalla, dependiendo de si la imagen era horizontal o vertical y del tamaño de la pantalla, sobre todo si se modificaba el tamaño de la ventana del navegador. Para ello tuve que utilizar JavaScript para ir calculando los tamaños según cómo se modificaba la pantalla, o según cómo se modificaba el tamaño de la imagen, por ejemplo al agregarle un borde.",
       "en": "Achieving a responsive design so that the application can be used on both a phone and a PC also had its complications, mainly when it came to always having the image in view of the user, and adapting the size of the canvas to the screen, depending on whether the image was horizontal or vertical and the size of the screen, especially if the size of the browser window was modified. For this I had to use JavaScript to calculate the sizes according to how the screen was modified, or according to how the size of the image was modified, for example when adding a border."
     },
     "fotoyopv16": {
@@ -586,7 +595,7 @@
       "en": "FotoYOP: display of the application in a reduced window as it could be on a phone."
     },
     "fotoyopv20": {
-      "es": "Actualización v0.2: el incorporar la posibilidad de crear collages representó un gran desafío, no por la complejidad de las operaciones necesarias para crear el canvas con las imagenes, sino por el hecho de tener que refactorizar el código para poder incorporar una nueva característica que requiere de un proceso distinto por tratarse de múltiples imágenes. Esta nueva característica también llevó a tener que modificar la interfaz del usuario. Más allá del resultado que está a la vista me permitió aprender mucho sobre cómo organizar el código para que sea más fácil de mantener y de incorporar nuevas funcionalidades.",
+      "es": "Actualización v0.2: el incorporar la posibilidad de crear collages representó un gran desafío, no por la complejidad de las operaciones necesarias para crear el canvas con las imágenes, sino por el hecho de tener que refactorizar el código para poder incorporar una nueva característica que requiere de un proceso distinto por tratarse de múltiples imágenes. Esta nueva característica también llevó a tener que modificar la interfaz del usuario. Más allá del resultado que está a la vista me permitió aprender mucho sobre cómo organizar el código para que sea más fácil de mantener y de incorporar nuevas funcionalidades.",
       "en": "Update v0.2: incorporating the possibility of creating collages represented a great challenge, not because of the complexity of the operations necessary to create the canvas with the images, but because of the fact of having to refactor the code to be able to incorporate a new feature that requires a different process because it involves multiple images. This new feature also led to having to modify the user interface. Beyond the result that is in sight, it allowed me to learn a lot about how to organize the code so that it is easier to maintain and incorporate new functionalities."
     },
     "fotoyopv21": {
@@ -594,7 +603,7 @@
       "en": "Foto-V: learnings and problems along the way"
     },
     "fotoyopv22": {
-      "es": "Uno de los principales problemas que tuve fue que la generación de los videos es un proceso que consume muchos recursos, lo cual me llevó a tener que hacer algo a lo que no estaba habituado en javacript, que es programar pensando en como gestionar la memoria. Por ejemplo, en un momento me encontré con que si no liberaba la memoria que consumía la generación de cada frame/imagen, la aplicación consumia toda la memoria del navegador y crasheaba. Por lo que tuve que implementar un sistema para ir generando los videos por partes, liberando la memoria de los datos que ya no se necesitaban, y juntando luego todo al final.",
+      "es": "Uno de los principales problemas que tuve fue que la generación de los videos es un proceso que consume muchos recursos, lo cual me llevó a tener que hacer algo a lo que no estaba habituado en javacript, que es programar pensando en como gestionar la memoria. Por ejemplo, en un momento me encontré con que si no liberaba la memoria que consumía la generación de cada frame/imagen, la aplicación consumía toda la memoria del navegador y crasheaba. Por lo que tuve que implementar un sistema para ir generando los videos por partes, liberando la memoria de los datos que ya no se necesitaban, y juntando luego todo al final.",
       "en": "One of the main problems I had was that generating the videos is a process that consumes a lot of resources, which led me to have to do something that I was not used to doing in javascript, which is programming thinking about how to manage memory. For example, at one point I found that if I didn't free the memory consumed by the generation of each frame/image, the application consumed all the browser's memory and crashed. So I had to implement a system to generate the videos in parts, freeing the memory of the data that was no longer needed, and then putting everything together at the end."
     },
     "fotoyopv23": {
@@ -602,6 +611,98 @@
       "en": "The other big difficulty has to do with how to solve the organization of the code and the management of the state and the user interface in an application made in vanilla JavaScript. But it was an intentionally sought-after problem because I wanted to see to what extent it is viable to grow an application in this way and study what design patterns can be used and also try to understand how they work and what solutions JavaScript frameworks provide us. For I have been reading about how to componentize and modularize, strategies for rendering the user interface, design patterns like MVC, flux, pub/sub, observer, proxies, etc. I have started small, implementing modules and functions that can be testable, a global class/object with a singleton pattern to handle a part of the state, and an event bus for communication between some. And although patterns like flux are very interesting to me, for now I have not wanted to implement more than necessary so as not to fall into 'over-engineering' that complicates more than it solves. But I have been left with ideas and knowledge to put into practice as the application grows or in other projects."
     },
     "fotoyopv24": {
+      "es": "Foto-V: muestra general de las funcionalidades de la aplicación.",
+      "en": "Foto-V: general display of the application's features."
+    },
+    "jwtlk01": {
+      "es": "JWT Learning Kit - Roll your own auth, al menos una vez en la vida",
+      "en": "JWT Learning Kit - Roll your own auth, at least once in your life"
+    },
+    "jwtlk02": {
+      "es": "JWT Learning Kit es una guía para aprender a desarrollar desde cero un sistema de autenticación en JavaScript usando JSON Web Token. Incluye el código y la explicación de los procesos y conceptos necesarios para su implementación.",
+      "en": "JWT Learning Kit is a guide to learn how to develop from scratch an authentication system in JavaScript using JSON Web Token. It includes the code and the explanation of the processes and concepts necessary for its implementation."
+    },
+    "jwtlk02b": {
+      "es": "La guía tiene su propio sitio web creado con docusaurus:",
+      "en": "The guide has its own website created with docusaurus:"
+    },
+    "jwtlk03": {
+      "es": "¿Qué tiene de bueno?",
+      "en": "What's good about it?"
+    },
+    "jwtlk04": {
+      "es": "Ya sea por motivos de seguridad o interés económico, se suele recomendar el uso de librerías y servicios de autenticación de terceros. Pero implementar tu propio sistema de autenticación es muy valioso en términos de aprendizaje: permite comprender cómo funciona de conjunto y cuál es la complejidad inherente al problema que se quiere resolver. Además, en el proceso se aprende sobre cookies, sesiones, tokens, cifrado, hashing, etc.",
+      "en": " "
+    },
+    "jwtlk05": {
+      "es": "El código que acompaña a la guía es totalmente funcional e incluye los distintos procesos de autenticación, como el registro, el login con usuario y contraseña, el login con Google o Github, el reseteo de la contraseña, etc. Está pensado para que quien quiera lo pueda tomar, modificar (si es necesario) y utilizar en sus propios proyectos.",
+      "en": ""
+    },
+    "jwtlk06": {
+      "es": "Además del código, la guía incluye explicaciones sobre los distintos procesos y conceptos necesarios para entender cómo funciona el sistema de autenticación, y cómo se implementan las distintas funcionalidades. En términos de aprendizaje, no alcanza con copiar y pegar código, es necesario entenderlo, y también comprender cuál es el problema que se está queriendo resolver, cuales son las soluciones posibles, qué ventajas y desventajas tiene cada una, etc.",
+      "en": " "
+    },
+    "jwtlk07": {
+      "es": "También decidí dejar el código de los tests unitarios (con Vitest)y de los tests end-to-end (con Playwright), para que quien quiera pueda probar el sistema y también aprender a realizar tests para este tipo de aplicaciones.",
+      "en": " "
+    },
+    "jwtlk09": {
+      "es": "Sobre el stack",
+      "en": "About the stack"
+    },
+    "jwtlk10": {
+      "es": "El frontend está realizado en vanilla JavaScript (además de HTML y CSS), y el backend en Node y Express. Me pareció que no utilizar un framework era mejor en cuanto a aprendizaje, y también para que el código pueda ser adaptado a cualquier otro framework o librería. También pensando en simplicidad y accesibilidad es que decidí no utilizar TypeScript, pero usé JSDoc, para poder comprobar el tipado de los datos y documentar el código. Respecto a la base de datos utilicé SQLite por su simplicidad y por la posibilidad de utilizar también de modo muy sencillo una base de datos SQLite online con Turso.",
+      "en": " "
+    },
+    "jwtlk11": {
+      "es": "Aprendizajes y problemas en el camino",
+      "en": "Learnings and problems along the way"
+    },
+    "jwtlk12": {
+      "es": " ",
+      "en": " "
+    },
+    "jwtlk13": {
+      "es": " ",
+      "en": "T "
+    },
+    "jwtlk14": {
+      "es": " ",
+      "en": " "
+    },
+    "jwtlk15": {
+      "es": " ",
+      "en": " "
+    },
+    "jwtlk16": {
+      "es": " ",
+      "en": " "
+    },
+    "jwtlk17": {
+      "es": "FotoYOP: muestra general de las funcionalidades de la aplicación.",
+      "en": "FotoYOP: general display of the application's features."
+    },
+    "jwtlk18": {
+      "es": "FotoYOP: muestra de la aplicación en una ventana reducida como podría ser la de un teléfono.",
+      "en": "FotoYOP: display of the application in a reduced window as it could be on a phone."
+    },
+    "jwtlk20": {
+      "es": " ",
+      "en": " "
+    },
+    "jwtlk21": {
+      "es": "Foto-V: aprendizajes y problemas en el camino",
+      "en": "Foto-V: learnings and problems along the way"
+    },
+    "jwtlk22": {
+      "es": " ",
+      "en": " "
+    },
+    "jwtlk23": {
+      "es": " ",
+      "en": " "
+    },
+    "jwtlk24": {
       "es": "Foto-V: muestra general de las funcionalidades de la aplicación.",
       "en": "Foto-V: general display of the application's features."
     },
@@ -630,7 +731,7 @@
       "en": "Each note can have multiple tags, which can be used as filters to see only some of them. Notes can also be searched by text in their title or content."
     },
     "anota07": {
-      "es": "La extensión para el navegador (Highlighter) permite que simplemente al realizar una selección de texto en cualquier web, el texto se resalte y se guarde. Luego todos los fragmentos de texto seleccionados de una misma URL se pueden enviar a ANOTA y/o ser descargados en un archivo de texto. También se pueden generar notas guardando el enlace de la web, o toda la sesion de enlaces abiertos en el navegador.",
+      "es": "La extensión para el navegador (Highlighter) permite que simplemente al realizar una selección de texto en cualquier web, el texto se resalte y se guarde. Luego todos los fragmentos de texto seleccionados de una misma URL se pueden enviar a ANOTA y/o ser descargados en un archivo de texto. También se pueden generar notas guardando el enlace de la web, o toda la sesión de enlaces abiertos en el navegador.",
       "en": "The browser extension (Highlighter) allows you to simply make a text selection on any web, the text is highlighted and saved. Then all the selected text fragments from the same URL can be sent to ANOTA and/or downloaded in a text file. You can also generate notes by saving the web link, or the entire session of open links in the browser."
     },
     "anota08": {
@@ -642,7 +743,7 @@
       "en": "Other difficulties were the creation of a layout to display the notes in mosaic mode, which cannot yet be done natively in CSS. As well as the implementation of a text editor to create and modify the notes, since the HTML element `contenteditable` is not very versatile. In both cases, with the intention of quickly putting the application into operation, I chose to use libraries, but I would like to be able to study those problems in depth in order to implement my own solutions since they are important aspects of the project."
     },
     "anota10": {
-      "es": "En cuanto a la extensión del navegador, no fue nada fácil, dado que recientemente se cambió al manifest V3 (lo cual conlleva numerosas modificaciones en las APIs), y no abundan los materiales y ejemplos de código actualizados. Pero valió la pena el esfuerzo porque trabajar en una aplicación que tiene que manejar directamente el DOM me obligó a reforzar los fundamentos de JavaScript. Incluso me llevo a estudiar sobre estructuras de datos para poder resolver un problema que era recorrer el arbol del DOM desde el nodo de inicio de la selección de texto hasta el nodo final, para poder obtener el texto, resaltarlo, etc.",
+      "es": "En cuanto a la extensión del navegador, no fue nada fácil, dado que recientemente se cambió al manifest V3 (lo cual conlleva numerosas modificaciones en las APIs), y no abundan los materiales y ejemplos de código actualizados. Pero valió la pena el esfuerzo porque trabajar en una aplicación que tiene que manejar directamente el DOM me obligó a reforzar los fundamentos de JavaScript. Incluso me llevo a estudiar sobre estructuras de datos para poder resolver un problema que era recorrer el árbol del DOM desde el nodo de inicio de la selección de texto hasta el nodo final, para poder obtener el texto, resaltarlo, etc.",
       "en": "As for the browser extension, it was not easy at all, since it was recently changed to manifest V3 (which entails numerous modifications in the APIs), and there are not many updated materials and code examples. But it was worth the effort because working on an application that has to directly handle the DOM forced me to reinforce the fundamentals of JavaScript. It even led me to study about data structures to be able to solve a problem that was to traverse the DOM tree from the starting node of the text selection to the final node, in order to obtain the text, highlight it, etc."
     },
     "anota11": {
@@ -679,7 +780,7 @@
     },
     "anota19": {
       "es": "Funcionamiento de la extensión para el navegador.",
-      "en": "The browser extension funcionality."
+      "en": "The browser extension functionality."
     },
     "anota20": {
       "es": "Muestra de la creación de notas y filtrado por etiquetas.",

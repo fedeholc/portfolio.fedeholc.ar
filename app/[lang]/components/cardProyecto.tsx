@@ -22,6 +22,23 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
       /> */}
       <CardProyecto
         lang={lang}
+        titulo="🔐️ JWT Learning Kit"
+        buttonLink="/proyectos/#proyectoJWTLK"
+        subtitulo={dictionary.cv.proyectos14[lang]}
+        descripcion={dictionary.cv.proyectos15[lang]}
+        stack={[
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Node / Express",
+          "SQLite",
+          "Vitest / Playwright",
+          "JSDoc",
+        ]}
+      />
+
+      <CardProyecto
+        lang={lang}
         titulo="🧿 fotoYOP & foto-V 🎬"
         buttonLink="/proyectos/#proyectoFotoyop"
         subtitulo={dictionary.cv.proyectos12[lang]}
@@ -94,61 +111,59 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
         descripcion={dictionary.cv.proyectos10[lang]}
         stack={["HTML", "Bootstrap", "Angular", "MySQL", "Java / Spring Boot"]}
       /> */}
-      <div >
+      <div>
         <h3>{dictionary.proyectos.otros[lang]}</h3>
         <div className={proyectos.columns1}>
-        
-            <ul>
-              <li className={proyectos.smaller_font}>
-                <div className={proyectos.link_icon}>
-                  <span>
-                    {dictionary.proyectos.otros1[lang]}&nbsp;
-                    <Link
-                      className={proyectos.underline}
-                      target="_blank"
-                      href="https://github.com/fedeholc/tecnicatura-tp-clinica"
-                    >
-                      {dictionary.proyectos.otrosVerCodigo[lang]}
-                    </Link>
-                    &nbsp;
-                    <Image src={externalLinkIcon} alt="external link icon" />
-                  </span>
-                </div>
-              </li>
-              <li className={proyectos.smaller_font}>
-                <div className={proyectos.link_icon}>
-                  <span>
-                    {dictionary.proyectos.otros2[lang]}&nbsp;
-                    <Link
-                      className={proyectos.underline}
-                      target="_blank"
-                      href="https://github.com/fedeholc/tecnicatura-tp-club-deportivo-mobile"
-                    >
-                      {dictionary.proyectos.otrosVerCodigo[lang]}
-                    </Link>
-                    &nbsp;
-                    <Image src={externalLinkIcon} alt="external link icon" />
-                  </span>
-                </div>
-              </li>
-              <li className={proyectos.smaller_font}>
-                <div className={proyectos.link_icon}>
-                  <span>
-                    {dictionary.proyectos.otros3[lang]}&nbsp;
-                    <Link
-                      className={proyectos.underline}
-                      target="_blank"
-                      href="https://github.com/fedeholc/argentinaprograma-Portfolio-Backend"
-                    >
-                      {dictionary.proyectos.otrosVerCodigo[lang]}
-                    </Link>
-                    &nbsp;
-                    <Image src={externalLinkIcon} alt="external link icon" />
-                  </span>
-                </div>
-              </li>
-            </ul>
-     
+          <ul>
+            <li className={proyectos.smaller_font}>
+              <div className={proyectos.link_icon}>
+                <span>
+                  {dictionary.proyectos.otros1[lang]}&nbsp;
+                  <Link
+                    className={proyectos.underline}
+                    target="_blank"
+                    href="https://github.com/fedeholc/tecnicatura-tp-clinica"
+                  >
+                    {dictionary.proyectos.otrosVerCodigo[lang]}
+                  </Link>
+                  &nbsp;
+                  <Image src={externalLinkIcon} alt="external link icon" />
+                </span>
+              </div>
+            </li>
+            <li className={proyectos.smaller_font}>
+              <div className={proyectos.link_icon}>
+                <span>
+                  {dictionary.proyectos.otros2[lang]}&nbsp;
+                  <Link
+                    className={proyectos.underline}
+                    target="_blank"
+                    href="https://github.com/fedeholc/tecnicatura-tp-club-deportivo-mobile"
+                  >
+                    {dictionary.proyectos.otrosVerCodigo[lang]}
+                  </Link>
+                  &nbsp;
+                  <Image src={externalLinkIcon} alt="external link icon" />
+                </span>
+              </div>
+            </li>
+            <li className={proyectos.smaller_font}>
+              <div className={proyectos.link_icon}>
+                <span>
+                  {dictionary.proyectos.otros3[lang]}&nbsp;
+                  <Link
+                    className={proyectos.underline}
+                    target="_blank"
+                    href="https://github.com/fedeholc/argentinaprograma-Portfolio-Backend"
+                  >
+                    {dictionary.proyectos.otrosVerCodigo[lang]}
+                  </Link>
+                  &nbsp;
+                  <Image src={externalLinkIcon} alt="external link icon" />
+                </span>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </>

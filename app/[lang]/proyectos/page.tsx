@@ -19,6 +19,7 @@ import { getDictionary } from "@app/get-dictionary";
 import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
+import ProyectoJWTLK from "./jwtlk/page";
 
 /*         👾🌿🍁🪐🌟🛠️💘🕸️🚲️🎼⭐
  */
@@ -137,6 +138,9 @@ async function ProyectosTodos({ lang }: { lang: Locale }) {
         <div className={proyectos.divider}>
           <Image src={herb} alt="herb emoji" width={26} quality={100} />
         </div> */}
+      </div>
+      <div id="proyectoJWTLK">
+        <ProyectoJWTLK params={{ lang: lang }} />
       </div>
       <div id="proyectoFotoyop">
         <ProyectoFotoyop2 params={{ lang: lang }} />
