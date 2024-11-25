@@ -659,22 +659,19 @@
       "en": "Learnings and problems along the way"
     },
     "jwtlk12": {
-      "es": "auth implica aprender muchas otras cosas si se quiere saber lo que se está haciendo (sobre tokens, hashing, cookies, ataques xss, csrf, etc.).",
+      "es": "La realización de este proyecto me llevo más tiempo del que me imaginaba, pero también aprendí más de lo que estaba en los planes originales. Pues implementar un sistema de autenticación propio, y querer conocer los fundamentos de por qué se deben hacer las cosas de cierta forma (para garantizar seguridad, o rendimiento), es mucho más que aprender cómo funcionan los JWT. En el camino tuve que aprender sobre encriptación, hashing, cookies, ataques XSS/CSRF y cómo prevenirlos, etc. ¡Y aún me quedan algunas cuestiones pendientes!`",
       "en": " "
     },
     "jwtlk13": {
-      "es": "diseño de implementación de bd usando patron adapter ",
+      "es": "El desarrollo de la app en vanilla JavaScript, me llevó a tener que pensar bien en su diseño y como estructurar el código para hacerlo lo mas modular posible, tanto para que pueda ser reutilizado en otros proyectos como para poder testearlo adecuadamente. A modo de ejemplo, para la base de datos utilicé el patrón de diseño adapter, mediante el cual pude generar un sistema en el que con solo modificar una variable de entorno se puede cambiar de tipo de base de datos.",
+
       "en": "T "
     },
     "jwtlk14": {
-      "es": "modularizar vanilla js ",
-      "en": " "
-    },
-    "jwtlk15": {
       "es": "testing con mocks? supertest? ",
       "en": " "
     },
-    "jwtlk16": {
+    "jwtlk15": {
       "es": "la parte de documentacion dificil, no por escribir, porque habia tomado notas, sino porque para explicar algo hay que entenderlo bien, y si la guia la iban a leer y usar otras personas era una responsabilidad, en ese mismo sentido fue que al documentar fui encontrando pequeños fallos o detalles a corregir, y que no podía dejarlos pasar (seguro sigue habiendo errores pero ninguno que conscientemente haya dejado pasar).",
       "en": " "
     },
