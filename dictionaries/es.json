@@ -243,7 +243,7 @@
     },
 
     "proyectos15": {
-      "es": "Health Pro es una aplicación de telemedicina desarrollada en equipo como parte de una simulación laboral de No Country. Me encargué de desarrollar los módulos de videollamadas y salas de espera de la aplicación.",
+      "es": "Health Pro es una aplicación de telemedicina desarrollada en equipo como parte de una simulación laboral de No Country. Estuve a cargo de desarrollar los módulos de videollamadas y salas de espera de la aplicación.",
       "en": "Health Pro is a telemedicine application developed as a team as part of a work simulation by No Country. I was in charge of developing the video call and waiting room modules of the application."
     },
     "proyectos16": {
@@ -698,11 +698,11 @@
       "en": "Health Pro - Telemedicine application"
     },
     "health02": {
-      "es": "desc",
-      "en": ""
+      "es": "Health Pro es una aplicación de telemedicina desarrollada en equipo como parte de una simulación laboral de No Country. Estuve a cargo de desarrollar los módulos de videollamadas y salas de espera de la aplicación.",
+      "en": "Health Pro is a telemedicine application developed as a team as part of a No Country work simulation. I was in charge of developing the video call and waiting room modules of the application."
     },
     "health02b": {
-      "es": "desc",
+      "es": "",
       "en": ""
     },
     "health03": {
@@ -710,16 +710,16 @@
       "en": "What's good about it?"
     },
     "health04": {
-      "es": "",
-      "en": ""
+      "es": "En lo que respecta a los módulos de videollamadas y salas de espera, la aplicación permite a los profesionales de la salud atender a sus pacientes de manera remota, y a los pacientes acceder a la consulta de manera sencilla y rápida.",
+      "en": "Regarding the video call and waiting room modules, the application allows health professionals to attend to their patients remotely, and patients to access the consultation in a simple and fast way."
     },
     "health05": {
-      "es": "",
-      "en": ""
+      "es": "En particular la sala de espera desarrollada con WebSockets permite a los profesionales ver qué pacientes se encuentran conectados y esperando ser atendidos, y seleccionar a quién atender, diferenciando entre quiénes accedieron con un turo programado o por guardia. Gracias a utilizar un sistema de llamadas basado en enlaces únicos, es posible conectarse desde cualquier dispositivo sin necesidad de instalar ninguna aplicación adicional.",
+      "en": "The waiting room developed with WebSockets allows professionals to see which patients are connected and waiting to be attended, and select who to attend, differentiating between those who accessed with a scheduled shift or by guard. Thanks to using a call system based on unique links, it is possible to connect from any device without the need to install any additional application."
     },
     "health06": {
-      "es": "",
-      "en": ""
+      "es": "En cuanto a las videollamadas, la aplicación permite realizar llamadas de audio y video en tiempo real utilizando WebRTC (también permite la conexión aún cuando el paciente no tiene video). Si la conexión se corta es posible volver a la llamada utilizando el enlace único a la msima. Tanto el profesional como el paciente pueden ver la historia clínica durante la comunicación.",
+      "en": "Regarding video calls, the application allows you to make audio and video calls in real time using WebRTC (it also allows the connection even when the patient does not have video). If the connection is cut, it is possible to return to the call using the unique link to the same. Both the professional and the patient can see the medical history during communication."
     },
     "health07": {
       "es": "",
@@ -730,19 +730,19 @@
       "en": "About the stack"
     },
     "health10": {
-      "es": "stack",
-      "en": ""
+      "es": "La aplicación completa consta de un backend desarrollado en Java, con una base de datos PostgreSQL, y un frontend en React. En particular para el modulo de sala de espera y el de videollamadas, implemente un backend en Node utilizando WebSockets, y en el frontend utilice WebRTC para el audio y el video en tiempo real.",
+      "en": "The complete application consists of a backend developed in Java, with a PostgreSQL database, and a frontend in React. In particular for the waiting room module and the video call module, I implemented a backend in Node using WebSockets, and in the frontend I used WebRTC for audio and video in real time."
     },
     "health11": {
       "es": "Aprendizajes y problemas en el camino",
       "en": "Learnings and problems along the way"
     },
     "health12": {
-      "es": "aprendizaje",
-      "en": ""
+      "es": "En el aspecto técnico aprení mucho ya que nunca habia trabajado con WebSockets ni con WebRTC. En particular con WebSockets tuve que aprender a manejar la comunicación en tiempo real entre el backend y el frontend, y desarrollar dos servidores de sockets, uno para el manejo de la sala de espera y otro para que actue como servidor de señalización para la comunicación vía WebRTC. Afortunadamente socket.io proporciona una API sencilla para trabajar con WebSockets, y además permite mantener la conexión utilizando http en caso de que WebSockets no esté disponible para alguno de los peers.",
+      "en": "In the technical aspect I learned a lot since I had never worked with WebSockets or with WebRTC. In particular with WebSockets I had to learn to handle real-time communication between the backend and the frontend, and develop two socket servers, one for the management of the waiting room and another to act as a signaling server for communication via WebRTC. Fortunately socket.io provides a simple API to work with WebSockets, and also allows to maintain the connection using http in case WebSockets is not available for any of the peers."
     },
     "health13": {
-      "es": "aprendizaje",
+      "es": "La implementación de WebRTC fue más difícil ya que no hay muchos ejemplos con código completo y funcional. Afortunadamente encontre el libro Programming WebRTC de Karl Stolley que me perimitió resolver muchos problemas que se me presentaron. En particular tuve que aprender a manejar la señalización entre los peers, y a configurar los servidores STUN y TURN para poder establecer la conexión en caso de que los peers se encuentren detrás de un firewall o un NAT.",
       "en": ""
     },
     "health14": {
