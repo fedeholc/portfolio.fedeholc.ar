@@ -6,9 +6,8 @@ import Image from "next/image";
 import externalLinkIcon from "@public/external-link.png";
 
 import herb from "@public/herb.png";
-import screenshot1 from "@public/proyecto-fotoyop/fotoyop3.webp";
-import screenshot2 from "@public/proyecto-fotoyop/fotoyop4.webp";
-import screenshot3 from "@public/proyecto-fotoyop/fotov1.webp";
+import screenshot1 from "@public/proyecto-jwtlk/jwtlk1.webp";
+import screenshot2 from "@public/proyecto-jwtlk/jwtlk2.webp";
 
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
@@ -63,7 +62,6 @@ export default async function ProyectoJWTLK({
          */}{" "}
       </ul>
     ),
-
   };
 
   return (
@@ -189,7 +187,6 @@ export default async function ProyectoJWTLK({
           <div>{TEXTO.texto4}</div>
         </div>{" "}
         <br />
-        
         {/* ***************************************** */}
       </div>
       <div className={proyectos.divider}>

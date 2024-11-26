@@ -685,12 +685,12 @@
       "en": "I also found in practice that the last stretch of the project, its fine-tuning to be published, can be the most tortuous. Having almost ready the code and the example application working, I started writing the guide based on some notes I had taken. But it turns out that in order to explain something you have to understand it well, and if the guide is going to be read and used by other people you have to be responsible for what you write. The writing process led me to review and test the code more thoroughly, and that is how I found small faults or details to correct, which further prolonged the first publication of the project, but I could not ignore them. There are probably still errors but none that I have consciously let pass."
     },
     "jwtlk17": {
-      "es": "----descripcion imagen2",
-      "en": "idem"
+      "es": "Muestra de login con Google en la aplicación de ejemplo",
+      "en": "Sample of login with Google in the example application"
     },
     "jwtlk18": {
-      "es": "----descripcion imagen2",
-      "en": "idem"
+      "es": "Muestra del sitio web con la documentación",
+      "en": "Sample of the website with the documentation"
     },
 
     "health01": {
