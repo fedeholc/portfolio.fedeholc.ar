@@ -5,8 +5,7 @@ import Image from "next/image";
 import externalLinkIcon from "@public/external-link.png";
 
 import herb from "@public/herb.png";
-import screenshot1 from "@public/proyecto-fotoyop/fotoyop3.webp";
-import screenshot2 from "@public/proyecto-fotoyop/fotoyop4.webp";
+import screenshot1 from "@public/proyecto-health/health1.webp";
 
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
@@ -119,19 +118,6 @@ export default async function ProyectoHealthPro({
         <h3>{TEXTO.subtitulo2}</h3>
         <div className={proyectos.columns1}>
           <div>{TEXTO.texto2}</div>
-          <div className={proyectos.screenshot__container}>
-            <figure className={`${proyectos.screenshot__figure}  `}>
-              <img
-                className={proyectos.screenshot}
-                alt="screenshot"
-                src={screenshot2.src}
-              />
-
-              <figcaption className={proyectos.screenshot__caption}>
-                {dictionary.proyectos.health18[lang]}
-              </figcaption>
-            </figure>
-          </div>
         </div>
         {/* ***************************************** */}
         <br /> <br />

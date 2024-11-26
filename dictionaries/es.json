@@ -763,13 +763,10 @@
     },
 
     "health17": {
-      "es": "----descripcion imagen2",
-      "en": "idem"
+      "es": "Muestra de la aplicación en funcionamiento.",
+      "en": "Sample of the application in operation."
     },
-    "health18": {
-      "es": "----descripcion imagen2",
-      "en": "idem"
-    },
+
     "anota01": {
       "es": "ANOTÁ! (Another Note Taking App) & Highlighter",
       "en": "ANOTÁ! (Another Note Taking App) & Highlighter"
