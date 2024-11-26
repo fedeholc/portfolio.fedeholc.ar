@@ -36,24 +36,6 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
           "JSDoc",
         ]}
       />
-
-      <CardProyecto
-        lang={lang}
-        titulo="🩺️ Health Pro"
-        buttonLink="/proyectos/#proyectoHealthPro"
-        subtitulo={dictionary.cv.proyectos14[lang]}
-        descripcion={dictionary.cv.proyectos15[lang]}
-        stack={[
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "React",
-          "Node",
-          "WebSockets",
-          "WebRTC",
-        ]}
-      />
-
       <CardProyecto
         lang={lang}
         titulo="🧿 fotoYOP & foto-V 🎬"
@@ -71,6 +53,23 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
           "Vitest/Playwright",
         ]}
       />
+      <CardProyecto
+        lang={lang}
+        titulo="🩺️ Health Pro"
+        buttonLink="/proyectos/#proyectoHealthPro"
+        subtitulo={dictionary.cv.proyectos14[lang]}
+        descripcion={dictionary.cv.proyectos15[lang]}
+        stack={[
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Node",
+          "WebSockets",
+          "WebRTC",
+        ]}
+      />
+
       <CardProyecto
         lang={lang}
         buttonLink="/proyectos/#proyectoANOTA"
@@ -132,6 +131,22 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
         <h3>{dictionary.proyectos.otros[lang]}</h3>
         <div className={proyectos.columns1}>
           <ul>
+            <li className={proyectos.smaller_font}>
+              <div className={proyectos.link_icon}>
+                <span>
+                  {dictionary.proyectos.otros4[lang]}&nbsp;
+                  <Link
+                    className={proyectos.underline}
+                    target="_blank"
+                    href="https://github.com/fedeholc/tp-DSWB"
+                  >
+                    {dictionary.proyectos.otrosVerCodigo[lang]}
+                  </Link>
+                  &nbsp;
+                  <Image src={externalLinkIcon} alt="external link icon" />
+                </span>
+              </div>
+            </li>
             <li className={proyectos.smaller_font}>
               <div className={proyectos.link_icon}>
                 <span>

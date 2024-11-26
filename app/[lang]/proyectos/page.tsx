@@ -143,12 +143,13 @@ async function ProyectosTodos({ lang }: { lang: Locale }) {
       <div id="proyectoJWTLK">
         <ProyectoJWTLK params={{ lang: lang }} />
       </div>
-      <div id="proyectoHealthPro">
-        <ProyectoHealthPro params={{ lang: lang }} />
-      </div>
       <div id="proyectoFotoyop">
         <ProyectoFotoyop2 params={{ lang: lang }} />
       </div>
+      <div id="proyectoHealthPro">
+        <ProyectoHealthPro params={{ lang: lang }} />
+      </div>
+
       <div id="proyectoANOTA">
         <ProyectoANOTA params={{ lang: lang }} />
       </div>

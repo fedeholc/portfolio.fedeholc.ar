@@ -75,10 +75,8 @@ export default async function CV({
               <li>HTML / CSS / Responsive design</li>
               <li>Testing (Vitest/Jest, Playwright)</li>
               <li>Vanilla JavaScript / React / Next.js</li>
-              <li>SQL / SQLite</li>
+              <li>SQL / MongoDB</li>
               <li>TypeScript / JSDoc</li>
-              {/*               <li>WebExtension API</li>
-               */}{" "}
               <li>Git / GitHub</li>
               <li>Node.js / Express</li>
               <li>Linux</li>
@@ -178,6 +176,12 @@ export default async function CV({
           </section>
           <section>
             <h3>{dictionary.cv.experiencias1[lang]}</h3>
+            <p>
+              <strong>{dictionary.cv.experiencias6a[lang]}</strong>
+            </p>
+            <ul>
+              <li>{dictionary.cv.experiencias6b[lang]}</li>
+            </ul>
             <p>
               <strong>{dictionary.cv.experiencias5a[lang]}</strong>
             </p>

@@ -280,8 +280,8 @@
       "en": "Higher Technician Degree in Software Development."
     },
     "academia2b": {
-      "es": "Instituto de Formación Técnica Superior N.º 29 de la Ciudad Autónoma de Buenos Aires.  2023 - a la actualidad (14 materias de 23 aprobadas).",
-      "en": "Technical Training Institute No. 29 of the Autonomous City of Buenos Aires.  2023 - to present (14 subjects of 23 approved)."
+      "es": "Instituto de Formación Técnica Superior N.º 29 de la Ciudad Autónoma de Buenos Aires.  2023 - a la actualidad (18 materias de 23 aprobadas).",
+      "en": "Technical Training Institute No. 29 of the Autonomous City of Buenos Aires.  2023 - to present (18 subjects of 23 approved)."
     },
     "academia3a": {
       "es": "Escuela Técnica en Computación.",
@@ -417,6 +417,14 @@
     "experiencias5b": {
       "es": "Profesor de Sociología, Introducción a las Ciencias Sociales y a las Humanidades, Formación Ética y Ciudadana, e Historia, en escuelas públicas de enseñanza media de la Ciudad Autónoma de Buenos Aires.",
       "en": "Teacher of Sociology, History, Introduction to Social Sciences and Humanities, and Ethics and Citizenship Education in public high schools in the Autonomous City of Buenos Aires."
+    },
+    "experiencias6a": {
+      "es": "Desarrollador Web Full Stack. No Country, práctica de simulación laboral. Octubre - Noviembre, 2024.",
+      "en": "Full Stack Web Developer. No Country, work simulation internship. October - November, 2024."
+    },
+    "experiencias6b": {
+      "es": "Desarrollo en equipo de la aplicación de telemedicina Health Pro. Individualmente estuve a cargo de desarrollar los módulos de videollamadas y salas de espera de la aplicación, utilizando React, Node, WebSockets y WebRTC.",
+      "en": "Team development of the telemedicine application Health Pro. Individually I was in charge of developing the video call and waiting room modules of the application, using React, Node, WebSockets and WebRTC."
     }
   },
   "proyectos": {
@@ -451,6 +459,10 @@
     "otros3": {
       "es": "Argentina Programa v3.0 - CV Editable (proyecto de curso). Stack: Java, Springboot, Hibernate, MySQL, Angular, HTML, CSS, Bootstrap.",
       "en": "Argentina Programa v3.0 - Editable resume (course project). Stack: Java, Springboot, Hibernate, MySQL, Angular, HTML, CSS, Bootstrap."
+    },
+    "otros4": {
+      "es": "Aplicación Web para administración de una institución educativa (proyecto de fin de cursada). Stack: MongoDB, Node, Pug, JavaScript, Vitest, JWT, HTML, CSS.",
+      "en": "Web application for the administration of an educational institution (course project). Stack: MongoDB, Node, Pug, JavaScript, Vitest, JWT, HTML, CSS."
     },
     "fotoyop01": {
       "es": "fotoYOP",
@@ -746,8 +758,8 @@
       "en": "The implementation of WebRTC was more difficult since there are not many examples with complete and functional code. Fortunately I found the book Programming WebRTC by Karl Stolley that allowed me to solve many problems that arose. In particular I had to learn to handle signaling between peers, and to configure STUN and TURN servers to be able to establish the connection in case the peers are behind a firewall or a NAT."
     },
     "health14": {
-      "es": "El mayor aprendizaje vino de la parte no técnica, ya que tuve que coordinar con otros miembros del equipo para poder desarrollar los módulos de videollamadas y salas de espera. Aprendí a trabajar en equipo, a coordinar tareas, a comunicar mis avances y dificultades, a pedir ayuda y a ofrecerla, a resolver problemas en conjunto, a aceptar críticas y a criticar constructivamente, a cumplir con fechas límites, a presentar el trabajo realizado, etc.",
-      "en": "The greatest learning came from the non-technical part, since I had to coordinate with other team members to be able to develop the video call and waiting room modules. I learned to work as a team, to coordinate tasks, to communicate my progress and difficulties, to ask for help and to offer it, to solve problems together, to accept criticism and to criticize constructively, to meet deadlines, to present the work done, etc."
+      "es": "El mayor aprendizaje vino de la parte no técnica, ya que tuve que coordinar con otros miembros del equipo para poder desarrollar los módulos de videollamadas y salas de espera. Aprendí a trabajar en equipo, a coordinar tareas, a comunicar mis avances y dificultades, a pedir ayuda y a ofrecerla, a resolver problemas en conjunto, a aceptar críticas y a criticar constructivamente, a cumplir con fechas límites, a tratar y presentarle el trabajo al cliente, etc.",
+      "en": "The greatest learning came from the non-technical part, since I had to coordinate with other team members to be able to develop the video call and waiting room modules. I learned to work as a team, to coordinate tasks, to communicate my progress and difficulties, to ask for help and to offer it, to solve problems together, to accept criticism and to criticize constructively, to meet deadlines, to discuss and present the work to the customer, etc."
     },
 
     "health17": {
