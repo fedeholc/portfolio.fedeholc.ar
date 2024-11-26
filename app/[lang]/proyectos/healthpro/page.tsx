@@ -1,5 +1,4 @@
 import proyectos from "../proyectos.module.css";
-
 import "@app/globals.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,7 +7,6 @@ import externalLinkIcon from "@public/external-link.png";
 import herb from "@public/herb.png";
 import screenshot1 from "@public/proyecto-fotoyop/fotoyop3.webp";
 import screenshot2 from "@public/proyecto-fotoyop/fotoyop4.webp";
-import screenshot3 from "@public/proyecto-fotoyop/fotov1.webp";
 
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
@@ -55,9 +53,6 @@ export default async function ProyectoHealthPro({
         <li>{dictionary.proyectos.health12[lang]}</li>
         <li>{dictionary.proyectos.health13[lang]}</li>
         <li>{dictionary.proyectos.health14[lang]}</li>
-        <li>{dictionary.proyectos.health15[lang]}</li>
-        {/*         <li>{dictionary.proyectos.fotoyop16[lang]}</li>
-         */}{" "}
       </ul>
     ),
   };

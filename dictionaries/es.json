@@ -746,13 +746,10 @@
       "en": "The implementation of WebRTC was more difficult since there are not many examples with complete and functional code. Fortunately I found the book Programming WebRTC by Karl Stolley that allowed me to solve many problems that arose. In particular I had to learn to handle signaling between peers, and to configure STUN and TURN servers to be able to establish the connection in case the peers are behind a firewall or a NAT."
     },
     "health14": {
-      "es": "aprendizaje",
-      "en": ""
+      "es": "El mayor aprendizaje vino de la parte no técnica, ya que tuve que coordinar con otros miembros del equipo para poder desarrollar los módulos de videollamadas y salas de espera. Aprendí a trabajar en equipo, a coordinar tareas, a comunicar mis avances y dificultades, a pedir ayuda y a ofrecerla, a resolver problemas en conjunto, a aceptar críticas y a criticar constructivamente, a cumplir con fechas límites, a presentar el trabajo realizado, etc.",
+      "en": "The greatest learning came from the non-technical part, since I had to coordinate with other team members to be able to develop the video call and waiting room modules. I learned to work as a team, to coordinate tasks, to communicate my progress and difficulties, to ask for help and to offer it, to solve problems together, to accept criticism and to criticize constructively, to meet deadlines, to present the work done, etc."
     },
-    "health15": {
-      "es": "aprendizaje",
-      "en": ""
-    },
+
     "health17": {
       "es": "----descripcion imagen2",
       "en": "idem"
