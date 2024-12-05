@@ -407,6 +407,16 @@ mediqueries */
      justify-self: left;
    }
 
+   canvas {
+     display: none;
+   }
+
+   .background {
+     background-color: var(--body-background);
+     background-image: var(--image-back);
+
+   }
+
  }
 
 
