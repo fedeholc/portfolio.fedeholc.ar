@@ -95,9 +95,15 @@ export default async function IndexPage({
         <span className="emoji">🚀</span>
       </p>
       <p>
-        En el pasado fui sociólogo y profesor en escuelas y en la universidad de
-        buenos aires.&nbsp;
-        <span className="emoji">👨‍🏫</span>&nbsp;
+        En el pasado fui sociólogo y profesor<span className="emoji">👨‍🏫</span>,
+        integré grupos y cátedras docentes en escuelas y en la Universidad de
+        Buenos Aires, lo cual me entrenó en la escucha activa, la comunicación
+        efectiva y el trabajo en equipo.
+      </p>
+
+      <p>
+        He desarrollado software de manera autónoma, y en equipos utilizando
+        metodologías ágiles.<span className="emoji">🕸️</span>
       </p>
     </>
   );
@@ -110,9 +116,15 @@ export default async function IndexPage({
           <span className="emoji">🚀</span>
         </p>
         <p>
-          Previously, I worked as a sociologist and taught at high schools and
-          the University of Buenos Aires. &nbsp;
-          <span className="emoji">👨‍🏫</span>&nbsp;
+          Previously,I was a sociologist and teacher &nbsp;
+          <span className="emoji">👨‍🏫</span>, I integrated groups and teaching
+          chairs in schools and at the University of Buenos Aires, which trained
+          me in active listening, effective communication and teamwork.&nbsp;
+          <span className="emoji">🤝️</span>
+        </p>
+        <p>
+          I have developed web applications autonomously and in teams using
+          agile methodologies. <span className="emoji">🕸️</span>
         </p>
       </>
     );

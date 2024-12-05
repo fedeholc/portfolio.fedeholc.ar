@@ -83,7 +83,7 @@ export default async function CV({
             </ul>
             <br></br>
 
-            <p>{dictionary.cv.calificaciones3b[lang]}</p>
+          {/*   <p>{dictionary.cv.calificaciones3b[lang]}</p>
             <ul className={proyectos.columns2stack}>
               <li>{dictionary.cv.calificaciones4.sk2[lang]}</li>
               <li>{dictionary.cv.calificaciones4.sk3[lang]}</li>
@@ -93,7 +93,7 @@ export default async function CV({
               <li>{dictionary.cv.calificaciones4.sk7[lang]}</li>
               <li>{dictionary.cv.calificaciones4.sk1[lang]}</li>
               <li>{dictionary.cv.calificaciones4.sk8[lang]}</li>
-            </ul>
+            </ul> */}
           </section>
 
           <section>
