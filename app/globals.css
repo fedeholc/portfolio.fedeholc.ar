@@ -62,13 +62,38 @@
    color: var(--body-color);
  }
 
- .background {
-   background-color: var(--body-background);
-   background-image: var(--image-back);
-
+ /* para el canvas*/
+ body {
+   margin: 0;
+   /*    overflow: hidden;
+ */
+   background-color: #1a1a1a;
  }
 
-/*  article p, article div {
+ /* para el canvas*/
+ canvas {
+   display: block;
+ }
+
+ @media (prefers-reduced-motion: reduce) {
+   canvas {
+     display: none;
+   }
+
+   .background {
+     background-color: var(--body-background);
+     background-image: var(--image-back);
+
+   }
+ }
+
+ .background {
+   background-color: var(--body-background);
+   /*    background-image: var(--image-back);
+ */
+ }
+
+ /*  article p, article div {
    cursor: default;
  } */
 

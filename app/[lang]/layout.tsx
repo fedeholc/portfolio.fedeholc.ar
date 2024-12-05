@@ -14,6 +14,8 @@ import { i18n, type Locale } from "@app/i18n-config";
 import icon from "@public/favicon.ico";
 import og from "@public/opengraph-image.jpeg";
 
+import { Canvas } from "./components/canvas";
+
 const robotoMono = Roboto_Mono({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
@@ -75,6 +77,7 @@ export default function Root({
       className={`${montserrat.variable} ${recursive.variable}  ${robotoMono.variable}  `}
     >
       <body className="background">
+        <Canvas></Canvas>
         <main className="layout__grid">
           <NavBar lang={params.lang}></NavBar>
           <article className="main_article">{children}</article>
