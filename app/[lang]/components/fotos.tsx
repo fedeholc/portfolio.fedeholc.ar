@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import "@app/globals.css";
 import fotos from "./fotos.module.css";
-import f1 from "@public/fp.jpg";
+import f1 from "@public/fedelin.jpeg";
 import f2 from "@public/ff4.jpg";
 export default function Fotos() {
   const [foto1, setFoto1] = useState(true);

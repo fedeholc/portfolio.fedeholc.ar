@@ -90,15 +90,13 @@ export default async function IndexPage({
   let p2 = (
     <>
       <p>
-        Me inicié como autodidácta y ahora estoy próximo a recibirme en una
-        tecnicatura superior en desarrollo de software. &nbsp;
+        Me inicié como autodidácta y ahora estoy próximo a recibirme de técnico
+        superior en desarrollo de software. &nbsp;
         <span className="emoji">🚀</span>
       </p>
       <p>
-        En el pasado fui sociólogo y profesor<span className="emoji">👨‍🏫</span>,
-        integré grupos y cátedras docentes en escuelas y en la Universidad de
-        Buenos Aires, lo cual me entrenó en la escucha activa, la comunicación
-        efectiva y el trabajo en equipo.
+        En el pasado fui sociólogo y profesor en escuelas secundarias y en la
+        Universidad de Buenos Aires. <span className="emoji">👨‍🏫</span>
       </p>
 
       <p>
@@ -116,11 +114,8 @@ export default async function IndexPage({
           <span className="emoji">🚀</span>
         </p>
         <p>
-          Previously,I was a sociologist and teacher &nbsp;
-          <span className="emoji">👨‍🏫</span>, I integrated groups and teaching
-          chairs in schools and at the University of Buenos Aires, which trained
-          me in active listening, effective communication and teamwork.&nbsp;
-          <span className="emoji">🤝️</span>
+          Previously, I was a sociologist and teacher at high schools and at the
+          University of Buenos Aires. <span className="emoji">👨‍🏫</span>
         </p>
         <p>
           I have developed web applications autonomously and in teams using
