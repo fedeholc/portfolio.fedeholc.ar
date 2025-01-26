@@ -10,6 +10,7 @@ import navbar from "./components/navbar.module.css";
 import "@app/globals.css";
 
 export default function Theme({ buttonTitle }: { buttonTitle: string }) {
+  // TODO: si se implementa el cambio de theme de este modo, no se puede usar SSG porque no se puede acceder al window object en tiempo de compilación, ver como se puede resolver
   /*   let tempPreference = "light";
 
   if (typeof window !== "undefined") {
