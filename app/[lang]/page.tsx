@@ -19,10 +19,11 @@ import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
 
 export default async function IndexPage({
-  params: { lang },
+  params,
 }: {
-  params: { lang: Locale };
+  params: Promise<{ lang: Locale }>;
 }) {
+  const { lang } = await params;
   const dictionary = await getDictionary();
   let h2a = (
     <h2 className="heading__title1">

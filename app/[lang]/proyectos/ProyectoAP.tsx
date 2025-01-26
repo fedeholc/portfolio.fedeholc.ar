@@ -1,4 +1,4 @@
-import proyectos from "../proyectos.module.css";
+import proyectos from "./proyectos.module.css";
 import "@app/globals.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -15,11 +15,8 @@ import { Locale } from "@app/i18n-config";
 
 // La elección de las tecnologías no fue propia sino que fueron las que aprendimos en el curso.
 
-export default async function ProyectoAP({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
+export default async function ProyectoAP({ lang }: { lang: Locale }) {
+ 
   const dictionary = await getDictionary();
   const TEXTO = {
     titulo: dictionary.proyectos.ap01[lang],

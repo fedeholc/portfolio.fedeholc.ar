@@ -1,4 +1,4 @@
-import proyectos from "../proyectos.module.css";
+import proyectos from "./proyectos.module.css";
 import "@app/globals.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -10,11 +10,7 @@ import screenshot1 from "@public/proyecto-health/health1.webp";
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
 
-export default async function ProyectoHealthPro({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
+export default async function ProyectoHealthPro({ lang }: { lang: Locale }) {
   const dictionary = await getDictionary();
 
   const TEXTO = {

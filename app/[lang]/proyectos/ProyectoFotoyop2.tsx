@@ -1,4 +1,4 @@
-import proyectos from "../proyectos.module.css";
+import proyectos from "./proyectos.module.css";
 
 import "@app/globals.css";
 import Link from "next/link";
@@ -13,11 +13,8 @@ import screenshot3 from "@public/proyecto-fotoyop/fotov1.webp";
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
 
-export default async function ProyectoFotoyop2({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
+export default async function ProyectoFotoyop2({ lang }: { lang: Locale }) {
+ 
   const dictionary = await getDictionary();
 
   const TEXTO = {

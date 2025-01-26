@@ -1,4 +1,4 @@
-import proyectos from "../proyectos.module.css";
+import proyectos from "./proyectos.module.css";
 import "@app/globals.css";
 
 import Link from "next/link";
@@ -10,11 +10,8 @@ import herb from "@public/herb.png";
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
 
-export default async function ProyectoInsta({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
+export default async function ProyectoInsta({ lang }: { lang: Locale }) {
+ 
   const dictionary = await getDictionary();
   const TEXTO = {
     titulo: `Full Size Images for IG`,

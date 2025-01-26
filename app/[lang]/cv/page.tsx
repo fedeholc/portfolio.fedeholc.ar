@@ -10,7 +10,11 @@ import { Locale } from "@app/i18n-config";
 
 /*         👾🌿🍁🪐🌟🛠️💘🕸️🚲️🎼⭐
  */
-export default async function CV({ params }: { params: { lang: Locale } }) {
+export default async function CV({
+  params,
+}: {
+  params: Promise<{ lang: Locale }>;
+}) {
   const { lang } = await params;
   const dictionary = await getDictionary();
 

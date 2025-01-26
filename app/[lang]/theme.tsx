@@ -10,12 +10,18 @@ import navbar from "./components/navbar.module.css";
 import "@app/globals.css";
 
 export default function Theme({ buttonTitle }: { buttonTitle: string }) {
-  const userPreference = window.matchMedia("(prefers-color-scheme: dark)")
-    .matches
-    ? "dark"
-    : "light";
-  const storedPreference = localStorage.getItem("theme");
-  const [theme, setTheme] = useState(storedPreference || userPreference);
+  /*   let tempPreference = "light";
+
+  if (typeof window !== "undefined") {
+    const userPreference = window?.matchMedia("(prefers-color-scheme: dark)")
+      .matches
+      ? "dark"
+      : "light";
+    const storedPreference = localStorage.getItem("theme");
+    tempPreference = storedPreference || userPreference;
+  } */
+
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
     document.body.dataset.theme = theme;

@@ -5,7 +5,7 @@ export default function Root({
   params,
 }: {
   children: React.ReactNode;
-  params: { lang: Locale };
+  params: Promise<{ lang: Locale }>;
 }) {
   return <div>{children}</div>;
 }
