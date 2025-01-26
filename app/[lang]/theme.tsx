@@ -10,14 +10,21 @@ import navbar from "./components/navbar.module.css";
 import "@app/globals.css";
 
 export default function Theme({ buttonTitle }: { buttonTitle: string }) {
-  const [theme, setTheme] = useState("light");
-  const handleChangeTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
+  const userPreference = window.matchMedia("(prefers-color-scheme: dark)")
+    .matches
+    ? "dark"
+    : "light";
+  const storedPreference = localStorage.getItem("theme");
+  const [theme, setTheme] = useState(storedPreference || userPreference);
 
   useEffect(() => {
     document.body.dataset.theme = theme;
   }, [theme]);
+
+  const handleChangeTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+    localStorage.setItem("theme", theme === "light" ? "dark" : "light");
+  };
 
   return (
     <div>
