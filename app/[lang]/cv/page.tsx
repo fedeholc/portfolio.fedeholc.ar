@@ -10,11 +10,8 @@ import { Locale } from "@app/i18n-config";
 
 /*         👾🌿🍁🪐🌟🛠️💘🕸️🚲️🎼⭐
  */
-export default async function CV({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
+export default async function CV({ params }: { params: { lang: Locale } }) {
+  const { lang } = await params;
   const dictionary = await getDictionary();
 
   return (
@@ -37,7 +34,6 @@ export default async function CV({
               ></Image>
               &nbsp;
               <Link
-                locale={false}
                 href={`/cv/${dictionary.cv.nombreArchivo[lang]}.pdf`}
                 target="_blank"
               >
@@ -56,7 +52,6 @@ export default async function CV({
               ></Image>
               &nbsp;
               <Link
-                locale={false}
                 href={`/cv/${dictionary.cv.nombreArchivo[lang]}.docx`}
                 target="_blank"
               >
@@ -83,7 +78,7 @@ export default async function CV({
             </ul>
             <br></br>
 
-          {/*   <p>{dictionary.cv.calificaciones3b[lang]}</p>
+            {/*   <p>{dictionary.cv.calificaciones3b[lang]}</p>
             <ul className={proyectos.columns2stack}>
               <li>{dictionary.cv.calificaciones4.sk2[lang]}</li>
               <li>{dictionary.cv.calificaciones4.sk3[lang]}</li>

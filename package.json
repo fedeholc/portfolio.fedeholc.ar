@@ -9,22 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@formatjs/intl-localematcher": "0.2.32",
-    "@vercel/analytics": "^1.2.0",
-    "@vercel/speed-insights": "^1.0.10",
-    "negotiator": "^0.6.3",
-    "next": "^14.2.5",
-    "react": "^18",
-    "react-dom": "^18",
+    "@formatjs/intl-localematcher": "0.5.10",
+    "@vercel/analytics": "^1.4.1",
+    "@vercel/speed-insights": "^1.1.0",
+    "negotiator": "^1.0.0",
+    "next": "^15.1.6",
+    "react": "^19",
+    "react-dom": "^19",
     "server-only": "0.0.1"
   },
   "devDependencies": {
-    "@types/negotiator": "0.6.1",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.0",
+    "@types/negotiator": "0.6.3",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
     "typescript": "^5"
   }
 }

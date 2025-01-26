@@ -64,22 +64,24 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
-export default function Root({
+export default async function Root({
   children,
   params,
 }: {
   children: React.ReactNode;
   params: { lang: Locale };
 }) {
+
+  const { lang } = await params;
   return (
     <html
-      lang={params.lang}
+      lang={lang}
       className={`${montserrat.variable} ${recursive.variable}  ${robotoMono.variable}  `}
     >
       <body className="background">
         <Canvas></Canvas>
         <main className="layout__grid">
-          <NavBar lang={params.lang}></NavBar>
+          <NavBar lang={lang}></NavBar>
           <article className="main_article">{children}</article>
           <Footer></Footer>
         </main>
