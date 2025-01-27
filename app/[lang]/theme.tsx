@@ -28,6 +28,16 @@ export default function Theme({ buttonTitle }: { buttonTitle: string }) {
     document.body.dataset.theme = theme;
   }, [theme]);
 
+/*   useEffect(() => {
+    const userPreference = window?.matchMedia("(prefers-color-scheme: dark)")
+      .matches
+      ? "dark"
+      : "light";
+    const storedPreference = localStorage.getItem("theme");
+
+    setTheme(storedPreference || userPreference);
+  }, []); */
+
   const handleChangeTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
     localStorage.setItem("theme", theme === "light" ? "dark" : "light");

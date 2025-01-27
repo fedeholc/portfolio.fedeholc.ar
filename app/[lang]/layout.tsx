@@ -71,7 +71,6 @@ export default async function Root({
   children: React.ReactNode;
   params: { lang: Locale };
 }) {
-
   const { lang } = await params;
   return (
     <html
