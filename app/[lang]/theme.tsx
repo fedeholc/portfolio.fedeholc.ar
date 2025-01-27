@@ -10,7 +10,7 @@ import navbar from "./components/navbar.module.css";
 import "@app/globals.css";
 
 export default function Theme({ buttonTitle }: { buttonTitle: string }) {
-  // TODO: si se implementa el cambio de theme de este modo, no se puede usar SSG porque no se puede acceder al window object en tiempo de compilación, ver como se puede resolver
+  //  si se implementa el cambio de theme de este modo, no se puede usar SSG porque no se puede acceder al window object en tiempo de compilación, ver como se puede resolver
   /*   let tempPreference = "light";
 
   if (typeof window !== "undefined") {
@@ -21,14 +21,18 @@ export default function Theme({ buttonTitle }: { buttonTitle: string }) {
     const storedPreference = localStorage.getItem("theme");
     tempPreference = storedPreference || userPreference;
   } */
+  //const [theme, setTheme] = useState("light");
 
-  const [theme, setTheme] = useState("light");
+
+  //TODO: con las cosas de este modo, usa las preferencias del sistema, pero si se cambia el theme a otro distinto al del sistema, va a hacer el flickeo porque renderiza con la preferencia del sistema y luego cambia a la guardada.
+  
+  const [theme, setTheme] = useState("");
 
   useEffect(() => {
     document.body.dataset.theme = theme;
   }, [theme]);
 
-/*   useEffect(() => {
+  useEffect(() => {
     const userPreference = window?.matchMedia("(prefers-color-scheme: dark)")
       .matches
       ? "dark"
@@ -36,7 +40,7 @@ export default function Theme({ buttonTitle }: { buttonTitle: string }) {
     const storedPreference = localStorage.getItem("theme");
 
     setTheme(storedPreference || userPreference);
-  }, []); */
+  }, []);
 
   const handleChangeTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
