@@ -16,6 +16,10 @@ export default function Theme({
   buttonTitle: string;
   themeCookie: string;
 }) {
+  // el problema del flickeo quedó resuelto usando la cookie en lugar de localStorage, entiendo que es porque la cookie se setea en el servidor y localStorage en el cliente (de ese modo tampoco hay problema con el SSR/SSG)
+  // TODO: faltaría resolver la no duplicación de las variables en el CSS según si toma la preferencia del usuario o la cookie.
+  // Habría que investigar si se puede hacer algo como acá con :has y/o :not como acá https://www.smashingmagazine.com/2024/03/setting-persisting-color-scheme-preferences-css-javascript/
+
   const userPreference = window?.matchMedia("(prefers-color-scheme: dark)")
     .matches
     ? "dark"
