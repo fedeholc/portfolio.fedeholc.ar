@@ -14,7 +14,7 @@ import LangSwitcher from "./langSwitcher";
 import { type Locale } from "@app/i18n-config";
 import { getDictionary } from "@app/get-dictionary";
 
-export default async function NavBar({ lang }: { lang: Locale }) {
+export default async function NavBar({ lang, themeCookie }: { lang: Locale, themeCookie: string }) {
   const dictionary = await getDictionary();
 
   return (
@@ -118,7 +118,7 @@ export default async function NavBar({ lang }: { lang: Locale }) {
         </div>
         <div className={navbar.divider}>|</div>
         <div className={navbar.toolbar_item}>
-          <Theme buttonTitle={dictionary.navbar.themeTitle[lang]}></Theme>
+          <Theme themeCookie={themeCookie} buttonTitle={dictionary.navbar.themeTitle[lang]}></Theme>
         </div>
         <div className={navbar.toolbar_item_text}>
           <LangSwitcher lang={lang}></LangSwitcher>

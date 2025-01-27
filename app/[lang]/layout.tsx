@@ -9,12 +9,11 @@ import { Roboto_Mono, Recursive, Montserrat } from "next/font/google";
 //components
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
+import { Canvas } from "./components/canvas";
 import { i18n, type Locale } from "@app/i18n-config";
-
 import icon from "@public/favicon.ico";
 import og from "@public/opengraph-image.jpeg";
-
-import { Canvas } from "./components/canvas";
+import { cookies } from "next/headers";
 
 const robotoMono = Roboto_Mono({
   weight: ["400", "500", "600", "700"],
@@ -72,15 +71,20 @@ export default async function Root({
   params: { lang: Locale };
 }) {
   const { lang } = await params;
+
+  const cookieStore = await cookies();
+  const themeCookie = cookieStore.get("theme")?.value;
+
   return (
     <html
       lang={lang}
+      data-theme={themeCookie}
       className={`${montserrat.variable} ${recursive.variable}  ${robotoMono.variable}  `}
     >
       <body className="background">
         <Canvas></Canvas>
         <main className="layout__grid">
-          <NavBar lang={lang}></NavBar>
+          <NavBar themeCookie={themeCookie || ""} lang={lang}></NavBar>
           <article className="main_article">{children}</article>
           <Footer></Footer>
         </main>

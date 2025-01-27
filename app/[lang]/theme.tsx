@@ -9,42 +9,27 @@ import brightIcon from "@public/brightness-up.png";
 import navbar from "./components/navbar.module.css";
 import "@app/globals.css";
 
-export default function Theme({ buttonTitle }: { buttonTitle: string }) {
-  //  si se implementa el cambio de theme de este modo, no se puede usar SSG porque no se puede acceder al window object en tiempo de compilación, ver como se puede resolver
-  /*   let tempPreference = "light";
-
-  if (typeof window !== "undefined") {
-    const userPreference = window?.matchMedia("(prefers-color-scheme: dark)")
-      .matches
-      ? "dark"
-      : "light";
-    const storedPreference = localStorage.getItem("theme");
-    tempPreference = storedPreference || userPreference;
-  } */
-  //const [theme, setTheme] = useState("light");
-
-
-  //TODO: con las cosas de este modo, usa las preferencias del sistema, pero si se cambia el theme a otro distinto al del sistema, va a hacer el flickeo porque renderiza con la preferencia del sistema y luego cambia a la guardada.
-  
-  const [theme, setTheme] = useState("");
+export default function Theme({
+  buttonTitle,
+  themeCookie,
+}: {
+  buttonTitle: string;
+  themeCookie: string;
+}) {
+  const userPreference = window?.matchMedia("(prefers-color-scheme: dark)")
+    .matches
+    ? "dark"
+    : "light";
+  const [theme, setTheme] = useState(themeCookie || userPreference);
 
   useEffect(() => {
     document.body.dataset.theme = theme;
   }, [theme]);
 
-  useEffect(() => {
-    const userPreference = window?.matchMedia("(prefers-color-scheme: dark)")
-      .matches
-      ? "dark"
-      : "light";
-    const storedPreference = localStorage.getItem("theme");
-
-    setTheme(storedPreference || userPreference);
-  }, []);
-
   const handleChangeTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-    localStorage.setItem("theme", theme === "light" ? "dark" : "light");
+    let newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    document.cookie = `theme=${newTheme}; path=/; max-age=31536000`;
   };
 
   return (
