@@ -72,19 +72,17 @@ export default async function Root({
 }) {
   const { lang } = await params;
 
-  const cookieStore = await cookies();
-  const themeCookie = cookieStore.get("theme")?.value;
+ 
 
   return (
     <html
       lang={lang}
-      data-theme={themeCookie}
-      className={`${montserrat.variable} ${recursive.variable}  ${robotoMono.variable}  `}
+       className={`${montserrat.variable} ${recursive.variable}  ${robotoMono.variable}  `}
     >
       <body className="background">
         <Canvas></Canvas>
         <main className="layout__grid">
-          <NavBar themeCookie={themeCookie || ""} lang={lang}></NavBar>
+          <NavBar   lang={lang}></NavBar>
           <article className="main_article">{children}</article>
           <Footer></Footer>
         </main>
