@@ -18,16 +18,10 @@ export default function Theme({
 }) {
   // si en algún momento decido cambiar el uso de dataset por todo con variables css, investigar si se puede hacer algo como acá con :has y/o :not como acá https://www.smashingmagazine.com/2024/03/setting-persisting-color-scheme-preferences-css-javascript/
 
-  // VER el problema del flickeo no quedó resuelto como pensaba (usando la cookie en lugar de localStorage) lo que sucedía es extraño: con el código:
-  /* const userPreference = window?.matchMedia("(prefers-color-scheme: dark)")
-    .matches
-    ? "dark"
-    : "light";"" 
-  */
-  // se producía un error por no existir window del lado del servidor y por algun motivo ese error hacía que no se produzca el flickeo (no sé por qué)
-  // en cambio si se usa el código que está debo y checkea si hay objeto window, se produce el flickeo.
-  // para evitarlo lo que hice fue desactivar SSG quitando generateStaticParams de [lang]/layout.tsx
-  
+  // VER el problema del flickeo no quedó resuelto como pensaba (usando la cookie en lugar de localStorage), y en principio no se si hay solución salvo que sea una SPA, porque si del server viene un theme o nada y luego se cambia va a flickear, si no se da la opcion de cambiar de theme y solo se usa la prefered con css funciona pero da la opción de elegir y guardar esa opción para la próxima, pues si se hace eso que es como lo dejé ahora, si la opcion guarada en localstorage o cookie no coincide con la prefered va a flickear
+  // aunque ahora que lo pienso si hay ssr (no ssg) y le llega una cookie debería funcionar ya que podría venir con la opcion elegida... pero no, poorque si tengo habilitado prefered en el css podría no coincidir (si lo quito podría andar pero pierdo la opcion de determinar el theme la primera vez que entra).
+  // TODO: quedaría por probar que pasa si esa opcion del prefered está condicional a que haya un data-theme y en ese caso se ignore el prefered
+
   let userPreference = "dark";
   if (typeof window !== "undefined") {
     userPreference = window.matchMedia("(prefers-color-scheme: dark)").matches
