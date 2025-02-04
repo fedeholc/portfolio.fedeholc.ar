@@ -16,25 +16,25 @@ export default function Theme({
   buttonTitle: string;
   themeCookie: string;
 }) {
-  // el problema del flickeo  quedó resuelto usando la cookie en lugar de localStorage, entiendo que es porque la cookie se setea en el servidor y localStorage en el cliente (de ese modo tampoco hay problema con el SSR/SSG)
-
   // si en algún momento decido cambiar el uso de dataset por todo con variables css, investigar si se puede hacer algo como acá con :has y/o :not como acá https://www.smashingmagazine.com/2024/03/setting-persisting-color-scheme-preferences-css-javascript/
 
-  //TODO: ojo, revisar esto, en la consola da error de que no existe window, a la vista funciona bien, pero si lo cambio con:
-
-   let userPreference = "dark";
-
+  // VER el problema del flickeo no quedó resuelto como pensaba (usando la cookie en lugar de localStorage) lo que sucedía es extraño: con el código:
+  /* const userPreference = window?.matchMedia("(prefers-color-scheme: dark)")
+    .matches
+    ? "dark"
+    : "light";"" 
+  */
+  // se producía un error por no existir window del lado del servidor y por algun motivo ese error hacía que no se produzca el flickeo (no sé por qué)
+  // en cambio si se usa el código que está debo y checkea si hay objeto window, se produce el flickeo.
+  // para evitarlo lo que hice fue desactivar SSG quitando generateStaticParams de [lang]/layout.tsx
+  
+  let userPreference = "dark";
   if (typeof window !== "undefined") {
     userPreference = window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
       : "light";
-  } 
-//TODO: vuelve a hacer el flickeo.
+  }
 
- /*  const userPreference = window?.matchMedia("(prefers-color-scheme: dark)")
-    .matches
-    ? "dark"
-    : "light"; */
   const [theme, setTheme] = useState(themeCookie || userPreference);
 
   useEffect(() => {
