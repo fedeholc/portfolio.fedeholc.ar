@@ -22,19 +22,19 @@ export default function Theme({
 
   //TODO: ojo, revisar esto, en la consola da error de que no existe window, a la vista funciona bien, pero si lo cambio con:
 
-  /*  let userPreference = "dark";
+   let userPreference = "dark";
 
   if (typeof window !== "undefined") {
     userPreference = window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
       : "light";
-  }*/
+  } 
 //TODO: vuelve a hacer el flickeo.
 
-  const userPreference = window?.matchMedia("(prefers-color-scheme: dark)")
+ /*  const userPreference = window?.matchMedia("(prefers-color-scheme: dark)")
     .matches
     ? "dark"
-    : "light";
+    : "light"; */
   const [theme, setTheme] = useState(themeCookie || userPreference);
 
   useEffect(() => {
