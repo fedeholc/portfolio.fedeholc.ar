@@ -37,7 +37,7 @@ export function middleware(request: NextRequest) {
 
     // esto es porque por algun motivo cuando va a un link de un archivo en public con el redirect que está debajo no funciona
     //de esta forma si es un pdf va directo y anda
-    if (pathname.slice(-3) === "pdf" || pathname.slice(-4) === "docx") {
+    if (pathname.slice(-3) === "pdf" || pathname.slice(-4) === "docx" || pathname.slice(-4) === "jpeg") {
       return NextResponse.next();
 
     }

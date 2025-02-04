@@ -20,6 +20,17 @@ export default function Theme({
 
   // si en algún momento decido cambiar el uso de dataset por todo con variables css, investigar si se puede hacer algo como acá con :has y/o :not como acá https://www.smashingmagazine.com/2024/03/setting-persisting-color-scheme-preferences-css-javascript/
 
+  //TODO: ojo, revisar esto, en la consola da error de que no existe window, a la vista funciona bien, pero si lo cambio con:
+
+  /*  let userPreference = "dark";
+
+  if (typeof window !== "undefined") {
+    userPreference = window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+  }*/
+//TODO: vuelve a hacer el flickeo.
+
   const userPreference = window?.matchMedia("(prefers-color-scheme: dark)")
     .matches
     ? "dark"
