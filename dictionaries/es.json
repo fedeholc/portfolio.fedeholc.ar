@@ -175,7 +175,10 @@
         "en": "Attention to detail"
       }
     },
-    "proyectos1": { "es": "Proyectos", "en": "Projects" },
+    "proyectos1": {
+      "es": "Proyectos de desarrollo web",
+      "en": "Web development projects"
+    },
     "proyectos2": {
       "es": "Podés encontrar una explicación detallada de cada proyecto y enlaces al código, en mi portfolio online: ",
       "en": "You can find a detailed explanation of each project and links to the source code, on my online portfolio: "
@@ -280,8 +283,8 @@
       "en": "Higher Technician Degree in Software Development."
     },
     "academia2b": {
-      "es": "Instituto de Formación Técnica Superior N.º 29 de la Ciudad Autónoma de Buenos Aires.  2023 - a la actualidad (18 materias de 23 aprobadas).",
-      "en": "Technical Training Institute No. 29 of the Autonomous City of Buenos Aires.  2023 - to present (18 subjects of 23 approved)."
+      "es": "Instituto de Formación Técnica Superior N.º 29 de la Ciudad Autónoma de Buenos Aires.  2023 - 2025. Graduado.",
+      "en": "Technical Training Institute No. 29 of the Autonomous City of Buenos Aires.  2023 - 2025. Graduated."
     },
     "academia3a": {
       "es": "Escuela Técnica en Computación.",
@@ -425,6 +428,14 @@
     "experiencias6b": {
       "es": "Desarrollo en equipo de la aplicación de telemedicina Health Pro. Individualmente estuve a cargo de desarrollar los módulos de videollamadas y salas de espera de la aplicación, utilizando React, Node, WebSockets y WebRTC.",
       "en": "Team development of the telemedicine application Health Pro. Individually I was in charge of developing the video call and waiting room modules of the application, using React, Node, WebSockets and WebRTC."
+    },
+    "experiencias7a": {
+      "es": "Desarrollador Web Full Stack. Mindcircus. 2025 - a la actualidad.",
+      "en": "Full Stack Web Developer. Mindcircus. 2025 - present."
+    },
+    "experiencias7b": {
+      "es": "Desarrollo full stack de una plataforma de oferta y búsqueda de empleos para empresas y profesionales del ámbito de marketing digital, diseño y tecnología. Me encargué de reconstruir un proyecto que estaba inconcluso, lo cual implicó mejorar y extender un backend hecho con Node y base de datos MySQL, y de crear un frontend con React y TypeScript. Además implemente un proceso de ci/cd para poder desplegar los entornos de producción y staging en un VPS a partir de repositorios en GitHub.",
+      "en": "Full stack development of a job offer and search platform for companies and professionals in the digital marketing, design and technology fields. I was in charge of rebuilding a project that was unfinished, which involved improving and extending a backend made with Node and MySQL database, and creating a frontend with React and TypeScript. I also implemented a ci/cd process to be able to deploy the production and staging environments on a VPS from GitHub repositories."
     }
   },
   "proyectos": {
@@ -441,8 +452,8 @@
       "en": "PROJECTS"
     },
     "otros": {
-      "es": "Otros proyectos:",
-      "en": "Other projects:"
+      "es": "Proyectos académicos de desarrollo de software:",
+      "en": "Software development academic projects:"
     },
     "otrosVerCodigo": {
       "es": "Ver código",
@@ -463,6 +474,10 @@
     "otros4": {
       "es": "Aplicación Web para administración de una institución educativa (proyecto de fin de cursada). Stack: MongoDB, Node, Pug, JavaScript, Vitest, JWT, HTML, CSS.",
       "en": "Web application for the administration of an educational institution (course project). Stack: MongoDB, Node, Pug, JavaScript, Vitest, JWT, HTML, CSS."
+    },
+    "otros5": {
+      "es": "Aplicación Web Asistec: una plataforma para conectar a profesionales que realizan servicios técnicos con los usuarios que lo necesitan (proyecto de fin de cursada). Stack: Node, React, Vitest, HTML, CSS, MySQL. Integración continua y despliegue continuo (CI/CD) mediante GitHub Workflows, y despliegue con Docker Compose en Amazon Web Services (AWS).",
+      "en": "Asistec Web Application: a platform that connects professionals offering technical services with those who need them (course project). Stack: Node, React, Vitest, HTML, CSS and MySQL. Continuous integration/continuous delivery (CI/CD) with GitHub Workflows and deployment with Docker Compose to Amazon Web Services (AWS)."
     },
     "fotoyop01": {
       "es": "fotoYOP",

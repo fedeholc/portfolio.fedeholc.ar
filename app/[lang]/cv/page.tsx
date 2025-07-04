@@ -177,6 +177,12 @@ export default async function CV({
           <section>
             <h3>{dictionary.cv.experiencias1[lang]}</h3>
             <p>
+              <strong>{dictionary.cv.experiencias7a[lang]}</strong>
+            </p>
+            <ul>
+              <li>{dictionary.cv.experiencias7b[lang]}</li>
+            </ul>
+            <p>
               <strong>{dictionary.cv.experiencias6a[lang]}</strong>
             </p>
             <ul>

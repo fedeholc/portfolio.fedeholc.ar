@@ -134,6 +134,22 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
             <li className={proyectos.smaller_font}>
               <div className={proyectos.link_icon}>
                 <span>
+                  {dictionary.proyectos.otros5[lang]}&nbsp;
+                  <Link
+                    className={proyectos.underline}
+                    target="_blank"
+                    href="https://github.com/fedeholc/devops-tpi-infra"
+                  >
+                    {dictionary.proyectos.otrosVerCodigo[lang]}
+                  </Link>
+                  &nbsp;
+                  <Image src={externalLinkIcon} alt="external link icon" />
+                </span>
+              </div>
+            </li>
+            <li className={proyectos.smaller_font}>
+              <div className={proyectos.link_icon}>
+                <span>
                   {dictionary.proyectos.otros4[lang]}&nbsp;
                   <Link
                     className={proyectos.underline}
