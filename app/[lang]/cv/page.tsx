@@ -72,13 +72,14 @@ export default async function CV({
             <p>{dictionary.cv.calificaciones3[lang]}</p>
             <ul className={proyectos.columns2stack}>
               <li>HTML / CSS / Responsive design</li>
-              <li>Testing (Vitest/Jest, Playwright)</li>
-              <li>Vanilla JavaScript / React / Next.js</li>
               <li>SQL / MongoDB</li>
-              <li>TypeScript / JSDoc</li>
+              <li>JavaScript / React / Next.js</li>
               <li>Git / GitHub</li>
+              <li>TypeScript / JSDoc</li>
+              <li>Linux / Docker</li>
               <li>Node.js / Express</li>
-              <li>Linux</li>
+              <li>Figma</li>
+              <li>Testing (Vitest/Jest, React Testing Library, Playwright)</li>
             </ul>
             <br></br>
 

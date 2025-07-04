@@ -3,7 +3,7 @@ export default function Footer() {
   return (
     <footer className={footer.container}>
       Federico Holc <span className={footer.emoji}>⚡️ </span>
-      2024
+      2025
     </footer>
   );
 }
