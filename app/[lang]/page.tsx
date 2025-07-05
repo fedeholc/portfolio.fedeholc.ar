@@ -91,8 +91,8 @@ export default async function IndexPage({
   let p2 = (
     <>
       <p>
-        Me inicié como autodidácta y ahora estoy próximo a recibirme de técnico
-        superior en desarrollo de software. &nbsp;
+        Me inicié como autodidácta y luego me recibí de técnico superior en
+        desarrollo de software. &nbsp;
         <span className="emoji">🚀</span>
       </p>
       <p>
@@ -110,8 +110,8 @@ export default async function IndexPage({
     p2 = (
       <>
         <p>
-          I began my journey as a self-taught developer and am now on the verge
-          of graduating as a software development technician. &nbsp;
+          I began my journey as a self-taught developer and later graduated as a
+          software development technician. &nbsp;
           <span className="emoji">🚀</span>
         </p>
         <p>
