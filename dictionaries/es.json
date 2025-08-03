@@ -414,8 +414,8 @@
       "en": "Professor and tutor of Teaching Practices. Faculty of Social Sciences, Pipkin Chair (2009-2015)."
     },
     "experiencias5a": {
-      "es": "Profesor de enseñanza media. 2010 – a la actualidad.",
-      "en": "High school teacher. 2010 - to present."
+      "es": "Profesor de enseñanza media. 2010 – 2024.",
+      "en": "High school teacher. 2010 - 2024."
     },
     "experiencias5b": {
       "es": "Profesor de Sociología, Introducción a las Ciencias Sociales y a las Humanidades, Formación Ética y Ciudadana, e Historia, en escuelas públicas de enseñanza media de la Ciudad Autónoma de Buenos Aires.",
@@ -430,8 +430,8 @@
       "en": "Team development of the telemedicine application Health Pro. Individually I was in charge of developing the video call and waiting room modules of the application, using React, Node, WebSockets and WebRTC."
     },
     "experiencias7a": {
-      "es": "Desarrollador Web Full Stack. Mindcircus. 2025 - a la actualidad.",
-      "en": "Full Stack Web Developer. Mindcircus. 2025 - present."
+      "es": "Desarrollador Web Full Stack. Mindcircus. Feb. 2025 - a la actualidad.",
+      "en": "Full Stack Web Developer. Mindcircus. Feb. 2025 - to present."
     },
     "experiencias7b": {
       "es": "Desarrollo full stack de una plataforma de oferta y búsqueda de empleos para empresas y profesionales del ámbito de marketing digital, diseño y tecnología. Me encargué de reconstruir un proyecto que estaba inconcluso, lo cual implicó mejorar y extender un backend hecho con Node y base de datos MySQL, y de crear un frontend con React y TypeScript. Además implemente un proceso de ci/cd para poder desplegar los entornos de producción y staging en un VPS a partir de repositorios en GitHub.",
