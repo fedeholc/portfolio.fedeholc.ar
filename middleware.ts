@@ -105,14 +105,24 @@ export function middleware(request: NextRequest) {
     }
 
     console.log("🎯 Final locale seleccionado:", locale);
-    console.log("📍 Redirigiendo a:", `/${locale}${pathname}`);
-
-    const response = NextResponse.redirect(
-      new URL(
-        `/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`,
-        request.url,
-      ),
+    
+    // Construir la URL de destino
+    const targetUrl = new URL(
+      `/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`,
+      request.url,
     );
+    
+    // Preservar search params EXCEPTO temp_lang
+    const searchParams = request.nextUrl.searchParams;
+    for (const [key, value] of searchParams.entries()) {
+      if (key !== 'temp_lang') {  // Omitir el parámetro temporal
+        targetUrl.searchParams.set(key, value);
+      }
+    }
+    
+    console.log("📍 Redirigiendo a:", targetUrl.toString());
+
+    const response = NextResponse.redirect(targetUrl);
 
     // Establecer cookie con configuración reforzada para Vercel
     response.cookies.set("NEXT_LOCALE", locale, {
@@ -144,10 +154,17 @@ export function middleware(request: NextRequest) {
       
       // Construir la nueva URL con el idioma correcto
       const newPathname = pathname.replace(`/${currentLocale}`, `/${cookieLocale}`);
+      const targetUrl = new URL(newPathname, request.url);
       
-      const response = NextResponse.redirect(
-        new URL(newPathname, request.url)
-      );
+      // Preservar search params EXCEPTO temp_lang
+      const searchParams = request.nextUrl.searchParams;
+      for (const [key, value] of searchParams.entries()) {
+        if (key !== 'temp_lang') {  // Omitir el parámetro temporal
+          targetUrl.searchParams.set(key, value);
+        }
+      }
+      
+      const response = NextResponse.redirect(targetUrl);
       
       // Mantener la cookie actualizada con configuración reforzada
       response.cookies.set("NEXT_LOCALE", cookieLocale, {
@@ -161,7 +178,30 @@ export function middleware(request: NextRequest) {
       return response;
     }
     
-    // Si no hay conflicto, continuar y actualizar la cookie con el locale actual
+    // Si no hay conflicto, verificar si necesitamos limpiar parámetros temporales
+    const searchParams = request.nextUrl.searchParams;
+    const hasTempLang = searchParams.has('temp_lang');
+    
+    if (hasTempLang) {
+      // Crear URL limpia sin temp_lang
+      const cleanUrl = new URL(request.url);
+      cleanUrl.searchParams.delete('temp_lang');
+      
+      console.log("🧹 Limpiando parámetro temporal de la URL");
+      
+      const response = NextResponse.redirect(cleanUrl);
+      response.cookies.set("NEXT_LOCALE", currentLocale, {
+        maxAge: 60 * 60 * 24 * 365, // 1 año
+        path: "/",
+        sameSite: "lax",
+        secure: process.env.NODE_ENV === "production",
+        httpOnly: false, // Importante: permitir acceso desde JavaScript
+      });
+      
+      return response;
+    }
+    
+    // Si no hay temp_lang, continuar normalmente y actualizar la cookie
     const response = NextResponse.next();
     response.cookies.set("NEXT_LOCALE", currentLocale, {
       maxAge: 60 * 60 * 24 * 365, // 1 año
