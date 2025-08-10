@@ -18,7 +18,7 @@ function getLocale(request: NextRequest): string | undefined {
   );
 
   const locale = matchLocale(languages, locales, i18n.defaultLocale);
-
+  //console.log("locale", locale, "languages", languages, "locales", locales, "defaultLocale", i18n.defaultLocale);
   return locale;
 }
 
@@ -27,6 +27,7 @@ export function middleware(request: NextRequest) {
 
   const pathname = request.nextUrl.pathname;
 
+  console.log("pathname pre missing", pathname, "headers", request.headers.get("next-url"));
   // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = i18n.locales.every(
     (locale) =>
@@ -44,6 +45,7 @@ export function middleware(request: NextRequest) {
 
 
     let locale = getLocale(request); // no borrar porque si viene vacio tiene que poner uno por default
+    console.log("pathname", pathname, "locale pre headers", locale, "headers", request.headers.get("next-url"));
     //lo siguiente es porque el getLocale tomaba el idioma del navegador y no el idioma del sitio, es decir, si se cambió a ingles y el navegador está en español, al redireccionar mandaba a español, de esta forma se fija que idioma tiene y lo mantiene.
     if (request.headers.get("next-url")?.slice(0, 3) === "/es") {
       locale = "es";
