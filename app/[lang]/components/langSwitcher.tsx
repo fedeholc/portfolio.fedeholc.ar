@@ -9,7 +9,7 @@ import navbar from "./navbar.module.css";
 export default function LangSwitcher({ lang }: { lang: Locale }) {
   const pathName = usePathname();
   const router = useRouter();
-
+  
   const redirectedPathName = (locale: Locale) => {
     if (!pathName) return "/";
     const segments = pathName.split("/");
@@ -18,17 +18,29 @@ export default function LangSwitcher({ lang }: { lang: Locale }) {
   };
 
   let cambio = lang === "es" ? "en" : "es";
-
+  
   const handleLanguageChange = (e: React.MouseEvent) => {
     e.preventDefault();
-
-    // Establecer cookie para recordar la preferencia
-    document.cookie = `NEXT_LOCALE=${cambio}; path=/; max-age=${
-      60 * 60 * 24 * 365
-    }`;
-
-    // Navegar a la nueva URL
-    router.push(redirectedPathName(cambio as Locale));
+    
+    // Estrategia mejorada para establecer la cookie y localStorage
+    try {
+      // Opción 1: cookie con configuración completa para Vercel
+      const secure = window.location.protocol === 'https:';
+      document.cookie = `NEXT_LOCALE=${cambio}; path=/; max-age=${60 * 60 * 24 * 365}; SameSite=Lax${secure ? '; Secure' : ''}`;
+      
+      // Opción 2: localStorage como backup (se lee en el middleware si no hay cookie)
+      localStorage.setItem('NEXT_LOCALE', cambio);
+      
+      console.log("Cookie y localStorage establecidos:", `NEXT_LOCALE=${cambio}`);
+    } catch (error) {
+      console.error("Error estableciendo preferencias:", error);
+    }
+    
+    // Navegar con pequeña pausa para asegurar que se establezcan las preferencias
+    const targetUrl = redirectedPathName(cambio as Locale);
+    setTimeout(() => {
+      router.push(targetUrl);
+    }, 50);
   };
 
   return (
