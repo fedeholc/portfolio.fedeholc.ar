@@ -34,6 +34,7 @@ export function middleware(request: NextRequest) {
       !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
   );
 
+  console.log("request href", request.nextUrl.href);
   // Redirect if there is no locale
   if (pathnameIsMissingLocale) {
 
