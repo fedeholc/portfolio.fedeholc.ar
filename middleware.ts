@@ -62,13 +62,7 @@ export function middleware(request: NextRequest) {
     );
   }
 
-  console.log ("redirijo a: ", pathname, "rurl", request.url);
-  return NextResponse.redirect(
-    new URL(
-      `${pathname}`,
-      request.url,
-    ),
-  );
+
 
 
 }
