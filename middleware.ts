@@ -27,7 +27,7 @@ export function middleware(request: NextRequest) {
 
   const pathname = request.nextUrl.pathname;
 
-  console.log("pathname pre missing", pathname, "headers", request.headers.get("next-url"));
+  console.log("pathname pre missing", pathname, "headers", request.headers.get("next-url"), "Locales:", i18n.locales);
   // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = i18n.locales.every(
     (locale) =>
