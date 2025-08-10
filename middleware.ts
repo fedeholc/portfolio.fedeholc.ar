@@ -18,7 +18,7 @@ function getLocale(request: NextRequest): string | undefined {
   );
 
   const locale = matchLocale(languages, locales, i18n.defaultLocale);
-  console.log("GET locale", locale, "languages", languages, "locales", locales, "defaultLocale", i18n.defaultLocale);
+
   return locale;
 }
 
@@ -56,7 +56,7 @@ export function middleware(request: NextRequest) {
       console.log("✅ Locale desde cookie (PRIORIDAD):", locale);
     } else {
       console.log("❌ No se encontró cookie válida, usando fallback");
-      
+
       // 1.5. Verificar si hay un header personalizado desde el cliente (para casos donde la cookie falla)
       const clientLang = request.headers.get("x-client-lang");
       if (clientLang && i18n.locales.includes(clientLang as any)) {
@@ -67,7 +67,7 @@ export function middleware(request: NextRequest) {
         const searchParams = request.nextUrl.searchParams;
         const tempLang = searchParams.get('temp_lang');
         const langParam = searchParams.get('lang');
-        
+
         if (tempLang && i18n.locales.includes(tempLang as any)) {
           locale = tempLang;
           console.log("✅ Locale desde temp_lang (LangSwitcher):", locale);
@@ -88,7 +88,7 @@ export function middleware(request: NextRequest) {
             try {
               const refererUrl = new URL(referer);
               const refererPathname = refererUrl.pathname;
-              
+
               if (refererPathname.startsWith("/es/") || refererPathname === "/es") {
                 locale = "es";
                 console.log("✅ Locale desde referer: es");
@@ -105,13 +105,13 @@ export function middleware(request: NextRequest) {
     }
 
     console.log("🎯 Final locale seleccionado:", locale);
-    
+
     // Construir la URL de destino
     const targetUrl = new URL(
       `/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`,
       request.url,
     );
-    
+
     // Preservar search params EXCEPTO temp_lang
     const searchParams = request.nextUrl.searchParams;
     for (const [key, value] of searchParams.entries()) {
@@ -119,7 +119,7 @@ export function middleware(request: NextRequest) {
         targetUrl.searchParams.set(key, value);
       }
     }
-    
+
     console.log("📍 Redirigiendo a:", targetUrl.toString());
 
     const response = NextResponse.redirect(targetUrl);
@@ -132,7 +132,7 @@ export function middleware(request: NextRequest) {
       secure: process.env.NODE_ENV === "production",
       httpOnly: false, // Importante: permitir acceso desde JavaScript
     });
-    
+
     console.log("🍪 Cookie establecida:", `NEXT_LOCALE=${locale}`);
 
     return response;
@@ -141,21 +141,21 @@ export function middleware(request: NextRequest) {
   // Si la URL ya tiene un locale, verificar que sea el correcto según las preferencias del usuario
   const currentLocale = pathname.split('/')[1];
   if (i18n.locales.includes(currentLocale as any)) {
-    
+
     // Verificar si el usuario tiene una preferencia diferente guardada
     const cookieLocale = request.cookies.get("NEXT_LOCALE")?.value;
-    
+
     // Si hay una cookie con un idioma diferente al de la URL, redirigir
-    if (cookieLocale && 
-        i18n.locales.includes(cookieLocale as any) && 
-        cookieLocale !== currentLocale) {
-      
+    if (cookieLocale &&
+      i18n.locales.includes(cookieLocale as any) &&
+      cookieLocale !== currentLocale) {
+
       console.log(`Redirigiendo de ${currentLocale} a ${cookieLocale} según cookie`);
-      
+
       // Construir la nueva URL con el idioma correcto
       const newPathname = pathname.replace(`/${currentLocale}`, `/${cookieLocale}`);
       const targetUrl = new URL(newPathname, request.url);
-      
+
       // Preservar search params EXCEPTO temp_lang
       const searchParams = request.nextUrl.searchParams;
       for (const [key, value] of searchParams.entries()) {
@@ -163,9 +163,9 @@ export function middleware(request: NextRequest) {
           targetUrl.searchParams.set(key, value);
         }
       }
-      
+
       const response = NextResponse.redirect(targetUrl);
-      
+
       // Mantener la cookie actualizada con configuración reforzada
       response.cookies.set("NEXT_LOCALE", cookieLocale, {
         maxAge: 60 * 60 * 24 * 365, // 1 año
@@ -174,21 +174,21 @@ export function middleware(request: NextRequest) {
         secure: process.env.NODE_ENV === "production",
         httpOnly: false, // Importante: permitir acceso desde JavaScript
       });
-      
+
       return response;
     }
-    
+
     // Si no hay conflicto, verificar si necesitamos limpiar parámetros temporales
     const searchParams = request.nextUrl.searchParams;
     const hasTempLang = searchParams.has('temp_lang');
-    
+
     if (hasTempLang) {
       // Crear URL limpia sin temp_lang
       const cleanUrl = new URL(request.url);
       cleanUrl.searchParams.delete('temp_lang');
-      
+
       console.log("🧹 Limpiando parámetro temporal de la URL");
-      
+
       const response = NextResponse.redirect(cleanUrl);
       response.cookies.set("NEXT_LOCALE", currentLocale, {
         maxAge: 60 * 60 * 24 * 365, // 1 año
@@ -197,10 +197,10 @@ export function middleware(request: NextRequest) {
         secure: process.env.NODE_ENV === "production",
         httpOnly: false, // Importante: permitir acceso desde JavaScript
       });
-      
+
       return response;
     }
-    
+
     // Si no hay temp_lang, continuar normalmente y actualizar la cookie
     const response = NextResponse.next();
     response.cookies.set("NEXT_LOCALE", currentLocale, {
@@ -210,7 +210,7 @@ export function middleware(request: NextRequest) {
       secure: process.env.NODE_ENV === "production",
       httpOnly: false, // Importante: permitir acceso desde JavaScript
     });
-    
+
     console.log("🍪 Cookie actualizada con locale actual:", currentLocale);
     return response;
   }
