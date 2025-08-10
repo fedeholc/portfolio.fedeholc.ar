@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Middleware Debug</title>
+</head>
+<body>
+    <h1>Test Middleware</h1>
+    <p>Esta página te ayuda a debuggear el middleware en producción.</p>
+    
+    <div>
+        <h2>Cookies actuales:</h2>
+        <div id="cookies"></div>
+    </div>
+    
+    <div>
+        <h2>Acciones:</h2>
+        <button onclick="setCookie('es')">Establecer Español</button>
+        <button onclick="setCookie('en')">Establecer Inglés</button>
+        <button onclick="clearCookies()">Limpiar Cookies</button>
+    </div>
+    
+    <div>
+        <h2>Navegación:</h2>
+        <a href="/cv">Ir a CV (sin idioma)</a><br>
+        <a href="/proyectos">Ir a Proyectos (sin idioma)</a><br>
+        <a href="/">Ir a Home (sin idioma)</a>
+    </div>
+
+    <script>
+        function showCookies() {
+            document.getElementById('cookies').innerHTML = document.cookie || 'No hay cookies';
+        }
+        
+        function setCookie(lang) {
+            const secure = window.location.protocol === 'https:';
+            document.cookie = `NEXT_LOCALE=${lang}; path=/; max-age=${60 * 60 * 24 * 365}; SameSite=Lax${secure ? '; Secure' : ''}`;
+            localStorage.setItem('NEXT_LOCALE', lang);
+            console.log('Cookie establecida:', lang);
+            showCookies();
+        }
+        
+        function clearCookies() {
+            document.cookie = 'NEXT_LOCALE=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+            localStorage.removeItem('NEXT_LOCALE');
+            showCookies();
+        }
+        
+        // Mostrar cookies al cargar
+        showCookies();
+        
+        // Actualizar cada segundo
+        setInterval(showCookies, 1000);
+    </script>
+</body>
+</html>

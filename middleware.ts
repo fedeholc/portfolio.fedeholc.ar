@@ -25,16 +25,18 @@ function getLocale(request: NextRequest): string | undefined {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  console.log("pathname pre missing", pathname, "Locales:", i18n.locales);
-  
+  console.log("🔍 MIDDLEWARE DEBUG - pathname:", pathname);
+  console.log("🔍 MIDDLEWARE DEBUG - cookies:", request.cookies.getAll());
+  console.log("🔍 MIDDLEWARE DEBUG - headers referer:", request.headers.get("referer"));
+
   // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = i18n.locales.every(
     (locale) =>
       !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
   );
 
-  console.log("request href", request.nextUrl.href, "pathnameIsMissingLocale", pathnameIsMissingLocale);
-  
+  console.log("🔍 MIDDLEWARE DEBUG - pathnameIsMissingLocale:", pathnameIsMissingLocale);
+
   // Redirect if there is no locale
   if (pathnameIsMissingLocale) {
 
@@ -46,49 +48,64 @@ export function middleware(request: NextRequest) {
 
     // Estrategia mejorada para obtener el locale correcto
     let locale: string = i18n.defaultLocale; // Usar default como fallback
-    
-    // 1. Verificar si hay un parámetro lang en la URL (para casos específicos)
-    const searchParams = request.nextUrl.searchParams;
-    const langParam = searchParams.get('lang');
-    if (langParam && i18n.locales.includes(langParam as any)) {
-      locale = langParam;
-      console.log("Locale desde URL param:", locale);
+
+    // 1. PRIORIDAD MÁXIMA: Cookie del usuario (más confiable en Vercel)
+    const cookieLocale = request.cookies.get("NEXT_LOCALE")?.value;
+    if (cookieLocale && i18n.locales.includes(cookieLocale as any)) {
+      locale = cookieLocale;
+      console.log("✅ Locale desde cookie (PRIORIDAD):", locale);
     } else {
-      // 2. Intentar obtener desde la cookie (más confiable en Vercel)
-      const cookieLocale = request.cookies.get("NEXT_LOCALE")?.value;
-      if (cookieLocale && i18n.locales.includes(cookieLocale as any)) {
-        locale = cookieLocale;
-        console.log("Locale desde cookie:", locale);
-      } else {
-        // 3. Fallback a la detección por navegador solo si no hay cookie
-        const detectedLocale = getLocale(request);
-        if (detectedLocale) {
-          locale = detectedLocale;
-          console.log("Locale detectado:", locale);
-        }
-      }
+      console.log("❌ No se encontró cookie válida, usando fallback");
       
-      // 4. Como último recurso, intentar el referer (pero no confiar solo en él)
-      const referer = request.headers.get("referer");
-      if (referer && !cookieLocale && !langParam) {
-        try {
-          const refererUrl = new URL(referer);
-          const refererPathname = refererUrl.pathname;
-          
-          if (refererPathname.startsWith("/es/") || refererPathname === "/es") {
-            locale = "es";
-            console.log("Locale desde referer: es");
-          } else if (refererPathname.startsWith("/en/") || refererPathname === "/en") {
-            locale = "en";
-            console.log("Locale desde referer: en");
+      // 1.5. Verificar si hay un header personalizado desde el cliente (para casos donde la cookie falla)
+      const clientLang = request.headers.get("x-client-lang");
+      if (clientLang && i18n.locales.includes(clientLang as any)) {
+        locale = clientLang;
+        console.log("✅ Locale desde header cliente:", locale);
+      } else {
+        // 2. Verificar parámetros temporales del LangSwitcher
+        const searchParams = request.nextUrl.searchParams;
+        const tempLang = searchParams.get('temp_lang');
+        const langParam = searchParams.get('lang');
+        
+        if (tempLang && i18n.locales.includes(tempLang as any)) {
+          locale = tempLang;
+          console.log("✅ Locale desde temp_lang (LangSwitcher):", locale);
+        } else if (langParam && i18n.locales.includes(langParam as any)) {
+          locale = langParam;
+          console.log("✅ Locale desde URL param:", locale);
+        } else {
+          // 3. Fallback a la detección por navegador
+          const detectedLocale = getLocale(request);
+          if (detectedLocale) {
+            locale = detectedLocale;
+            console.log("✅ Locale detectado por navegador:", locale);
           }
-        } catch (error) {
-          console.log("Error parsing referer:", error);
+
+          // 4. Como último recurso, intentar el referer
+          const referer = request.headers.get("referer");
+          if (referer) {
+            try {
+              const refererUrl = new URL(referer);
+              const refererPathname = refererUrl.pathname;
+              
+              if (refererPathname.startsWith("/es/") || refererPathname === "/es") {
+                locale = "es";
+                console.log("✅ Locale desde referer: es");
+              } else if (refererPathname.startsWith("/en/") || refererPathname === "/en") {
+                locale = "en";
+                console.log("✅ Locale desde referer: en");
+              }
+            } catch (error) {
+              console.log("❌ Error parsing referer:", error);
+            }
+          }
         }
       }
     }
 
-    console.log("Final locale:", locale);
+    console.log("🎯 Final locale seleccionado:", locale);
+    console.log("📍 Redirigiendo a:", `/${locale}${pathname}`);
 
     const response = NextResponse.redirect(
       new URL(
@@ -97,27 +114,64 @@ export function middleware(request: NextRequest) {
       ),
     );
 
-    // Establecer cookie para recordar la preferencia del idioma
+    // Establecer cookie con configuración reforzada para Vercel
     response.cookies.set("NEXT_LOCALE", locale, {
       maxAge: 60 * 60 * 24 * 365, // 1 año
       path: "/",
-      sameSite: "lax", // Importante para Vercel
-      secure: process.env.NODE_ENV === "production", // HTTPS en producción
+      sameSite: "lax",
+      secure: process.env.NODE_ENV === "production",
+      httpOnly: false, // Importante: permitir acceso desde JavaScript
     });
+    
+    console.log("🍪 Cookie establecida:", `NEXT_LOCALE=${locale}`);
 
     return response;
   }
 
-  // Si la URL ya tiene un locale, establecer la cookie para recordar la preferencia
+  // Si la URL ya tiene un locale, verificar que sea el correcto según las preferencias del usuario
   const currentLocale = pathname.split('/')[1];
   if (i18n.locales.includes(currentLocale as any)) {
+    
+    // Verificar si el usuario tiene una preferencia diferente guardada
+    const cookieLocale = request.cookies.get("NEXT_LOCALE")?.value;
+    
+    // Si hay una cookie con un idioma diferente al de la URL, redirigir
+    if (cookieLocale && 
+        i18n.locales.includes(cookieLocale as any) && 
+        cookieLocale !== currentLocale) {
+      
+      console.log(`Redirigiendo de ${currentLocale} a ${cookieLocale} según cookie`);
+      
+      // Construir la nueva URL con el idioma correcto
+      const newPathname = pathname.replace(`/${currentLocale}`, `/${cookieLocale}`);
+      
+      const response = NextResponse.redirect(
+        new URL(newPathname, request.url)
+      );
+      
+      // Mantener la cookie actualizada con configuración reforzada
+      response.cookies.set("NEXT_LOCALE", cookieLocale, {
+        maxAge: 60 * 60 * 24 * 365, // 1 año
+        path: "/",
+        sameSite: "lax",
+        secure: process.env.NODE_ENV === "production",
+        httpOnly: false, // Importante: permitir acceso desde JavaScript
+      });
+      
+      return response;
+    }
+    
+    // Si no hay conflicto, continuar y actualizar la cookie con el locale actual
     const response = NextResponse.next();
     response.cookies.set("NEXT_LOCALE", currentLocale, {
       maxAge: 60 * 60 * 24 * 365, // 1 año
       path: "/",
-      sameSite: "lax", // Importante para Vercel
-      secure: process.env.NODE_ENV === "production", // HTTPS en producción
+      sameSite: "lax",
+      secure: process.env.NODE_ENV === "production",
+      httpOnly: false, // Importante: permitir acceso desde JavaScript
     });
+    
+    console.log("🍪 Cookie actualizada con locale actual:", currentLocale);
     return response;
   }
 }
