@@ -34,7 +34,7 @@ export function middleware(request: NextRequest) {
       !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
   );
 
-  console.log("request href", request.nextUrl.href);
+  console.log("request href", request.nextUrl.href, "pathnameIsMissingLocale", pathnameIsMissingLocale);
   // Redirect if there is no locale
   if (pathnameIsMissingLocale) {
 
@@ -47,20 +47,59 @@ export function middleware(request: NextRequest) {
 
 
     let locale = getLocale(request); // no borrar porque si viene vacio tiene que poner uno por default
-    console.log("pathname", pathname, "locale pre headers", locale, "headers", request.headers.get("next-url"));
-    //lo siguiente es porque el getLocale tomaba el idioma del navegador y no el idioma del sitio, es decir, si se cambió a ingles y el navegador está en español, al redireccionar mandaba a español, de esta forma se fija que idioma tiene y lo mantiene.
-    if (request.headers.get("next-url")?.slice(0, 3) === "/es") {
-      locale = "es";
-    } else if (request.headers.get("next-url")?.slice(0, 3) === "/en") {
-      locale = "en";
+    console.log("pathname", pathname, "locale pre headers", locale, "referer", request.headers.get("referer"));
+
+    // Mejorada la lógica para mantener el idioma actual basándose en el referer
+    const referer = request.headers.get("referer");
+    if (referer) {
+      const refererUrl = new URL(referer);
+      const refererPathname = refererUrl.pathname;
+
+      // Extraer el locale del referer si existe
+      if (refererPathname.startsWith("/es/") || refererPathname === "/es") {
+        locale = "es";
+      } else if (refererPathname.startsWith("/en/") || refererPathname === "/en") {
+        locale = "en";
+      }
     }
 
-    return NextResponse.redirect(
+    // Fallback: intentar obtener el idioma desde cookies si el referer no está disponible
+    if (!referer) {
+      const cookieLocale = request.cookies.get("NEXT_LOCALE")?.value;
+      if (cookieLocale && i18n.locales.includes(cookieLocale as any)) {
+        locale = cookieLocale;
+      }
+    }
+
+    const response = NextResponse.redirect(
       new URL(
         `/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`,
         request.url,
       ),
     );
+
+    // Establecer cookie para recordar la preferencia del idioma
+    if (locale) {
+      response.cookies.set("NEXT_LOCALE", locale, {
+        maxAge: 60 * 60 * 24 * 365, // 1 año
+        path: "/",
+      });
+    }
+
+    return response;
+  }
+
+  // Si la URL ya tiene un locale, establecer la cookie para recordar la preferencia
+  if (!pathnameIsMissingLocale) {
+    const currentLocale = pathname.split('/')[1];
+    if (i18n.locales.includes(currentLocale as any)) {
+      const response = NextResponse.next();
+      response.cookies.set("NEXT_LOCALE", currentLocale, {
+        maxAge: 60 * 60 * 24 * 365, // 1 año
+        path: "/",
+      });
+      return response;
+    }
   }
 
 
