@@ -33,6 +33,7 @@ export function middleware(request: NextRequest) {
     (locale) =>
       !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
   );
+
   // Redirect if there is no locale
   if (pathnameIsMissingLocale) {
 
@@ -60,6 +61,14 @@ export function middleware(request: NextRequest) {
       ),
     );
   }
+
+  return NextResponse.redirect(
+    new URL(
+      `${pathname}`,
+      request.url,
+    ),
+  );
+
 
 }
 

@@ -37,12 +37,12 @@ export default async function CV({
                 src={paperclipIcon}
               ></Image>
               &nbsp;
-             {/*  <Link
+              <Link
                 href={`/cv/${dictionary.cv.nombreArchivo[lang]}.pdf`}
                 target="_blank"
               >
                 {dictionary.cv.downloadPDF[lang]}
-              </Link> */}
+              </Link>
             </div>
           </button>
           <button className="link_button">
@@ -55,12 +55,12 @@ export default async function CV({
                 src={paperclipIcon}
               ></Image>
               &nbsp;
-             {/*  <Link
+              <Link
                 href={`/cv/${dictionary.cv.nombreArchivo[lang]}.docx`}
                 target="_blank"
               >
                 {dictionary.cv.downloadDOC[lang]}
-              </Link> */}
+              </Link>
             </div>
           </button>
           <br />
