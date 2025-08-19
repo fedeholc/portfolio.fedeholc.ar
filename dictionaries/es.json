@@ -1030,6 +1030,10 @@
       "es": "de estructura similar pero en TypeScript. Allí, por ejemplo, implementé un sistema de comentarios para los posts, utilizando Supabase tanto para la autenticación/autorización de usuarios, como para la base de datos",
       "en": "with a similar structure but in TypeScript. There, for example, I implemented a comment system for the posts, using Supabase for both user authentication/authorization and the database."
     },
+    "nsp19": {
+      "es": "Actualización v0.3: ahora se puede elegir entre distintos themes para el blog (que recordará tu preferencia), y hay un nuevo buscador con fuzzy search para encontrar posts por título o contenido.",
+      "en": "Update v0.3: now you can choose between different themes for the blog (which will remember your preference), and there is a new search engine with fuzzy search to find posts by title or content."
+    },
     "nsp13": {
       "es": "Aprendizajes y problemas en el camino",
       "en": "Learnings and problems along the way"

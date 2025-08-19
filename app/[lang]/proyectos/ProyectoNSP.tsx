@@ -32,13 +32,14 @@ export default async function ProyectoErr0r({ lang }: { lang: Locale }) {
     subtitulo2: dictionary.proyectos.nsp05[lang],
     texto2: (
       <ul>
+        <li>{dictionary.proyectos.nsp19[lang]}</li>
         <li>{dictionary.proyectos.nsp06[lang]}</li>
         <li>{dictionary.proyectos.nsp07[lang]}</li>
         <li>{dictionary.proyectos.nsp08[lang]}</li>
         <li>{dictionary.proyectos.nsp09[lang]}</li>
         <li>{dictionary.proyectos.nsp10[lang]}</li>
         <li>{dictionary.proyectos.nsp11[lang]}</li>
-        <li>
+        {/*  <li>
           {dictionary.proyectos.nsp12a[lang]}{" "}
           <Link
             className={proyectos.decorarLink}
@@ -57,7 +58,7 @@ export default async function ProyectoErr0r({ lang }: { lang: Locale }) {
           </Link>
           {"), "}
           {dictionary.proyectos.nsp12b[lang]}
-        </li>
+        </li> */}
       </ul>
     ),
     subtitulo3: dictionary.proyectos.nsp13[lang],
