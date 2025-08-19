@@ -50,7 +50,7 @@ export default async function NavBar({ lang }: { lang: Locale }) {
           <Link
             title={dictionary.navbar.blogTitle[lang]}
             target="_blank"
-            href="https://nsp.fedeholc.ar"
+            href="https://err0r.fedeholc.ar"
           >
             Blog
           </Link>

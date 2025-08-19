@@ -4,13 +4,13 @@ import Link from "next/link";
 
 import Image from "next/image";
 import externalLinkIcon from "@public/external-link.png";
-import screenshot1 from "@public/proyecto-nsp/nsp2.png";
-import screenshot2 from "@public/proyecto-nsp/nsp4.png";
+import screenshot1 from "@public/proyecto-nsp/err1.webp";
+import screenshot2 from "@public/proyecto-nsp/err2.webp";
 import herb from "@public/herb.png";
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
 
-export default async function ProyectoNSP({ lang }: { lang: Locale }) {
+export default async function ProyectoErr0r({ lang }: { lang: Locale }) {
   const dictionary = await getDictionary();
   const TEXTO = {
     titulo: dictionary.proyectos.nsp01[lang],
@@ -24,9 +24,9 @@ export default async function ProyectoNSP({ lang }: { lang: Locale }) {
       </ul>
     ),
     linkCodeText: `github/fedeholc`,
-    linkCodeHref: `https://www.github.com/fedeholc/NuncaSupeProgramar`,
-    linkWebText: `nsp.fedeholc.ar`,
-    linkWebHref: `https://nsp.fedeholc.ar/`,
+    linkCodeHref: `https://www.github.com/fedeholc/err0r`,
+    linkWebText: `err0r.fedeholc.ar`,
+    linkWebHref: `https://err0r.fedeholc.ar/`,
     subtitulo1: dictionary.proyectos.nsp03[lang],
     texto1: dictionary.proyectos.nsp04[lang],
     subtitulo2: dictionary.proyectos.nsp05[lang],

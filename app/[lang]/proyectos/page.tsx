@@ -10,7 +10,7 @@ import ProyectoANOTA from "./ProyectoANOTA";
 import ProyectoAP from "./ProyectoAP";
 import ProyectoInsta from "./ProyectoInsta";
 import ProyectoFotoyop2 from "./ProyectoFotoyop2";
-import ProyectoNSP from "./ProyectoNSP";
+import ProyectoErr0r from "./ProyectoNSP";
 import ProyectoTV from "./ProyectoTV";
 import ff from "@app/[lang]/ff";
 import GoToTop from "@app/[lang]/components/goToTop";
@@ -96,7 +96,7 @@ async function ProyectosTodos({ lang }: { lang: Locale }) {
         <ProyectoANOTA lang={lang} />
       </div>
       <div id="proyectoNSP">
-        <ProyectoNSP lang={lang} />
+        <ProyectoErr0r lang={lang} />
       </div>
 
       <div id="proyectoInsta">

@@ -203,8 +203,8 @@ export default async function IndexPage({
                   src={notesIcon}
                 ></Image>
                 &nbsp;
-                <Link target="_blank" href="https://nsp.fedeholc.ar">
-                  NSP Blog
+                <Link target="_blank" href="https://err0r.fedeholc.ar">
+                  err0r Blog
                 </Link>
               </div>
             </button>
