@@ -145,6 +145,10 @@ export default async function CV({
             <h3>{dictionary.cv.cursos1[lang]}</h3>
             <ul>
               <li>
+                <strong>{dictionary.cv.cursos9a[lang]}</strong>&nbsp;
+                {dictionary.cv.cursos9b[lang]}
+              </li>
+              <li>
                 <strong>{dictionary.cv.cursos8a[lang]}</strong>&nbsp;
                 {dictionary.cv.cursos8b[lang]}
               </li>

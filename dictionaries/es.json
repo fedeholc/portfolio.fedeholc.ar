@@ -375,10 +375,18 @@
       "es": "AWS Academy, 2024.",
       "en": "AWS Academy, 2024."
     },
+    "cursos9a": {
+      "es": "Google Cloud Computing Foundations,",
+      "en": "Google Cloud Computing Foundations,"
+    },
+    "cursos9b": {
+      "es": "Google Cloud, 2025.",
+      "en": "Google Cloud, 2025."
+    },
 
     "experiencias1": { "es": "Experiencia Laboral", "en": "Work Experience" },
     "experiencias2a": {
-      "es": "Programador. CompuHotel S.A. 1998 – 2002.",
+      "es": "Programador. CompuHotel S.A. 1998 - 2002.",
       "en": "Programmer. CompuHotel S.A. 1998 - 2002."
     },
     "experiencias2b": {
