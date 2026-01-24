@@ -59,30 +59,28 @@ export const metadata = {
   },
 };
 
- export async function generateStaticParams() {
+export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
- 
+
 export default async function Root({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: Promise <{ lang: Locale }>;
+  params: Promise<{ lang: string }>;
 }) {
-  const { lang } = await params;
-
- 
+  const { lang } = await params as { lang: "en" | "es" };
 
   return (
     <html
       lang={lang}
-       className={`${montserrat.variable} ${recursive.variable}  ${robotoMono.variable}  `}
+      className={`${montserrat.variable} ${recursive.variable}  ${robotoMono.variable}  `}
     >
       <body className="background">
         <Canvas></Canvas>
         <main className="layout__grid">
-          <NavBar   lang={lang}></NavBar>
+          <NavBar lang={lang}></NavBar>
           <article className="main_article">{children}</article>
           <Footer></Footer>
         </main>
