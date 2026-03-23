@@ -234,11 +234,15 @@ export default async function CardProyecto({
   lang: Locale;
 }) {
   const dictionary = await getDictionary();
+  const localizedButtonLink = buttonLink.startsWith(`/${lang}/`)
+    ? buttonLink
+    : `/${lang}${buttonLink.startsWith("/") ? "" : "/"}${buttonLink}`;
+
   return (
     <>
       <div className={`${cardP.card__container}`}>
         <div>
-          <Link href={buttonLink}>
+          <Link href={localizedButtonLink}>
             <h2 className={cardP.titulo}>{titulo}</h2>
           </Link>
           <h3>{subtitulo}</h3>
@@ -254,7 +258,7 @@ export default async function CardProyecto({
           ))}
         </div>
         <div className={`${cardP.button__container}`}>
-          <Link href={buttonLink} className={cardP.button_ver}>
+          <Link href={localizedButtonLink} className={cardP.button_ver}>
             {dictionary.cardproyecto[lang]} &raquo;
           </Link>
         </div>

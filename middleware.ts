@@ -25,9 +25,9 @@ function getLocale(request: NextRequest): string | undefined {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  console.log("🔍 MIDDLEWARE DEBUG - pathname:", pathname);
-  console.log("🔍 MIDDLEWARE DEBUG - cookies:", request.cookies.getAll());
-  console.log("🔍 MIDDLEWARE DEBUG - headers referer:", request.headers.get("referer"));
+  // console.log("🔍 MIDDLEWARE DEBUG - pathname:", pathname);
+  // console.log("🔍 MIDDLEWARE DEBUG - cookies:", request.cookies.getAll());
+  // console.log("🔍 MIDDLEWARE DEBUG - headers referer:", request.headers.get("referer"));
 
   // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = i18n.locales.every(
@@ -35,7 +35,7 @@ export function middleware(request: NextRequest) {
       !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
   );
 
-  console.log("🔍 MIDDLEWARE DEBUG - pathnameIsMissingLocale:", pathnameIsMissingLocale);
+  // console.log("🔍 MIDDLEWARE DEBUG - pathnameIsMissingLocale:", pathnameIsMissingLocale);
 
   // Redirect if there is no locale
   if (pathnameIsMissingLocale) {
@@ -53,15 +53,15 @@ export function middleware(request: NextRequest) {
     const cookieLocale = request.cookies.get("NEXT_LOCALE")?.value;
     if (cookieLocale && i18n.locales.includes(cookieLocale as any)) {
       locale = cookieLocale;
-      console.log("✅ Locale desde cookie (PRIORIDAD):", locale);
+      // console.log("✅ Locale desde cookie (PRIORIDAD):", locale);
     } else {
-      console.log("❌ No se encontró cookie válida, usando fallback");
+      // console.log("❌ No se encontró cookie válida, usando fallback");
 
       // 1.5. Verificar si hay un header personalizado desde el cliente (para casos donde la cookie falla)
       const clientLang = request.headers.get("x-client-lang");
       if (clientLang && i18n.locales.includes(clientLang as any)) {
         locale = clientLang;
-        console.log("✅ Locale desde header cliente:", locale);
+        // console.log("✅ Locale desde header cliente:", locale);
       } else {
         // 2. Verificar parámetros temporales del LangSwitcher
         const searchParams = request.nextUrl.searchParams;
@@ -70,16 +70,16 @@ export function middleware(request: NextRequest) {
 
         if (tempLang && i18n.locales.includes(tempLang as any)) {
           locale = tempLang;
-          console.log("✅ Locale desde temp_lang (LangSwitcher):", locale);
+          // console.log("✅ Locale desde temp_lang (LangSwitcher):", locale);
         } else if (langParam && i18n.locales.includes(langParam as any)) {
           locale = langParam;
-          console.log("✅ Locale desde URL param:", locale);
+          // console.log("✅ Locale desde URL param:", locale);
         } else {
           // 3. Fallback a la detección por navegador
           const detectedLocale = getLocale(request);
           if (detectedLocale) {
             locale = detectedLocale;
-            console.log("✅ Locale detectado por navegador:", locale);
+            // console.log("✅ Locale detectado por navegador:", locale);
           }
 
           // 4. Como último recurso, intentar el referer
@@ -91,20 +91,20 @@ export function middleware(request: NextRequest) {
 
               if (refererPathname.startsWith("/es/") || refererPathname === "/es") {
                 locale = "es";
-                console.log("✅ Locale desde referer: es");
+                // console.log("✅ Locale desde referer: es");
               } else if (refererPathname.startsWith("/en/") || refererPathname === "/en") {
                 locale = "en";
-                console.log("✅ Locale desde referer: en");
+                // console.log("✅ Locale desde referer: en");
               }
             } catch (error) {
-              console.log("❌ Error parsing referer:", error);
+              // console.log("❌ Error parsing referer:", error);
             }
           }
         }
       }
     }
 
-    console.log("🎯 Final locale seleccionado:", locale);
+    // console.log("🎯 Final locale seleccionado:", locale);
 
     // Construir la URL de destino
     const targetUrl = new URL(
