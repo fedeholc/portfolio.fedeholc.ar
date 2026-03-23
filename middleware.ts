@@ -120,7 +120,7 @@ export function middleware(request: NextRequest) {
       }
     }
 
-    console.log("📍 Redirigiendo a:", targetUrl.toString());
+    //console.log("📍 Redirigiendo a:", targetUrl.toString());
 
     const response = NextResponse.redirect(targetUrl);
 
@@ -133,7 +133,7 @@ export function middleware(request: NextRequest) {
       httpOnly: false, // Importante: permitir acceso desde JavaScript
     });
 
-    console.log("🍪 Cookie establecida:", `NEXT_LOCALE=${locale}`);
+    // console.log("🍪 Cookie establecida:", `NEXT_LOCALE=${locale}`);
 
     return response;
   }
@@ -150,7 +150,7 @@ export function middleware(request: NextRequest) {
       i18n.locales.includes(cookieLocale as any) &&
       cookieLocale !== currentLocale) {
 
-      console.log(`Redirigiendo de ${currentLocale} a ${cookieLocale} según cookie`);
+      // console.log(`Redirigiendo de ${currentLocale} a ${cookieLocale} según cookie`);
 
       // Construir la nueva URL con el idioma correcto
       const newPathname = pathname.replace(`/${currentLocale}`, `/${cookieLocale}`);
@@ -187,7 +187,7 @@ export function middleware(request: NextRequest) {
       const cleanUrl = new URL(request.url);
       cleanUrl.searchParams.delete('temp_lang');
 
-      console.log("🧹 Limpiando parámetro temporal de la URL");
+      // console.log("🧹 Limpiando parámetro temporal de la URL");
 
       const response = NextResponse.redirect(cleanUrl);
       response.cookies.set("NEXT_LOCALE", currentLocale, {
@@ -211,7 +211,7 @@ export function middleware(request: NextRequest) {
       httpOnly: false, // Importante: permitir acceso desde JavaScript
     });
 
-    console.log("🍪 Cookie actualizada con locale actual:", currentLocale);
+    // console.log("🍪 Cookie actualizada con locale actual:", currentLocale);
     return response;
   }
 }
