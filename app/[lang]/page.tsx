@@ -51,11 +51,11 @@ export default async function IndexPage({
       </p>
       <p>
         Soy&nbsp;
-        <strong>desarrollador web full stack</strong> especializado en
+        <strong>desarrollador web full stack</strong>. Mi especialidad es el
         frontend&nbsp;
-        <span className="emoji">🌈</span>,&nbsp; con conocimientos y curiosidad
-        por el backend, los web standards, y el software de código
-        abierto.&nbsp;
+        <span className="emoji">🌈</span>,&nbsp; pero siempre me interesó poder
+        crear soluciones de principio a fin, desde el diseño UX/UI, hasta el
+        backend y la infraestructura.&nbsp;
         <span className="emoji">👾</span>
       </p>
     </>
@@ -77,11 +77,11 @@ export default async function IndexPage({
         </p>
         <p>
           I am a&nbsp;
-          <strong>full stack web developer</strong> specialized in
+          <strong>full stack web developer</strong>. My specialty is
           frontend&nbsp;
-          <span className="emoji">🌈</span>,&nbsp;with a strong foundation in
-          backend technologies and a keen interest in web standards and
-          open-source software.&nbsp;
+          <span className="emoji">🌈</span>,&nbsp;but I've always been
+          interested in creating end-to-end solutions—from UX/UI design to the
+          backend and infrastructure.&nbsp;
           <span className="emoji">👾</span>
         </p>
       </>
@@ -90,11 +90,11 @@ export default async function IndexPage({
 
   let p2 = (
     <>
-      <p>
+      {/*       <p>
         Me inicié como autodidácta y luego me recibí de técnico superior en
         desarrollo de software. &nbsp;
         <span className="emoji">🚀</span>
-      </p>
+      </p> */}
       <p>
         En el pasado fui sociólogo y profesor en escuelas secundarias y en la
         Universidad de Buenos Aires. <span className="emoji">👨‍🏫</span>
@@ -109,11 +109,11 @@ export default async function IndexPage({
   if (lang === "en") {
     p2 = (
       <>
-        <p>
+        {/*  <p>
           I began my journey as a self-taught developer and later graduated as a
           software development technician. &nbsp;
           <span className="emoji">🚀</span>
-        </p>
+        </p> */}
         <p>
           Previously, I was a sociologist and teacher at high schools and at the
           University of Buenos Aires. <span className="emoji">👨‍🏫</span>
