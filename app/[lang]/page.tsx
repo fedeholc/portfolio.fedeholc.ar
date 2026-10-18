@@ -99,10 +99,11 @@ export default async function IndexPage({
         </p>
         <p>
           I started programming&nbsp;
-          <strong>writing code by hand</strong>, before AI was a work tool, and
-          that foundation is what today lets me review and sustain the code it
-          produces. I come from teaching and social sciences, which I bring as
-          the ability to communicate and explain complex ideas.&nbsp;
+          <strong>writing code by hand</strong>, and that foundation is what
+          today lets me design and supervise what AI produces. On top of that,
+          my background in teaching and social sciences complements my technical
+          profile, bringing clear communication and the ability to translate
+          complex topics for any team or client.&nbsp;
           <span className="emoji">👨‍🏫</span>
         </p>
       </>
@@ -118,11 +119,11 @@ export default async function IndexPage({
         </p>
         <p>
           Empecé a programar&nbsp;
-          <strong>escribiendo código a mano</strong>, antes de que la IA fuera
-          una herramienta de trabajo, y esa base de fundamentos es la que hoy me
-          permite revisar y sostener el código que produce. Vengo de la docencia
-          y las ciencias sociales, que aporto como capacidad de comunicar y
-          explicar temas complejos.&nbsp;
+          <strong>escribiendo código a mano</strong>, y esa base de fundamentos
+          es la que hoy me permite diseñar y supervisar lo que produce la IA.
+          Además, mi experiencia en docencia y ciencias sociales complementa mi
+          perfil técnico, aportando una comunicación clara y la capacidad de
+          traducir temas complejos para cualquier equipo o cliente.&nbsp;
           <span className="emoji">👨‍🏫</span>
         </p>
       </>

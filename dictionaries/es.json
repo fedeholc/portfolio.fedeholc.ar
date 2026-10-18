@@ -34,8 +34,8 @@
   "cardproyecto": { "es": "Ver proyecto", "en": "View project" },
   "intro": {
     "mas": {
-      "es": "¿Querés saber más sobre mi cómo programador?",
-      "en": "Do you want to know more about me as a programmer?"
+      "es": "¿Querés saber más sobre mi cómo desarrollador?",
+      "en": "Do you want to know more about me as a developer?"
     },
     "mas2": {
       "es": "Podés ver los trabajos que he realizado junto con una explicación detallada de los mismos, los problemas que tuve que superar y los aprendizajes que me dejaron.",
@@ -160,7 +160,10 @@
       "es": "Integré salida estructurada de los modelos y OCR con Google Cloud Vision para procesar documentos e imágenes.",
       "en": "I integrated structured model output and OCR with Google Cloud Vision to process documents and images."
     },
-    "nExpProd": { "es": "Producto e ingeniería", "en": "Product and engineering" },
+    "nExpProd": {
+      "es": "Producto e ingeniería",
+      "en": "Product and engineering"
+    },
     "nExpProd1": {
       "es": "Reconstruí de cero el frontend (React 19 + TypeScript sobre Astro) y extendí el backend (Node.js / Express + TypeScript, Sequelize sobre MySQL).",
       "en": "I rebuilt the frontend from scratch (React 19 + TypeScript on Astro) and extended the backend (Node.js / Express + TypeScript, Sequelize on MySQL)."
@@ -173,7 +176,10 @@
       "es": "Implementé chat en tiempo real con Socket.IO + Redis y jobs asíncronos con BullMQ.",
       "en": "I implemented real-time chat with Socket.IO + Redis and asynchronous jobs with BullMQ."
     },
-    "nExpInfra": { "es": "Infraestructura y despliegue", "en": "Infrastructure and deployment" },
+    "nExpInfra": {
+      "es": "Infraestructura y despliegue",
+      "en": "Infrastructure and deployment"
+    },
     "nExpInfra1": {
       "es": "Armé el CI/CD con GitHub Actions para producción y staging, con deploy al VPS y health checks que validan la frescura del SSR.",
       "en": "I set up CI/CD with GitHub Actions for production and staging, with VPS deploy and health checks that validate SSR freshness."
