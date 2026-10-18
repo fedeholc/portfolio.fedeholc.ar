@@ -157,8 +157,8 @@
       "en": "I designed the multi-provider, swappable AI layer (Gemini, OpenAI SDK pointed at DeepSeek), choosing the model per use case."
     },
     "nExpIA4": {
-      "es": "Integré salida estructurada de los modelos y OCR con Google Cloud Vision para procesar documentos e imágenes.",
-      "en": "I integrated structured model output and OCR with Google Cloud Vision to process documents and images."
+      "es": "Integré salida estructurada de los modelos y Google Cloud Vision para procesar documentos e imágenes.",
+      "en": "I integrated structured model output and Google Cloud Vision to process documents and images."
     },
     "nExpProd": {
       "es": "Producto e ingeniería",
@@ -234,8 +234,8 @@
     },
     "nSkills1": { "es": "Skills", "en": "Skills" },
     "nSkillsIA": {
-      "es": "IA y LLMs — desarrollo asistido por IA (agentes, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings y búsqueda semántica · salida estructurada · prompting · OCR",
-      "en": "AI and LLMs — AI-assisted development (agents, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings and semantic search · structured output · prompting · OCR"
+      "es": "IA y LLMs — desarrollo asistido por IA (agentes, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings y búsqueda semántica · salida estructurada · prompting · procesamiento de imágenes y documentos",
+      "en": "AI and LLMs — AI-assisted development (agents, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings and semantic search · structured output · prompting · image and document processing"
     },
     "nSkillsFront": {
       "es": "Frontend — React 19 · TypeScript · Astro · Next.js · MUI / Mantine · HTML / CSS / Responsive design",
@@ -250,8 +250,8 @@
       "en": "Testing — Vitest · React Testing Library · MSW · Supertest · Playwright"
     },
     "nSkillsDevops": {
-      "es": "DevOps e infraestructura — Docker · Docker Compose · CI/CD (GitHub Actions) · Nginx · Linux · pino · Sentry · k6",
-      "en": "DevOps and infrastructure — Docker · Docker Compose · CI/CD (GitHub Actions) · Nginx · Linux · pino · Sentry · k6"
+      "es": "DevOps e infraestructura — Docker · Docker Compose · CI/CD (GitHub Actions) · Nginx · Linux · Sentry",
+      "en": "DevOps and infrastructure — Docker · Docker Compose · CI/CD (GitHub Actions) · Nginx · Linux · Sentry"
     },
     "nSkillsOtros": {
       "es": "Otros — Stripe · JWT / OAuth · Git / GitHub · Figma",
@@ -662,8 +662,8 @@
       "en": "I designed the multi-provider, swappable AI layer (Gemini, OpenAI SDK pointed at DeepSeek), choosing the model per use case to optimize cost and latency."
     },
     "empleo08": {
-      "es": "Integré salida estructurada de los modelos y OCR con Google Cloud Vision para procesar documentos e imágenes.",
-      "en": "I integrated structured model output and OCR with Google Cloud Vision to process documents and images."
+      "es": "Integré salida estructurada de los modelos y Google Cloud Vision para procesar documentos e imágenes.",
+      "en": "I integrated structured model output and Google Cloud Vision to process documents and images."
     },
     "empleo09": {
       "es": "Producto e ingeniería",

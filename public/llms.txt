@@ -9,11 +9,11 @@
 
 ## Skills
 
-- **IA y LLMs / AI & LLMs** — desarrollo asistido por IA (agentes, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings y búsqueda semántica · salida estructurada · prompting · OCR
-- **Frontend** — React 19 · TypeScript · Astro · Next.js · MUI / Mantine · HTML / CSS / Responsive design
+- **IA y LLMs / AI & LLMs** — desarrollo asistido por IA (agentes, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings y búsqueda semántica · salida estructurada · prompting · procesamiento de imágenes y documentos
+- **Frontend** — React 19 · TypeScript · Astro · Next.js · HTML / CSS / Responsive design
 - **Backend** — Node.js · Express · Sequelize / MySQL · MongoDB · Socket.IO · BullMQ / Redis · Zod
 - **Testing** — Vitest · React Testing Library · MSW · Supertest · Playwright
-- **DevOps e infraestructura / DevOps & infrastructure** — Docker · Docker Compose · CI/CD (GitHub Actions) · Nginx · Linux · pino · Sentry · k6
+- **DevOps e infraestructura / DevOps & infrastructure** — Docker · Docker Compose · CI/CD (GitHub Actions) · Nginx · Linux · Sentry
 - **Otros / Other** — Stripe · JWT / OAuth · Git / GitHub · Figma
 
 ## CV

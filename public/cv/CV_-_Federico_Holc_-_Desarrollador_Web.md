@@ -41,7 +41,7 @@ Desarrollo full stack de [empleosmundodigital.com](https://empleosmundodigital.c
 - Implementé un **generador de ofertas laborales con IA** (pipeline de dos pasadas con Gemini / Vertex AI) y un **parser de CVs a JSON estructurado**, hoy en producción.
 - Construí **búsqueda semántica con embeddings** y similitud coseno para normalizar posiciones y mejorar el matching entre ofertas y talento.
 - Diseñé la capa de IA **multi-proveedor y conmutable** (Gemini, OpenAI SDK apuntado a DeepSeek), eligiendo el modelo según el caso de uso para optimizar costo y latencia.
-- Integré **salida estructurada** de los modelos y **OCR con Google Cloud Vision** para procesar documentos e imágenes.
+- Integré **salida estructurada** de los modelos y **Google Cloud Vision** para procesar documentos e imágenes.
 
 ### Desarrollador Web · No Country, práctica de simulación laboral · Oct. – Nov. 2024
 
@@ -53,7 +53,7 @@ Desarrollo full stack de [empleosmundodigital.com](https://empleosmundodigital.c
 
 ## Skills
 
-**IA y LLMs** — desarrollo asistido por IA (agentes, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings y búsqueda semántica · salida estructurada · prompting · OCR
+**IA y LLMs** — desarrollo asistido por IA (agentes, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings y búsqueda semántica · salida estructurada · prompting · procesamiento de imágenes y documentos
 
 **Frontend** — React 19 · TypeScript · Astro · Next.js · MUI / Mantine · HTML / CSS / Responsive design
 
@@ -61,7 +61,7 @@ Desarrollo full stack de [empleosmundodigital.com](https://empleosmundodigital.c
 
 **Testing** — Vitest · React Testing Library · MSW · Supertest · Playwright
 
-**DevOps e infraestructura** — Docker · Docker Compose · CI/CD (GitHub Actions) · Nginx · Linux · pino · Sentry · k6
+**DevOps e infraestructura** — Docker · Docker Compose · CI/CD (GitHub Actions) · Nginx · Linux · Sentry
 
 **Otros** — Stripe · JWT / OAuth · Git / GitHub · Figma
 

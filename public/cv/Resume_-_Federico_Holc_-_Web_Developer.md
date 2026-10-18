@@ -41,7 +41,7 @@ Full stack development of [empleosmundodigital.com](https://empleosmundodigital.
 - I implemented an AI job-offer generator (two-pass pipeline with Gemini / Vertex AI) and a resume-to-structured-JSON parser, both in production today.
 - I built semantic search with embeddings and cosine similarity to normalize positions and improve offer–talent matching.
 - I designed the multi-provider, swappable AI layer (Gemini, OpenAI SDK pointed at DeepSeek), choosing the model per use case to optimize cost and latency.
-- I integrated structured model output and OCR with Google Cloud Vision to process documents and images.
+- I integrated structured model output and Google Cloud Vision to process documents and images.
 
 ### Web Developer · No Country, work simulation internship · Oct. – Nov. 2024
 
@@ -53,7 +53,7 @@ Full stack development of [empleosmundodigital.com](https://empleosmundodigital.
 
 ## Skills
 
-**AI and LLMs** — AI-assisted development (agents, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings and semantic search · structured output · prompting · OCR
+**AI and LLMs** — AI-assisted development (agents, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings and semantic search · structured output · prompting · image and document processing
 
 **Frontend** — React 19 · TypeScript · Astro · Next.js · MUI / Mantine · HTML / CSS / Responsive design
 
@@ -61,7 +61,7 @@ Full stack development of [empleosmundodigital.com](https://empleosmundodigital.
 
 **Testing** — Vitest · React Testing Library · MSW · Supertest · Playwright
 
-**DevOps and infrastructure** — Docker · Docker Compose · CI/CD (GitHub Actions) · Nginx · Linux · pino · Sentry · k6
+**DevOps and infrastructure** — Docker · Docker Compose · CI/CD (GitHub Actions) · Nginx · Linux · Sentry
 
 **Other** — Stripe · JWT / OAuth · Git / GitHub · Figma
 
