@@ -5,16 +5,16 @@
 > la infraestructura. Empezó a programar escribiendo código a mano y hoy genera
 > procesos de trabajo y automatizaciones integrando IA para potenciar el
 > desarrollo sin resignar calidad. También integra IA en el producto: generación
-> de contenido, búsqueda semántica con embeddings y procesamiento de documentos.
+> de contenido, búsqueda semántica con embeddings y procesamiento de documentos e imágenes.
 
 ## Skills
 
-- **IA y LLMs** — desarrollo asistido por IA (agentes, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings y búsqueda semántica · salida estructurada · prompting · OCR
+- **IA y LLMs / AI & LLMs** — desarrollo asistido por IA (agentes, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings y búsqueda semántica · salida estructurada · prompting · OCR
 - **Frontend** — React 19 · TypeScript · Astro · Next.js · MUI / Mantine · HTML / CSS / Responsive design
 - **Backend** — Node.js · Express · Sequelize / MySQL · MongoDB · Socket.IO · BullMQ / Redis · Zod
 - **Testing** — Vitest · React Testing Library · MSW · Supertest · Playwright
-- **DevOps e infraestructura** — Docker · Docker Compose · CI/CD (GitHub Actions) · Nginx · Linux · pino · Sentry · k6
-- **Otros** — Stripe · JWT / OAuth · Git / GitHub · Figma
+- **DevOps e infraestructura / DevOps & infrastructure** — Docker · Docker Compose · CI/CD (GitHub Actions) · Nginx · Linux · pino · Sentry · k6
+- **Otros / Other** — Stripe · JWT / OAuth · Git / GitHub · Figma
 
 ## CV
 

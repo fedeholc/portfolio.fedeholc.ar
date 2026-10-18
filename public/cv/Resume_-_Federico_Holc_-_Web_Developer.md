@@ -8,7 +8,7 @@ federicoholc@gmail.com · +54-11-2394-8988 · Buenos Aires, Argentina
 
 ## Profile
 
-Full stack web developer with 2 years of experience. I like creating solutions end to end, from UX/UI design to the backend and the infrastructure. I started programming writing code by hand, and that foundation is what today lets me build work processes and automations that integrate artificial intelligence to boost development without sacrificing technical quality or user experience. I also integrate AI into the product when it adds value: content generation, semantic search with embeddings and document processing. On top of that, my experience in teaching and social sciences complements my technical profile, bringing clear communication and the ability to translate complex topics for any team or client.
+Full stack web developer with 2 years of experience. I like creating solutions end to end, from UX/UI design to the backend and the infrastructure. I started programming writing code by hand, and that foundation is what today lets me build work processes and automations that integrate artificial intelligence to boost development without sacrificing technical quality or user experience. I also integrate AI into the product when it adds value: content generation, semantic search with embeddings, and image and document processing. On top of that, my experience in teaching and social sciences complements my technical profile, bringing clear communication and the ability to translate complex topics for any team or client.
 
 ## Experience
 
@@ -17,23 +17,27 @@ Full stack web developer with 2 years of experience. I like creating solutions e
 Full stack development of [empleosmundodigital.com](https://empleosmundodigital.com), the job platform for the digital marketing, design and technology industry. I rebuilt an unfinished project and took it to production, using AI in the development process and also inside the product, with a focus on technical quality.
 
 **AI-assisted development**
+
 - I use AI agents as part of my daily workflow —writing code, tests, linting and documentation—, connected to the project's tools through **MCP (Model Context Protocol)**, with human review at every step.
 - I designed agent skills that encode the project's patterns (migrations, tests, permissions, hooks), so AI reproduces conventions instead of improvising.
 - I defined mandatory guardrails before considering a task done: **type-check (tsgo), oxlint + ESLint, Prettier and a base of ~430 test files** (Vitest, Testing Library, MSW, Supertest, Playwright).
 - An agent periodically checks **Sentry**, detects issues, analyzes the context and opens a **PR with a proposed fix** for review.
 
 **Product and engineering**
+
 - I rebuilt the frontend from scratch (React 19 + TypeScript on Astro) and extended the backend (Node.js / Express + TypeScript, Sequelize on MySQL).
 - I developed plan-based permissions, subscriptions and payments with Stripe (webhooks), auth with JWT and Google OAuth, and Cloudflare Turnstile verification.
 - I implemented real-time chat with Socket.IO + Redis and asynchronous jobs with BullMQ.
 
 **Infrastructure and deployment**
+
 - I set up CI/CD with GitHub Actions for production and staging: build, deploy to the VPS, container restart and health checks that validate SSR freshness.
 - I deployed the stack with Docker Compose: MySQL, Redis, 4 backend replicas (horizontal scaling), migrator, nginx as reverse proxy and SSL with certbot.
 - I set up automatic backups of MySQL and assets to Google Cloud Storage, plus observability with Sentry (front and back) and structured logging with pino.
 - I ran load and stress tests with k6 (up to 500 concurrent users) to find the breaking point and document results: with 100 users, p95 ≈ 187 ms and 0% errors.
 
 **AI in the product**
+
 - I implemented an AI job-offer generator (two-pass pipeline with Gemini / Vertex AI) and a resume-to-structured-JSON parser, both in production today.
 - I built semantic search with embeddings and cosine similarity to normalize positions and improve offer–talent matching.
 - I designed the multi-provider, swappable AI layer (Gemini, OpenAI SDK pointed at DeepSeek), choosing the model per use case to optimize cost and latency.

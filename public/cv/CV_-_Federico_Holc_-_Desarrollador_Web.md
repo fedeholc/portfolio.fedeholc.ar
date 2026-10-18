@@ -8,7 +8,7 @@ federicoholc@gmail.com · +54-11-2394-8988 · Buenos Aires, Argentina
 
 ## Perfil
 
-Desarrollador web full stack con 2 años de experiencia. Me gusta crear soluciones de principio a fin, desde el diseño UX/UI hasta el backend y la infraestructura. Empecé a programar escribiendo código a mano, y esa base de fundamentos es la que hoy me permite generar procesos de trabajo y automatizaciones integrando inteligencia artificial para potenciar el desarrollo sin sacrificar la calidad técnica ni la experiencia del usuario. También integro IA en el producto cuando aporta valor: generación de contenido, búsqueda semántica con embeddings y procesamiento de documentos. Además, mi experiencia en docencia y ciencias sociales complementa mi perfil técnico, aportando una comunicación clara y la capacidad de traducir temas complejos para cualquier equipo o cliente.
+Desarrollador web full stack con 2 años de experiencia. Me gusta crear soluciones de principio a fin, desde el diseño UX/UI hasta el backend y la infraestructura. Empecé a programar escribiendo código a mano, y esa base de fundamentos es la que hoy me permite generar procesos de trabajo y automatizaciones integrando inteligencia artificial para potenciar el desarrollo sin sacrificar la calidad técnica ni la experiencia del usuario. También integro IA en el producto cuando aporta valor: generación de contenido, búsqueda semántica con embeddings y procesamiento de imágenes y documentos. Además, mi experiencia en docencia y ciencias sociales complementa mi perfil técnico, aportando una comunicación clara y la capacidad de traducir temas complejos para cualquier equipo o cliente.
 
 ## Experiencia
 
@@ -17,23 +17,27 @@ Desarrollador web full stack con 2 años de experiencia. Me gusta crear solucion
 Desarrollo full stack de [empleosmundodigital.com](https://empleosmundodigital.com), la plataforma de oferta y búsqueda de empleo del sector marketing digital, diseño y tecnología. Reconstruí un proyecto que estaba inconcluso y lo llevé a producción, usando IA en el proceso de desarrollo y también dentro del producto, con foco en la calidad técnica.
 
 **Desarrollo asistido por IA**
+
 - Uso agentes de IA como parte del workflow diario —escritura de código, tests, linting y documentación—, conectados a las herramientas del proyecto mediante **MCP (Model Context Protocol)**, con revisión humana en cada paso.
-- Diseñé *skills* de agentes que codifican los patrones del proyecto (migraciones, tests, permisos, hooks), para que la IA reproduzca las convenciones en lugar de improvisar.
+- Diseñé _skills_ de agentes que codifican los patrones del proyecto (migraciones, tests, permisos, hooks), para que la IA reproduzca las convenciones en lugar de improvisar.
 - Definí guardrails obligatorios antes de dar una tarea por cerrada: **type-check (tsgo), oxlint + ESLint, Prettier y una base de ~430 archivos de test** (Vitest, Testing Library, MSW, Supertest, Playwright).
 - Un agente revisa **Sentry** periódicamente, detecta issues, analiza el contexto y abre un **PR con una propuesta de fix** para revisión.
 
 **Producto e ingeniería**
+
 - Reconstruí de cero el **frontend (React 19 + TypeScript sobre Astro)** y extendí el **backend (Node.js / Express + TypeScript, Sequelize sobre MySQL)**.
 - Desarrollé **permisos por plan**, **suscripciones y pagos con Stripe** (webhooks), **auth con JWT y Google OAuth** y verificación con Cloudflare Turnstile.
 - Implementé **chat en tiempo real con Socket.IO + Redis** y **jobs asíncronos con BullMQ**.
 
 **Infraestructura y despliegue**
+
 - Armé el **CI/CD con GitHub Actions** para producción y staging: build, deploy al VPS, reinicio de contenedores y **health checks que validan la frescura del SSR**.
 - Desplegué el stack con **Docker Compose**: MySQL, Redis, **4 réplicas del backend (escalado horizontal)**, migrator, nginx como reverse proxy y SSL con certbot.
 - Configuré **backups automáticos** de MySQL y assets a Google Cloud Storage, y observabilidad con **Sentry** (front y back) y logging estructurado con pino.
 - Corrí **pruebas de carga y estrés con k6** (hasta 500 usuarios concurrentes) para detectar el punto de quiebre y documentar resultados: con 100 usuarios, **p95 ≈ 187 ms y 0 % de errores**.
 
 **IA en el producto**
+
 - Implementé un **generador de ofertas laborales con IA** (pipeline de dos pasadas con Gemini / Vertex AI) y un **parser de CVs a JSON estructurado**, hoy en producción.
 - Construí **búsqueda semántica con embeddings** y similitud coseno para normalizar posiciones y mejorar el matching entre ofertas y talento.
 - Diseñé la capa de IA **multi-proveedor y conmutable** (Gemini, OpenAI SDK apuntado a DeepSeek), eligiendo el modelo según el caso de uso para optimizar costo y latencia.
