@@ -6,6 +6,21 @@ Mi portfolio de desarrollador web.
 
 Online: [portfolio.fedeholc.ar](https://portfolio.fedeholc.ar)
 
+## CV
+
+El CV vive en la carpeta [`public/cv`](public/cv). El archivo **Markdown es la
+fuente de verdad** y los `.docx` / `.pdf` se generan a partir de él con:
+
+```bash
+npm run cv:build
+```
+
+El script usa [pandoc](https://pandoc.org/) (Markdown → DOCX) y
+[LibreOffice](https://www.libreoffice.org/) (DOCX → PDF), que tienen que estar
+instalados. Al estar en `public/`, el `.md` también queda publicado en la web
+para que lo puedan leer personas y agentes de IA. El detalle completo está en
+[`public/cv/README.md`](public/cv/README.md).
+
 ## Librerías y recursos
 
 Este proyecto utiliza las siguientes librerías / recursos:

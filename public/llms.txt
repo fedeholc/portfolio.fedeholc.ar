@@ -1,0 +1,26 @@
+# Federico Holc — Desarrollador Web Full Stack · IA aplicada a producto
+
+> Portfolio de Federico Holc, desarrollador web full stack con casi 2 años de
+> experiencia, enfocado en construir productos de punta a punta con IA
+> integrada (LLMs, búsqueda semántica con embeddings, OCR y streaming).
+
+## CV
+
+- [CV en Markdown (fuente de verdad)](https://portfolio.fedeholc.ar/cv/CV_-_Federico_Holc_-_Desarrollador_Web.md)
+- [CV en PDF](https://portfolio.fedeholc.ar/cv/CV_-_Federico_Holc_-_Desarrollador_Web.pdf)
+- [CV en DOCX](https://portfolio.fedeholc.ar/cv/CV_-_Federico_Holc_-_Desarrollador_Web.docx)
+- [Resume in English (Markdown)](https://portfolio.fedeholc.ar/cv/Resume_-_Federico_Holc_-_Web_Developer.md)
+- [Resume in English (PDF)](https://portfolio.fedeholc.ar/cv/Resume_-_Federico_Holc_-_Web_Developer.pdf)
+
+## Sitio
+
+- [Inicio](https://portfolio.fedeholc.ar/es)
+- [Proyectos](https://portfolio.fedeholc.ar/es/proyectos)
+- [CV](https://portfolio.fedeholc.ar/es/cv)
+
+## Contacto
+
+- Email: federicoholc@gmail.com
+- GitHub: https://github.com/fedeholc
+- LinkedIn: https://www.linkedin.com/in/federicoholc/
+- Portfolio: https://portfolio.fedeholc.ar/

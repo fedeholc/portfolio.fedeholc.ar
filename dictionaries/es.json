@@ -125,6 +125,166 @@
       "es": "descargar .docx",
       "en": "download .docx"
     },
+    "downloadMD": {
+      "es": "ver markdown (.md)",
+      "en": "view markdown (.md)"
+    },
+    "nPerfil1": { "es": "Perfil", "en": "Profile" },
+    "nPerfil2": {
+      "es": "Desarrollador web full stack con casi 2 años de experiencia, enfocado en construir productos de punta a punta con IA integrada. Trabajo con React, TypeScript y Node, e implemento features de IA en producción: LLMs, búsqueda semántica con embeddings, OCR y streaming. Me interesa tanto la IA dentro del software como el diseño de workflows de desarrollo asistidos por IA que aceleran sin sacrificar calidad técnica ni experiencia de usuario. Vengo de la docencia y las ciencias sociales, lo que aporto como capacidad de comunicar y explicar temas complejos.",
+      "en": "Full stack web developer with almost 2 years of experience, focused on building end-to-end products with integrated AI. I work with React, TypeScript and Node, and I ship AI features to production: LLMs, semantic search with embeddings, OCR and streaming. I am interested both in AI inside the software and in designing AI-assisted development workflows that speed things up without sacrificing technical quality or user experience. I come from teaching and social sciences, which I bring as the ability to communicate and explain complex ideas."
+    },
+    "nExp1": { "es": "Experiencia", "en": "Experience" },
+    "nExpActualA": {
+      "es": "Desarrollador Web Full Stack · Mindcircus · Feb. 2025 – a la actualidad",
+      "en": "Full Stack Web Developer · Mindcircus · Feb. 2025 – present"
+    },
+    "nExpActualB": {
+      "es": "Desarrollo full stack de empleosmundodigital.com, la plataforma de oferta y búsqueda de empleo del sector marketing digital, diseño y tecnología. Reconstruí un proyecto que estaba inconcluso y lo llevé a producción, con foco en integrar IA generativa y sostener la calidad técnica.",
+      "en": "Full stack development of empleosmundodigital.com, the job platform for the digital marketing, design and technology industry. I rebuilt an unfinished project and took it to production, focusing on integrating generative AI and keeping technical quality."
+    },
+    "nExpIA": { "es": "IA en el producto", "en": "AI in the product" },
+    "nExpIA1": {
+      "es": "Implementé un generador de ofertas laborales con IA (pipeline de dos pasadas con Gemini / Vertex AI) y un parser de CVs a JSON estructurado.",
+      "en": "I implemented an AI job-offer generator (two-pass pipeline with Gemini / Vertex AI) and a resume-to-structured-JSON parser."
+    },
+    "nExpIA2": {
+      "es": "Construí búsqueda semántica con embeddings y similitud coseno para normalizar posiciones y mejorar el matching entre ofertas y talento.",
+      "en": "I built semantic search with embeddings and cosine similarity to normalize positions and improve offer–talent matching."
+    },
+    "nExpIA3": {
+      "es": "Diseñé la capa de IA multi-proveedor y conmutable (Gemini, OpenAI SDK apuntado a DeepSeek), eligiendo el modelo según el caso de uso.",
+      "en": "I designed the multi-provider, swappable AI layer (Gemini, OpenAI SDK pointed at DeepSeek), choosing the model per use case."
+    },
+    "nExpIA4": {
+      "es": "Integré salida estructurada de los modelos, streaming de respuestas vía SSE y OCR con Google Cloud Vision para documentos e imágenes.",
+      "en": "I integrated structured model output, SSE response streaming and OCR with Google Cloud Vision for documents and images."
+    },
+    "nExpProd": { "es": "Producto e ingeniería", "en": "Product and engineering" },
+    "nExpProd1": {
+      "es": "Reconstruí de cero el frontend (React 19 + TypeScript sobre Astro) y extendí el backend (Node.js / Express + TypeScript, Sequelize sobre MySQL).",
+      "en": "I rebuilt the frontend from scratch (React 19 + TypeScript on Astro) and extended the backend (Node.js / Express + TypeScript, Sequelize on MySQL)."
+    },
+    "nExpProd2": {
+      "es": "Desarrollé permisos por plan, suscripciones y pagos con Stripe (webhooks), auth con JWT y Google OAuth y verificación con Cloudflare Turnstile.",
+      "en": "I developed plan-based permissions, subscriptions and payments with Stripe (webhooks), auth with JWT and Google OAuth, and Cloudflare Turnstile verification."
+    },
+    "nExpProd3": {
+      "es": "Implementé chat en tiempo real con Socket.IO + Redis y jobs asíncronos con BullMQ.",
+      "en": "I implemented real-time chat with Socket.IO + Redis and asynchronous jobs with BullMQ."
+    },
+    "nExpInfra": { "es": "Infraestructura y despliegue", "en": "Infrastructure and deployment" },
+    "nExpInfra1": {
+      "es": "Armé el CI/CD con GitHub Actions para producción y staging, con deploy al VPS y health checks que validan la frescura del SSR.",
+      "en": "I set up CI/CD with GitHub Actions for production and staging, with VPS deploy and health checks that validate SSR freshness."
+    },
+    "nExpInfra2": {
+      "es": "Desplegué el stack con Docker Compose: MySQL, Redis, 4 réplicas del backend (escalado horizontal), nginx como reverse proxy y SSL con certbot.",
+      "en": "I deployed the stack with Docker Compose: MySQL, Redis, 4 backend replicas (horizontal scaling), nginx as reverse proxy and SSL with certbot."
+    },
+    "nExpInfra3": {
+      "es": "Configuré backups automáticos de MySQL y assets a Google Cloud Storage, y observabilidad con Sentry y logging estructurado con pino.",
+      "en": "I set up automatic backups of MySQL and assets to Google Cloud Storage, plus observability with Sentry and structured logging with pino."
+    },
+    "nExpInfra4": {
+      "es": "Corrí pruebas de carga y estrés con k6 (hasta 500 usuarios concurrentes): con 100 usuarios, p95 ≈ 187 ms y 0 % de errores.",
+      "en": "I ran load and stress tests with k6 (up to 500 concurrent users): with 100 users, p95 ≈ 187 ms and 0% errors."
+    },
+    "nExpCal": {
+      "es": "Calidad y desarrollo asistido por IA",
+      "en": "Quality and AI-assisted development"
+    },
+    "nExpCal1": {
+      "es": "Sostengo una base de ~430 archivos de test (Vitest, React Testing Library, MSW, Supertest, Playwright) con tres estrategias de ejecución.",
+      "en": "I maintain a base of ~430 test files (Vitest, React Testing Library, MSW, Supertest, Playwright) with three execution strategies."
+    },
+    "nExpCal2": {
+      "es": "Mantengo una cadena de calidad estricta: type-check (tsgo), oxlint + ESLint, Prettier y validación con Zod.",
+      "en": "I maintain a strict quality chain: type-check (tsgo), oxlint + ESLint, Prettier and Zod validation."
+    },
+    "nExpCal3": {
+      "es": "Diseñé workflows de desarrollo asistido por IA: skills de agentes que codifican patrones del proyecto, un claude.md con guardrails obligatorios (type-check + lint antes de cerrar una tarea) y documentación pensada como contexto para agentes.",
+      "en": "I designed AI-assisted development workflows: agent skills that encode project patterns, a claude.md with mandatory guardrails (type-check + lint before closing a task) and docs intended as context for agents."
+    },
+    "nExpNCa": {
+      "es": "Desarrollador Web · No Country, práctica de simulación laboral · Oct. – Nov. 2024",
+      "en": "Web Developer · No Country, work simulation internship · Oct. – Nov. 2024"
+    },
+    "nExpNCb": {
+      "es": "Desarrollo en equipo de la aplicación de telemedicina Health Pro. Estuve a cargo de los módulos de videollamadas y salas de espera, con React, Node, WebSockets y WebRTC.",
+      "en": "Team development of the telemedicine application Health Pro. I was in charge of the video call and waiting room modules, using React, Node, WebSockets and WebRTC."
+    },
+    "nExpDocA": {
+      "es": "Docencia y ciencias sociales · 2007 – 2024",
+      "en": "Teaching and social sciences · 2007 – 2024"
+    },
+    "nExpDocB": {
+      "es": "Profesor de Sociología / Ciencias Sociales en escuelas secundarias de CABA, docente y tutor universitario en la UBA y sociólogo en el Departamento de Salud Ambiental del Ministerio de Salud (GCABA). Una trayectoria que hoy aporta comunicación, mentoría, análisis de datos y capacidad de explicar ideas complejas.",
+      "en": "Teacher of Sociology / Social Sciences in high schools in Buenos Aires, university professor and tutor at UBA, and sociologist at the Environmental Health Department of the Ministry of Health (GCABA). A background that today brings communication, mentoring, data analysis and the ability to explain complex ideas."
+    },
+    "nSkills1": { "es": "Skills", "en": "Skills" },
+    "nSkillsIA": {
+      "es": "IA y LLMs — Gemini / Vertex AI · OpenAI / DeepSeek · embeddings y búsqueda semántica · salida estructurada · prompting · streaming (SSE) · OCR · desarrollo asistido por IA (agentes, skills, MCP)",
+      "en": "AI and LLMs — Gemini / Vertex AI · OpenAI / DeepSeek · embeddings and semantic search · structured output · prompting · streaming (SSE) · OCR · AI-assisted development (agents, skills, MCP)"
+    },
+    "nSkillsFront": {
+      "es": "Frontend — React 19 · TypeScript · Astro · Next.js · MUI / Mantine · HTML / CSS / Responsive design",
+      "en": "Frontend — React 19 · TypeScript · Astro · Next.js · MUI / Mantine · HTML / CSS / Responsive design"
+    },
+    "nSkillsBack": {
+      "es": "Backend — Node.js · Express · Sequelize / MySQL · MongoDB · Socket.IO · BullMQ / Redis · Zod",
+      "en": "Backend — Node.js · Express · Sequelize / MySQL · MongoDB · Socket.IO · BullMQ / Redis · Zod"
+    },
+    "nSkillsTest": {
+      "es": "Testing — Vitest · React Testing Library · MSW · Supertest · Playwright",
+      "en": "Testing — Vitest · React Testing Library · MSW · Supertest · Playwright"
+    },
+    "nSkillsDevops": {
+      "es": "DevOps e infraestructura — Docker · Docker Compose · CI/CD (GitHub Actions) · Nginx · Linux · pino · Sentry · k6",
+      "en": "DevOps and infrastructure — Docker · Docker Compose · CI/CD (GitHub Actions) · Nginx · Linux · pino · Sentry · k6"
+    },
+    "nSkillsOtros": {
+      "es": "Otros — Stripe · JWT / OAuth · Git / GitHub · Figma",
+      "en": "Other — Stripe · JWT / OAuth · Git / GitHub · Figma"
+    },
+    "nProyH": { "es": "Proyectos propios", "en": "Personal projects" },
+    "nProyIntro": {
+      "es": "Proyectos construidos a mano, antes de que la IA escribiera código. Son mi base de fundamentos: entender qué hace el código (y qué no) es lo que me permite hoy revisar y sostener el que produce la IA.",
+      "en": "Projects built by hand, before AI wrote code. They are my foundation: understanding what the code does (and does not do) is what lets me review and sustain what AI produces today."
+    },
+    "nProyIG": {
+      "es": "Extensión para Chrome que permite ver imágenes de Instagram a máxima resolución. +2000 usuarios en la Chrome Web Store.",
+      "en": "Chrome extension to view Instagram images at full resolution. +2000 users on the Chrome Web Store."
+    },
+    "nProyFotoyop": {
+      "es": "Transformación de imágenes y collages, y conversión de imágenes en videos con efectos. PWA instalable y usable offline.",
+      "en": "Image transformation and collages, and conversion of images into videos with effects. Installable, offline-capable PWA."
+    },
+    "nProyJWT": {
+      "es": "Guía y código para aprender a construir desde cero un sistema de autenticación con JSON Web Token, con explicación de procesos y conceptos.",
+      "en": "Guide and code to learn how to build a JSON Web Token authentication system from scratch, with explanations of processes and concepts."
+    },
+    "nForm1": { "es": "Formación", "en": "Education" },
+    "nForm2a": {
+      "es": "Tecnicatura Superior en Desarrollo de Software.",
+      "en": "Higher Technician Degree in Software Development."
+    },
+    "nForm2b": {
+      "es": "Instituto de Formación Técnica Superior N.º 29, CABA. 2023 – 2025. Graduado.",
+      "en": "Higher Technical Training Institute No. 29, Buenos Aires. 2023 – 2025. Graduated."
+    },
+    "nForm3": {
+      "es": "Licenciatura en Sociología (UBA, 2002 – 2007) y Profesorado en Sociología (UBA, 2007 – 2009). Graduado. Especialización Docente en ESI (ISP Dr. Joaquín V. González, 2017 – 2019). Escuela Técnica en Computación (E.T. N.º 3, 1992 – 1998).",
+      "en": "Bachelor's Degree in Sociology (UBA, 2002 – 2007) and Professorship in Sociology (UBA, 2007 – 2009). Graduated. Teaching Specialization in Comprehensive Sexual Education (ISP Dr. Joaquín V. González, 2017 – 2019). Technical School in Computing (E.T. No. 3, 1992 – 1998)."
+    },
+    "nForm4": {
+      "es": "Proyectos de formación (desarrollo de software): Java / Spring + Angular · Kotlin / Android · C# / MySQL · MongoDB / Node.",
+      "en": "Training projects (software development): Java / Spring + Angular · Kotlin / Android · C# / MySQL · MongoDB / Node."
+    },
+    "nCursos": {
+      "es": "Google Cloud Computing Foundations (2025) · AWS Academy Cloud Foundations (2024) · Argentina Programa v3.0 Full Stack (INTI, 2022 – 2023) · Codo a Codo 4.0 Full Stack Java (2022) · freeCodeCamp: Responsive Web Design / JavaScript Algorithms and Data Structures / Back End Development and APIs (2022).",
+      "en": "Google Cloud Computing Foundations (2025) · AWS Academy Cloud Foundations (2024) · Argentina Programa v3.0 Full Stack (INTI, 2022 – 2023) · Codo a Codo 4.0 Full Stack Java (2022) · freeCodeCamp: Responsive Web Design / JavaScript Algorithms and Data Structures / Back End Development and APIs (2022)."
+    },
     "calificaciones1": {
       "es": "Resumen de calificaciones",
       "en": "Summary of qualifications"
@@ -459,9 +619,105 @@
       "es": "PROYECTOS",
       "en": "PROJECTS"
     },
+    "trabajo": {
+      "es": "TRABAJO",
+      "en": "WORK"
+    },
+    "empleo01": {
+      "es": "empleosmundodigital.com",
+      "en": "empleosmundodigital.com"
+    },
+    "empleo02": {
+      "es": "Plataforma de empleo del sector marketing digital, diseño y tecnología",
+      "en": "Job platform for the digital marketing, design and technology industry"
+    },
+    "empleo03": {
+      "es": "Trabajo actual en Mindcircus. Reconstruí un proyecto que estaba inconcluso y lo llevé a producción, con foco en integrar IA generativa y sostener la calidad técnica. Desarrollo full stack de la plataforma para empresas y profesionales del sector, que hoy reúne a más de 1.400 empresas y 125.000 talentos.",
+      "en": "My current job at Mindcircus. I rebuilt an unfinished project and took it to production, focusing on integrating generative AI and keeping technical quality. Full stack development of the platform for companies and professionals in the industry, which today brings together more than 1,400 companies and 125,000 talents."
+    },
+    "empleo04": {
+      "es": "IA en el producto",
+      "en": "AI in the product"
+    },
+    "empleo05": {
+      "es": "Implementé un generador de ofertas laborales con IA (pipeline de dos pasadas con Gemini / Vertex AI) y un parser de CVs a JSON estructurado, hoy en producción.",
+      "en": "I implemented an AI job-offer generator (two-pass pipeline with Gemini / Vertex AI) and a resume-to-structured-JSON parser, both in production today."
+    },
+    "empleo06": {
+      "es": "Construí búsqueda semántica con embeddings y similitud coseno para normalizar posiciones y mejorar el matching entre ofertas y talento.",
+      "en": "I built semantic search with embeddings and cosine similarity to normalize positions and improve offer–talent matching."
+    },
+    "empleo07": {
+      "es": "Diseñé la capa de IA multi-proveedor y conmutable (Gemini, OpenAI SDK apuntado a DeepSeek), eligiendo el modelo según el caso de uso para optimizar costo y latencia.",
+      "en": "I designed the multi-provider, swappable AI layer (Gemini, OpenAI SDK pointed at DeepSeek), choosing the model per use case to optimize cost and latency."
+    },
+    "empleo08": {
+      "es": "Integré salida estructurada de los modelos, streaming de respuestas vía SSE end-to-end y OCR con Google Cloud Vision para documentos e imágenes.",
+      "en": "I integrated structured model output, end-to-end SSE response streaming and OCR with Google Cloud Vision for documents and images."
+    },
+    "empleo09": {
+      "es": "Producto e ingeniería",
+      "en": "Product and engineering"
+    },
+    "empleo10": {
+      "es": "Reconstruí de cero el frontend (React 19 + TypeScript sobre Astro) y extendí el backend (Node.js / Express + TypeScript, Sequelize sobre MySQL).",
+      "en": "I rebuilt the frontend from scratch (React 19 + TypeScript on Astro) and extended the backend (Node.js / Express + TypeScript, Sequelize on MySQL)."
+    },
+    "empleo11": {
+      "es": "Desarrollé permisos por plan, suscripciones y pagos con Stripe (webhooks), auth con JWT y Google OAuth y verificación con Cloudflare Turnstile.",
+      "en": "I developed plan-based permissions, subscriptions and payments with Stripe (webhooks), auth with JWT and Google OAuth, and Cloudflare Turnstile verification."
+    },
+    "empleo12": {
+      "es": "Implementé chat en tiempo real con Socket.IO + Redis y jobs asíncronos con BullMQ.",
+      "en": "I implemented real-time chat with Socket.IO + Redis and asynchronous jobs with BullMQ."
+    },
+    "empleo13": {
+      "es": "Infraestructura y despliegue",
+      "en": "Infrastructure and deployment"
+    },
+    "empleo14": {
+      "es": "Armé el CI/CD con GitHub Actions para producción y staging: build, deploy al VPS, reinicio de contenedores y health checks que validan la frescura del SSR.",
+      "en": "I set up CI/CD with GitHub Actions for production and staging: build, deploy to the VPS, container restart and health checks that validate SSR freshness."
+    },
+    "empleo15": {
+      "es": "Desplegué el stack con Docker Compose: MySQL, Redis, 4 réplicas del backend (escalado horizontal), migrator, nginx como reverse proxy y SSL con certbot.",
+      "en": "I deployed the stack with Docker Compose: MySQL, Redis, 4 backend replicas (horizontal scaling), migrator, nginx as reverse proxy and SSL with certbot."
+    },
+    "empleo16": {
+      "es": "Configuré backups automáticos de MySQL y assets a Google Cloud Storage, y observabilidad con Sentry (front y back) y logging estructurado con pino.",
+      "en": "I set up automatic backups of MySQL and assets to Google Cloud Storage, plus observability with Sentry (front and back) and structured logging with pino."
+    },
+    "empleo17": {
+      "es": "Corrí pruebas de carga y estrés con k6 (hasta 500 usuarios concurrentes) para detectar el punto de quiebre y documentar resultados: con 100 usuarios, p95 ≈ 187 ms y 0 % de errores.",
+      "en": "I ran load and stress tests with k6 (up to 500 concurrent users) to find the breaking point and document results: with 100 users, p95 ≈ 187 ms and 0% errors."
+    },
+    "empleo18": {
+      "es": "Calidad y desarrollo asistido por IA",
+      "en": "Quality and AI-assisted development"
+    },
+    "empleo19": {
+      "es": "Sostengo una base de ~430 archivos de test (Vitest, React Testing Library, MSW, Supertest, Playwright) con tres estrategias de ejecución (MySQL compartida, paralela multiworker y SQLite en memoria).",
+      "en": "I maintain a base of ~430 test files (Vitest, React Testing Library, MSW, Supertest, Playwright) with three execution strategies (shared MySQL, parallel multiworker and in-memory SQLite)."
+    },
+    "empleo20": {
+      "es": "Mantengo una cadena de calidad estricta: type-check (tsgo), oxlint + ESLint, Prettier y validación con Zod.",
+      "en": "I maintain a strict quality chain: type-check (tsgo), oxlint + ESLint, Prettier and Zod validation."
+    },
+    "empleo21": {
+      "es": "Diseñé workflows de desarrollo asistido por IA: skills de agentes que codifican patrones del proyecto (migraciones, tests, permisos, hooks), un claude.md con guardrails obligatorios (type-check + lint antes de cerrar una tarea) y documentación técnica pensada como contexto para agentes.",
+      "en": "I designed AI-assisted development workflows: agent skills that encode project patterns (migrations, tests, permissions, hooks), a claude.md with mandatory guardrails (type-check + lint before closing a task) and technical docs intended as context for agents."
+    },
+    "empleo22": {
+      "es": "Visitar el sitio",
+      "en": "Visit the site"
+    },
+    "empleo23": {
+      "es": "Capturas de la plataforma en producción.",
+      "en": "Screenshots of the platform in production."
+    },
     "otros": {
-      "es": "Proyectos académicos de desarrollo de software:",
-      "en": "Software development academic projects:"
+      "es": "Proyectos de formación (desarrollo de software):",
+      "en": "Training projects (software development):"
     },
     "otrosVerCodigo": {
       "es": "Ver código",

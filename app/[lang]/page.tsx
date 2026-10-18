@@ -1,4 +1,5 @@
 //NextJS
+import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 //styles
@@ -14,6 +15,7 @@ import linkedinIcon from "@public/brand-linkedin.png";
 import herb from "@public/herb.png";
 //components
 import Fotos from "./components/fotos";
+import Highlights from "./components/highlights";
 //lang
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
@@ -25,49 +27,27 @@ export default async function IndexPage({
 }) {
   const { lang } = await params;
   const dictionary = await getDictionary();
-  let h2a = (
-    <h2 className="heading__title1">
-      ¡Hola!&nbsp;<span className="heading__smile">=)</span>&nbsp;
-    </h2>
-  );
-  if (lang === "en") {
-    h2a = (
+
+  const h2a =
+    lang === "en" ? (
       <h2 className="heading__title1">
         Hi!&nbsp;<span className="heading__smile">=)</span>&nbsp;
       </h2>
+    ) : (
+      <h2 className="heading__title1">
+        ¡Hola!&nbsp;<span className="heading__smile">=)</span>&nbsp;
+      </h2>
     );
-  }
-  let h2b = <h2 className="heading__title2">¿Cómo andás?</h2>;
-  if (lang === "en") {
-    h2b = <h2 className="heading__title2">How you doing?</h2>;
-  }
 
-  let p1 = (
-    <>
-      <p>
-        Mi nombre es <span className="resaltado">Federico Holc</span>&nbsp;
-        <span className="emoji">🧑‍💻</span>, y vivo en Buenos Aires, Argentina.
-        <br />
-      </p>
-      <p>
-        Soy&nbsp;
-        <strong>desarrollador web full stack</strong>. Mi especialidad es el
-        frontend&nbsp;
-        <span className="emoji">🌈</span>,&nbsp; pero siempre me interesó poder
-        crear soluciones de principio a fin, desde el diseño UX/UI, hasta el
-        backend y la infraestructura.&nbsp;
-        <span className="emoji">👾</span>
-      </p>
-    </>
-  );
-  if (lang === "en") {
-    p1 = (
-      /*      <p>
-        My name is <span className="resaltado">Federico Holc</span>,
-        <strong> I am a web developer</strong>&nbsp;
-        <span className="emoji">🧑‍💻</span>, and I live in Buenos Aires,
-        Argentina.
-      </p> */
+  const h2b =
+    lang === "en" ? (
+      <h2 className="heading__title2">How you doing?</h2>
+    ) : (
+      <h2 className="heading__title2">¿Cómo andás?</h2>
+    );
+
+  const p1 =
+    lang === "en" ? (
       <>
         <p>
           My name is <span className="resaltado">Federico Holc</span>&nbsp;
@@ -77,54 +57,121 @@ export default async function IndexPage({
         </p>
         <p>
           I am a&nbsp;
-          <strong>full stack web developer</strong>. My specialty is
-          frontend&nbsp;
-          <span className="emoji">🌈</span>,&nbsp;but I've always been
-          interested in creating end-to-end solutions—from UX/UI design to the
-          backend and infrastructure.&nbsp;
-          <span className="emoji">👾</span>
+          <strong>full stack web developer</strong> focused on building
+          end-to-end products with&nbsp;
+          <strong>integrated AI</strong>. I work with React, TypeScript and
+          Node, and I ship AI features to production: LLMs, semantic search with
+          embeddings, OCR and streaming.&nbsp;
+          <span className="emoji">🚀</span>
+        </p>
+      </>
+    ) : (
+      <>
+        <p>
+          Mi nombre es <span className="resaltado">Federico Holc</span>&nbsp;
+          <span className="emoji">🧑‍💻</span>, y vivo en Buenos Aires,
+          Argentina.
+          <br />
+        </p>
+        <p>
+          Soy&nbsp;
+          <strong>desarrollador web full stack</strong> y construyo productos de
+          punta a punta con&nbsp;
+          <strong>inteligencia artificial integrada</strong>. Trabajo con React,
+          TypeScript y Node, e implemento features de IA en producción: LLMs,
+          búsqueda semántica con embeddings, OCR y streaming.&nbsp;
+          <span className="emoji">🚀</span>
         </p>
       </>
     );
-  }
 
-  let p2 = (
-    <>
-      {/*       <p>
-        Me inicié como autodidácta y luego me recibí de técnico superior en
-        desarrollo de software. &nbsp;
-        <span className="emoji">🚀</span>
-      </p> */}
-      <p>
-        En el pasado fui sociólogo y profesor en escuelas secundarias y en la
-        Universidad de Buenos Aires. <span className="emoji">👨‍🏫</span>
-      </p>
-
-      <p>
-        He desarrollado software de manera autónoma, y en equipos utilizando
-        metodologías ágiles.<span className="emoji">🕸️</span>
-      </p>
-    </>
-  );
-  if (lang === "en") {
-    p2 = (
+  const p2 =
+    lang === "en" ? (
       <>
-        {/*  <p>
-          I began my journey as a self-taught developer and later graduated as a
-          software development technician. &nbsp;
-          <span className="emoji">🚀</span>
-        </p> */}
+        <p>
+          I am interested both in AI inside the software and in designing
+          AI-assisted development workflows that speed things up without
+          sacrificing technical quality or user experience.&nbsp;
+          <span className="emoji">🕸️</span>
+        </p>
         <p>
           Previously, I was a sociologist and teacher at high schools and at the
-          University of Buenos Aires. <span className="emoji">👨‍🏫</span>
+          University of Buenos Aires, which I now bring as the ability to
+          communicate and explain complex ideas.&nbsp;
+          <span className="emoji">👨‍🏫</span>
+        </p>
+      </>
+    ) : (
+      <>
+        <p>
+          Me interesa tanto la IA dentro del software como el diseño de
+          workflows de desarrollo asistidos por IA que aceleran sin sacrificar
+          la calidad técnica ni la experiencia del usuario.&nbsp;
+          <span className="emoji">🕸️</span>
         </p>
         <p>
-          I have developed web applications autonomously and in teams using
-          agile methodologies. <span className="emoji">🕸️</span>
+          Vengo de la docencia y las ciencias sociales, que hoy aporto como
+          capacidad de comunicar y explicar temas complejos.&nbsp;
+          <span className="emoji">👨‍🏫</span>
         </p>
       </>
     );
-  }
+
+  const buttons: {
+    icon: typeof starIcon;
+    iconWidth: number;
+    label: string;
+    href: string;
+    external?: boolean;
+    text: string;
+  }[] = [
+    {
+      icon: starIcon,
+      iconWidth: 13,
+      label: dictionary.intro.proyectos[lang],
+      href: `/${lang}/proyectos`,
+      text: dictionary.intro.mas2[lang],
+    },
+    {
+      icon: paperclipIcon,
+      iconWidth: 12,
+      label: dictionary.intro.cvpdf[lang],
+      href: `/${lang}/cv`,
+      text: dictionary.intro.mas5[lang],
+    },
+    {
+      icon: githubicon,
+      iconWidth: 12,
+      label: "GitHub",
+      href: "https://github.com/fedeholc",
+      external: true,
+      text: dictionary.intro.mas3[lang],
+    },
+    {
+      icon: linkedinIcon,
+      iconWidth: 14,
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/federicoholc/",
+      external: true,
+      text: dictionary.intro.mas6[lang],
+    },
+    {
+      icon: notesIcon,
+      iconWidth: 10,
+      label: "err0r Blog",
+      href: "https://err0r.fedeholc.ar",
+      external: true,
+      text: dictionary.intro.mas4[lang],
+    },
+    {
+      icon: instagramIcon,
+      iconWidth: 14,
+      label: "Instagram",
+      href: "https://www.instagram.com/fedeholc/",
+      external: true,
+      text: dictionary.intro.mas7[lang],
+    },
+  ];
 
   return (
     <div>
@@ -143,136 +190,36 @@ export default async function IndexPage({
           </div>
         </div>
 
-        {/*  <div>
-          {p3}
-          {p4}
-          {p5}
-        </div> */}
+        <Highlights lang={lang} />
 
         <div>{dictionary.intro.mas[lang]}</div>
         <div className="buttons-grid">
-          <div>
-            <button className="link_button">
+          {buttons.map((button, index) => (
+            <Fragment key={index}>
               <div>
-                <Image
-                  className="link_button__icon"
-                  alt="projects icon"
-                  width="13"
-                  /* @ts-ignore */
-                  height="auto"
-                  src={starIcon}
-                ></Image>
-                &nbsp;
-                <Link href={`${lang}/proyectos`}>
-                  {dictionary.intro.proyectos[lang]}
-                </Link>
+                <button className="link_button">
+                  <div>
+                    <Image
+                      className="link_button__icon"
+                      alt={`${button.label} icon`}
+                      width={button.iconWidth}
+                      /* @ts-ignore */
+                      height="auto"
+                      src={button.icon}
+                    ></Image>
+                    &nbsp;
+                    <Link
+                      href={button.href}
+                      {...(button.external ? { target: "_blank" } : {})}
+                    >
+                      {button.label}
+                    </Link>
+                  </div>
+                </button>
               </div>
-            </button>
-          </div>
-          <div>{dictionary.intro.mas2[lang]}</div>
-          <div>
-            {" "}
-            <button className="link_button">
-              <div>
-                <Image
-                  className="link_button__icon"
-                  alt="github icon"
-                  width="12"
-                  /* @ts-ignore */
-                  height="auto"
-                  src={githubicon}
-                ></Image>
-                &nbsp;
-                <Link href="https://github.com/fedeholc" target="_blank">
-                  GitHub
-                </Link>
-              </div>
-            </button>
-          </div>
-          <div>{dictionary.intro.mas3[lang]}</div>
-          <div>
-            {" "}
-            <button className="link_button">
-              <div>
-                <Image
-                  className="link_button__icon"
-                  alt="blog icon"
-                  width="10"
-                  /* @ts-ignore */
-                  height="auto"
-                  src={notesIcon}
-                ></Image>
-                &nbsp;
-                <Link target="_blank" href="https://err0r.fedeholc.ar">
-                  err0r Blog
-                </Link>
-              </div>
-            </button>
-          </div>
-          <div>{dictionary.intro.mas4[lang]}</div>
-          <div>
-            <button className="link_button">
-              <div>
-                <Image
-                  className="link_button__icon"
-                  alt="paper clip icon"
-                  width="12"
-                  /* @ts-ignore */
-                  height="auto"
-                  src={paperclipIcon}
-                ></Image>
-                &nbsp;<Link href="/cv">{dictionary.intro.cvpdf[lang]}</Link>
-              </div>
-            </button>
-          </div>
-          <div>{dictionary.intro.mas5[lang]}</div>
-          <div>
-            {" "}
-            <button className="link_button">
-              <div>
-                <Image
-                  className="link_button__icon"
-                  alt="linkedin icon"
-                  width="14"
-                  height="14"
-                  src={linkedinIcon}
-                ></Image>
-                &nbsp;
-                <Link
-                  href="https://www.linkedin.com/in/federicoholc/"
-                  target="_blank"
-                >
-                  LinkedIn
-                </Link>
-              </div>
-            </button>
-          </div>
-          <div>{dictionary.intro.mas6[lang]}</div>
-          <div>
-            {" "}
-            <button className="link_button">
-              <div>
-                <Image
-                  className="link_button__icon"
-                  alt="instagram icon"
-                  width="14"
-                  height="14"
-                  src={instagramIcon}
-                ></Image>
-                &nbsp;
-                <Link
-                  href="https://www.instagram.com/fedeholc/"
-                  target="_blank"
-                >
-                  Instagram
-                </Link>
-              </div>
-            </button>
-          </div>
-          <div>
-            {dictionary.intro.mas7[lang]}&nbsp;
-            <span className="emoji">📸</span>
-          </div>
+              <div>{button.text}</div>
+            </Fragment>
+          ))}
         </div>
 
         <div className="mail-container">

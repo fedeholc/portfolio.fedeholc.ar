@@ -41,8 +41,8 @@ export function middleware(request: NextRequest) {
   if (pathnameIsMissingLocale) {
 
     // esto es porque por algun motivo cuando va a un link de un archivo en public con el redirect que está debajo no funciona
-    //de esta forma si es un pdf va directo y anda
-    if (pathname.slice(-3) === "pdf" || pathname.slice(-4) === "docx" || pathname.slice(-4) === "jpeg") {
+    //de esta forma si es un archivo estático (pdf, docx, md, txt, imágenes, etc.) va directo y anda
+    if (/\.(pdf|docx|doc|md|txt|jpeg|jpg|png|webp|svg|gif|ico|xml|json|csv|zip)$/i.test(pathname)) {
       return NextResponse.next();
     }
 

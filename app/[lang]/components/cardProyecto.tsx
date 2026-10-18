@@ -12,29 +12,30 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
 
   return (
     <>
-      {/*   <CardProyecto
-        lang={lang}
-        titulo="fotoYOP 🎨"
-        buttonLink="/proyectos/#proyectoFotoyop"
-        subtitulo={dictionary.cv.proyectos12[lang]}
-        descripcion={dictionary.cv.proyectos11[lang]}
-        stack={["HTML", "CSS", "React/Next", "TypeScript", "PWA", "Canvas API"]}
-      /> */}
       <CardProyecto
         lang={lang}
-        titulo="🔐️ JWT Learning Kit"
-        buttonLink="/proyectos/#proyectoJWTLK"
-        subtitulo={dictionary.cv.proyectos16[lang]}
-        descripcion={dictionary.cv.proyectos17[lang]}
+        titulo="Empleos Mundo Digital 💼"
+        buttonLink="/proyectos/#proyectoEMD"
+        subtitulo={dictionary.proyectos.empleo02[lang]}
+        descripcion={dictionary.proyectos.empleo03[lang]}
         stack={[
-          "HTML",
-          "CSS",
-          "JavaScript",
+          "React 19",
+          "TypeScript",
+          "Astro",
           "Node / Express",
-          "SQLite",
-          "Vitest / Playwright",
-          "JSDoc",
+          "MySQL",
+          "Gemini / Vertex AI",
+          "Docker",
+          "CI/CD",
         ]}
+      />
+      <CardProyecto
+        lang={lang}
+        titulo="Full size images for IG 📷"
+        buttonLink="/proyectos/#proyectoInsta"
+        subtitulo="+2000 usuarios"
+        descripcion={dictionary.cv.proyectos6[lang]}
+        stack={["HTML", "CSS", "JavaScript", "WebExtension API"]}
       />
       <CardProyecto
         lang={lang}
@@ -55,6 +56,22 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
       />
       <CardProyecto
         lang={lang}
+        titulo="🔐️ JWT Learning Kit"
+        buttonLink="/proyectos/#proyectoJWTLK"
+        subtitulo={dictionary.cv.proyectos16[lang]}
+        descripcion={dictionary.cv.proyectos17[lang]}
+        stack={[
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Node / Express",
+          "SQLite",
+          "Vitest / Playwright",
+          "JSDoc",
+        ]}
+      />
+      <CardProyecto
+        lang={lang}
         titulo="🩺️ Health Pro"
         buttonLink="/proyectos/#proyectoHealthPro"
         subtitulo={dictionary.cv.proyectos14[lang]}
@@ -69,149 +86,23 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
           "WebRTC",
         ]}
       />
-
-      <CardProyecto
-        lang={lang}
-        buttonLink="/proyectos/#proyectoANOTA"
-        titulo="📝 ¡ANOTÁ! & Highlighter"
-        subtitulo="¿Another note taking app?"
-        descripcion={dictionary.cv.proyectos5[lang]}
-        stack={[
-          "HTML",
-          "CSS",
-          "React",
-          "NextJs",
-          "SQLite",
-          "WebExtension API",
-          "Supabase Auth",
-          "JSDoc",
-        ]}
-      />
-      <CardProyecto
-        lang={lang}
-        titulo={dictionary.cv.proyectos3a[lang]}
-        buttonLink="/proyectos/#proyectoNSP"
-        subtitulo={dictionary.cv.proyectos3b[lang]}
-        descripcion={dictionary.cv.proyectos4[lang]}
-        stack={[
-          "HTML",
-          "CSS",
-          "NextJs / React",
-          "Markdown",
-          "Github",
-          "Vercel",
-        ]}
-      />
-
-      <CardProyecto
-        lang={lang}
-        titulo="Full size images for IG 📷"
-        buttonLink="/proyectos/#proyectoInsta"
-        subtitulo=""
-        descripcion={dictionary.cv.proyectos6[lang]}
-        stack={["HTML", "CSS", "JavaScript", "WebExtension API"]}
-      />
-      {/*   <CardProyecto
-        lang={lang}
-        titulo="MyTvShows 📺"
-        buttonLink="/proyectos/#proyectoTV"
-        subtitulo=""
-        descripcion={dictionary.cv.proyectos8[lang]}
-        stack={["HTML", "Tailwind CSS", "React", "Firebase", "Supabase Auth"]}
-      /> */}
-      {/*   <CardProyecto
-        lang={lang}
-        titulo="👨‍💻 Argentina Programa "
-        buttonLink="/proyectos/#proyectoAP"
-        subtitulo={dictionary.cv.proyectos9a[lang]}
-        descripcion={dictionary.cv.proyectos10[lang]}
-        stack={["HTML", "Bootstrap", "Angular", "MySQL", "Java / Spring Boot"]}
-      /> */}
       <div>
         <h3>{dictionary.proyectos.otros[lang]}</h3>
         <div className={proyectos.columns1}>
-          <ul>
-            <li className={proyectos.smaller_font}>
-              <div className={proyectos.link_icon}>
-                <span>
-                  {dictionary.proyectos.otros5[lang]}&nbsp;
-                  <Link
-                    className={proyectos.underline}
-                    target="_blank"
-                    href="https://github.com/fedeholc/devops-tpi-infra"
-                  >
-                    {dictionary.proyectos.otrosVerCodigo[lang]}
-                  </Link>
-                  &nbsp;
-                  <Image src={externalLinkIcon} alt="external link icon" />
-                </span>
-              </div>
-            </li>
-            <li className={proyectos.smaller_font}>
-              <div className={proyectos.link_icon}>
-                <span>
-                  {dictionary.proyectos.otros4[lang]}&nbsp;
-                  <Link
-                    className={proyectos.underline}
-                    target="_blank"
-                    href="https://github.com/fedeholc/tp-DSWB"
-                  >
-                    {dictionary.proyectos.otrosVerCodigo[lang]}
-                  </Link>
-                  &nbsp;
-                  <Image src={externalLinkIcon} alt="external link icon" />
-                </span>
-              </div>
-            </li>
-            <li className={proyectos.smaller_font}>
-              <div className={proyectos.link_icon}>
-                <span>
-                  {dictionary.proyectos.otros1[lang]}&nbsp;
-                  <Link
-                    className={proyectos.underline}
-                    target="_blank"
-                    href="https://github.com/fedeholc/tecnicatura-tp-clinica"
-                  >
-                    {dictionary.proyectos.otrosVerCodigo[lang]}
-                  </Link>
-                  &nbsp;
-                  <Image src={externalLinkIcon} alt="external link icon" />
-                </span>
-              </div>
-            </li>
-            <li className={proyectos.smaller_font}>
-              <div className={proyectos.link_icon}>
-                <span>
-                  {dictionary.proyectos.otros2[lang]}&nbsp;
-                  <Link
-                    className={proyectos.underline}
-                    target="_blank"
-                    href="https://github.com/fedeholc/tecnicatura-tp-club-deportivo-mobile"
-                  >
-                    {dictionary.proyectos.otrosVerCodigo[lang]}
-                  </Link>
-                  &nbsp;
-                  <Image src={externalLinkIcon} alt="external link icon" />
-                </span>
-              </div>
-            </li>
-            <li className={proyectos.smaller_font}>
-              <div className={proyectos.link_icon}>
-                <span>
-                  {dictionary.proyectos.otros3[lang]}&nbsp;
-                  <Link
-                    className={proyectos.underline}
-                    target="_blank"
-                    href="https://github.com/fedeholc/argentinaprograma-Portfolio-Backend"
-                  >
-                    {dictionary.proyectos.otrosVerCodigo[lang]}
-                  </Link>
-                  &nbsp;
-                  <Image src={externalLinkIcon} alt="external link icon" />
-                </span>
-              </div>
-            </li>
-          </ul>
+          <p className={proyectos.smaller_font}>
+            {dictionary.cv.nForm4[lang]}
+          </p>
+          <div className={proyectos.link_icon}>
+            <Link
+              className={proyectos.underline}
+              target="_blank"
+              href="https://github.com/fedeholc?tab=repositories"
+            >
+              {dictionary.proyectos.otrosVerCodigo[lang]}
+            </Link>
+            &nbsp;
+            <Image src={externalLinkIcon} alt="external link icon" />
+          </div>
         </div>
       </div>
     </>
@@ -234,15 +125,11 @@ export default async function CardProyecto({
   lang: Locale;
 }) {
   const dictionary = await getDictionary();
-  const localizedButtonLink = buttonLink.startsWith(`/${lang}/`)
-    ? buttonLink
-    : `/${lang}${buttonLink.startsWith("/") ? "" : "/"}${buttonLink}`;
-
   return (
     <>
       <div className={`${cardP.card__container}`}>
         <div>
-          <Link href={localizedButtonLink}>
+          <Link href={buttonLink}>
             <h2 className={cardP.titulo}>{titulo}</h2>
           </Link>
           <h3>{subtitulo}</h3>
@@ -258,7 +145,7 @@ export default async function CardProyecto({
           ))}
         </div>
         <div className={`${cardP.button__container}`}>
-          <Link href={localizedButtonLink} className={cardP.button_ver}>
+          <Link href={buttonLink} className={cardP.button_ver}>
             {dictionary.cardproyecto[lang]} &raquo;
           </Link>
         </div>

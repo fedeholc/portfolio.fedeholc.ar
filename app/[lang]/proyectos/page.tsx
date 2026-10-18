@@ -6,12 +6,11 @@ import { CardsProyectos } from "@app/[lang]/components/cardProyecto";
 import herb from "@public/herb.png";
 import externalLinkIcon from "@public/external-link.png";
 
-import ProyectoANOTA from "./ProyectoANOTA";
 import ProyectoAP from "./ProyectoAP";
 import ProyectoInsta from "./ProyectoInsta";
 import ProyectoFotoyop2 from "./ProyectoFotoyop2";
-import ProyectoErr0r from "./ProyectoNSP";
 import ProyectoTV from "./ProyectoTV";
+import ProyectoEMD from "./ProyectoEMD";
 import ff from "@app/[lang]/ff";
 import GoToTop from "@app/[lang]/components/goToTop";
 import { type Locale } from "@app/i18n-config";
@@ -82,6 +81,9 @@ async function ProyectosTodos({ lang }: { lang: Locale }) {
         </div>
       </div>
 
+      <div id="proyectoEMD">
+        <ProyectoEMD lang={lang} />
+      </div>
       <div id="proyectoJWTLK">
         <ProyectoJWTLK lang={lang} />
       </div>
@@ -90,13 +92,6 @@ async function ProyectosTodos({ lang }: { lang: Locale }) {
       </div>
       <div id="proyectoHealthPro">
         <ProyectoHealthPro lang={lang} />
-      </div>
-
-      <div id="proyectoANOTA">
-        <ProyectoANOTA lang={lang} />
-      </div>
-      <div id="proyectoNSP">
-        <ProyectoErr0r lang={lang} />
       </div>
 
       <div id="proyectoInsta">

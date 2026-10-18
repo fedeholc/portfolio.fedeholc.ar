@@ -3,7 +3,6 @@ import "@app/globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import paperclipIcon from "@public/paperclip.png";
-import { CardsProyectos } from "@app/[lang]/components/cardProyecto";
 import herb from "@public/herb.png";
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
@@ -17,6 +16,58 @@ export default async function CV({
 }) {
   const { lang } = await params;
   const dictionary = await getDictionary();
+  const cv = dictionary.cv;
+
+  const experienciaActualBloques: { titulo: string; items: string[] }[] = [
+    {
+      titulo: cv.nExpIA[lang],
+      items: [cv.nExpIA1[lang], cv.nExpIA2[lang], cv.nExpIA3[lang], cv.nExpIA4[lang]],
+    },
+    {
+      titulo: cv.nExpProd[lang],
+      items: [cv.nExpProd1[lang], cv.nExpProd2[lang], cv.nExpProd3[lang]],
+    },
+    {
+      titulo: cv.nExpInfra[lang],
+      items: [
+        cv.nExpInfra1[lang],
+        cv.nExpInfra2[lang],
+        cv.nExpInfra3[lang],
+        cv.nExpInfra4[lang],
+      ],
+    },
+    {
+      titulo: cv.nExpCal[lang],
+      items: [cv.nExpCal1[lang], cv.nExpCal2[lang], cv.nExpCal3[lang]],
+    },
+  ];
+
+  const skills: string[] = [
+    cv.nSkillsIA[lang],
+    cv.nSkillsFront[lang],
+    cv.nSkillsBack[lang],
+    cv.nSkillsTest[lang],
+    cv.nSkillsDevops[lang],
+    cv.nSkillsOtros[lang],
+  ];
+
+  const propios: { titulo: string; texto: string; href: string }[] = [
+    {
+      titulo: "Full size images for IG",
+      texto: cv.nProyIG[lang],
+      href: `/${lang}/proyectos#proyectoInsta`,
+    },
+    {
+      titulo: "fotoYOP & foto-V",
+      texto: cv.nProyFotoyop[lang],
+      href: `/${lang}/proyectos#proyectoFotoyop`,
+    },
+    {
+      titulo: "JWT Learning Kit",
+      texto: cv.nProyJWT[lang],
+      href: `/${lang}/proyectos#proyectoJWTLK`,
+    },
+  ];
 
   return (
     <div className={proyectos.proyecto}>
@@ -63,45 +114,107 @@ export default async function CV({
               </Link>
             </div>
           </button>
+          <button className="link_button">
+            <div>
+              <Image
+                className="link_button__icon"
+                alt="paper clip icon"
+                width="12"
+                /* height="12" */
+                src={paperclipIcon}
+              ></Image>
+              &nbsp;
+              <Link
+                href={`/cv/${dictionary.cv.nombreArchivo[lang]}.md`}
+                target="_blank"
+              >
+                {dictionary.cv.downloadMD[lang]}
+              </Link>
+            </div>
+          </button>
           <br />
         </div>
         <br></br>
+
         <div className={proyectos.columns1}>
           <section>
-            <h3>{dictionary.cv.calificaciones1[lang]}</h3>
-            <p>{dictionary.cv.calificaciones3[lang]}</p>
-            <ul className={proyectos.columns2stack}>
-              <li>HTML / CSS / Responsive design</li>
-              <li>SQL / MongoDB</li>
-              <li>JavaScript / TypeScript</li>
-              <li>Git / GitHub</li>
-              <li>React / Next.js</li>
-              <li>Linux / Docker</li>
-              <li>Node.js / Express</li>
-              <li>Figma</li>
-              <li>Testing (Vitest/Jest, React Testing Library, Playwright)</li>
-            </ul>
-            <br></br>
-
-            {/*   <p>{dictionary.cv.calificaciones3b[lang]}</p>
-            <ul className={proyectos.columns2stack}>
-              <li>{dictionary.cv.calificaciones4.sk2[lang]}</li>
-              <li>{dictionary.cv.calificaciones4.sk3[lang]}</li>
-              <li>{dictionary.cv.calificaciones4.sk4[lang]}</li>
-              <li>{dictionary.cv.calificaciones4.sk5[lang]}</li>
-              <li>{dictionary.cv.calificaciones4.sk6[lang]}</li>
-              <li>{dictionary.cv.calificaciones4.sk7[lang]}</li>
-              <li>{dictionary.cv.calificaciones4.sk1[lang]}</li>
-              <li>{dictionary.cv.calificaciones4.sk8[lang]}</li>
-            </ul> */}
+            <h3>{cv.nPerfil1[lang]}</h3>
+            <p>{cv.nPerfil2[lang]}</p>
           </section>
 
           <section>
-            <h3>{dictionary.cv.proyectos1[lang]}</h3>
-            <div className={proyectos.cv__cards__container}>
-              <CardsProyectos lang={lang} />
-            </div>
+            <h3>{cv.nExp1[lang]}</h3>
+
+            <p>
+              <strong>{cv.nExpActualA[lang]}</strong>
+            </p>
+            <p>{cv.nExpActualB[lang]}</p>
+            {experienciaActualBloques.map((bloque, index) => (
+              <div key={index}>
+                <h3>{bloque.titulo}</h3>
+                <ul>
+                  {bloque.items.map((item, itemIndex) => (
+                    <li key={itemIndex}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+
+            <p>
+              <strong>{cv.nExpNCa[lang]}</strong>
+            </p>
+            <ul>
+              <li>{cv.nExpNCb[lang]}</li>
+            </ul>
+
+            <p>
+              <strong>{cv.nExpDocA[lang]}</strong>
+            </p>
+            <ul>
+              <li>{cv.nExpDocB[lang]}</li>
+            </ul>
           </section>
+
+          <section>
+            <h3>{cv.nSkills1[lang]}</h3>
+            <ul>
+              {skills.map((skill, index) => (
+                <li key={index}>{skill}</li>
+              ))}
+            </ul>
+          </section>
+
+          <section>
+            <h3>{cv.nProyH[lang]}</h3>
+            <p>{cv.nProyIntro[lang]}</p>
+            <ul>
+              {propios.map((proyecto, index) => (
+                <li key={index}>
+                  <strong>{proyecto.titulo}</strong> — {proyecto.texto}{" "}
+                  <Link className={proyectos.underline} href={proyecto.href}>
+                    {dictionary.cardproyecto[lang]}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section>
+            <h3>{cv.nForm1[lang]}</h3>
+            <ul>
+              <li>
+                <strong>{cv.nForm2a[lang]}</strong> {cv.nForm2b[lang]}
+              </li>
+              <li>{cv.nForm3[lang]}</li>
+              <li>{cv.nForm4[lang]}</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>{dictionary.cv.cursos1[lang]}</h3>
+            <p>{cv.nCursos[lang]}</p>
+          </section>
+
           <section>
             <h3>{dictionary.cv.idiomas1[lang]}</h3>
             <ul>
@@ -114,115 +227,6 @@ export default async function CV({
                 {dictionary.cv.idiomas2d[lang]}
               </li>
             </ul>
-          </section>
-          <section>
-            <h3>{dictionary.cv.academia1[lang]}</h3>
-            <ul>
-              <li>
-                <strong>{dictionary.cv.academia2a[lang]}</strong>{" "}
-                {dictionary.cv.academia2b[lang]}
-              </li>
-              <li>
-                <strong>{dictionary.cv.academia6a[lang]}</strong>{" "}
-                {dictionary.cv.academia6b[lang]}
-              </li>
-              <li>
-                <strong>{dictionary.cv.academia5a[lang]}</strong>{" "}
-                {dictionary.cv.academia5b[lang]}
-              </li>
-
-              <li>
-                <strong>{dictionary.cv.academia4a[lang]}</strong>{" "}
-                {dictionary.cv.academia4b[lang]}
-              </li>
-              <li>
-                <strong>{dictionary.cv.academia3a[lang]}</strong>{" "}
-                {dictionary.cv.academia3b[lang]}
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h3>{dictionary.cv.cursos1[lang]}</h3>
-            <ul>
-              <li>
-                <strong>{dictionary.cv.cursos9a[lang]}</strong>&nbsp;
-                {dictionary.cv.cursos9b[lang]}
-              </li>
-              <li>
-                <strong>{dictionary.cv.cursos8a[lang]}</strong>&nbsp;
-                {dictionary.cv.cursos8b[lang]}
-              </li>
-              <li>
-                <strong>{dictionary.cv.cursos2a[lang]}</strong>{" "}
-                {dictionary.cv.cursos2b[lang]}
-              </li>
-              <li>
-                <strong>{dictionary.cv.cursos3a[lang]}</strong>{" "}
-                {dictionary.cv.cursos3b[lang]}
-              </li>
-              {/*        <li>
-                <strong>{dictionary.cv.cursos4a[lang]}</strong>{" "}
-                {dictionary.cv.cursos4b[lang]}
-              </li>
-              <li>
-                <strong>{dictionary.cv.cursos5a[lang]}</strong>{" "}
-                {dictionary.cv.cursos5b[lang]}
-              </li> */}
-              {/*  <li>
-                <strong>{dictionary.cv.cursos6a[lang]}</strong>{" "}
-                {dictionary.cv.cursos6b[lang]}
-              </li> */}
-              <li>
-                <strong>{dictionary.cv.cursos7a[lang]}</strong>&nbsp;
-                {dictionary.cv.cursos7b[lang]}
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h3>{dictionary.cv.experiencias1[lang]}</h3>
-            <p>
-              <strong>{dictionary.cv.experiencias7a[lang]}</strong>
-            </p>
-            <ul>
-              <li>{dictionary.cv.experiencias7b[lang]}</li>
-            </ul>
-            <p>
-              <strong>{dictionary.cv.experiencias6a[lang]}</strong>
-            </p>
-            <ul>
-              <li>{dictionary.cv.experiencias6b[lang]}</li>
-            </ul>
-            <p>
-              <strong>{dictionary.cv.experiencias5a[lang]}</strong>
-            </p>
-            <ul>
-              <li>{dictionary.cv.experiencias5b[lang]}</li>
-            </ul>
-            <p>
-              <strong>{dictionary.cv.experiencias4a[lang]}</strong>
-            </p>
-            <ul>
-              <li>
-                {dictionary.cv.experiencias4b[lang]}{" "}
-                {dictionary.cv.experiencias4c[lang]}
-              </li>
-            </ul>
-            <p>
-              <strong>{dictionary.cv.experiencias3a[lang]}</strong>
-            </p>
-            <ul>
-              <li>
-                {dictionary.cv.experiencias3b[lang]}{" "}
-                {dictionary.cv.experiencias3c[lang]}
-              </li>
-            </ul>
-            {/*           <p>
-              <strong>{dictionary.cv.experiencias2a[lang]}</strong>
-            </p>
-            <ul>
-              <li>{dictionary.cv.experiencias2b[lang]}</li>
-              <li>{dictionary.cv.experiencias2c[lang]}</li>
-            </ul> */}
           </section>
         </div>
       </div>
