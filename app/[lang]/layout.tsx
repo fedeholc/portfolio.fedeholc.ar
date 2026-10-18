@@ -38,14 +38,14 @@ const montserrat = Montserrat({
 export const metadata = {
   title: "Federico Holc - Desarrollador Full Stack · Desarrollo asistido por IA",
   description:
-    "Desarrollador web full stack con casi 2 años de experiencia. Uso IA como parte central del proceso de desarrollo —código, tests, lint, documentación y skills— para ganar productividad sin resignar calidad. React, TypeScript y Node.",
+    "Desarrollador web full stack con casi 2 años de experiencia. Uso IA como parte central de mi proceso de desarrollo, con workflows de automatización y foco en calidad y diseño UX/UI. React, TypeScript y Node.",
   icons: {
     icon: icon.src,
   },
   openGraph: {
     title: "Federico Holc - Desarrollador Full Stack · Desarrollo asistido por IA",
     description:
-      "Desarrollador web full stack con casi 2 años de experiencia. Uso IA como parte central del proceso de desarrollo —código, tests, lint, documentación y skills— para ganar productividad sin resignar calidad. React, TypeScript y Node.",
+      "Desarrollador web full stack con casi 2 años de experiencia. Uso IA como parte central de mi proceso de desarrollo, con workflows de automatización y foco en calidad y diseño UX/UI. React, TypeScript y Node.",
     url: "portfolio.fedeholc.ar",
     siteName: "Federico Holc",
     images: [

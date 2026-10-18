@@ -17,10 +17,10 @@ Desarrollador web full stack con casi 2 años de experiencia. Uso la IA como par
 Desarrollo full stack de [empleosmundodigital.com](https://empleosmundodigital.com), la plataforma de oferta y búsqueda de empleo del sector marketing digital, diseño y tecnología. Reconstruí un proyecto que estaba inconcluso y lo llevé a producción, usando IA en el proceso de desarrollo y también dentro del producto, con foco en la calidad técnica.
 
 **Desarrollo asistido por IA**
-- Uso agentes de IA como parte del workflow diario: escritura de código, tests, linting y documentación, con revisión humana en cada paso.
+- Uso agentes de IA como parte del workflow diario —escritura de código, tests, linting y documentación—, conectados a las herramientas del proyecto mediante **MCP (Model Context Protocol)**, con revisión humana en cada paso.
 - Diseñé *skills* de agentes que codifican los patrones del proyecto (migraciones, tests, permisos, hooks), para que la IA reproduzca las convenciones en lugar de improvisar.
 - Definí guardrails obligatorios antes de dar una tarea por cerrada: **type-check (tsgo), oxlint + ESLint, Prettier y una base de ~430 archivos de test** (Vitest, Testing Library, MSW, Supertest, Playwright).
-- Estoy implementando un workflow en el que un agente revisa **Sentry** periódicamente, detecta issues, analiza el contexto y abre un **PR con una propuesta de fix** para revisión.
+- Un agente revisa **Sentry** periódicamente, detecta issues, analiza el contexto y abre un **PR con una propuesta de fix** para revisión.
 
 **Producto e ingeniería**
 - Reconstruí de cero el **frontend (React 19 + TypeScript sobre Astro)** y extendí el **backend (Node.js / Express + TypeScript, Sequelize sobre MySQL)**.

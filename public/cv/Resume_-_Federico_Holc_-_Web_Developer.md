@@ -17,10 +17,10 @@ Full stack web developer with almost 2 years of experience. I use AI as a core p
 Full stack development of [empleosmundodigital.com](https://empleosmundodigital.com), the job platform for the digital marketing, design and technology industry. I rebuilt an unfinished project and took it to production, using AI in the development process and also inside the product, with a focus on technical quality.
 
 **AI-assisted development**
-- I use AI agents as part of my daily workflow: writing code, tests, linting and documentation, with human review at every step.
+- I use AI agents as part of my daily workflow —writing code, tests, linting and documentation—, connected to the project's tools through **MCP (Model Context Protocol)**, with human review at every step.
 - I designed agent skills that encode the project's patterns (migrations, tests, permissions, hooks), so AI reproduces conventions instead of improvising.
 - I defined mandatory guardrails before considering a task done: **type-check (tsgo), oxlint + ESLint, Prettier and a base of ~430 test files** (Vitest, Testing Library, MSW, Supertest, Playwright).
-- I am implementing a workflow where an agent periodically checks **Sentry**, detects issues, analyzes the context and opens a **PR with a proposed fix** for review.
+- An agent periodically checks **Sentry**, detects issues, analyzes the context and opens a **PR with a proposed fix** for review.
 
 **Product and engineering**
 - I rebuilt the frontend from scratch (React 19 + TypeScript on Astro) and extended the backend (Node.js / Express + TypeScript, Sequelize on MySQL).

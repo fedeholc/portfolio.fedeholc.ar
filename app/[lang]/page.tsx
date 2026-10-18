@@ -15,7 +15,6 @@ import linkedinIcon from "@public/brand-linkedin.png";
 import herb from "@public/herb.png";
 //components
 import Fotos from "./components/fotos";
-import Highlights from "./components/highlights";
 //lang
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
@@ -57,13 +56,13 @@ export default async function IndexPage({
         </p>
         <p>
           I am a&nbsp;
-          <strong>full stack web developer</strong> and I use&nbsp;
-          <strong>AI as a core part of my development process</strong>: I write,
-          test, lint and document with agents, and I design <em>skills</em> that
-          reproduce the project&apos;s patterns. That lets me build faster&nbsp;
-          <strong>without giving up quality</strong>. I work with React,
-          TypeScript and Node.&nbsp;
-          <span className="emoji">🚀</span>
+          <strong>full stack web developer</strong> and I care especially about
+          &nbsp;
+          <strong>UX/UI design</strong>: I want what I build to be clear, usable
+          and accessible. I work with React, TypeScript and Node, and I like
+          creating solutions end to end, from design to backend and
+          infrastructure.&nbsp;
+          <span className="emoji">🌈</span>
         </p>
       </>
     ) : (
@@ -75,15 +74,13 @@ export default async function IndexPage({
           <br />
         </p>
         <p>
-          Soy&nbsp;
-          <strong>desarrollador web full stack</strong> y uso la&nbsp;
-          <strong>IA como parte central de mi proceso de desarrollo</strong>:
-          escribo, testeo, linteo y documento con agentes, y diseño{" "}
-          <em>skills</em> que reproducen los patrones del proyecto. Eso me
-          permite construir más rápido&nbsp;
-          <strong>sin resignar calidad</strong>. Trabajo con React, TypeScript y
-          Node.&nbsp;
-          <span className="emoji">🚀</span>
+          Soy <strong>desarrollador web full stack</strong> y me importa
+          especialmente el&nbsp;
+          <strong>diseño UX/UI</strong>: que lo que construyo sea claro, usable
+          y accesible. Trabajo con React, TypeScript y Node, y me gusta crear
+          soluciones de principio a fin, del diseño al backend y la
+          infraestructura.&nbsp;
+          <span className="emoji">🌈</span>
         </p>
       </>
     );
@@ -92,30 +89,40 @@ export default async function IndexPage({
     lang === "en" ? (
       <>
         <p>
-          I also integrate AI into the product when it adds value: content
-          generation, semantic search and document processing.&nbsp;
+          I use&nbsp;
+          <strong>AI as a core part of my development process</strong>, with
+          &nbsp;
+          <strong>automation workflows</strong> that let me go faster without
+          giving up quality: AI proposes and I review. I also integrate AI into
+          the product when it adds value.&nbsp;
           <span className="emoji">🕸️</span>
         </p>
         <p>
-          The key is that speed does not degrade quality: type-check, lint and a
-          base of ~430 tests work as a safety net. I come from teaching and
-          social sciences, which I now bring as the ability to communicate and
-          explain complex ideas.&nbsp;
+          I started programming&nbsp;
+          <strong>writing code by hand</strong>, before AI was a work tool, and
+          that foundation is what today lets me review and sustain the code it
+          produces. I come from teaching and social sciences, which I bring as
+          the ability to communicate and explain complex ideas.&nbsp;
           <span className="emoji">👨‍🏫</span>
         </p>
       </>
     ) : (
       <>
         <p>
-          También integro IA en el producto cuando aporta valor: generación de
-          contenido, búsqueda semántica y procesamiento de documentos.&nbsp;
+          Uso la&nbsp;
+          <strong>IA como parte central de mi proceso de desarrollo</strong>,
+          con <strong>workflows de automatización</strong> que me permiten ir más
+          rápido sin resignar calidad: la IA propone y yo reviso. También
+          integro IA en el producto cuando aporta valor.&nbsp;
           <span className="emoji">🕸️</span>
         </p>
         <p>
-          La clave es que la velocidad no degrade la calidad: type-check, lint y
-          una base de ~430 tests funcionan como red de seguridad. Vengo de la
-          docencia y las ciencias sociales, que hoy aporto como capacidad de
-          comunicar y explicar temas complejos.&nbsp;
+          Empecé a programar&nbsp;
+          <strong>escribiendo código a mano</strong>, antes de que la IA fuera
+          una herramienta de trabajo, y esa base de fundamentos es la que hoy me
+          permite revisar y sostener el código que produce. Vengo de la docencia
+          y las ciencias sociales, que aporto como capacidad de comunicar y
+          explicar temas complejos.&nbsp;
           <span className="emoji">👨‍🏫</span>
         </p>
       </>
@@ -193,8 +200,6 @@ export default async function IndexPage({
             <Fotos></Fotos>
           </div>
         </div>
-
-        <Highlights lang={lang} />
 
         <div>{dictionary.intro.mas[lang]}</div>
         <div className="buttons-grid">

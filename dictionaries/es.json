@@ -195,8 +195,8 @@
       "en": "AI-assisted development"
     },
     "nExpCal1": {
-      "es": "Uso agentes de IA como parte del workflow diario: escritura de código, tests, linting y documentación, con revisión humana en cada paso.",
-      "en": "I use AI agents as part of my daily workflow: writing code, tests, linting and documentation, with human review at every step."
+      "es": "Uso agentes de IA como parte del workflow diario —escritura de código, tests, linting y documentación—, conectados a las herramientas del proyecto mediante MCP (Model Context Protocol), con revisión humana en cada paso.",
+      "en": "I use AI agents as part of my daily workflow —writing code, tests, linting and documentation—, connected to the project's tools through MCP (Model Context Protocol), with human review at every step."
     },
     "nExpCal2": {
       "es": "Diseñé skills de agentes que codifican los patrones del proyecto (migraciones, tests, permisos, hooks), para que la IA reproduzca las convenciones en lugar de improvisar.",
@@ -207,8 +207,8 @@
       "en": "I defined mandatory guardrails before considering a task done: type-check (tsgo), oxlint + ESLint, Prettier and a base of ~430 test files (Vitest, Testing Library, MSW, Supertest, Playwright)."
     },
     "nExpCal4": {
-      "es": "Estoy implementando un workflow en el que un agente revisa Sentry periódicamente, detecta issues, analiza el contexto y abre un PR con una propuesta de fix para revisión.",
-      "en": "I am implementing a workflow where an agent periodically checks Sentry, detects issues, analyzes the context and opens a PR with a proposed fix for review."
+      "es": "Un agente revisa Sentry periódicamente, detecta issues, analiza el contexto y abre un PR con una propuesta de fix para revisión.",
+      "en": "An agent periodically checks Sentry, detects issues, analyzes the context and opens a PR with a proposed fix for review."
     },
     "nExpNCa": {
       "es": "Desarrollador Web · No Country, práctica de simulación laboral · Oct. – Nov. 2024",
@@ -700,8 +700,8 @@
       "en": "AI-assisted development"
     },
     "empleo19": {
-      "es": "Uso agentes de IA como parte del workflow diario: escritura de código, tests, linting y documentación, con revisión humana en cada paso.",
-      "en": "I use AI agents as part of my daily workflow: writing code, tests, linting and documentation, with human review at every step."
+      "es": "Uso agentes de IA como parte del workflow diario —escritura de código, tests, linting y documentación—, conectados a las herramientas del proyecto mediante MCP (Model Context Protocol), con revisión humana en cada paso.",
+      "en": "I use AI agents as part of my daily workflow —writing code, tests, linting and documentation—, connected to the project's tools through MCP (Model Context Protocol), with human review at every step."
     },
     "empleo20": {
       "es": "Diseñé skills de agentes que codifican los patrones del proyecto (migraciones, tests, permisos, hooks), para que la IA reproduzca las convenciones en lugar de improvisar.",
@@ -712,8 +712,8 @@
       "en": "I defined mandatory guardrails before considering a task done: type-check (tsgo), oxlint + ESLint, Prettier and a base of ~430 test files (Vitest, Testing Library, MSW, Supertest, Playwright)."
     },
     "empleo24": {
-      "es": "Estoy implementando un workflow en el que un agente revisa Sentry periódicamente, detecta issues, analiza el contexto y abre un PR con una propuesta de fix para revisión.",
-      "en": "I am implementing a workflow where an agent periodically checks Sentry, detects issues, analyzes the context and opens a PR with a proposed fix for review."
+      "es": "Un agente revisa Sentry periódicamente, detecta issues, analiza el contexto y abre un PR con una propuesta de fix para revisión.",
+      "en": "An agent periodically checks Sentry, detects issues, analyzes the context and opens a PR with a proposed fix for review."
     },
     "empleo22": {
       "es": "Visitar el sitio",
