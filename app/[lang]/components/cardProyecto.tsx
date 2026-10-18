@@ -31,6 +31,22 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
       />
       <CardProyecto
         lang={lang}
+        titulo="🔐️ JWT Learning Kit"
+        buttonLink="/proyectos/#proyectoJWTLK"
+        subtitulo={dictionary.cv.proyectos16[lang]}
+        descripcion={dictionary.cv.proyectos17[lang]}
+        stack={[
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Node / Express",
+          "SQLite",
+          "Vitest / Playwright",
+          "JSDoc",
+        ]}
+      />
+      <CardProyecto
+        lang={lang}
         titulo="Full size images for IG 📷"
         buttonLink="/proyectos/#proyectoInsta"
         subtitulo="+2000 usuarios"
@@ -56,22 +72,6 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
       />
       <CardProyecto
         lang={lang}
-        titulo="🔐️ JWT Learning Kit"
-        buttonLink="/proyectos/#proyectoJWTLK"
-        subtitulo={dictionary.cv.proyectos16[lang]}
-        descripcion={dictionary.cv.proyectos17[lang]}
-        stack={[
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Node / Express",
-          "SQLite",
-          "Vitest / Playwright",
-          "JSDoc",
-        ]}
-      />
-      <CardProyecto
-        lang={lang}
         titulo="🩺️ Health Pro"
         buttonLink="/proyectos/#proyectoHealthPro"
         subtitulo={dictionary.cv.proyectos14[lang]}
@@ -89,9 +89,7 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
       <div>
         <h3>{dictionary.proyectos.otros[lang]}</h3>
         <div className={proyectos.columns1}>
-          <p className={proyectos.smaller_font}>
-            {dictionary.cv.nForm4[lang]}
-          </p>
+          <p className={proyectos.smaller_font}>{dictionary.cv.nForm4[lang]}</p>
           <div className={proyectos.link_icon}>
             <Link
               className={proyectos.underline}

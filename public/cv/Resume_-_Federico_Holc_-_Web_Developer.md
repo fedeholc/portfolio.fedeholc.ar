@@ -69,7 +69,7 @@ Full stack development of [empleosmundodigital.com](https://empleosmundodigital.
 
 Projects built by hand, before AI wrote code. They are my foundation: understanding what the code does (and does not do) is what lets me review and sustain what AI produces today.
 
-- **Full size images for IG** — Chrome extension to view Instagram images at full resolution. **+2000 users** on the Chrome Web Store. Stack: JavaScript, HTML, CSS, WebExtension API.
+- **Full size images for IG** — Chrome extension to view Instagram images at full resolution. **+6000 users** on the Chrome Web Store. Stack: JavaScript, HTML, CSS, WebExtension API.
 - **fotoYOP & foto-V** — Image transformation and collages, and conversion of images into videos with effects. Installable, offline-capable PWA. Stack: JavaScript / TypeScript, React / Next, Canvas API, PWA. [fotoyop.fedeholc.ar](http://fotoyop.fedeholc.ar) · [foto-v.fedeholc.ar](http://foto-v.fedeholc.ar)
 - **JWT Learning Kit** — Guide and code to learn how to build a JSON Web Token authentication system from scratch, with explanations of processes and concepts. Stack: Node, Express, SQLite, Vitest, Playwright, JSDoc. [jwtlk.fedeholc.ar](http://jwtlk.fedeholc.ar)
 

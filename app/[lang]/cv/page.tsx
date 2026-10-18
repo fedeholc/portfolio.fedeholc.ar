@@ -43,7 +43,12 @@ export default async function CV({
     },
     {
       titulo: cv.nExpIA[lang],
-      items: [cv.nExpIA1[lang], cv.nExpIA2[lang], cv.nExpIA3[lang], cv.nExpIA4[lang]],
+      items: [
+        cv.nExpIA1[lang],
+        cv.nExpIA2[lang],
+        cv.nExpIA3[lang],
+        cv.nExpIA4[lang],
+      ],
     },
   ];
 
@@ -58,9 +63,9 @@ export default async function CV({
 
   const propios: { titulo: string; texto: string; href: string }[] = [
     {
-      titulo: "Full size images for IG",
-      texto: cv.nProyIG[lang],
-      href: `/${lang}/proyectos#proyectoInsta`,
+      titulo: "JWT Learning Kit",
+      texto: cv.nProyJWT[lang],
+      href: `/${lang}/proyectos#proyectoJWTLK`,
     },
     {
       titulo: "fotoYOP & foto-V",
@@ -68,9 +73,9 @@ export default async function CV({
       href: `/${lang}/proyectos#proyectoFotoyop`,
     },
     {
-      titulo: "JWT Learning Kit",
-      texto: cv.nProyJWT[lang],
-      href: `/${lang}/proyectos#proyectoJWTLK`,
+      titulo: "Full size images for IG",
+      texto: cv.nProyIG[lang],
+      href: `/${lang}/proyectos#proyectoInsta`,
     },
   ];
 
