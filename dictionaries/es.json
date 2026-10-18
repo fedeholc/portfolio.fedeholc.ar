@@ -238,8 +238,8 @@
       "en": "AI and LLMs — AI-assisted development (agents, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings and semantic search · structured output · prompting · image and document processing"
     },
     "nSkillsFront": {
-      "es": "Frontend — React 19 · TypeScript · Astro · Next.js · MUI / Mantine · HTML / CSS / Responsive design",
-      "en": "Frontend — React 19 · TypeScript · Astro · Next.js · MUI / Mantine · HTML / CSS / Responsive design"
+      "es": "Frontend — TypeScript / Javascript · React · Astro · Next.js · HTML / CSS / Responsive design",
+      "en": "Frontend — TypeScript / Javascript · React 19 · Astro · Next.js · HTML / CSS / Responsive design"
     },
     "nSkillsBack": {
       "es": "Backend — Node.js · Express · Sequelize / MySQL · MongoDB · Socket.IO · BullMQ / Redis · Zod",

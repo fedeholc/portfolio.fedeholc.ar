@@ -55,7 +55,7 @@ Desarrollo full stack de [empleosmundodigital.com](https://empleosmundodigital.c
 
 **IA y LLMs** — desarrollo asistido por IA (agentes, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings y búsqueda semántica · salida estructurada · prompting · procesamiento de imágenes y documentos
 
-**Frontend** — React 19 · TypeScript · Astro · Next.js · MUI / Mantine · HTML / CSS / Responsive design
+**Frontend** — TypeScript / JavaScript · React · Astro · Next.js · HTML / CSS / Responsive design
 
 **Backend** — Node.js · Express · Sequelize / MySQL · MongoDB · Socket.IO · BullMQ / Redis · Zod
 

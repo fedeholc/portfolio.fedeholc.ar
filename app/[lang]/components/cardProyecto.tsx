@@ -49,7 +49,7 @@ export async function CardsProyectos({ lang }: { lang: Locale }) {
         lang={lang}
         titulo="Full size images for IG 📷"
         buttonLink="/proyectos/#proyectoInsta"
-        subtitulo="+2000 usuarios"
+        subtitulo="+6000 usuarios"
         descripcion={dictionary.cv.proyectos6[lang]}
         stack={["HTML", "CSS", "JavaScript", "WebExtension API"]}
       />
