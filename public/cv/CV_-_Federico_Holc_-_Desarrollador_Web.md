@@ -1,6 +1,6 @@
 # Federico Holc
 
-**Desarrollador Web Full Stack · IA aplicada a producto**
+**Desarrollador Web Full Stack · Desarrollo asistido por IA**
 
 [portfolio.fedeholc.ar](https://portfolio.fedeholc.ar/) · [github.com/fedeholc](https://github.com/fedeholc) · [linkedin.com/in/federicoholc](https://linkedin.com/in/federicoholc)
 
@@ -8,19 +8,19 @@ federicoholc@gmail.com · +54-11-2394-8988 · Buenos Aires, Argentina
 
 ## Perfil
 
-Desarrollador web full stack con casi 2 años de experiencia, enfocado en construir productos de punta a punta con IA integrada. Trabajo con React, TypeScript y Node, e implemento features de IA en producción: LLMs, búsqueda semántica con embeddings, OCR y streaming. Me interesa tanto la IA dentro del software como el diseño de workflows de desarrollo asistidos por IA que aceleran sin sacrificar calidad técnica ni experiencia de usuario. Vengo de la docencia y las ciencias sociales, lo que aporto como capacidad de comunicar y explicar temas complejos.
+Desarrollador web full stack con casi 2 años de experiencia. Uso la IA como parte central de mi proceso de desarrollo —escritura de código, testing, linting, documentación y creación de skills que reproducen los patrones del proyecto— para ganar productividad sin resignar calidad. También integro IA en el producto cuando aporta valor: generación de contenido, búsqueda semántica con embeddings y procesamiento de documentos. Trabajo con React, TypeScript y Node. Vengo de la docencia y las ciencias sociales, lo que aporto como capacidad de comunicar y explicar temas complejos.
 
 ## Experiencia
 
 ### Desarrollador Web Full Stack · Mindcircus · Feb. 2025 – a la actualidad
 
-Desarrollo full stack de [empleosmundodigital.com](https://empleosmundodigital.com), la plataforma de oferta y búsqueda de empleo del sector marketing digital, diseño y tecnología. Reconstruí un proyecto que estaba inconcluso y lo llevé a producción, con foco en integrar IA generativa y sostener la calidad técnica.
+Desarrollo full stack de [empleosmundodigital.com](https://empleosmundodigital.com), la plataforma de oferta y búsqueda de empleo del sector marketing digital, diseño y tecnología. Reconstruí un proyecto que estaba inconcluso y lo llevé a producción, usando IA en el proceso de desarrollo y también dentro del producto, con foco en la calidad técnica.
 
-**IA en el producto**
-- Implementé un **generador de ofertas laborales con IA** (pipeline de dos pasadas con Gemini / Vertex AI) y un **parser de CVs a JSON estructurado**, hoy en producción.
-- Construí **búsqueda semántica con embeddings** y similitud coseno para normalizar posiciones y mejorar el matching entre ofertas y talento.
-- Diseñé la capa de IA **multi-proveedor y conmutable** (Gemini, OpenAI SDK apuntado a DeepSeek), eligiendo el modelo según el caso de uso para optimizar costo y latencia.
-- Integré **salida estructurada** de los modelos, **streaming de respuestas vía SSE** end-to-end y **OCR con Google Cloud Vision** para documentos e imágenes.
+**Desarrollo asistido por IA**
+- Uso agentes de IA como parte del workflow diario: escritura de código, tests, linting y documentación, con revisión humana en cada paso.
+- Diseñé *skills* de agentes que codifican los patrones del proyecto (migraciones, tests, permisos, hooks), para que la IA reproduzca las convenciones en lugar de improvisar.
+- Definí guardrails obligatorios antes de dar una tarea por cerrada: **type-check (tsgo), oxlint + ESLint, Prettier y una base de ~430 archivos de test** (Vitest, Testing Library, MSW, Supertest, Playwright).
+- Estoy implementando un workflow en el que un agente revisa **Sentry** periódicamente, detecta issues, analiza el contexto y abre un **PR con una propuesta de fix** para revisión.
 
 **Producto e ingeniería**
 - Reconstruí de cero el **frontend (React 19 + TypeScript sobre Astro)** y extendí el **backend (Node.js / Express + TypeScript, Sequelize sobre MySQL)**.
@@ -33,10 +33,11 @@ Desarrollo full stack de [empleosmundodigital.com](https://empleosmundodigital.c
 - Configuré **backups automáticos** de MySQL y assets a Google Cloud Storage, y observabilidad con **Sentry** (front y back) y logging estructurado con pino.
 - Corrí **pruebas de carga y estrés con k6** (hasta 500 usuarios concurrentes) para detectar el punto de quiebre y documentar resultados: con 100 usuarios, **p95 ≈ 187 ms y 0 % de errores**.
 
-**Calidad y desarrollo asistido por IA**
-- Sostengo una base de **~430 archivos de test** (Vitest, React Testing Library, MSW, Supertest, Playwright) con tres estrategias de ejecución (MySQL compartida, paralela multiworker y SQLite en memoria).
-- Mantengo una cadena de calidad estricta: **type-check (tsgo), oxlint + ESLint, Prettier y validación con Zod**.
-- **Diseñé workflows de desarrollo asistido por IA**: *skills* de agentes que codifican patrones del proyecto (migraciones, tests, permisos, hooks), un `claude.md` con guardrails obligatorios (type-check + lint antes de cerrar una tarea) y documentación técnica pensada como contexto para agentes.
+**IA en el producto**
+- Implementé un **generador de ofertas laborales con IA** (pipeline de dos pasadas con Gemini / Vertex AI) y un **parser de CVs a JSON estructurado**, hoy en producción.
+- Construí **búsqueda semántica con embeddings** y similitud coseno para normalizar posiciones y mejorar el matching entre ofertas y talento.
+- Diseñé la capa de IA **multi-proveedor y conmutable** (Gemini, OpenAI SDK apuntado a DeepSeek), eligiendo el modelo según el caso de uso para optimizar costo y latencia.
+- Integré **salida estructurada** de los modelos y **OCR con Google Cloud Vision** para procesar documentos e imágenes.
 
 ### Desarrollador Web · No Country, práctica de simulación laboral · Oct. – Nov. 2024
 
@@ -48,7 +49,7 @@ Desarrollo full stack de [empleosmundodigital.com](https://empleosmundodigital.c
 
 ## Skills
 
-**IA y LLMs** — Gemini / Vertex AI · OpenAI / DeepSeek · embeddings y búsqueda semántica · salida estructurada · prompting · streaming (SSE) · OCR · desarrollo asistido por IA (agentes, skills, MCP)
+**IA y LLMs** — desarrollo asistido por IA (agentes, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings y búsqueda semántica · salida estructurada · prompting · OCR
 
 **Frontend** — React 19 · TypeScript · Astro · Next.js · MUI / Mantine · HTML / CSS / Responsive design
 

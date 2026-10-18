@@ -73,8 +73,10 @@ function main() {
     process.exit(1);
   }
 
+  // README.md documenta esta carpeta; no es un CV, así que no se convierte.
   const markdownFiles = readdirSync(CV_DIR)
     .filter((file) => file.toLowerCase().endsWith(".md"))
+    .filter((file) => file.toLowerCase() !== "readme.md")
     .sort();
 
   if (markdownFiles.length === 0) {

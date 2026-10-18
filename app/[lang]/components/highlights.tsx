@@ -4,38 +4,38 @@ import { Locale } from "@app/i18n-config";
 const DATA: Record<string, { t: string; d: string }[]> = {
   es: [
     {
-      t: "IA en producción",
-      d: "LLMs (Gemini / Vertex, OpenAI / DeepSeek), búsqueda semántica con embeddings, OCR y streaming.",
+      t: "Desarrollo asistido por IA",
+      d: "Agentes para escribir, testear, lintear y documentar; skills que codifican los patrones del proyecto.",
+    },
+    {
+      t: "Calidad verificable",
+      d: "Type-check, lint y ~430 tests como guardrails obligatorios antes de cerrar cada tarea.",
+    },
+    {
+      t: "Automatización con IA",
+      d: "Estoy implementando un workflow que revisa Sentry, detecta issues y abre PRs con propuestas de fix.",
     },
     {
       t: "Full stack end-to-end",
       d: "React, TypeScript y Node, con Docker, CI/CD y mi propia infraestructura en un VPS.",
     },
-    {
-      t: "+2000 usuarios",
-      d: "Extensión publicada en la Chrome Web Store y producto propio del lado del cliente.",
-    },
-    {
-      t: "Calidad",
-      d: "~430 archivos de test, type-check y lint como guardrails del desarrollo asistido por IA.",
-    },
   ],
   en: [
     {
-      t: "AI in production",
-      d: "LLMs (Gemini / Vertex, OpenAI / DeepSeek), semantic search with embeddings, OCR and streaming.",
+      t: "AI-assisted development",
+      d: "Agents to write, test, lint and document; skills that encode the project's patterns.",
+    },
+    {
+      t: "Verifiable quality",
+      d: "Type-check, lint and ~430 tests as mandatory guardrails before closing each task.",
+    },
+    {
+      t: "AI automation",
+      d: "I am building a workflow that reviews Sentry, detects issues and opens PRs with proposed fixes.",
     },
     {
       t: "Full stack end-to-end",
       d: "React, TypeScript and Node, with Docker, CI/CD and my own infrastructure on a VPS.",
-    },
-    {
-      t: "+2000 users",
-      d: "Extension published on the Chrome Web Store and product of my own, client side.",
-    },
-    {
-      t: "Quality",
-      d: "~430 test files, type-check and lint as guardrails for AI-assisted development.",
     },
   ],
 };

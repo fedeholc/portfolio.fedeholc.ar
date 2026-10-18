@@ -20,8 +20,13 @@ export default async function CV({
 
   const experienciaActualBloques: { titulo: string; items: string[] }[] = [
     {
-      titulo: cv.nExpIA[lang],
-      items: [cv.nExpIA1[lang], cv.nExpIA2[lang], cv.nExpIA3[lang], cv.nExpIA4[lang]],
+      titulo: cv.nExpCal[lang],
+      items: [
+        cv.nExpCal1[lang],
+        cv.nExpCal2[lang],
+        cv.nExpCal3[lang],
+        cv.nExpCal4[lang],
+      ],
     },
     {
       titulo: cv.nExpProd[lang],
@@ -37,8 +42,8 @@ export default async function CV({
       ],
     },
     {
-      titulo: cv.nExpCal[lang],
-      items: [cv.nExpCal1[lang], cv.nExpCal2[lang], cv.nExpCal3[lang]],
+      titulo: cv.nExpIA[lang],
+      items: [cv.nExpIA1[lang], cv.nExpIA2[lang], cv.nExpIA3[lang], cv.nExpIA4[lang]],
     },
   ];
 

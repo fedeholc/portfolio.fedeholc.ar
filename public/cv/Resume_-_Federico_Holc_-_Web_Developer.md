@@ -1,6 +1,6 @@
 # Federico Holc
 
-**Full Stack Web Developer · AI applied to product**
+**Full Stack Web Developer · AI-assisted development**
 
 [portfolio.fedeholc.ar](https://portfolio.fedeholc.ar/) · [github.com/fedeholc](https://github.com/fedeholc) · [linkedin.com/in/federicoholc](https://linkedin.com/in/federicoholc)
 
@@ -8,19 +8,19 @@ federicoholc@gmail.com · +54-11-2394-8988 · Buenos Aires, Argentina
 
 ## Profile
 
-Full stack web developer with almost 2 years of experience, focused on building end-to-end products with integrated AI. I work with React, TypeScript and Node, and I ship AI features to production: LLMs, semantic search with embeddings, OCR and streaming. I am interested both in AI inside the software and in designing AI-assisted development workflows that speed things up without sacrificing technical quality or user experience. I come from teaching and social sciences, which I bring as the ability to communicate and explain complex ideas.
+Full stack web developer with almost 2 years of experience. I use AI as a core part of my development process —writing code, testing, linting, documentation and creating skills that reproduce the project's patterns— to gain productivity without giving up quality. I also integrate AI into the product when it adds value: content generation, semantic search with embeddings and document processing. I work with React, TypeScript and Node. I come from teaching and social sciences, which I bring as the ability to communicate and explain complex ideas.
 
 ## Experience
 
 ### Full Stack Web Developer · Mindcircus · Feb. 2025 – present
 
-Full stack development of [empleosmundodigital.com](https://empleosmundodigital.com), the job platform for the digital marketing, design and technology industry. I rebuilt an unfinished project and took it to production, focusing on integrating generative AI and keeping technical quality.
+Full stack development of [empleosmundodigital.com](https://empleosmundodigital.com), the job platform for the digital marketing, design and technology industry. I rebuilt an unfinished project and took it to production, using AI in the development process and also inside the product, with a focus on technical quality.
 
-**AI in the product**
-- I implemented an AI job-offer generator (two-pass pipeline with Gemini / Vertex AI) and a resume-to-structured-JSON parser, both in production today.
-- I built semantic search with embeddings and cosine similarity to normalize positions and improve offer–talent matching.
-- I designed the multi-provider, swappable AI layer (Gemini, OpenAI SDK pointed at DeepSeek), choosing the model per use case to optimize cost and latency.
-- I integrated structured model output, end-to-end SSE response streaming and OCR with Google Cloud Vision for documents and images.
+**AI-assisted development**
+- I use AI agents as part of my daily workflow: writing code, tests, linting and documentation, with human review at every step.
+- I designed agent skills that encode the project's patterns (migrations, tests, permissions, hooks), so AI reproduces conventions instead of improvising.
+- I defined mandatory guardrails before considering a task done: **type-check (tsgo), oxlint + ESLint, Prettier and a base of ~430 test files** (Vitest, Testing Library, MSW, Supertest, Playwright).
+- I am implementing a workflow where an agent periodically checks **Sentry**, detects issues, analyzes the context and opens a **PR with a proposed fix** for review.
 
 **Product and engineering**
 - I rebuilt the frontend from scratch (React 19 + TypeScript on Astro) and extended the backend (Node.js / Express + TypeScript, Sequelize on MySQL).
@@ -33,10 +33,11 @@ Full stack development of [empleosmundodigital.com](https://empleosmundodigital.
 - I set up automatic backups of MySQL and assets to Google Cloud Storage, plus observability with Sentry (front and back) and structured logging with pino.
 - I ran load and stress tests with k6 (up to 500 concurrent users) to find the breaking point and document results: with 100 users, p95 ≈ 187 ms and 0% errors.
 
-**Quality and AI-assisted development**
-- I maintain a base of ~430 test files (Vitest, React Testing Library, MSW, Supertest, Playwright) with three execution strategies (shared MySQL, parallel multiworker and in-memory SQLite).
-- I maintain a strict quality chain: type-check (tsgo), oxlint + ESLint, Prettier and Zod validation.
-- I designed AI-assisted development workflows: agent skills that encode project patterns (migrations, tests, permissions, hooks), a claude.md with mandatory guardrails (type-check + lint before closing a task) and technical docs intended as context for agents.
+**AI in the product**
+- I implemented an AI job-offer generator (two-pass pipeline with Gemini / Vertex AI) and a resume-to-structured-JSON parser, both in production today.
+- I built semantic search with embeddings and cosine similarity to normalize positions and improve offer–talent matching.
+- I designed the multi-provider, swappable AI layer (Gemini, OpenAI SDK pointed at DeepSeek), choosing the model per use case to optimize cost and latency.
+- I integrated structured model output and OCR with Google Cloud Vision to process documents and images.
 
 ### Web Developer · No Country, work simulation internship · Oct. – Nov. 2024
 
@@ -48,7 +49,7 @@ Full stack development of [empleosmundodigital.com](https://empleosmundodigital.
 
 ## Skills
 
-**AI and LLMs** — Gemini / Vertex AI · OpenAI / DeepSeek · embeddings and semantic search · structured output · prompting · streaming (SSE) · OCR · AI-assisted development (agents, skills, MCP)
+**AI and LLMs** — AI-assisted development (agents, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings and semantic search · structured output · prompting · OCR
 
 **Frontend** — React 19 · TypeScript · Astro · Next.js · MUI / Mantine · HTML / CSS / Responsive design
 

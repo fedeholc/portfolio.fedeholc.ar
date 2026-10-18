@@ -24,7 +24,7 @@ editarse a mano.
 ## Qué hace `npm run cv:build`
 
 El script [`scripts/build-cv.mjs`](../../scripts/build-cv.mjs) recorre todos los
-`.md` de esta carpeta y, para cada uno:
+`.md` de esta carpeta (excepto este `README.md`) y, para cada uno:
 
 1. **Markdown → DOCX** con [pandoc](https://pandoc.org/):
 

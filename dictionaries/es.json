@@ -131,8 +131,8 @@
     },
     "nPerfil1": { "es": "Perfil", "en": "Profile" },
     "nPerfil2": {
-      "es": "Desarrollador web full stack con casi 2 años de experiencia, enfocado en construir productos de punta a punta con IA integrada. Trabajo con React, TypeScript y Node, e implemento features de IA en producción: LLMs, búsqueda semántica con embeddings, OCR y streaming. Me interesa tanto la IA dentro del software como el diseño de workflows de desarrollo asistidos por IA que aceleran sin sacrificar calidad técnica ni experiencia de usuario. Vengo de la docencia y las ciencias sociales, lo que aporto como capacidad de comunicar y explicar temas complejos.",
-      "en": "Full stack web developer with almost 2 years of experience, focused on building end-to-end products with integrated AI. I work with React, TypeScript and Node, and I ship AI features to production: LLMs, semantic search with embeddings, OCR and streaming. I am interested both in AI inside the software and in designing AI-assisted development workflows that speed things up without sacrificing technical quality or user experience. I come from teaching and social sciences, which I bring as the ability to communicate and explain complex ideas."
+      "es": "Desarrollador web full stack con casi 2 años de experiencia. Uso la IA como parte central de mi proceso de desarrollo —escritura de código, testing, linting, documentación y creación de skills que reproducen los patrones del proyecto— para ganar productividad sin resignar calidad. También integro IA en el producto cuando aporta valor: generación de contenido, búsqueda semántica con embeddings y procesamiento de documentos. Trabajo con React, TypeScript y Node. Vengo de la docencia y las ciencias sociales, lo que aporto como capacidad de comunicar y explicar temas complejos.",
+      "en": "Full stack web developer with almost 2 years of experience. I use AI as a core part of my development process —writing code, testing, linting, documentation and creating skills that reproduce the project's patterns— to gain productivity without giving up quality. I also integrate AI into the product when it adds value: content generation, semantic search with embeddings and document processing. I work with React, TypeScript and Node. I come from teaching and social sciences, which I bring as the ability to communicate and explain complex ideas."
     },
     "nExp1": { "es": "Experiencia", "en": "Experience" },
     "nExpActualA": {
@@ -140,8 +140,8 @@
       "en": "Full Stack Web Developer · Mindcircus · Feb. 2025 – present"
     },
     "nExpActualB": {
-      "es": "Desarrollo full stack de empleosmundodigital.com, la plataforma de oferta y búsqueda de empleo del sector marketing digital, diseño y tecnología. Reconstruí un proyecto que estaba inconcluso y lo llevé a producción, con foco en integrar IA generativa y sostener la calidad técnica.",
-      "en": "Full stack development of empleosmundodigital.com, the job platform for the digital marketing, design and technology industry. I rebuilt an unfinished project and took it to production, focusing on integrating generative AI and keeping technical quality."
+      "es": "Desarrollo full stack de empleosmundodigital.com, la plataforma de oferta y búsqueda de empleo del sector marketing digital, diseño y tecnología. Reconstruí un proyecto que estaba inconcluso y lo llevé a producción, usando IA en el proceso de desarrollo y también dentro del producto, con foco en la calidad técnica.",
+      "en": "Full stack development of empleosmundodigital.com, the job platform for the digital marketing, design and technology industry. I rebuilt an unfinished project and took it to production, using AI in the development process and also inside the product, with a focus on technical quality."
     },
     "nExpIA": { "es": "IA en el producto", "en": "AI in the product" },
     "nExpIA1": {
@@ -157,8 +157,8 @@
       "en": "I designed the multi-provider, swappable AI layer (Gemini, OpenAI SDK pointed at DeepSeek), choosing the model per use case."
     },
     "nExpIA4": {
-      "es": "Integré salida estructurada de los modelos, streaming de respuestas vía SSE y OCR con Google Cloud Vision para documentos e imágenes.",
-      "en": "I integrated structured model output, SSE response streaming and OCR with Google Cloud Vision for documents and images."
+      "es": "Integré salida estructurada de los modelos y OCR con Google Cloud Vision para procesar documentos e imágenes.",
+      "en": "I integrated structured model output and OCR with Google Cloud Vision to process documents and images."
     },
     "nExpProd": { "es": "Producto e ingeniería", "en": "Product and engineering" },
     "nExpProd1": {
@@ -191,20 +191,24 @@
       "en": "I ran load and stress tests with k6 (up to 500 concurrent users): with 100 users, p95 ≈ 187 ms and 0% errors."
     },
     "nExpCal": {
-      "es": "Calidad y desarrollo asistido por IA",
-      "en": "Quality and AI-assisted development"
+      "es": "Desarrollo asistido por IA",
+      "en": "AI-assisted development"
     },
     "nExpCal1": {
-      "es": "Sostengo una base de ~430 archivos de test (Vitest, React Testing Library, MSW, Supertest, Playwright) con tres estrategias de ejecución.",
-      "en": "I maintain a base of ~430 test files (Vitest, React Testing Library, MSW, Supertest, Playwright) with three execution strategies."
+      "es": "Uso agentes de IA como parte del workflow diario: escritura de código, tests, linting y documentación, con revisión humana en cada paso.",
+      "en": "I use AI agents as part of my daily workflow: writing code, tests, linting and documentation, with human review at every step."
     },
     "nExpCal2": {
-      "es": "Mantengo una cadena de calidad estricta: type-check (tsgo), oxlint + ESLint, Prettier y validación con Zod.",
-      "en": "I maintain a strict quality chain: type-check (tsgo), oxlint + ESLint, Prettier and Zod validation."
+      "es": "Diseñé skills de agentes que codifican los patrones del proyecto (migraciones, tests, permisos, hooks), para que la IA reproduzca las convenciones en lugar de improvisar.",
+      "en": "I designed agent skills that encode the project's patterns (migrations, tests, permissions, hooks), so AI reproduces conventions instead of improvising."
     },
     "nExpCal3": {
-      "es": "Diseñé workflows de desarrollo asistido por IA: skills de agentes que codifican patrones del proyecto, un claude.md con guardrails obligatorios (type-check + lint antes de cerrar una tarea) y documentación pensada como contexto para agentes.",
-      "en": "I designed AI-assisted development workflows: agent skills that encode project patterns, a claude.md with mandatory guardrails (type-check + lint before closing a task) and docs intended as context for agents."
+      "es": "Definí guardrails obligatorios antes de dar una tarea por cerrada: type-check (tsgo), oxlint + ESLint, Prettier y una base de ~430 archivos de test (Vitest, Testing Library, MSW, Supertest, Playwright).",
+      "en": "I defined mandatory guardrails before considering a task done: type-check (tsgo), oxlint + ESLint, Prettier and a base of ~430 test files (Vitest, Testing Library, MSW, Supertest, Playwright)."
+    },
+    "nExpCal4": {
+      "es": "Estoy implementando un workflow en el que un agente revisa Sentry periódicamente, detecta issues, analiza el contexto y abre un PR con una propuesta de fix para revisión.",
+      "en": "I am implementing a workflow where an agent periodically checks Sentry, detects issues, analyzes the context and opens a PR with a proposed fix for review."
     },
     "nExpNCa": {
       "es": "Desarrollador Web · No Country, práctica de simulación laboral · Oct. – Nov. 2024",
@@ -224,8 +228,8 @@
     },
     "nSkills1": { "es": "Skills", "en": "Skills" },
     "nSkillsIA": {
-      "es": "IA y LLMs — Gemini / Vertex AI · OpenAI / DeepSeek · embeddings y búsqueda semántica · salida estructurada · prompting · streaming (SSE) · OCR · desarrollo asistido por IA (agentes, skills, MCP)",
-      "en": "AI and LLMs — Gemini / Vertex AI · OpenAI / DeepSeek · embeddings and semantic search · structured output · prompting · streaming (SSE) · OCR · AI-assisted development (agents, skills, MCP)"
+      "es": "IA y LLMs — desarrollo asistido por IA (agentes, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings y búsqueda semántica · salida estructurada · prompting · OCR",
+      "en": "AI and LLMs — AI-assisted development (agents, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings and semantic search · structured output · prompting · OCR"
     },
     "nSkillsFront": {
       "es": "Frontend — React 19 · TypeScript · Astro · Next.js · MUI / Mantine · HTML / CSS / Responsive design",
@@ -632,8 +636,8 @@
       "en": "Job platform for the digital marketing, design and technology industry"
     },
     "empleo03": {
-      "es": "Trabajo actual en Mindcircus. Reconstruí un proyecto que estaba inconcluso y lo llevé a producción, con foco en integrar IA generativa y sostener la calidad técnica. Desarrollo full stack de la plataforma para empresas y profesionales del sector, que hoy reúne a más de 1.400 empresas y 125.000 talentos.",
-      "en": "My current job at Mindcircus. I rebuilt an unfinished project and took it to production, focusing on integrating generative AI and keeping technical quality. Full stack development of the platform for companies and professionals in the industry, which today brings together more than 1,400 companies and 125,000 talents."
+      "es": "Trabajo actual en Mindcircus. Reconstruí un proyecto que estaba inconcluso y lo llevé a producción, usando IA en el proceso de desarrollo y también dentro del producto. Desarrollo full stack de la plataforma para empresas y profesionales del sector, que hoy reúne a más de 1.400 empresas y 125.000 talentos.",
+      "en": "My current job at Mindcircus. I rebuilt an unfinished project and took it to production, using AI in the development process and also inside the product. Full stack development of the platform for companies and professionals in the industry, which today brings together more than 1,400 companies and 125,000 talents."
     },
     "empleo04": {
       "es": "IA en el producto",
@@ -652,8 +656,8 @@
       "en": "I designed the multi-provider, swappable AI layer (Gemini, OpenAI SDK pointed at DeepSeek), choosing the model per use case to optimize cost and latency."
     },
     "empleo08": {
-      "es": "Integré salida estructurada de los modelos, streaming de respuestas vía SSE end-to-end y OCR con Google Cloud Vision para documentos e imágenes.",
-      "en": "I integrated structured model output, end-to-end SSE response streaming and OCR with Google Cloud Vision for documents and images."
+      "es": "Integré salida estructurada de los modelos y OCR con Google Cloud Vision para procesar documentos e imágenes.",
+      "en": "I integrated structured model output and OCR with Google Cloud Vision to process documents and images."
     },
     "empleo09": {
       "es": "Producto e ingeniería",
@@ -692,20 +696,24 @@
       "en": "I ran load and stress tests with k6 (up to 500 concurrent users) to find the breaking point and document results: with 100 users, p95 ≈ 187 ms and 0% errors."
     },
     "empleo18": {
-      "es": "Calidad y desarrollo asistido por IA",
-      "en": "Quality and AI-assisted development"
+      "es": "Desarrollo asistido por IA",
+      "en": "AI-assisted development"
     },
     "empleo19": {
-      "es": "Sostengo una base de ~430 archivos de test (Vitest, React Testing Library, MSW, Supertest, Playwright) con tres estrategias de ejecución (MySQL compartida, paralela multiworker y SQLite en memoria).",
-      "en": "I maintain a base of ~430 test files (Vitest, React Testing Library, MSW, Supertest, Playwright) with three execution strategies (shared MySQL, parallel multiworker and in-memory SQLite)."
+      "es": "Uso agentes de IA como parte del workflow diario: escritura de código, tests, linting y documentación, con revisión humana en cada paso.",
+      "en": "I use AI agents as part of my daily workflow: writing code, tests, linting and documentation, with human review at every step."
     },
     "empleo20": {
-      "es": "Mantengo una cadena de calidad estricta: type-check (tsgo), oxlint + ESLint, Prettier y validación con Zod.",
-      "en": "I maintain a strict quality chain: type-check (tsgo), oxlint + ESLint, Prettier and Zod validation."
+      "es": "Diseñé skills de agentes que codifican los patrones del proyecto (migraciones, tests, permisos, hooks), para que la IA reproduzca las convenciones en lugar de improvisar.",
+      "en": "I designed agent skills that encode the project's patterns (migrations, tests, permissions, hooks), so AI reproduces conventions instead of improvising."
     },
     "empleo21": {
-      "es": "Diseñé workflows de desarrollo asistido por IA: skills de agentes que codifican patrones del proyecto (migraciones, tests, permisos, hooks), un claude.md con guardrails obligatorios (type-check + lint antes de cerrar una tarea) y documentación técnica pensada como contexto para agentes.",
-      "en": "I designed AI-assisted development workflows: agent skills that encode project patterns (migrations, tests, permissions, hooks), a claude.md with mandatory guardrails (type-check + lint before closing a task) and technical docs intended as context for agents."
+      "es": "Definí guardrails obligatorios antes de dar una tarea por cerrada: type-check (tsgo), oxlint + ESLint, Prettier y una base de ~430 archivos de test (Vitest, Testing Library, MSW, Supertest, Playwright).",
+      "en": "I defined mandatory guardrails before considering a task done: type-check (tsgo), oxlint + ESLint, Prettier and a base of ~430 test files (Vitest, Testing Library, MSW, Supertest, Playwright)."
+    },
+    "empleo24": {
+      "es": "Estoy implementando un workflow en el que un agente revisa Sentry periódicamente, detecta issues, analiza el contexto y abre un PR con una propuesta de fix para revisión.",
+      "en": "I am implementing a workflow where an agent periodically checks Sentry, detects issues, analyzes the context and opens a PR with a proposed fix for review."
     },
     "empleo22": {
       "es": "Visitar el sitio",

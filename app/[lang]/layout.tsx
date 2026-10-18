@@ -36,16 +36,16 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Federico Holc - Desarrollador Full Stack · IA aplicada a producto",
+  title: "Federico Holc - Desarrollador Full Stack · Desarrollo asistido por IA",
   description:
-    "Desarrollador web full stack con casi 2 años de experiencia, enfocado en producto con IA integrada: LLMs, embeddings, OCR y streaming. React, TypeScript y Node.",
+    "Desarrollador web full stack con casi 2 años de experiencia. Uso IA como parte central del proceso de desarrollo —código, tests, lint, documentación y skills— para ganar productividad sin resignar calidad. React, TypeScript y Node.",
   icons: {
     icon: icon.src,
   },
   openGraph: {
-    title: "Federico Holc - Desarrollador Full Stack · IA aplicada a producto",
+    title: "Federico Holc - Desarrollador Full Stack · Desarrollo asistido por IA",
     description:
-      "Desarrollador web full stack con casi 2 años de experiencia, enfocado en producto con IA integrada: LLMs, embeddings, OCR y streaming. React, TypeScript y Node.",
+      "Desarrollador web full stack con casi 2 años de experiencia. Uso IA como parte central del proceso de desarrollo —código, tests, lint, documentación y skills— para ganar productividad sin resignar calidad. React, TypeScript y Node.",
     url: "portfolio.fedeholc.ar",
     siteName: "Federico Holc",
     images: [
@@ -53,7 +53,7 @@ export const metadata = {
         url: og.src,
         width: 1200,
         height: 630,
-        alt: "Federico Holc - Desarrollador Full Stack con IA aplicada a producto",
+        alt: "Federico Holc - Desarrollador Full Stack con desarrollo asistido por IA",
       },
     ],
 

@@ -57,11 +57,12 @@ export default async function IndexPage({
         </p>
         <p>
           I am a&nbsp;
-          <strong>full stack web developer</strong> focused on building
-          end-to-end products with&nbsp;
-          <strong>integrated AI</strong>. I work with React, TypeScript and
-          Node, and I ship AI features to production: LLMs, semantic search with
-          embeddings, OCR and streaming.&nbsp;
+          <strong>full stack web developer</strong> and I use&nbsp;
+          <strong>AI as a core part of my development process</strong>: I write,
+          test, lint and document with agents, and I design <em>skills</em> that
+          reproduce the project&apos;s patterns. That lets me build faster&nbsp;
+          <strong>without giving up quality</strong>. I work with React,
+          TypeScript and Node.&nbsp;
           <span className="emoji">🚀</span>
         </p>
       </>
@@ -75,11 +76,13 @@ export default async function IndexPage({
         </p>
         <p>
           Soy&nbsp;
-          <strong>desarrollador web full stack</strong> y construyo productos de
-          punta a punta con&nbsp;
-          <strong>inteligencia artificial integrada</strong>. Trabajo con React,
-          TypeScript y Node, e implemento features de IA en producción: LLMs,
-          búsqueda semántica con embeddings, OCR y streaming.&nbsp;
+          <strong>desarrollador web full stack</strong> y uso la&nbsp;
+          <strong>IA como parte central de mi proceso de desarrollo</strong>:
+          escribo, testeo, linteo y documento con agentes, y diseño{" "}
+          <em>skills</em> que reproducen los patrones del proyecto. Eso me
+          permite construir más rápido&nbsp;
+          <strong>sin resignar calidad</strong>. Trabajo con React, TypeScript y
+          Node.&nbsp;
           <span className="emoji">🚀</span>
         </p>
       </>
@@ -89,29 +92,30 @@ export default async function IndexPage({
     lang === "en" ? (
       <>
         <p>
-          I am interested both in AI inside the software and in designing
-          AI-assisted development workflows that speed things up without
-          sacrificing technical quality or user experience.&nbsp;
+          I also integrate AI into the product when it adds value: content
+          generation, semantic search and document processing.&nbsp;
           <span className="emoji">🕸️</span>
         </p>
         <p>
-          Previously, I was a sociologist and teacher at high schools and at the
-          University of Buenos Aires, which I now bring as the ability to
-          communicate and explain complex ideas.&nbsp;
+          The key is that speed does not degrade quality: type-check, lint and a
+          base of ~430 tests work as a safety net. I come from teaching and
+          social sciences, which I now bring as the ability to communicate and
+          explain complex ideas.&nbsp;
           <span className="emoji">👨‍🏫</span>
         </p>
       </>
     ) : (
       <>
         <p>
-          Me interesa tanto la IA dentro del software como el diseño de
-          workflows de desarrollo asistidos por IA que aceleran sin sacrificar
-          la calidad técnica ni la experiencia del usuario.&nbsp;
+          También integro IA en el producto cuando aporta valor: generación de
+          contenido, búsqueda semántica y procesamiento de documentos.&nbsp;
           <span className="emoji">🕸️</span>
         </p>
         <p>
-          Vengo de la docencia y las ciencias sociales, que hoy aporto como
-          capacidad de comunicar y explicar temas complejos.&nbsp;
+          La clave es que la velocidad no degrade la calidad: type-check, lint y
+          una base de ~430 tests funcionan como red de seguridad. Vengo de la
+          docencia y las ciencias sociales, que hoy aporto como capacidad de
+          comunicar y explicar temas complejos.&nbsp;
           <span className="emoji">👨‍🏫</span>
         </p>
       </>

@@ -31,10 +31,10 @@ export default async function ProyectoEMD({ lang }: { lang: Locale }) {
     linkWebText: p.empleo22[lang],
     linkWebHref: "https://www.empleosmundodigital.com/",
     bloques: [
-      { titulo: p.empleo04[lang], items: [p.empleo05[lang], p.empleo06[lang], p.empleo07[lang], p.empleo08[lang]] },
+      { titulo: p.empleo18[lang], items: [p.empleo19[lang], p.empleo20[lang], p.empleo21[lang], p.empleo24[lang]] },
       { titulo: p.empleo09[lang], items: [p.empleo10[lang], p.empleo11[lang], p.empleo12[lang]] },
       { titulo: p.empleo13[lang], items: [p.empleo14[lang], p.empleo15[lang], p.empleo16[lang], p.empleo17[lang]] },
-      { titulo: p.empleo18[lang], items: [p.empleo19[lang], p.empleo20[lang], p.empleo21[lang]] },
+      { titulo: p.empleo04[lang], items: [p.empleo05[lang], p.empleo06[lang], p.empleo07[lang], p.empleo08[lang]] },
     ],
   };
 

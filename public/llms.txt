@@ -1,8 +1,10 @@
-# Federico Holc — Desarrollador Web Full Stack · IA aplicada a producto
+# Federico Holc — Desarrollador Web Full Stack · Desarrollo asistido por IA
 
 > Portfolio de Federico Holc, desarrollador web full stack con casi 2 años de
-> experiencia, enfocado en construir productos de punta a punta con IA
-> integrada (LLMs, búsqueda semántica con embeddings, OCR y streaming).
+> experiencia. Usa IA como parte central de su proceso de desarrollo —código,
+> tests, lint, documentación y skills— para ganar productividad sin resignar
+> calidad. También integra IA en el producto: generación de contenido, búsqueda
+> semántica con embeddings y procesamiento de documentos.
 
 ## CV
 

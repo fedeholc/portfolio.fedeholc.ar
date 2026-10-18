@@ -128,7 +128,43 @@
     display: flex;
     place-items: center;
     height: 30px;
+    /* ancho fijo: antes lo tomaba del ícono y quedaba en 0px si éste no se renderizaba */
+    width: 15px;
     justify-content: center;
+  }
+
+  /* El ícono mostrado lo decide el CSS, no el estado de React, para que el botón
+     nunca quede vacío (0px) antes de que corra el JS o si éste falla.
+     Por defecto seguimos la preferencia del sistema... */
+  .theme__toggler .icon_sun {
+    display: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .theme__toggler .icon_sun {
+      display: block;
+    }
+
+    .theme__toggler .icon_moon {
+      display: none;
+    }
+  }
+
+  /* ...y la elección explícita del usuario (body[data-theme]) gana sobre el sistema */
+  body[data-theme="light"] .theme__toggler .icon_sun {
+    display: none;
+  }
+
+  body[data-theme="light"] .theme__toggler .icon_moon {
+    display: block;
+  }
+
+  body[data-theme="dark"] .theme__toggler .icon_sun {
+    display: block;
+  }
+
+  body[data-theme="dark"] .theme__toggler .icon_moon {
+    display: none;
   }
 
   .divider {
