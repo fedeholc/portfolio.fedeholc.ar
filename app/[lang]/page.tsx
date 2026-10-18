@@ -49,38 +49,27 @@ export default async function IndexPage({
     lang === "en" ? (
       <>
         <p>
-          My name is <span className="resaltado">Federico Holc</span>&nbsp;
-          <span className="emoji">🧑‍💻</span>, and I live in Buenos Aires,
-          Argentina.
+          My name is <span className="resaltado">Federico Holc</span>, and I
+          live in Buenos Aires, Argentina.
           <br />
         </p>
         <p>
-          I am a&nbsp;
-          <strong>full stack web developer</strong> and I care especially about
-          &nbsp;
-          <strong>UX/UI design</strong>: I want what I build to be clear, usable
-          and accessible. I work with React, TypeScript and Node, and I like
-          creating solutions end to end, from design to backend and
-          infrastructure.&nbsp;
-          <span className="emoji">🌈</span>
+          I am a <strong>full stack web developer</strong>. I like being able
+          to create solutions end to end, from&nbsp;
+          <strong>UX/UI design</strong> to the backend and infrastructure.
         </p>
       </>
     ) : (
       <>
         <p>
-          Mi nombre es <span className="resaltado">Federico Holc</span>&nbsp;
-          <span className="emoji">🧑‍💻</span>, y vivo en Buenos Aires,
-          Argentina.
+          Mi nombre es <span className="resaltado">Federico Holc</span>, y vivo
+          en Buenos Aires, Argentina.
           <br />
         </p>
         <p>
-          Soy <strong>desarrollador web full stack</strong> y me importa
-          especialmente el&nbsp;
-          <strong>diseño UX/UI</strong>: que lo que construyo sea claro, usable
-          y accesible. Trabajo con React, TypeScript y Node, y me gusta crear
-          soluciones de principio a fin, del diseño al backend y la
-          infraestructura.&nbsp;
-          <span className="emoji">🌈</span>
+          Soy <strong>desarrollador web full stack</strong>. Me gusta poder
+          crear soluciones de principio a fin, desde el&nbsp;
+          <strong>diseño UX/UI</strong>, hasta el backend y la infraestructura.
         </p>
       </>
     );
@@ -89,42 +78,33 @@ export default async function IndexPage({
     lang === "en" ? (
       <>
         <p>
-          I use&nbsp;
-          <strong>AI as a core part of my development process</strong>, with
-          &nbsp;
-          <strong>automation workflows</strong> that let me go faster without
-          giving up quality: AI proposes and I review. I also integrate AI into
-          the product when it adds value.&nbsp;
-          <span className="emoji">🕸️</span>
+          I started programming <strong>writing code by hand</strong>, and
+          that foundation is what today lets me build work processes and
+          automations that integrate <strong>artificial intelligence</strong> to
+          boost development without sacrificing technical quality or user
+          experience.
         </p>
         <p>
-          I started programming&nbsp;
-          <strong>writing code by hand</strong>, and that foundation is what
-          today lets me design and supervise what AI produces. On top of that,
-          my background in teaching and social sciences complements my technical
+          On top of that, my experience in&nbsp;
+          <strong>teaching and social sciences</strong> complements my technical
           profile, bringing clear communication and the ability to translate
-          complex topics for any team or client.&nbsp;
-          <span className="emoji">👨‍🏫</span>
+          complex topics for any team or client.
         </p>
       </>
     ) : (
       <>
         <p>
-          Uso la&nbsp;
-          <strong>IA como parte central de mi proceso de desarrollo</strong>,
-          con <strong>workflows de automatización</strong> que me permiten ir más
-          rápido sin resignar calidad: la IA propone y yo reviso. También
-          integro IA en el producto cuando aporta valor.&nbsp;
-          <span className="emoji">🕸️</span>
+          Empecé a programar <strong>escribiendo código a mano</strong>, y esa
+          base de fundamentos es la que hoy me permite generar procesos de
+          trabajo y automatizaciones integrando&nbsp;
+          <strong>inteligencia artificial</strong> para potenciar el desarrollo
+          sin sacrificar la calidad técnica ni la experiencia del usuario.
         </p>
         <p>
-          Empecé a programar&nbsp;
-          <strong>escribiendo código a mano</strong>, y esa base de fundamentos
-          es la que hoy me permite diseñar y supervisar lo que produce la IA.
-          Además, mi experiencia en docencia y ciencias sociales complementa mi
-          perfil técnico, aportando una comunicación clara y la capacidad de
-          traducir temas complejos para cualquier equipo o cliente.&nbsp;
-          <span className="emoji">👨‍🏫</span>
+          Además, mi experiencia en&nbsp;
+          <strong>docencia y ciencias sociales</strong> complementa mi perfil
+          técnico, aportando una comunicación clara y la capacidad de traducir
+          temas complejos para cualquier equipo o cliente.
         </p>
       </>
     );

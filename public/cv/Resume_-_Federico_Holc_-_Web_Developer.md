@@ -8,7 +8,7 @@ federicoholc@gmail.com · +54-11-2394-8988 · Buenos Aires, Argentina
 
 ## Profile
 
-Full stack web developer with almost 2 years of experience. I use AI as a core part of my development process —writing code, testing, linting, documentation and creating skills that reproduce the project's patterns— to gain productivity without giving up quality. I also integrate AI into the product when it adds value: content generation, semantic search with embeddings and document processing. I work with React, TypeScript and Node. I come from teaching and social sciences, which I bring as the ability to communicate and explain complex ideas.
+Full stack web developer with 2 years of experience. I like creating solutions end to end, from UX/UI design to the backend and the infrastructure. I started programming writing code by hand, and that foundation is what today lets me build work processes and automations that integrate artificial intelligence to boost development without sacrificing technical quality or user experience. I also integrate AI into the product when it adds value: content generation, semantic search with embeddings and document processing. On top of that, my experience in teaching and social sciences complements my technical profile, bringing clear communication and the ability to translate complex topics for any team or client.
 
 ## Experience
 

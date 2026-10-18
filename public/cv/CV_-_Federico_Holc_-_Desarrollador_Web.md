@@ -8,7 +8,7 @@ federicoholc@gmail.com · +54-11-2394-8988 · Buenos Aires, Argentina
 
 ## Perfil
 
-Desarrollador web full stack con casi 2 años de experiencia. Uso la IA como parte central de mi proceso de desarrollo —escritura de código, testing, linting, documentación y creación de skills que reproducen los patrones del proyecto— para ganar productividad sin resignar calidad. También integro IA en el producto cuando aporta valor: generación de contenido, búsqueda semántica con embeddings y procesamiento de documentos. Trabajo con React, TypeScript y Node. Vengo de la docencia y las ciencias sociales, lo que aporto como capacidad de comunicar y explicar temas complejos.
+Desarrollador web full stack con 2 años de experiencia. Me gusta crear soluciones de principio a fin, desde el diseño UX/UI hasta el backend y la infraestructura. Empecé a programar escribiendo código a mano, y esa base de fundamentos es la que hoy me permite generar procesos de trabajo y automatizaciones integrando inteligencia artificial para potenciar el desarrollo sin sacrificar la calidad técnica ni la experiencia del usuario. También integro IA en el producto cuando aporta valor: generación de contenido, búsqueda semántica con embeddings y procesamiento de documentos. Además, mi experiencia en docencia y ciencias sociales complementa mi perfil técnico, aportando una comunicación clara y la capacidad de traducir temas complejos para cualquier equipo o cliente.
 
 ## Experiencia
 

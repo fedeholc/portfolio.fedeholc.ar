@@ -1,10 +1,20 @@
 # Federico Holc — Desarrollador Web Full Stack · Desarrollo asistido por IA
 
-> Portfolio de Federico Holc, desarrollador web full stack con casi 2 años de
-> experiencia. Usa IA como parte central de su proceso de desarrollo —código,
-> tests, lint, documentación y skills— para ganar productividad sin resignar
-> calidad. También integra IA en el producto: generación de contenido, búsqueda
-> semántica con embeddings y procesamiento de documentos.
+> Portfolio de Federico Holc, desarrollador web full stack con 2 años de
+> experiencia. Crea soluciones de principio a fin, del diseño UX/UI al backend y
+> la infraestructura. Empezó a programar escribiendo código a mano y hoy genera
+> procesos de trabajo y automatizaciones integrando IA para potenciar el
+> desarrollo sin resignar calidad. También integra IA en el producto: generación
+> de contenido, búsqueda semántica con embeddings y procesamiento de documentos.
+
+## Skills
+
+- **IA y LLMs** — desarrollo asistido por IA (agentes, skills, MCP) · Gemini / Vertex AI · OpenAI / DeepSeek · embeddings y búsqueda semántica · salida estructurada · prompting · OCR
+- **Frontend** — React 19 · TypeScript · Astro · Next.js · MUI / Mantine · HTML / CSS / Responsive design
+- **Backend** — Node.js · Express · Sequelize / MySQL · MongoDB · Socket.IO · BullMQ / Redis · Zod
+- **Testing** — Vitest · React Testing Library · MSW · Supertest · Playwright
+- **DevOps e infraestructura** — Docker · Docker Compose · CI/CD (GitHub Actions) · Nginx · Linux · pino · Sentry · k6
+- **Otros** — Stripe · JWT / OAuth · Git / GitHub · Figma
 
 ## CV
 
