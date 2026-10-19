@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import externalLinkIcon from "@public/external-link.png";
 import screenshot1 from "@public/proyecto-emd/emd1.webp";
-import screenshot2 from "@public/proyecto-emd/emd2.webp";
 import herb from "@public/herb.png";
 import { getDictionary } from "@app/get-dictionary";
 import { Locale } from "@app/i18n-config";
@@ -31,10 +30,37 @@ export default async function ProyectoEMD({ lang }: { lang: Locale }) {
     linkWebText: p.empleo22[lang],
     linkWebHref: "https://www.empleosmundodigital.com/",
     bloques: [
-      { titulo: p.empleo18[lang], items: [p.empleo19[lang], p.empleo20[lang], p.empleo21[lang], p.empleo24[lang]] },
-      { titulo: p.empleo09[lang], items: [p.empleo10[lang], p.empleo11[lang], p.empleo12[lang]] },
-      { titulo: p.empleo13[lang], items: [p.empleo14[lang], p.empleo15[lang], p.empleo16[lang], p.empleo17[lang]] },
-      { titulo: p.empleo04[lang], items: [p.empleo05[lang], p.empleo06[lang], p.empleo07[lang], p.empleo08[lang]] },
+      {
+        titulo: p.empleo18[lang],
+        items: [
+          p.empleo19[lang],
+          p.empleo20[lang],
+          p.empleo21[lang],
+          p.empleo24[lang],
+        ],
+      },
+      {
+        titulo: p.empleo09[lang],
+        items: [p.empleo10[lang], p.empleo11[lang], p.empleo12[lang]],
+      },
+      {
+        titulo: p.empleo13[lang],
+        items: [
+          p.empleo14[lang],
+          p.empleo15[lang],
+          p.empleo16[lang],
+          p.empleo17[lang],
+        ],
+      },
+      {
+        titulo: p.empleo04[lang],
+        items: [
+          p.empleo05[lang],
+          p.empleo06[lang],
+          p.empleo07[lang],
+          p.empleo08[lang],
+        ],
+      },
     ],
   };
 
@@ -70,12 +96,15 @@ export default async function ProyectoEMD({ lang }: { lang: Locale }) {
         {/* ***************************************** */}
         <div className={proyectos.screenshot__container}>
           <figure className={`${proyectos.screenshot__figure}  `}>
-            <Image
+            <video
               className={`${proyectos.screenshot}  `}
-              src={screenshot1}
+              src="/proyecto-emd/emd-video.mp4"
               width={700}
-              alt="Empleos Mundo Digital - home"
-              quality={100}
+              autoPlay
+              muted
+              loop
+              playsInline
+              aria-label="Empleos Mundo Digital - home"
             />
             <figcaption className={proyectos.screenshot__caption}>
               {p.empleo23[lang]}
@@ -102,9 +131,9 @@ export default async function ProyectoEMD({ lang }: { lang: Locale }) {
           <figure className={`${proyectos.screenshot__figure}  `}>
             <Image
               className={`${proyectos.screenshot}  `}
-              src={screenshot2}
-              width={320}
-              alt="Empleos Mundo Digital - mobile"
+              src={screenshot1}
+              width={700}
+              alt="Empleos Mundo Digital - home"
               quality={100}
             />
             <figcaption className={proyectos.screenshot__caption}>

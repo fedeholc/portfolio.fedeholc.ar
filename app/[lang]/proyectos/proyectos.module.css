@@ -136,6 +136,8 @@
 }
 
 .screenshot {
+  max-width: 100%;
+  height: auto;
   box-shadow: 0px 0px 5px 1px var(--screenshot-shadow);
   border-radius: 5px;
 }

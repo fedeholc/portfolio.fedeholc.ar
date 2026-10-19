@@ -42,7 +42,7 @@ export function middleware(request: NextRequest) {
 
     // esto es porque por algun motivo cuando va a un link de un archivo en public con el redirect que está debajo no funciona
     //de esta forma si es un archivo estático (pdf, docx, md, txt, imágenes, etc.) va directo y anda
-    if (/\.(pdf|docx|doc|md|txt|jpeg|jpg|png|webp|svg|gif|ico|xml|json|csv|zip)$/i.test(pathname)) {
+    if (/\.(pdf|docx|doc|md|txt|jpeg|jpg|png|webp|svg|gif|ico|xml|json|csv|zip|mp4|webm|ogv|mov|mp3|wav|ogg)$/i.test(pathname)) {
       return NextResponse.next();
     }
 
